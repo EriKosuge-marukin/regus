@@ -1,0 +1,16 @@
+@media screen and (min-width: 750px){
+	.wrapper .contents {
+	  width: 770px;
+	  margin: 0 auto;
+	  padding-top: 40px;
+	  float: none !important;
+	}
+}
+
+@media screen and (max-width: 749px){
+	.wrapper .contents {
+		width: 90%;
+		 margin: 0 auto;
+		 padding-top: 30px;
+		 }
+}

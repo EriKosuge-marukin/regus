@@ -1,0 +1,1244 @@
+@function viewportSize($num) {
+  @return calc($num / 1500 * 100vw);
+}
+@function mapSize($num) {
+  @return calc($num / 1390 * 100%);
+}
+@mixin titleColor {
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+@mixin hover {
+  @media (hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+.sp-modal {
+  font-weight: 500;
+  translate: 100% 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+
+  transition: translate 0.3s;
+
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  &.is-active {
+    translate: 0% 0;
+  }
+
+  &__inner {
+    width: 90%;
+    height: 90dvh;
+    overflow-y: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    padding-top: 15px;
+    background: #fff;
+    border-radius: 10px;
+    border: solid 4px #448fa7;
+  }
+  &__container {
+    display: none;
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: #448fa7;
+    margin-bottom: 10px;
+  }
+  &__back {
+    color: #1e7b73;
+    font-size: 13px;
+    padding: 0 20px;
+    transition: opacity 0.3s;
+    margin-bottom: 15px;
+    &:hvoer {
+      opacity: 0.7;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: solid 1px #b6cfd7;
+  }
+  &__item {
+    border-bottom: solid 1px #b6cfd7;
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-top: none;
+    }
+    &:nth-child(odd) {
+      border-right: solid 1px #b6cfd7;
+    }
+  }
+  &__link {
+    display: block;
+    font-size: 14px;
+    padding: 12px 20px;
+    transition:
+      color 0.3s,
+      background 0.3s;
+    &:hover {
+      color: #fff;
+      background: #448fa7;
+    }
+    // 変更しました
+    .num {
+      margin-left: 5px;
+      font-size: 12px;
+      &::before {
+        content: "(";
+      }
+      &::after {
+        content: "件)";
+      }
+    }
+    //
+  }
+}
+
+.search {
+  // ↓250422
+  &__annotation {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #e30613;
+    font-size: min(viewportSize(14), 14px);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+    //250422
+    .lens {
+      -webkit-mask-image: url(/images_2023/loope.png);
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-image: url(/images_2023/loope.png);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      // 変える色　↓
+      background-color: #e30613;
+      height: auto;
+      width: min(viewportSize(16), 16px);
+      aspect-ratio: 1;
+      @media screen and (max-width: 768px) {
+        width: 14px;
+      }
+    }
+  }
+  //
+  &__inner {
+    width: 90%;
+    max-width: 1390px;
+    margin: 0 auto;
+  }
+
+  &__map {
+    padding: calc(120 / 1390 * 100%) 0 calc(70 / 1390 * 100%);
+    background: #95b7c2;
+    margin-top: 20px;
+    position: relative;
+    border: solid 1px #95b7c2;
+    background: #ffffff;
+    /*--↓250130追加部分--*/
+    //
+    @media screen and (max-width: 768px) {
+      background: #ffffff;
+      border: #999 1px solid; //#95b7c2
+    }
+  }
+  &__map-text {
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    &-region {
+      font-size: min(viewportSize(20), 20px);
+      position: absolute;
+    }
+    //250422
+    &-lines {
+      bottom: mapSize(10);
+      left: mapSize(200); /*left: mapSize(920);*/
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #cfcfcf;
+      padding: 3px 20px;
+    }
+    &-brand {
+      bottom: mapSize(10);
+      left: mapSize(650); /*left: mapSize(920);*/
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #cfcfcf;
+      padding: 3px 20px;
+    }
+    //250422 
+    &-hokkaido {
+      top: mapSize(75);
+      left: mapSize(950);
+    }
+    &-tohoku {
+      top: mapSize(243);
+      left: mapSize(950);
+    }
+    &-kanto {
+      top: mapSize(475);
+      left: mapSize(950);
+      z-index: 12;
+    }
+    &-tokyo {
+      top: mapSize(700);
+      left: mapSize(900);
+    }
+    &-hokushinetsu {
+      top: mapSize(75);
+      left: mapSize(63);
+    }
+    &-tyubutokai {
+      top: mapSize(243);
+      left: mapSize(63);
+    }
+    &-kansai {
+      top: mapSize(475);
+      left: mapSize(63);
+    }
+    &-tyugokushikoku {
+      top: mapSize(780);
+      left: mapSize(63);
+    }
+    &-kyusyu {
+      top: mapSize(940);
+      left: mapSize(63);
+    }
+    &-okinawa {
+      top: mapSize(1170);
+      left: mapSize(63);
+    }
+    //↓250422
+    &-title {
+      pointer-events: none;
+      transition:
+        font-weight 0.1s ease,
+        text-stroke 0.1s ease;
+      &--brand {
+        &.is-active {
+          color: #448fa7;
+          @include titleColor();
+        }
+      }
+      &--lines {
+        &.is-active {
+          color: #448fa7;
+          @include titleColor();
+        }
+      }
+        //↑250422
+      &--hokkaido {
+        &.is-active {
+          color: #1556b5;
+          @include titleColor();
+        }
+      }
+      &--tohoku {
+        &.is-active {
+          color: #1e7b73;
+          @include titleColor();
+        }
+      }
+      &--kanto {
+        &.is-active {
+          color: #573a7f;
+          @include titleColor();
+        }
+      }
+      &--tokyo {
+        &.is-active {
+          color: #ea432b;
+          @include titleColor();
+        }
+      }
+      &--hokushinetsu {
+        &.is-active {
+          color: #de294e;
+          @include titleColor();
+        }
+      }
+      &--tyubutokai {
+        &.is-active {
+          color: #519015;
+          @include titleColor();
+        }
+      }
+      &--kansai {
+        &.is-active {
+          color: #f96215;
+          @include titleColor();
+        }
+      }
+      &--tyugokushikoku {
+        &.is-active {
+          color: #7c351a;
+          @include titleColor();
+        }
+      }
+      &--kyusyu {
+        &.is-active {
+          color: #cf2916;
+          @include titleColor();
+        }
+      }
+      &--okinawa {
+        &.is-active {
+          color: #be3083;
+          @include titleColor();
+        }
+      }
+    }
+    &-block {
+      display: flex;
+      flex-flow: row wrap;
+      gap: min(viewportSize(4), 4px);
+      margin-top: mapSize(15);
+      margin-top: min(viewportSize(10), 10px);
+      &--tokyo {
+        margin-left: min(viewportSize(-20), -20px);
+        width: min(viewportSize(475), 475px);
+      }
+      &--tohoku {
+        width: min(viewportSize(385), 385px);
+      }
+      &--kanto {
+        width: min(viewportSize(420), 420px);
+      }
+      &--tyubutokai {
+        width: min(viewportSize(480), 480px);
+      }
+      &--kansai {
+        width: min(viewportSize(540), 540px);
+      }
+      &--tyugokushikoku {
+      }
+      &--kyusyu {
+        width: min(viewportSize(420), 420px);
+      }
+      &--lines {
+        margin-top: 0;
+      }
+      &--brand {
+        margin-top: 0;
+      }
+    }
+    &-area {
+      // 変更しました
+      background: #fff;
+      border: 2px solid #448fa7;
+      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      font-size: min(viewportSize(15), 17px);
+      //
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*font-size: min(viewportSize(18), 18px);*/
+      transition: color 0.3s;
+      // 変更しました
+      .num {
+        margin-left: 5px;
+        margin-bottom: 2px;
+        font-size: min(viewportSize(12), 12px);
+        &::before {
+          content: "(";
+        }
+        &::after {
+          content: "件)";
+        }
+      }
+      //
+      &--small {
+        // 変更しました
+        width: min(viewportSize(92), 92px);
+        //
+      }
+      &--midium {
+        // 変更しました
+        padding-inline: min(0.5em, 10px);
+        //
+      }
+      &--large {
+      }
+      // ↓240522
+      &--brand {
+        @include hover {
+          background-color: #448fa7;
+          color: #ffffff;
+          border: 2px solid #448fa7;
+        }
+      }
+      &--lines {
+        @include hover {
+          background-color: #448fa7;
+          color: #ffffff;
+          border: 2px solid #448fa7;
+        }
+        
+      }
+          // ↑240522
+      &--hokkaido {
+        @include hover {
+          background-color: #1556b5;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #1556b5;
+          //
+        }
+      }
+      &--tohoku {
+        @include hover {
+          background-color: #1e7b73;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #1e7b73;
+          //
+        }
+      }
+      &--kanto {
+        @include hover {
+          background-color: #573a7f;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #573a7f;
+          //
+        }
+      }
+      &--tokyo {
+        @include hover {
+          background-color: #ea432b;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #ea432b;
+          //
+        }
+      }
+      &--hokushinetsu {
+        @include hover {
+          background-color: #de294e;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #de294e;
+          //
+        }
+      }
+      &--tyubutokai {
+        @include hover {
+          background-color: #519015;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #519015;
+          //
+        }
+      }
+      &--kansai {
+        @include hover {
+          background-color: #f96215;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #f96215;
+          //
+        }
+      }
+      &--tyugokushikoku {
+        @include hover {
+          background-color: #7c351a;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #7c351a;
+          //
+        }
+      }
+      &--kyusyu {
+        @include hover {
+          background-color: #cf2916;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #cf2916;
+          //
+        }
+      }
+      &--okinawa {
+        @include hover {
+          background-color: #be3083;
+          color: #ffffff;
+          // 変更しました
+          border: 2px solid #be3083;
+          //
+        }
+      }
+    }
+  }
+  &__map-active {
+    height: 100%;
+    width: calc(490 / 1390 * 100%);
+    margin-left: calc(435 / 1390 * 100%);
+    z-index: 5;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (max-width: 768px) {
+      width: calc(182 / 634 * 100%);
+      width: 100%;
+      margin-left: 0;
+    }
+    &-sp {
+      &.active {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
+      }
+    }
+    &-img {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &--pc-b {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    &-hokkaido {
+      top: 16.3%;
+      right: 0%;
+      width: 42%;
+    }
+    &-tohoku {
+      top: 33.8%;
+      right: 29%;
+      width: 14%;
+    }
+    &-kanto {
+      top: 51.7%;
+      right: 34.7%;
+      width: 12.1%;
+    }
+    &-tokyo {
+      top: 56.8%;
+      right: 39.7%;
+      width: 4.4%;
+    }
+    &-hokushinetsu {
+      top: 45.9%;
+      right: 39.2%;
+      width: 18.4%;
+    }
+    &-tyubutokai {
+      top: 54.5%;
+      right: 43.2%;
+      width: 18.5%;
+    }
+    &-kansai {
+      top: 56.7%;
+      right: 54.5%;
+      width: 13.5%;
+    }
+    &-tyugokushikoku {
+      top: 54%;
+      right: 65.5%;
+      width: 20.3%;
+    }
+    &-kyusyu {
+      top: 59.2%;
+      left: 0;
+      width: 20.1%;
+    }
+    &-okinawa {
+      top: 69.2%;
+      left: 32.5%;
+      width: 47.5%;
+    }
+    &-east {
+      top: 11%;
+      right: 22.96%;
+      width: calc(182 / 674 * 100%);
+      display: none;
+    }
+    &-west {
+      top: 10%;
+      top: 48.1%;
+      left: 0;
+      left: 12.97%;
+      width: calc(498 / 674 * 100%);
+      display: none;
+    }
+  }
+
+  &__all-map {
+    width: calc(490 / 1390 * 100%);
+    margin-left: calc(435 / 1390 * 100%);
+    z-index: 0;
+    @media screen and (max-width: 768px) {
+      width: 96%;
+      margin-inline: auto;
+    }
+  }
+  &__line {
+    position: absolute;
+    pointer-events: none;
+    top: 8%;
+    top: mapSize(105);
+    z-index: 10;
+    width: mapSize(815);
+    left: mapSize(125);
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+/*--↓250130追加部分--*/
+.fv_map {
+  max-width: 440px !important;
+  height: 440px;
+  width: 100%;
+  max-width: 100%;
+  background: #f1f1f1 !important;
+  position: relative;
+  bottom: -40px;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background: url(/images_2023/2501/bubble_map.png) no-repeat;
+    background-size: contain;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  .search {
+    &__all-map {
+      /*--250130追加部分--*/
+      width: 90%;
+      margin-left: 2vw;
+      margin-top: -5.7vw;
+      overflow: hidden;
+      z-index: 0;
+
+      @media screen and (max-width: 768px) {
+        width: 96%;
+        margin-inline: auto;
+      }
+    }
+  }
+
+  .search-fv {
+    display: block;
+    height: 100%;
+    max-width: 440px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    &__btns {
+      height: 100%;
+      width: 100%;
+    }
+
+    &__btn {
+      position: absolute;
+      color: #000;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 0;
+      background: rgba($color: #fff, $alpha: 1);
+      border: solid 2px #448fa7;
+      border-radius: 3px;
+      height: 50px;
+      filter: drop-shadow(5px 5px 5px #4e4e4e);
+      transition:
+        background 0.3s,
+        color 0.3s;
+
+      &:hover {
+        color: #fff;
+        background: #448fa7;
+      }
+
+      &--normal-w {
+        width: 17%;
+      }
+      &--wide-w {
+        width: 26.8%;
+      }
+
+      &--hokkaido {
+        top: 14%;
+        right: 5%;
+      }
+
+      &--okinawa {
+        top: 17%;
+        left: 13%;
+      }
+
+      &--tohoku {
+        top: 40%;
+        left: 72%;
+      }
+      &--kanto {
+        top: 57%;
+        left: 72%;
+      }
+      &--tokyo {
+        top: 74%;
+        left: 72%;
+      }
+      &--hokushin {
+        top: 40%;
+        left: 47.3%;
+      }
+      &--kyushu {
+        top: 74%;
+        left: 4.5%;
+      }
+      &--kansai {
+        top: 74%;
+        left: 37.5%;
+      }
+      &--tokai {
+        top: 57%;
+        left: 37.5%;
+      }
+      &--tyugoku {
+        top: 57%;
+        left: 4.5%;
+      }
+    }
+  }
+}
+.modal {
+  position: fixed;
+  bottom: 55px;
+  right: -100%;
+  width: 300px;
+  height: 440px;
+
+  background: #fff;
+  border-radius: 10px;
+  border: solid 4px #448fa7;
+  transition: right 0.6s ease-in-out;
+  z-index: 1000;
+  padding-top: 15px;
+  overflow-y: scroll;
+  @media screen and (max-width: 1200px) {
+    bottom: 30px;
+  }
+  .modal-text {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: #448fa7;
+    margin-bottom: 10px;
+  }
+
+  .close-btn {
+    color: #1e7b73;
+    font-size: 13px;
+    padding: 0 20px;
+    transition: opacity 0.3s;
+    margin-bottom: 15px;
+  }
+
+  .list-modal {
+    font-weight: 500;
+    translate: 100% 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+
+    transition: translate 0.3s;
+
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+
+    &.is-active {
+      translate: 0% 0;
+    }
+
+    &__inner {
+      width: 90%;
+      height: 90dvh;
+      overflow-y: auto;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+
+      padding-top: 15px;
+      background: #fff;
+      border-radius: 10px;
+      border: solid 4px #448fa7;
+    }
+    &__container {
+      display: none;
+      &.is-active {
+        display: block;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: 900;
+      text-align: center;
+      color: #448fa7;
+      margin-bottom: 10px;
+    }
+    &__back {
+      color: #1e7b73;
+      font-size: 13px;
+      padding: 0 20px;
+      transition: opacity 0.3s;
+      margin-bottom: 15px;
+      &:hvoer {
+        opacity: 0.7;
+      }
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-top: solid 1px #b6cfd7;
+    }
+    &__item {
+      border-bottom: solid 1px #b6cfd7;
+      background-color: #fff !important;
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-top: none;
+      }
+      &:nth-child(odd) {
+        border-right: solid 1px #b6cfd7;
+      }
+
+      button {
+        font-size: 14px;
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
+        text-align: justify;
+        background: #fff;
+      }
+    }
+    &__link {
+      display: block;
+      font-size: 14px;
+      padding: 12px 20px;
+      transition:
+        color 0.3s,
+        background 0.3s;
+      background: #fff;
+      &:hover {
+        color: #fff;
+        background: #448fa7;
+      }
+      // 変更しました
+      .num {
+        margin-left: 5px;
+        font-size: 12px;
+        &::before {
+          content: "(";
+        }
+        &::after {
+          content: "件)";
+        }
+      }
+      //
+    }
+  }
+}
+/*--↑250130追加部分--*/
+
+.search-sp {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  &__btns {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__btn {
+    position: absolute;
+    color: #000;
+    font-size: 3.3vw;
+    font-weight: 900;
+    padding: 0;
+    background: rgba($color: #fff, $alpha: 1);
+    border: solid 0.53vw #448fa7;
+    border-radius: 3px;
+    height: 13.5%;
+    filter: drop-shadow(5px 5px 5px #4e4e4e);
+    transition:
+      background 0.3s,
+      color 0.3s;
+
+    &:hover {
+      color: #fff;
+      background: #448fa7;
+    }
+
+    &--normal-w {
+      width: 17%;
+    }
+    &--wide-w {
+      width: 26.8%;
+    }
+
+    &--hokkaido {
+      top: 14%;
+      right: 7%;
+    }
+
+    &--okinawa {
+      top: 17%;
+      left: 13%;
+    }
+
+    &--tohoku {
+      top: 40%;
+      left: 72.5%;
+    }
+    &--kanto {
+      top: 56.5%;
+      left: 72.5%;
+    }
+    &--tokyo {
+      top: 73%;
+      left: 72.5%;
+    }
+    &--hokushin {
+      top: 40%;
+      left: 48.3%;
+    }
+    &--kyushu {
+      top: 73%;
+      left: 4.5%;
+    }
+    &--kansai {
+      top: 73%;
+      left: 38.5%;
+    }
+    &--tokai {
+      top: 56.5%;
+      left: 38.5%;
+    }
+    &--tyugoku {
+      top: 56.5%;
+      left: 4.5%;
+    }
+  }
+}
+
+.acc {
+  &__list {
+    &--area {
+      display: none;
+    }
+    &--secondary {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__item {
+    &--primary {
+      border-bottom: 1px solid #b6cfd7;
+      padding-inline: 1rem;
+      padding-block: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &--secondary {
+      font-size: 14px;
+      font-weight: 500;
+      padding-inline: 1rem;
+      background: #f7f9fa;
+      padding-block: 0.8rem;
+      border-bottom: 1px solid #b6cfd7;
+      &:nth-child(odd) {
+        border-right: 1px solid #b6cfd7;
+      }
+    }
+    &--tri {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      border-top: 9px solid #448fa7;
+      border-bottom: 0;
+
+      transition: rotate 0.3s;
+
+      &.open {
+        rotate: 180deg;
+      }
+    }
+    // &--right {
+    //   border-right: 1px solid #b6cfd7;
+    // }
+  }
+  &__text {
+    &--primary {
+      font-size: 16px;
+      font-weight: 900;
+    }
+  }
+}
+@media screen and (max-width: 1290px) {
+}
+.reason {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  &__inner {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  &__ttl {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .reason {
+    &__inner {
+      width: 94%;
+      margin: 0 auto;
+    }
+    &__ttl {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    &__list {
+    }
+  }
+}
+
+.reason-item {
+  display: flex;
+  &__left {
+    padding: 40px 50px 40px 70px;
+    background: #2b2b2b;
+    width: calc(610 / 1500 * 100%);
+  }
+  &__number {
+    width: fit-content;
+    background: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    span {
+      font-size: 30px;
+    }
+  }
+  &__title {
+    font-size: 30px;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: normal;
+  }
+  &__text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 189px;
+    margin-top: 30px;
+    border: solid 1px #fff;
+    border-radius: 19px;
+    color: #fff;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      translate: 0 -50%;
+      width: 15px;
+      height: auto;
+      aspect-ratio: 15 / 12;
+      background: url(/common3/images/arrow.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  &__right {
+    width: calc(890 / 1500 * 100%);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and (max-width: 1290px) {
+  .reason-item {
+    flex-direction: column-reverse;
+    &__left {
+      width: 100%;
+      padding: 15px;
+    }
+    &__number {
+      font-size: 12px;
+      padding: 8px 16px;
+      span {
+        font-size: 24px;
+      }
+    }
+    &__title {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    &__btn {
+      margin-top: 20px;
+      font-size: 14px;
+      height: 34px;
+      width: 160px;
+    }
+    &::after {
+      width: 10px;
+    }
+    &__right {
+      width: 100%;
+
+      img {
+      }
+    }
+  }
+}
+
+//↓250422//
+
+h2.search__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  line-height: 1.2 !important;
+  margin-top: 0;
+  text-align: center;
+  padding: 0.7% 60px;
+  background-color: #448fa7;
+  color: white;
+  font-size: clamp(12px, 1.2vw, 16px);
+}
+@media screen and (max-width: 768px) {
+  h2.search__title {
+    position: relative;
+    margin-top: 2rem;
+    font-weight: bold;
+    line-height: 1.2 !important;
+    margin-top: 0;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #448fa7;
+    color: white;
+  }
+}
+//↑250422//
+section.search a:hover {
+  text-decoration: none;
+}
+
+.search__map {
+  margin-top: 0;
+}
+
+

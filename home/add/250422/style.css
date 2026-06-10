@@ -1,0 +1,1136 @@
+@charset "UTF-8";
+.sp-modal {
+  font-weight: 500;
+  translate: 100% 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  transition: translate 0.3s;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sp-modal {
+    display: block;
+  }
+}
+.sp-modal.is-active {
+  translate: 0% 0;
+}
+.sp-modal__inner {
+  width: 90%;
+  height: 90dvh;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding-top: 15px;
+  background: #fff;
+  border-radius: 10px;
+  border: solid 4px #448fa7;
+}
+.sp-modal__container {
+  display: none;
+}
+.sp-modal__container.is-active {
+  display: block;
+}
+.sp-modal__title {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  color: #448fa7;
+  margin-bottom: 10px;
+}
+.sp-modal__back {
+  color: #1e7b73;
+  font-size: 13px;
+  padding: 0 20px;
+  transition: opacity 0.3s;
+  margin-bottom: 15px;
+}
+.sp-modal__back:hvoer {
+  opacity: 0.7;
+}
+.sp-modal__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: solid 1px #b6cfd7;
+}
+.sp-modal__item {
+  border-bottom: solid 1px #b6cfd7;
+}
+.sp-modal__item:nth-child(1), .sp-modal__item:nth-child(2) {
+  border-top: none;
+}
+.sp-modal__item:nth-child(odd) {
+  border-right: solid 1px #b6cfd7;
+}
+.sp-modal__link {
+  display: block;
+  font-size: 14px;
+  padding: 12px 20px;
+  transition: color 0.3s, background 0.3s;
+}
+.sp-modal__link:hover {
+  color: #fff;
+  background: #448fa7;
+}
+.sp-modal__link .num {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.sp-modal__link .num::before {
+  content: "(";
+}
+.sp-modal__link .num::after {
+  content: "件)";
+}
+
+.search__annotation {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #e30613;
+  font-size: min(0.9333333333vw, 14px);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (max-width: 768px) {
+  .search__annotation {
+    font-size: 12px;
+  }
+}
+.search__annotation .lens {
+  -webkit-mask-image: url(/images_2023/loope.png);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(/images_2023/loope.png);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #e30613;
+  height: auto;
+  width: min(1.0666666667vw, 16px);
+  aspect-ratio: 1;
+}
+@media screen and (max-width: 768px) {
+  .search__annotation .lens {
+    width: 14px;
+  }
+}
+.search__inner {
+  width: 90%;
+  max-width: 1390px;
+  margin: 0 auto;
+}
+.search__map {
+  padding: 8.6330935252% 0 5.035971223%;
+  background: #95b7c2;
+  margin-top: 20px;
+  position: relative;
+  border: solid 1px #95b7c2;
+  background: #ffffff;
+  /*--↓250130追加部分--*/
+}
+@media screen and (max-width: 768px) {
+  .search__map {
+    background: #ffffff;
+    border: #999 1px solid;
+  }
+}
+.search__map-text {
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .search__map-text {
+    display: none;
+  }
+}
+.search__map-text-region {
+  font-size: min(1.3333333333vw, 20px);
+  position: absolute;
+}
+.search__map-text-lines {
+  bottom: 0.7194244604%;
+  left: 14.3884892086%; /*left: mapSize(920);*/
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #cfcfcf;
+  padding: 3px 20px;
+}
+.search__map-text-brand {
+  bottom: 0.7194244604%;
+  left: 46.7625899281%; /*left: mapSize(920);*/
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #cfcfcf;
+  padding: 3px 20px;
+}
+.search__map-text-hokkaido {
+  top: 5.3956834532%;
+  left: 68.345323741%;
+}
+.search__map-text-tohoku {
+  top: 17.4820143885%;
+  left: 68.345323741%;
+}
+.search__map-text-kanto {
+  top: 34.1726618705%;
+  left: 68.345323741%;
+  z-index: 12;
+}
+.search__map-text-tokyo {
+  top: 50.3597122302%;
+  left: 64.7482014388%;
+}
+.search__map-text-hokushinetsu {
+  top: 5.3956834532%;
+  left: 4.5323741007%;
+}
+.search__map-text-tyubutokai {
+  top: 17.4820143885%;
+  left: 4.5323741007%;
+}
+.search__map-text-kansai {
+  top: 34.1726618705%;
+  left: 4.5323741007%;
+}
+.search__map-text-tyugokushikoku {
+  top: 56.1151079137%;
+  left: 4.5323741007%;
+}
+.search__map-text-kyusyu {
+  top: 67.6258992806%;
+  left: 4.5323741007%;
+}
+.search__map-text-okinawa {
+  top: 84.1726618705%;
+  left: 4.5323741007%;
+}
+.search__map-text-title {
+  pointer-events: none;
+  transition: font-weight 0.1s ease, text-stroke 0.1s ease;
+}
+.search__map-text-title--brand.is-active {
+  color: #448fa7;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--lines.is-active {
+  color: #448fa7;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--hokkaido.is-active {
+  color: #1556b5;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--tohoku.is-active {
+  color: #1e7b73;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--kanto.is-active {
+  color: #573a7f;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--tokyo.is-active {
+  color: #ea432b;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--hokushinetsu.is-active {
+  color: #de294e;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--tyubutokai.is-active {
+  color: #519015;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--kansai.is-active {
+  color: #f96215;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--tyugokushikoku.is-active {
+  color: #7c351a;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--kyusyu.is-active {
+  color: #cf2916;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-title--okinawa.is-active {
+  color: #be3083;
+  font-weight: bold;
+  text-stroke: 3px #fff;
+  -webkit-text-stroke: 3px #fff;
+  paint-order: stroke;
+}
+.search__map-text-block {
+  display: flex;
+  flex-flow: row wrap;
+  gap: min(0.2666666667vw, 4px);
+  margin-top: 1.0791366906%;
+  margin-top: min(0.6666666667vw, 10px);
+}
+.search__map-text-block--tokyo {
+  margin-left: min(-1.3333333333vw, -20px);
+  width: min(31.6666666667vw, 475px);
+}
+.search__map-text-block--tohoku {
+  width: min(25.6666666667vw, 385px);
+}
+.search__map-text-block--kanto {
+  width: min(28vw, 420px);
+}
+.search__map-text-block--tyubutokai {
+  width: min(32vw, 480px);
+}
+.search__map-text-block--kansai {
+  width: min(36vw, 540px);
+}
+.search__map-text-block--kyusyu {
+  width: min(28vw, 420px);
+}
+.search__map-text-block--lines {
+  margin-top: 0;
+}
+.search__map-text-block--brand {
+  margin-top: 0;
+}
+.search__map-text-area {
+  background: #fff;
+  border: 2px solid #448fa7;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+  font-size: min(1vw, 17px);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*font-size: min(viewportSize(18), 18px);*/
+  transition: color 0.3s;
+}
+.search__map-text-area .num {
+  margin-left: 5px;
+  margin-bottom: 2px;
+  font-size: min(0.8vw, 12px);
+}
+.search__map-text-area .num::before {
+  content: "(";
+}
+.search__map-text-area .num::after {
+  content: "件)";
+}
+.search__map-text-area--small {
+  width: min(6.1333333333vw, 92px);
+}
+.search__map-text-area--midium {
+  padding-inline: min(0.5em, 10px);
+}
+@media (hover) {
+  .search__map-text-area--brand:hover {
+    background-color: #448fa7;
+    color: #ffffff;
+    border: 2px solid #448fa7;
+  }
+}
+@media (hover) {
+  .search__map-text-area--lines:hover {
+    background-color: #448fa7;
+    color: #ffffff;
+    border: 2px solid #448fa7;
+  }
+}
+@media (hover) {
+  .search__map-text-area--hokkaido:hover {
+    background-color: #1556b5;
+    color: #ffffff;
+    border: 2px solid #1556b5;
+  }
+}
+@media (hover) {
+  .search__map-text-area--tohoku:hover {
+    background-color: #1e7b73;
+    color: #ffffff;
+    border: 2px solid #1e7b73;
+  }
+}
+@media (hover) {
+  .search__map-text-area--kanto:hover {
+    background-color: #573a7f;
+    color: #ffffff;
+    border: 2px solid #573a7f;
+  }
+}
+@media (hover) {
+  .search__map-text-area--tokyo:hover {
+    background-color: #ea432b;
+    color: #ffffff;
+    border: 2px solid #ea432b;
+  }
+}
+@media (hover) {
+  .search__map-text-area--hokushinetsu:hover {
+    background-color: #de294e;
+    color: #ffffff;
+    border: 2px solid #de294e;
+  }
+}
+@media (hover) {
+  .search__map-text-area--tyubutokai:hover {
+    background-color: #519015;
+    color: #ffffff;
+    border: 2px solid #519015;
+  }
+}
+@media (hover) {
+  .search__map-text-area--kansai:hover {
+    background-color: #f96215;
+    color: #ffffff;
+    border: 2px solid #f96215;
+  }
+}
+@media (hover) {
+  .search__map-text-area--tyugokushikoku:hover {
+    background-color: #7c351a;
+    color: #ffffff;
+    border: 2px solid #7c351a;
+  }
+}
+@media (hover) {
+  .search__map-text-area--kyusyu:hover {
+    background-color: #cf2916;
+    color: #ffffff;
+    border: 2px solid #cf2916;
+  }
+}
+@media (hover) {
+  .search__map-text-area--okinawa:hover {
+    background-color: #be3083;
+    color: #ffffff;
+    border: 2px solid #be3083;
+  }
+}
+.search__map-active {
+  height: 100%;
+  width: 35.2517985612%;
+  margin-left: 31.2949640288%;
+  z-index: 5;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .search__map-active {
+    width: 28.7066246057%;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.search__map-active-sp.active {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .search__map-active-sp.active {
+    display: block;
+  }
+}
+.search__map-active-img {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.search__map-active-img.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 768px) {
+  .search__map-active--pc-b {
+    display: none;
+  }
+}
+.search__map-active-hokkaido {
+  top: 16.3%;
+  right: 0%;
+  width: 42%;
+}
+.search__map-active-tohoku {
+  top: 33.8%;
+  right: 29%;
+  width: 14%;
+}
+.search__map-active-kanto {
+  top: 51.7%;
+  right: 34.7%;
+  width: 12.1%;
+}
+.search__map-active-tokyo {
+  top: 56.8%;
+  right: 39.7%;
+  width: 4.4%;
+}
+.search__map-active-hokushinetsu {
+  top: 45.9%;
+  right: 39.2%;
+  width: 18.4%;
+}
+.search__map-active-tyubutokai {
+  top: 54.5%;
+  right: 43.2%;
+  width: 18.5%;
+}
+.search__map-active-kansai {
+  top: 56.7%;
+  right: 54.5%;
+  width: 13.5%;
+}
+.search__map-active-tyugokushikoku {
+  top: 54%;
+  right: 65.5%;
+  width: 20.3%;
+}
+.search__map-active-kyusyu {
+  top: 59.2%;
+  left: 0;
+  width: 20.1%;
+}
+.search__map-active-okinawa {
+  top: 69.2%;
+  left: 32.5%;
+  width: 47.5%;
+}
+.search__map-active-east {
+  top: 11%;
+  right: 22.96%;
+  width: 27.0029673591%;
+  display: none;
+}
+.search__map-active-west {
+  top: 10%;
+  top: 48.1%;
+  left: 0;
+  left: 12.97%;
+  width: 73.8872403561%;
+  display: none;
+}
+.search__all-map {
+  width: 35.2517985612%;
+  margin-left: 31.2949640288%;
+  z-index: 0;
+}
+@media screen and (max-width: 768px) {
+  .search__all-map {
+    width: 96%;
+    margin-inline: auto;
+  }
+}
+.search__line {
+  position: absolute;
+  pointer-events: none;
+  top: 8%;
+  top: 7.5539568345%;
+  z-index: 10;
+  width: 58.6330935252%;
+  left: 8.9928057554%;
+}
+@media screen and (max-width: 768px) {
+  .search__line {
+    display: none;
+  }
+}
+
+/*--↓250130追加部分--*/
+.fv_map {
+  max-width: 440px !important;
+  height: 440px;
+  width: 100%;
+  max-width: 100%;
+  background: #f1f1f1 !important;
+  position: relative;
+  bottom: -40px;
+  border: none;
+}
+.fv_map::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  background: url(/images_2023/2501/bubble_map.png) no-repeat;
+  background-size: contain;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .fv_map {
+    display: none;
+  }
+}
+.fv_map .search__all-map {
+  /*--250130追加部分--*/
+  width: 90%;
+  margin-left: 2vw;
+  margin-top: -5.7vw;
+  overflow: hidden;
+  z-index: 0;
+}
+@media screen and (max-width: 768px) {
+  .fv_map .search__all-map {
+    width: 96%;
+    margin-inline: auto;
+  }
+}
+.fv_map .search-fv {
+  display: block;
+  height: 100%;
+  max-width: 440px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.fv_map .search-fv__btns {
+  height: 100%;
+  width: 100%;
+}
+.fv_map .search-fv__btn {
+  position: absolute;
+  color: #000;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 0;
+  background: white;
+  border: solid 2px #448fa7;
+  border-radius: 3px;
+  height: 50px;
+  filter: drop-shadow(5px 5px 5px #4e4e4e);
+  transition: background 0.3s, color 0.3s;
+}
+.fv_map .search-fv__btn:hover {
+  color: #fff;
+  background: #448fa7;
+}
+.fv_map .search-fv__btn--normal-w {
+  width: 17%;
+}
+.fv_map .search-fv__btn--wide-w {
+  width: 26.8%;
+}
+.fv_map .search-fv__btn--hokkaido {
+  top: 14%;
+  right: 5%;
+}
+.fv_map .search-fv__btn--okinawa {
+  top: 17%;
+  left: 13%;
+}
+.fv_map .search-fv__btn--tohoku {
+  top: 40%;
+  left: 72%;
+}
+.fv_map .search-fv__btn--kanto {
+  top: 57%;
+  left: 72%;
+}
+.fv_map .search-fv__btn--tokyo {
+  top: 74%;
+  left: 72%;
+}
+.fv_map .search-fv__btn--hokushin {
+  top: 40%;
+  left: 47.3%;
+}
+.fv_map .search-fv__btn--kyushu {
+  top: 74%;
+  left: 4.5%;
+}
+.fv_map .search-fv__btn--kansai {
+  top: 74%;
+  left: 37.5%;
+}
+.fv_map .search-fv__btn--tokai {
+  top: 57%;
+  left: 37.5%;
+}
+.fv_map .search-fv__btn--tyugoku {
+  top: 57%;
+  left: 4.5%;
+}
+
+.modal {
+  position: fixed;
+  bottom: 55px;
+  right: -100%;
+  width: 300px;
+  height: 440px;
+  background: #fff;
+  border-radius: 10px;
+  border: solid 4px #448fa7;
+  transition: right 0.6s ease-in-out;
+  z-index: 1000;
+  padding-top: 15px;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 1200px) {
+  .modal {
+    bottom: 30px;
+  }
+}
+.modal .modal-text {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  color: #448fa7;
+  margin-bottom: 10px;
+}
+.modal .close-btn {
+  color: #1e7b73;
+  font-size: 13px;
+  padding: 0 20px;
+  transition: opacity 0.3s;
+  margin-bottom: 15px;
+}
+.modal .list-modal {
+  font-weight: 500;
+  translate: 100% 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  transition: translate 0.3s;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .modal .list-modal {
+    display: block;
+  }
+}
+.modal .list-modal.is-active {
+  translate: 0% 0;
+}
+.modal .list-modal__inner {
+  width: 90%;
+  height: 90dvh;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding-top: 15px;
+  background: #fff;
+  border-radius: 10px;
+  border: solid 4px #448fa7;
+}
+.modal .list-modal__container {
+  display: none;
+}
+.modal .list-modal__container.is-active {
+  display: block;
+}
+.modal .list-modal__title {
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  color: #448fa7;
+  margin-bottom: 10px;
+}
+.modal .list-modal__back {
+  color: #1e7b73;
+  font-size: 13px;
+  padding: 0 20px;
+  transition: opacity 0.3s;
+  margin-bottom: 15px;
+}
+.modal .list-modal__back:hvoer {
+  opacity: 0.7;
+}
+.modal .list-modal__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: solid 1px #b6cfd7;
+}
+.modal .list-modal__item {
+  border-bottom: solid 1px #b6cfd7;
+  background-color: #fff !important;
+}
+.modal .list-modal__item:nth-child(1), .modal .list-modal__item:nth-child(2) {
+  border-top: none;
+}
+.modal .list-modal__item:nth-child(odd) {
+  border-right: solid 1px #b6cfd7;
+}
+.modal .list-modal__item button {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  text-align: justify;
+  background: #fff;
+}
+.modal .list-modal__link {
+  display: block;
+  font-size: 14px;
+  padding: 12px 20px;
+  transition: color 0.3s, background 0.3s;
+  background: #fff;
+}
+.modal .list-modal__link:hover {
+  color: #fff;
+  background: #448fa7;
+}
+.modal .list-modal__link .num {
+  margin-left: 5px;
+  font-size: 12px;
+}
+.modal .list-modal__link .num::before {
+  content: "(";
+}
+.modal .list-modal__link .num::after {
+  content: "件)";
+}
+
+/*--↑250130追加部分--*/
+.search-sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .search-sp {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+.search-sp__btns {
+  height: 100%;
+  width: 100%;
+}
+.search-sp__btn {
+  position: absolute;
+  color: #000;
+  font-size: 3.3vw;
+  font-weight: 900;
+  padding: 0;
+  background: white;
+  border: solid 0.53vw #448fa7;
+  border-radius: 3px;
+  height: 13.5%;
+  filter: drop-shadow(5px 5px 5px #4e4e4e);
+  transition: background 0.3s, color 0.3s;
+}
+.search-sp__btn:hover {
+  color: #fff;
+  background: #448fa7;
+}
+.search-sp__btn--normal-w {
+  width: 17%;
+}
+.search-sp__btn--wide-w {
+  width: 26.8%;
+}
+.search-sp__btn--hokkaido {
+  top: 14%;
+  right: 7%;
+}
+.search-sp__btn--okinawa {
+  top: 17%;
+  left: 13%;
+}
+.search-sp__btn--tohoku {
+  top: 40%;
+  left: 72.5%;
+}
+.search-sp__btn--kanto {
+  top: 56.5%;
+  left: 72.5%;
+}
+.search-sp__btn--tokyo {
+  top: 73%;
+  left: 72.5%;
+}
+.search-sp__btn--hokushin {
+  top: 40%;
+  left: 48.3%;
+}
+.search-sp__btn--kyushu {
+  top: 73%;
+  left: 4.5%;
+}
+.search-sp__btn--kansai {
+  top: 73%;
+  left: 38.5%;
+}
+.search-sp__btn--tokai {
+  top: 56.5%;
+  left: 38.5%;
+}
+.search-sp__btn--tyugoku {
+  top: 56.5%;
+  left: 4.5%;
+}
+
+.acc__list--area {
+  display: none;
+}
+.acc__list--secondary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.acc__item--primary {
+  border-bottom: 1px solid #b6cfd7;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.acc__item--primary:last-child {
+  border-bottom: none;
+}
+.acc__item--secondary {
+  font-size: 14px;
+  font-weight: 500;
+  padding-inline: 1rem;
+  background: #f7f9fa;
+  padding-block: 0.8rem;
+  border-bottom: 1px solid #b6cfd7;
+}
+.acc__item--secondary:nth-child(odd) {
+  border-right: 1px solid #b6cfd7;
+}
+.acc__item--tri {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-top: 9px solid #448fa7;
+  border-bottom: 0;
+  transition: rotate 0.3s;
+}
+.acc__item--tri.open {
+  rotate: 180deg;
+}
+.acc__text--primary {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.reason {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.reason__inner {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.reason__ttl {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.reason__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+@media screen and (max-width: 1290px) {
+  .reason__inner {
+    width: 94%;
+    margin: 0 auto;
+  }
+  .reason__ttl {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+}
+.reason-item {
+  display: flex;
+}
+.reason-item__left {
+  padding: 40px 50px 40px 70px;
+  background: #2b2b2b;
+  width: 40.6666666667%;
+}
+.reason-item__number {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.reason-item__number span {
+  font-size: 30px;
+}
+.reason-item__title {
+  font-size: 30px;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: normal;
+}
+.reason-item__text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 2;
+}
+.reason-item__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 189px;
+  margin-top: 30px;
+  border: solid 1px #fff;
+  border-radius: 19px;
+  color: #fff;
+  position: relative;
+}
+.reason-item__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  translate: 0 -50%;
+  width: 15px;
+  height: auto;
+  aspect-ratio: 15/12;
+  background: url(/common3/images/arrow.png) no-repeat;
+  background-size: cover;
+}
+.reason-item__right {
+  width: 59.3333333333%;
+}
+.reason-item__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1290px) {
+  .reason-item {
+    flex-direction: column-reverse;
+  }
+  .reason-item__left {
+    width: 100%;
+    padding: 15px;
+  }
+  .reason-item__number {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .reason-item__number span {
+    font-size: 24px;
+  }
+  .reason-item__title {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .reason-item__text {
+    font-size: 14px;
+  }
+  .reason-item__btn {
+    margin-top: 20px;
+    font-size: 14px;
+    height: 34px;
+    width: 160px;
+  }
+  .reason-item::after {
+    width: 10px;
+  }
+  .reason-item__right {
+    width: 100%;
+  }
+}
+h2.search__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  line-height: 1.2 !important;
+  margin-top: 0;
+  text-align: center;
+  padding: 0.7% 60px;
+  background-color: #448fa7;
+  color: white;
+  font-size: clamp(12px, 1.2vw, 16px);
+}
+
+@media screen and (max-width: 768px) {
+  h2.search__title {
+    position: relative;
+    margin-top: 2rem;
+    font-weight: bold;
+    line-height: 1.2 !important;
+    margin-top: 0;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #448fa7;
+    color: white;
+  }
+}
+section.search a:hover {
+  text-decoration: none;
+}
+
+.search__map {
+  margin-top: 0;
+}/*# sourceMappingURL=style.css.map */

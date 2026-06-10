@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+@mixin w($mt:0, $mb:0, $w:1100) {
+ //width:100%;
+ width: $w + px;
+ margin: $mt + px auto $mb + px;
+}
+
+@mixin wsp($w:768, $mt:0, $mb:0) {
+ width: 100%;
+ max-width: $w + px;
+ margin: $mt + px auto $mb + px;
+}
+
+@mixin grid {
+ display: -ms-grid;
+ display: grid;
+}
+
+@mixin temp-c($temp) {
+ -ms-grid-columns: $temp;
+ grid-template-columns: $temp;
+}
+
+@mixin temp-r($temp) {
+ -ms-grid-rows: $temp;
+ grid-template-rows: $temp;
+}
+
+@mixin grid-c($start, $end) {
+ -ms-grid-column: $start;
+ grid-column-start: $start;
+ grid-column-end: $end;
+ -ms-grid-column-span: $end - $start;
+}
+
+@mixin grid-r($start, $end) {
+ -ms-grid-row: $start;
+ grid-row-start: $start;
+ grid-row-end: $end;
+ -ms-grid-row-span: $end - $start;
+}
+
+@mixin fz($font-size:14) {
+ font-size: $font-size + px;
+ font-size: ($font-size / 10) + rem;
+}
+
+@mixin iept($pt:1) {
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  padding-top:$pt + px;
+ }
+}
+
+@mixin ie {
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  @content;
+ }
+}
+
+@mixin chrome {
+	@media screen and (-webkit-min-device-pixel-ratio:0){
+	  @content;
+	}
+}
+
+@mixin firefox {
+	@-moz-document url-prefix(){
+	  @content;
+	}
+}
+
+@mixin indent {
+ text-indent: 100%;
+ white-space: nowrap;
+ overflow: hidden;
+}
+
+@mixin bgs($bgs:cover) {
+ -webkit-background-size: $bgs;
+ -moz-background-size: $bgs;
+ -ms-background-size: $bgs;
+ background-size: $bgs;
+}
+
+@mixin flex {
+ -js-display: flex;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex;
+}
+
+@mixin ai($ai:center) {
+ -webkit-align-items: $ai;
+ align-items: -webkit-$ai;
+ align-items: $ai;
+}
+
+@mixin ac($ac:center) {
+ -webkit-align-content: $ac;
+ align-content: -webkit-$ac;
+ align-content: $ac;
+}
+
+@mixin jc($jc:flex-start) {
+ -webkit-justify-content: $jc;
+ justify-content: -webkit-$jc;
+ justify-content: $jc;
+}
+
+@mixin fw($fw:wrap) {
+ -webkit-flex-wrap: $fw;
+ flex-wrap: $fw;
+}
+
+@mixin fb($fb) {
+ -webkit-flex-basis: $fb;
+ flex-basis: $fb;
+}
+
+@mixin transform($func) {
+ -moz-transform: $func;
+ -webkit-transform: $func;
+ -o-transform: $func;
+ -ms-transform: $func;
+ transform: $func;
+}
+
+@mixin transition($func1:all, $func2:0.3s) {
+ -moz-transition: ($func1 $func2);
+ -webkit-transition: ($func1 $func2);
+ -o-transition: ($func1 $func2);
+ -ms-transition: ($func1 $func2);
+ transition: ($func1 $func2);
+}
+
+@mixin break($break:768) {
+ @media screen and (max-width: $break + px) {
+  @content;
+ }
+}
+
+@mixin break2($break:768) {
+ @media screen and (min-width: $break + px) {
+  @content;
+ }
+}
+
+@mixin break3($break1, $break2) {
+ @media screen and (min-width: $break1 + px) and ( max-width: $break2 + px) {
+  @content;
+ }
+}
+
+@mixin fd($fd:column) {
+ -webkit-flex-direction: $fd;
+ flex-direction: -webkit-$fd;
+ flex-direction: $fd;
+}
+
+@mixin order($order:1) {
+ -webkit-box-ordinal-group: $order;
+ -ms-flex-order: $order;
+ -webkit-order: $order;
+ order: $order;
+}
+
+@mixin keyframes($animation-name) {
+ @-webkit-keyframes #{$animation-name} {
+  @content;
+ }
+ @-moz-keyframes #{$animation-name} {
+  @content;
+ }
+ @keyframes #{$animation-name} {
+  @content;
+ }
+}
+
+@mixin animation($animation-name) {
+ -webkit-animation: $animation-name;
+ -moz-animation: $animation-name;
+ animation: $animation-name; //-webkit-animation-fill-mode: both;
+ //-moz-animation-fill-mode: both;
+ //animation-fill-mode: both;
+}
+
+@mixin txt_rl {
+ writing-mode: vertical-rl;
+ -ms-writing-mode: tb-rl;
+ -webkit-writing-mode: vertical-rl;
+}
+
+@mixin txt_tb {
+ writing-mode: horizontal-tb;
+ -ms-writing-mode: lr-tb;
+ -webkit-writing-mode: horizontal-tb;
+}
+
+@mixin boxsizing($boxsizing:content-box) {
+ -webkit-box-sizing: $boxsizing;
+ -moz-box-sizing: $boxsizing;
+ -o-box-sizing: $boxsizing;
+ -ms-box-sizing: $boxsizing;
+ box-sizing: $boxsizing;
+}

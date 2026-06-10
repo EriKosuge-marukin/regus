@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+/*----PC----*/
+@media screen and (min-width: 750px) {
+ .wrapper .contentsEN h1{
+	background:url(/common2/images/bg_white.gif) repeat-x left bottom #e10034;
+	line-height:60px;
+	margin:0 0 10px;
+	padding-left:10px;
+	font-size:140%;
+	font-weight:bold;
+	border-bottom:4px solid #939696;
+	color:#ffffff;
+}
+
+#enquiryBox{
+	width:1060px;
+	overflow:hidden;
+}
+#enquiryBox .flL{
+	width:450px;
+	margin:18px 0 15px 0;
+}
+#enquiryBox .flR{
+	width:580px;
+}
+.wrapper .leadTxt{
+  /*background-color:#ccc9bd;*/
+  padding:25px 0;
+  margin-bottom:30px;
+}
+.wrapper .leadTxt img{
+	float:right;
+	margin:0 30px 0 30px;
+}
+.wrapper .leadTxt p{
+  margin:0 20px;
+}
+
+.wrapper .formArea dl{
+  display:table;
+  margin-bottom:5px;
+  width:580px;
+  background-color:#F2F2F2;
+}
+
+.wrapper .formArea dt{
+  display:table-cell;
+	vertical-align: middle;
+  background-color:#CCC9BD;
+  width:150px;
+  padding:0 0 0 8px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .formArea dd{
+  display:table-cell;
+  background-color:#F2F2F2;
+  width:380px;
+  padding:10px 0px 10px 5px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .formArea dd input{
+  font-size:110%;
+  padding:3px;
+}
+
+.wrapper .formArea dd input[type="email"]{
+  width:350px;
+}
+.wrapper .formArea dd input[type="people"]{
+  width:50px;
+}
+.wrapper .formArea dd option{
+  font-size:110%;
+  padding:3px;
+  width:230px;
+}
+.wrapper .formArea dd.date option{
+  font-size:110%;
+  padding:3px;
+  width:50px;
+}
+.wrapper .formArea dd.date select{
+font-size:110%;
+ padding:8px 2%;
+ width:22% !important;
+	margin: 0;
+border: 1px solid #888;
+     /*background: #f8e1e5;*/
+}
+	
+.wrapper .formArea dd.people-number option{
+  font-size:110%;
+  padding:3px;
+  width:50px;
+}
+.wrapper .formArea dd.people-number select{
+font-size:110%;
+ padding:8px 2%;
+ width:22% !important;
+	margin: 0;
+border: 1px solid #888;
+     /*background: #f8e1e5;*/
+}
+	
+.wrapper .formArea dd textarea {
+	width: 100%;/*211125変更*/
+	margin: 5px auto;
+	height: 150px;
+	padding: 5px;
+	 border: 1px solid #888;
+     /*background: #f8e1e5;*/
+
+}
+
+
+
+.wrapper .formArea .btnArea{
+  margin:40px auto 60px auto;
+  text-align:center;
+}
+
+}
+
+
+/*----SP-----------------------------------------------*/
+@media screen and (max-width: 750px) {
+.wrapper .contentsEN h1{
+	background:url(/common2/images/bg_white.gif) repeat-x left bottom #e10034;
+	font-size:130%;
+	font-weight:bold;
+	padding:3%;
+	margin:5% 0 0;
+	border-bottom:4px solid #939696;
+	color:#ffffff;
+}
+.wrapper .leadTxt{
+  /*background-color:#ccc9bd;*/
+  padding:15px 0;
+   margin: 0 0 20px 0;
+}
+.wrapper .leadTxt img{
+	width:30%;
+	float:right;
+	   margin: 0 0 20px 15px;
+
+}
+.wrapper .leadTxt p{
+  margin:0 5%;
+}
+
+.wrapper .formArea{
+	clear:both;
+	width:100% !important;
+}
+#enquiryBox{
+	width:100%;
+	overflow:hidden;
+}
+#enquiryBox .flL{
+	float:none;
+	width:100%;
+
+}
+#enquiryBox .flR{
+	float:none;
+	width:100%;}
+
+.wrapper .formArea dt{
+  display:block;
+  background-color:#CCC9BD;
+  width:100%;
+  padding:10px 15px;
+		  float:none;
+}
+
+.wrapper .formArea dd{
+  display:block;
+  background-color:#F2F2F2;
+  width:100%;
+  float:none;
+  padding:10px 0;
+  text-align:center;
+}
+
+/*.wrapper .formArea dd input{
+  font-size:110%;
+  padding:3px 1%;
+  width:88%;
+}*/
+
+.wrapper .formArea dd input[type="email"]{
+  width:88%;
+}
+.wrapper .formArea dd input[type="people"]{
+  width:50%;
+}
+.wrapper .formArea dd option{
+  font-size:110%;
+ padding:3px 1%;
+ width:88%;
+}
+
+.wrapper .formArea dd p{
+	text-align:left;
+	padding:0 20px;
+}
+    
+.wrapper .formArea dd textarea {
+	width: 93%;
+	padding:3px;
+	margin-bottom: 10px;
+     border: 1px solid #888;
+     /*background: #f8e1e5;*/
+}
+    
+.wrapper .formArea .btnArea{
+  margin:20px auto 50px auto;
+  text-align:center;
+}
+select{
+	width:88%;
+	margin:0 5%;
+	font-size:16px;
+}
+.wrapper .formArea dd.date select{
+	font-size:110%;
+ padding:14px 2%;
+ width:25% !important;margin: 0;
+   border: 1px solid #888;
+     /*background: #f8e1e5;*/
+	}
+
+
+.bnrEN{
+	text-align:center;
+	padding:70px;
+}
+
+/*20180124ADD＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+
+@media screen and (min-width: 750px) {
+.spEnquiry{
+	display:none;
+}}
+@media screen and (max-width: 750px) {
+.wrapper header {
+    width: 100%;
+    padding: 0;
+	margin:0 0 25px 0 ;
+}
+.spEnquiry{
+	display:block;
+padding:15px 3%;
+background:#e40037;
+overflow:hidden;
+
+
+}
+.spEnquiry .logoSP{
+display:block;
+	float:left;
+	width:18%;
+}
+.spEnquiry h1.spL{
+	position:relative !important;
+	background:none;
+	color:#fff;
+font-weight:bold;
+font-size:24px;
+line-height:2.5;
+vertical-align:middle;
+display:block;float:left;
+width:64%;
+text-align:center;
+}
+.spEnquiry .tel a{
+	display:block;
+	float:right;
+	width:10%;
+	margin:0 2% 0 6%;
+}
+.spEnquiry .logoSP img,.spEnquiry .tel a img{
+vertical-align:middle;
+}
+/*.wrapper .formArea dt .att{
+	color:#ff0000;
+}*/
+/*LCにて追加*/
+p.txaC img {
+	width: auto;
+	margin-bottom: 20px;
+}
+
+}
+@media screen and (max-width: 480px) {.spEnquiry h1.spL{
+	position:relative !important;
+	background:none;
+	color:#fff;
+font-weight:bold;
+font-size:16px;
+line-height:2.1;
+vertical-align:middle;
+display:block;float:left;
+width:64%;
+text-align:center;
+}
+    
+    
+    
+    
+    
+    
+.spEnquiry .logoSP img{
+	width:85%;
+	margin-top:3px;
+}
+}
+
+em.txtRed {
+	color: #e10034;
+}
+
+.wrapper .formArea .att{
+	color:#fff;
+	display:inline-block;
+	background: #d01818;
+	padding: 1px 2px;
+	font-size: 70%;
+	margin: 0 3px 3px;
+	border-radius: 3px;
+}
+
+
+
+/*211116＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.wrapper .formArea dd input::-webkit-input-placeholder,
+.wrapper .formArea dd textarea::-webkit-input-placeholder{
+    color: #ccc;
+}
+.wrapper .formArea dd input:-moz-placeholder,
+.wrapper .formArea dd textarea:-moz-placeholder{
+    color: #ccc;
+}
+.wrapper .formArea dd input::-moz-placeholder,
+.wrapper .formArea dd textarea::-moz-placeholder{
+    color: #ccc;
+}
+.wrapper .formArea dd input:-ms-input-placeholder,
+.wrapper .formArea dd textarea:-ms-input-placeholder{
+    color: #ccc;}
+}
+
+
+
+
+/*251211-----------*/
+.balloon1 {
+  position: relative;
+  display: inline-block;
+  margin: -20px auto 20px auto;
+  padding: 7px 10px;
+  /*min-width: 300px;*/
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  background: #E00133;
+    border-radius:9999px;
+}
+
+.balloon1:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #E00133;
+}
+
+.balloon1 p {
+  margin: 0;
+  padding: 0;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title::before,.title::after {
+    content: "";
+    background-color: #ffffff;
+    height: 1px;
+    width: 25px;
+}
+.title::before {
+    margin-right: 5px;
+    transform: rotate(60deg); 
+}
+.title::after {
+    margin-left: 5px;
+    transform: rotate(-60deg); 
+}

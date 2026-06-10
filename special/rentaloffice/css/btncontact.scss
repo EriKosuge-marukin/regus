@@ -1,0 +1,472 @@
+@charset "utf-8";
+@import 'mixin';
+
+
+.btnContact {
+	width:900px;
+	margin: 0 auto 30px auto;
+	@include flex;
+	@include jc(space-between);
+	@include ai(flex-start);
+	@include fw(wrap);
+	@include break {
+		display: block;
+		width: 80%;
+	}//__break
+
+.tel{width: 48%;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	@include break {
+		width:100%;
+	}//__break
+	span{
+	display: block;
+	
+	&.num{color: #e41d3a;
+		font-size: 210%;
+		line-height: 1.4;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+		&:before{
+				 content: '';/*何も入れない*/
+  display: inline-block;/*忘れずに！*/
+  width: 30px;/*画像の幅*/
+  height:30px;/*画像の高さ*/
+  background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+					padding-left:5px;
+				
+			}
+		}
+	&.note{font-size: 76%;
+			
+		}
+		}
+	
+	}//__tel
+.link{width: 50%;
+	margin: 0;
+	@include break {
+		margin-top: 15px;
+		width:100%;
+	}//__break
+a{
+	&.btn_con {
+		text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+ margin: 0 auto;
+  padding: 18px 0;
+  color: #fff;
+		font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  background:#46c1be;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+	@include break {width:100%;
+		font-size: 22px;
+		line-height: 1.3;
+		padding: 15px 40px;
+		}
+	&:before,&:after{
+			content: "";
+  position: absolute;
+  top: 50%;
+		}//__beforeAfter
+&:before {
+  right: 15px;
+  width: 40px;
+  height:40px;
+  margin: -20px 0 0;
+  background:#fff;
+  border-radius: 60px;
+  -webkit-border-radius:60px;
+	@include break {
+		 width: 36px;
+  height:36px;
+  margin: -18px 0 0;
+	}
+}
+&:after {
+  right: 28px;
+  width: 13px;
+  height: 13px;
+  margin: -10px 0 0;
+  border-top: solid 5px #46c1be;
+  border-right: solid 5px #46c1be;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	@include break {
+		right: 27px;
+  width: 12px;
+  height:12px;
+  margin: -8px 0 0;
+	}
+}
+}//_btn_con
+}//_a
+	}//_link
+}
+
+
+.telephone {
+  width: 900px;
+  margin: 30px auto 30px auto;
+@include break {display: block;
+    margin: 20px auto 30px auto;
+    width: 90%;}
+  .tel {
+    width: 48%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+      @include break {width: 100%;}
+
+    span {
+      display: block;
+
+      &.num {
+        color: #e41d3a;
+        font-size: 210%;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.01em;
+
+        &:before {
+          content: '';
+
+          /*何も入れない*/
+          display: inline-block;
+
+          /*忘れずに！*/
+          width: 30px;
+
+          /*画像の幅*/
+          height: 30px;
+
+          /*画像の高さ*/
+          background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+          padding-left: 5px;
+        }
+      }
+
+      &.note {
+        font-size: 76%;
+      }
+    }
+  }
+}
+
+
+.mmbOfficeLink {
+  overflow: hidden;
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+ @include break { margin: 3px auto 10px auto;
+    width: 70%;
+    }
+  a {
+    display: block;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    background: #46c1be;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+    z-index: 4;
+
+    &:hover {
+      background: #46c1be;
+      z-index: 5;
+    }
+
+    &:before {
+      /*白いひし型 */
+      display: block;
+      content: "";
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 50%;
+      right: 20px;
+      width: 8px;
+      height: 8px;
+      margin-top: -4px;
+      background: #46c1be;
+      z-index: 7;
+    }
+
+    &:after {
+      /*バックグラウンドと同じ色のひし型をずらして「before要素」を隠す */
+      display: block;
+      content: "";
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 50%;
+      right: 15px;
+      width: 8px;
+      height: 8px;
+      margin-top: -4px;
+      background: #fff;
+      z-index: 6;
+    }
+
+    &:hover:after {
+      /*「after要素」のマウスオーバー（カラーを合わせる） */
+      background: #3ab2e9;
+    }
+  }
+}
+
+
+
+section.planLinks{
+h2.plan{
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 1!important;
+		text-align: center;
+		margin-bottom: 35px;
+    &::after{
+        width: 0;
+        height: 0;
+    }
+		@include break{
+			font-size: 20px!important;
+			line-height: 1!important;
+			margin-bottom: 20px!important;
+			padding: 0 !important;
+		}
+		span{
+			font-size: 24px;
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			@include break{
+				font-size: 18px;
+			}
+		}
+	}
+	p.leadPlan{
+		text-align: left;
+		width: 100%;
+		max-width: 630px;
+		margin: 0 auto 20px;
+		font-size: 16px;
+		@include break{
+			font-size: 14px;
+			padding: 0 4%;
+		}
+	}
+.plan_area{
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto 70px;
+		@include flex;
+		@include jc(space-between);
+		@include fw;
+		@include break{
+			margin-bottom: 35px;
+			display: block;
+			padding: 0 4%;
+		}
+		.plan_list{
+			width: 47%;/*426px;*/
+			@include break2{
+				&:nth-child(n+3){
+					margin-top: 50px;
+				}
+			}
+			@include break{
+				width: 100%;
+				&:nth-child(n+2){
+					margin-top: 25px;
+				}
+			}
+			p.ttl{
+				text-align: center;
+					margin-top: -40px;
+					@include break{
+						margin-top: -30px;
+					}
+				span{
+					display: inline-block;
+					line-height: 1;
+					padding: 20px 30px;
+					background: #fff;
+					font-size: 20px;
+					font-weight: bold;
+					@include break{
+						padding: 15px 20px;
+						font-size: 16px;
+					}
+				}
+			}
+			.txt_area{
+				padding: 0 6px;
+				@include break{
+					padding: 0 4%;
+				}
+				ul{
+					&.min {
+						min-height: 125px;
+						@include break {
+							min-height: 0;
+						}
+					}
+					li{
+						font-size: 16px;
+						position: relative;
+						padding-left: 10px;
+						line-height: 1.4;
+						font-feature-settings: "palt";
+						@include break{
+							font-size: 14px;
+						}
+						&:not(:last-child){
+							margin-bottom: 4px;
+						}
+						&:before{
+							content: "";
+							display: block;
+							width: 8px;
+							height: 8px;
+							border-radius: 10px;
+							position: absolute;
+							top: 7px;
+							left: 0;
+							background: #e40037;
+							@include break{
+								top: 5px;
+							}
+						}
+						span{
+							font-size: 14px;
+							@include break{
+								font-size: 12px;
+							}
+						}
+						sup {
+							font-size: .8em;
+							position: relative;
+							top: -5px;
+						}
+					}
+				}
+				dl {
+                    width: 100%;
+					display: flex;
+					margin-top: 20px;
+					dt {
+						width: 95px;
+						color: #e40037;
+					}
+					dd.planArea{
+						width:calc(100% - 95px) !important;
+						padding-left: 10px;
+						border-left: 1px solid #e40037;
+					}
+				}
+				p.recommend{
+					width: 100%;
+					margin: 20px 0;
+					@include flex;
+					@include break{
+						margin: 15px 0;
+					}
+					.red{
+						width: 85px;
+						text-align: center;
+						background: #e40037;
+						font-size: 14px;
+						border-radius: 50px 0 0 50px;
+						padding: 10px 0;
+						line-height: 1;
+						color: #fff;
+						@include flex;
+						@include ai;
+						@include jc(center);
+						@include break{
+							width: 70px;
+							font-size: 12px;
+						}
+					}
+					.gray{
+						width: calc(100% - 85px);
+						background: #e5e5e5;
+						padding: 10px 15px;
+						border-radius: 0 50px 50px 0;
+						line-height: 1;
+						font-size: 14px;
+						@include break{
+							width: calc(100% - 70px);
+							font-size: 12px;
+							padding: 10px;
+						}
+					}
+				}
+				a.btn {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 270px;
+					height: 50px;
+					margin: 0 auto;
+					border-radius: 25px;
+					background-color: #46c1be;
+					color: #fff;
+					font-weight: bold;
+					position: relative;
+					@include transition;
+					@include break {
+						width: 200px;
+						height: 40px;
+					}
+					&:hover {
+						opacity: .7;
+						text-decoration: none;
+					}
+					&::after {
+						content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png");
+						width: 30px;
+						height: 30px;
+						position: absolute;
+						top: 50%;
+						right: 20px;
+						transform: translateY(-50%);
+						@include break {
+							right: 10px;
+							transform: translateY(-50%) scale(.8);
+						}
+					}
+				}
+			}
+		}//_plan_list
+		p.caution {
+			width: 100%;
+			padding-top: 15px;
+			text-align: right;
+            font-size:12px;
+			@include break {
+				padding-top: 10px;
+			}
+		}
+	}//_plan_area
+
+}//.planLinks

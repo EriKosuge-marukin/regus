@@ -1,0 +1,115 @@
+.serch_map {
+	width: 100%;
+	max-width: 1060px;
+	margin: 0px auto;
+	display: block;
+}
+
+area{
+	border:none;
+	outline:none;
+	onFocus="this.blur();"
+}
+
+@media screen and (max-width: 991px) {
+	.serch_map {
+		width: 90%;
+	}
+}
+
+h1.map {
+    background: url(/common2/images/bg_white.gif) repeat-x left bottom #e10034;
+    line-height: 60px;
+    margin: 0 0 10px;
+    padding-left: 10px;
+    font-size: 140%;
+    font-weight: bold;
+    border-bottom: 4px solid #939696;
+    color: #ffffff;
+}
+.map_syuto_pc ,
+.map_syuto_sp,
+.map_zenkoku {
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 521px) {
+	.map_syuto_pc {
+		display: none;
+	}
+	.map_areaname {
+		font-size: 14ox;
+		color: #fff;
+		background-color: #78756c;
+		padding: 6px;
+	}
+}
+@media screen and (min-width: 520px) {
+	.map_syuto_sp {
+		display: none;
+	}
+	.map_areaname {
+		font-size: 16px;
+		color: #fff;
+		background-color: #78756c;
+		padding: 8px 8px 4px;
+	}
+}
+
+/* フレックスボックスの基本設定 等間隔（両端揃え）折返しあり */
+[class^="flex-col"] {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* コンテンツ下のマージン */
+.flex-child { margin-bottom: 20px; }
+
+/* 各カラム毎のコンテンツと疑似要素の横幅 */
+@media screen and (min-width: 768px) {
+	.flex-col2 .flex-child,
+	.flex-col4 .flex-child2 { width: calc( (100% - 20px) / 2 ); }
+	
+	.flex-col4::before,
+	.flex-col4::after,
+	.flex-col4 .flex-child { width: calc( (100% - 60px) / 4 ); }
+}
+@media screen and (max-width: 767px) {
+	.flex-col2 .flex-child,
+	.flex-col4 .flex-child2 { width: calc( (100% - 10px) / 2 ); }
+	
+	.flex-col4::before,
+	.flex-col4::after,
+	.flex-col4 .flex-child { width: calc( (100% - 30px) / 4 ); }
+}
+/* 最終行は両端揃えにしない
+.flex-col3::after,
+.flex-col4::before,
+.flex-col4::after { content: ""; } 
+
+.flex-col4::before { order: 1; }*/
+
+/* レスポンシブ対応 */
+
+/* 991px以下で4列 → 3列 
+@media screen and (max-width: 991px) {
+	.flex-col4::after,
+	.flex-col4 .flex-child { width: calc( (100% - 20px) / 3 ); }
+}*/
+
+/* 767px以下で4列・3列 → 2列 */
+@media screen and (max-width: 521px) {
+	.flex-col3 .flex-child,	
+	.flex-col4 .flex-child { width: calc( (100% - 10px) / 2 ); }
+	.flex-col2 .flex-child,
+	.flex-col4 .flex-child2 { width: 100%; }
+}*/
+
+/* 575px以下で全て1列 */
+@media screen and (max-width: 520px) {
+	.flex-col2 .flex-child
+	/*.flex-col3 .flex-child,
+	.flex-col4 .flex-child,
+	.flex-col4 .flex-child2*/ { width: 100%; }
+}

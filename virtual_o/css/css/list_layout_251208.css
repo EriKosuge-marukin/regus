@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+/*----PC----*/
+@media screen and (min-width: 750px) {
+ 
+.wrapper .leadTxt{
+  background-color:#ccc9bd;
+  padding:0; 
+}
+
+.wrapper .leadTxt p.flL{
+  width:300px;
+}
+.wrapper .leadTxt div{
+  float:right;
+  width:440px;
+  margin:10px;
+}
+.wrapper .leadTxt span.vistxt{
+	padding:10px 0 5px 0;
+	font-size:120%;
+	display:block;
+	font-weight: bold;
+}
+/*--バーチャルオフィス一覧上部　20170411-------------------------------------*/
+p.to_bgw {
+	text-align: center;
+	margin-top: 1rem;
+}
+p.to_bgw img {
+	width: 60%;
+	height: auto;
+}
+
+/*--areaBox-----------------------------*/
+
+.wrapper .areaBox{
+  background-color:#f2f2f2;
+  padding:20px 0;
+}
+.wrapper .areaBox .boxL{
+  float:left;
+  margin:0 0 0 25px;
+  width:395px;
+}
+.wrapper .areaBox .boxR{
+   float: left;
+   margin:0;
+   width:350px;
+}
+.wrapper .areaBox .boxL p,
+.wrapper .areaBox .boxR p{
+  margin-bottom:15px;
+}
+
+.wrapper .areaBox .boxR li{
+  float:left;
+  display:table;
+  margin:0 5px 5px 0;
+  width:60px;
+  height:36px;
+  background-color:#e0e0e0;
+}
+
+.wrapper .areaBox .boxL li{
+  float:left;
+  display:table;
+  margin:0 5px 5px 0;
+  width:118px;
+  height:36px;
+  background-color:#e0e0e0;
+}
+.wrapper .areaBox .boxL li a,
+.wrapper .areaBox .boxR li a{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+
+/*--ttl--------------------------*/
+
+.wrapper .roomList{
+  margin:40px 0 0 0;
+}
+
+.wrapper .roomList h2{
+	/*width:120px;float:left;*/
+	font-size:150%;
+	padding:10px 15px;
+	margin:0 0 5px 0;
+	text-align:left;
+	background-image:none;
+	background-color:#ccc9bd;
+}
+/*.wrapper .roomList p{
+	width:630px;
+	float:left;
+	padding-left:20px;
+	background-color:#77756b;
+	line-height:50px;
+	color:#ffffff;
+}*/
+
+/*--listBox-------------------------*/
+.wrapper .listUnit{
+  margin:0 0 5px 0;
+  background-color:#f2f2f2;
+}
+.wrapper .listUnit dl{
+  padding:5px;
+  /*background-color:#f2f2f2;*/
+}
+.wrapper .listUnit dl dt{     
+  padding-top : 10px;    
+  padding-bottom : 10px;
+  padding-left : 10px;
+  width : 174px;
+/* 左寄せ */
+  float : left;
+/* float解除 */
+  clear : both;
+}
+
+.wrapper .listUnit dl dd{
+  padding : 5px 15px;
+/* dtの幅分の設定 */
+  margin :10px 3px 3px 174px;
+  background:#ffffff;
+}
+.wrapper .listUnit dl dd h3{
+	font-size:180%;
+	line-height:1.0;
+	font-weight:bold;
+	margin:7px 0 0 0;
+}
+.wrapper .listUnit dd p{
+	margin:0;
+	padding:3px;
+}
+.wrapper .listUnit dd p:nth-child(2){
+	padding:5px 3px 3px 3px;
+	margin:5px 0 2px 0;border-top:2px #eee solid;
+}
+.wrapper .listUnit table{
+width:99%;
+border-collapse: collapse;
+padding:0;
+margin:5px 0 0;
+}
+.wrapper .listUnit table th{
+padding: 10px 6px;
+text-align: left;
+vertical-align: top;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+color:#ffffff;
+font-size:12px;
+line-height:1.3;
+}
+.wrapper .listUnit table th:nth-child(1){
+	background:#ffffff;
+}
+.wrapper .listUnit table th:nth-child(2){
+	background:#9977a0;
+}
+.wrapper .listUnit table th:nth-child(3){
+	background:#509857;
+}
+.wrapper .listUnit table th:nth-child(4){
+	background:#e48c0f;
+}
+.wrapper .listUnit table th:nth-child(5){
+	background:#dc7b8d;
+}
+.wrapper .listUnit table td{
+padding: 3px 15px;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+width:21% !important;
+text-align:center;
+vertical-align: middle;
+}
+.wrapper .listUnit table td:nth-child(1){
+	width:12% !important;
+	background:#dddddd;
+	padding: 3px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+/*--btnBox-------------------------*/
+.wrapper .btnSpc{
+  clear:both;
+  padding:10px 0 0 0;
+  text-align:right;
+}
+
+.wrapper .btnSpc ul{
+  float:right;
+}
+
+.wrapper .btnSpc ul li{
+  float:left;
+  margin-right:20px;
+}
+
+.wrapper .btnSpc ul li:last-child{
+  margin-right:0;
+}
+
+.wrapper .btnSpc ul li.otArea a{
+  display:inline-block;
+  background:url(/virtual_o/images/icn_red_dwn.png) no-repeat right center;
+  padding:0 25px 0 0;
+}
+
+.wrapper .btnSpc ul li.pgTop a{
+   display:inline-block;
+  background:url(/virtual_o/images/icn_gray_up.png) no-repeat right center;
+  padding:0 25px 0 0;
+}
+
+}
+
+/*----SP----*/
+@media screen and (max-width: 750px) {
+ 
+.wrapper .contents img.pcImg{
+  display:none;
+}
+
+.wrapper .contents img{
+  display: block;
+  height: auto;
+  text-align: center;
+  width:100%;
+}
+/*--バーチャルオフィス一覧上部　20170411--------------*/
+p.to_bgw {
+	text-align: center;
+	margin-top: 1rem;
+}
+p.to_bgw img {
+	width: 80%;
+	height: auto;
+}
+/*----------*/
+
+.spBr{
+  display:block;
+}
+
+.wrapper .leadTxt{
+  background-color:#ccc9bd;
+  padding:15px 0; 
+}
+
+.wrapper .leadTxt p.flL{
+	  float:none;
+  width:55%;
+  margin:0 auto;
+}
+.wrapper .leadTxt div{
+  float:none;
+  width:90%;
+  margin:5px auto;
+}
+.wrapper .leadTxt span.vistxt{
+	padding:10px 0 0px 0;
+	font-size:120%;
+	display:block;
+	font-weight: bold;
+}
+
+/*--ttl--------------------------*/
+.wrapper .roomList{
+	margin:5% 0 0;
+}
+.wrapper .roomList h2{
+	font-size:170% !important;
+	text-align:center;
+	background-image:none;
+	background-color:#ccc9bd;
+	padding: 18px 3%;
+	margin:5% 0 0;
+	line-height:1;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+/*.wrapper .roomList p{
+	background-color:#77756b;
+	color:#ffffff;
+	padding:3%;
+}*/
+
+
+/*--areaBox-----------------------------*/
+
+.wrapper .areaBox{
+  background-color:#f2f2f2;
+  padding:15px 0;
+}
+.wrapper .areaBox .boxL{
+  float:none;
+  margin:0 auto 10px 9%;
+}
+.wrapper .areaBox .boxR{
+  float:none;
+  margin:0 auto 0 9%;
+}
+.wrapper .areaBox .boxL p,
+.wrapper .areaBox .boxR p{
+  margin-bottom:15px;
+}
+
+.wrapper .areaBox .boxR li{
+  float:left;
+  display:table;
+  margin:0 5px 5px 0;
+  width:60px;
+  height:36px;
+  background-color:#e0e0e0;
+}
+
+.wrapper .areaBox .boxL li{
+  float:left;
+  display:table;
+  margin:0 5px 5px 0;
+  width:118px;
+  height:36px;
+  background-color:#e0e0e0;
+}
+.wrapper .areaBox .boxL li a,
+.wrapper .areaBox .boxR li a{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+/*--listBox-------------------------*/
+.wrapper .listUnit{
+  margin:0 0 5px 0;
+  background-color:#f2f2f2;text-align:center;
+}
+.wrapper .listUnit dl{
+  padding:5px;
+  /*background-color:#f2f2f2;*/
+}
+.wrapper .listUnit dl dt{     
+  width : 50%;
+/* 左寄せ */
+  float : none;
+/* float解除 */
+  clear : both;
+  margin:0 auto 5px auto;
+  
+}
+
+.wrapper .listUnit dl dd{
+	text-align:left;
+  padding : 3px;
+/* dtの幅分の設定 */
+  margin :2px;
+  background:#ffffff;
+}
+.wrapper .listUnit dl dd h3{
+	font-size:160%;
+	line-height:1.0;
+	font-weight:bold;
+	margin:7px 0 0 0;
+}
+.wrapper .listUnit dd p{
+	margin:0;
+	padding:3px;
+}
+.wrapper .listUnit dd p:nth-child(2){
+	padding:10px;
+	margin:5px 0 2px 0;border-top:2px #eee solid;
+	font-size: larger;
+	line-height: 1.8rem;
+}
+.wrapper .listUnit dd p:nth-child(2) img{
+	width:30%;display:inline;
+}
+.wrapper .listUnit dd p:nth-child(3) img{
+	width:70%;
+	margin:5px 15% 5px auto;
+	display:block;
+}
+.wrapper .listUnit table{
+width:100%;
+border-collapse: collapse;
+padding:0;
+margin:5px 0 0;
+font-size:10px;
+line-height:1.3;
+}
+.wrapper .listUnit table th{
+padding: 8px 3px;
+text-align: left;
+vertical-align: top;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+color:#ffffff;
+font-size:10px;
+line-height:1.3;
+letter-spacing:-1px;
+}
+.wrapper .listUnit table th br{
+	display:none;
+}
+.wrapper .listUnit table th:nth-child(1){
+	background:#ffffff;
+}
+.wrapper .listUnit table th:nth-child(2){
+	background:#9977a0;
+}
+.wrapper .listUnit table th:nth-child(3){
+	background:#509857;
+}
+.wrapper .listUnit table th:nth-child(4){
+	background:#e48c0f;
+}
+.wrapper .listUnit table th:nth-child(5){
+	background:#dc7b8d;
+}
+.wrapper .listUnit table td{
+padding: 10px 3px;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+font-size:10px;
+line-height:1.3;
+text-align:center;
+vertical-align:middle;
+width:21% !important;
+}
+.wrapper .listUnit table td:nth-child(1){
+	width:14% !important;
+	background:#dddddd;
+	font-size:10px;
+line-height:1.0;
+}
+
+
+
+
+
+
+
+
+
+/*--btnBox-------------------------*/
+.wrapper .btnSpc{
+  clear:both;
+  padding:10px 0 0 0;
+  text-align:right;
+}
+
+.wrapper .btnSpc ul{
+  float:right;
+}
+
+.wrapper .btnSpc ul li{
+  float:left;
+  margin-right:20px;
+}
+
+.wrapper .btnSpc ul li:last-child{
+  margin-right:0;
+}
+
+.wrapper .btnSpc ul li.otArea a{
+  display:inline-block;
+  background:url(/meeting_r2/images/icn_red_dwn.png) no-repeat right center;
+  padding:0 25px 0 0;
+}
+
+.wrapper .btnSpc ul li.pgTop a{
+   display:inline-block;
+  background:url(/meeting_r2/images/icn_gray_up.png) no-repeat right center;
+  padding:0 25px 0 0;
+}
+
+}
+
+

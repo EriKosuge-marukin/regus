@@ -1,0 +1,1814 @@
+@charset "utf-8";
+@import 'mixin';
+
+
+
+
+header.virtual {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+
+  .inner1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+      @include break{
+               padding: 3px 0;
+          }
+  }
+
+  .hd_logo {
+    flex: 0 0 auto; // 左側固定
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+         @include break{
+             max-width: 70%;
+          }
+    }
+  }
+
+  .vir_nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end; // 右寄せ
+    align-items: center;
+    gap: 14px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        font-size: 0.8rem;
+        color: #000;
+        cursor: pointer;
+        transition: color 0.3s ease;
+          @include break{
+              margin-top: 3px;
+              font-size: clamp(8px,2vw,24px);
+              line-height: 1.0;
+          }
+        &:hover {
+          color: #ccc;
+        }
+      }
+    }
+
+    // ボタン部分
+    .gnav_vir_btn {
+      margin: 0;
+         @include break{
+               display: none;
+          }
+      a {
+        display: inline-block;
+        padding:6px 30px;
+        background:  #E41D3A;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: clamp(10px, 1.0vw, 16px);
+          line-height: 1.2;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: #f35a6f;
+        }
+      }
+
+      &.btn-circle-right {
+        position: relative;
+          a::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 5px;
+          width: 16px;
+          height: 16px;
+          margin: auto;
+          border-radius: 20px;
+          background-color: #fff;
+        }
+        a::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 11px;
+          width:6px;
+          height: 6px;
+          margin: auto;
+                  border-top: 2px solid #E41D3A;
+          border-right: 2px solid #E41D3A;
+          transform: rotate(45deg);
+          box-sizing: border-box;
+        }
+      }//btn-circle-right
+    }
+  }
+
+  // レスポンシブ対応（スマホ幅では縦積み）
+  @media (max-width: 768px) {
+    .inner1 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .vir_nav {
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      ul {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .gnav_vir_btn {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+/*------------------finish NAV---------------*/
+
+.main_contents {
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 16px;
+	@include break {
+		font-size: 14px;
+	}
+	* {
+		box-sizing: border-box;
+	}
+}
+
+.ov {
+	@include transition;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.pc {
+	@include break {
+		display: none;
+	}
+}
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+h2 {
+    padding: 0 !important;
+	margin: 0 auto 10px auto;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+    
+	@include break {
+        line-height: 1.3 !important;
+		margin-bottom: 8px;
+		font-size: 24px !important;
+	}
+	span {
+		display: block;
+		font-size: 24px;
+        
+		font-weight: inherit;
+		@include break {
+			font-size: 18px;
+             line-height: 1.5;
+		}
+	}
+}
+
+p {
+	line-height: 1.8;
+	@include break {
+		line-height: 1.5;
+	}
+}
+
+
+
+
+.cntWrap {
+	@include flex;
+	@include jc(space-between);
+	@include ai(flex-start);
+	@include fw(wrap);
+	.cntBox {
+		img {
+			margin-bottom: 8px;
+		}
+		p {
+			line-height: 1.4;
+		}
+	}
+}
+
+/*------------------begin MAIN---------------*/
+
+.vir_main {
+    
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  background: #fff;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 50px auto;
+     @include break{max-width: 100%;
+         text-align: center;
+         display: grid;
+          flex-direction: column;
+         
+      }
+
+  .vir_mainA {
+    width: 55%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2%;
+      @include break{
+          order: 2; // テキストを下に
+    width: 100%;
+    padding: 0 5%;
+      }
+
+    h1 {
+      font-weight: 700;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 1.5em;
+        margin: 70px auto 10px;
+        @include break{margin: 10px auto 8px;}
+      span {
+        display: block;
+          &.h1one{font-size: clamp(28px,3.5vw, 55px);
+      font-weight: 900;
+      line-height: 1.4;}
+          &.h1two{font-size: clamp(40px, 6vw, 70px);
+      font-weight:900;
+      line-height: 1.3;letter-spacing: -5px;
+            .h1twotwo{font-size: clamp(20px, 1.8vw, 32px);
+      font-weight: 500;
+      line-height: 1.6;display: inline !important;}
+          }
+          
+          &.h1three{font-size: clamp(24px, 2.8vw,40px);
+      font-weight: 700;
+      line-height: 1.6;}
+      }
+    }
+
+    .vir_logo {
+      img {
+        max-width: 160px;
+        height: auto;
+        display: inline-block;
+      }
+    }
+
+    .vir_main_apply_txt {
+      font-size: 1.2rem;
+      color: #000;
+      margin: 20px auto 0;
+      font-weight: 900;
+        
+    }
+
+    .vir_main_apply {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 20px auto 0 auto;
+          gap: 0; // 重なりを自然に見せるため gapは0
+          text-align: center;
+        width: 100%;
+        @include break{margin: 20px auto 0 auto;}
+  
+  .btn_fast {
+    position: relative;
+    z-index: 2;
+      width: 200px;
+      margin: 0 auto -15px auto;
+  }
+.vir_main_apply-btn{
+            position:relative;
+            margin: 0 auto;
+   
+     max-width: 450px; /* 親として100%確保 */
+     width: 90%;
+  display: flex;
+  justify-content: center;  /* 中央寄せ */
+  a {
+    flex: 0 0 auto;         /* ← flex収縮を禁止 */
+             /* ← 実際に欲しい幅 */
+    width: 100%;        /* ← 画面幅が小さい時は自動で縮小 */
+    height: 60px;
+    background: #d71a34;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 40px;
+    font-size: clamp(16px, 1.5vw, 24px);
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: #b50000;
+    }
+  }//a
+    
+     &.btn-circle2 {
+        position: relative;
+          a::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0px;
+          right: 25px;
+          width: 20px;
+          height: 20px;
+          margin: auto;
+          border-radius: 20px;
+          background-color: #fff;
+        }
+        a::after {
+          content: '';
+          position: absolute;
+          top: 0;
+         bottom: 0px;
+          right: 32px;
+          width:9px;
+          height:9px;
+          margin: auto;
+                  border-top: 2px solid #d71a34;
+          border-right: 2px solid #d71a34;
+          transform: rotate(45deg);
+          box-sizing: border-box;
+        }
+      }//btn-circle-right
+ 
+}//vir_main_apply-btn
+      
+      
+      }//.vir_main_apply
+  }
+
+  .vir_mainB {
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 45%;
+  margin: 0;
+  padding: 0;
+  gap: 0; /* ← 隙間をなくす */
+     @include break{
+          margin:0 auto 20px auto;
+           order: 1; // 画像を上に
+    width: 100%;
+      }
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    }
+
+  // レスポンシブ対応
+/* @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+
+    .vir_mainA, .vir_mainB {
+      width: 100%;
+    }
+
+    .vir_mainA {
+      order: 1;
+    }
+    .vir_mainB {
+      order: 2;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .vir_mainB {
+      grid-template-columns: 1fr;
+    }
+  }*/
+}
+}
+  /* Safari */
+_::-webkit-full-page-media, _:future, :root .vir_mainB img {
+    height: 50%;
+}
+
+/* まず、.vir_main配下はボックスサイズを統一 */
+.vir_main, .vir_main * { box-sizing: border-box; }
+
+/* 画像タイルの誤差対策（念のため） */
+.vir_mainB, .vir_mainB * { min-width: 0; }
+
+/* 既存のコードは活かしつつ、@include break での上書きだけ差し替え/追記 */
+.vir_main {
+  /* 既存: display:flex ... */
+
+  /* ▼ブレークポイント（=あなたの@mixin）での上書き */
+  @include break {
+    /* 親は1カラムのグリッド(またはblock)にして横の余白を出さない */
+    display: grid;              /* ← gridを使うなら1カラムに固定 */
+    grid-template-columns: 1fr; /* ← 1カラム */
+    row-gap: 0;              /* 好みで余白調整。完全にゼロでもOK */
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto 50px auto;   /* 既存値を維持 */
+    padding-inline: 0;          /* 横のはみ出し防止 */
+
+    /* 子要素の幅指定をリセット（%幅が残ると右に隙間が出やすい） */
+    .vir_mainA, .vir_mainB {
+      width: 100% !important;
+      margin: 0;
+    }
+
+    /* 並び順の入れ替え：画像を上、テキストを下 */
+    .vir_mainB { order: 1; }
+    .vir_mainA { order: 2; }
+
+    /* テキスト側の内側余白はOK（box-sizingで総幅に含める） */
+    .vir_mainA { padding: 0 5%; text-align: center; }
+
+    /* 画像エリア：2×2で隙間なし。誤差防止にminmax(0,1fr)を採用 */
+    .vir_mainB {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      margin: 0 auto 20px auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover; /* タイルにぴったり */
+      }
+    }
+  }
+}
+
+/*------------------finish main---------------*/
+.customer_logo {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: clamp(18px, 2vw, 24px);
+  }
+
+  .cust_list {
+    width: 80%;
+      margin: 0 auto;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      width: calc((100% - 56px * 5) / 6); // 6列中、5箇所に56pxの余白
+      margin-right: 56px;
+      margin-bottom: 35px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+      }
+
+      /* 6列目の右余白をゼロに */
+      &:nth-child(6n) {
+        margin-right: 0;
+      }
+
+      /* 2行目（7〜12番目）の下余白をゼロに */
+      &:nth-child(n + 7) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  /* =======================
+     レスポンシブ対応
+  ======================= */
+  @media (max-width: 1000px) {
+    .cust_list ul li {
+      width: calc((100% - 40px * 4) / 5); // 5列
+      margin-right: 40px;
+      margin-bottom: 36px;
+
+      &:nth-child(5n) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 11) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cust_list ul li {
+      width: calc((100% - 30px * 3) / 4); // 4列
+      margin-right: 30px;
+      margin-bottom: 28px;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+      &:nth-child(n + 9) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cust_list ul li {
+      width: calc((100% - 20px) / 2); // 2列
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+    .cam_banner{
+        margin: 50px auto 60px;
+    }
+}
+
+
+/*------------------CUSTOMER LOGP---------------*/
+
+.vir_explanation {
+  // max-width: 1220px;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto 50px auto;
+  background: #f5f5f5;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
+  gap: 30px;
+  padding: 24px 45px;
+  box-sizing: border-box;
+  line-height: 1.8;
+  color: #222;
+  font-size: 16px;
+
+  /* 左側テキスト部分 */
+  .vir_explanationA {
+    flex: 1 1 50%;
+    max-width: 77%;
+    margin: 0 auto;
+    @include break {
+      max-width: 92%;
+      }
+  }
+
+  /* 右側ポイントリスト */
+  .vir_explanationB {
+    flex: 1 1 45%;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+      text-align: center;
+      @include break {
+        display: block;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    li {
+      // display: flex;
+      align-items: center;
+      border-radius: 4px;
+      font-weight: 700;
+      color: #000;
+      font-size: clamp(16px,1.8vw,18px);
+      line-height: 1.5;
+      padding: 10px 16px 0;
+      box-sizing: border-box;
+      transition: background 0.3s ease;
+      @include break {
+        padding: 15px 0 5px;
+      }
+
+      &:hover {
+        background: #eee;
+      }
+
+      span {
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 50px;
+        padding: 6px 25%;
+        font-size: 12px;
+        margin-right: 10px;
+        flex-shrink: 0; /* POINTラベルの幅を固定 */
+        letter-spacing: 0.05em;
+      }
+      p{
+        font-weight: bold;
+        height: 45px;
+        margin: 15px 0;
+        line-height: 1.3;
+      }
+    }
+
+    /* 最後のliの余白を消す */
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /* レスポンシブ対応 */
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 20px;
+
+    .vir_explanationA,
+    .vir_explanationB {
+      flex: 1 1 100%;
+    }
+
+    .vir_explanationB li {
+      font-size: 14px;
+    }
+  }
+}
+
+/*------------------バーチャルオフィスとは---------------*/
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    &::before,&::after {
+    content: "";
+    background-color: #000066;
+    height: 3px;
+    width: 40px;
+       
+    }
+    &::before {
+    margin-right: 5px;
+    transform: rotate(60deg); 
+    }
+    &::after {
+    margin-left: 5px;
+    transform: rotate(-60deg); 
+    }
+    @include break {
+		font-size: 18px !important;
+	}
+}
+
+
+section.cvcv {
+	max-width: 998px;
+	width: 94%;
+	margin: 60px auto 100px;
+	@include break {
+		margin: 0 auto 58px;
+	}
+}
+
+.btn2-CAM{display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+    margin: 20px auto 60px auto;
+    @include break {display: block;
+    width: 85%;}
+    li{width: 40%;
+        margin-right: 10px;
+        @include break {width: 100%;margin: 0px 0 10px 0px;}
+        
+.btn_GREEN {
+	text-align: center;
+    &.mgB50{
+        margin-bottom: 50px;
+        @include break {margin-bottom: 30px;}
+        
+    }
+
+    a{
+	&.btn_arrow {
+  position: relative;
+  display: block;
+  width: 100%;
+		margin: 0 auto;
+  padding: 15px;
+  color: #fff;
+		font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  background:#46c1be;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+	@include break {width:100%;
+		font-size: 16px;
+		line-height: 1.3;
+		padding: 15px;
+		}
+	&:before,&:after{
+			content: "";
+  position: absolute;
+  top: 50%;
+		}//__beforeAfter
+&:before {
+  right: 7px;
+  width: 40px;
+  height:40px;
+  margin: -20px 0 0;
+  background:#fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+	@include break {
+		 width: 30px;
+  height:30px;
+  margin: -15px 0 0;
+	}
+}
+&:after {
+  right: 20px;
+  width: 13px;
+  height: 13px;
+  margin: -10px 0 0;
+  border-top: solid 5px #46c1be;
+  border-right: solid 5px #46c1be;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	@include break{
+		right: 17px;
+  width: 8px;
+  height: 8px;
+  margin: -6px 0 0;
+	}
+}
+}//_btn_arrow
+}//_a
+}
+.btn_RED{
+	text-align: center;
+    &.mgB50{
+        margin-bottom: 50px;
+        @include break{margin-bottom: 30px;}
+        
+    }
+
+    a{
+	&.btn_arrow {
+  position: relative;
+  display: block;
+  width: 100%;
+		margin: 0 auto;
+  padding: 15px;
+  color: #fff;
+		font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  background:#E41D3A;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+	@include break {width:100%;
+		font-size: 16px;
+		line-height: 1.3;
+		padding: 15px;
+		}
+	&:before,&:after{
+			content: "";
+  position: absolute;
+  top: 50%;
+		}//__beforeAfter
+&:before {
+  right: 7px;
+  width: 40px;
+  height:40px;
+  margin: -20px 0 0;
+  background:#fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+	@include break {
+		 width: 30px;
+  height:30px;
+  margin: -15px 0 0;
+	}
+}
+&:after {
+  right: 20px;
+  width: 13px;
+  height: 13px;
+  margin: -10px 0 0;
+  border-top: solid 5px #E41D3A;
+  border-right: solid 5px #E41D3A;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	@include break {
+		right: 17px;
+  width: 8px;
+  height: 8px;
+  margin: -6px 0 0;
+	}
+}
+}//_btn_arrow
+}//_a
+}
+        &:last-child{margin-right: 0;}
+    }
+}
+
+
+.sec01TYPE {
+    max-width: 1220px;
+    // display: flex;
+    width: 94%;
+    // margin: 0 auto 40px;
+    margin: 65px auto 90px;
+    justify-content: center;
+	@include break {
+		margin: 0 auto 58px;
+	}
+		
+		// .cntWrap {
+		// 	.left,.right {
+		// 		width: 50%;
+		// 		@include break {
+		// 			width: 100%;
+		// 		}
+		// 	}
+		// 	.left {
+		// 		@include break {
+		// 			margin-bottom: 14px;
+		// 		}
+		// 		h3 {
+		// 			margin-bottom: 8px;
+		// 			font-size: 24px;
+		// 			font-weight: bold;
+		// 			@include break {
+		// 				text-align: center;
+		// 				margin-bottom: 6px;
+		// 				font-size: 22px;
+		// 			}
+		// 		}
+		// 	}
+		// 	.right {
+		// 		padding: 0 2%;
+		// 		text-align: right;
+		// 		@include break {
+		// 			text-align: center;
+		// 		}
+		// 	}
+		// }
+		.who {
+			margin: 70px 0 0 0;
+      width: 580px;
+			@include break {margin:35px auto;}
+		  h3 {
+			  // text-align: center;
+			width: 100%;
+			font-size: 28px;
+			font-weight: bold;
+			position: relative;
+			margin-bottom: 30px;
+			@include break {
+				font-size: 22px;
+				margin-bottom: 15px;
+			}
+			// &:after {
+			// 	content: '';
+			// 	display: block;
+			// 	width: 104px;
+			// 	height: 1px;
+			// 	background: #6d583a;
+			// 	position: absolute;
+			// 	bottom: -5px;
+			// 	left: calc(50% - 52px);
+			// }
+			}
+			>ul{
+				// width: 580px;
+        // margin: 0 auto;
+				@include break {
+					// width: 92%;
+					// margin: 0 auto;
+				}
+				li{font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+					font-size: 125%;
+					line-height: 3;
+					vertical-align: middle;
+					margin-bottom: 0px;
+					border-bottom:1px dashed #666666;
+					color: #444444;
+					padding-left: 40px;
+					background: url("../img/virtual/who_check.png") no-repeat 0px 50%;
+					@include break {
+					font-size:100%;	
+						line-height:1.5;
+						background: url("../img/virtual/who_check.png") no-repeat 3px 50%;
+						background-size: 20px 20px;
+						padding: 10px 0 10px 35px;
+					}
+				}//_li
+			}//_ul
+		}//_who
+
+    .conv_half{
+      background-color: #f5f5f5;
+      padding: 20px 30px;
+      text-align: center;
+      margin: auto;
+      width: 528px;
+      h3{
+        font-size: 28px;
+        font-weight: bold;
+        @include break{
+          font-size: 25px;
+        }
+      }
+      .lead_txt{
+        font-size: 20px;
+        font-weight: bold;
+        @include break{
+          font-size: 18px;
+        }
+        span{
+          font-size: 30px;
+          font-weight: bold;
+          @include break{
+          font-size: 25px;
+        }
+        }
+      }
+      .discount01{
+        font-size: 120px;
+        color: #d71a34;
+        font-weight: bold;
+        line-height: 120px;
+        @include break{
+          font-size: 100px;
+        }
+      }
+      .discount02{
+        font-size: 36px;
+        color: #d71a34;
+        font-weight: bold;
+        @include break{
+          font-size: 30px;
+        }
+      }
+      .discount03{
+        font-size: 50px;
+        color: #d71a34;
+        font-weight: bold;
+        @include break{
+          font-size: 40px;
+        }
+      }
+      .btn_fast {
+        position: relative;
+        z-index: 2;
+        width: 250px;
+        margin: 0 auto -38px auto;
+        @include break{
+          margin: -5px auto -15px auto;
+        }
+    }
+    .vir_main_apply-btn{
+      position:relative;
+      margin: 0 auto;
+      max-width: 450px; /* 親として100%確保 */
+      // width: 90%;
+      display: flex;
+      justify-content: center;  /* 中央寄せ */
+     a {
+      flex: 0 0 auto;         /* ← flex収縮を禁止 */
+              /* ← 実際に欲しい幅 */
+      width: 100%;        /* ← 画面幅が小さい時は自動で縮小 */
+      height: 100px;
+      background: #d71a34;
+      color: #fff;
+      text-decoration: none;
+      // font-weight: bold;
+      border-radius: 50px;
+      // font-size: clamp(16px, 2vw, 24px);
+      font-size: 28px;
+      transition: background 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include break{
+        font-size: 18px;
+        height: 60px;
+        border-radius: 30px;
+      }
+    &:hover {
+      background: #b50000;
+    }
+  }//a
+    
+     &.btn-circle2 {
+        position: relative;
+          a::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0px;
+          right: 25px;
+          width: 20px;
+          height: 20px;
+          margin: auto;
+          border-radius: 20px;
+          background-color: #fff;
+        }
+        a::after {
+          content: '';
+          position: absolute;
+          top: 0;
+         bottom: 0px;
+          right: 32px;
+          width:9px;
+          height:9px;
+          margin: auto;
+                  border-top: 2px solid #d71a34;
+          border-right: 2px solid #d71a34;
+          transform: rotate(45deg);
+          box-sizing: border-box;
+        }
+      }//btn-circle-right
+ 
+}//vir_main_apply-btn
+    }
+	}//sec01TYPE
+
+
+    .conv_half_vir_main_apply{
+      margin-bottom: 16px;
+      @include break{
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+      .btn_fast {
+        position: relative;
+        z-index: 2;
+        // width: 250px;
+        width: 500px;
+        // margin: 0 auto -32px auto;
+        margin: 0 auto -23px auto;
+        @include break{
+          margin: -5px auto -15px auto;
+          width: 200px;
+        }
+    }
+    .vir_main_apply-btn{
+      position:relative;
+      margin: 0 auto;
+      max-width: 450px; /* 親として100%確保 */
+      // width: 90%;
+      display: flex;
+      justify-content: center;  /* 中央寄せ */
+     a {
+      flex: 0 0 auto;         /* ← flex収縮を禁止 */
+              /* ← 実際に欲しい幅 */
+      width: 590px;        /* ← 画面幅が小さい時は自動で縮小 */
+      height: 100px;
+      background: #d71a34;
+      color: #fff;
+      text-decoration: none;
+      // font-weight: bold;
+      border-radius: 50px;
+      // font-size: clamp(16px, 2vw, 24px);
+      font-size: 28px;
+      transition: background 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include break{
+        font-size: 16px;
+        line-height: 1.3;
+        text-align: center;
+        height: 60px;
+        width: 300px;
+        border-radius: 30px;
+      }
+    &:hover {
+      background: #b50000;
+    }
+  }//a
+    
+     &.btn-circle2 {
+        position: relative;
+          a::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0px;
+          right: -35px;
+          width: 35px;
+          height: 35px;
+          margin: auto;
+          border-radius: 20px;
+          background-color: #fff;
+          @include break{
+          right: 12px;
+          }
+        }
+        a::after {
+          content: '';
+          position: absolute;
+          top: 0;
+         bottom: 0px;
+          right: -22px;
+          width:13px;
+          height:13px;
+          margin: auto;
+          border-top: 5px solid #d71a34;
+          border-right: 5px solid #d71a34;
+          transform: rotate(45deg);
+          box-sizing: border-box;
+          @include break{
+          right: 25px;
+          }
+        }
+      }//btn-circle-right
+ 
+}//vir_main_apply-btn
+
+
+
+
+section {
+	&.sec02 {
+    max-width: 920px;
+    width: 94%;
+    margin: 100px auto 0;
+    @include break {
+      margin: 50px auto 58px;
+    }
+		h2{
+				margin-bottom: 50px;
+				@include break {
+					margin-bottom:20px;
+				}
+			}
+			.cntBox {
+				// width: 30%;
+				// text-align: center;
+        display: flex;
+        margin-bottom: 35px;
+				@include break {
+					width: 80%;
+          margin: 0 auto;
+          flex-wrap: wrap;
+					&:not(:nth-last-of-type(1)) {
+						margin-bottom: 28px;
+					}
+				}
+				img {
+          margin: auto 0;
+          margin-top: 0;
+				}
+				h3 {
+					margin-bottom: 10px;
+					font-size: 24px;
+					font-weight: bold;
+					@include break {
+						margin: 10px 0 8px;
+					}
+				}
+				p {
+          font-size: 16px;
+					text-align: left;
+          line-height: 1.7;
+				}
+        div{
+          margin-left: 16px;
+        }
+			}
+		}
+	// }//_sec02
+
+
+
+	&.sec03 {
+		margin: 0 auto 40px;
+		text-align: center;
+		@include break {
+			margin: 0 auto 30px;
+		}
+		>img:nth-of-type(1) {
+			margin-bottom: 40px;
+			@include break {
+				margin-bottom: 18px;
+			}
+		}
+		p {
+			max-width: 800px;
+			width: 100%;
+			margin: 0 auto 30px;
+			padding: 5px 0;
+			font-size: 12px;
+			text-align: right;
+			@include break {
+				margin: 0 auto 18px;
+			}
+		}
+		h3 {
+			width: 100%;
+			font-size: 30px;
+			font-weight: bold;
+			position: relative;
+      margin-top: 100px;
+			margin-bottom: 80px;
+			@include break {
+				font-size: 22px;
+				margin-bottom: 20px;
+			}
+		}
+    ul{
+      display: flex;
+      max-width: 1060px;
+      margin: 0 auto;
+      justify-content: end;
+      padding-bottom: 5px;
+      align-items: center;
+      @include break {
+        min-width: 464px;
+        font-size: 0.7rem;
+        margin: 0 10px;
+        align-items: end;
+			}
+    }
+    .plan_li:nth-of-type(4)::before {
+      content: "";
+      width: 2px;
+      height: 40px;
+      background-color: currentColor;
+      transform: skew(20deg);
+      margin-bottom: 6px; 
+      @include break {
+				height: 25px;
+        margin-bottom: 3px; 
+			}
+    }
+    .plan_li:nth-of-type(4)::after {
+      content: "";
+      width: 2px;
+      height: 40px;
+      background-color: currentColor;
+      transform: skew(-20deg);
+      margin-bottom: 6px;
+      @include break {
+				height: 25px;
+        margin-bottom: 3px; 
+			} 
+    }
+   .plan_li{
+      width: 22%;
+      align-items: end;
+      font-weight: bold;
+      font-size: 16px;
+      @include break {
+				width: 21%;
+        font-size: 0.64rem;
+			}
+      &:nth-of-type(1) {
+						width: auto;
+    }
+    &:nth-of-type(4) {
+			display: flex;
+      justify-content: space-around;
+      color: #b50000;
+    }
+
+  }
+		table {
+			max-width: 1060px;
+      width: 95%;
+			margin: 0 auto 70px auto;
+			border: solid 1px #bbbbbb;
+			tr {
+				border-bottom: solid 1px #bbbbbb;
+				th,td {
+					padding: 15px 10px;
+					@include break {
+						width: 41%;
+						padding: 1.5% 1%;
+					}
+					border-right: solid 1px #bbbbbb;
+					border-bottom: solid 1px #bbbbbb;
+					&:nth-of-type(1) {
+						background: #faf6e7;
+						@include break {
+							width: auto;
+							padding: 5px 2px;
+							font-size: 13px;
+						}
+					}
+          
+					&:not(:nth-of-type(1)) {
+						border-right: solid 1px #bbbbbb;
+            width: 22%;
+            @include break {
+							width: 21%;
+						}
+					}
+				}
+				th {
+					font-size: 16px;
+          position: relative;
+          padding: 0 0 20px;
+          font-weight: bold;
+					background: #c5dbf0;
+					text-align: center;
+					@include break{
+            font-size: 0.7rem;
+          }
+					span {
+						display: block;
+            font-weight: bold;
+            justify-content: center;
+					}
+          .span{
+            height: 80px;
+            padding-top: 7px;
+            justify-content: center;
+            @include break{
+              height: 70px;
+          }
+          }
+          .span1{
+            height: 25px;
+            display: flex;
+          }
+					&:first-child {
+					background: #ffffff;
+				}
+        img{
+          padding-bottom: 15px;
+        }
+				}
+				
+				td {
+					text-align: center;
+          font-size: 24px;
+          @include break{
+            font-size: 13px;
+          }
+          span{
+            font-size: 16px;
+            @include break{
+            font-size: 11px;
+          }
+          }
+					&:nth-of-type(1) {
+            font-size: 15px;
+						vertical-align: middle;
+						text-align: left;
+            @include break {
+							font-size: 0.68rem;
+						}
+					}
+					img{@include break {
+							width: 15px;
+						}
+						
+					}//_img
+				}//_td
+			}
+		}
+
+//_sec03
+
+
+@media screen and (max-width: 640px) {
+  .scroll {
+    overflow-x: auto;
+  }
+table {
+    min-width: 464px;
+    margin: 0 10px 50px;
+  td {
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+  }
+  }
+}
+}//_section
+	}
+
+.sec04{
+  text-align: center;
+  h3 {
+			width: 100%;
+			font-size: 30px;
+			font-weight: bold;
+			position: relative;
+      margin-top: 100px;
+			margin-bottom: 50px;
+			@include break {
+				font-size: 22px;
+				margin-bottom: 20px;
+			}
+    }
+  /* 必須 */
+.accordion-content {
+  display: none;
+}
+.accordion{
+  margin-bottom: 20px;
+  text-align: left;
+}
+/* 装飾用 */
+// body {
+//   font-family: 'Noto Sans JP', sans-serif;
+//   max-width: 1000px;
+//   padding: 0 20px;
+//   margin: 0 auto;
+//   // background: #75E1D6;
+// }
+
+.accordion-header {
+  max-width: 1060px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: #ededed;
+  padding: 35px 50px 35px 75px;
+  transition: background .3s ease;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  @include break {
+				font-size: 14px;
+        padding: 20px 46px 20px 50px;
+			}
+}
+
+.accordion-header::before,
+.accordion-header::after{
+  position:absolute;
+  content:'';
+  top:1px;
+  right:20px;
+  bottom:0;
+  width:20px;
+  height:3px;
+  margin:auto;
+  background:#151E2F;
+}
+.accordion-header::after{
+  transform:rotate(-90deg);
+  transition:transform 0.3s;
+}
+.accordion-header.active::after{transform:rotate(0deg);}
+
+.accordion-content {
+  background-color: #ededed;
+  max-width: 1060px;
+  width: 90%;
+  margin: -20px auto 0;
+  font-size: 16px;
+  padding: 20px 20% 30px 60px;
+  border-radius: 10px;
+  @include break {
+				font-size: 14px;
+			}
+}
+
+.accordion-header span{
+  position: relative;
+  font-weight: bold;
+  // padding-left: 50px;
+}
+.accordion-content span{
+  // padding-left: 20px;
+    max-width: 780px;
+  position: relative;
+}
+
+.accordion-header span::before{
+  position: absolute;
+  content:"Q.";
+  top: -13px;
+  left: -40px;
+  color: #151E2F;
+  font-size: 28px;
+}
+
+
+.accordion-content span::before{
+    position: absolute;
+  content:"A.";
+  top: -3px;
+  left: -20px;
+  color: #151E2F;
+  font-size: 16px;
+}
+
+/* hover */
+.accordion-header:hover {
+  background-color: #F2F2F2;
+}
+.conv_half_vir_main_apply {
+  margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+    .pageTop{
+        margin: 10% 0 20% 0;
+        text-align: center;
+        padding: 0 30%;
+    }
+}
+
+
+
+.wide {
+	max-width: 1500px;
+	width: 100%;
+	margin: 0 auto 95px;
+	background: url(../img/virtual/wide.jpg) no-repeat center center / cover;
+	@include break {
+		margin: 0 auto 46px;
+	}
+	&::after {
+		content: '';
+		display: block;
+		padding-top: 32.333%;
+		@include break {
+			padding-top: 42%;
+		}
+	}
+}
+
+/*20221102*/
+.btn {
+	text-align: center;
+    &.mgB50{
+        margin-bottom: 50px;
+        @include break {margin-bottom: 30px;}
+        
+    }
+
+a{
+	&.btn_arrow {
+  position: relative;
+  display: block;
+  width: 500px;
+		margin: 0 auto;
+  padding: 15px;
+  color: #fff;
+		font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  background:#46c1be;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+	@include break {width:100%;
+		font-size: 16px;
+		line-height: 1.3;
+		padding: 15px;
+		}
+	&:before,&:after{
+			content: "";
+  position: absolute;
+  top: 50%;
+		}//__beforeAfter
+&:before {
+  right: 7px;
+  width: 40px;
+  height:40px;
+  margin: -20px 0 0;
+  background:#fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+	@include break {
+		 width: 30px;
+  height:30px;
+  margin: -15px 0 0;
+	}
+}
+&:after {
+  right: 20px;
+  width: 13px;
+  height: 13px;
+  margin: -10px 0 0;
+  border-top: solid 5px #46c1be;
+  border-right: solid 5px #46c1be;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	@include break {
+		right: 17px;
+  width: 8px;
+  height: 8px;
+  margin: -6px 0 0;
+	}
+}
+}//_btn_arrow
+}//_a
+}
+
+/*20221102*/
+
+
+/*20251010*/
+section.sec05 {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto 100px;
+	@include break {
+		margin: 0 auto 58px;
+	}
+    .high__ttl{
+        background: none;
+        padding: 0;
+        margin: 100px auto 30px;
+        font-size: 24px;
+        @include break {
+		 margin:30px auto 0px !important;
+        font-size: 18px !important;padding: 0;
+	}
+    }
+.newOffice {
+  max-width: 1200px;
+ //margin: 5px auto 10px -10px;         // 上下のmargin 5px
+  padding: 5px;             // 内側にも5px（外周の余白）
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); // 5列=各20%程度
+  gap: 8px;                              // li同士の間隔 5px
+
+  // ブレークポイント（任意で調整可）
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+ // @media (max-width: 640px) {
+ //   grid-template-columns: repeat(2, 1fr);
+ // }
+ // @media (max-width: 420px) {
+  //  grid-template-columns: 1fr;
+ // }
+   @include break {
+       max-width: 96%;
+       width: 96%;
+       margin: 10px auto;
+        display:inline;}
+    
+  > li {
+    background: #EBEBEB;
+    //margin-left: 10px;
+    // 高さ揃え（カード全体をリンクで埋める）
+     @include break { 
+        width: 96%;
+        margin: 0 auto 5px;
+        display: flex;
+      }
+    a {
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .12s ease, box-shadow .12s ease;
+        @include break { 
+        display: flex;                // ✅ 横並び
+      align-items: stretch;
+        }
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      }
+    }
+
+    .pic {
+      margin: 15px;            // <p>デフォルト余白リセット
+      overflow: hidden;
+     // aspect-ratio: 16 / 9; // 画像比率を統一（必要に応じて変更可）
+       @include break {
+            flex: 0 0 26%;                // 画像エリア（左）
+      margin: 0;
+      overflow: hidden;
+           height: 85px;
+        }
+        
+      img {
+        width: 100%;
+        height: 100%;
+        //object-fit: cover;  // 中央トリミング
+        display: block;
+          @include break {object-fit: cover;
+          width: 85%;
+        height: 85%;
+              margin: 10px;
+          }
+      }
+    }
+
+    .ofName {
+      padding: 10px 12px;
+  @include break {
+       flex: 1;                      // テキストエリア（右）
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+        }
+      h3 {
+        margin: 0 0 3px;
+        font-size: .85rem;
+        line-height: 1.3;
+        font-weight: 700;
+      }
+
+      .o_access {
+        margin: 0;
+        font-size: .7rem;
+        line-height: 1.2;
+        color: #333;font-weight: 500;
+      }
+    }
+  }
+}
+}//section
+/*20251010*/

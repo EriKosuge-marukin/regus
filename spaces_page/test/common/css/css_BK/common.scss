@@ -1,0 +1,227 @@
+@charset "utf-8";
+@import "mixin";
+
+#contact_top {
+ &.sc {
+  position: fixed;
+  bottom: 40px;
+  z-index: 2;
+ }
+ &.poa {
+  position: absolute;
+  bottom: 0;
+ }
+ &.sc,.poa {
+	 .choice_ttl {
+		 padding: 20px 0;
+	 }	
+	 .btn_box {
+		 p {
+			 padding: 15px 0;
+		 }
+	 }
+	 .tel_box {
+		 p {
+			 
+			 margin-top: 15px;
+		 }
+	 }
+ }
+}
+.side_nav {
+ width: 20%;
+ position: relative;
+ @include break(1200) {
+  display: none;
+ }
+ .side_box {
+  background: #fff;
+  padding-bottom: 35px;
+  box-shadow: 0px 2px 24px 5px #e6e6e6;
+  margin-top: 35px;
+  &:first-child {
+   margin-top: 0;
+  }
+  .search_ttl {
+   text-align: center;
+   font-size: 18px;
+   padding: 30px 0;
+   background: rgb(240, 240, 240);
+   background: linear-gradient(0deg, rgba(240, 240, 240, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  }
+  .choice_ttl {
+   text-align: center;
+   font-size: 18px;
+   padding: 30px 0;
+   border: 1px solid #f0f0f0;
+  }
+  .accordion {
+   .accordion_box {
+    background: #fff;
+    .midashi {
+     border-bottom: 1px solid #f0f0f0;
+     margin: 0 30px;
+     padding: 20px 0;
+     font-size: 13px;
+     position: relative;
+     &.open {
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+      &::before {
+       display: none;
+      }
+      &::after {
+       transform: rotate(-180deg);
+      }
+     }
+     &::before {
+      content: "";
+      position: absolute;
+      right: 5px;
+      top: 48%;
+      width: 12px;
+      height: 2px;
+      transform: rotate(90deg);
+      background: #cbc9c9;
+      transition: all 0.3s ease-in-out;
+     }
+     &::after {
+      content: "";
+      position: absolute;
+      right: 5px;
+      top: 48%;
+      display: block;
+      width: 12px;
+      height: 2px;
+      background: #cbc9c9;
+      transition: all 0.2s ease-in-out;
+     }
+    }
+    .area_box {
+     background: #e5e5e5;
+     position: relative;
+     padding: 20px 30px;
+     font-size: 13px;
+     &::before {
+      position: absolute;
+      left: 23px;
+      content: url("../images/a_icon.png");
+      vertical-align: middle;
+     }
+     a {
+      &:hover {
+       opacity: 0.5 !important;
+       transition: 0.5s;
+      }
+     }
+     p {
+      padding: 10px 0 0;
+     }
+    }
+   }
+  }
+  .link_box {
+   .link {
+    background: #fff;
+    &.line {
+     display: flex;
+     justify-content: space-between;
+     border-bottom: 1px solid #f0f0f0;
+     margin: 0 30px;
+     .midashi_line {
+      width: 50%;
+      padding: 20px 0;
+      font-size: 13px;
+     }
+    }
+    .midashi {
+     border-bottom: 1px solid #f0f0f0;
+     margin: 0 30px;
+     padding: 20px 0;
+     font-size: 13px;
+     position: relative;
+     &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 10px;
+      width: 6px;
+      height: 6px;
+      border-top: 2px solid #cbc9c9;
+      border-right: 2px solid #cbc9c9;
+      transform: rotate(45deg);
+     }
+    }
+   }
+   .btn_box {
+    text-align: center;
+    &:first-child {
+     p {
+      margin-top: 20px;
+     }
+    }
+    p {
+     width: 85%;
+     font-size: 13px;
+     background: #e4b23a;
+     border-radius: 35px;
+     display: inline-block;
+     margin-top: 15px;
+     padding: 23px 0;
+     position: relative;
+     &::before {
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 20px;
+      width: 5px;
+      height: 5px;
+      border-top: 2px solid #000;
+      border-right: 2px solid #000;
+      transform: rotate(45deg);
+     }
+    }
+   }
+   .txtbtn_box {
+    text-align: center;
+    margin-top: 30px;
+    a {
+     color: #e4b23a;
+    }
+   }
+   .tel_box {
+    text-align: center;
+    margin-top: 20px;
+    p {
+     font-size: 22px;
+     padding-left: 15px;
+     position: relative;
+     @include break(1400) {
+      font-size: 18px;
+     }
+     &::before {
+      position: absolute;
+      top: -13px;
+      left: 28px;
+      content: url("../../images/tel_icon.png");
+      display: inline-block;
+      vertical-align: middle;
+      transform: scale(0.3);
+      @include break(1400) {
+       top: -15px;
+       left: 23px;
+      }
+     }
+    }
+   }
+  }
+ }
+ #contact_bottom {
+  position: sticky;
+  top: 110px;
+ }
+}

@@ -1,0 +1,464 @@
+@charset "utf-8";
+@import 'mixin';
+
+$red:#e4002f;
+
+.main_contents {
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 16px;
+	@include break {
+		font-size: 14px;
+	}
+	* {
+		box-sizing: border-box;
+	}
+}
+
+.ov {
+	@include transition;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.pc {
+	@include break {
+		display: none;
+	}
+}
+
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+
+
+p {
+	line-height: 1.8;
+	@include break {
+		line-height: 1.5;
+	}
+}
+
+.service_wrap{
+	width: 100%;
+	max-width: 1060px;
+	margin: 0 auto;
+	.kv_area{
+		width: 100%;
+		height: 360px;
+		background: url(../images/kv.jpg) center top / cover no-repeat;
+		position: relative;
+		margin-bottom: 90px;
+		@include break{
+			height: 240px;
+			margin-bottom: 40px;
+		}
+		ul{
+			position: absolute;
+			bottom: 80px;
+			left: 30px;
+			@include flex;
+			@include break {
+				bottom: 70px;
+			}
+			li{
+				&:not(:first-child){
+					margin-left: 6px;
+				}
+				@include break{
+					height: 70px;
+					img {
+						width: auto;
+						height: 100%;
+					}
+				}
+			}
+		}
+		h1{
+			color: #fff;
+			text-align: left;
+			font-family: 26px;
+			font-weight: bold;
+			position: absolute;
+			bottom: 20px;
+			left: 30px;
+			@include break{
+				font-size: 18px;
+				bottom: 10px;
+			}
+		}
+	}
+	h2{
+		font-size: 40px;
+		font-weight: bold;
+		line-height: 1!important;
+		text-align: center;
+		margin-bottom: 35px;
+		@include break{
+			font-size: 30px!important;
+			line-height: 1!important;
+			margin-bottom: 20px!important;
+			padding: 0 !important;
+		}
+		span{
+			font-size: 24px;
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			@include break{
+				font-size: 18px;
+			}
+		}
+	}
+	p.lead{
+		text-align: left;
+		width: 100%;
+		max-width: 630px;
+		margin: 0 auto 20px;
+		font-size: 16px;
+		@include break{
+			font-size: 14px;
+			padding: 0 4%;
+		}
+	}
+	.plan_area{
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto 70px;
+		@include flex;
+		@include jc(space-between);
+		@include fw;
+		@include break{
+			margin-bottom: 35px;
+			display: block;
+			padding: 0 4%;
+		}
+		.plan_list{
+			width: 426px;
+			@include break2{
+				&:nth-child(n+3){
+					margin-top: 50px;
+				}
+			}
+			@include break{
+				width: 100%;
+				&:nth-child(n+2){
+					margin-top: 25px;
+				}
+			}
+			p.ttl{
+				text-align: center;
+					margin-top: -40px;
+					@include break{
+						margin-top: -30px;
+					}
+				span{
+					display: inline-block;
+					line-height: 1;
+					padding: 20px 30px;
+					background: #fff;
+					font-size: 20px;
+					font-weight: bold;
+					@include break{
+						padding: 15px 20px;
+						font-size: 16px;
+					}
+				}
+			}
+			.txt_area{
+				padding: 0 6px;
+				@include break{
+					padding: 0 4%;
+				}
+				ul{
+					&.min {
+						min-height: 125px;
+						@include break {
+							min-height: 0;
+						}
+					}
+					li{
+						font-size: 16px;
+						position: relative;
+						padding-left: 10px;
+						line-height: 1.4;
+						font-feature-settings: "palt";
+						@include break{
+							font-size: 14px;
+						}
+						&:not(:last-child){
+							margin-bottom: 4px;
+						}
+						&:before{
+							content: "";
+							display: block;
+							width: 8px;
+							height: 8px;
+							border-radius: 10px;
+							position: absolute;
+							top: 7px;
+							left: 0;
+							background: #e40037;
+							@include break{
+								top: 5px;
+							}
+						}
+						span{
+							font-size: 14px;
+							@include break{
+								font-size: 12px;
+							}
+						}
+						sup {
+							font-size: .8em;
+							position: relative;
+							top: -5px;
+						}
+					}
+				}
+				dl {
+					display: flex;
+					margin-top: 20px;
+					dt {
+						width: 95px;
+						color: #e40037;
+					}
+					dd {
+						width: calc(100% - 95px);
+						padding-left: 10px;
+						border-left: 1px solid #e40037;
+					}
+				}
+				p.recommend{
+					width: 100%;
+					margin: 20px 0;
+					@include flex;
+					@include break{
+						margin: 15px 0;
+					}
+					.red{
+						width: 85px;
+						text-align: center;
+						background: #e40037;
+						font-size: 14px;
+						border-radius: 50px 0 0 50px;
+						padding: 10px 0;
+						line-height: 1;
+						color: #fff;
+						@include flex;
+						@include ai;
+						@include jc(center);
+						@include break{
+							width: 70px;
+							font-size: 12px;
+						}
+					}
+					.gray{
+						width: calc(100% - 85px);
+						background: #e5e5e5;
+						padding: 10px 15px;
+						border-radius: 0 50px 50px 0;
+						line-height: 1;
+						font-size: 14px;
+						@include break{
+							width: calc(100% - 70px);
+							font-size: 12px;
+							padding: 10px;
+						}
+					}
+				}
+				a.btn {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 270px;
+					height: 50px;
+					margin: 0 auto;
+					border-radius: 25px;
+					background-color: #46c1be;
+					color: #fff;
+					font-weight: bold;
+					position: relative;
+					@include transition;
+					@include break {
+						width: 200px;
+						height: 40px;
+					}
+					&:hover {
+						opacity: .7;
+						text-decoration: none;
+					}
+					&::after {
+						content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png");
+						width: 30px;
+						height: 30px;
+						position: absolute;
+						top: 50%;
+						right: 20px;
+						transform: translateY(-50%);
+						@include break {
+							right: 10px;
+							transform: translateY(-50%) scale(.8);
+						}
+					}
+				}
+			}
+		}//_plan_list
+		p.caution {
+			width: 100%;
+			padding-top: 15px;
+			text-align: right;
+            font-size:12px;
+			@include break {
+				padding-top: 10px;
+			}
+		}
+	}//_plan_area
+	.service_area{
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+		@include flex;
+		@include jc(space-between);
+		@include fw;
+		@include break{
+			display: block;
+			padding: 0 4%;
+		}
+		h3 {
+			font-weight: bold;
+			sup {
+				font-size: .6em;
+				position: relative;
+				top: -.5em;
+			}
+		}
+		.service_list{
+			background: linear-gradient(to right,#e40037 0px,#e40037 1px,#eee 1px, #eee 100%);
+			width: 440px;
+			@include break{
+				width: 100%;
+			}
+			&.large{
+				width: 100%;
+			}
+			&:nth-child(n+2){
+				margin-top: 30px;
+				@include break{
+					margin-top: 20px;
+				}
+			}
+		}
+		.txt_area{
+			padding: 10px 20px;
+			@include break{
+				padding: 10px 4%;
+			}
+			ul{
+                margin-top: 5px;
+				li{
+					font-size: 16px;
+					line-height: 1.4;
+					padding-left: 1em;
+					text-indent: -1em;
+					sup{
+						font-size: 70%;
+						position: relative;
+						top: -5px;
+					}
+					@include break{
+						font-size: 14px;
+					}
+					&:not(:last-child){
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+	.service_note{
+		@include flex;
+		@include jc(flex-end);
+		width: 100%;
+		max-width: 900px;
+		margin: 20px auto 40px;
+		@include break{
+			margin: 10px auto 40px;
+			padding: 0 4%;
+		}
+		p{
+			text-align: left;
+			font-size: 12px;
+		}
+	}
+	.contact_area{
+		text-align: center;
+        .intro{
+            font-size: 18px;
+            margin-bottom: 15px;
+            span{
+                font-weight: bold;
+            }
+            @include break{ font-size: 14px;margin-bottom: 8px;}
+        }
+		p.btn{
+			margin-bottom: 40px;
+			@include break{
+				margin-bottom: 20px;
+				img{
+					width: 280px;
+				}
+			}
+		}
+		.tel{
+			@include break{
+				img{
+					width: 200px;
+				}
+			}
+		}
+        &.mgT100{
+            @include break{margin-top: 50px !important;}
+        }
+        &.mgB120{
+             margin-bottom: 120px;
+            @include break{margin-bottom: 65px;}
+        }
+	}
+    
+    .explain{
+          max-width: 770px;
+          margin: 0 auto 40px;
+            @include break{
+                width: 92%;
+                margin: 0 auto 20px;}
+        dt{
+        display: block;
+        position: relative;
+        cursor: pointer;
+        background: url(/common2/images/bg_h2.gif) no-repeat left center #f2f2f2;
+        line-height: 45px;
+        /*margin:10% 0 3%;*/
+        margin: 0;
+        padding: 12px 10px 12px 25px;
+        font-size: 110%;
+        line-height: 1.1;
+        font-weight: bold;
+           @include break{ 
+             padding: 5px 55px 5px 25px; }
+        &.mid{
+            @include break{padding: 10px 55px 10px 25px;}
+        }//mid
+        }//dt
+        dd{
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            background: #fff;
+            @include break{  padding: 0px 0px 20px;}
+        }//dd
+    }//explain
+}
