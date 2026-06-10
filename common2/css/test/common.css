@@ -236,7 +236,6 @@ header.fixed > .inner1 {
   justify-content: flex-end;
   position: relative;
   /*↓221213-----------------*/
-  /*↑221213-----------------*/
 }
 header.fixed > .inner1 .hd_logo {
   position: absolute;
@@ -244,6 +243,9 @@ header.fixed > .inner1 .hd_logo {
   left: 20px;
   transform: translate(0, -75%);
   z-index: 35;
+}
+header.fixed > .inner1 {
+  /*↑221213-----------------*/
 }
 header.fixed > .inner1 .hd_no1 {
   position: absolute;
@@ -298,10 +300,6 @@ header.fixed nav > ul {
 header.fixed nav > ul .fixno {
   display: none;
 }
-header.fixed nav > ul > li {
-  /*↓221213-----------------*/
-  /*↑221213-----------------*/
-}
 header.fixed nav > ul > li > a {
   padding: 15px 8px;
   font-size: 12x;
@@ -314,8 +312,14 @@ header.fixed nav > ul > li > a span:after {
   bottom: -5px !important;
   height: 1px !important;
 }
+header.fixed nav > ul > li {
+  /*↓221213-----------------*/
+}
 header.fixed nav > ul > li .D {
   padding: 6px 5px 0 5px;
+}
+header.fixed nav > ul > li {
+  /*↑221213-----------------*/
 }
 @media screen and (max-width: 1000px) {
   header.fixed nav > ul > li {
@@ -398,7 +402,6 @@ header > .inner1 ul.hd_links {
   justify-content: flex-end;
   /*		width: 420px;*/
   max-width: 310px;
-  /*A*/
 }
 @media screen and (max-width: 750px) {
   header > .inner1 ul.hd_links {
@@ -414,13 +417,6 @@ header > .inner1 ul.hd_links {
 }
 header > .inner1 ul.hd_links li { /*A*/
   text-align: right;
-  /*&:first-child{
-  	@include break2{
-  		width: 100%;
-  		margin-bottom: 5px;
-  	}
-  }*/
-  /*ここで閉じてるはず？*/
 }
 @media screen and (max-width: 750px) {
   header > .inner1 ul.hd_links li {
@@ -430,6 +426,14 @@ header > .inner1 ul.hd_links li { /*A*/
   header > .inner1 ul.hd_links li:nth-child(n+3) {
     margin-top: 5px;
   }
+}
+header > .inner1 ul.hd_links li {
+  /*&:first-child{
+  	@include break2{
+  		width: 100%;
+  		margin-bottom: 5px;
+  	}
+  }*/
 }
 @media screen and (min-width: 750px) {
   header > .inner1 ul.hd_links li:nth-child(n+1) {
@@ -468,6 +472,12 @@ header > .inner1 ul.hd_links li a:after {
   header > .inner1 ul.hd_links li a:after {
     border-color: #fff;
   }
+}
+header > .inner1 ul.hd_links li {
+  /*ここで閉じてるはず？*/
+}
+header > .inner1 ul.hd_links {
+  /*A*/
 }
 header > .inner1 .hd_contactSP {
   display: none;
@@ -530,13 +540,6 @@ header nav > ul {
 }
 header nav > ul > li {
   position: relative;
-  /*&:nth-child(7),&:nth-child(6),&:nth-child(4){ 
-         .acco_wrap{
-           width: auto;
-           left: -20%;
-         }
-
-     }*/
 }
 header nav > ul > li.close_acco {
   display: none;
@@ -691,6 +694,15 @@ header nav > ul > li .acco_wrap > .col_2 .col_L {
     border-right: none;
     border-bottom: 1px solid #dedede;
   }
+}
+header nav > ul > li {
+  /*&:nth-child(7),&:nth-child(6),&:nth-child(4){ 
+         .acco_wrap{
+           width: auto;
+           left: -20%;
+         }
+
+     }*/
 }
 header nav > ul > li ul.acco {
   max-width: 230px;
@@ -2312,10 +2324,6 @@ a.ov:hover {
     text-decoration: underline;
   }
   /*----------contents----------*/
-  .wrapper .contents {
-    /*↓20221122*/
-    /*↑20221122*/
-  }
   .wrapper .contents h1 {
     background: url(/common2/images/bg_white.gif) repeat-x left bottom #e10034;
     line-height: 60px;
@@ -2365,9 +2373,15 @@ a.ov:hover {
     font-size: 100%;
     color: #ffffff;
   }
+  .wrapper .contents {
+    /*↓20221122*/
+  }
   .wrapper .contents .bnr {
     margin: 30px auto;
     text-align: center;
+  }
+  .wrapper .contents {
+    /*↑20221122*/
   }
   .wrapper .contents .bnrList {
     margin: 0 0 30px;
@@ -3574,11 +3588,13 @@ a.lnk_undr {
   padding-left: 15px;
   border: 1px solid #efefef;
   -moz-appearance: none;
-  -webkit-appearance: none;
 }
 .select_lang select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
+}
+.select_lang select {
+  -webkit-appearance: none;
 }
 .select_lang select::-ms-expand {
   display: none;

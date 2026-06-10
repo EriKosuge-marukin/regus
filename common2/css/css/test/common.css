@@ -353,7 +353,6 @@ header > .inner1 ul.hd_links {
   justify-content: flex-end;
   /*		width: 420px;*/
   max-width: 310px;
-  /*A*/
 }
 @media screen and (max-width: 750px) {
   header > .inner1 ul.hd_links {
@@ -369,13 +368,6 @@ header > .inner1 ul.hd_links {
 }
 header > .inner1 ul.hd_links li { /*A*/
   text-align: right;
-  /*&:first-child{
-  	@include break2{
-  		width: 100%;
-  		margin-bottom: 5px;
-  	}
-  }*/
-  /*ここで閉じてるはず？*/
 }
 @media screen and (max-width: 750px) {
   header > .inner1 ul.hd_links li {
@@ -385,6 +377,14 @@ header > .inner1 ul.hd_links li { /*A*/
   header > .inner1 ul.hd_links li:nth-child(n+3) {
     margin-top: 5px;
   }
+}
+header > .inner1 ul.hd_links li {
+  /*&:first-child{
+  	@include break2{
+  		width: 100%;
+  		margin-bottom: 5px;
+  	}
+  }*/
 }
 @media screen and (min-width: 750px) {
   header > .inner1 ul.hd_links li:nth-child(n+1) {
@@ -423,6 +423,12 @@ header > .inner1 ul.hd_links li a:after {
   header > .inner1 ul.hd_links li a:after {
     border-color: #fff;
   }
+}
+header > .inner1 ul.hd_links li {
+  /*ここで閉じてるはず？*/
+}
+header > .inner1 ul.hd_links {
+  /*A*/
 }
 header > .inner1 .hd_contactSP {
   display: none;
@@ -3490,11 +3496,13 @@ a.lnk_undr {
   padding-left: 15px;
   border: 1px solid #efefef;
   -moz-appearance: none;
-  -webkit-appearance: none;
 }
 .select_lang select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
+}
+.select_lang select {
+  -webkit-appearance: none;
 }
 .select_lang select::-ms-expand {
   display: none;

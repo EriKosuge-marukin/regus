@@ -3,155 +3,178 @@
   width: 900px;
   margin: 0 auto 30px auto;
   -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
   justify-content: -webkit- space-between;
   justify-content: space-between;
-  -webkit-align-items: flex-start;
   align-items: -webkit- flex-start;
   align-items: flex-start;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  @media screen and (max-width: 768px) {
-    .btnContact {
-      display: block;
-      width: 80%; } }
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .btnContact {
+    display: block;
+    width: 80%;
+  }
+}
+.btnContact .tel {
+  width: 48%;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
   .btnContact .tel {
-    width: 48%;
-    text-align: center;
-    font-size: 100%;
-    font-weight: bold;
-    letter-spacing: 0.1em; }
-    @media screen and (max-width: 768px) {
-      .btnContact .tel {
-        width: 100%; } }
-    .btnContact .tel span {
-      display: block; }
-      .btnContact .tel span.num {
-        color: #e41d3a;
-        font-size: 210%;
-        line-height: 1.4;
-        font-weight: bold;
-        letter-spacing: 0.01em; }
-        .btnContact .tel span.num:before {
-          content: '';
-          /*何も入れない*/
-          display: inline-block;
-          /*忘れずに！*/
-          width: 30px;
-          /*画像の幅*/
-          height: 30px;
-          /*画像の高さ*/
-          background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
-          background-size: contain;
-          vertical-align: middle;
-          padding-left: 5px; }
-      .btnContact .tel span.note {
-        font-size: 76%; }
+    width: 100%;
+  }
+}
+.btnContact .tel span {
+  display: block;
+}
+.btnContact .tel span.num {
+  color: #e41d3a;
+  font-size: 210%;
+  line-height: 1.4;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+.btnContact .tel span.num:before {
+  content: ""; /*何も入れない*/
+  display: inline-block; /*忘れずに！*/
+  width: 30px; /*画像の幅*/
+  height: 30px; /*画像の高さ*/
+  background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.btnContact .tel span.note {
+  font-size: 76%;
+}
+.btnContact .link {
+  width: 50%;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
   .btnContact .link {
-    width: 50%;
-    margin: 0; }
-    @media screen and (max-width: 768px) {
-      .btnContact .link {
-        margin-top: 15px;
-        width: 100%; } }
-    .btnContact .link a.btn_con {
-      text-align: center;
-      position: relative;
-      display: block;
-      width: 100%;
-      margin: 0 auto;
-      padding: 18px 0;
-      color: #fff;
-      font-size: 24px;
-      font-weight: bold;
-      text-decoration: none;
-      background: #46c1be;
-      border-radius: 60px;
-      -webkit-border-radius: 60px; }
-      @media screen and (max-width: 768px) {
-        .btnContact .link a.btn_con {
-          width: 100%;
-          font-size: 22px;
-          line-height: 1.3;
-          padding: 15px 40px; } }
-      .btnContact .link a.btn_con:before, .btnContact .link a.btn_con:after {
-        content: "";
-        position: absolute;
-        top: 50%; }
-      .btnContact .link a.btn_con:before {
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        margin: -20px 0 0;
-        background: #fff;
-        border-radius: 60px;
-        -webkit-border-radius: 60px; }
-        @media screen and (max-width: 768px) {
-          .btnContact .link a.btn_con:before {
-            width: 36px;
-            height: 36px;
-            margin: -18px 0 0; } }
-      .btnContact .link a.btn_con:after {
-        right: 28px;
-        width: 13px;
-        height: 13px;
-        margin: -10px 0 0;
-        border-top: solid 5px #46c1be;
-        border-right: solid 5px #46c1be;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg); }
-        @media screen and (max-width: 768px) {
-          .btnContact .link a.btn_con:after {
-            right: 27px;
-            width: 12px;
-            height: 12px;
-            margin: -8px 0 0; } }
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+.btnContact .link a.btn_con {
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 18px 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #46c1be;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+}
+@media screen and (max-width: 768px) {
+  .btnContact .link a.btn_con {
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.3;
+    padding: 15px 40px;
+  }
+}
+.btnContact .link a.btn_con:before, .btnContact .link a.btn_con:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+}
+.btnContact .link a.btn_con:before {
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  background: #fff;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+}
+@media screen and (max-width: 768px) {
+  .btnContact .link a.btn_con:before {
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0;
+  }
+}
+.btnContact .link a.btn_con:after {
+  right: 28px;
+  width: 13px;
+  height: 13px;
+  margin: -10px 0 0;
+  border-top: solid 5px #46c1be;
+  border-right: solid 5px #46c1be;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+@media screen and (max-width: 768px) {
+  .btnContact .link a.btn_con:after {
+    right: 27px;
+    width: 12px;
+    height: 12px;
+    margin: -8px 0 0;
+  }
+}
 
 .telephone {
   width: 900px;
-  margin: 30px auto 30px auto; }
-  @media screen and (max-width: 768px) {
-    .telephone {
-      display: block;
-      margin: 20px auto 30px auto;
-      width: 90%; } }
+  margin: 30px auto 30px auto;
+}
+@media screen and (max-width: 768px) {
+  .telephone {
+    display: block;
+    margin: 20px auto 30px auto;
+    width: 90%;
+  }
+}
+.telephone .tel {
+  width: 48%;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
   .telephone .tel {
-    width: 48%;
-    margin: 0 auto 30px auto;
-    text-align: center;
-    font-size: 100%;
-    font-weight: bold;
-    letter-spacing: 0.1em; }
-    @media screen and (max-width: 768px) {
-      .telephone .tel {
-        width: 100%; } }
-    .telephone .tel span {
-      display: block; }
-      .telephone .tel span.num {
-        color: #e41d3a;
-        font-size: 210%;
-        line-height: 1.4;
-        font-weight: bold;
-        letter-spacing: 0.01em; }
-        .telephone .tel span.num:before {
-          content: '';
-          /*何も入れない*/
-          display: inline-block;
-          /*忘れずに！*/
-          width: 30px;
-          /*画像の幅*/
-          height: 30px;
-          /*画像の高さ*/
-          background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
-          background-size: contain;
-          vertical-align: middle;
-          padding-left: 5px; }
-      .telephone .tel span.note {
-        font-size: 76%; }
+    width: 100%;
+  }
+}
+.telephone .tel span {
+  display: block;
+}
+.telephone .tel span.num {
+  color: #e41d3a;
+  font-size: 210%;
+  line-height: 1.4;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+.telephone .tel span.num:before {
+  content: "";
+  /*何も入れない*/
+  display: inline-block;
+  /*忘れずに！*/
+  width: 30px;
+  /*画像の幅*/
+  height: 30px;
+  /*画像の高さ*/
+  background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.telephone .tel span.note {
+  font-size: 76%;
+}
 
 .mmbOfficeLink {
   overflow: hidden;
@@ -159,279 +182,331 @@
   height: 40px;
   margin: 0;
   padding: 0;
-  border-radius: 20px; }
-  @media screen and (max-width: 768px) {
-    .mmbOfficeLink {
-      margin: 3px auto 10px auto;
-      width: 70%; } }
-  .mmbOfficeLink a {
-    display: block;
-    position: relative;
-    z-index: 100;
-    text-align: center;
-    background: #46c1be;
-    color: #fff;
-    font-size: 14px;
-    line-height: 40px;
-    text-decoration: none;
-    z-index: 4; }
-    .mmbOfficeLink a:hover {
-      background: #46c1be;
-      z-index: 5; }
-    .mmbOfficeLink a:before {
-      /*白いひし型 */
-      display: block;
-      content: "";
-      position: absolute;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-      top: 50%;
-      right: 20px;
-      width: 8px;
-      height: 8px;
-      margin-top: -4px;
-      background: #46c1be;
-      z-index: 7; }
-    .mmbOfficeLink a:after {
-      /*バックグラウンドと同じ色のひし型をずらして「before要素」を隠す */
-      display: block;
-      content: "";
-      position: absolute;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-      top: 50%;
-      right: 15px;
-      width: 8px;
-      height: 8px;
-      margin-top: -4px;
-      background: #fff;
-      z-index: 6; }
-    .mmbOfficeLink a:hover:after {
-      /*「after要素」のマウスオーバー（カラーを合わせる） */
-      background: #3ab2e9; }
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .mmbOfficeLink {
+    margin: 3px auto 10px auto;
+    width: 70%;
+  }
+}
+.mmbOfficeLink a {
+  display: block;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  background: #46c1be;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  text-decoration: none;
+  z-index: 4;
+}
+.mmbOfficeLink a:hover {
+  background: #46c1be;
+  z-index: 5;
+}
+.mmbOfficeLink a:before {
+  /*白いひし型 */
+  display: block;
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+  right: 20px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background: #46c1be;
+  z-index: 7;
+}
+.mmbOfficeLink a:after {
+  /*バックグラウンドと同じ色のひし型をずらして「before要素」を隠す */
+  display: block;
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  margin-top: -4px;
+  background: #fff;
+  z-index: 6;
+}
+.mmbOfficeLink a:hover:after {
+  /*「after要素」のマウスオーバー（カラーを合わせる） */
+  background: #3ab2e9;
+}
 
 section.planLinks h2.plan {
   font-size: 30px;
   font-weight: bold;
   line-height: 1 !important;
   text-align: center;
-  margin-bottom: 35px; }
-  section.planLinks h2.plan::after {
-    width: 0;
-    height: 0; }
-  @media screen and (max-width: 768px) {
-    section.planLinks h2.plan {
-      font-size: 20px !important;
-      line-height: 1 !important;
-      margin-bottom: 20px !important;
-      padding: 0 !important; } }
+  margin-bottom: 35px;
+}
+section.planLinks h2.plan::after {
+  width: 0;
+  height: 0;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks h2.plan {
+    font-size: 20px !important;
+    line-height: 1 !important;
+    margin-bottom: 20px !important;
+    padding: 0 !important;
+  }
+}
+section.planLinks h2.plan span {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
   section.planLinks h2.plan span {
-    font-size: 24px;
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold; }
-    @media screen and (max-width: 768px) {
-      section.planLinks h2.plan span {
-        font-size: 18px; } }
+    font-size: 18px;
+  }
+}
 section.planLinks p.leadPlan {
   text-align: left;
   width: 100%;
   max-width: 630px;
   margin: 0 auto 20px;
-  font-size: 16px; }
-  @media screen and (max-width: 768px) {
-    section.planLinks p.leadPlan {
-      font-size: 14px;
-      padding: 0 4%; } }
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks p.leadPlan {
+    font-size: 14px;
+    padding: 0 4%;
+  }
+}
 section.planLinks .plan_area {
   width: 100%;
   max-width: 900px;
   margin: 0 auto 70px;
   -js-display: flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
   justify-content: -webkit- space-between;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  @media screen and (max-width: 768px) {
-    section.planLinks .plan_area {
-      margin-bottom: 35px;
-      display: block;
-      padding: 0 4%; } }
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area {
+    margin-bottom: 35px;
+    display: block;
+    padding: 0 4%;
+  }
+}
+section.planLinks .plan_area .plan_list {
+  width: 47%; /*426px;*/
+}
+@media screen and (min-width: 768px) {
+  section.planLinks .plan_area .plan_list:nth-child(n+3) {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
   section.planLinks .plan_area .plan_list {
-    width: 47%;
-    /*426px;*/ }
-    @media screen and (min-width: 768px) {
-      section.planLinks .plan_area .plan_list:nth-child(n+3) {
-        margin-top: 50px; } }
-    @media screen and (max-width: 768px) {
-      section.planLinks .plan_area .plan_list {
-        width: 100%; }
-        section.planLinks .plan_area .plan_list:nth-child(n+2) {
-          margin-top: 25px; } }
-    section.planLinks .plan_area .plan_list p.ttl {
-      text-align: center;
-      margin-top: -40px; }
-      @media screen and (max-width: 768px) {
-        section.planLinks .plan_area .plan_list p.ttl {
-          margin-top: -30px; } }
-      section.planLinks .plan_area .plan_list p.ttl span {
-        display: inline-block;
-        line-height: 1;
-        padding: 20px 30px;
-        background: #fff;
-        font-size: 20px;
-        font-weight: bold; }
-        @media screen and (max-width: 768px) {
-          section.planLinks .plan_area .plan_list p.ttl span {
-            padding: 15px 20px;
-            font-size: 16px; } }
-    section.planLinks .plan_area .plan_list .txt_area {
-      padding: 0 6px; }
-      @media screen and (max-width: 768px) {
-        section.planLinks .plan_area .plan_list .txt_area {
-          padding: 0 4%; } }
-      section.planLinks .plan_area .plan_list .txt_area ul.min {
-        min-height: 125px; }
-        @media screen and (max-width: 768px) {
-          section.planLinks .plan_area .plan_list .txt_area ul.min {
-            min-height: 0; } }
-      section.planLinks .plan_area .plan_list .txt_area ul li {
-        font-size: 16px;
-        position: relative;
-        padding-left: 10px;
-        line-height: 1.4;
-        font-feature-settings: "palt"; }
-        @media screen and (max-width: 768px) {
-          section.planLinks .plan_area .plan_list .txt_area ul li {
-            font-size: 14px; } }
-        section.planLinks .plan_area .plan_list .txt_area ul li:not(:last-child) {
-          margin-bottom: 4px; }
-        section.planLinks .plan_area .plan_list .txt_area ul li:before {
-          content: "";
-          display: block;
-          width: 8px;
-          height: 8px;
-          border-radius: 10px;
-          position: absolute;
-          top: 7px;
-          left: 0;
-          background: #e40037; }
-          @media screen and (max-width: 768px) {
-            section.planLinks .plan_area .plan_list .txt_area ul li:before {
-              top: 5px; } }
-        section.planLinks .plan_area .plan_list .txt_area ul li span {
-          font-size: 14px; }
-          @media screen and (max-width: 768px) {
-            section.planLinks .plan_area .plan_list .txt_area ul li span {
-              font-size: 12px; } }
-        section.planLinks .plan_area .plan_list .txt_area ul li sup {
-          font-size: .8em;
-          position: relative;
-          top: -5px; }
-      section.planLinks .plan_area .plan_list .txt_area dl {
-        width: 100%;
-        display: flex;
-        margin-top: 20px; }
-        section.planLinks .plan_area .plan_list .txt_area dl dt {
-          width: 95px;
-          color: #e40037; }
-        section.planLinks .plan_area .plan_list .txt_area dl dd.planArea {
-          width: calc(100% - 95px) !important;
-          padding-left: 10px;
-          border-left: 1px solid #e40037; }
-      section.planLinks .plan_area .plan_list .txt_area p.recommend {
-        width: 100%;
-        margin: 20px 0;
-        -js-display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex; }
-        @media screen and (max-width: 768px) {
-          section.planLinks .plan_area .plan_list .txt_area p.recommend {
-            margin: 15px 0; } }
-        section.planLinks .plan_area .plan_list .txt_area p.recommend .red {
-          width: 85px;
-          text-align: center;
-          background: #e40037;
-          font-size: 14px;
-          border-radius: 50px 0 0 50px;
-          padding: 10px 0;
-          line-height: 1;
-          color: #fff;
-          -js-display: flex;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: -webkit-flex;
-          display: flex;
-          -webkit-align-items: center;
-          align-items: -webkit- center;
-          align-items: center;
-          -webkit-justify-content: center;
-          justify-content: -webkit- center;
-          justify-content: center; }
-          @media screen and (max-width: 768px) {
-            section.planLinks .plan_area .plan_list .txt_area p.recommend .red {
-              width: 70px;
-              font-size: 12px; } }
-        section.planLinks .plan_area .plan_list .txt_area p.recommend .gray {
-          width: calc(100% - 85px);
-          background: #e5e5e5;
-          padding: 10px 15px;
-          border-radius: 0 50px 50px 0;
-          line-height: 1;
-          font-size: 14px; }
-          @media screen and (max-width: 768px) {
-            section.planLinks .plan_area .plan_list .txt_area p.recommend .gray {
-              width: calc(100% - 70px);
-              font-size: 12px;
-              padding: 10px; } }
-      section.planLinks .plan_area .plan_list .txt_area a.btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 270px;
-        height: 50px;
-        margin: 0 auto;
-        border-radius: 25px;
-        background-color: #46c1be;
-        color: #fff;
-        font-weight: bold;
-        position: relative;
-        -moz-transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        transition: all 0.3s; }
-        @media screen and (max-width: 768px) {
-          section.planLinks .plan_area .plan_list .txt_area a.btn {
-            width: 200px;
-            height: 40px; } }
-        section.planLinks .plan_area .plan_list .txt_area a.btn:hover {
-          opacity: .7;
-          text-decoration: none; }
-        section.planLinks .plan_area .plan_list .txt_area a.btn::after {
-          content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png");
-          width: 30px;
-          height: 30px;
-          position: absolute;
-          top: 50%;
-          right: 20px;
-          transform: translateY(-50%); }
-          @media screen and (max-width: 768px) {
-            section.planLinks .plan_area .plan_list .txt_area a.btn::after {
-              right: 10px;
-              transform: translateY(-50%) scale(0.8); } }
-  section.planLinks .plan_area p.caution {
     width: 100%;
-    padding-top: 15px;
-    text-align: right;
-    font-size: 12px; }
-    @media screen and (max-width: 768px) {
-      section.planLinks .plan_area p.caution {
-        padding-top: 10px; } }
+  }
+  section.planLinks .plan_area .plan_list:nth-child(n+2) {
+    margin-top: 25px;
+  }
+}
+section.planLinks .plan_area .plan_list p.ttl {
+  text-align: center;
+  margin-top: -40px;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list p.ttl {
+    margin-top: -30px;
+  }
+}
+section.planLinks .plan_area .plan_list p.ttl span {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px 30px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list p.ttl span {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area {
+  padding: 0 6px;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area {
+    padding: 0 4%;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area ul.min {
+  min-height: 125px;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area ul.min {
+    min-height: 0;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area ul li {
+  font-size: 16px;
+  position: relative;
+  padding-left: 10px;
+  line-height: 1.4;
+  font-feature-settings: "palt";
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area ul li {
+    font-size: 14px;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area ul li:not(:last-child) {
+  margin-bottom: 4px;
+}
+section.planLinks .plan_area .plan_list .txt_area ul li:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  background: #e40037;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area ul li:before {
+    top: 5px;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area ul li span {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area ul li span {
+    font-size: 12px;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area ul li sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -5px;
+}
+section.planLinks .plan_area .plan_list .txt_area dl {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+section.planLinks .plan_area .plan_list .txt_area dl dt {
+  width: 95px;
+  color: #e40037;
+}
+section.planLinks .plan_area .plan_list .txt_area dl dd.planArea {
+  width: calc(100% - 95px) !important;
+  padding-left: 10px;
+  border-left: 1px solid #e40037;
+}
+section.planLinks .plan_area .plan_list .txt_area p.recommend {
+  width: 100%;
+  margin: 20px 0;
+  -js-display: flex;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area p.recommend {
+    margin: 15px 0;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area p.recommend .red {
+  width: 85px;
+  text-align: center;
+  background: #e40037;
+  font-size: 14px;
+  border-radius: 50px 0 0 50px;
+  padding: 10px 0;
+  line-height: 1;
+  color: #fff;
+  -js-display: flex;
+  display: flex;
+  align-items: -webkit- center;
+  align-items: center;
+  justify-content: -webkit- center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area p.recommend .red {
+    width: 70px;
+    font-size: 12px;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area p.recommend .gray {
+  width: calc(100% - 85px);
+  background: #e5e5e5;
+  padding: 10px 15px;
+  border-radius: 0 50px 50px 0;
+  line-height: 1;
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area p.recommend .gray {
+    width: calc(100% - 70px);
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area a.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: #46c1be;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area a.btn {
+    width: 200px;
+    height: 40px;
+  }
+}
+section.planLinks .plan_area .plan_list .txt_area a.btn:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+section.planLinks .plan_area .plan_list .txt_area a.btn::after {
+  content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area .plan_list .txt_area a.btn::after {
+    right: 10px;
+    transform: translateY(-50%) scale(0.8);
+  }
+}
+section.planLinks .plan_area p.caution {
+  width: 100%;
+  padding-top: 15px;
+  text-align: right;
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  section.planLinks .plan_area p.caution {
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=btncontact.css.map */

@@ -71,9 +71,6 @@
   border: 1px solid #424242;
   border-width: 1px 1px 0 1px;
   font-size: clamp(14px, 1.2vw, 16px);
-  /*&:nth-of-type(2n){
-  	@include break {margin-left: 3px;}
-    }*/
 }
 @media screen and (max-width: 768px) {
   .tab_box .tab {
@@ -83,6 +80,11 @@
     margin-bottom: 3px;
     font-size: clamp(12px, 1.5vw, 14px);
   }
+}
+.tab_box .tab {
+  /*&:nth-of-type(2n){
+  	@include break {margin-left: 3px;}
+    }*/
 }
 .tab_box .tab.active {
   color: #ffffff;
@@ -394,12 +396,12 @@
 .cnt03 .brandSec .cntWrap li.opo {
   border-color: #0097d5;
 }
-.cnt03 .brandSec .cntWrap li a {
-  display: flex;
-}
 .cnt03 .brandSec .cntWrap li a:hover {
   opacity: 0.5 !important;
   text-decoration: none !important;
+}
+.cnt03 .brandSec .cntWrap li a {
+  display: flex;
 }
 .cnt03 .brandSec .cntWrap li a .left {
   align-items: center;
@@ -431,9 +433,6 @@
     font-size: 0.8rem;
   }
 }
-.cnt03 .brandSec .cntWrap li a .left h3 img {
-  margin-right: 20px;
-}
 .cnt03 .brandSec .cntWrap li a .left h3 img.signature {
   width: 25%;
 }
@@ -450,6 +449,9 @@
 }
 .cnt03 .brandSec .cntWrap li a .left h3 img.opo {
   width: 32%;
+}
+.cnt03 .brandSec .cntWrap li a .left h3 img {
+  margin-right: 20px;
 }
 @media screen and (max-width: 768px) {
   .cnt03 .brandSec .cntWrap li a .left h3 img {

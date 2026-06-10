@@ -1,14 +1,4 @@
 @charset "UTF-8";
-.ttl_area_recommend {
-  margin-top: 70px;
-  padding: 0.4em 0.5em; /*文字の上下 左右の余白*/
-  font-size: 22px;
-  font-weight: bold;
-  color: #333; /*文字色*/
-  background: #f4f4f4; /*背景色*/
-  border-left: solid 5px #333; /*左線*/
-}
-
 .main_contents {
   font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
   font-size: 16px;
