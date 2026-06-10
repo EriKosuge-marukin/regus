@@ -259,7 +259,7 @@ p {
   line-height: 1.6;
   color: #333;
   margin-bottom: 1.5em;
-  margin: 0 auto 10px;
+  margin: 70px auto 10px;
 }
 @media screen and (max-width: 768px) {
   .vir_main .vir_mainA h1 {
@@ -2193,12 +2193,6 @@ section.sec05 .newOffice > li .ofName .o_access {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  margin-top: 70px;
-}
-@media screen and (max-width: 768px) {
-  .add260324_48200 {
-    margin-top: 0;
-  }
 }
 
 /*/20260324---------------*/

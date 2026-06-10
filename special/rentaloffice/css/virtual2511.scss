@@ -264,7 +264,7 @@ p {
       line-height: 1.6;
       color: #333;
       margin-bottom: 1.5em;
-        margin: 0 auto 10px;
+        margin: 70px auto 10px;
         @include break{margin: 10px auto 8px;}
       span {
         display: block;
@@ -2129,13 +2129,13 @@ line-height: 1.0;
     font-size: 0.7em;
     line-height: 1;
     display: block;
-	  color: #fff;
-	  background: #000;
-	  padding: 8px;
-	  text-decoration: none;
-	  opacity: 0.6;
+	color: #fff;
+	background: #000;
+	padding: 8px;
+	text-decoration: none;
+	opacity: 0.6;
   
-    img{width: 30px;}
+  img{width: 30px;}
  &:hover {
 	opacity: 1;
 }
@@ -2143,13 +2143,9 @@ line-height: 1.0;
 }
 
 .add260324_48200{
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 70px;
-  @include break{
-    margin-top: 0;
-  }
+font-size: 18px;
+font-weight: bold;
+text-align: center;
 }
 /*/20260324---------------*/
 

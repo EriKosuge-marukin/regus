@@ -387,24 +387,6 @@ p {
   margin: 0;
   padding: 0;
   gap: 0; /* ← 隙間をなくす */
-}
-@media screen and (max-width: 768px) {
-  .vir_main .vir_mainB {
-    margin: 0 auto 20px auto;
-    order: 1;
-    width: 100%;
-  }
-}
-.vir_main .vir_mainB img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.vir_main .vir_mainB {
   /* @media (max-width: 900px) {
       flex-direction: column;
       align-items: center;
@@ -428,6 +410,22 @@ p {
         grid-template-columns: 1fr;
       }
     }*/
+}
+@media screen and (max-width: 768px) {
+  .vir_main .vir_mainB {
+    margin: 0 auto 20px auto;
+    order: 1;
+    width: 100%;
+  }
+}
+.vir_main .vir_mainB img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* Safari */
@@ -461,13 +459,13 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
     margin: 0 auto 50px auto; /* 既存値を維持 */
     padding-inline: 0; /* 横のはみ出し防止 */
     /* 子要素の幅指定をリセット（%幅が残ると右に隙間が出やすい） */
+    /* 並び順の入れ替え：画像を上、テキストを下 */
+    /* テキスト側の内側余白はOK（box-sizingで総幅に含める） */
+    /* 画像エリア：2×2で隙間なし。誤差防止にminmax(0,1fr)を採用 */
   }
   .vir_main .vir_mainA, .vir_main .vir_mainB {
     width: 100% !important;
     margin: 0;
-  }
-  .vir_main {
-    /* 並び順の入れ替え：画像を上、テキストを下 */
   }
   .vir_main .vir_mainB {
     order: 1;
@@ -475,15 +473,9 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
   .vir_main .vir_mainA {
     order: 2;
   }
-  .vir_main {
-    /* テキスト側の内側余白はOK（box-sizingで総幅に含める） */
-  }
   .vir_main .vir_mainA {
     padding: 0 5%;
     text-align: center;
-  }
-  .vir_main {
-    /* 画像エリア：2×2で隙間なし。誤差防止にminmax(0,1fr)を採用 */
   }
   .vir_main .vir_mainB {
     display: grid;
@@ -507,6 +499,9 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  /* =======================
+     レスポンシブ対応
+  ======================= */
 }
 .customer_logo h2 {
   margin-bottom: 24px;
@@ -533,6 +528,8 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* 6列目の右余白をゼロに */
+  /* 2行目（7〜12番目）の下余白をゼロに */
 }
 .customer_logo .cust_list li img {
   width: 100%;
@@ -541,22 +538,11 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-.customer_logo .cust_list li {
-  /* 6列目の右余白をゼロに */
-}
 .customer_logo .cust_list li:nth-child(6n) {
   margin-right: 0;
 }
-.customer_logo .cust_list li {
-  /* 2行目（7〜12番目）の下余白をゼロに */
-}
 .customer_logo .cust_list li:nth-child(n+7) {
   margin-bottom: 0;
-}
-.customer_logo {
-  /* =======================
-     レスポンシブ対応
-  ======================= */
 }
 @media (max-width: 1000px) {
   .customer_logo .cust_list ul li {
@@ -614,6 +600,8 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
   color: #222;
   font-size: 16px;
   /* 左側テキスト部分 */
+  /* 右側ポイントリスト */
+  /* レスポンシブ対応 */
 }
 .vir_explanation .vir_explanationA {
   flex: 1 1 50%;
@@ -625,11 +613,9 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
     max-width: 92%;
   }
 }
-.vir_explanation {
-  /* 右側ポイントリスト */
-}
 .vir_explanation .vir_explanationB {
   flex: 1 1 45%;
+  /* 最後のliの余白を消す */
 }
 .vir_explanation .vir_explanationB ul {
   display: flex;
@@ -684,14 +670,8 @@ _::-webkit-full-page-media, _:future, :root .vir_mainB img {
   margin: 15px 0;
   line-height: 1.3;
 }
-.vir_explanation .vir_explanationB {
-  /* 最後のliの余白を消す */
-}
 .vir_explanation .vir_explanationB li:last-child {
   margin-bottom: 0;
-}
-.vir_explanation {
-  /* レスポンシブ対応 */
 }
 @media (max-width: 900px) {
   .vir_explanation {
@@ -1382,16 +1362,14 @@ section.sec03 table tr {
 }
 section.sec03 table tr th, section.sec03 table tr td {
   padding: 15px 10px;
+  border-right: solid 1px #bbbbbb;
+  border-bottom: solid 1px #bbbbbb;
 }
 @media screen and (max-width: 768px) {
   section.sec03 table tr th, section.sec03 table tr td {
     width: 41%;
     padding: 1.5% 1%;
   }
-}
-section.sec03 table tr th, section.sec03 table tr td {
-  border-right: solid 1px #bbbbbb;
-  border-bottom: solid 1px #bbbbbb;
 }
 section.sec03 table tr th:nth-of-type(1), section.sec03 table tr td:nth-of-type(1) {
   background: #faf6e7;
@@ -1498,6 +1476,9 @@ section.sec03 table tr td:nth-of-type(1) {
 
 .sec04 {
   text-align: center;
+  /* 必須 */
+  /* 装飾用 */
+  /* hover */
 }
 .sec04 h3 {
   width: 100%;
@@ -1513,18 +1494,12 @@ section.sec03 table tr td:nth-of-type(1) {
     margin-bottom: 20px;
   }
 }
-.sec04 {
-  /* 必須 */
-}
 .sec04 .accordion-content {
   display: none;
 }
 .sec04 .accordion {
   margin-bottom: 20px;
   text-align: left;
-}
-.sec04 {
-  /* 装飾用 */
 }
 .sec04 .accordion-header {
   max-width: 1060px;
@@ -1600,9 +1575,6 @@ section.sec03 table tr td:nth-of-type(1) {
   left: -20px;
   color: #151E2F;
   font-size: 16px;
-}
-.sec04 {
-  /* hover */
 }
 .sec04 .accordion-header:hover {
   background-color: #F2F2F2;
@@ -1845,4 +1817,4 @@ section.sec05 .newOffice > li .ofName .o_access {
   font-weight: 500;
 }
 
-/*20251010*//*# sourceMappingURL=virtual251126.css.map */
+/*20251010*//*# sourceMappingURL=virtual2511.css.map */
