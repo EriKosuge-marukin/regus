@@ -1299,7 +1299,7 @@ section {
 section.sec05 {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto calc(100px - 66px);
+  margin: 0 auto calc(100px - 102px);
   @include break {
     margin: 0 auto 58px;
   }
@@ -1919,7 +1919,7 @@ section.sec05 {
 
 /*/20260610---------------*/
 #tabView2 {
-  padding-top: 66px;
+  padding-top: 102px;
   @include break {
     padding-top: 0;
   }
