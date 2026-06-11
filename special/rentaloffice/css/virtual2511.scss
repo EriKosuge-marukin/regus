@@ -2158,11 +2158,10 @@ section.sec05 {
   }
   .caption {
     margin: 20px auto 0;
-    font-size: 12px;
+    font-size: 0.8em;
     text-align: left;
     @include break {
       position: static;
-      font-size: 0.8em;
     }
   }
 }
