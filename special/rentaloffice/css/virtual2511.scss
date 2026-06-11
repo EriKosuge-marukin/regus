@@ -1299,7 +1299,7 @@ section {
 section.sec05 {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto 100px;
+  margin: 0 auto calc(100px - 66px);
   @include break {
     margin: 0 auto 58px;
   }
@@ -1918,6 +1918,12 @@ section.sec05 {
 
 
 /*/20260610---------------*/
+#tabView2 {
+  padding-top: 66px;
+  @include break {
+    padding-top: 0;
+  }
+}
 .vir_mv {
   position: relative;
   width: 100%;
@@ -1939,7 +1945,7 @@ section.sec05 {
   }
   .title {
     position: absolute;
-    bottom: 182px;
+    bottom: 202px;
     left: 30px;
     font-size: 20px;
     font-weight: bold;

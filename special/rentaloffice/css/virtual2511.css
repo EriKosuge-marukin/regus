@@ -1324,7 +1324,7 @@ section.sec03 table tr td:nth-of-type(1) {
 section.sec05 {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto 100px;
+  margin: 0 auto 34px;
 }
 @media screen and (max-width: 768px) {
   section.sec05 {
@@ -1924,6 +1924,15 @@ section.sec05 .newOffice > li .ofName .o_access {
 
 /*/20260327---------------*/
 /*/20260610---------------*/
+#tabView2 {
+  padding-top: 66px;
+}
+@media screen and (max-width: 768px) {
+  #tabView2 {
+    padding-top: 0;
+  }
+}
+
 .vir_mv {
   position: relative;
   width: 100%;
@@ -1950,7 +1959,7 @@ section.sec05 .newOffice > li .ofName .o_access {
 }
 .vir_mv .title {
   position: absolute;
-  bottom: 182px;
+  bottom: 202px;
   left: 30px;
   font-size: 20px;
   font-weight: bold;
