@@ -220,8 +220,8 @@ p {
   }
 }
 
+/* 20260610 .vir_mainに関する記述を削除 */
 
-/*------------------finish main---------------*/
 .customer_logo {
   max-width: 1060px;
   width: 100%;
@@ -327,7 +327,8 @@ p {
   }
 }
 
-/*------------------バーチャルオフィスとは---------------*/
+/* 20260610 .vir_explanationと.titleに関する記述を削除 */
+
 section.cvcv {
   max-width: 998px;
   width: 94%;
@@ -900,12 +901,19 @@ section {
         margin: 0 auto 18px;
       }
     }
-    h2 {
-      margin: 0 auto 30px;
-      @include break {
-        margin: 0 auto 15px;
-      }
+    h3 {
+      width: 100%;
+			font-size: 30px;
+			font-weight: bold;
+			position: relative;
+      margin-top: 0px;
+			margin-bottom: 20px !important;
+			@include break {
+				font-size: 24px;
+				margin-bottom: 15px !important;
+			}
     }
+    /*20260610 ulに.scrollを追加して他に干渉しないように*/
     .scroll ul {
       display: flex;
       max-width: 1060px;
@@ -979,7 +987,7 @@ section {
           border-right: solid 1px #bbbbbb;
           border-bottom: solid 1px #bbbbbb;
           &:nth-of-type(1) {
-            background: #faf6e7;
+            background-color: rgba(#dbeffa, 0.3);
             @include break {
               width: auto;
               padding: 5px 2px;
@@ -1000,7 +1008,7 @@ section {
           position: relative;
           padding: 0 0 20px;
           font-weight: bold;
-          background: #c5dbf0;
+          background-color: #dbeffa;
           text-align: center;
           @include break {
             font-size: 0.7rem;
@@ -1035,6 +1043,12 @@ section {
           font-size: 24px;
           @include break {
             font-size: 13px;
+          }
+          &.td_fill {
+            background-color: rgba(#f2e0ee, 0.5);
+          }
+          &:empty {
+            background-color: #f5f5f5;
           }
           span {
             font-size: 16px;
@@ -1299,7 +1313,7 @@ section {
 section.sec05 {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto calc(100px - 102px);
+  margin: 0 auto calc(100px - 102px); /*20260610 marginを変更*/
   @include break {
     margin: 0 auto 58px;
   }
@@ -1916,8 +1930,7 @@ section.sec05 {
 } //vir_howtouse
 /*/20260327---------------*/
 
-
-/*/20260610---------------*/
+/*20260610/---------------*/
 #tabView2 {
   padding-top: 102px;
   @include break {
@@ -1928,16 +1941,17 @@ section.sec05 {
   position: relative;
   width: 100%;
   max-width: 1060px;
-  margin: 0 auto 80px;
+  margin: 0 auto 50px;
   text-align: center;
   @include break {
-    margin: 0 auto 30px;
+    margin-bottom: 40px;
   }
   .vir_inner {
     position: relative;
     height: 360px;
     text-align-last: left;
-    background: url("../img/virtual/virtual_mv.jpg") center center / cover no-repeat;
+    background: url("../img/virtual/virtual_mv.jpg") center center / cover
+      no-repeat;
     @include break {
       height: 240px;
       background-image: url("../img/virtual/virtual_mv_sp.jpg");
@@ -1991,7 +2005,8 @@ section.sec05 {
         width: 13px;
         height: 14px;
         margin-right: 10px;
-        background: url("../img/virtual/check_icon.png") center center / cover no-repeat;
+        background: url("../img/virtual/check_icon.png") center center / cover
+          no-repeat;
       }
     }
   }
@@ -1999,10 +2014,10 @@ section.sec05 {
 .vir_info {
   margin: 0 auto 30px;
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   @include break {
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
     font-size: 18px;
   }
 }
@@ -2010,23 +2025,20 @@ section.sec05 {
   display: flex;
   width: 94%;
   max-width: 1060px;
-  margin: 0 auto 60px;
-  border-radius: 10px;
+  height: 60px;
+  margin: 0 auto 40px;
+  border-radius: 5px;
   text-align: center;
-  line-height: 1;
   border: 1px solid #bbb;
   @include break {
-    margin: 0 auto 40px;
+    height: 48px;
   }
   li {
     width: 50%;
-    padding: 10px 20px;
-    font-size: 22px;
-    font-weight: bold;
+    padding: 0 20px;
     cursor: pointer;
     @include break {
-      padding: 10px 5px;
-      font-size: 14px;
+      padding: 0 5px;
     }
     &.active {
       position: relative;
@@ -2034,10 +2046,10 @@ section.sec05 {
       color: #fff;
       border: none;
       &:first-child {
-        border-radius: 6px 0 0 6px;
+        border-radius: 4px 0 0 4px;
       }
       &:last-child {
-        border-radius: 0 6px 6px 0;
+        border-radius: 0 4px 4px 0;
       }
       &::after {
         content: "";
@@ -2053,6 +2065,12 @@ section.sec05 {
         border-left: 11px solid transparent;
         border-top: 12px solid #1c3b79;
         border-bottom: 0;
+        @include break {
+          bottom: -9px;
+          border-right: 8px solid transparent;
+          border-left: 8px solid transparent;
+          border-top: 9px solid #1c3b79;
+        }
       }
       .icon svg {
         fill: #fff;
@@ -2062,14 +2080,13 @@ section.sec05 {
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100%;
+      margin: 0 auto;
+      font-size: 20px;
       font-weight: bold;
-      span {
-        display: inline-block;
-        line-height: 1.6;
+      @include break {
+        font-size: 14px !important;
       }
-    }
-    .text {
-      font-weight: bold;
     }
     .icon {
       margin-right: 10px;
@@ -2081,7 +2098,7 @@ section.sec05 {
         width: 40px;
         fill: #000;
         @include break {
-          width: 28px;
+          width: 24px;
         }
       }
     }
@@ -2100,25 +2117,89 @@ section.sec05 {
     text-decoration: none;
   }
 }
+.vir_lounge {
+  width: 94%;
+  max-width: 1060px;
+  display: flex;
+  gap: 0 40px;
+  margin: 60px auto 0;
+  padding: 40px 60px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  @include break {
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 15px 3% 10px;
+  }
+  .text {
+    flex: 1;
+    text-align: left;
+    h3 {
+      @include break {
+        text-align: center;
+      }
+    }
+    p {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.5;
+      @include break {
+        font-size: 14px;
+      }
+    }
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      gap: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+      @include break {
+        gap: 5px;
+        margin-top: 15px;
+        font-size: 12px;
+      }
+      dt {
+        width: 68px;
+        padding: 3px 0;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        @include break {
+          width: 60px;
+        }
+      }
+      dd {
+        width: calc(558px - 68px - 10px);
+        @include break {
+          width: auto;
+        }
+      }
+    }
+  }
+  .image {
+    width: 340px;
+    height: 255px;
+    @include break {
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+    }
+  }
+}
 .vir_box {
   width: 94%;
   max-width: 1060px;
-  margin: 80px auto 0;
-  padding: 50px 60px 60px;
+  margin: 60px auto 0;
+  padding: 40px 60px;
   background: #f5f5f5;
   @include break {
-    margin: 60px auto 0;
-    padding: 20px 15px;
-  }
-  h3.title {
-    margin: 0 auto 35px;
-    font-weight: bold;
-    font-size: 28px;
-    text-align: center;
-    @include break {
-      margin: 0 auto 20px;
-      font-size: 18px;
-    }
+    margin-top: 40px;
+    padding: 15px 3% 10px;
   }
   ul {
     display: flex;
@@ -2132,14 +2213,15 @@ section.sec05 {
       position: relative;
       width: calc(50% - 10px);
       padding: 15px 10px 15px 40px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       text-align: left;
       background: #fff;
       border-radius: 5px;
       @include break {
         width: 100%;
-        font-size: 14px;
+        padding: 10px 3% 10px 30px;
+        font-size: 16px;
       }
       &::before {
         content: "";
@@ -2153,17 +2235,21 @@ section.sec05 {
         margin: auto 0;
         background: #e40005;
         border-radius: 50%;
+        @include break {
+          left: 3%;
+        }
       }
     }
   }
   .caption {
     margin: 20px auto 0;
-    font-size: 0.8em;
+    font-size: 12px;
     text-align: left;
     @include break {
       position: static;
+      margin: 15px auto 0;
+      font-size: 10px;
     }
   }
 }
-
 /*/20260610---------------*/
