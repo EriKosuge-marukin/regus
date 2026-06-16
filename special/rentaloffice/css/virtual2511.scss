@@ -2153,12 +2153,11 @@ section.sec05 {
     dl {
       display: flex;
       flex-wrap: wrap;
-      align-items: start;
+      align-items: center;
       gap: 10px;
       margin-top: 20px;
       font-size: 14px;
       @include break {
-        gap: 5px;
         margin-top: 15px;
         font-size: 12px;
       }
@@ -2174,9 +2173,9 @@ section.sec05 {
         }
       }
       dd {
-        width: calc(558px - 68px - 10px);
+        width: calc(100% - 68px - 10px);
         @include break {
-          width: auto;
+          width: calc(100% - 60px - 10px);
         }
       }
     }

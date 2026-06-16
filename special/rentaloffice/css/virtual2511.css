@@ -2197,14 +2197,13 @@ section.sec05 .newOffice > li .ofName .o_access {
 .vir_lounge .text dl {
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: center;
   gap: 10px;
   margin-top: 20px;
   font-size: 14px;
 }
 @media screen and (max-width: 768px) {
   .vir_lounge .text dl {
-    gap: 5px;
     margin-top: 15px;
     font-size: 12px;
   }
@@ -2223,11 +2222,11 @@ section.sec05 .newOffice > li .ofName .o_access {
   }
 }
 .vir_lounge .text dl dd {
-  width: 480px;
+  width: calc(100% - 68px - 10px);
 }
 @media screen and (max-width: 768px) {
   .vir_lounge .text dl dd {
-    width: auto;
+    width: calc(100% - 60px - 10px);
   }
 }
 .vir_lounge .image {
