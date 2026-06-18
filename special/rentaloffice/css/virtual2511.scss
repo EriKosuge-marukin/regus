@@ -877,7 +877,7 @@ section {
     }
   }
   // }//_sec02
-
+  // 20260610 sec03のマージンを変更
   &.sec03 {
     margin: 0 auto 80px;
     text-align: center;
@@ -901,6 +901,7 @@ section {
         margin: 0 auto 18px;
       }
     }
+    // 20260610 h3のマージンを変更
     h3 {
       width: 100%;
 			font-size: 30px;
@@ -913,7 +914,7 @@ section {
 				margin-bottom: 15px !important;
 			}
     }
-    /*20260610 ulに.scrollを追加して他に干渉しないように*/
+    // 20260610 ulに.scrollを追加して他に干渉しないように
     .scroll ul {
       display: flex;
       max-width: 1060px;
@@ -1003,6 +1004,7 @@ section {
             }
           }
         }
+        // 20260610 background-colorを変更
         th {
           font-size: 16px;
           position: relative;
@@ -1044,6 +1046,7 @@ section {
           @include break {
             font-size: 13px;
           }
+          // 20260610 td_fillとemptyを追加
           &.td_fill {
             background-color: rgba(#f2e0ee, 0.5);
           }
@@ -1313,7 +1316,7 @@ section {
 section.sec05 {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto calc(100px - 102px); /*20260610 marginを変更*/
+  margin: 0 auto calc(100px - 102px); // 20260610 marginを変更
   @include break {
     margin: 0 auto 58px;
   }

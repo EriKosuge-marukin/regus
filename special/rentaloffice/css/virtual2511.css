@@ -910,9 +910,6 @@ section.sec03 h3 {
     margin-bottom: 15px !important;
   }
 }
-section.sec03 {
-  /*20260610 ulに.scrollを追加して他に干渉しないように*/
-}
 section.sec03 .scroll ul {
   display: flex;
   max-width: 1060px;
@@ -1339,7 +1336,7 @@ section.sec03 table tr td:nth-of-type(1) {
 section.sec05 {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto -2px; /*20260610 marginを変更*/
+  margin: 0 auto -2px;
 }
 @media screen and (max-width: 768px) {
   section.sec05 {
