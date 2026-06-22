@@ -36,7 +36,7 @@ $(function(){
 		if (w >= x) {
 			mgSticky = 150;
 		}else{
-			mgSticky = 115;
+			mgSticky = typeof _mgSticky == "undefined" ? 115 : _mgSticky;
 		}
 		var speed = 1000;
 		var href= $(this).attr("href");

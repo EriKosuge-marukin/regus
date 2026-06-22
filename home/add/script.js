@@ -49,8 +49,18 @@ backs.forEach((back) => {
   });
 });
 
+const backs2 = document.querySelectorAll(".sp-modal__back_area");
+let openIndex_area = 0;
+backs2.forEach((back) => {
+  back.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalParent.classList.remove("is-active");
+    spModals[openIndex].classList.remove("is-active");
+  });
+});
+
 spBtns.forEach((spBtn, index) => {
-	spBtn.addEventListener("click", () => {
+  spBtn.addEventListener("click", () => {
     openIndex = index;
     modalParent.classList.add("is-active");
     spModals[openIndex].classList.add("is-active");
@@ -59,42 +69,45 @@ spBtns.forEach((spBtn, index) => {
 
 const spTokyoLinks = document.querySelectorAll(".sp-modal__link_tokyo");
 spTokyoLinks.forEach((spTokyoLink, index) => {
-  console.log('aaaa');
   //spTokyoLink.addEventListener("click", () => {
-  spTokyoLink.addEventListener("click", function(e) {
-    console.log('bbbbb');
-    document.querySelector('button.sp-modal__back').click();
+  spTokyoLink.addEventListener("click", function (e) {
+    document.querySelector("button.sp-modal__back").click();
     //document.querySelector('button[data-val="tokyo"]').click();
-    this.closest('.search__inner').querySelector('button[data-val="tokyo"]').click();
+    this.closest(".search__inner")
+      .querySelector('button[data-val="tokyo"]')
+      .click();
   });
 });
 
-
 function closeAllModals() {
-  document.querySelectorAll('.modal').forEach(modal => {
-    if (modal.classList.contains('active')) {
-      modal.classList.remove('active');
-      setTimeout(() => modal.setAttribute('hidden', true), 300);
+  document.querySelectorAll(".modal").forEach((modal) => {
+    if (modal.classList.contains("active")) {
+      modal.classList.remove("active");
+      setTimeout(() => modal.setAttribute("hidden", true), 300);
     }
   });
 }
 
 // モーダルの開閉処理
-document.querySelectorAll('.search-fv__btn').forEach(button => {
-  button.addEventListener('click', () => {
+document.querySelectorAll(".search-fv__btn").forEach((button) => {
+  button.addEventListener("click", () => {
     closeAllModals();
 
     const region = button.dataset.val;
     const modal = document.getElementById(`modal-${region}`);
     if (modal) {
-      modal.removeAttribute('hidden');
-      setTimeout(() => modal.classList.add('active'), 10);
+      modal.removeAttribute("hidden");
+      setTimeout(() => modal.classList.add("active"), 10);
 
       // 閉じるボタンの設定
-      modal.querySelector('.close-btn').addEventListener('click', () => {
-        modal.classList.remove('active');
-        setTimeout(() => modal.setAttribute('hidden', true), 300);
-      }, { once: true });
+      modal.querySelector(".close-btn").addEventListener(
+        "click",
+        () => {
+          modal.classList.remove("active");
+          setTimeout(() => modal.setAttribute("hidden", true), 300);
+        },
+        { once: true },
+      );
     }
   });
 });
