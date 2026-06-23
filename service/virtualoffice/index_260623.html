@@ -1,0 +1,2945 @@
+<!doctype html>
+<html>
+
+<head lang="ja">
+  <meta charset="UTF-8" />
+  <title>
+    バーチャルオフィスならリージャス｜法人登記・住所利用・郵便転送対応【低価格で利用可】
+  </title>
+
+  <meta name="description"
+    content="バーチャルオフィスサービスなら世界最大手ブランド【リージャス】。創業時にメリットの大きいバーチャルオフィスサービスは、業務スペース(事務所)を構えることなく、事業を始める際に必要な住所、電話番号などを借りられるサービスです。オフィス開設の初期費用を抑えながら、一等地の住所で法人登記が可能。郵便物転送や電話転送サービスなど各種事務代行サービスもご提供。オフィス・会議室・テレビ会議室などの実務スペースも割引利用できる【リージャス】のバーチャルオフィスサービスをご利用ください。" />
+  <meta name="keywords" content="" />
+  <!--スマホ以外のデバイスからのアクセスのときのビューポート-->
+  <meta name="viewport"
+    content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="icon" href="/common2/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" media="all" href="/common2/css/common.css?ver=202011" />
+  <link rel="stylesheet" media="all" href="/css/layout.css?ver=202011" />
+  <link rel="stylesheet" media="all" href="/special/officetype/css/layout.css" />
+  <link rel="stylesheet" media="all" href="/special/rentaloffice/css/virtual2511.css?ver=20260403" />
+  <!--link rel="stylesheet" media="all" href="/special/rentaloffice/css/btncontact.css?ver=20220222"-->
+
+  <link rel="stylesheet" media="all" href="/virtual_o/css/list_layout.css?ver=2025" />
+  <link rel="stylesheet" media="all" href="/common2/css/map_layout.css" />
+
+  <link rel="stylesheet" href="/home/add/style.css?ver20250616" />
+  <!---//MAP--->
+  <link rel="stylesheet" media="all" href="/css/area_style.css" />
+  <link rel="stylesheet" type="text/css" href="/home/css/home_map.css" />
+  <script defer src="/home/js/home-map.js?ver20240312"></script>
+  <!---MAP//--->
+
+  <link rel="canonical" href="https://www.regus-office.jp/service/virtualoffice/" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="/common2/js/nav.js"></script>
+  <script type="text/javascript" src="/common2/js/jquery.heightLine.js"></script>
+  <!--script type="text/javascript" src="/common2/js/script.js?ver=20170606"></script-->
+  <script>
+    var _mgSticky = 20; //スクロール位置調整
+  </script>
+  <script type="text/javascript" src="/virtual_o/js/script.js?ver=202510"></script>
+  <script type="text/javascript" src="/search/js/jquery.rwdImageMaps.js"></script>
+  <!--[if lt IE 9]>
+      <script type="text/javascript" src="/common2/js/selectivizr.js"></script>
+      <script type="text/javascript" src="/common2/js/html5shiv.js"></script>
+      <script type="text/javascript" src="/common2/js/respond.js"></script>
+      <script type="text/javascript" src="/common2/js/ie8.js"></script>
+    <![endif]-->
+  <script type="text/javascript">
+    $(function () {
+      $(".search .boxL , .search .boxR").heightLine({ minWidth: 750 });
+      $(".rentalBox dd").heightLine();
+      // 20260610 $(".search li").heightLine();を削除
+    });
+  </script>
+
+  <script>
+    $(document).ready(function (e) {
+      $("img[usemap]").rwdImageMaps();
+    });
+  </script>
+
+  <!-- jquery & iScroll -->
+  <script src="/common2/js/iscroll.js"></script>
+  <script src="/common2/js/drawer.js"></script>
+  <script type="text/javascript" src="/common2/js/sp_sidenavi.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".drawer").drawer();
+    });
+    //スマホだけ電話がかかる
+    if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+      $(function () {
+        $(".tel").each(function () {
+          var str = $(this).html();
+          if ($(this).children().is("img")) {
+            $(this).html(
+              $("<a>")
+                .attr(
+                  "href",
+                  "tel:" + $(this).children().attr("alt").replace(/-/g, ""),
+                )
+                .append(str + "</a>"),
+            );
+          } else {
+            // 20200408 下の1行をif文に変更
+            //$(this).html($('<a>').attr('href', 'tel:' + $(this).text().replace(/-/g, '')).append(str + '</a>'));
+            if ($(this).hasClass("tel2")) {
+              var tel_no = $(this).children(".num").text();
+              $(this).html(
+                $("<a>")
+                  .attr("href", "tel:" + tel_no)
+                  .append(str + "</a>"),
+              );
+            } else {
+              $(this).html(
+                $("<a>")
+                  .attr("href", "tel:" + $(this).text().replace(/-/g, ""))
+                  .append(str + "</a>"),
+              );
+            }
+          }
+        });
+      });
+    }
+    //fix
+    if (navigator.userAgent.match(/(iPhone|iPod|Android)/)) {
+      $(function () {
+        var topBtn = $("#topRequestPop");
+        topBtn.hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+          } else {
+            topBtn.fadeOut();
+          }
+        });
+      });
+    }
+  </script>
+
+  <link href="/office/lightbox/css/lightbox.css" rel="stylesheet" />
+  <script src="/office/lightbox/js/lightbox.min.js" type="text/javascript"></script>
+  <script>
+    lightbox.option({
+      positionFromTop: 200,
+    });
+  </script>
+
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    .sp-modal {
+      z-index: 9999;
+    }
+
+    /* 20260610// */
+    .gnav .search {
+      margin-top: 0;
+    }
+
+    /* //20260610 */
+  </style>
+
+  <!---金額未定時--->
+  <style>
+    @media screen and (min-width: 750px) {
+      .wrapper .listUnit table tr td.kingaku {
+        width: 12% !important;
+        background: #dddddd;
+        padding: 3px 8px;
+      }
+
+      .wrapper .listUnit table tr td.sodan {
+        width: 88% !important;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      .wrapper .listUnit table tr td.kingaku {
+        width: 10% !important;
+        background: #dddddd;
+        font-size: 10px;
+        line-height: 1;
+      }
+
+      .wrapper .listUnit table tr td.sodan {
+        width: 90% !important;
+      }
+    }
+  </style>
+
+  <style>
+    .mf_finder_searchBox_items button span {
+      display: none;
+    }
+  </style>
+  <!---240918--->
+  <script id="dejam_tag" src="https://storage.googleapis.com/dejam-tag/Zm3Dh4w2RzK7r9QSNFwo/js/dejam.js" async></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-PX76R6H");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!---//自動翻訳用--->
+  <script src="https://d.shutto-translation.com/trans.js?id=7416"></script>
+  <script defer src="/home/add/script.js?ver1227"></script>
+</head>
+
+<body>
+  <!-- 170908固定ページ用バナー出力用変数の宣言 -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX76R6H" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!--header-->
+
+  <!--header-->
+  <style>
+    @media screen and (max-width: 750px) {
+      .no_sp_no {
+        display: none !important;
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      .no_pc_no {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <!--script src="https://code.jquery.com/jquery.min.js"></script-->
+  <script>
+    $(function () {
+      $(".D").click(function () {
+        $(".E").slideToggle("");
+      });
+    });
+  </script>
+  <!---//221021--->
+  <style>
+    .hd_tel_modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 10001;
+    }
+
+    .hd_tel_modal_wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hd_tel_modal_inner {
+      background: #fff;
+      position: relative;
+      padding: 35px 60px 40px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .hd_tel_modal_inner p {
+      font-size: 18px;
+    }
+
+    .hd_tel_modal_close {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .hd_tel_modal_num {
+      margin: 20px 0 30px;
+    }
+  </style>
+  <div class="hd_tel_modal">
+    <div class="hd_tel_modal_wrap">
+      <div class="hd_tel_modal_inner">
+        <div class="hd_tel_modal_close">
+          <img src="/spaces_page/office/img/close.png" alt="閉じる" />
+        </div>
+        <p>
+          ご希望のエリアや条件がありましたら<br />お気軽にお問い合わせください
+        </p>
+        <div class="hd_tel_modal_num">
+          <img src="/spaces_page/office/img/modal_tel.svg" alt="電話でのお問い合わせ 0120-965-391" />
+        </div>
+        <div class="hd_tel_modal_btn">
+          <a href="/enquiry/" class="ov"><img src="/spaces_page/office/img/modal_contact.svg"
+              alt="メールでのお問い合わせはこちら" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---//--->
+  <header>
+    <div class="inner1">
+      <div class="hd_logo">
+        <a href="/"><img src="/common2/images/logo_hdr.gif" alt="Regus" /></a>
+      </div>
+      <!--div class="hd_no1 sp"><img src="/common2/images/header_no1_badge.png" alt="世界No.1"></div-->
+      <p class="rec_bnr">
+        <a href="/recruiting_n/"><img src="/images_2023/banner.png" alt="一緒に働く仲間大募集！" /></a>
+      </p>
+
+      <div class="select_lang" data-stt-langbar>
+        <select onchange="$('div.select_lang select option:selected').click()">
+          <option>Language</option>
+          <option data-stt-changelang="ja" data-stt-ignore>Japanese</option>
+          <option data-stt-changelang="en" data-stt-ignore>English</option>
+        </select>
+      </div>
+
+      <ul class="hd_links no_sp_no">
+        <li><a href="/reservation/">時間貸し/会議室予約</a></li>
+        <li><a href="/contract/">ご契約の流れ</a></li>
+        <li><a href="/owner/">ビルオーナー様</a></li>
+        <li><a href="/agent/">仲介エージェント様</a></li>
+      </ul>
+      <!--div class="hd_contactSP"><a href="/enquiry/"><img src="/common2/images/header_sp_email.svg" alt="お問い合わせ"></a></div-->
+      <style>
+        header>.inner1 .hd_support {
+          display: none;
+        }
+
+        header.fixed>.inner1 .hd_support {
+          display: block;
+          margin-left: 4px;
+        }
+
+        @media screen and (max-width: 960px) {
+          header.fixed>.inner1 .hd_support {
+            display: none;
+          }
+        }
+      </style>
+      <div class="hd_tel">
+        <a href="tel:0120-965-391"><img src="/common2/images/img_top_tel3.png" alt="0120-965-391" /></a>
+      </div>
+      <div class="hd_support">
+        <a href="/support/"><img src="/common2/images/btn_top_btn_wht.png" alt="営業提案・ご入居者様 窓口" /></a>
+      </div>
+      <div class="hd_room">
+        <a href="/vacancy/"><img src="/common2/images/btn_top_btn240415-a_fix.png" alt="空室・金額確認" /></a>
+      </div>
+      <div class="hd_contact">
+        <a href="/enquiry/"><img src="/common2/images/btn_top_contact2.gif" alt="お問い合わせ" /></a>
+      </div>
+      <div class="fr-nav">
+        <div class="icon-animation">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul class="gnav">
+        <style>
+          .mf-search-box {
+            margin: 32px auto;
+            width: 80%;
+          }
+
+          .mf-search-box .mf-search-bar .mf-search-bar_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            height: 35px;
+            padding: 5px 5px 2px;
+            white-space: nowrap;
+            font-family: unset;
+            border-radius: 0 4px 4px 0;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            font-size: 100%;
+            cursor: pointer;
+          }
+
+          .mf-search-box .mf-search-bar .mf-search-bar_button span {
+            display: none;
+          }
+
+          .mf-search-box .mf-search-bar .mf-search-bar_button .mf-search-bar_button_icon {
+            font-size: 18px;
+            color: #fff;
+            margin: 0 0 0 5px;
+          }
+
+          .mf-search-box .mf-search-bar .mf-search-bar_button:hover {
+            background-color: #666;
+          }
+
+          @media screen and (max-width: 750px) {
+            .mf_finder_searchBox_items {
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-align: stretch;
+              align-items: stretch;
+              padding: 1rem 0;
+            }
+
+            .mf_finder_searchBox_items {
+              padding: 2rem !important;
+            }
+
+            .mf_finder_searchBox_items label {
+              display: none;
+            }
+
+            .mf_finder_searchBox_doctype::after {
+              content: "\f0d7";
+              font-family: FontAwesome;
+              position: absolute;
+              top: 8px;
+              right: 6px;
+              pointer-events: none;
+            }
+
+            .mf_finder_searchBox_query_wrap {
+              position: relative;
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              -ms-flex-align: stretch;
+              align-items: stretch;
+            }
+
+            .mf_finder_searchBox_query_input {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              min-height: 34px;
+              height: 100%;
+              margin: 0;
+              width: 100%;
+              font-size: 1rem;
+              border: 1px solid #ddd;
+              border-radius: 0;
+              padding: 0.5rem;
+            }
+
+            .mf_finder_searchBox_submit::before {
+              content: "\f002";
+              font-family: "FontAwesome";
+            }
+
+            .mf_finder_searchBox_submit {
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              font-size: 16px;
+              background-color: #222;
+              border: none;
+              border-radius: 0 3px 3px 0;
+              color: #eee;
+              padding: 0 0.75rem;
+              cursor: pointer;
+            }
+          }
+        </style>
+        <li class="search no_pc_no">
+          <!-- ↓検索窓用カスタムエレメント -->
+          <mf-search-box submit-text=""
+            ajax-url="https://finder.api.mf.marsflag.com/api/v1/finder_service/documents/930bf59d/search" doctype-hidden
+            options-hidden results-page-url="https://www.regus-office.jp/result/"
+            placeholder="検索したいワードを入力"></mf-search-box>
+          <!--//-->
+        </li>
+
+        <li>
+          <a href="/area-search/"><span class="bd_wt">レンタルオフィスを探す</span></a>
+          <div class="acco_wrap">
+            <ul class="acco">
+              <li><a href="/area-search/">エリアから探す</a></li>
+              <li><a href="/area-search/#rosen_tokyo">路線から探す</a></li>
+              <!--li><a href="https://www.regus-office.jp#tab_box">都市名から探す</a></li-->
+              <li><a href="/map_search/">GoogleMapから探す</a></li>
+              <!--li class="pc"><a href="https://www.regus-office.jp#conlist">条件から探す</a></li>
+    <li><a href="/officetype/">オフィスから探す</a></li>
+    <li><a href="/brands/">ブランドから探す</a></li-->
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="/officetype/"><span class="bd_wt">オフィスの種類</span></a>
+          <div class="acco_wrap">
+            <ul class="acco">
+              <li>
+                <a href="/service/">レンタルオフィスの<br class="pc" />５つのサービス</a>
+              </li>
+              <!--li><a href="/blog/learn/points-for-choosing-rentaloffice/">フレキシブルオフィス</a></li-->
+              <li>
+                <a href="/service/privateoffice/">プライベートオフィス</a>
+              </li>
+              <li>
+                <a href="/service/coworking-spaces/">シェアオフィス<br class="pc" />（月額デスク単位契約）</a>
+              </li>
+              <li>
+                <a href="/service/virtualoffice/">バーチャルオフィス</a>
+              </li>
+              <li>
+                <a href="/service/membership/">コワーキングスペース<br class="pc" />（メンバーシップ）</a>
+              </li>
+              <li><a href="/service/meetingroom/">時間貸し会議室</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="/application/"><span class="bd_wt">事業規模から探す</span></a>
+          <div class="acco_wrap">
+            <div class="col_2">
+              <div class="col_L">
+                <p class="ttlsub">法人のお客様</p>
+                <ul class="acco">
+                  <li><a href="/application/large-enterprise">大企業</a></li>
+                  <li><a href="/application/sme">中小企業</a></li>
+                </ul>
+              </div>
+              <div class="col_R">
+                <p class="ttlsub">個人/SOHO向け</p>
+                <ul class="acco">
+                  <li><a href="/application/start-ups">起業家</a></li>
+                  <li><a href="/application/nomad">ノマドワーカーに</a></li>
+                  <li><a href="/application/professional">士業の方</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="/purpose/"><span class="bd_wt">利用目的から探す</span></a>
+          <div class="acco_wrap">
+            <ul class="acco">
+              <!--li><a href="/purpose/labor-reform/">働き方改革</a></li-->
+              <li><a href="/purpose/telework/">テレワーク</a></li>
+              <li><a href="/purpose/bcp/">事業継続計画(BCP)</a></li>
+              <li><a href="/purpose/branchoffice/">支店・営業所</a></li>
+              <li><a href="/purpose/businesstrip/">出張時</a></li>
+              <li><a href="/purpose/project/">プロジェクトルームに</a></li>
+              <li>
+                <a href="/purpose/webmeeting/">ウェブ会議・テレカンでのご利用</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="fixno">
+          <a href="/case/casestudies"><span class="bd_wt">活用事例</span></a>
+          <div class="acco_wrap">
+            <ul class="acco">
+              <li><a href="/case/casestudies">活用事例</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="fixno">
+          <a href="/blog/"><span class="bd_wt">レンタルオフィスを学ぶ</span></a>
+          <div class="acco_wrap">
+            <ul class="acco">
+              <li><a href="/blog/workplace/">レンタルオフィスについて</a></li>
+              <li>
+                <a href="/blog/category/coworkingspace/">シェアオフィス</a>
+              </li>
+              <li>
+                <a href="/blog/learn/points-for-choosing-rentaloffice/">フレキシブルオフィス</a>
+              </li>
+              <li><a href="/blog/entrepreneur/">スタートアップ</a></li>
+              <li><a href="/blog/business/">ワークスタイル変革</a></li>
+              <li><a href="/blog/manager/">トレンド調査</a></li>
+              <li><a href="/blog/workstyle/">これからのワークスタイル</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="fixno">
+          <a href="/profile/"><span class="bd_wt">リージャスとは</span></a>
+          <div class="acco_wrap acco_right">
+            <ul class="acco">
+              <li><a href="/aboutus/">会社概要</a></li>
+              <li><a href="/greeting/">代表挨拶</a></li>
+              <li><a href="/history/">沿革</a></li>
+              <li><a href="/base/">拠点一覧</a></li>
+              <li><a href="/brands/">ブランド一覧</a></li>
+              <li><a href="/blog/news/">リージャスからお知らせ</a></li>
+              <li><a href="/recruiting_n/">採用情報</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="search no_sp_no fixno">
+          <div class="D">
+            <img class="search_btn" src="/common2/images/search_on.svg" alt="" />
+          </div>
+          <div class="E">
+            <!-- ↓検索窓用カスタムエレメント -->
+            <mf-search-box submit-text=""
+              ajax-url="https://finder.api.mf.marsflag.com/api/v1/finder_service/documents/930bf59d/search"
+              doctype-hidden options-hidden results-page-url="https://www.regus-office.jp/result/"
+              placeholder="検索したいワードを入力"></mf-search-box>
+            <!--//-->
+          </div>
+        </li>
+
+        <li class="no_pc_no">
+          <a href="/contract/"><span class="bd_wt">ご契約の流れ・その他</span></a>
+          <div class="acco_wrap">
+            <ul class="acco">
+              <li><a href="/contract/">ご契約の流れと必要書類</a></li>
+              <li><a href="/agent/">仲介エージェント様</a></li>
+              <li><a href="/owner/">ビルオーナー様</a></li>
+              <li>
+                <a href="/reservation/">My Regusで時間貸しオフィス・会議室をオンライン予約</a>
+              </li>
+              <li><a href="/faq/">よくある質問</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="close_acco">
+          <p>閉じる<img src="/common2/images/close.png" alt="" /></p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!---新headerここまで---><!--/header--><!--/header-->
+  <!---ここまで--->
+
+  <!--contentsWrap-->
+  <div class="wrapper">
+    <div class="contentsWrap clearfix">
+      <ul id="breadcrumb" class="pc clearfix">
+        <li>
+          <a href="https://www.regus-office.jp">レンタルオフィス日本リージャス</a>
+        </li>
+        &nbsp;>&nbsp;<a href="https://www.regus-office.jp/service/"
+          title="レンタルオフィスの５つのサービス">レンタルオフィスの５つのサービス</a>&nbsp;>&nbsp;バーチャルオフィスサービス
+      </ul>
+    </div>
+  </div>
+  <!--contents-->
+  <div class="main_contents" id="pageT">
+    <!---ここから表示--->
+
+    <style>
+      @media screen and (min-width: 750px) {
+        .wrapper .contentsWrap h1 {
+          background: url(/common2/images/bg_white.gif) repeat-x left bottom #e10034;
+          line-height: 60px;
+          margin: 0 0 10px;
+          padding-left: 10px;
+          font-size: 140%;
+          font-weight: bold;
+          border-bottom: 4px solid #939696;
+          color: #ffffff;
+        }
+
+        .wrapper .leadTxt {
+          margin: 20px 0 0;
+        }
+
+        .wrapper .leadTxt div {
+          float: right;
+          width: 55%;
+          border: solid 1px #ccc;
+          padding: 2rem 1rem;
+          border-radius: 4px;
+          margin: 0;
+        }
+
+        .wrapper .leadTxt p.flL {
+          width: 40%;
+        }
+
+        .wrapper .leadTxt p.flL img {
+          width: 400px;
+        }
+
+        p.to_bgw {
+          text-align: center;
+          margin-top: 2rem;
+        }
+
+        p.to_bgw img {
+          width: 50%;
+          height: auto;
+        }
+
+        .mroom_disclaimer {
+          padding: 16px 0;
+          text-align: right;
+        }
+
+        .map_area {
+          margin: 10px auto;
+        }
+
+        .wrapper .listUnit table th {
+          text-align: center;
+          padding: 1rem 0;
+        }
+
+        /*.wrapper .listUnit table.test th {
+		padding: 1rem 0;
+	}*/
+        /*.wrapper .listUnit table td {
+    padding: 1em 0;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    width: 21% !important;
+    text-align: center;
+    vertical-align: middle;
+	}
+	.wrapper .listUnit table td:nth-child(1) {
+    width: 21% !important;
+    background: #fff;
+	}*/
+      }
+
+      @media screen and (max-width: 750px) {
+        .wrapper .contentsWrap h1 {
+          background: url(/common2/images/bg_white.gif) repeat-x left bottom #e10034;
+          font-size: 130%;
+          font-weight: bold;
+          padding: 3%;
+          margin: 5% 0 0;
+          border-bottom: 4px solid #939696;
+          color: #ffffff;
+        }
+
+        .mroom_disclaimer {
+          padding: 9px;
+          margin-top: 12px;
+          text-align: left;
+          border: solid 1px #333;
+        }
+      }
+    </style>
+
+    <div class="main_contents">
+      <div class="mv">
+        <div class="mv__inner">
+          <div class="mv__title">
+            一等地の住所で、ビジネスの信頼を高める。
+            <h1>リージャスのバーチャルオフィス</h1>
+          </div>
+        </div>
+        <ul class="mv__list">
+          <li>全国130拠点以上の一等地住所が利用可能</li>
+          <li>法人登記・郵便受け取り・電話番号利用に対応</li>
+          <li>会議室やラウンジも利用できるプランもご用意</li>
+        </ul>
+      </div>
+
+      <style>
+        p.cam_banner {
+          text-align: center;
+          margin: 2em 0 4em;
+          padding: 0 4%;
+        }
+
+        p.cam_banner img {
+          display: inline-block;
+        }
+      </style>
+
+      <section class="sec01" id="plan4">
+        <p class="info">まずはご希望に合わせてご覧ください</p>
+
+        <ul class="tab">
+          <li class="tab__item active">
+            <h2>
+              <span class="tab__icon"><svg id="layer1" viewBox="0 0 40 40">
+                  <path
+                    d="M8.44,34.17c-.71,0-1.33-.26-1.84-.77-.51-.51-.77-1.13-.77-1.84V8.44c0-.71.26-1.33.77-1.84.51-.51,1.13-.77,1.84-.77h8.17c0-.91.33-1.69.98-2.35.66-.66,1.46-.99,2.41-.99s1.77.33,2.43.99c.66.66.98,1.44.97,2.35h8.17c.71,0,1.33.26,1.84.77.51.51.77,1.13.77,1.84v23.12c0,.71-.26,1.33-.77,1.84-.51.51-1.13.77-1.84.77H8.44ZM8.44,32.07h23.12c.13,0,.25-.05.35-.16.11-.11.16-.22.16-.35V8.44c0-.13-.05-.25-.16-.35-.11-.11-.22-.16-.35-.16H8.44c-.13,0-.25.05-.35.16-.11.11-.16.22-.16.35v23.12c0,.13.05.25.16.35.11.11.22.16.35.16ZM12.08,27.72h10.69v-2.09h-10.69v2.09ZM12.08,21.05h15.83v-2.09h-15.83v2.09ZM12.08,14.37h15.83v-2.09h-15.83v2.09ZM20.96,6.71c.27-.26.4-.58.4-.96s-.13-.7-.4-.96c-.27-.26-.59-.39-.96-.39s-.69.13-.95.39c-.26.26-.39.58-.39.96s.13.69.39.96c.26.26.58.39.95.39s.69-.13.96-.39ZM7.93,32.07V7.93v24.15Z" />
+                </svg></span>サービスを知る
+            </h2>
+          </li>
+          <li class="tab__item">
+            <h2>
+              <span class="tab__icon"><svg id="layer1" viewBox="0 0 40 40">
+                  <path
+                    d="M13.1,34.67c-1.79-.78-2.68-1.77-2.68-2.98,0-.61.28-1.2.84-1.77.56-.56,1.33-1.03,2.3-1.41l1.61,1.43c-.5.16-1.01.41-1.52.73-.51.33-.89.66-1.14.99.34.55,1.23,1.03,2.68,1.44,1.45.41,3.06.62,4.82.62s3.37-.21,4.83-.62c1.46-.41,2.36-.89,2.7-1.44-.24-.35-.64-.68-1.2-1.01-.57-.32-1.11-.56-1.62-.72l1.62-1.45c1.04.38,1.85.85,2.41,1.41.57.56.85,1.15.85,1.78,0,1.21-.89,2.2-2.68,2.98-1.79.78-4.09,1.16-6.9,1.16s-5.12-.39-6.9-1.16ZM20.04,28.21c2.9-2.2,5.08-4.39,6.53-6.57,1.45-2.18,2.17-4.27,2.17-6.26,0-3.01-.94-5.28-2.82-6.82-1.88-1.53-3.85-2.3-5.92-2.3s-4,.77-5.9,2.3c-1.89,1.53-2.84,3.81-2.84,6.82,0,1.98.72,4.02,2.17,6.14,1.45,2.12,3.65,4.35,6.61,6.69ZM20,30.83c-3.62-2.72-6.33-5.36-8.13-7.92-1.8-2.56-2.7-5.07-2.7-7.53,0-1.85.33-3.48.99-4.88.66-1.4,1.51-2.56,2.55-3.5,1.04-.94,2.2-1.65,3.48-2.12s2.56-.71,3.82-.71,2.54.24,3.83.71c1.29.47,2.45,1.18,3.49,2.12,1.04.94,1.88,2.11,2.54,3.5.66,1.4.98,3.02.98,4.88,0,2.46-.9,4.97-2.69,7.54-1.79,2.56-4.51,5.2-8.15,7.92ZM20,18.16c.83,0,1.54-.29,2.13-.88.59-.58.88-1.3.88-2.14s-.29-1.54-.88-2.13c-.59-.59-1.3-.88-2.13-.88s-1.53.29-2.12.88c-.59.59-.89,1.3-.89,2.13,0,.84.3,1.55.89,2.14.59.58,1.3.88,2.12.88Z" />
+                </svg></span>拠点・料金を見る
+            </h2>
+          </li>
+        </ul>
+
+        <!-- 1つ目のパネル -->
+        <div class="tab__panel active">
+          <!-- 4つのプラン -->
+          <div class="plan" id="plan">
+            <h3>バーチャルオフィス<br class="sp" />4つのプラン</h3>
+            <div class="plan__scroll">
+              <ul>
+                <li></li>
+                <li class="plan_list">もっとも安価な<br />住所+郵便</li>
+                <li class="plan_list">電話番号利用<br class="sp" />のみ</li>
+                <li class="plan_list">
+                  最も人気の<br />基本サービス＋<br />ラウンジ利用
+                </li>
+                <li class="plan_list">
+                  個室オフィス<br class="sp" />も<br class="pc" />利用可能
+                </li>
+              </ul>
+              <table cellspacing="0" border="0">
+                <tr>
+                  <th bgcolor="ffffff"></th>
+                  <th>
+                    <img src="/special/rentaloffice/img/virtual/plan_1.jpg" alt="写真：メールボックス・プラス" />メールボックス・<br
+                      class="sp" />プラス
+                  </th>
+                  <th>
+                    <img src="/special/rentaloffice/img/virtual/plan_2.jpg" alt="写真：テレフォンアンサリング" />テレフォン<br
+                      class="sp" />サポート
+                  </th>
+                  <th>
+                    <img src="/special/rentaloffice/img/virtual/plan_3.jpg" alt="写真：バーチャルオフィス" />バーチャル<br
+                      class="sp" />オフィス
+                  </th>
+                  <th>
+                    <img src="/special/rentaloffice/img/virtual/plan_4.jpg" alt="写真：バーチャルオフィス・プラス" />バーチャル<br
+                      class="sp" />オフィス・プラス
+                  </th>
+                </tr>
+                <tr class="plan">
+                  <td>プラン内容</td>
+                  <td>センターの住所をビジネスアドレスとして利用可能</td>
+                  <td>専用の電話番号をご用意</td>
+                  <td>
+                    ビジネスアドレス取得に加え、専用電話番号、郵便物や電話の転送が可能
+                  </td>
+                  <td>
+                    バーチャルオフィスのサービスに加え、個室オフィスを月5日までご利用可能
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">月額の目安</td>
+                  <td><span>7,900</span>円/月〜</td>
+                  <td><span>9,900</span>円/月〜</td>
+                  <td><span>17,900</span>円/月〜</td>
+                  <td><span>25,500</span>円/月〜</td>
+                </tr>
+                <tr>
+                  <td colspan="4" style="text-align: center">
+                    ※料金はセンターによって異なります。<br class="sp" />※季節・拠点により割引可能な場合がございます。
+                  </td>
+                </tr>
+                <tr>
+                  <td>住所利用・<br />法人登記</td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                  <td></td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>郵便受け取り</td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                  <td></td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>電話番号・<br />電話代行</td>
+                  <td></td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>全国130拠点<br />ラウンジ利用</td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>オフィス利用<br />（5日間/月）</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- ビジネスラウンジ -->
+          <div class="lounge">
+            <div class="lounge__text">
+              <h3>ビジネスラウンジ</h3>
+              <p>
+                オフィス契約（プライベートオフィス・シェアオフィス）、メンバーシップ、バーチャルオフィスの方がご利用可能。<br />
+                開放的なビジネスラウンジはワークスペースはもちろん、リフレッシュや、来客、他の利用者とのコミュニケーションの場としても最適。
+              </p>
+              <dl>
+                <dt>サービス</dt>
+                <dd>高速インターネット／Wi-Fi／ドリンクサービス</dd>
+                <dt>料金</dt>
+                <dd>
+                  オフィス、メンバーシップ、バーチャルオフィス契約の方は追加料金なしでご利用可能
+                </dd>
+              </dl>
+            </div>
+            <div class="lounge__image">
+              <img src="../../special/rentaloffice/img/virtual/virtual_lounge.jpg" alt="ビジネスラウンジ" />
+            </div>
+          </div>
+
+          <!-- 活用シーン -->
+          <div class="scene">
+            <h3>こんなシーンで<br class="sp" />活用されています</h3>
+            <ul class="scene__list">
+              <li>名刺やパンフレットに住所を掲載</li>
+              <li>出張先のワークスペースに（ラウンジ利用）</li>
+              <li>Webサイトに会社住所を掲載</li>
+              <li>会議室やオフィスの一時利用</li>
+              <li>請求書や契約書の送付先に</li>
+            </ul>
+            <div class="scene__caption">
+              ※料金はセンターによって異なります。<br class="sp" />※季節・拠点により割引可能な場合がございます。
+            </div>
+          </div>
+        </div>
+
+        <!-- 2つ目のパネル -->
+        <div class="tab__panel">
+          <div class="office">
+            <ul class="office__search office__search--region" id="search_back_map">
+              <li>
+                <button data-val="hokkaido" class="search-sp__btn active">
+                  北海道
+                </button>
+              </li>
+              <li>
+                <button data-val="tohoku" class="search-sp__btn">東北</button>
+              </li>
+              <li>
+                <button data-val="kanto" class="search-sp__btn">関東</button>
+              </li>
+              <li>
+                <button data-val="tokyo" class="search-sp__btn">東京</button>
+              </li>
+              <li>
+                <button data-val="hokushin" class="search-sp__btn">
+                  北信越
+                </button>
+              </li>
+              <li>
+                <button data-val="tokai" class="search-sp__btn">
+                  中部・東海
+                </button>
+              </li>
+              <li>
+                <button data-val="kansai" class="search-sp__btn">関西</button>
+              </li>
+              <li>
+                <button data-val="tyugoku" class="search-sp__btn">
+                  中国・四国
+                </button>
+              </li>
+              <li>
+                <button data-val="kyusyu" class="search-sp__btn">九州</button>
+              </li>
+              <li>
+                <button data-val="naha" class="search-sp__btn">沖縄</button>
+              </li>
+            </ul>
+
+            <!-- 北海道 -->
+            <ul class="office__search office__search--area active">
+              <li>
+                <a href="#sapporo">札幌<span>(3)</span></a>
+              </li>
+            </ul>
+            <!-- 東北 -->
+            <ul class="office__search office__search--area"></ul>
+            <!-- 関東 -->
+            <ul class="office__search office__search--area"></ul>
+            <!-- 東京 -->
+            <ul class="office__search office__search--area">
+              <li>
+                <a href="#shibuya">渋谷<span>(5)</span></a>
+              </li>
+              <li>
+                <a href="#ebisu">恵比寿<span>(2)</span></a>
+              </li>
+              <li>
+                <a href="#marunouchi">丸の内・大手町<span>(3)</span></a>
+              </li>
+              <li>
+                <a href="#yaesu">八重洲・日本橋<span>(2)</span></a>
+              </li>
+              <li>
+                <a href="#ginza">銀座・有楽町<span>(2)</span></a>
+              </li>
+              <li>
+                <a href="#akasaka">赤坂<span>(5)</span></a>
+              </li>
+              <li>
+                <a href="#shinjuku">新宿<span>(6)</span></a>
+              </li>
+              <li>
+                <a href="#aoyama">青山・表参道<span>(1)</span></a>
+              </li>
+              <li>
+                <a href="#roppongi">六本木<span>(2)</span></a>
+              </li>
+              <li>
+                <a href="#shinbashi">新橋・汐留<span>(2)</span></a>
+              </li>
+              <li>
+                <a href="#kanda">神田・秋葉原<span>(4)</span></a>
+              </li>
+              <li>
+                <a href="#shinagawa">品川<span>(4)</span></a>
+              </li>
+              <li>
+                <a href="#hamamatsucho">浜松町・田町<span>(1)</span></a>
+              </li>
+              <li>
+                <a href="#ikebukuro">池袋<span>(2)</span></a>
+              </li>
+              <li>
+                <a href="#osaki">大崎・五反田<span>(2)</span></a>
+              </li>
+              <li>
+                <a href="#kojimachi">麹町・四ツ谷<span>(1)</span></a>
+              </li>
+              <li>
+                <a href="#kinsicho">錦糸町<span>(1)</span></a>
+              </li>
+              <li>
+                <a href="#tachikawa">立川<span>(1)</span></a>
+              </li>
+              <li>
+                <a href="#machida">町田<span>(1)</span></a>
+              </li>
+            </ul>
+            <!-- 北信越 -->
+            <ul class="office__search office__search--area"></ul>
+            <!-- 中部・東海 -->
+            <ul class="office__search office__search--area"></ul>
+            <!-- 関西 -->
+            <ul class="office__search office__search--area"></ul>
+            <!-- 中国・四国 -->
+            <ul class="office__search office__search--area"></ul>
+            <!-- 九州 -->
+            <ul class="office__search office__search--area"></ul>
+            <!-- 沖縄 -->
+            <ul class="office__search office__search--area"></ul>
+
+            <div class="office__caption">
+              ※料金はセンターによって異なります。<br class="sp" />※季節・拠点により割引可能な場合がございます。
+            </div>
+
+            <!-- 北海道 -->
+            <div class="office__content active">
+              <section id="sapporo" class="office__section">
+                <h3>札幌</h3>
+                <ul class="office__list">
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img
+                        src="https://www.regus-office.jp/wp-content/uploads/2020/03/Regus-Ekimae-Dori-5667-Sapporo-Japan-Exterior.jpg"
+                        alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4>
+                        <a href="">リージャス札幌駅前通ビジネスセンター</a>
+                      </h4>
+                      <div class="office__address">
+                        北海道札幌市中央区北4条西4丁目1-7 MMS札幌駅前ビル
+                        1F〜4F
+                      </div>
+                      <ul class="office__tag">
+                        <li>信用</li>
+                        <li>登記</li>
+                        <li>採用</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>10,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img src="https://www.regus-office.jp/wp-content/uploads/2015/04/10_MG_0221.jpg" alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4>
+                        <a href="">リージャス札幌大通ビジネスセンター</a>
+                      </h4>
+                      <div class="office__address">
+                        北海道札幌市中央区大通西1丁目14-2 桂和大通ビル50 9F
+                      </div>
+                      <ul class="office__tag">
+                        <li>信用</li>
+                        <li>登記</li>
+                        <li>採用</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>9,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img
+                        src="https://www.regus-office.jp/wp-content/uploads/2013/04/Openoffice-Minami-3077-Sapporo-Japan-Business-Lounge.jpg"
+                        alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4><a href="">オープンオフィス札幌南</a></h4>
+                      <div class="office__address">
+                        北海道札幌市中央区北2条西2-32 第37桂和ビル 5F,6F
+                      </div>
+                      <ul class="office__tag">
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>10,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <!-- 東北 -->
+            <div class="office__content">
+              <section id="sendai" class="office__section">
+                <h3>仙台</h3>
+              </section>
+              <section id="koriyama" class="office__section">
+                <h3>郡山</h3>
+              </section>
+              <section id="aomori" class="office__section">
+                <h3>青森</h3>
+              </section>
+              <section id="hachinohe" class="office__section">
+                <h3>八戸</h3>
+              </section>
+              <section id="akita" class="office__section">
+                <h3>秋田</h3>
+              </section>
+              <section id="morioka" class="office__section">
+                <h3>盛岡</h3>
+              </section>
+              <section id="yamagata" class="office__section">
+                <h3>山形</h3>
+              </section>
+            </div>
+
+            <!-- 関東 -->
+            <div class="office__content">
+              <section id="yokohama" class="office__section">
+                <h3>横浜</h3>
+              </section>
+              <section id="kawasaki" class="office__section">
+                <h3>川崎</h3>
+              </section>
+              <section id="atsugi" class="office__section">
+                <h3>厚木</h3>
+              </section>
+              <section id="omiya" class="office__section">
+                <h3>大宮</h3>
+              </section>
+              <section id="takasaki" class="office__section">
+                <h3>高崎</h3>
+              </section>
+              <section id="tsukuba" class="office__section">
+                <h3>つくば</h3>
+              </section>
+              <section id="mito" class="office__section">
+                <h3>水戸</h3>
+              </section>
+              <section id="chiba" class="office__section">
+                <h3>千葉</h3>
+              </section>
+            </div>
+
+            <!-- 東京 -->
+            <div class="office__content">
+              <section id="shibuya" class="office__section">
+                <h3>渋谷</h3>
+                <ul class="office__list">
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img src="https://www.regus-office.jp/wp-content/uploads/2020/11/shibuya-kouendori.jpg" alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4>
+                        <a href="">リージャス渋谷公園通りビジネスセンター</a>
+                      </h4>
+                      <div class="office__address">
+                        東京都渋谷区神南1-23-14 リージャス渋谷公園通りビル
+                        1F〜6F
+                      </div>
+                      <ul class="office__tag">
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>13,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img
+                        src="https://www.regus-office.jp/wp-content/uploads/2019/07/243828a5cca1509e7d5a1c9434160203.jpg"
+                        alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4>
+                        <a href="">リージャス渋谷マークシティビジネスセンター</a>
+                      </h4>
+                      <div class="office__address">
+                        東京都渋谷区道玄坂1-12-1 渋谷マークシティ 22F
+                      </div>
+                      <ul class="office__tag">
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>13,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img
+                        src="https://www.regus-office.jp/wp-content/uploads/2015/07/10_Regus-Shibuya-Glass-City-2830-Tokyo-Japan-BuildingExterior.jpg"
+                        alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4>
+                        <a href="">リージャス渋谷スクエアビジネスセンター</a>
+                      </h4>
+                      <div class="office__address">
+                        東京都渋谷区南平台町16-28 Daiwa渋谷スクエア 6F
+                      </div>
+                      <ul class="office__tag">
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>13,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img src="https://www.regus-office.jp/wp-content/uploads/2015/03/MG_0985.jpg" alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4><a href="">オープンオフィス渋谷神南</a></h4>
+                      <div class="office__address">
+                        東京都渋谷区神南1-12-14 渋谷宮田ビル 6F〜8F
+                      </div>
+                      <ul class="office__tag">
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>8,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img
+                        src="https://www.regus-office.jp/wp-content/uploads/2015/02/7548359a41a6732654442e10264821d7.jpg"
+                        alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4><a href="">オープンオフィス渋谷hills</a></h4>
+                      <div class="office__address">
+                        東京都渋谷区桜丘町15-14 フジビル40 7F
+                      </div>
+                      <ul class="office__tag">
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>8,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+              <section id="ebisu" class="office__section">
+                <h3>恵比寿</h3>
+                <ul class="office__list">
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img src="https://www.regus-office.jp/wp-content/uploads/2015/07/ebisu_8H2A77880-1.jpg" alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4><a href="">リージャス恵比寿ビジネスセンター</a></h4>
+                      <div class="office__address">
+                        東京都渋谷区恵比寿南1-1-1 ヒューマックス恵比寿ビル 8F
+                      </div>
+                      <ul class="office__tag">
+                        <li>信用</li>
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>13,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                  <li class="office__item">
+                    <div class="office__image">
+                      <img src="https://www.regus-office.jp/wp-content/uploads/2015/07/ebisuminami10.jpg" alt="" />
+                    </div>
+                    <div class="office__info">
+                      <h4>
+                        <a href="">リージャス恵比寿南ビジネスセンター</a>
+                      </h4>
+                      <div class="office__address">
+                        東京都渋谷区恵比寿南1-20-6 プレファス恵比寿南 4F
+                      </div>
+                      <ul class="office__tag">
+                        <li>信用</li>
+                        <li>登記</li>
+                        <li>採用</li>
+                        <li>起業</li>
+                      </ul>
+                      <div class="office__price">
+                        <span>13,900</span> 円/月〜
+                      </div>
+                    </div>
+                    <div class="office__button">
+                      <a href="">条件・価格を確認する</a>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+
+              <section id="marunouchi" class="office__section">
+                <h3>丸の内・大手町</h3>
+              </section>
+              <section id="yaesu" class="office__section">
+                <h3>八重洲・日本橋</h3>
+              </section>
+              <section id="ginza" class="office__section">
+                <h3>銀座・有楽町</h3>
+              </section>
+              <section id="akasaka" class="office__section">
+                <h3>赤坂</h3>
+              </section>
+              <section id="shinjuku" class="office__section">
+                <h3>新宿</h3>
+              </section>
+              <section id="aoyama" class="office__section">
+                <h3>青山・表参道</h3>
+              </section>
+              <section id="roppongi" class="office__section">
+                <h3>六本木</h3>
+              </section>
+              <section id="shinbashi" class="office__section">
+                <h3>新橋・汐留</h3>
+              </section>
+              <section id="kanda" class="office__section">
+                <h3>神田・秋葉原</h3>
+              </section>
+              <section id="shinagawa" class="office__section">
+                <h3>品川</h3>
+              </section>
+              <section id="hamamatsucho" class="office__section">
+                <h3>浜松町・田町</h3>
+              </section>
+              <section id="ikebukuro" class="office__section">
+                <h3>池袋</h3>
+              </section>
+              <section id="osaki" class="office__section">
+                <h3>大崎・五反田</h3>
+              </section>
+              <section id="kojimachi" class="office__section">
+                <h3>麹町・四ツ谷</h3>
+              </section>
+              <section id="kinsicho" class="office__section">
+                <h3>錦糸町</h3>
+              </section>
+              <section id="tachikawa" class="office__section">
+                <h3>立川</h3>
+              </section>
+              <section id="machida" class="office__section">
+                <h3>町田</h3>
+              </section>
+            </div>
+
+            <!-- 北信越 -->
+            <div class="office__content">
+              <section id="niigata" class="office__section">
+                <h3>新潟</h3>
+              </section>
+              <section id="nagano" class="office__section">
+                <h3>長野</h3>
+              </section>
+              <section id="kanazawa" class="office__section">
+                <h3>金沢</h3>
+              </section>
+              <section id="toyama" class="office__section">
+                <h3>富山</h3>
+              </section>
+            </div>
+
+            <!-- 中部・東海 -->
+            <div class="office__content">
+              <section id="nagoya" class="office__section">
+                <h3>名古屋</h3>
+              </section>
+              <section id="hamamatsu" class="office__section">
+                <h3>浜松</h3>
+              </section>
+              <section id="shizuoka" class="office__section">
+                <h3>静岡</h3>
+              </section>
+            </div>
+
+            <!-- 関西 -->
+            <div class="office__content">
+              <section id="osaka" class="office__section">
+                <h3>大阪</h3>
+              </section>
+              <section id="kyoto" class="office__section">
+                <h3>京都</h3>
+              </section>
+              <section id="hyougo" class="office__section">
+                <h3>兵庫</h3>
+              </section>
+              <section id="himeji" class="office__section">
+                <h3>姫路</h3>
+              </section>
+            </div>
+
+            <!-- 中国・四国 -->
+            <div class="office__content">
+              <section id="hiroshima" class="office__section">
+                <h3>広島</h3>
+              </section>
+              <section id="okayama" class="office__section">
+                <h3>岡山</h3>
+              </section>
+              <section id="kagawa" class="office__section">
+                <h3>香川</h3>
+              </section>
+              <section id="matsuyama" class="office__section">
+                <h3>松山</h3>
+              </section>
+            </div>
+
+            <!-- 九州 -->
+            <div class="office__content">
+              <section id="kitakyusyu" class="office__section">
+                <h3>北九州</h3>
+              </section>
+              <section id="fukuoka" class="office__section">
+                <h3>福岡</h3>
+              </section>
+              <section id="oita" class="office__section">
+                <h3>大分</h3>
+              </section>
+              <section id="nagasaki" class="office__section">
+                <h3>長崎</h3>
+              </section>
+              <section id="kumamoto" class="office__section">
+                <h3>熊本</h3>
+              </section>
+              <section id="miyazaki" class="office__section">
+                <h3>宮崎</h3>
+              </section>
+              <section id="kagoshima" class="office__section">
+                <h3>鹿児島</h3>
+              </section>
+            </div>
+
+            <!-- 沖縄 -->
+            <div class="office__content">
+              <section id="naha" class="office__section">
+                <h3>那覇</h3>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cvcv">
+        <!--h2 class="vp_title">期間限定　<br class="spImg">50%OFFキャンペーン中</h2-->
+        <ul class="btn2-CAM">
+          <li>
+            <div class="btn_RED">
+              <p class="btn_fast">
+                <img src="../../special/rentaloffice/img/virtual/virtual_main_btn_fast_2.png"
+                  alt="「ご希望をお聞かせください！」1時間以内にご案内" />
+              </p>
+              <a href="/vacancy?set=vo" class="btn_arrow">最適なオフィスを <br class="sp" />ご提案します</a>
+            </div>
+          </li>
+          <!--li>
+      <div class="btn_GREEN">
+        <a href="/service/virtualoffice/virtualoffice/" class="btn_arrow">バーチャルオフィスを探す</a>
+      </div>
+    </li-->
+        </ul>
+      </section>
+      <!--cvcv-->
+
+      <!--251010//-->
+      <section class="sec05">
+        <div id="center"></div>
+        <h2 class="high__ttl">
+          <span class="add260324_48200">Regusのオフィスは<br />
+            拠点数No.1！《国内53都市、215拠点以上》</span>
+          バーチャルオフィス利用可能センターの一例
+          <!--img src="/images_2023/highgrade.svg" alt="HIGH GRADE"-->
+        </h2>
+        <ul class="newOffice">
+          <li>
+            <a href="https://www.regus-office.jp/tokyo-area/marunouchi-otemachi-area/marunouchi-pcp/" target=""
+              rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2016/02/marunouchi_pcp.jpg"
+                  alt="リージャス丸の内パシフィックセンチュリープレイスビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>
+                  リージャス丸の内パシフィックセンチュリープレイスビジネスセンター
+                </h3>
+                <p class="o_access">
+                  東京都千代田区丸の内1-11-1 パシフィックセンチュリープレイス
+                  8F,13F（受付フロア）
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.regus-office.jp/tokyo-area/shinagawa/" target="" rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2015/12/shinagawa_top_outlook.jpg"
+                  alt="リージャス品川イーストワンタワービジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャス品川イーストワンタワービジネスセンター</h3>
+                <p class="o_access">
+                  東京都港区港南2-16-1　品川イーストワンタワー 4F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <!--li>
+      <p class="pic">
+        <img src="https://www.regus-office.jp/wp-content/uploads/2015/07/akasakak_0111.jpg" alt="リージャス赤坂Kタワービジネスセンター">
+      </p>
+      <div class="ofName">
+        <h3>リージャス赤坂Kタワービジネスセンター</h3>
+        <p class="o_access">東京都港区元赤坂1-2-7　赤坂Ｋタワー４F</p>
+      </div>
+    </a>
+  </li-->
+
+          <li>
+            <a href="https://www.regus-office.jp/tokyo-area/shibuya-markcity/" target="" rel="noopener">
+              <p class="pic">
+                <img
+                  src="https://www.regus-office.jp/wp-content/uploads/2016/01/shibuya_markcity_markcity_top_outlook.jpg"
+                  alt="リージャス渋谷マークシティビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャス渋谷マークシティビジネスセンター</h3>
+                <p class="o_access">
+                  東京都渋谷区道玄坂1-12-1 渋谷マークシティW 22F、16F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.regus-office.jp/tokyo-area/shinjuku-park/" target="" rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2013/07/shinjuku_park_office_01.jpg"
+                  alt="リージャス新宿パークタワービジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャス新宿パークタワービジネスセンター</h3>
+                <p class="o_access">
+                  東京都新宿区西新宿3-7-1 新宿パークタワー N棟30F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <!--li>
+      <p class="pic">
+        <img src="https://www.regus-office.jp/wp-content/uploads/2019/07/yokohama_landmark_office01.jpg" alt="リージャス横浜ランドマークタワービジネスセンター">
+      </p>
+      <div class="ofName">
+        <h3>リージャス横浜ランドマークタワービジネスセンター</h3>
+        <p class="o_access">神奈川県横浜市西区みなとみらい2-2-1 横浜ランドマークタワー20F</p>
+      </div>
+    </a>
+  </li-->
+
+          <!--li>
+      <p class="pic">
+        <img src="https://www.regus-office.jp/wp-content/uploads/2019/07/dainagoya_office01-1.jpg" alt="リージャス大名古屋ビルヂングビジネスセンター">
+      </p>
+      <div class="ofName">
+        <h3>リージャス大名古屋ビルヂングビジネスセンター</h3>
+        <p class="o_access">愛知県名古屋市中村区名駅3-28-12 大名古屋ビルヂング 11F、25F</p>
+      </div>
+    </a>
+  </li-->
+
+          <li>
+            <a href="https://www.regus-office.jp/osaka-area/abenoharukas/" target="" rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2019/01/abeno_office011.jpg"
+                  alt="リージャスあべのハルカスビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャスあべのハルカスビジネスセンター</h3>
+                <p class="o_access">
+                  大阪市阿倍野区阿倍野筋1-1-43　あべのハルカス31F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <!--li>
+      <p class="pic">
+        <img src="https://www.regus-office.jp/wp-content/uploads/2012/01/sendai_office_01.jpg" alt="リージャス仙台マークワンビジネスセンター">
+      </p>
+      <div class="ofName">
+        <h3>リージャス仙台マークワンビジネスセンター</h3>
+        <p class="o_access">宮城県仙台市青葉区中央一丁目2-3 仙台マークワン 19F</p>
+      </div>
+    </a>
+  </li-->
+
+          <li>
+            <a href="https://www.regus-office.jp/fukuoka-area/jrjp-hakata/" target="" rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2018/07/jrjp_office01.jpg"
+                  alt="リージャスJRJP博多ビルビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャスJRJP博多ビルビジネスセンター</h3>
+                <p class="o_access">
+                  福岡県福岡市博多区博多駅中央街8番1号 JRJP博多ビル　3F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.regus-office.jp/tokyo-area/marunouchi-otemachi-area/marunouchi-tekko/" target=""
+              rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2016/02/marunouchi_tekko_office01.jpg"
+                  alt="リージャス丸の内鉄鋼ビルビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャス丸の内鉄鋼ビルビジネスセンター</h3>
+                <p class="o_access">
+                  東京都千代田区丸の内1-8-2　鉄鋼ビルディング　4F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <!--li>
+      <p class="pic">
+        <img src="https://www.regus-office.jp/wp-content/uploads/2015/11/yurakucho_itocia_office_01.jpg" alt="リージャス有楽町イトシアビジネスセンター">
+      </p>
+      <div class="ofName">
+        <h3>リージャス有楽町イトシアビジネスセンター</h3>
+        <p class="o_access">東京都千代田区有楽町2-7-1 有楽町イトシア 12F</p>
+      </div>
+    </a>
+  </li-->
+
+          <li>
+            <a href="https://www.regus-office.jp/tokyo-area/shiodome/" target="" rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2015/10/shiodome_top_01.jpg"
+                  alt="リージャス汐留ビルディングビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャス汐留ビルディングビジネスセンター</h3>
+                <p class="o_access">
+                  東京都港区海岸1-2-20 汐留ビルディング 3F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.regus-office.jp/osaka-area/nanbaparks/" target="" rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2016/02/nanba_office_01.jpg"
+                  alt="リージャスなんばパークスビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャスなんばパークスビジネスセンター</h3>
+                <p class="o_access">
+                  大阪市浪速区難波中2-10-70　なんばパークスタワー19F
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.regus-office.jp/ikebukuro-area/ikebukuro/" target="" rel="noopener">
+              <p class="pic">
+                <img src="https://www.regus-office.jp/wp-content/uploads/2019/03/ikebukuro_top_01.jpg"
+                  alt="リージャス池袋ビジネスセンター" />
+              </p>
+              <div class="ofName">
+                <h3>リージャス池袋ビジネスセンター</h3>
+                <p class="o_access">
+                  東京都豊島区南池袋1－16－15　ダイヤゲート池袋　4F,5F
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <!--251010//-->
+        <!-- <div class="conv_half_vir_main_apply">
+        <p class="btn_fast"><img src="../../special/rentaloffice/img/virtual/virtual_main_btn_fast_2.png" alt="「ご希望をお聞かせください！」1時間以内にご案内"></p>
+        <p class="vir_main_apply-btn btn-circle2"><a href="/vacancy?set=vo" target="_blank" rel="noopener">空室/費用を<br class="sp">ご提案します</a></p>
+      </div> -->
+        <!--251202//-->
+
+        <!--260316-->
+        <style>
+          ul.btn2-CAM2 {
+            gap: 2%;
+            justify-content: center;
+            width: 100%;
+            max-width: 840px;
+            margin: 60px auto 20px;
+          }
+
+          ul.btn2-CAM2 li {
+            width: 50%;
+          }
+
+          ul.btn2-CAM2 .btn_blue {
+            text-align: center;
+          }
+
+          ul.btn2-CAM2 .btn_blue a {
+            background-color: #1c3b79;
+          }
+
+          ul.btn2-CAM2 .btn_blue a.btn_arrow {
+            background-color: #1c3b79;
+            padding: 1em 0;
+          }
+
+          ul.btn2-CAM2 .btn_RED a.btn_arrow {
+            padding: 1em 1em 1em 0;
+          }
+
+          ul.btn2-CAM2 .btn_blue a.btn_arrow::after {
+            margin-top: -5px;
+            border-top: solid 5px #1c3b79;
+            border-right: solid 5px #1c3b79;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+          }
+
+          ul.btn2-CAM2 li .btn_RED a.btn_arrow::after {
+            margin-top: -5px;
+          }
+
+          @media screen and (max-width: 768px) {
+            ul.btn2-CAM2 {
+              width: 80%;
+              margin: 10px auto 60px;
+            }
+
+            ul.btn2-CAM2 li {
+              width: 100%;
+            }
+
+            ul.btn2-CAM2 .btn_blue {
+              margin-bottom: 1em;
+            }
+
+            .btn2-CAM2 li .btn_blue a.btn_arrow::before {
+              width: 30px;
+              height: 30px;
+              margin: -15px 0 0;
+            }
+
+            ul.btn2-CAM2 .btn_blue a.btn_arrow::after {
+              margin-top: -4px;
+              border-top: solid 2px #1c3b79;
+              border-right: solid 2px #1c3b79;
+              transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+            }
+
+            ul.btn2-CAM2 li .btn_RED a.btn_arrow::after {
+              margin-top: -4px;
+              border-top: 2px solid #d71a34;
+              border-right: 2px solid #d71a34;
+              transform: rotate(45deg);
+              -webkit-transform: rotate(45deg);
+            }
+          }
+        </style>
+        <!--h2 class="vp_title">期間限定　<br class="spImg">50%OFFキャンペーン中</h2-->
+        <ul class="btn2-CAM btn2-CAM2">
+          <li>
+            <div class="btn_GREEN btn_blue">
+              <a href="#tabView2" class="btn_arrow">オフィス一覧を見る</a>
+            </div>
+          </li>
+          <li>
+            <div class="btn_RED">
+              <p class="btn_fast">
+                <img src="../../special/rentaloffice/img/virtual/virtual_main_btn_fast_2.png"
+                  alt="「ご希望をお聞かせください！」1時間以内にご案内" />
+              </p>
+              <a href="/vacancy?set=vo" class="btn_arrow">最適なオフィスを<br class="sp" />ご提案します</a>
+            </div>
+          </li>
+        </ul>
+        <!--260316//-->
+      </section>
+
+      <!--/planSsection-------------//-->
+    </div>
+
+    <!---ツールチップ用テキスト・CSS--->
+    <style>
+      .v_tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      .v_tooltip .tooltiptext {
+        visibility: hidden;
+        width: 500px;
+        background-color: #666;
+        color: white;
+        text-align: left;
+        border-radius: 6px;
+        padding: 1em;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0%;
+        margin-left: -60px;
+      }
+
+      .v_tooltip .tooltiptext span {
+        font-weight: bold;
+      }
+
+      .v_tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+
+      @media screen and (max-width: 750px) {
+        .v_tooltip .tooltiptext {
+          visibility: hidden;
+          width: 80vw;
+          background-color: #666;
+          color: white;
+          text-align: left;
+          border-radius: 6px;
+          padding: 1em;
+          position: absolute;
+          z-index: 1;
+          top: 100%;
+          left: 0%;
+          margin-left: -2em;
+        }
+      }
+
+      /*20251204*/
+      .roomList h2 {
+        padding: 10px 15px !important;
+      }
+
+      .btn2-CAM li {
+        width: 75%;
+        margin: 0 auto;
+      }
+
+      .btn2-CAM li:last-child {
+        margin-right: auto;
+      }
+
+      .main_contents {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        .btn2-CAM li {
+          width: 100%;
+        }
+
+        .roomList h2 {
+          padding: 18px 15px !important;
+        }
+
+        .btn2-CAM li .btn_RED .btn_fast {
+          margin: -5px auto -15px auto;
+          width: 100%;
+        }
+
+        .wrapper .listUnit dd p img {
+          height: auto;
+        }
+
+        .sp_pdd {
+          padding: 4%;
+          width: 100%;
+        }
+
+        .wrapper.sp_pdd .btnSpc ul {
+          display: flex;
+          justify-content: right;
+          width: 100%;
+        }
+
+        .wrapper.sp_pdd .btnSpc ul li {
+          float: none;
+        }
+      }
+
+      /*20251209*/
+      .wrapper .listUnit table th:nth-child(2),
+      .wrapper .listUnit table th:nth-child(3),
+      .wrapper .listUnit table th:nth-child(4),
+      .wrapper .listUnit table th:nth-child(5) {
+        background-color: #333;
+      }
+
+      @media screen and (min-width: 750px) {
+        .wrapper .listUnit table th:first-child {
+          background-color: #fff;
+        }
+
+        .wrapper .listUnit table th {
+          padding: 0.6em 0;
+        }
+
+        .wrapper .listUnit table td {
+          line-height: 1.8em;
+        }
+      }
+
+      .wrapper .listUnit dl dd a {
+        font-weight: bold;
+        color: #098ef3;
+        text-decoration: underline;
+      }
+
+      .wrapper .listUnit dl dd h3 {
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        padding-left: 3px;
+      }
+
+      .wrapper .listUnit dl dd p.adrs {
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.4em;
+        border-bottom: 2px #eee solid;
+        padding-bottom: 5px;
+      }
+
+      @media screen and (max-width: 750px) {
+        .wrapper .listUnit dl dd p:first-child img {
+          width: 24%;
+          display: inline-block;
+        }
+
+        .wrapper .listUnit dl dd p:first-child a {
+          display: block;
+          width: 100%;
+          text-align: right;
+          padding-bottom: 4px;
+        }
+
+        .wrapper .listUnit dl dd p {
+          padding-top: 0;
+        }
+
+        .wrapper .listUnit dl dd p.annotation {
+          padding-top: 0.4em;
+        }
+
+        .wrapper .listUnit dl dd h3 {
+          font-size: 1.4em;
+          letter-spacing: 0.04em;
+          margin: 0.6em;
+          line-height: 1.4em;
+        }
+
+        .wrapper .listUnit dl dd p.sp_toibtm {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.6em;
+          margin-bottom: 0.6em;
+          padding: 0 0.4em;
+        }
+
+        .wrapper .listUnit dl dd p.sp_toibtm a {
+          /*flex-basis: 50%;*/
+          text-align: center;
+          margin-bottom: 0.6em;
+        }
+
+        .wrapper .listUnit dl dd p:nth-child(3) img {
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+
+      .listUnit dl dt img.thumbnail {
+        object-fit: cover;
+        height: 150px;
+        width: 150px;
+      }
+
+      /*260202--------------*/
+      .for_use {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        margin: 0 0 5px 0;
+        padding: 0;
+      }
+
+      .for_use li {
+        list-style: none;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+
+        /* Rつきの四角 */
+        border: 1px solid #d8d8d8;
+        border-radius: 9999px;
+        background: #fff;
+
+        /* アイコン分の余白 */
+        padding: 8px 13px 5px 36px;
+
+        color: #222;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+      }
+
+      .for_use li::before {
+        content: "";
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      /* アイコン指定 */
+      .for_use .noicon {
+        display: none;
+      }
+
+      .for_use .trust::before {
+        background-image: url("/virtual_o/images/use_icon_trust.png");
+      }
+
+      .for_use .licence::before {
+        background-image: url("/virtual_o/images/use_icon_licence.png");
+      }
+
+      .for_use .register::before {
+        background-image: url("/virtual_o/images/use_icon_register.png");
+      }
+
+      .for_use .recruit::before {
+        background-image: url("/virtual_o/images/use_icon_recruit.png");
+      }
+
+      .for_use .start::before {
+        background-image: url("/virtual_o/images/use_icon_start.png");
+      }
+
+      /* SP調整 */
+      @media (max-width: 600px) {
+        .for_use {
+          margin: 0 auto 10px 15px;
+        }
+
+        .for_use li {
+          font-size: 14px;
+          padding: 9px 14px 4px 42px;
+        }
+
+        .for_use li::before {
+          left: 15px;
+          width: 22px;
+          height: 22px;
+        }
+      }
+    </style>
+
+    <!---MAPここから--->
+    <div id="tabView2">
+      <style>
+        .search__map-text-area--small {
+          width: min(5.1333333333vw, 92px);
+        }
+
+        section.search .search__inner {
+          letter-spacing: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+          .sp_s_map {
+            display: none !important;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .pc_s_map {
+            display: none !important;
+          }
+        }
+
+        .search__annotation.sp_txt {
+          top: 12px;
+          left: 12px;
+        }
+
+        h2.search__title span {
+          padding: 0.6em 0;
+        }
+      </style>
+      <!--search map conditions words et----------//-->
+      <!---SP MAPここから--->
+      <section class="search sp_s_map" id="search_back_map_sp">
+        <div class="search__inner">
+          <div class="sp-modal">
+            <div class="sp-modal__inner" data-val="hokkaido">
+              <!-- 北海道 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">北海道</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#sapporo" class="sp-modal__link sp-modal__back_area js-office-anchor">札幌</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 東北 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">東北</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#sendai" class="sp-modal__link sp-modal__back_area js-office-anchor">仙台</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#koriyama" class="sp-modal__link sp-modal__back_area js-office-anchor">郡山</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#aomori" class="sp-modal__link sp-modal__back_area js-office-anchor">青森</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#hachinohe" class="sp-modal__link sp-modal__back_area js-office-anchor">八戸</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#akita" class="sp-modal__link sp-modal__back_area js-office-anchor">秋田</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#morioka" class="sp-modal__link sp-modal__back_area js-office-anchor">盛岡</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#yamagata" class="sp-modal__link sp-modal__back_area js-office-anchor">山形</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 関東 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">関東</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#yokohama" class="sp-modal__link sp-modal__back_area js-office-anchor">横浜</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kawasaki" class="sp-modal__link sp-modal__back_area js-office-anchor">川崎</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#atsugi" class="sp-modal__link sp-modal__back_area js-office-anchor">厚木</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#omiya" class="sp-modal__link sp-modal__back_area js-office-anchor">大宮</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#takasaki" class="sp-modal__link sp-modal__back_area js-office-anchor">高崎</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#tsukuba" class="sp-modal__link sp-modal__back_area js-office-anchor">つくば</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#mito" class="sp-modal__link sp-modal__back_area js-office-anchor">水戸</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#chiba" class="sp-modal__link sp-modal__back_area js-office-anchor">千葉</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 東京 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">東京</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#shibuya" class="sp-modal__link sp-modal__back_area js-office-anchor">渋谷</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#ebisu" class="sp-modal__link sp-modal__back_area js-office-anchor">恵比寿</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#marunouchi" class="sp-modal__link sp-modal__back_area js-office-anchor">丸の内・大手町</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#yaesu" class="sp-modal__link sp-modal__back_area js-office-anchor">八重洲・日本橋</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#ginza" class="sp-modal__link sp-modal__back_area js-office-anchor">銀座・有楽町</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#akasaka" class="sp-modal__link sp-modal__back_area js-office-anchor">赤坂</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#shinjuku" class="sp-modal__link sp-modal__back_area js-office-anchor">新宿</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#aoyama" class="sp-modal__link sp-modal__back_area js-office-anchor">青山・表参道</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#roppongi" class="sp-modal__link sp-modal__back_area js-office-anchor">六本木</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#shinbashi" class="sp-modal__link sp-modal__back_area js-office-anchor">新橋・汐留</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kanda" class="sp-modal__link sp-modal__back_area js-office-anchor">神田・秋葉原</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#shinagawa" class="sp-modal__link sp-modal__back_area js-office-anchor">品川</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#hamamatsucho" class="sp-modal__link sp-modal__back_area js-office-anchor">浜松町・田町</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#ikebukuro" class="sp-modal__link sp-modal__back_area js-office-anchor">池袋</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#osaki" class="sp-modal__link sp-modal__back_area js-office-anchor">大崎・五反田</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kojimachi" class="sp-modal__link sp-modal__back_area js-office-anchor">麹町・四ツ谷</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kinsicho" class="sp-modal__link sp-modal__back_area js-office-anchor">錦糸町</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#tachikawa" class="sp-modal__link sp-modal__back_area js-office-anchor">立川</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#machida" class="sp-modal__link sp-modal__back_area js-office-anchor">町田</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 北信越 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">北信越</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#niigata" class="sp-modal__link sp-modal__back_area js-office-anchor">新潟</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#nagano" class="sp-modal__link sp-modal__back_area js-office-anchor">長野</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kanazawa" class="sp-modal__link sp-modal__back_area js-office-anchor">金沢</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#toyama" class="sp-modal__link sp-modal__back_area js-office-anchor">富山</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 中部・東海 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">中部・東海</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#nagoya" class="sp-modal__link sp-modal__back_area js-office-anchor">名古屋</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#hamamatsu" class="sp-modal__link sp-modal__back_area js-office-anchor">浜松</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#shizuoka" class="sp-modal__link sp-modal__back_area js-office-anchor">静岡</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 関西 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">関西</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#osaka" class="sp-modal__link sp-modal__back_area js-office-anchor">大阪</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kyoto" class="sp-modal__link sp-modal__back_area js-office-anchor">京都</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#hyougo" class="sp-modal__link sp-modal__back_area js-office-anchor">兵庫</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#himeji" class="sp-modal__link sp-modal__back_area js-office-anchor">姫路</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 中国・四国 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">中国・四国</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#hiroshima" class="sp-modal__link sp-modal__back_area js-office-anchor">広島</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#okayama" class="sp-modal__link sp-modal__back_area js-office-anchor">岡山</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kagawa" class="sp-modal__link sp-modal__back_area js-office-anchor">香川</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#matsuyama" class="sp-modal__link sp-modal__back_area js-office-anchor">松山</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 九州 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">九州</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#kitakyushu" class="sp-modal__link sp-modal__back_area js-office-anchor">北九州</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#fukuoka" class="sp-modal__link sp-modal__back_area js-office-anchor">福岡</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#oita" class="sp-modal__link sp-modal__back_area js-office-anchor">大分</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#nagasaki" class="sp-modal__link sp-modal__back_area js-office-anchor">長崎</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kumamoto" class="sp-modal__link sp-modal__back_area js-office-anchor">熊本</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#miyazaki" class="sp-modal__link sp-modal__back_area js-office-anchor">宮崎</a>
+                  </li>
+                  <li class="sp-modal__item">
+                    <a href="#kagoshima" class="sp-modal__link sp-modal__back_area js-office-anchor">鹿児島</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 沖縄 -->
+              <div class="sp-modal__container">
+                <p class="sp-modal__title">沖縄</p>
+                <button class="sp-modal__back">←閉じる</button>
+                <ul class="sp-modal__list">
+                  <li class="sp-modal__item">
+                    <a href="#naha" class="sp-modal__link sp-modal__back_area js-office-anchor">那覇</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---SP MAP ここまで//--->
+    </div>
+  </div>
+
+  <div class="pageTop">
+    <a href="#"><img src="/common2/images/btn_pagetop.gif" alt="ページトップへ" /></a>
+  </div>
+
+  <!---260216-----------//-->
+  <div class="float_apply260306">
+    <div class="float_in">
+      <div class="float_left">
+        <p class="vir_-btn btn-C_b">
+          <a href="#plan4" target="_blank" rel="noopener">プランを見る</a>
+        </p>
+      </div>
+      <div class="float_right">
+        <p class="btn_baloon">
+          <img src="../../special/rentaloffice/img/virtual/virtual_main_btn_fast_2.png" alt="ご希望をお聞かせください！」1時間以内にご案内" />
+        </p>
+        <p class="vir_-btn btn-C_2">
+          <a href="/vacancy?set=vo" rel="noopener">空室/費用&nbsp;お問い合わせ</a>
+        </p>
+      </div>
+    </div>
+    <p class="plan_hosoku">
+      ※料金は目安で、季節・拠点により割引可能な場合があります。&nbsp;
+      ※ご希望に応じて最適プランをご提案します。
+    </p>
+  </div>
+  <script>
+    window.addEventListener("scroll", function () {
+      const floatButton = document.querySelector(".float_apply260306");
+      const scrollY = window.scrollY;
+      if (scrollY > 300) {
+        // 300px以上スクロールしたらクラスを追加
+        floatButton.classList.add("is-show");
+      } else {
+        // // 300px未満（一番上含む）ならクラスを削除
+        floatButton.classList.remove("is-show");
+      }
+    });
+  </script>
+
+  <!-- /211124 スマホ問い合わせ表示-->
+  <div id="topReqBtm" class="sp">
+    <style>
+      #topReqBtm {
+        background: none;
+      }
+
+      #topReqBtm .f_cta_bk {
+        background: rgba(60, 60, 60, 0.7);
+        padding-top: 4px;
+      }
+
+      .cnp_ftr {
+        text-align: center;
+        padding: 4px 0;
+      }
+
+      .cnp_ftr p {
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 2rem;
+        display: inline-block;
+        color: #fff;
+        padding: 8px 0;
+      }
+
+      .wrapper .fixed_Box {
+        bottom: 17%;
+      }
+    </style>
+    <div class="cnp_ftr">
+      <p>先着順・期間限定キャンペーン実施中！</p>
+    </div>
+    <div class="f_cta_bk">
+      <ul>
+        <li>
+          <a href="tel:0120-965-391" alt="Call:0120-965-391"><img src="/common2/images/tel-btn.png"
+              alt="今すぐ お電話はこちら" /></a>
+        </li>
+        <li class="mmmail">
+          <a href="/vacancy/" target=""><img src="/common2/images/vacancy-btn.png" alt="簡単60秒 お問い合わせ" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--/div//-->
+  <script type="text/javascript">
+    var current = 1;
+    var next = 2;
+
+    var max_count = 2;
+
+    $(function () {
+      var timer;
+      timer = window.setInterval(fadeinout, 3000);
+    });
+
+    function fadeinout() {
+      $("#image-change" + next).fadeIn(1000);
+      $("#image-change" + current).fadeOut(500);
+
+      current = next;
+      next++;
+      if (next > max_count) {
+        next = 1;
+      }
+    }
+  </script>
+  <style>
+    .btn_f {
+      padding: 0.3em 0.5em;
+      text-align: center;
+      cursor: pinter;
+      height: auto;
+    }
+
+    .btn_f:hover {
+      cursor: pinter;
+    }
+
+    .btn_f:active {
+      background: none;
+    }
+
+    .box_footer {
+      position: fixed;
+      bottom: 8px;
+      right: 14px;
+      width: 300px;
+      height: 120px;
+      text-align: center;
+      background: #000;
+      z-index: 999;
+      /*overflow: hidden;*/
+    }
+
+    /* close button */
+    .action-close {
+      margin-top: 2em;
+    }
+
+    .action-close .btn_f {
+      position: fixed;
+      display: inline-block;
+      bottom: 115px;
+      right: 3px;
+      z-index: 1000;
+    }
+
+    .action-close .box_footer {
+      border: none;
+    }
+
+    /* checkbox non-display */
+    .add-control .checkbox {
+      display: none;
+    }
+
+    /* close button's control */
+    .add-control .action-close #close:checked~.btn_f {
+      display: none;
+    }
+
+    .add-control .action-close #close:checked~.box_footer {
+      display: none;
+    }
+
+    @media screen and (max-width: 750px) {
+      .float_bnr {
+        display: none;
+      }
+    }
+
+    /*______________________*/
+    .box_footer #image-wrapperC1 {
+      width: 100%;
+      height: 120px;
+    }
+
+    .box_footer #image-wrapperC1 .image-wrapper2 {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .box_footer #image-wrapperC1 .image-wrapper2 .image-change {
+      position: absolute;
+      width: 100%;
+      max-width: 300px;
+      height: 100%;
+      left: 0;
+      max-height: 120px;
+    }
+
+    .box_footer #image-wrapperC1 .image-wrapper2 #image-changeC2 {
+      display: none;
+    }
+  </style>
+  <!--script type="text/javascript">
+var currentC=1;
+var nextC=2;
+
+var max_countC=2;
+
+$(function(){
+var timerC;
+timerC=window.setInterval(fadeinoutC,3000);
+});
+
+function fadeinoutC(){
+$("#image-changeC"+nextC).fadeIn(1000);
+$("#image-changeC"+currentC).fadeOut(500);
+
+currentC=nextC;
+nextC++;
+if(nextC > max_countC){
+nextC=1;
+}
+}
+</script-->
+
+  <footer>
+    <div class="footer">
+      <dl>
+        <dt>www.regus-office.jp</dt>
+        <dd class="clearfix">
+          <ul class="mgR5 clearfix">
+            <li><a href="/area-search/">レンタルオフィスを探す</a></li>
+            <li><a href="/officetype/">オフィスの種類</a></li>
+            <li><a href="/application/">事業規模から探す</a></li>
+            <li><a href="/purpose/">利用目的から探す</a></li>
+            <li><a href="/case/">活用事例</a></li>
+            <li><a href="/blog/">レンタルオフィスを学ぶ</a></li>
+            <li><a href="/profile/">リージャスとは</a></li>
+            <li><a href="/recruiting_n/">採用情報</a></li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt>リージャスのサービスプラン</dt>
+        <dd class="clearfix">
+          <ul class="mgR5 clearfix">
+            <li><a href="/service/office/">レンタルオフィス</a></li>
+            <li><a href="/service/virtualoffice/">バーチャルオフィス</a></li>
+            <li><a href="/service/meetingroom/">時間貸し会議室</a></li>
+            <li><a href="/service/coworking-spaces/">シェアオフィス</a></li>
+            <li><a href="/service/membership/">メンバーシップ</a></li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt>リージャスのブランド</dt>
+        <dd class="clearfix">
+          <ul class="mgR5 clearfix">
+            <li><a href="/openoffice/">オープンオフィス</a></li>
+            <li><a href="/coworking/">コワーキング</a></li>
+            <li><a href="/brands/brand_regus/">リージャス</a></li>
+            <li><a href="/spaces/">SPACES</a></li>
+            <li><a href="/signature-brand/">Signature</a></li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt>人気のエリア</dt>
+        <dd class="clearfix">
+          <ul class="mgR5 clearfix">
+            <li class="gray mg0" style="margin-right: 10px">
+              東京の人気エリア：
+            </li>
+            <li>
+              <a href="/shibuya-area/">渋谷</a>・<a href="/ebisu-area/">恵比寿</a>エリアのレンタルオフィス
+            </li>
+            <li>
+              <a href="/marunouchi-otemachi-area/">丸の内・大手町エリアのレンタルオフィス</a>
+            </li>
+            <li>
+              <a href="/akasaka-area/">赤坂</a>・<a href="/roppongi-area/">六本木</a>エリアのレンタルオフィス
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <!--li class="gray2" style="width: 93px">&nbsp;</li-->
+            <li>
+              <a href="/sinjuku-area/">新宿</a>・<a href="/ikebukuro-area/">池袋</a>エリアのレンタルオフィス
+            </li>
+            <li>
+              <a href="/aoyama-omotesando-area/">青山・表参道エリアのレンタルオフィス</a>
+            </li>
+            <li>
+              <a href="/ginza-yurakucho-area/">銀座・有楽町エリアのレンタルオフィス</a>
+            </li>
+            <li>
+              <a href="/yaesu-nihonbashi-area/">八重洲・日本橋エリアのレンタルオフィス</a>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <a href="/shinagawa-area/">品川</a>・<a href="/hamamatsucho-area/">浜松町</a>エリアのレンタルオフィス
+            </li>
+            <li>
+              <a href="/osaki-gotanda-area/">大崎・五反田エリアのレンタルオフィス</a>
+            </li>
+            <li>
+              <a href="/shinbashi-shiodome-area">新橋・汐留エリアのレンタルオフィス</a>
+            </li>
+            <li>
+              <a href="/kanda-akihabara-area/">神田・秋葉原</a>・<a href="/kinsicho-area/">錦糸町</a>エリアのレンタルオフィス
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <a href="/kojimachi-yotsuya-area/">麹町・四ッ谷エリアのレンタルオフィス</a>
+            </li>
+            <li>
+              <a href="/tachikawa-area/">立川エリアのレンタルオフィス</a>
+            </li>
+            <li><a href="/machida-area/">町田エリアのレンタルオフィス</a></li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt></dt>
+        <dd class="clearfix">
+          <ul class="mgR5 clearfix">
+            <li class="gray mg0">全国の人気エリア：</li>
+            <li><a href="/tokyo-area/">東京のレンタルオフィス</a></li>
+            <li><a href="/sapporo-area/">札幌のレンタルオフィス</a></li>
+            <li><a href="/sendai-area/">仙台のレンタルオフィス</a></li>
+            <li>
+              <a href="/yokohama-minatomirai-area/">横浜のレンタルオフィス</a>
+            </li>
+            <li><a href="/aichi-area/">愛知・名古屋のレンタルオフィス</a></li>
+            <li><a href="/osaka-area/">大阪のレンタルオフィス</a></li>
+            <li><a href="/fukuoka-area/">福岡のレンタルオフィス</a></li>
+            <li><a href="/omiya-area/">大宮のレンタルオフィス</a></li>
+            <li><a href="/tsukuba-area/">茨城のレンタルオフィス</a></li>
+            <li><a href="/shizuoka-area/">静岡のレンタルオフィス</a></li>
+            <li><a href="/hiroshima-area/">広島のレンタルオフィス</a></li>
+            <li><a href="/kyoto-area/">京都のレンタルオフィス</a></li>
+            <li><a href="/hyogo-kobe-area/">神戸のレンタルオフィス</a></li>
+            <li><a href="/okayama-area/">岡山のレンタルオフィス</a></li>
+            <li><a href="/kagawa-area/">高松のレンタルオフィス</a></li>
+            <li><a href="/kitakyushu-area/">小倉のレンタルオフィス</a></li>
+            <li><a href="/kumamoto-area/">熊本のレンタルオフィス</a></li>
+            <li><a href="/okinawa-area/">沖縄のレンタルオフィス</a></li>
+          </ul>
+        </dd>
+      </dl>
+
+      <dl>
+        <dt></dt>
+        <dd class="clearfix">
+          <ul class="mgR20 socialB">
+            <li class="gray3 mgR10">Regusとつながろう：</li>
+            <li>
+              <a href="https://twitter.com/RegusJapanKK" title="Twitter" class="twitter" target="_blank"
+                rel="nofollow noopener"><img src="/common2/images/footer-twitter.png" alt="Twitter" border="0" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/regusjapan/" title="Instagram" class="Instagram" target="_blank"
+                rel="nofollow noopener"><img src="/common2/images/footer-insta.png" alt="Instagram" border="0" /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/RegusJapan" title="Facebook" class="facebook" target="_blank"
+                rel="nofollow noopener"><img src="/common2/images/footer-facebook.png" alt="Facebook" border="0" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/regus-japan/" title="Linked In" class="linked-in"
+                target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-linkedin.png" alt="Linked In"
+                  border="0" /></a>
+            </li>
+            <li class="pdR20">
+              <a href="https://www.youtube.com/channel/UCy0nszAgoTCdPM6zPWTkowA" title="youtube" target="_blank"
+                rel="nofollow noopener"><img src="/common2/images/footer-youtube.png" alt="youtube" border="0" /></a>
+            </li>
+          </ul>
+          <ul class="socialB">
+            <li class="mgRight">
+              <p class="resv">
+                My Regus.comで<span>スペースを予約：</span><a href="https://www.myregus.com" target="_blank">ブラウザ版&nbsp;<img
+                    src="/common2/images/footer_img_app.svg" alt="" class="openWin"
+                    style="width: 18px; height: 18px" /></a>
+              </p>
+            </li>
+            <li>
+              <a href="https://apps.apple.com/gb/app/regus/id387924487" target="_blank" rel="nofollow noopener"><img
+                  src="/common2/images/footer_img_apple.jpg" alt="App Store" /></a>
+            </li>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.regus" target="_blank"
+                rel="nofollow noopener"><img src="/common2/images/footer_img_google.jpg" alt="Google Play" /></a>
+            </li>
+            <!--li class="useM"><a href="/common2/images/my_regus.pdf" target="_blank">使い方</a></li-->
+          </ul>
+        </dd>
+        <dd class="newworld">
+          <a href="/new-world/" target="">リージャスのコロナウイルス対策と危機管理対応について</a>
+        </dd>
+      </dl>
+
+      <div class="clearfix">
+        <div class="ftrLogo">
+          <a href="/"><img src="/common2/images/logo_ftr.gif" alt="Regus" /></a>
+        </div>
+        <nav class="ftrNav clearfix">
+          <ul>
+            <li><a href="/profile/">リージャスとは</a></li>
+            <li><a href="/policy">プライバシーポリシー</a></li>
+            <li><a href="/regulation">利用規約</a></li>
+            <li><a href="/system-requirements">推奨環境</a></li>
+            <li>
+              <a href="/socialmediapolicy">ソーシャルメディアポリシー</a>
+            </li>
+            <li><a href="/site-map/">サイトマップ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copy">
+        &copy; 2024 Regus Group Companies　　<span class="pcImg">レンタルオフィス・コワーキング
+          スペースならリージャス。東京・大阪・名古屋ほか全国215拠点以上のワークスペースをご紹介。</span>
+      </p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    window._pt_sp_2 = [];
+    _pt_sp_2.push("setAccount,613ecd73");
+    var _protocol =
+      "https:" == document.location.protocol ? " https://" : " http://";
+    (function () {
+      var atag = document.createElement("script");
+      atag.type = "text/javascript";
+      atag.async = true;
+      atag.src = _protocol + "js.ptengine.jp/pta.js";
+      var stag = document.createElement("script");
+      stag.type = "text/javascript";
+      stag.async = true;
+      stag.src = _protocol + "js.ptengine.jp/pts.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(atag, s);
+      s.parentNode.insertBefore(stag, s);
+    })();
+  </script>
+  <script>
+    $(function () {
+      $("div.modal_wrap").on("click", function () {
+        $("body").css("overflow-y", "visible");
+        $("div.modal_wrap").css("visibility", "hidden");
+      });
+      $("div.modal_wrap div.modal .close").on("click", function () {
+        $("body").css("overflow-y", "visible");
+        $("div.modal_wrap").css("visibility", "hidden");
+      });
+    });
+  </script>
+
+  <script src="/common2/js/slick.js?ver=202012" type="text/javascript" charset="utf-8"></script>
+  <!---バーチャルオフィスサービスページ用--->
+  <script src="https://ce.mf.marsflag.com/latest/js/mf-search.js"></script>
+  <script src="/special/rentaloffice/js/common.js"></script>
+</body>
+
+</html>

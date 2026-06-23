@@ -10,6 +10,7 @@
 <meta name="keywords" content="">
 <!--スマホ以外のデバイスからのアクセスのときのビューポート-->
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+<!-- <meta name="viewport" content="width=1100"> -->
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="icon" href="/common2/images/favicon.ico" type="image/x-icon" />
@@ -47,7 +48,7 @@
 $(function(){
 	$(".search .boxL , .search .boxR").heightLine({minWidth:750});
 	$(".rentalBox dd").heightLine();
-  // 20260610 $(".search li").heightLine();を削除
+	$(".search li").heightLine();
 });
 </script>
 
@@ -602,15 +603,14 @@ header.fixed > .inner1 .hd_support {display: none;}}
 </style>
 
 <div class="main_contents">
-  <!-- 20260610// -->
-  <div class="vir_mv">
-    <div class="vir_inner">
-      <div class="title">
+  <div class="mv">
+    <div class="mv__inner">
+      <div class="mv__title">
         一等地の住所で、ビジネスの信頼を高める。
         <h1>リージャスのバーチャルオフィス</h1>
       </div>
     </div>
-    <ul class="box">
+    <ul class="mv__list">
       <li>全国130拠点以上の一等地住所が利用可能</li>
       <li>法人登記・郵便受け取り・電話番号利用に対応</li>
       <li>会議室やラウンジも利用できるプランもご用意</li>
@@ -639,134 +639,256 @@ header.fixed > .inner1 .hd_support {display: none;}}
     }
 </style>
 
-<!-- 20260610// -->
-<p class="vir_info">まずはご希望に合わせてご覧ください</p>
+<section class="sec01" id="plan4">
+  <p class="info">まずはご希望に合わせてご覧ください</p>
 
-<ul class="vir_tab">
-  <li class="active">
-    <h2 class="title"><span class="icon"><svg id="layer1" viewBox="0 0 40 40"><path d="M8.44,34.17c-.71,0-1.33-.26-1.84-.77-.51-.51-.77-1.13-.77-1.84V8.44c0-.71.26-1.33.77-1.84.51-.51,1.13-.77,1.84-.77h8.17c0-.91.33-1.69.98-2.35.66-.66,1.46-.99,2.41-.99s1.77.33,2.43.99c.66.66.98,1.44.97,2.35h8.17c.71,0,1.33.26,1.84.77.51.51.77,1.13.77,1.84v23.12c0,.71-.26,1.33-.77,1.84-.51.51-1.13.77-1.84.77H8.44ZM8.44,32.07h23.12c.13,0,.25-.05.35-.16.11-.11.16-.22.16-.35V8.44c0-.13-.05-.25-.16-.35-.11-.11-.22-.16-.35-.16H8.44c-.13,0-.25.05-.35.16-.11.11-.16.22-.16.35v23.12c0,.13.05.25.16.35.11.11.22.16.35.16ZM12.08,27.72h10.69v-2.09h-10.69v2.09ZM12.08,21.05h15.83v-2.09h-15.83v2.09ZM12.08,14.37h15.83v-2.09h-15.83v2.09ZM20.96,6.71c.27-.26.4-.58.4-.96s-.13-.7-.4-.96c-.27-.26-.59-.39-.96-.39s-.69.13-.95.39c-.26.26-.39.58-.39.96s.13.69.39.96c.26.26.58.39.95.39s.69-.13.96-.39ZM7.93,32.07V7.93v24.15Z" /></svg></span>サービスを知る</h2>
-  </li>
-  <li>
-    <a href="#tabView2">
-      <h2 class="title"><span class="icon"><svg id="layer1" viewBox="0 0 40 40"><path d="M13.1,34.67c-1.79-.78-2.68-1.77-2.68-2.98,0-.61.28-1.2.84-1.77.56-.56,1.33-1.03,2.3-1.41l1.61,1.43c-.5.16-1.01.41-1.52.73-.51.33-.89.66-1.14.99.34.55,1.23,1.03,2.68,1.44,1.45.41,3.06.62,4.82.62s3.37-.21,4.83-.62c1.46-.41,2.36-.89,2.7-1.44-.24-.35-.64-.68-1.2-1.01-.57-.32-1.11-.56-1.62-.72l1.62-1.45c1.04.38,1.85.85,2.41,1.41.57.56.85,1.15.85,1.78,0,1.21-.89,2.2-2.68,2.98-1.79.78-4.09,1.16-6.9,1.16s-5.12-.39-6.9-1.16ZM20.04,28.21c2.9-2.2,5.08-4.39,6.53-6.57,1.45-2.18,2.17-4.27,2.17-6.26,0-3.01-.94-5.28-2.82-6.82-1.88-1.53-3.85-2.3-5.92-2.3s-4,.77-5.9,2.3c-1.89,1.53-2.84,3.81-2.84,6.82,0,1.98.72,4.02,2.17,6.14,1.45,2.12,3.65,4.35,6.61,6.69ZM20,30.83c-3.62-2.72-6.33-5.36-8.13-7.92-1.8-2.56-2.7-5.07-2.7-7.53,0-1.85.33-3.48.99-4.88.66-1.4,1.51-2.56,2.55-3.5,1.04-.94,2.2-1.65,3.48-2.12s2.56-.71,3.82-.71,2.54.24,3.83.71c1.29.47,2.45,1.18,3.49,2.12,1.04.94,1.88,2.11,2.54,3.5.66,1.4.98,3.02.98,4.88,0,2.46-.9,4.97-2.69,7.54-1.79,2.56-4.51,5.2-8.15,7.92ZM20,18.16c.83,0,1.54-.29,2.13-.88.59-.58.88-1.3.88-2.14s-.29-1.54-.88-2.13c-.59-.59-1.3-.88-2.13-.88s-1.53.29-2.12.88c-.59.59-.89,1.3-.89,2.13,0,.84.3,1.55.89,2.14.59.58,1.3.88,2.12.88Z" /></svg></span>拠点・料金を見る</h2>
-    </a>
-  </li>
-</ul>
-<!-- //20260610 -->
+  <ul class="tab">
+    <li class="tab__item active">
+      <h2>
+        <span class="tab__icon"
+          ><svg id="layer1" viewBox="0 0 40 40">
+            <path
+              d="M8.44,34.17c-.71,0-1.33-.26-1.84-.77-.51-.51-.77-1.13-.77-1.84V8.44c0-.71.26-1.33.77-1.84.51-.51,1.13-.77,1.84-.77h8.17c0-.91.33-1.69.98-2.35.66-.66,1.46-.99,2.41-.99s1.77.33,2.43.99c.66.66.98,1.44.97,2.35h8.17c.71,0,1.33.26,1.84.77.51.51.77,1.13.77,1.84v23.12c0,.71-.26,1.33-.77,1.84-.51.51-1.13.77-1.84.77H8.44ZM8.44,32.07h23.12c.13,0,.25-.05.35-.16.11-.11.16-.22.16-.35V8.44c0-.13-.05-.25-.16-.35-.11-.11-.22-.16-.35-.16H8.44c-.13,0-.25.05-.35.16-.11.11-.16.22-.16.35v23.12c0,.13.05.25.16.35.11.11.22.16.35.16ZM12.08,27.72h10.69v-2.09h-10.69v2.09ZM12.08,21.05h15.83v-2.09h-15.83v2.09ZM12.08,14.37h15.83v-2.09h-15.83v2.09ZM20.96,6.71c.27-.26.4-.58.4-.96s-.13-.7-.4-.96c-.27-.26-.59-.39-.96-.39s-.69.13-.95.39c-.26.26-.39.58-.39.96s.13.69.39.96c.26.26.58.39.95.39s.69-.13.96-.39ZM7.93,32.07V7.93v24.15Z"
+            /></svg></span
+        >サービスを知る
+      </h2>
+    </li>
+    <li class="tab__item">
+      <h2>
+        <span class="tab__icon"
+          ><svg id="layer1" viewBox="0 0 40 40">
+            <path
+              d="M13.1,34.67c-1.79-.78-2.68-1.77-2.68-2.98,0-.61.28-1.2.84-1.77.56-.56,1.33-1.03,2.3-1.41l1.61,1.43c-.5.16-1.01.41-1.52.73-.51.33-.89.66-1.14.99.34.55,1.23,1.03,2.68,1.44,1.45.41,3.06.62,4.82.62s3.37-.21,4.83-.62c1.46-.41,2.36-.89,2.7-1.44-.24-.35-.64-.68-1.2-1.01-.57-.32-1.11-.56-1.62-.72l1.62-1.45c1.04.38,1.85.85,2.41,1.41.57.56.85,1.15.85,1.78,0,1.21-.89,2.2-2.68,2.98-1.79.78-4.09,1.16-6.9,1.16s-5.12-.39-6.9-1.16ZM20.04,28.21c2.9-2.2,5.08-4.39,6.53-6.57,1.45-2.18,2.17-4.27,2.17-6.26,0-3.01-.94-5.28-2.82-6.82-1.88-1.53-3.85-2.3-5.92-2.3s-4,.77-5.9,2.3c-1.89,1.53-2.84,3.81-2.84,6.82,0,1.98.72,4.02,2.17,6.14,1.45,2.12,3.65,4.35,6.61,6.69ZM20,30.83c-3.62-2.72-6.33-5.36-8.13-7.92-1.8-2.56-2.7-5.07-2.7-7.53,0-1.85.33-3.48.99-4.88.66-1.4,1.51-2.56,2.55-3.5,1.04-.94,2.2-1.65,3.48-2.12s2.56-.71,3.82-.71,2.54.24,3.83.71c1.29.47,2.45,1.18,3.49,2.12,1.04.94,1.88,2.11,2.54,3.5.66,1.4.98,3.02.98,4.88,0,2.46-.9,4.97-2.69,7.54-1.79,2.56-4.51,5.2-8.15,7.92ZM20,18.16c.83,0,1.54-.29,2.13-.88.59-.58.88-1.3.88-2.14s-.29-1.54-.88-2.13c-.59-.59-1.3-.88-2.13-.88s-1.53.29-2.12.88c-.59.59-.89,1.3-.89,2.13,0,.84.3,1.55.89,2.14.59.58,1.3.88,2.12.88Z"
+            /></svg></span
+        >拠点・料金を見る
+      </h2>
+    </li>
+  </ul>
 
-<section class="sec03" id="plan4">
-  <!-- 20260610 変更// -->
-  <div id="plan">
-	  <h3>バーチャルオフィス<br class="sp">4つのプラン</h3>
-    <!--p class="cam_banner">
-    <img src="/special/rentaloffice/img/virtual/regus_virtual_50of_pc_260219.jpg" alt="バーチャルオフィスSALE50%OFF" class="pc"><img src="/special/rentaloffice/img/virtual/regus_virtual_50of_sp_260219.jpg" alt="バーチャルオフィスSALE50%OFF" class="sp"></p-->
-    <div class="scroll">
-      <ul>
-        <li></li>
-        <li class="plan_li">もっとも安価な<br>住所+郵便</li>
-        <li class="plan_li">電話番号利用<br class="sp">のみ</li>
-        <li class="plan_li">最も人気の<br>基本サービス＋<br>ラウンジ利用</li>
-        <li class="plan_li">個室オフィス<br class="sp">も<br class="pc">利用可能</li>
+  <!-- 1つ目のパネル -->
+  <div class="tab__panel active">
+    <!-- 4つのプラン -->
+    <div class="plan" id="plan">
+      <h3>バーチャルオフィス<br class="sp" />4つのプラン</h3>
+      <div class="plan__scroll">
+        <ul>
+          <li></li>
+          <li class="plan_list">もっとも安価な<br />住所+郵便</li>
+          <li class="plan_list">電話番号利用<br class="sp" />のみ</li>
+          <li class="plan_list">
+            最も人気の<br />基本サービス＋<br />ラウンジ利用
+          </li>
+          <li class="plan_list">
+            個室オフィス<br class="sp" />も<br class="pc" />利用可能
+          </li>
+        </ul>
+        <table cellspacing="0" border="0">
+          <tr>
+            <th bgcolor="ffffff"></th>
+            <th>
+              <img
+                src="/special/rentaloffice/img/virtual/plan_1.jpg"
+                alt="写真：メールボックス・プラス"
+              />メールボックス・<br class="sp" />プラス
+            </th>
+            <th>
+              <img
+                src="/special/rentaloffice/img/virtual/plan_2.jpg"
+                alt="写真：テレフォンアンサリング"
+              />テレフォン<br class="sp" />サポート
+            </th>
+            <th>
+              <img
+                src="/special/rentaloffice/img/virtual/plan_3.jpg"
+                alt="写真：バーチャルオフィス"
+              />バーチャル<br class="sp" />オフィス
+            </th>
+            <th>
+              <img
+                src="/special/rentaloffice/img/virtual/plan_4.jpg"
+                alt="写真：バーチャルオフィス・プラス"
+              />バーチャル<br class="sp" />オフィス・プラス
+            </th>
+          </tr>
+          <tr class="plan">
+            <td>プラン内容</td>
+            <td>センターの住所をビジネスアドレスとして利用可能</td>
+            <td>専用の電話番号をご用意</td>
+            <td>
+              ビジネスアドレス取得に加え、専用電話番号、郵便物や電話の転送が可能
+            </td>
+            <td>
+              バーチャルオフィスのサービスに加え、個室オフィスを月5日までご利用可能
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">月額の目安</td>
+            <td><span>7,900</span>円/月〜</td>
+            <td><span>9,900</span>円/月〜</td>
+            <td><span>17,900</span>円/月〜</td>
+            <td><span>25,500</span>円/月〜</td>
+          </tr>
+          <tr>
+            <td colspan="4" style="text-align: center">
+              ※料金はセンターによって異なります。<br
+                class="sp"
+              />※季節・拠点により割引可能な場合がございます。
+            </td>
+          </tr>
+          <tr>
+            <td>住所利用・<br />法人登記</td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+            <td></td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>郵便受け取り</td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+            <td></td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>電話番号・<br />電話代行</td>
+            <td></td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>全国130拠点<br />ラウンジ利用</td>
+            <td></td>
+            <td></td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>オフィス利用<br />（5日間/月）</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <img
+                decoding="async"
+                src="/special/rentaloffice/img/virtual/plan_check_blue.png"
+                alt="サービスあり"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- ビジネスラウンジ -->
+    <div class="lounge">
+      <div class="lounge__text">
+        <h3>ビジネスラウンジ</h3>
+        <p>
+          オフィス契約（プライベートオフィス・シェアオフィス）、メンバーシップ、バーチャルオフィスの方がご利用可能。<br />
+          開放的なビジネスラウンジはワークスペースはもちろん、リフレッシュや、来客、他の利用者とのコミュニケーションの場としても最適。
+        </p>
+        <dl>
+          <dt>サービス</dt>
+          <dd>高速インターネット／Wi-Fi／ドリンクサービス</dd>
+          <dt>料金</dt>
+          <dd>
+            オフィス、メンバーシップ、バーチャルオフィス契約の方は追加料金なしでご利用可能
+          </dd>
+        </dl>
+      </div>
+      <div class="lounge__image">
+        <img
+          src="../../special/rentaloffice/img/virtual/virtual_lounge.jpg"
+          alt="ビジネスラウンジ"
+        />
+      </div>
+    </div>
+
+    <!-- 活用シーン -->
+    <div class="scene">
+      <h3>こんなシーンで<br class="sp" />活用されています</h3>
+      <ul class="scene__list">
+        <li>名刺やパンフレットに住所を掲載</li>
+        <li>出張先のワークスペースに（ラウンジ利用）</li>
+        <li>Webサイトに会社住所を掲載</li>
+        <li>会議室やオフィスの一時利用</li>
+        <li>請求書や契約書の送付先に</li>
       </ul>
-      <table cellspacing="0" border="0">
-        <tr>
-          <th bgcolor="ffffff"></th>
-          <th><img src="/special/rentaloffice/img/virtual/plan_1.jpg" alt="写真：メールボックス・プラス"><span class="span1">メールボックス・<br class="sp">プラス</span></th>
-          <th><img src="/special/rentaloffice/img/virtual/plan_2.jpg" alt="写真：テレフォンアンサリング"><span class="span1">テレフォン<br class="sp">サポート</span></th>
-          <th style="border:solid #d71a34; border-width:5px 5px 0 5px;"><img src="/special/rentaloffice/img/virtual/plan_3.jpg" alt="写真：バーチャルオフィス"><span class="span1">バーチャル<br class="sp">オフィス</span></th>
-          <th><img src="/special/rentaloffice/img/virtual/plan_4.jpg" alt="写真：バーチャルオフィス・プラス"><span class="span1">バーチャル<br class="sp">オフィス・プラス</span></th>
-        </tr>
-        <style>
-          section.sec03 table tr.plan td {text-align: left; line-height: 1; vertical-align: middle;}
-        </style>
-        <tr class="plan">
-          <td>プラン内容</td>
-          <td><span>センターの住所をビジネスアドレスとして利用可能</span></td>
-          <td><span>専用の電話番号をご用意</span></td>
-          <td class="td_fill" style="border:solid #d71a34; border-width:0 5px;"><span>ビジネスアドレス取得に加え、専用電話番号、郵便物や電話の転送が可能</span></td>
-          <td><span>バーチャルオフィスのサービスに加え、個室オフィスを月5日までご利用可能</span></td>
-        </tr>
-        <tr>
-          <td rowspan="2">月額の目安</td>
-          <td>7,900<span>円/月〜</span></td>
-          <td>9,900<span>円/月〜</span></td>
-          <td class="td_fill" style="border:solid #d71a34; border-width:0 5px;">17,900<span>円/月〜</span></td>
-          <td>25,500<span>円/月〜</span></td>
-        </tr>
-        <tr>
-          <td colspan="4" class="prc_m">※料金はセンターによって異なります。<br class="sp">※季節・拠点により割引可能な場合がございます。</td>
-        </tr>
-        <tr>
-          <td>住所利用・<br>法人登記</td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-          <td></td>
-          <td class="td_fill" style="border:solid #d71a34; border-width:0 5px;"><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-        </tr>
-        <tr>
-          <td>郵便受け取り</td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-          <td></td>
-          <td class="td_fill" style="border:solid #d71a34; border-width:0 5px;"><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-        </tr>
-        <tr>
-          <td>電話番号・<br>電話代行</td>
-          <td></td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-          <td class="td_fill" style="border:solid #d71a34; border-width:0 5px;"><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-        </tr>
-        <tr>
-          <td>全国130拠点<br>ラウンジ利用</td>
-          <td></td>
-          <td></td>
-          <td class="td_fill" style="border:solid #d71a34; border-width:0 5px;"><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-        </tr>
-        <tr>
-          <td>オフィス利用<br>（5日間/月）</td>
-          <td></td>
-          <td></td>
-          <td class="td_fill" style="border:solid #d71a34; border-width:0 5px 5px;"> </td>
-          <td><img decoding="async" src="/special/rentaloffice/img/virtual/plan_check_blue.png" alt="サービスあり"></td>
-        </tr>
-      </table>
-    </div>
-	  <!--p class="notes">※季節によって価格変動あり。拠点により割引可能。</p-->
-  </div>
-  <!-- //20260610 変更 -->
-
-  <!-- 20260610// -->
-  <div class="vir_lounge">
-    <div class="text">
-      <h3>ビジネスラウンジ</h3>
-      <p>オフィス契約（プライベートオフィス・シェアオフィス）、メンバーシップ、バーチャルオフィスの方がご利用可能。<br>
-        開放的なビジネスラウンジはワークスペースはもちろん、リフレッシュや、来客、他の利用者とのコミュニケーションの場としても最適。</p>
-      <dl>
-        <dt>サービス</dt><dd>高速インターネット／Wi-Fi／ドリンクサービス</dd>
-        <dt>料金</dt><dd>オフィス、メンバーシップ、バーチャルオフィス契約の方は追加料金なしでご利用可能</dd>
-      </dl>
-    </div>
-    <div class="image">
-      <img src="../../special/rentaloffice/img/virtual/virtual_lounge.jpg" alt="ビジネスラウンジ">
+      <div class="scene__caption">
+        ※料金はセンターによって異なります。<br
+          class="sp"
+        />※季節・拠点により割引可能な場合がございます。
+      </div>
     </div>
   </div>
-  <div class="vir_box">
-    <h3>こんなシーンで<br class="sp">活用されています</h3>
-    <ul>
-      <li>名刺やパンフレットに住所を掲載</li>
-      <li>出張先のワークスペースに（ラウンジ利用）</li>
-      <li>Webサイトに会社住所を掲載</li>
-      <li>会議室やオフィスの一時利用</li>
-      <li>請求書や契約書の送付先に</li>
-    </ul>
-    <div class="caption">
-      ※料金はセンターによって異なります。<br class="sp">※季節・拠点により割引可能な場合がございます。
-    </div>
-  </div>
-  <!-- //20260610 -->
-</section><!--sec03-->
+</section>
 
 
 <!--251010//-->
