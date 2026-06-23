@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+h1.infotop {
+    width:846px;
+    margin:0 0 20px 0;
+    padding:0;
+}
+
+ol.infoindex {
+    display:block;
+    width:800px;
+    margin:20px 23px 30px 23px;
+    padding:0;
+    overflow:hidden;
+	
+}
+ol.infoindex li{
+    display:block;list-style:none;
+    float:left;
+	width:45%;
+    line-height:23px;
+    font-size:13px;
+	font-weight:normal;
+	margin-right:5px;
+}
+ol.infoindex li:nth-child(2n){
+	margin-right:0;
+}
+/*ol.infoindex li:nth-child(3n){
+	margin-right:0;
+	width:29%;
+	background:#ddd;
+}*/
+
+
+h1.infotitle,h2.infotitle {
+    clear:both;
+    width:800px;    
+	margin:20px 23px;
+    background-image: url(/news/media/images/title_bg01.gif);
+    background-repeat: repeat-y;
+    line-height: 2.5;
+	vertical-align:middle;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-indent: 15px;
+    background-color: #1C6DA5;
+}
+
+div.infophoto-layout { /* 右サイド写真レイアウト用 */
+    width:780px;
+    margin:0 33px 20px 33px;
+}
+
+div.infophoto-layout div.infomain {
+    width:590px;
+    float:left;
+    margin:0;
+    line-height: 2.2;
+    font-size: 16px;
+}
+
+div.infophoto-layout div.infophoto {
+    width:160px;
+    margin:0; /* ie6 float margin bug. must 0. */
+    float:right;
+    overflow:hidden;
+}
+
+.txtImp{
+	color:#0084ef;
+	font-weight:600;
+}
+.ttlIntro{
+	font-weight:bold;
+}
+.txtSmall{
+	font-size:12px;
+	line-height:1.8;
+}
+.ttlIntroM{
+	font-weight:bold;
+	background:#ecf7fb/*#e5f2fd*//*#ddefff*/;
+	color:#333;
+	line-height:1.6;
+	padding:13px 10px;
+	border-radius:5px;
+}
+.introNote{
+	background:#efefef;
+	border-radius:5px;
+	padding:15px;
+	font-size:12px;
+	line-height:1.8;
+}
+#kyoekiFee {
+	width:580px;
+	clear:both;
+	overflow:hidden;
+}
+#kyoekiFee .flL{
+	width:26%;
+	text-align:right;
+}
+#kyoekiFee .flR{
+	width:68%;
+	margin-right:30px;
+	border-radius:5px;
+	background:#efefef;
+	box-sizing:border-box;
+	padding:15px 20px 15px 70px;
+}
+#kyoekiFee .flR li{
+	float:left;
+	width:150px;
+}
+#kyoekiFee .flR li:nth-child(5),
+#kyoekiFee .flR li:nth-child(6){
+	width:100%;
+	float:none;
+}
+#kyoekiFee2{
+	clear:both;
+	width:580px;
+}
+.txAR{text-align:right;
+}
+#kyoekiFee2 .bgGray{
+	width:90%;
+	margin:0 auto 30px auto;
+	border-radius:5px;
+	background:#efefef;
+	box-sizing:border-box;
+	padding:15px 20px 15px 70px;
+}
+.infophoto-layout .infomain .pay {
+	border-radius:5px;
+	box-sizing:border-box;
+	padding:20px;
+	border:5px #efefef solid;
+	width:90%;
+	margin:0 auto 20px auto;
+
+}
+	
+.infophoto-layout .infomain .pay h3{
+	font-weight:bold;
+}
+
+
+
+
+
+div.infophoto img {
+    margin-bottom:30px;
+}
+
+div.infomain2 { /* 右サイド写真なし用 */
+    width:780px;
+    margin:0 33px 20px 33px;
+    background-image: url(/intro/images/line001.gif);
+    background-repeat: repeat-xy;
+    line-height: 25px;
+    font-size: 10pt;
+}
+
+table.infomain2 {
+    width:780px;
+    margin:0 33px 20px 33px;
+}
+dl.infomain2 {
+    width:780px;
+    margin:0 33px 20px 33px;
+    line-height:14pt;
+}
+dl.infomain2 dt {
+    border: solid 1px #2A8DBA;
+    background-color:#2A8DBA;
+    color:white;
+    margin:0;
+    padding:5px;
+    font-size:12pt;
+    font-weight:bold;
+}
+dl.infomain2 dt h2{
+	font-size:12pt;
+    font-weight:bold;
+}
+dl.infomain2 dd {
+    border: solid 1px #2A8DBA;
+    background-color:white;
+    margin:0 0 20px 0;
+    padding:10px;
+    overflow:hidden;
+}
+
+div.infomain3 { /* 右サイド写真なし + 罫線なし */
+    width:780px;
+    margin:0 33px 20px 33px;
+    font-size: 10pt;
+}
+
+div.infonext {
+    clear:both;
+    width:600px;
+    margin:0 0 20px 33px;
+    text-align:right;
+}
+div.infonext2 {
+    clear:both;
+    width:780px;
+    margin:0 33px 20px 33px;
+    text-align:right;
+}
+
+#gotop {
+    clear:both;
+}
+
+/*_______HopStepJump_________________________________________________________________________________________________________________________*/
+.stepFra{width:820px;margin:0 0 0 25px;
+}
+.stepFra .anchor{
+	margin:60px auto 70px auto;
+	width:630px;
+	text-align:center;
+}
+.stepFra .anchor h2{
+	font-size:22px;
+	font-weight:bold;
+	color:#444444;
+	letter-spacing:2px;
+	margin-bottom:8px;
+}
+.stepFra .anchor ul{
+	border:#4084CC solid 1px;
+	border-radius:5px;
+	padding:10px 1px 6px 1px;
+	overflow:hidden;margin:0 0 0;
+}
+.stepFra .anchor ul li{
+	text-align:center;
+	float:left;
+	width:208px;
+	margin:0 ;
+	border-right:#c4c4c4 1px solid;
+}
+.stepFra .anchor ul li:last-child{
+border-right:0;width:206px;
+}
+.stepFra .anchor ul li a:hover{
+filter:alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+
+.stepFra .ttl{
+	background:#dceffb;
+	border-radius:5px;
+	overflow:hidden;
+	margin-bottom:30px;
+}
+.stepFra .ttl .le{
+	height: 100px;
+position:relative;
+width:210px;
+float:left;text-align:center;
+background:#1898d3;margin-right:30px;
+display: table;
+}
+.stepFra .ttl .le h3{
+	  display: table-cell;
+    vertical-align: middle;
+	/*padding:18px 0;*/
+	
+	color:#fff;
+	font-size:22px;
+	line-height:1.3;
+	letter-spacing:2px;
+	
+}
+.stepFra .ttl .le h3 span{
+	font-size:14px;display:table-cell;
+	display:block;
+	line-height:1.8;
+}
+.stepFra .ttl p{
+	height: 100px;
+	display: table-cell;
+	vertical-align:middle;
+	font-size:16px;
+	line-height:1.4;
+	letter-spacing:1px;
+	
+}
+
+
+
+
+.stepAllow{
+	background:#fff url(images/step_arrow.gif) center 0 no-repeat;
+	padding-top:72px;
+}
+.stepFra .stepUnit{
+	background:#f4f3f3;
+	overflow:hidden;
+	padding:27px 25px 27px 0;
+}
+.stepFra .stepUnit .flL{
+	float:left;
+	width:270px;
+	margin:0;
+	text-align:left;
+}
+.stepFra .stepUnit .flR{
+	float:right;
+	width:520px;
+	line-height:1.8;
+}
+.stepFra .stepUnit .flR h3{
+	font-weight:500;
+	font-size:20px;
+	line-height:36px;
+	vertical-align:middle;
+	margin:0 0 5px;
+}
+
+.stepFra .stepUnit .flR h3 span{
+	border-radius:18px;
+	height:36px;
+	width:36px;
+	display:inline-block;
+	margin:0 5px 0 0;
+	background:#1898d3;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	line-height:36px;
+	font-weight:normal;
+}
+.stepFra .stepUnit .flR .in{
+	margin-left:40px;
+}
+
+.stepFra .stepUnit .flR .in .time{
+	border-radius:5px;
+	border:#ef2d33 2px solid;
+	margin:10px 0;
+	color:#ef2d33;
+	padding:8px 0;
+	text-align:center;
+	width:460px;
+	font-weight:500;
+	font-size:15px;
+}
+.stepFra .stepUnit .flR .in ul.white {
+	padding:8px 0 8px 25px;
+	border-radius:5px;
+	background:#fff;
+	margin:5px 110px 10px 0;
+	line-height:1.6;
+	color:#666;
+	font-size:12px;
+}
+.stepFra .stepUnit .flR .in ul.white2 {
+	margin:5px 0px 10px 0;
+}
+.stepFra .stepUnit .flR .in ul.white li{
+	list-style:disc;
+	list-style-position:inside;
+}
+.stepFra .stepUnit .flR .in .txtRed{
+	color:#ef2d33;
+	font-weight:bold;
+}
+
+.stepFra .stepUnit .flR .in .note{
+		font-size: 0.85em;
+	color: #666;
+	text-indent: -1em;
+	padding-left: 1em;
+}
+ 
+
+.stepFra .flwBtm{
+	width:730px;
+	min-height:128px;
+	background:url(images/intro_btm_img.jpg) 0 0 no-repeat;
+	margin:35px auto 100px auto;}
+.stepFra .flwBtm p{
+		padding-left:140px;
+		height:128px;
+		display:table-cell;
+		vertical-align:middle;
+		font-size:16px;
+		line-height:1.6;
+	}
+
+
+.stepFra .stepUnit .flR .in dl#apply{
+	margin:0;
+}
+.stepFra .stepUnit .flR .in dl#apply dt{
+	background:#1898d3;
+	color:#fff;
+	border-radius:25px;
+	padding:2px 0;
+	text-align:center;
+	width:140px;
+}
+
+.stepFra .stepUnit .flR .in dl#apply dd{
+	margin:0 0 15px 20px;
+}
+.stepFra .stepUnit .flR .in dl#apply dd:last-child{
+	margin-bottom:0;
+}
+
+
+
+
+/*btn---------------------------------*/
+.stepFra .btnApply{
+	text-align:center;
+	width:246px;
+	margin-top:0px;
+}
+.stepFra .btnApply a{
+display:block;
+color:#fff;
+font-size:16px;
+border-radius:5px;
+background: #ee2c32;
+  background-image: -webkit-linear-gradient(top, #ee2c32, #de2126);
+  background-image: -moz-linear-gradient(top, #ee2c32, #de2126);
+  background-image: -ms-linear-gradient(top, #ee2c32, #de2126);
+  background-image: -o-linear-gradient(top, #ee2c32, #de2126);
+  background-image: linear-gradient(to bottom, #ee2c32, #de2126);
+	padding:12px 0;
+	   box-shadow: 1px 1px 2px #a38e8e;  
+}
+.stepFra .btnApply a:hover{
+	filter:alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+
+}

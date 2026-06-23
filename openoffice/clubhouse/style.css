@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* 中会議室 「けやき」 オープン記念 CSS */
+
+#OPO_main {
+}
+
+.main-title {
+clear:both;
+/*
+    margin:10px 50px;
+    height:220px;
+    position:relative;
+*/
+}
+
+.main-title * {
+    margin:0;
+    padding:0;
+}
+h1 {
+    width:846px;
+    height:300px;
+    padding:0;
+    margin:0;
+    background-image:url(./images/bg.jpg);
+    background-position:top left;
+    background-repeat:no-repeat;
+    text-indent:-1000em;
+    overflow:hidden;
+}
+/*.main-title .title-img {
+    position:absolute;
+    left:0px;
+    top:36px;
+}
+.main-title .title1 {
+    position:absolute;
+    left:274px;
+    top:15px;
+}
+.main-title .title2 {
+    position:absolute;
+    left:165px;
+    top:54px;
+}
+.main-title .title3 {
+    position:absolute;
+    left:331px;
+    top:158px;
+}
+*/
+
+
+.main-body {
+/*
+    width:321px;
+    float:left;
+    margin-top:20px;
+*/
+    margin:10px 50px;
+    margin-top:0px;
+    padding:30px;
+    padding-top:0;
+    /*border:1px solid blue;*/
+    color:#444;
+}
+
+.main-body p {
+    /* border:1px solid orange; */
+}
+
+.main-body ul {
+    margin:1em 0.5em;
+    padding:0;
+}
+.main-body ul li {
+    margin:0;
+    margin-left:1.2em;
+    padding:0;
+    text-indent:-1.2em;
+    list-style-type:none;
+    font-size:90%;
+    color:#777;
+}
+
+.sub-block {
+    width:47%;
+    margin:10px;
+    float:left;
+    border:1px solid blue;
+}
+
+.sub-block h2 {
+    height:100px;
+    border:1px solid green;
+    margin:0;
+    line-height:2em;
+}
+
+.remark-block {
+    clear:both;
+    border:1px solid red;
+}
+
+.catch1 {
+    border:1px solid red;
+    font-size:2em;
+    line-height:2em;
+    margin:0;
+}
+
+.catch2 {
+    /* 特典．リージャスビジネスワールドゴールドカード */
+    height:50px;
+    border:1px solid red;
+}
+
+
+.main-button {
+    clear:both;
+    margin:32px;
+}
+.main-button a {
+    display:block;
+    width:476px;
+    height:103px;
+    background-image:url(images/button.jpg);
+    background-position:0px 0px;
+    margin:0 auto;
+    padding:0;
+    border:none;
+    text-indent:-1000em;
+    overflow:hidden;
+}
+.main-button a:hover {
+    background-position:0 -103px;
+}
+.main-button a:active {
+    background-position:0 -206px;
+}
+
+
+/* price */
+
+table.price {
+    border-collapse:collapse;
+    margin:2em auto;
+}
+table.price th,table.price td {
+    border:1px solid #aaa;
+    margin:0;
+    padding:5px;
+}
+table.price thead th {
+    text-align:center;
+}
+table.price tbody th {
+    text-align:left;
+}
+table.price tbody .col1 {
+    background-color:#cef6c0;
+}
+table.price .col2 {
+    background-color:#ecfbff;
+}
+table.price .col3 {
+    background-color:#e3f8ff;
+}
+table.price .col4 {
+    background-color:#cff1ff;
+}
+
+
+/* annotate */
+
+.main-body .annotate {
+    margin:2em 1em;
+}
+
+/* phone info */
+
+.phone-info {
+    /*border:1px solid red;*/
+    margin:2em auto;
+    width:386px;
+    height:115px;
+}
+
+/* campaign info */
+
+.campaign-info {
+    /*border:1px solid red;*/
+    margin:50px auto;
+    padding:20px;
+    padding-bottom:90px;
+    width:595px;
+    border-radius:20px;
+    background-color:#7979ff;
+    background-image:url(./images/img02.jpg);
+    background-repeat:no-repeat;
+    background-position:bottom center;
+    color:white;
+    position:relative;
+}
+.campaign-info .catch {
+    position:absolute;
+    margin:0;
+    right:20px;
+    top:20px;
+    width:11em;
+    height:2em;
+    text-align:center;
+    line-height:2em;
+    background-color:white;
+    color:#7979ff;
+    border-radius:10px;
+    font-weight:bold;
+}
+.campaign-info ul {
+    margin:2em;
+    margin-top:3em;
+}
+.campaign-info ul li {
+    font-size:150%;
+    line-height:150%;
+    color:white;
+    font-weight:bold;
+}
+

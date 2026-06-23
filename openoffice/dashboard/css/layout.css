@@ -1,0 +1,667 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*LOGIN CONFIGURATION PAGE*/
+body {
+	font: 100%/1.6 "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+	*font-family: "Lucida Grande", "ＭＳ Ｐゴシック", "Lucida Sans Unicode", sans-serif; /*color:#727171;*/color:#333; -webkit-font-smoothing: antialiased;
+	background:#ffffff;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li,dl,dt,dd,th,td {
+	margin:0;
+	padding:0;
+	}
+
+img {
+	border:0;
+	line-height:0;
+	margin:0;
+	padding:0;
+	vertical-align:bottom;
+	}
+	
+li{
+	list-style:none;
+}
+
+/*Frame
+---------------------------------------------------- */
+#header{
+	width:100%;
+	background:#eee;
+	padding:15px 0;}
+.conIn{
+	width:1000px;
+	clear:both;
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+#header .conIn p.flL{
+	width:500px;
+	text-align:left;
+	font-size:150%;
+	line-height:1.4;
+	vertical-align:middle;
+	color:#888;
+	font-weight:900;
+}
+#header .conIn p.flR{
+	width:300px;
+}
+#main{
+	width:920px;
+	clear:both;
+	display:block;
+	background:#ecedf0;
+}
+#container{
+	background:#ecedf0;
+	width:100%;
+}
+/*-------
+FOOTER--------------------------------*/
+#footer{
+	margin-top:60px;
+	text-align:center;
+	clear:both;
+	width:100%;
+	background:#9faeb7;
+	padding:40px 0;
+}
+#footer p{
+	color:#fff;
+	font-size:12px;
+	line-height:1,8;
+}
+/*-------
+Log IN--------------------------------*/
+.form-login {
+	max-width: 500px;
+	margin: 100px auto 100px auto;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border:1px #ccc solid;
+}
+
+.form-login-heading{
+	margin: 0;
+	padding: 25px 20px;
+	text-align: center;
+	background: #f6f6f6;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	color: #666;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+	border-bottom:1px #efefef solid;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0px;
+}
+.login-wrap {
+	padding:30px;
+	width:300px;
+	margin:0  auto;
+}
+
+
+.login-wrap input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #CCC;
+    background: #FAFAFA none repeat scroll 0% 0%;
+    transition: all 0.2s ease-in-out 0s;
+}
+.login-wrap input[type="text"] {
+    border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0 0;
+    text-transform: lowercase;
+}
+.login-wrap input[type="password"] {
+    border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+    border-top: 0px none;
+}
+.login-wrap input[type="submit"] {
+	background:url('../images/btn_login.png');width:210px;height:45px;border:0px solid;cursor:pointer;
+}
+.btnLogin:hover{
+	opacity:0.7;
+}
+/*MENU___________________________________________________________________________*/
+.menu {
+	max-width: 800px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border:1px #ccc solid;
+}
+.menu-wrap {
+	padding:80px 20px;
+	width:750px;
+	margin:0  auto 0 auto;
+}
+
+
+.menu-wrap .button {
+	width:340px;
+	border: 1px solid #15aeec;
+	background: #57bfb1; /* Old browsers */
+background: -moz-linear-gradient(top,  #57bfb1 0%, #28a4a8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #57bfb1 0%,#28a4a8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #57bfb1 0%,#28a4a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57bfb1', endColorstr='#28a4a8',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #fff;
+	
+	-webkit-transition: none;
+	transition: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	text-align:center;
+	font-size:120%;
+	line-height: 100px;
+	font-weight:900;
+	float:left;
+
+}
+
+.menu-wrap .button:hover {
+	border:1px solid #1090c3;
+	background: #64dbd3; /* Old browsers */
+background: -moz-linear-gradient(top,  #64dbd3 0%, #2dbfbf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #64dbd3 0%,#2dbfbf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #64dbd3 0%,#2dbfbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64dbd3', endColorstr='#2dbfbf',GradientType=0 ); /* IE6-9 */
+}
+.menu-wrap .button:active {
+	background: #3b4f7b;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+	color: #1679a1;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+.menu-wrap .buttonB {
+	width:340px;
+	border: 1px solid #3b4f7b;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#507aaf+0,244e96+100 */
+background: #507aaf; /* Old browsers */
+background: -moz-linear-gradient(top,  #507aaf 0%, #244e96 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #507aaf 0%,#244e96 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #507aaf 0%,#244e96 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#507aaf', endColorstr='#244e96',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #fff;
+	
+	-webkit-transition: none;
+	transition: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	text-align:center;
+	font-size:120%;
+	line-height: 100px;
+	font-weight:900;
+	float:left;
+
+}
+
+.menu-wrap .buttonB:hover {
+	border:1px solid #1090c3;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5d8bcc+0,2a55b2+100 */
+background: #5d8bcc; /* Old browsers */
+background: -moz-linear-gradient(top,  #5d8bcc 0%, #2a55b2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #5d8bcc 0%,#2a55b2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #5d8bcc 0%,#2a55b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d8bcc', endColorstr='#2a55b2',GradientType=0 ); /* IE6-9 */
+}
+.menu-wrap .buttonB:active {
+	background: #1a92c2;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+	color: #1679a1;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+
+
+/*CENTER1______________________________________________________*/
+.center1-wrap {
+	padding:2px 20px 40px 20px;
+	width:750px;
+	margin:0  auto 0 auto;
+	
+}
+.BoxCen {
+	width: 800px;
+	margin: 50px auto 20px auto;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.BoxCen .flL{
+	width:400px;
+}
+.BoxCen .flL p{
+	font-size:160%;
+	line-height:1;
+	font-weight:bold;
+	border-left:10px solid #338FAE;
+	padding:0 0 0 5px;
+	margin:3px 0 0;
+}
+.BoxCen .flR{
+	width:180px;
+}
+.BoxCen .flR2{
+	width:180px;
+	float:right;
+}
+.center1{
+
+	border-bottom:1px dashed #cecece;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	zoom:1;
+}
+.center1:after{
+	content: ""; 
+  display: block; 
+  clear: both;
+}
+.center1 dl {
+  width:750px;
+}
+.center1 dl dt {
+padding:8px 0 0;
+  float:left;
+}
+.center1 dl dd {
+  margin-left:410px;
+}
+/*オフィス更新用　　センター選択______________________________________________________*/
+.centerSelect{
+
+	border-bottom:1px dashed #cecece;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	zoom:1;
+}
+.centerSelect:after{
+	content: ""; 
+  display: block; 
+  clear: both;
+}
+.centerSelect dl {
+  width:750px;
+}
+.centerSelect dl dt {
+padding:8px 0 0 10px;
+  float:left;
+}
+.centerSelect dl dd {
+  margin-left:550px;
+}
+/*オフィス情報入力________________________________________________________*/
+.boxList {
+	width: 800px;
+	margin: 50px auto 20px auto;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.boxList .flL{
+	width:500px;
+	margin:0;
+}
+
+.boxList .flR{
+	width:180px;
+}
+.boxList  .flR2{
+	width:180px;
+	float:right;
+}
+.list-wrap {
+	padding:40px 20px 40px 20px;
+	width:750px;
+	margin:0  auto 0 auto;
+	
+}
+table.offDtail{
+width: 100%;
+/*border-collapse: collapse;
+border-collapse: separate !important;*/
+}
+table.offDtail th{
+font-weight:bold;
+width: 30%;
+padding: 15px 20px;
+text-align: left;
+vertical-align: top;
+color: #000;
+/*background-color: #fff;*/
+border-right: 1px solid #ffffff;
+}
+table.offDtail tr:nth-child(2n-1) th {
+ border-right: 1px solid #eeeeee;
+}
+/*table.offDtail th:nth-child(2n) {
+ border-right: 10px solid #ffffff;
+}*/
+table.offDtail td{
+padding: 15px;
+/*background-color: #fff;*/
+/*border: 1px solid #eee;*/
+}
+
+table.offDtail tr:nth-child(2n) {
+ background: #eee;
+}
+
+/*オフィス情報________________________________________________________*/
+/*___form input______________________*/
+input[type=text]{
+	font-size:80%;
+	line-height:1.0;
+}
+input[type=text].nor{
+-webkit-appearance: none;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   width:150px;
+   height:28px;
+   padding:0 2px;
+   border:solid 1px #cccccc;
+   background:#ffffff;
+}
+input[type=text].nor2{
+-webkit-appearance: none;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   width:40px;
+   height:28px;
+   padding:0 2px;
+   border:solid 1px #cccccc;
+   background:#ffffff;
+} 
+input[type=text].nor3{
+-webkit-appearance: none;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   width:80px;
+   height:28px;
+   padding:0 2px;
+   border:solid 1px #cccccc;
+   background:#ffffff;
+} 
+textarea.nor4{
+-webkit-appearance: none;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   background:#eaeaea;
+   width:450px;
+   height:100px;
+   padding:0 2px;
+   border:solid 1px #cccccc;
+   background:#ffffff;
+} 
+input[type=text].nor5{
+-webkit-appearance: none;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   background:#eaeaea;
+   width:330px;
+   height:28px;
+   padding:0 2px;
+   border:solid 1px #cccccc;
+   background:#ffffff;
+}
+textarea:focus,input[type=text]:focus {-webkit-appearance: none;
+   border:solid 1px #92c5e2;
+   
+}
+ 
+input[type=text], select,textarea { 
+   outline: none;-webkit-appearance: none;
+}
+
+.offflLBtn05{
+	float:right;
+	width:120px;
+}
+dl.inputtable {  
+     width:400px;  
+    }  
+dl.inputtable  dt {  
+text-align:left;
+     float:left;  
+     width:40px;  
+     padding:10px 0;  
+     clear:both;  
+    }  
+dl.inputtable dd {  
+      text-align:left;
+     padding:10px 0px 10px 40px;  
+	border-bottom:1px solid #ccc;
+    } 
+
+dl.inputtable dd.none {  	
+border-bottom:0px;
+}
+ul.offDtail01 li{
+	width:150px;
+	float:left;
+	margin:5px 0 0 0;
+}	
+ul.offDtail01B li{
+	width:120px;
+	float:left;
+	margin:5px 0 0 0;
+}	
+dl.offFee{
+	display:inline;
+	width:230px;
+	float:left;
+}
+dl.offFee dt{
+	text-align:left;
+     float:left;  
+     width:55px;  
+     padding:5px 0;  
+     clear:both;  
+     font-weight:normal;  
+	 margin:3px 0 0 0 ;
+}
+dl.offFee dd{
+ text-align:left;
+     padding:5px 0px 10px 50px;  
+}
+/*CENTER DETAIL________________________________________________________*/
+.centName{
+	padding:20px 0 10px 20px;
+font-weight:bold;
+}
+dl.cenDtl01{  
+     width:600px;  
+	 margin:0px 0 0 50px;
+    }  
+dl.cenDtl01  dt {  
+text-align:left;
+     float:left;  
+     width:390px;  
+     padding:16px 0 0 20px;  
+     clear:both;  
+     font-weight:normal;  
+    }  
+dl.cenDtl01 dd {  
+      background:#efefef;
+      text-align:right;
+     padding:10px 20px 10px 380px;  
+	 border-bottom:1px solid #fff;
+    }  
+ dl.cenDtl01 dd {  
+background:#efefef;
+}
+
+
+
+dl.cenDtl01 dd  hr{
+	margin:0;
+	border: 0px solid #eee;
+	height:4px;
+}
+dl.cenDtl01 dd.none {  	
+border-bottom:0px;
+}
+
+
+/*赤いボタン新規登録________________________________________________________*/
+.btnNew {
+	width:180px;
+	border: 1px solid #b92d2d;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc5a56+1,932323+99 */
+background: #bc5a56; /* Old browsers */
+background: -moz-linear-gradient(top,  #bc5a56 1%, #932323 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #bc5a56 1%,#932323 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #bc5a56 1%,#932323 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc5a56', endColorstr='#932323',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #fff;
+	
+	-webkit-transition: none;
+	transition: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	text-align:center;
+	font-size:90%;
+	line-height: 32px;
+	font-weight:900;
+
+}
+
+.btnNew:hover {
+	border:1px solid #b92d2d;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ce5f5f+1,c93030+100 */
+background: #ce5f5f; /* Old browsers */
+background: -moz-linear-gradient(top,  #ce5f5f 1%, #c93030 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ce5f5f 1%,#c93030 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ce5f5f 1%,#c93030 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce5f5f', endColorstr='#c93030',GradientType=0 ); /* IE6-9 */
+}
+.btnNew:active {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+
+/*削除ボタン_____________________________________________________________________*/
+.btnDelete {
+	width:130px;
+	border: 1px solid #cccccc;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,bbbbbb+100 */
+background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #333;
+	-webkit-transition: none;
+	transition: none;
+	/*text-shadow: 0 1px 1px rgba(0, 0, 0, .1);*/
+	text-align:center;
+	font-size:90%;
+	line-height: 32px;
+	font-weight:900;
+	float:left;
+	margin-left:15px;
+}
+.btnDelete:hover {
+	border:1px solid #cccccc;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+0,dddddd+100 */
+background: #efefef; /* Old browsers */
+background: -moz-linear-gradient(top,  #efefef 0%, #dddddd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #efefef 0%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #efefef 0%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+.btnDelete:active {
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .3);
+}
+.btnRefer{
+	width:80px;
+}
+.btnList{
+	width:80px;
+	margin:0 0 0 20px;
+}
+.btnMenu{
+	width:160px;
+	margin:0 0 0 20px;
+}
+.btnBack{
+	width:180px;
+	margin:0;
+}
+/*更新ボタン_____*/
+.btnReNew {
+	width:130px;
+	border: 1px solid #4e90be;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6da4ce+0,2174bc+100 */
+background: #6da4ce; /* Old browsers */
+background: -moz-linear-gradient(top,  #6da4ce 0%, #2174bc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #6da4ce 0%,#2174bc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #6da4ce 0%,#2174bc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6da4ce', endColorstr='#2174bc',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #fff;
+	-webkit-transition: none;
+	transition: none;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	text-align:center;
+	font-size:90%;
+	line-height: 32px;
+	font-weight:900;
+	float:left;
+	margin-left:15px;
+}
+.btnReNew:hover {
+	border:1px solid #4e90be;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7dc1f2+0,278bdd+100 */
+background: #7dc1f2; /* Old browsers */
+background: -moz-linear-gradient(top,  #7dc1f2 0%, #278bdd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7dc1f2 0%,#278bdd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7dc1f2 0%,#278bdd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7dc1f2', endColorstr='#278bdd',GradientType=0 ); /* IE6-9 */
+}
+.btnReNew:active {
+	/*background: #b92d2d;*/
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+	/*color: #1679a1;*/
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+.btnOffReNew{
+	width:250px;
+	height:50px;
+	font-size:130%;
+	padding:8px;
+}
+.cffReNewB{
+	width:250px;
+	padding:40px 0 0 ;
+	text-align:center;
+	margin:0 auto;
+}

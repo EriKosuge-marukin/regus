@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* 各オフィスページ専用スタイル */
+
+/* office title block */
+#office_title_blk {
+    position:relative;
+    overflow:hidden;
+    width:846px;
+    height:100px;
+}
+
+#office_title_blk h1 {
+    width:846px;
+    height:100px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    text-indent:-1000em;
+}
+#office_title_blk h1.akasaka       { background-image:url(/openoffice/openoffice/images/akasaka/title.jpg); }
+#office_title_blk h1.azabujuban    { background-image:url(/openoffice/openoffice/images/azabu/title.jpg); }
+#office_title_blk h1.centre        { background-image:url(/openoffice/openoffice/images/centre/title.jpg); }
+#office_title_blk h1.minamiaoyama  { background-image:url(/openoffice/openoffice/images/chojamaru/title.jpg); }
+#office_title_blk h1.hills         { background-image:url(/openoffice/openoffice/images/hills/title.jpg); }
+#office_title_blk h1.aoyama246     { background-image:url(/openoffice/openoffice/images/minamiaoyama/title.jpg); }
+#office_title_blk h1.nagano        { background-image:url(/openoffice/openoffice/images/nagano/title.jpg); }
+#office_title_blk h1.nihonbashi    { background-image:url(/openoffice/openoffice/images/nihonbashi/title.jpg); }
+#office_title_blk h1.nogizaka      { background-image:url(/openoffice/openoffice/images/nogizaka/title.jpg); }
+#office_title_blk h1.shibuya       { background-image:url(/openoffice/openoffice/images/shibuya/title.jpg); }
+#office_title_blk h1.shinjuku      { background-image:url(/openoffice/openoffice/images/shinjuku/title.jpg); }
+#office_title_blk h1.mitsuke       { background-image:url(/openoffice/openoffice/images/mitsuke/title.jpg); }
+#office_title_blk h1.sendai        { background-image:url(/openoffice/openoffice/images/sendai/title.jpg); }
+#office_title_blk h1.nagoya        { background-image:url(/openoffice/openoffice/images/nagoya/title.jpg); }
+#office_title_blk h1.tameike-sanno { background-image:url(/openoffice/openoffice/images/tameike-sanno/title.jpg); }
+#office_title_blk h1.kyoto-kawaramachi-oike { background-image:url(/openoffice/openoffice/kyoto-kawaramachi-oike/images/title.jpg); }
+#office_title_blk h1.ikebukuro { background-image:url(/openoffice/openoffice/images/ikebukuro/title.jpg); }
+#office_title_blk h1.sapporo-minami { background-image:url(/openoffice/openoffice/images/sapporo-minami/title.jpg); }
+#office_title_blk h1.kyoto-karasuma { background-image:url(../openoffice/images/kyoto-karasuma/title.jpg); }
+#office_title_blk h1.hakata-ekimae { background-image:url(../openoffice/images/hakata-ekimae/title.jpg); }
+#office_title_blk h1.akasaka_lp       { background-image:url(/openoffice/openoffice/images/akasaka_lp/title.jpg); }
+
+#office_title_blk .catch {
+    position:absolute;
+    margin:0;
+    top:55px;
+    left:10px;
+    right:100px;
+    bottom:10px;
+    font-size:20px;
+    line-height:40px;
+    white-space:nowrap;
+    text-align:right;
+}
+
+h3 {
+    color: #0071A1;
+    font-size:14px;
+    text-indent:2px;
+    margin:5px 0 0 0;
+    border-color:#0071A1;
+    border-width:0px;
+    border-bottom-width:1px;
+    border-style:dotted;
+}
+
+h4 { /*小見出し用*/
+    color: #CC3333;
+    font-size:13px;
+    border-color:#cccccc;
+    border-width:0px;
+    border-bottom-width:1px;
+    border-style:dotted;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:5px;
+    line-height:170%;
+}
+
+h6 {
+    color: #0071A1;
+    font-size:13px;
+}
+
+/*フッターメニュー用の指定*/
+.fotter{
+    margin:0px 30px 0px 30px;
+    font-size:90%;
+}
+
+/*各オフィス設備、右位置アイコンのテキスト指定*/
+.facilitiesleft {
+    font-size:85%;
+    line-height:170%;
+    width:298px;
+}
+
+/*各オフィス設備、左位置アイコンのテキスト指定*/
+.facilitiesright {
+    font-size:85%;
+    line-height:170%;
+}
+
+/*各オフィスサービス、テキスト指定*/
+.service {
+    font-size:85%;
+    line-height:170%;
+    text-indent:10px;
+}
+
+/*レイアウト*/
+#spbox {
+    border-color:#0071A1;
+    border-width:2px;
+    border-bottom-width:0px;
+    border-style:dotted;
+    width:786px;
+}
+#spbox_end {
+    border-color:#0071A1;
+    border-width:2px;
+    border-style:dotted;
+    width:786px;
+}
+
+.sp_t {
+    color: #666666;
+/*    font-size:75%;*/
+    text-indent:5px;
+    line-height:120%;
+    margin:5px 0 0 0 ;
+}
+.sp_t strong {
+    color: #CC0033;
+/*    font-size:90%;*/
+}
+
+/* トップへ */
+#gotop {
+    font-size:12px;
+    color: #336699;
+    text-align:right;
+}
+#gotop a {
+    line-height:140%;
+    color:#2A8DBA;
+    text-decoration:none;
+    text-align:right;
+}
+#gotop a:hover {
+    color:#999999;
+    text-decoration:underline;
+    text-align:right;
+}
+
+.room_footer {
+    font-size: 10pt;
+    line-height: 25px;
+    background-image: url(../images/room_ima/room_footer.gif);
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+
+/* price table layout */
+.floor-no {
+    text-align:left;
+    font-size:1.5em;
+    font-weight:bold;
+    margin:1em 0 0 0;
+}
+div.priceouter {
+    margin:20px 10px;
+    clear:both;
+}
+table.pricetable {
+    border-collapse:collapse;
+    margin-bottom:1em;
+    padding:0;
+    width:100%;
+}
+table.pricetable th,table.pricetable td {
+    border:1px solid #cccccc;
+    text-align:center;
+}
+table.pricetable th {
+    white-space:nowrap;
+    padding:0.1em 1em;
+    font-weight:normal;
+    text-align:center;
+}
+table.pricetable tr.head th {
+    background-color:#8c8c8c !important;
+    color:white !important;
+    width:auto;
+}
+table.pricetable tbody th {
+    background-color:#eef2f3;
+    width:10em;
+}
+table.pricetable th.blank,table.pricetable td.blank {
+    border:none !important;
+}
+table.pricetable tr.blank td {
+    border:none !important;
+}
+table.pricetable tr.taxprice {
+    background-color:#eef2f3;
+}
+table.pricetable td.name {
+    text-align:left;
+    font-size:1.3em;
+    font-weight:bold;
+    white-space:nowrap;
+}
+table.pricetable td.price_info {
+    vertical-align:bottom;
+}
+div.priceouter td.price_info {
+    text-align:right;
+}
+
+table.priceinfo {
+    border-collapse:collapse;
+    margin:0;
+    padding:0;
+}
+table.priceinfo th {
+    white-space:nowrap;
+    padding:0 1em 0.5em 0;
+    text-align:left;
+    vertical-align:top;
+}
+table.priceinfo td {
+    padding:0 0 0.5em 0;
+}
+
+div.mapouter {
+    margin:20px 10px;
+    text-align:center;
+}
+div.mapouter * {
+    vertical-align:top;
+}
+div.col2 {
+    width:49%;
+    float:left;
+}
+div.col3 {
+    width:33%;
+    float:left;
+}
+div.mapouter span.floor {
+    font-weight:bold;
+}
+
+div.mapblock {
+    margin:0 auto;
+}
+
+/* 空室、問合せ、内覧ボタン */
+.buttonsouter {
+    display:block;
+    list-style-type:none; /* need ie6 */
+    overflow:hidden;
+    margin:20px 50px;
+    padding:0;
+    clear:both;
+}
+.buttonsouter li {
+    display:block;
+    padding:0;
+    margin:0;
+    width:100%; /* need ie6 */
+}
+.buttonsouter a {
+    display:block;
+    width:310px;
+    height:62px;
+    overflow:hidden;
+    text-indent:-1000em;
+
+    position:relative;
+    left:-155px;
+    margin-left:50%;
+}
+/*
+.buttonsouter a.vacant {
+    background-image:url(/openoffice/images/room_ima/btn_vacant.png);
+    background-position:0 0;
+}
+*/
+.buttonsouter a.contact {
+    background-image:url(/openoffice/images/room_ima/btn_contact.png);
+    background-position:0 0;
+}
+/*
+.buttonsouter a.vacant:hover {
+    background-position:0 -62px;
+}
+*/
+.buttonsouter a.contact:hover {
+    background-position:0 -62px;
+}
+
+/*
+td
+  + div#office_title_blk
+  + table.office-menu ... office menu block
+  + {div|table}office-contents ... office main block
+    + ...
+*/
+
+.office-menu {
+    width:846px;
+    overflow:hidden;
+    margin:0;
+}
+
+.office-contents {
+    width:820px;
+    overflow:visible;
+    margin:10px 0 0 13px;
+    margin-right:0;
+/*
+    background-color:cyan;
+    border:1px solid cyan;
+*/
+}
+table.office-contents {
+    table-layout:fixed;
+}
+
+.mapclickinfo {
+    background-color: #22AA22;
+    border-radius: 20px;
+    color: white;
+    line-height: 2em;
+    margin: 10px 150px;
+    text-align: center;
+}
+
+
+/*
+ *  アクセスページ関連
+ */
+
+h2#access_head {
+    margin:0 0 1em 0;
+    width:181px;
+    height:23px;
+    overflow:hidden;
+    text-indent:-1000em;
+    background-image:url("/images/room_ima/access_title.gif");
+}
+
+p.access-map {
+    margin:0 0 1em 0;
+    text-align:center;
+}
+p.access-info {
+    margin:0 10px 1em 10px;
+    text-align:right;
+}
+p.access-link {
+    margin:0 10px 1em 10px;
+    text-align:center;
+}
+
+.access .access-text {
+    color: #c00;
+    font-size: 20px;
+    line-height:1.5em;
+    font-weight: bold;
+    padding-left:1.5em;
+    text-indent:-1.5em;
+}
+.access .access-text2 {
+    /*color:#003399;
+    font-weight: bold;
+    font-size:13px;
+    line-height:1.5em;
+    */
+    margin:20px;
+    color:#003399;
+}
+.access .address-text {
+    font-weight: bold;
+}
+

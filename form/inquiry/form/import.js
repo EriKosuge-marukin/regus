@@ -1,0 +1,10 @@
+document.write('<script type="text/javascript" src="form/jquery.js" charset="UTF-8"></script>');  
+document.write('<script type="text/javascript" src="form/common.js"></script>');  
+document.write('<script type="text/javascript" src="form/rollover.js" charset="utf-8"></script>');  
+document.write('<script type="text/javascript" src="form/mfp.lang.js" charset="UTF-8"></script>');
+document.write('<script type="text/javascript" src="form/mfp.extensions.js" charset="UTF-8"></script>');
+document.write('<script type="text/javascript" src="form/mailform.js" charset="UTF-8"></script>');
+document.write('<script type="text/javascript" src="form/wordBreak.js"></script>');
+document.write('<script src="https://apis.google.com/js/platform.js" async defer>');
+document.write('{lang: "ja"}');
+document.write('</script>');

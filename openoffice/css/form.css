@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* 申込フォーム汎用スタイル */
+
+.office-form input,select {
+    font-size:10.5pt;
+}
+.office-form .formsize1 {
+    width:95%;
+}
+.office-form .formsize2 {
+    width:50%;
+}
+.office-form .formsize3 {
+    width:25%;
+}
+
+.office-form .required {
+    color:red;
+    margin:0 0.5em;
+}
+
+.office-form table.form1 {
+    border-collapse:collapse;
+    width:100%;
+}
+.office-form table.form1 th, .office-form table.form1 td {
+    text-align:left;
+    vertical-align:top;
+    border:1px solid gray;
+    padding:10px;
+    font-weight:normal;
+    font-size:10.5pt;
+}
+.office-form table.form1 th {
+    white-space:nowrap;
+    background-color:#eeeeee;
+}
+.office-form table.form1 input.checkbox {
+    width:20px;
+    height:20px;
+    line-height:20px;
+    vertical-align:middle;
+}
+
+
+.office-form table.form2 {
+    border-collapse:collapse;
+    width:100%;
+}
+.office-form table.form2 th, .office-form table.form2 td {
+    text-align:left;
+    vertical-align:top;
+    border:1px solid gray;
+    padding:10px;
+    font-weight:normal;
+}
+.office-form table.form2 th {
+    white-space:nowrap;
+    background-color:#eeeeee;
+}
+
+
+.office-form p.form-submit {
+	margin-top:10px;
+    text-align:left;
+}
+.office-form .submit-button {
+    width:150px;
+    height:50px;
+    text-align:center;
+    letter-spacing:1em;
+    text-indent:1em;
+    background-image:url(/openoffice/form/images/form_button.jpg);
+    background-position:0px 0px;
+    border:none;
+    padding:0;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+}
+.office-form .submit-button.orange {
+    background-image:url(/openoffice/form/images/form_button2.jpg);
+}
+.office-form .submit-button.down {
+    /*background-image:url(../images/form_button_d.jpg);*/
+    background-position:0px -50px;
+}
+.office-form .submit-button.over {
+    filter:alpha(opacity=80);
+    -moz-opacity:0.80;
+    opacity:0.80;
+}

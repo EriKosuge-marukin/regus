@@ -1,0 +1,36 @@
+.social {
+  height: 30px;
+  float: right;
+  margin-bottom: 8px; }
+  .social ul.list-inline {
+    height: 30px;
+    text-align: right; }
+    .social ul.list-inline li {
+      width: 30px;
+      margin-left: 8px;
+      float: left; }
+			a.imgov:hover img {
+	filter: alpha(opacity=85); /*IE*/
+	-moz-opacity: 0.85; /*FF*/
+	opacity: 0.85;
+}
+
+/*# sourceMappingURL=sns_icon.css.map */
+.social2 {
+	clear:both;
+	padding:10px;
+  margin-top: 90px; 
+  margin-bottom: 8px; 
+  background:#efefef;}
+  
+  .social2 ul.list-inline {
+    height: 30px;
+    text-align: right; }
+    .social2 ul.list-inline li {
+      width: 30px;
+      margin-left: 8px;
+      float: left; }
+.topContact{
+  height: 35px;
+  float: right;
+  margin-bottom: 15px; }

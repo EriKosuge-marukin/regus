@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+div.content_outer {
+width:846px;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+
+div.main_block {
+margin:30px 30px 0 30px;
+}
+
+.subblock {
+    margin-left:2em;
+    margin-bottom:1em;
+}
+
+ul,ol {
+    margin:0;
+    padding-left:1.5em;
+}
+
+.attention {
+    font-weight:bold;
+    color:red;
+    font-size:120%;
+}
+
+.mark10 {
+    clear:left;
+    padding-left:1em !important;
+    text-indent:-1em !important;
+}
+.mark15 {
+    clear:left;
+    padding-left:1.5em !important;
+    text-indent:-1.5em !important;
+}

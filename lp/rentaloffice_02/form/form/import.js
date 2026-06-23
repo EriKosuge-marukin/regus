@@ -1,0 +1,11 @@
+document.write('<script type="text/javascript" src="../../../rentaloffice_01/form/form/form/jquery.js" charset="UTF-8"></script>');  
+document.write('<script type="text/javascript" src="../../../rentaloffice_01/form/form/form/common.js"></script>');  
+document.write('<script type="text/javascript" src="../../../rentaloffice_01/form/form/form/rollover.js" charset="utf-8"></script>');  
+document.write('<script type="text/javascript" src="../../../rentaloffice_01/form/form/form/mfp.lang.js" charset="UTF-8"></script>');
+document.write('<script type="text/javascript" src="../../../rentaloffice_01/form/form/form/mfp.extensions.js" charset="UTF-8"></script>');
+document.write('<script type="text/javascript" src="../../../rentaloffice_01/form/form/form/mailform.js" charset="UTF-8"></script>');
+document.write('<script type="text/javascript" src="/lp/common/js/MSIE10hotfix.js" charset="UTF-8"></script>');
+document.write('<script type="text/javascript" src="../../../rentaloffice_01/form/form/form/wordBreak.js"></script>');
+document.write('<script src="https://apis.google.com/js/platform.js" async defer>');
+document.write('{lang: "ja"}');
+document.write('</script>');

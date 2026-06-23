@@ -1,0 +1,553 @@
+@charset "utf-8";
+@use "mixin" as *;
+
+@mixin hover {
+  @media (any-hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px;
+  //width: 100%;
+  @include break {
+    font-size: 14px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.ov {
+  @include transition;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.pc {
+  @include break {
+    display: none;
+  }
+}
+.sp {
+  @include break2 {
+    display: none;
+  }
+}
+
+$color-green: #46c1be;
+$color-red: #e40037;
+section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 80px auto;
+  @include break {
+    margin: 0 auto 58px;
+  }
+  &.sec01 {
+    margin: 0 auto 50px auto;
+    text-align: center;
+    background: #000;
+    @include break {
+      width: 100%;
+      display: block;
+      margin: -30px auto 20px auto;
+    }
+    .mv {
+      width: 100%;
+      /*padding:0 0 50px;
+margin-bottom: 40px;*/
+      /*background: center top / /*cover*/ /*100% auto url(../images/cam_50_main_pc.png) no-repeat #000;*/
+
+      margin: 0 auto;
+      @include break {
+        background-image: none;
+        /*background: center top / 100% auto url(../images/cam_50_main_sp.png) no-repeat #000;*/
+        width: 100%;
+        padding: 0 0 20px　0;
+        img {
+          width: 100%;
+        }
+      }
+
+      .logo {
+        //background: #261d1b;
+        text-align: center;
+        /*border: 1px solid #261d1b;*/
+        margin: 0 auto;
+        width: 30%;
+        position: relative;
+        text-align: center;
+        &::before {
+          background-color: #000001; /* 線の色 */
+          border-radius: 5px; /* 線の両端を丸く */
+          bottom: -10px; /* 線の位置 */
+          content: "";
+          height: 3px; /* 線の高さ */
+          left: 50%; /* 線の中央寄せ */
+          position: absolute;
+          transform: translateX(-50%); /* 線の中央寄せ */
+          width: 50px; /* 線の長さ */
+        } //before
+        img {
+          max-width: 200px;
+          padding: 42px 0 30px 0;
+          @include break {
+            width: 70%;
+            padding: 60px 0 20px 0;
+          }
+        }
+      }
+
+      .main_bg {
+        position: relative;
+      }
+      .catch {
+        position: relative;
+        padding: 0 35px 40px;
+        @include break() {
+          padding: 0 5% 30px;
+        }
+        //h1
+        .offerA {
+          width: 439px;
+          max-width: 80%;
+          margin: 0 auto 20px auto;
+          @include break {
+            margin: 0 auto 10px auto;
+          }
+        } //offer
+        .note {
+          font-size: 10px;
+          color: #fff;
+          margin: 0 auto 40px;
+          @include break {
+            font-size: 8px;
+            margin: 0 10px 30px 10px;
+          }
+        }
+
+        .fifty_cv_area {
+          .fifty_sub {
+            width: 300px;
+            max-width: 90%;
+            margin: 0 auto 15px auto;
+            @include break {
+              width: 280px;
+              max-width: 65%;
+              margin: 0 auto 10px auto;
+            }
+          } //offer
+          .fifty_btn {
+            width: 534px;
+            max-width: 80%;
+            margin: 0 auto 60px auto;
+            @include break {
+              width: 500px;
+              max-width: 90%;
+              margin: 0 auto 30px auto;
+            }
+            a:hover {
+              opacity: 0.8;
+            }
+          }
+        } //fifty_cv_area
+      } //catch
+    } //mv
+    .exam {
+      .exam_ttl {
+        font-size: 14px;
+        color: #fff;
+        margin: 0 auto 10px;
+        @include break {
+          font-size: 10px;
+          margin: 0 auto 0;
+        }
+      }
+      ul {
+        list-style-type: none;
+        width: 90%;
+        padding-left: 0;
+        padding-bottom: 50px;
+        @include break {
+          width: 90%;
+          padding-bottom: 30px;
+        }
+        &.table-cell {
+          display: table;
+          margin: 0 auto;
+          @include break {
+            margin-top: -5px;
+          }
+          li {
+            display: table-cell;
+            width: 45%;
+            padding: 0 10px;
+            margin: 10px;
+            @include break {
+              display: block;
+              width: 100%;
+              margin: 15px 0;
+            }
+          } //li
+        } //table-cell
+      } //UL
+    } //exam
+
+    .mvCon {
+      max-width: 1060px;
+      width: 92%;
+      color: #000;
+      margin: 0px auto 0 auto;
+      @include break {
+        max-width: 100%;
+        width: 92%;
+        margin: 20px auto 0 auto;
+      }
+
+      .kiyaku {
+        //border:1px #000 solid;
+        width: 100%;
+        margin: 25px 0 0 0;
+        padding-bottom: 20px;
+        @include break {
+          padding-bottom: 0px;
+        }
+
+        .outline {
+          display: block;
+          text-align: center;
+          margin: 25px auto 15px auto;
+          font-weight: 900;
+          font-size: 24px;
+
+          @include break {
+            margin: 20px auto;
+            font-size: 20px;
+            line-height: 24px !important;
+          }
+        }
+        .offer {
+          font-size: 22px;
+          font-weight: bold;
+          margin: 0 auto 40px auto;
+          width: 100%;
+          text-align: center;
+          @include break {
+            width: 80%;
+            margin: 0 auto 20px auto;
+          }
+        }
+
+        .innerB {
+          width: 97%;
+          margin: 0 auto 20px auto;
+          font-size: 14px;
+          text-align: center;
+          @include break {
+            width: 90%;
+            margin: 0 auto;
+          }
+          ul {
+            text-align: left;
+            display: inline-block;
+
+            list-style: none;
+            padding: 0;
+            li {
+              list-style: none;
+              font-weight: bold;
+              text-indent: -1em;
+              padding-left: 1em;
+            }
+          } //ul
+        } //innerB
+        .note {
+          padding-left: 2em;
+          text-indent: -2em;
+          margin: 30px auto;
+          font-size: 14px;
+          @include break {
+            margin: 30px auto 0;
+          }
+        }
+      }
+    } //mvCo
+  } //_sec01
+  &.sec02 {
+    /*display: flex;
+justify-content: center;*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    @include break {
+      width: 100%;
+      display: block;
+    }
+    h2 {
+      width: 100%;
+      background: #000;
+      color: #fff;
+      font-weight: bold;
+      font-size: 40px;
+      padding: 15px 0 12px;
+      margin: 0 0 40px 0;
+
+      @include break {
+        width: 90%;
+        margin: 0 auto 20px;
+        font-size: 20px !important;
+        padding: 15px 0 12px !important;
+      }
+    }
+
+    .offices {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include break {
+        width: 90%;
+        margin: 0 auto;
+      }
+      li {
+        display: block;
+        width: 31%;
+        margin: 0 0 40px;
+        @include break {
+          width: 46%;
+        }
+        img {
+          margin-bottom: 5px;
+        }
+        p {
+          text-align: left;
+          font-size: 14px;
+          line-height: 1.6;
+          @include break {
+            font-size: 11px;
+            line-height: 1.6;
+          }
+          &.ofName {
+            font-size: 18px;
+            font-weight: bold;
+            @include break {
+              font-size: 16px;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    } //offices
+  } //_sec02
+} //_section
+.camTel {
+  text-align: center;
+  margin: 0 auto 25px;
+  .telTtl {
+    color: #231815;
+    font-size: 18px;
+  }
+  .teltel {
+    font-size: 40px;
+
+    color: #231815;
+    font-weight: bold;
+    @include break {
+      font-size: 30px;
+    }
+  }
+}
+.linkRed {
+  width: 50%;
+  margin: 0 auto;
+  @include break {
+    margin-top: 15px;
+    width: 80%;
+  } //__break
+  a {
+    &.btn_con {
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 18px 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      background: #e00133;
+      border-radius: 60px;
+      -webkit-border-radius: 60px;
+      @include break {
+        width: 100%;
+        font-size: 22px;
+        line-height: 1.3;
+        padding: 15px 40px;
+      }
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+      } //__beforeAfter
+      &:before {
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0;
+        background: #fff;
+        border-radius: 60px;
+        -webkit-border-radius: 60px;
+        @include break {
+          width: 36px;
+          height: 36px;
+          margin: -18px 0 0;
+        }
+      }
+      &:after {
+        right: 28px;
+        width: 13px;
+        height: 13px;
+        margin: -10px 0 0;
+        border-top: solid 5px #e00133;
+        border-right: solid 5px #e00133;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        @include break {
+          right: 27px;
+          width: 12px;
+          height: 12px;
+          margin: -8px 0 0;
+        }
+      }
+    } //_btn_con
+  } //_a
+} //_link
+
+.mgT50 {
+  margin-top: 50px;
+  @include break {
+    margin-top: 25px;
+  }
+}
+
+.main-box {
+  display: flex;
+  gap: 30px;
+  margin-top: -40px;
+  @include break() {
+    display: block;
+  }
+  h1.mvh1 {
+    max-width: 700px;
+    @include break {
+      max-width: 100%;
+      width: 98%;
+    }
+  }
+  .link-area {
+    margin-top: 20px;
+    .txt {
+      img {
+        max-width: 500px;
+      }
+    }
+    ul.btn-list {
+      max-width: 394px;
+      margin: 0 auto;
+      @include break() {
+        max-width: 500px;
+      }
+      li {
+        margin-top: 15px;
+        a {
+          transition: opacity 0.3s;
+          @include hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
+.txt-cp01 {
+  margin-top: 90px;
+  @include break() {
+    margin-top: 60px;
+  }
+}
+.txt-cp02 {
+  margin-top: 90px;
+  @include break() {
+    margin-top: 60px;
+  }
+}
+p.txt-note {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 30px;
+  letter-spacing: 0;
+  @include break() {
+    margin-top: 20px;
+  }
+}
+ul.btn-list2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto 0;
+  @include break() {
+    flex-direction: column;
+    max-width: 500px;
+    gap: 20px;
+  }
+  li {
+    a {
+      transition: opacity 0.3s;
+      @include hover {
+        opacity: 0.8 !important;
+      }
+    }
+  }
+}
+h2.ttl01 {
+  margin-top: 90px;
+  @include break() {
+    padding: 0 3% !important;
+    margin-top: 60px;
+  }
+  img {
+    max-width: 100%;
+    width: auto !important;
+  }
+}
+.cp-box {
+  display: flex;
+  gap: 40px;
+  margin: 0 0 40px;
+  @include break() {
+    display: block;
+  }
+  a {
+    transition: opacity 0.3s;
+    @include hover {
+      opacity: 0.8 !important;
+    }
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+    margin: 40px 0 60px;
+    @include break() {
+      margin: 20px 0 40px;
+    }
+  }
+  .img {
+    margin-top: 17px;
+  }
+}

@@ -1,0 +1,257 @@
+@charset "utf-8";
+@import "mixin";
+
+
+.contents {
+		img {
+		@include break(750) {
+			width: auto;
+			height: auto;
+		}
+	}
+	.topBox {
+		@include flex;
+		@include fw(wrap);
+		margin-bottom: 70px;
+		background: url(../images/top_bg.gif) no-repeat bottom right / contain;
+		@include break {
+			
+			background: url(../images/top_bg.gif) no-repeat top right / contain;
+			margin-bottom: 20px;
+		}
+		.imgBox {
+			max-width: 280px;
+			width: 36.5%;
+			position: relative;
+			@include break {
+				max-width: 100%;
+				width: 100%;
+				overflow: hidden;
+			}
+			img {
+				width: 100%;
+				&.recommended {
+					width: auto;
+					position: absolute;
+					top: 25px;
+					left: 30%;
+					@include break {
+						top:50px;
+						width:50%;
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+		.listBox {
+			max-width: 490px;
+			width: 63.5%;
+			@include break {
+				max-width: 100%;
+				width: 100%;
+				padding: 5%;
+			}
+			p {
+				max-width: 370px;
+				width: 85%;
+				margin: 60px auto 20px auto;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 1.8;
+				@include break {
+					max-width: 100%;
+					width: 100%;
+					margin: 0 0 20px;
+					font-size: 16px;
+				}
+			}
+			ul {
+				max-width: 370px;
+				width: 85%;
+				margin: 0 auto;
+				@include break {
+					max-width: 100%;
+					width: 100%;
+					margin: 0;
+				}
+				li {
+					display: block;
+					
+					a {
+						display: block;
+						width: 100%;
+						height: 104px;
+						margin-bottom: 10px;
+						border-radius: 3px;
+						background-color: #4dc1bd;
+						position: relative;
+						
+						@include break {
+							height:70px;
+						}
+						&:hover {
+							color: #fff;
+							text-decoration: none;
+						}
+						span {
+							display: block;
+							vertical-align: middle;
+							@include fz(22);
+							line-height: 1.9;
+							padding-left: 13%;
+							padding-top: 16px;
+							color: #fff;
+							@include break {
+								@include fz(18);
+								padding-left:5%;
+								padding-top: 12px;
+								line-height: 1.2;
+							}
+							&.one{
+								padding-top: 0px;
+								line-height: 104px;
+								@include break {
+									line-height: 70px;
+								}
+							}
+							
+							em.sm{
+								display: block;
+								@include fz(16);
+								line-height: 1;
+								font-style: normal;
+								@include break {
+									@include fz(14);
+							
+								}
+							}
+							
+						}
+						img {
+							position: absolute;
+							top: 50%;
+							right: 5%;
+							@include transform(translateY(-50%));
+							@include break {
+								width: auto;
+								right: 5%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.topBoxInd {
+		@include flex;
+		@include fw(wrap);
+		margin-bottom: 70px;
+		/*background: url(../images/ind_top_bg.gif) no-repeat bottom right / contain;*/
+		background: url(../images/top_bg.gif) no-repeat bottom right / contain;
+		@include break {
+			margin-bottom: 40px;
+		}
+		.imgBox {
+			max-width: 280px;
+			width: 36.5%;
+			position: relative;
+			@include break {
+				max-width: 100%;
+				width: 100%;
+				///////////////↓差し替えたら消す
+				height: auto;
+				overflow: hidden;
+			}
+			img {
+				width: 100%;
+				&.recommended {
+					width: auto;
+					position: absolute;
+					top: 60px;
+					left: 30%;
+					@include break {
+						width: 50%;
+						left: auto;
+						top: 36%;
+						right: 0;
+					}
+				}
+			}
+		}
+		.listBox {
+			max-width: 490px;
+			width: 63.5%;
+			@include break {
+				max-width: 100%;
+				width: 100%;
+				padding: 5%;
+			}
+			p {
+				max-width: 370px;
+				width: 85%;
+				margin: 50px auto;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 1.8;
+				@include break {
+					max-width: 100%;
+					width: 100%;
+					margin: 0 0 20px 0;
+					font-size: 16px;
+				}
+			}
+			ul {
+				max-width: 370px;
+				width: 85%;
+				margin: 0 auto;
+				@include break {
+					max-width: 100%;
+					width: 100%;
+					margin: 0;
+				}
+				li {
+					display: block;
+					a {
+						display: block;
+						width: 100%;
+						height: 80px;
+						margin-bottom: 10px;
+						border-radius: 3px;
+						background-color: #4dc1bd;/*#5aa8d1;*/
+						position: relative;
+						@include break {
+							height: 50px;
+						}
+						&:hover {
+							color: #fff;
+							text-decoration: none;
+						}
+						span {
+							padding-left: 13%;
+							color: #fff;
+							line-height: 80px;
+							font-size: 125%;
+							@include break {
+								line-height: 50px;
+								padding-left: 5%;
+								font-size: 110%;
+							}
+						}
+						img {
+							position: absolute;
+							top: 50%;
+							right: 12%;
+							@include transform(translateY(-50%));
+							@include break {
+								width: auto;
+								right: 5%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

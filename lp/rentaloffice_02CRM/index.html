@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--#include virtual="../ssi/2017_01.html" -->
+<script type="text/javascript">
+$(window).load(function() {
+	$(".lo").heightLine();
+	$(".loScnd").heightLine();
+	$(".bo02").heightLine();
+	$("div>.section06").heightLine();
+	$("p.telNum").html("<a href='tel:0120945076'><img src='/lp/common/rentaloffice_02/images/freedial_crm.gif' alt='お問い合わせ電話（通話無料）0120-945-076 受付時間　平日 8:30-18：00' width='385' height='78'></a>");
+	
+	$("#newheadTel").html("<a href='tel:0120945076'><img src='/lp/common/rentaloffice_02/images/new_02_crm.gif' alt='tel:0120945076'></a>");
+});
+</script>
+<!--[if lt IE 9]>
+<script src="../common/rentaloffice_01_b/js/html5shiv.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="../common/rentaloffice_01_b/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+DD_belatedPNG.fix('img, .png');
+</script>
+<![endif]-->
+<script>
+function fnRedirect(){
+	location.href='form/index.html'+location.search;
+	return false;
+}
+</script>
+</head>
+<!--#include virtual="../ssi/2017_02.html" -->
+<!--#include virtual="../ssi/footer.html" -->
+</html>

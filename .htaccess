@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/marukincom/marukin-ad.com/htpasswd/regus-office/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user

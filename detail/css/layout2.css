@@ -1,0 +1,508 @@
+@charset "utf-8";
+
+.map iframe{
+	max-width:770px;
+	width:100%;
+}
+
+/*----PC----*/
+@media screen and (min-width: 750px) {
+
+.wrapper .office{
+	background-color:#e0e0e0;
+	margin:30px 0;
+}
+.wrapper .office .detail{
+	width:420px;
+	float:left;
+	background:url(/common2/images/bg_dot.gif) repeat left top;
+	padding:20px 0 0 15px;
+}
+.wrapper .office .detail dl{
+	margin:0 0 20px;
+}
+.wrapper .office .detail dl dt{
+	width:60px;
+	float:left;
+	padding:1px 0;
+	margin:0 10px 0 0;
+	font-size:90%;
+	text-align:center;
+	color:#e40037;
+	border:1px solid #e40037;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+.wrapper .office .detail dl dd{
+	width:340px;
+	float:left;
+}
+.wrapper .office .detail dl p.wline{
+	border-top:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;
+	padding:5px 0 ;
+	margin:0 0 10px;
+	width:328px;
+}
+.wrapper .office .detail .gray li{
+	background:url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+	padding-left:15px;
+}
+.wrapper .office .detail .service{
+	display:table;
+	border-collapse: separate;
+  border-spacing: 5px 0px;
+}
+/*↓160427 ADD-------------*/
+.wrapper .office .detail .service li{
+	width:76px;
+	height:76px;
+	font-size:100%;
+	text-align:center;
+	color:#ffffff;
+	border:1px solid #bfd730;
+	border-radius: 5px;  
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background:#bfd730;
+	display:table-cell;
+	vertical-align:middle;
+	margin:0;
+}
+
+
+.wrapper .office .detail .service li.rOf{
+	border:1px solid #bfd730;
+	background:#bfd730;
+}
+.wrapper .office .detail .service li.rMt{
+	border:1px solid #c778ce;
+	background:#c778ce;
+}
+.wrapper .office .detail .service li.vOf{
+	border:1px solid #eab83f;
+	background:#eab83f;
+}
+.wrapper .office .detail .service li.bWr{
+	border:1px solid #098ef5;
+	background:#098ef5;
+}
+div.busi_toku, div.b_a {
+    font-size: 0.84em;
+}
+div.busi_toku {
+    margin: 0px 0px 17px 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 17px;
+        margin-left: 0px;
+}
+
+.serviceOtl table{
+width: 100%;
+border-collapse: collapse;
+}
+.serviceOtl table th{
+width: 15%;
+padding: 6px;
+text-align: center;
+vertical-align: top;
+color: #ffffff;
+background-color: #e40037;
+border: 1px solid #cbcbcb;
+font-size:90%;
+}
+.serviceOtl table td{
+padding: 6px !important;
+background-color: #fff;
+border: 1px solid #cbcbcb;
+text-align: center;
+font-size:150%;
+}
+.thumbnail ul{
+	width:270px;
+	margin:10px 0 0 10px;
+}
+.thumbnail ul li{
+	float:left !important;
+	width:120px;
+	margin:0 0 10px 0;
+}
+
+/*↑160427 ADD-------------*/
+#morePic{
+	padding:10px !important;
+	text-align:center;
+}
+.wrapper .office .detail .special li{
+	width:104px;
+	float:left;
+	margin:0 9px 5px 0;
+}
+.wrapper .galleryA{
+	width:335px;
+	float:left;
+}
+.wrapper .galleryA .pic{
+	padding:10px 0 5px;
+	text-align:center;
+}
+.wrapper .galleryA .pic li{
+	display:none;
+}
+.wrapper .galleryA .thumbBox{
+	width:268px;
+	margin:0 auto;
+	background-color:#e0e0e0;
+}
+.wrapper .galleryA .thumb{
+	margin:0 auto;
+	text-align:center;
+}
+.wrapper .galleryA .thumb li{
+	width:81px;
+	margin:0 12px 5px 0;
+	float:left;
+}
+.wrapper .galleryA .thumb li:nth-child(3n){
+	margin-right:0!important;
+}
+.wrapper .request{
+	text-align:center;
+	margin:17px 0 0;
+}
+.wrapper .contents .fee dl{
+	width:181px;
+	float:left;
+	background-color:#dfddd7;
+	margin:0 15px 0 0;
+}
+.wrapper .contents .fee dl:nth-child(5){
+	margin:0;
+}
+.wrapper .contents .fee dl dt{
+	text-align:center;
+	color:#000000;
+	padding:10px 0;
+}
+.wrapper .contents .fee dl dd{
+	color:#e40037;
+	text-align:center;
+	lien-height:1.5;
+}
+.wrapper .contents .fee dl dd p{
+	padding:10px 0;
+	font-size:110%;
+	font-weight:bold;	
+}
+.wrapper .contents .surround{
+	margin:0 0 30px;
+}
+.wrapper .contents .surround dl{
+	width:246px;
+	float:left;
+	background-color:#dfddd7;
+	margin:0 16px 11px 0;
+}
+.wrapper .contents .surround dl:nth-child(3n){
+	margin:0 0 11px 0;
+}
+.wrapper .contents .surround dl dd{
+	text-align:center;
+	lien-height:1.5;
+	font-size:100%;
+	color:#000000;
+	padding:15px 0;
+}
+.wrapper .contents .surround p{
+	margin:15px 0 0;
+}
+.wrapper .articles {
+	margin:15px 0 0;
+}
+.wrapper .articles li{
+	background:url(/common2/images/icn_red_circle.gif) no-repeat left 5px;
+	padding:0 0 0 12px;
+	margin:0 0 3px;
+}
+.wrapper .facility .boxL{
+	width:290px;
+	margin:0 20px 0 0;
+	float:left;
+}
+.wrapper .facility .boxR{
+	width:460px;
+	margin:15px 0 0;
+	float:right;
+}
+.wrapper .map iframe{
+	height:450px;
+}
+.wrapper .staff .pic{
+	width:251px;
+	margin:0 19px 0 0;
+	float:left;
+}
+.wrapper .staff .message{
+	width:500px;
+	float:right;
+}
+
+}
+
+/*----SP----*/
+@media screen and (max-width: 750px) {
+
+.wrapper .leadTxt{
+	margin:4% 0 0;
+}
+.wrapper .office{
+	background-color:#e0e0e0;
+	margin:30px 0;
+}
+.wrapper .office .detail{
+	background:url(/common2/images/bg_dot.gif) repeat left top;
+	padding:3%;
+}
+.wrapper .office .detail dl{
+	margin:0 0 20px;
+}
+.wrapper .office .detail dl dt{
+	width:60px;
+	margin:0 0 3%;
+	font-size:90%;
+	text-align:center;
+	color:#e40037;
+	border:1px solid #e40037;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+.wrapper .office .detail dl p.wline{
+	border-top:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;
+	padding:5px 0 ;
+	margin:0 0 10px;
+}
+.wrapper .office .detail .gray li{
+	background:url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+	padding-left:15px;
+}
+.wrapper .office .detail .service{
+	width:100%;
+}
+
+/*↓160427 ADD-------------*/
+.wrapper .office .detail .service li{
+	width:22.5%;
+	padding:16px 0;
+	font-size:85%;
+	text-align:center;
+	color:#ffffff;
+	border:1px solid #bfd730;
+	border-radius: 5px;  
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background:#bfd730;
+	display:table-cell;
+	vertical-align:middle;
+	margin:0 2% 0 0;
+	float:left;
+}
+.wrapper .office .detail .service li.rOf{
+	border:1px solid #bfd730;
+	background:#bfd730;
+}
+.wrapper .office .detail .service li.rMt{
+	border:1px solid #c778ce;
+	background:#c778ce;
+}
+.wrapper .office .detail .service li.vOf{
+	border:1px solid #eab83f;
+	background:#eab83f;
+}
+.wrapper .office .detail .service li.bWr{
+	border:1px solid #098ef5;
+	background:#098ef5;
+}
+div.busi_toku, div.b_a {
+    font-size: 0.84em;
+}
+div.busi_toku {
+    margin: 0px 0px 17px 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 17px;
+        margin-left: 0px;
+}
+
+.serviceOtl table{
+width: 100%;
+border-collapse: collapse;
+}
+.serviceOtl table th{
+	display: none;
+/*width: 15%;
+padding: 3px 3px;
+text-align:left;
+vertical-align: top;
+color: #ffffff;
+background-color: #e40037;
+border: 1px solid #cbcbcb;
+font-size:90%;*/
+
+}
+.serviceOtl table td{
+	display: block;
+padding: 0px  9px !important;
+background-color: #fff;
+border-width:0 0 1px 0;
+border-style:dashed;
+border-color:#cbcbcb; 
+text-align: left;
+font-size:150%;
+}
+/* 最初の項目に背景色を付ける */
+.serviceOtl table td:before {
+	color:#F7171B !important;
+	font-weight:bold;
+	padding:5px;
+	font-size:70% !important;
+	margin-right:2px;
+}
+.serviceOtl table td:nth-child(1):before {
+content: '駅直結：';}
+.serviceOtl table td:nth-child(2):before {
+content: 'バーチャルオフィス：';}
+.serviceOtl table td:nth-child(3):before {
+content: '駐車場完備：';}
+.serviceOtl table td:nth-child(4):before {
+content: 'トイレ室外：';}
+.serviceOtl table td:nth-child(5):before {
+content: '駅3分以内：';}
+.serviceOtl table td:nth-child(6):before {
+        content: 'ビル内コンビニ有：';}
+.serviceOtl table td:nth-child(7):before {
+        content: 'ビル内カフェ：';}
+.serviceOtl table td:nth-child(8):before {
+        content: '喫煙所完備：';}
+.serviceOtl table td:nth-child(9):before {
+        content: '友人受付サービス：';}
+.serviceOtl table td:nth-child(10):before {
+        content: 'ビジネスラウンジ有：';}
+.serviceOtl table td:nth-child(11):before {
+        content: 'テレビ会議システム：';}
+.serviceOtl table td:nth-child(12):before {
+        content: 'ハイグレードオフィス：';}
+
+.thumbnail ul{
+	width:70%;
+	margin:10px auto;
+}
+.thumbnail ul li{
+	float:none;
+	margin:0 0 10px 0;
+}
+/*↑160427 ADD-------------*/
+
+.wrapper .office .detail .service li:last-child{
+	margin:0 0 2% 0;
+}
+.wrapper .office .detail .special li{
+	width:49%;
+	float:left;
+	margin:0 2% 2% 0;
+}
+.wrapper .office .detail .special li:nth-child(2n){
+	margin:0 0 2% 0;
+}
+.wrapper .galleryA .pic{
+	text-align:center;
+	padding:5% 5% 0;
+}
+.wrapper .galleryA .pic li{
+	display:none;
+}
+.wrapper .galleryA .thumbBox{
+	padding:5%;
+	background-color:#e0e0e0;
+}
+.wrapper .galleryA .thumb{
+	margin:0 auto;
+	text-align:center;
+}
+.wrapper .galleryA .thumb li{
+	width:31.6%;
+	margin:0 1% 2%;
+	float:left;
+}
+.wrapper .galleryA .thumb li:nth-child(3n){
+	margin-right:0!important;
+}
+.wrapper .request{
+	margin:3% 10% 0;
+}
+.wrapper .contents .feeDl{
+	width:49%;
+	float:left;
+	background-color:#dfddd7;
+	margin:0 2% 2% 0;
+}
+.wrapper .contents .feeDl:nth-child(odd){
+	margin:0 0 2% 0;
+}
+.wrapper .contents .fee dl dt{
+	text-align:center;
+	color:#000000;
+	padding:10px 0;
+}
+.wrapper .contents .fee dl dd{
+	color:#e40037;
+	text-align:center;
+	lien-height:1.5;
+}
+.wrapper .contents .fee dl dd p{
+	padding:10px 0;
+	font-size:110%;
+	font-weight:bold;	
+}
+.wrapper .contents .surround{
+	margin:0 0 5%;
+}
+.wrapper .contents .surround dl{
+	width:49%;
+	float:left;
+	background-color:#dfddd7;
+	margin:0 2% 2% 0;
+}
+.wrapper .contents .surround dl:nth-child(2n){
+	margin:0 0 2% 0;
+}
+.wrapper .contents .surround dl:nth-child(3){
+	margin:0 2% 2% 0!important;
+}
+.wrapper .contents .surround dl dd{
+	text-align:center;
+	lien-height:1.5;
+	font-size:100%;
+	color:#000000;
+	padding:15px 0;
+}
+.wrapper .contents .surround p{
+	margin:15px 0 0;
+}
+.wrapper .contents .message{
+	margin:5% 0 0;
+}
+.wrapper .map iframe{
+	height:250px;
+}
+
+}

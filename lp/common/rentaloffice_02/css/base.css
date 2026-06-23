@@ -1,0 +1,296 @@
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	vertical-align: baseline;
+		list-style: none;
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+/*Text-align
+--------------*/
+.txaL {
+	text-align:left;
+	}
+
+.txaR {
+	text-align:right;
+	}
+
+.txaC {
+	text-align:center;
+	}	
+
+
+/*Float
+--------------*/
+.flL {
+	float:left;
+	}
+
+.flR {
+	float:right;
+	}
+
+
+/*Clear
+--------------*/
+.both {
+	clear:both;
+	}
+
+.clearfix {zoom:1;}
+.clearfix:after {
+  content: ""; 
+  display: block; 
+  clear: both;
+}
+
+/*Display
+--------------*/
+.block {
+	display:block;
+	}	
+
+
+/*Rollover
+--------------*/	
+a.imgov:hover img{
+	filter:alpha(opacity=70); /*IE*/
+	-moz-opacity:0.70; /*FF*/
+	opacity:0.70;
+	}
+
+
+/*Margin
+--------------*/
+.mg5 {margin:5px;}
+.mg10 {margin:10px;}
+.mg15 {margin:15px;}
+.mg20 {margin:20px;}
+.mg25 {margin:25px;}
+.mg30 {margin:30px;}
+.mg35 {margin:35px;}
+.mg40 {margin:40px;}
+.mg45 {margin:45px;}
+.mg50 {margin:50px;}
+
+
+/*top*/
+.mgT5 {margin-top:5px;}
+.mgT10 {margin-top:10px;}
+.mgT15 {margin-top:15px;}
+.mgT20 {margin-top:20px;}
+.mgT25 {margin-top:25px;}
+.mgT30 {margin-top:30px;}
+.mgT35 {margin-top:35px;}
+.mgT40 {margin-top:40px;}
+.mgT45 {margin-top:45px;}
+.mgT50 {margin-top:50px;}
+.mgT70 {margin-top:70px;}
+
+/*right*/
+.mgR5 {margin-right:5px;}
+.mgR10 {margin-right:10px;}
+.mgR15 {margin-right:15px;}
+.mgR20 {margin-right:20px;}
+.mgR25 {margin-right:25px;}
+.mgR30 {margin-right:30px;}
+.mgR35 {margin-right:35px;}
+.mgR40 {margin-right:40px;}
+.mgR45 {margin-right:45px;}
+.mgR50 {margin-right:50px;}
+
+/*bottom*/
+.mgB5 {margin-bottom:5px;}
+.mgB10 {margin-bottom:10px;}
+.mgB14 {margin-bottom:14px;}
+.mgB15 {margin-bottom:15px;}
+.mgB20 {margin-bottom:20px;}
+.mgB22 {margin-bottom:22px;}
+.mgB25 {margin-bottom:25px;}
+.mgB30 {margin-bottom:30px;}
+.mgB35 {margin-bottom:35px;}
+.mgB40 {margin-bottom:40px;}
+.mgB45 {margin-bottom:45px;}
+.mgB50 {margin-bottom:50px;}
+.mgB60 {margin-bottom:60px;}
+.mgB70 {margin-bottom:70px;}
+.mgB80 {margin-bottom:80px;}
+.mgB90 {margin-bottom:90px;}
+.mgB100 {margin-bottom:100px;}
+.mgB105 {margin-bottom:105px;}
+.mgB110 {margin-bottom:110px;}
+.mgB115 {margin-bottom:115px;}
+.mgB120 {margin-bottom:120px;}
+.mgB130 {margin-bottom:130px;}
+.mgB140 {margin-bottom:140px;}
+.mgB160 {margin-bottom:160px;}
+.mgB200 {margin-bottom:200px;}
+.mgB245 {margin-bottom:245px;}
+
+/*left*/
+.mgL5 {margin-left:5px;}
+.mgL10 {margin-left:10px;}
+.mgL15 {margin-left:15px;}
+.mgL20 {margin-left:20px;}
+.mgL25 {margin-left:25px;}
+.mgL30 {margin-left:30px;}
+.mgL35 {margin-left:35px;}
+.mgL40 {margin-left:40px;}
+.mgL45 {margin-left:45px;}
+.mgL50 {margin-left:50px;}
+
+
+/*Padding
+--------------*/
+.pd5 {padding:5px;}
+.pd10 {padding:10px;}
+.pd15 {padding:15px;}
+.pd20 {padding:20px;}
+.pd25 {padding:25px;}
+.pd30 {padding:30px;}
+.pd35 {padding:35px;}
+.pd40 {padding:40px;}
+.pd45 {padding:45px;}
+.pd50 {padding:50px;}
+.pd100 {padding:100px;}
+
+
+/*top*/
+.pdT5 {padding-top:5px;}
+.pdT10 {padding-top:10px;}
+.pdT15 {padding-top:15px;}
+.pdT20 {padding-top:20px;
+}
+.pdT25 {padding-top:25px;}
+.pdT30 {padding-top:30px;}
+.pdT35 {padding-top:35px;}
+.pdT40 {padding-top:40px;}
+.pdT45 {padding-top:45px;}
+.pdT50 {padding-top:50px;}
+
+/*right*/
+.pdR5 {padding-right:5px;}
+.pdR10 {padding-right:10px;}
+.pdR15 {padding-right:15px;}
+.pdR20 {padding-right:20px;}
+.pdR25 {padding-right:25px;}
+.pdR30 {padding-right:30px;}
+.pdR35 {padding-right:35px;}
+.pdR40 {padding-right:40px;}
+.pdR45 {padding-right:45px;}
+.pdR50 {padding-right:50px;}
+
+/*bottom*/
+.pdB5 {padding-bottom:5px;}
+.pdB10 {padding-bottom:10px;}
+.pdB15 {padding-bottom:15px;}
+.pdB20 {padding-bottom:20px;}
+.pdB25 {padding-bottom:25px;}
+.pdB30 {padding-bottom:30px;}
+.pdB35 {padding-bottom:35px;}
+.pdB40 {padding-bottom:40px;}
+.pdB45 {padding-bottom:45px;}
+.pdB50 {padding-bottom:50px;}
+
+/*left*/
+.pdL5 {padding-left:5px;}
+.pdL10 {padding-left:10px;}
+.pdL15 {padding-left:15px;}
+.pdL20 {padding-left:20px;}
+.pdL25 {padding-left:25px;}
+.pdL30 {padding-left:30px;}
+.pdL35 {padding-left:35px;}
+.pdL40 {padding-left:40px;}
+.pdL45 {padding-left:45px;}
+.pdL50 {padding-left:50px;}

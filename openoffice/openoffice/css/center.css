@@ -1,0 +1,397 @@
+@charset "Shift_JIS";
+
+.clear {
+    claer:both;
+    height:0;
+    margin:0;
+    padding:0;
+}
+
+h1,h2 {
+    background:none;
+    border:none;
+    text-indent:0;
+    width:auto;
+    height:auto;
+    margin:0;
+    padding:0;
+    clear:none;
+    font-weight:normal;
+    color:black;
+}
+h3 {
+    color:black;
+    margin:15px 0;
+    border:none;
+}
+
+.office-contents {
+    font-family: meiryo,Arial,Helvetica,sans-serif;
+    /*
+    width:824px;
+    margin:10px 11px;
+    */
+}
+
+h2{
+    margin:30px 0 10px 0 !important;
+    height:25px;
+    background-image: url(/openoffice/news/media/images/title_bg01.gif);
+    background-repeat: no-repeat;
+    line-height: 27px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-indent: 15px;
+    background-color: #1C6DA5;
+}
+
+
+
+h2.first {
+    margin-top:0;
+}
+
+.office-pictures {
+    width:824px;
+    margin:0;
+    padding:0;
+}
+.office-pictures li {
+    float:left;
+    list-style:none;
+    margin:0 0 0 34px;
+    width:180px;
+}
+.office-pictures img {
+}
+.office-pictures li.first {
+    margin-left:0;
+}
+
+.office-contrast table {
+    width:100%;
+    border-collapse:collapse;
+}
+.office-contrast th, .office-contrast td {
+    border:1px solid #aaa;
+    text-align:center;
+    vertical-align:middle;
+    padding:5px;
+    width:33%;
+}
+.office-contrast th {
+    font-size:16px;
+    background-color:#1C6DA5;
+    color:white;
+    font-weight:bold;
+}
+.office-contrast td {
+}
+.office-contrast tr.row1 td, .office-contrast tr.row3 td {
+    background-color:#EAF6FF;
+}
+.office-contrast tr.row2 td {
+    background-color:#F5FBFF;
+}
+
+
+.col2-outer {
+/*
+    margin:30px 0 0 0;
+*/
+}
+.office-merit-outer {
+/*
+    float:left;
+    width:408px;
+*/
+    margin-bottom:20px;
+}
+.office-merit {
+    margin:10px 0;
+}
+.office-merit dd {
+    margin:0px 20px 10px 20px;
+    padding:0;
+    line-height:150%;
+    font-size:1.1em;
+}
+
+.office-guide {
+/*
+    margin-left:416px;
+    width:408px;
+*/
+}
+.office-guide .cell {
+    margin:10px 0;
+}
+
+.office-guide .map {
+/*
+    width:408px;
+*/
+    text-align:center;
+}
+.office-guide .access {
+/*
+    width:408px;
+*/
+}
+
+.office-about {
+    background-color:#FFF0C4;
+    border-radius:10px;
+    padding:5px;
+}
+
+.regus-merit, .office-services {
+/*
+    border:1px solid red;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+*/
+}
+.office-services {
+    /* text-align:center; */
+    width:824px;
+    margin-bottom:20px;
+}
+.office-services table {
+    width:100%;
+}
+.office-services td {
+    padding:5px;
+    width:33%;
+}
+.office-services p {
+    margin:0 0 0 60px;
+}
+.office-services span {
+    font-weight:bold;
+    color:#1C6DA5;
+}
+.office-services img {
+    float:left;
+}
+
+/*↓080326-----------*/
+.office-services .indexFci li span.note{
+	display:block;
+	font-weight:normal;
+	color:#333;
+	font-size:10px;
+	line-height:1.2;
+}
+/*↑080326-----------*/
+
+
+.regus-merit .col {
+    width:32%;
+    float:left;
+    margin-left:10px;
+}
+.regus-merit .col.first {
+    margin-left:0;
+}
+
+.office-floormap {
+    margin-bottom:30px !important;
+}
+
+.office-catchtext {
+    font-size:15px;
+    line-height:150%;
+    text-align: justify;
+    padding-top:0.5em;
+	padding-bottom:0.5em;
+}
+
+.officeL {
+    font-size:20px;
+    line-height:150%;
+    text-align: justify;
+    padding-top:0.5em;
+}
+
+/* フロアマップブロック */
+
+.floormap-blk {
+    margin:2em 0 0 0;
+    position:relative;
+}
+
+/* 価格表 */
+
+.pricelist-table {
+    width:32%;
+    border-collapse:collapse;
+    float:left;
+    margin-right:1%;
+}
+.pricelist-table th, .pricelist-table td {
+    padding:2px;
+    border:1px solid #ccc;
+}
+.pricelist-table th {
+    text-align:center;
+    background-color:#8c8c8c;
+    color:white;
+    font-size:0.9em;
+    font-weight:normal;
+}
+.pricelist-table th.blank {
+    width:5px;
+    background-color:transparent;
+}
+.pricelist-table td.roomno {
+    text-align:center;
+    background-color:#eef2f3;
+}
+.pricelist-table td.price {
+    text-align:right;
+}
+.pricelist-table tr.select td {
+    background-color:#FFE084 !important;
+}
+.price-info {
+    margin-top:0;
+}
+
+.map-marker {
+    position:absolute;
+    width:100px;
+    height:100px;
+    background-image:url(../chojamaru/images/map_marker.png);
+    z-index:2;
+    margin-left:-50px;
+    margin-top:-50px;
+    pointer-events : none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 主なオフィスプラン */
+.office-plan {
+    text-align:center;
+}
+
+.subblock {
+    margin-left:20px;
+}
+.make {
+    color:red;
+}
+.txaC{text-align:center;}
+
+.office-types {
+    width:100%;
+    border-collapse: collapse;
+}
+.office-types th, .office-types td {
+    border:2px solid #ACBFC4;
+    padding:5px;
+    text-align:center;
+}
+.office-types th {
+    background-color:#EEF2F3;
+    color:#3D5156;
+    width:99%;
+}
+.office-types tr.photo th, .office-types tr.photo td {
+    padding:0;
+}
+
+.officeFrame{
+	width:835px; margin:0 0 10px 10px;
+}
+.priceExample{
+	margin:10px auto 40px auto;
+	width: 600px;
+}
+.priceExample h4{
+	font-size:16px;
+	text-align:left;
+	margin:0 0 2px 0;
+	color:#333;
+	font-weight:400;
+}
+.priceExample table {
+  width: 100%;
+  border-spacing: 0;
+  font-size:14px;
+}
+.priceExample table th {
+  /*color: #0097d5;*/
+  color:#0A78B5;
+  padding: 8px 15px;
+  background: #dceffb;
+font-size:16px;
+/*background: #5da9db; 
+background: -moz-linear-gradient(top, #5da9db 0%, #3b88bb 100%); 
+background: -webkit-linear-gradient(top, #5da9db 0%,#3b88bb 100%); 
+background: linear-gradient(to bottom, #5da9db 0%,#3b88bb 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5da9db', endColorstr='#3b88bb',GradientType=0 ); */
+  font-weight: bold;
+  border-left:1px solid #ccc;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  line-height: 120%;
+  text-align: center;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 0px rgba(255,255,255,0.3) inset;
+}
+.priceExample table th span{
+	display:inline;
+	font-size:12px;
+	font-weight:normal;
+}
+.priceExample table th:first-child {
+ /* border-radius: 5px 0 0 0;	*/
+}
+.priceExample table th:last-child {
+  /*border-radius:0 5px 0 0;*/
+  border-right:1px solid #ccc;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1),0px 0px 0px rgba(255,255,255,0.3) inset;
+}
+.priceExample table tr td {
+	font-size:12px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+.priceExample table tr td:nth-child(odd) {
+  text-align: left;
+}
+.priceExample table tr td:last-child {
+  border-right: 1px solid #ccc;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+}
+.priceExample table tr {
+  background: #fff;
+}
+.priceExample table tr:nth-child(2n+1) {
+  background: #fff;
+}
+.priceExample table tr:last-child td {
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+}
+.priceExample table tr:last-child td:first-child {
+  /*border-radius: 0 0 0 5px;*/
+}
+.priceExample table tr:last-child td:last-child {
+  /*border-radius: 0 0 5px 0;*/
+}
+.priceExample table tr:hover {
+  background: #dceefa;
+  cursor:pointer;
+}

@@ -1,0 +1,444 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container{
+margin:0;padding:0;
+background:#ffffff;
+width:100%;
+}
+
+
+/*_______NAV_________*/
+#header{
+/*height:98px;キャンペーンバナーはいらないときはこっち*/
+padding-bottom:10px;/*キャンペーンバナーはいるときはこっち*/
+text-align:center;
+}
+/*----------------------------------*/
+p#newheadTxt{
+	font-size:9px;
+	line-height:1.2;
+	text-align:center;
+	color:#969696;
+	padding-top:3px;
+}
+#newheaderIn{
+width:980px;
+margin:0 auto !important;
+background:url(/lp/common/rentaloffice_02/images/neew_01.gif) left center no-repeat;
+height:94px;
+padding:0;
+position:relative;
+}
+#newheaderIn #newheadTel{
+	position: absolute;
+	background: url(/lp/common/rentaloffice_02/images/new_02_genaral.gif) 0 center no-repeat;
+	left: 187px;
+	display: block;
+	top: 17px;
+	width: 300px;
+	height: 48px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#newheaderIn #newheadTelcomarketing{
+	position: absolute;
+	background: url(/lp/common/rentaloffice_01/images/new_02_comarketing.gif) 0 center no-repeat;
+	left: 187px;
+	display: block;
+	top: 17px;
+	width: 300px;
+	height: 48px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#newheaderIn #newheadTeleshare{
+	position: absolute;
+	background: url(/lp/common/rentaloffice_01/images/new_02_eshareoffice.gif) 0 center no-repeat;
+	left: 187px;
+	display: block;
+	top: 17px;
+	width: 300px;
+	height: 48px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#newheaderIn #newheadTelCRM{
+	position: absolute;
+	background: url(/lp/common/rentaloffice_01/images/new_02_crm.gif) 0 center no-repeat;
+	left: 187px;
+	display: block;
+	top: 17px;
+	width: 300px;
+	height: 48px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+#newheaderIn #newheadTel a,
+#newheaderIn #newheadTelCRM a{
+	display:block;width: 300px;
+	height: 70px;
+}
+#newheaderIn #newheadBtn{
+	position: absolute;
+	display: block;
+	top: 19px;
+	width: 300px;
+	height: 48px;
+	left: 480px;
+}
+#newheaderIn ul#newSNS{
+	position: absolute;
+	display: block;
+	top: 19px;
+	height: 48px;
+	left: 887px;
+	width:100px;
+	padding-top:4px;
+}
+#newheaderIn ul#newSNS li{
+	float:left;
+	text-align:right;
+	width:48px;
+	list-style:none;
+}
+/*-------------*/
+#headBnr{
+	clear:both;
+	width:980px;
+	margin:0 auto !important;
+	padding-bottom:10px;
+	text-align:center;
+	background:#ffffff;
+	}
+/*= contents
+======================================*/
+div.conIn2{
+width:980px;
+margin:0 auto;
+padding:0;
+clear:both;
+position:relative;
+text-align:left;
+}
+div.conIn{
+width:980px;
+margin:0 auto;
+padding:0;
+clear:both;
+position:relative;
+text-align:center;
+}
+div#section01{
+	width:100%;
+	/*background:url(../../rentaloffice_01/images/main.jpg) top center no-repeat;*/
+	background:url(../images/top_bg_cloud2.jpg) top center no-repeat;
+	text-align:center;
+}
+div#section01b{
+	width:100%;
+	/*background:url(../../rentaloffice_01/images/main.jpg) top center no-repeat;*/
+	background:url(../images/top_bg_cloud2_160817.png) top center no-repeat;
+	text-align:center;
+}
+#sec01In{
+position:relative;
+width:980px;
+/*min-height:550px;*/
+}
+/*div#section01{
+	width:100%;
+	text-align:center;
+}
+#sec01In{
+	background:url(/lp/common/rentaloffice_01/images/a_bg_a.jpg) 0 0 no-repeat;
+height:654px;
+position:relative;
+width:980px;
+}*/
+#sec01In h1#toptop{
+position:relative;
+padding:0px 0 0 0;
+text-align:center;}
+#sec01In .toptop2{
+position:relative;
+padding:0px 0  80px 0;
+text-align:center;}
+#mainTxt{
+	width:900px;
+	height:230px;
+	margin-left:40px;
+}
+#mainTxt p.txt1{
+margin-top:34px;
+width:672px;float:left;
+}
+#mainTxt p.txt2{float:left;
+width:220px;
+}
+#mainTxt3{
+margin:0 0 5px 0px;
+text-align:center;
+}
+div#jumpMap{
+	position:relative;
+	padding:0;
+	text-align:center;
+	height:70px;
+	/*background:url(/lp/common/rentaloffice_01/images/topwhite_bg.jpg) 0 0 no-repeat !important;*/
+	/*background:url(/lp/common/rentaloffice_01/images/bg_white.png) 0 0 no-repeat                !important;*/
+	background:#e4e4e3;
+	width:980px;
+	margin:0 auto;
+}
+div#jumpMapIn{
+	
+	padding:18px 3px;
+}
+div#jumpMapIn p.txt2b{
+	font-size:18px;
+	color:#000;	
+line-height:1.3;
+	
+}
+div#jumpMapIn p.txt2c{
+font-size:14px;line-height:1.5;
+
+font-weight:bold;
+}
+div#jumpMapIn p.txt2c a{
+color:#184acb;
+line-height:1.5;
+text-decoration:underline;
+}
+div#jumpMapIn p.txt2c a:hover{
+color:#f86f13;	
+text-decoration:none;
+}
+
+
+/*#sec01In p.txt3{
+	position:absolute;
+top:564px;
+width:980px;
+height:78px;}
+*/
+
+div#section02{
+	width:100%;
+	text-align:center;
+	/*background:url(/lp/common/rentaloffice_01/images/second.jpg) top center no-repeat;*/
+	/*position:relative;*/
+	/*padding-top:488px;*/
+	/*min-height:1600px;*/
+	}
+
+div#section03{
+	width:100%;
+	background:url(../../rentaloffice_01_b/images/c_1_img.jpg) top center no-repeat;
+	
+	/*padding-top:295px;*/
+	text-align:center;
+	min-height:793px;
+}
+
+.mgTGH2{
+	padding-top:295px;
+	margin-bottom:20px;
+}
+
+.mgTGH3{
+	padding-top:373px;
+}
+.mgTGH4{
+	padding-top:114px;
+}
+div#section04{
+	width:100%;
+	background:url(../../rentaloffice_01/images/c_2_img.jpg) top center no-repeat;
+	text-align:center;
+	min-height:800px;
+}
+div#section05{
+	width:100%;
+	padding-top:373px;
+	background:url(../../rentaloffice_01/images/c_3_img.jpg) top center no-repeat;
+	text-align:center;
+	/*height:1120px;*/
+}
+
+p.lastTxt{
+	padding:180px 0;
+}
+/*= contents
+======================================*/
+#footer{
+	background:#f2f2f2;
+	width:100%;
+	padding:60px 0;
+	text-align:center;
+	margin:0;
+}
+/*_________________map_________________________*/
+.mapLocFr{background:#000000;width:100%;text-align:center;}
+.mapLoc{width:980px;margin:0 auto;
+
+}
+.mapLoc .left{background:#000000 url('../../rentaloffice_01/images/map_location.gif') 0 0 no-repeat                                                                                                                                !important;
+padding:20px 0;}
+.mapLoc .left2{width:630px;padding-top:15px;text-align:left;
+color:#ffffff;
+margin-left:340px;
+font-size:11px;line-height:1.3;
+/*background:#C33;*/}
+.mapLoc .left2 dl {   
+ /*width:640px; */
+} 
+.mapLoc .left2 dl dt{float:left;  
+ width:200px;  
+ padding:5px 0 5px 10px;  
+ clear:both;  
+ font-weight:bold;  }
+.mapLoc .left2 dl dd{width:400px;  
+ margin-left:200px;  
+ padding:5px 5px 5px 10px; 
+ /*background:#0C6;*/
+ }
+ 
+ 
+.mapLoc a:link{color:#ffffff;text-decoration:none;}
+.mapLoc a:active{color:#ffffff;text-decoration:none;}
+.mapLoc a:hover{color:#ffffff;text-decoration:underline;}
+.mapLoc a:visited{color:#ffffff;text-decoration:none;}
+.mapLoc .left2 ul li{margin-bottom:2px;}
+.mapLoc .left2 ul{margin-bottom:25px;}
+.txtmap{color:#6ed6dc;}
+
+
+/*_____________________*/
+#sec5Simple{
+	width:820px;
+	background:#f2f2f2;margin:0 auto;text-align:center;
+}
+#sec5Simple #sec5SimpleIn{
+	padding:30px;
+}
+#sec5Simple #sec5SimpleIn p{
+	width:617px !important;
+	text-align:left;
+	font-size:16px;
+	line-height:1.6;
+	margin:20px auto 0 auto;
+}
+p#footerLink{
+	margin:10px 0 0;
+	font-size:12px;
+	
+}
+p#footerLink a{
+	color:#000;
+	text-decoration:none;
+}
+p#footerLink a:hover{	
+text-decoration:underline;
+}
+p#footerLink a:active{
+	text-decoration:none;
+}
+p#footerLink a:visited{
+	text-decoration:none;
+}
+
+.campaign{
+	margin:20px 0 20px 0;
+	font-size:22px;
+	font-weight:bold;
+	color:#000;
+}
+/*料金表＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.priceDiv{
+	width:650px;
+	margin:0 auto 80px auto;
+	text-align:center;
+	font-size:100%;
+	line-height:1.4;
+}
+.priceDiv h2{ border-radius:5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */  
+	padding:15px;
+	width:460px;
+	text-align:center;
+	color:#e40037;
+	background:#dfdfdf;
+	margin:15px auto;
+	font-size:160%;
+	line-height:1;
+font-weight:500;
+}
+.priceSec{
+	text-align:left;
+	margin:0 0 10px;
+}
+.priceSec h3{
+	text-align:left;
+	background:url(/lp/common/rentaloffice_01/images/icon_price.gif) 0px 3px no-repeat;
+	padding-left:18px;font-size:120%;
+	line-height:1.5;
+	
+}
+.txtNoteA{font-size:80%;
+line-height:1.5;}
+.txtNote{font-size:80%;
+line-height:1.5;
+text-align:right;}
+.priceA{
+width: 100%;
+border-collapse: collapse;
+margin-bottom:5px;
+}
+.priceA th{
+width: 50%;
+padding: 6px 20px ;
+text-align: left;
+vertical-align: top;
+color: #333;
+background-color: #eee;
+border: 1px solid #b9b9b9;
+font-weight:normal;
+}
+.priceA td{
+padding: 6px 20px ;
+background-color: #fff;
+border: 1px solid #b9b9b9;
+}
+/*151203_______________________________*/
+.s151203A{
+	width:100%;
+	padding:0;
+	text-align:center;
+}
+.conIn151203A{
+width:980px;
+margin:0 auto;
+padding:0;
+clear:both;
+position:relative;
+text-align:center;
+}
+
+.s151203A h2{margin-bottom:40px;
+}
+.s151203AIn{
+	text-align:center;
+	width:691px;
+margin:0 auto;
+padding:0;
+background:#FBD2D2;
+}

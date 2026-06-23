@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import 'mixin';
+
+  .wrapper {
+    
+  .link_dl_btn{
+     
+        font-size: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      @include  break{display: block;width: 80%;}
+        li{
+        text-align: center;width: 315px;
+        margin: 0 4px;
+        
+            //&:first-child{margin-right: 70px;}//first-child2ボタン2つの場合イキ
+          @include  break{width: 100%; margin: 14px auto 25px auto;}
+            
+    a {
+    border-radius: 5px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    background: #e21a37;
+    font-size: 16px;
+    width: 315px;
+    padding: 28px 0;
+    letter-spacing: .08em;
+    font-weight: bold;
+     
+      @include  break{width: 100%;padding: 18px 0;}
+    &::before{
+            content: '';
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.3);
+    display: block;
+    position: absolute;
+    z-index: 0;
+    -webkit-transform: translate(0%, 100%);
+    transform: translate(0%, 100%);
+    opacity: 1;
+}//before
+    &::after{
+            width: 8px;
+    height: 12px;
+    margin-left: 7px;
+    content: '';
+    background: url("../images/arow.svg") no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    transition: .2s;
+    
+        }//after
+        &:hover{text-decoration: none;}
+    &.dlpdf{
+            background: #fff; 
+            border: 2px solid #e21a37;
+            color: #e21a37;
+         &::after{
+               background: url("../images/arow2.svg") no-repeat;
+            }
+        }//dlpdf
+        
+}//a
+ }//li
+  }//link_dl_btn
+  }//wrapper
+

@@ -1,0 +1,442 @@
+div.content_outer {
+    margin:10px;
+}
+
+.subblock {
+    margin-left:20px;
+}
+
+h1 {overflow:hidden;
+    text-indent:-1000em;
+    /*background-image:url(../images/form_title.jpg);
+    
+    width:846px;
+    height:182px;
+    margin:0;*/
+}
+h2,h3 {
+    clear:both;
+}
+/*h2 {
+    margin-top:2em;
+    margin-bottom:0;
+    background-color: #1973AF;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding:0;
+    line-height:40px;
+    text-indent:45px;
+    background-image:url(../images/form_h2.jpg);
+    width:806px;
+    height:40px;
+	text-align:center;
+}*/
+h2 {
+    margin:30px 0 10px 0;
+    height:25px;
+    background-image: url(/news/media/images/title_bg01.gif);
+    background-repeat: no-repeat;
+    line-height: 25px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #1C6DA5;
+}
+.top {
+    margin-top:0;
+}
+
+input,select,pre {
+    font-size:10.5pt;
+}
+input,textarea {
+    padding:5px;
+}
+.formsize1 {
+    width:95%;
+}
+.formsize2 {
+    width:50%;
+}
+.formsize3 {
+    width:25%;
+}
+
+#free3_blk.script {
+/*
+   script実行時に店舗ブロックの内側に移動する場合有効化
+    margin-top:-6em;
+    margin-left:120px;
+*/
+}
+
+#infoblk {
+    color:#006699;
+    margin:0 50px;
+}
+#infoblk dt {
+    color:#f2442e;
+    font-size:1.5em;
+    font-weight:bold;
+}
+#infoblk dd {
+    margin:0;
+}
+
+.blk1 {
+    width:330px;
+    height:118px;
+    margin-bottom:1em;
+    float:left;
+}
+.blk2 {
+    margin:0 0 0 0;
+    width:300px;
+    float:right;
+}
+.blk2 dt, .blk2 dd {
+    margin:0;
+}
+.blk2 p {
+    margin:0 0 1em 0;
+    font-size:9pt;
+}
+
+.required {
+    color:red;
+    margin:0 0.5em;
+}
+
+table.form1 {
+    border-collapse:collapse;
+    width:100%;
+}
+table.form1 th, table.form1 td {
+    text-align:left;
+    vertical-align:top;
+    border:1px solid gray;
+    padding:5px;
+    font-weight:normal;
+    font-size:10.5pt;
+}
+table.form1 th {
+    white-space:nowrap;
+    background-color:#eeeeee;
+}
+
+table.form1 input.checkbox {
+    width:20px;
+    height:20px;
+    line-height:20px;
+    vertical-align:middle;
+}
+
+table.form2 {
+    border-collapse:collapse;
+    width:100%;
+}
+table.form2 th, table.form2 td {
+    text-align:left;
+    vertical-align:top;
+    border:1px solid gray;
+    padding:10px;
+    font-weight:normal;
+}
+table.form2 th {
+    white-space:nowrap;
+    background-color:#eeeeee;
+}
+
+p.form-submit {
+    text-align:center;
+	margin-top:10px;
+}
+#submit_button {
+    width:150px;
+    height:50px;
+    text-align:center;
+    letter-spacing:1em;
+    text-indent:1em;
+    background-image:url(../images/form_button.jpg);
+    background-position:0px 0px;
+    border:none;
+    padding:0;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+}
+#submit_button.down {
+    /*background-image:url(../images/form_button_d.jpg);*/
+    background-position:0px -50px;
+}
+#submit_button.over {
+    filter:alpha(opacity=80);
+    -moz-opacity:0.80;
+    opacity:0.80;
+}
+
+span.block {
+    white-space:nowrap;
+}
+
+.officeblk {
+    display:block;
+    width:95px;
+    height:117px;
+    float:left;
+}
+.officename {
+    display:none;
+}
+.officeblk.shinjuku {
+    background-image:url(/images/index_shinjuku.jpg);
+}
+.officeblk.shibuya {
+    background-image:url(/images/index_shibuya.jpg);
+}
+.officeblk.hills {
+    background-image:url(/images/index_hills.jpg);
+}
+.officeblk.akasaka {
+    background-image:url(/images/index_akasaka.jpg);
+}
+.officeblk.mitsuke {
+    background-image:url(/images/index_mitsuke.jpg);
+}
+.officeblk.tameike-sanno {
+    background-image:url(/images/index_tameike-sanno.jpg);
+}
+.officeblk.azabu {
+    background-image:url(/images/index_azabu.jpg);
+}
+.officeblk.aoyama246 {
+    background-image:url(/images/index_aoyama246.jpg);
+}
+.officeblk.minamiaoyama {
+    background-image:url(/images/index_minamiaoyama.jpg);
+}
+.officeblk.centre {
+    background-image:url(/images/index_centre.jpg);
+}
+.officeblk.nogizaka {
+    background-image:url(/images/index_nogizaka.jpg);
+}
+.officeblk.nihonbashi {
+    background-image:url(/images/index_nihonbashi.jpg);
+}
+.officeblk.nagano {
+    background-image:url(/images/index_nagano.jpg);
+}
+.officeblk.sendai {
+    background-image:url(/images/index_sendai.jpg);
+}
+.officeblk.nagoya {
+    background-image:url(/images/index_nagoya.jpg);
+}
+.officeblk.keihan-yodoyabashi {
+    background-image:url(/images/index_keihan-yodoyabashi.jpg);
+}
+.officeblk.kyoto-kawaramachi {
+    background-image:url(/images/index_kyoto-kawaramachi.jpg);
+}
+.officeblk.kyoto-karasuma {
+    background-image:url(/images/index_kyoto-karasuma.jpg);
+}
+.officeblk.ikebukuro {
+    background-image:url(/images/index_ikebukuro.jpg);
+}
+.officeblk.jinbocho {
+    background-image:url(/images/index_jinbocho.jpg);
+}
+.officeblk.sapporo-minami {
+    background-image:url(/images/index_sapporo-minami.jpg);
+}
+.officeblk.hakata-ekimae {
+    background-image:url(/images/index_hakata-ekimae.jpg);
+}
+.officeblk.kokura {
+    background-image:url(/images/index_kokura.jpg);
+}
+.officeblk.virtual {
+    background-image:url(/images/index_virtual_s.jpg);
+    /* clear:left;
+    margin-top:5px; */
+}
+
+.officeblk.mito {
+    background-image:url(/images/index_mito.jpg);
+}
+.officeblk.hakozaki {
+    background-image:url(/images/index_hakozaki.jpg);
+}
+.officeblk.hiroshimaootemachi {
+    background-image:url(/images/index_hiroshimaootemachi.jpg);
+}
+.officeblk.shibuyajinnan {
+    background-image:url(/images/index_shibuyajinnan.jpg);
+}
+.officeblk.meiekihigashi {
+    background-image:url(/images/index_meiekihigashi.jpg);
+}
+.officeblk.nishishinabashi {
+    background-image:url(/images/index_nishishinbashi.jpg);
+}
+.officeblk.sendaiekimae {
+    background-image:url(/images/index_sendaiekimae.jpg);
+}
+.officeblk.kumaomotoginzadori {
+    background-image:url(/images/index_kumamotoginzadori.jpg);
+}
+.officeblk.tachikawa {
+    background-image:url(/images/index_tachikawa.jpg);
+}
+.officeblk.shinosakakita {
+    background-image:url(/images/index_shinosakakita.jpg);
+}
+.officeblk.nagoyamarunouchi {
+    background-image:url(/images/index_nagoyamarunouchi.jpg);
+}.officeblk.niigata {
+    background-image:url(/images/index_niigata.jpg);
+}
+.officeblk.ooita {
+    background-image:url(/images/index_ooita.jpg);
+}
+.officeblk.kobesannomiya {
+    background-image:url(/images/index_kobesannomiya.jpg);
+}
+.officeblk.kariya {
+    background-image:url(/images/index_nagoyaaichi.jpg);
+}
+.officeblk.nishishinjyukuekimae {
+    background-image:url(/images/index_nishishinjuku.jpg);
+}
+.officeblk.toyota {
+    background-image:url(/images/index_toyota.jpg);
+}
+.officeblk.oosakieki {
+    background-image:url(/images/index_oosakieki.jpg);
+}
+.officeblk.honatsugi{
+    background-image:url(/images/index_honatsugi.jpg);
+}
+.officeblk.gotandaekinishi{
+    background-image:url(/images/index_gotandaekinishi.jpg);
+}
+.officeblk.daimonekimae{
+    background-image:url(/images/index_daimonekimae.jpg);
+}
+
+.officeblk.kinkoucho{
+    background-image:url(/images/index_kinkoucho.jpg);
+}
+.officeblk.moriokaodori{
+    background-image:url(/images/index_moriokaodori.jpg);
+}
+.officeblk.omiyaekinishi{
+    background-image:url(/images/index_omiyaekinishi.jpg);
+}
+.officeblk.takamatsu{
+    background-image:url(/images/index_takamatsu.jpg);
+}
+.officeblk.osakahirano{
+    background-image:url(/images/index_osakahirano.jpg);
+}
+.officeblk.osakahigobashi{
+    background-image:url(/images/index_osakahigobashi.jpg);
+}
+/*_______________thanks___________________*/
+.formtThanks{
+	width:500px;
+	margin:60px auto;}
+.formtThanks h1{
+	font-size:24px;
+	line-height:1.9;
+	background:none;
+	padding-top:0px;
+	height:auto;
+	text-indent: 0em;
+width: 500px;
+font-weight:bold;
+}
+.formtThanks p{
+	font-size:14px;
+	line-height:1.6;
+}
+.formtThanks .contactF{
+	border-radius:5px;
+	border:2px #efefef solid;
+	margin:20px auto;
+	padding:30px;
+}
+.formtThanks .contactF h2{
+	text-align:left;
+	font-size:20px;
+	line-height:1.3;
+	vertical-align:middle;
+	background-color:#ffffff;
+	background-image:none;
+	color:#ea2423;
+	margin-bottom:10px;
+}
+.formtThanks .contactF .note{
+font-size:12px;
+margin-bottom:15px;
+}
+.formtThanks .contactF .tel,
+.formtThanks .contactF .eMail{
+	border-radius:5px;
+	background:#efefef;
+	padding: 20px;
+	margin-bottom:5px;
+}
+.formtThanks .contactF .tel h3,
+.formtThanks .contactF .eMail h3{
+	font-size:14px;
+	line-height:1.3;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.formtThanks .contactF .tel .telNum{
+	font-weight:bold;
+	font-size:24px;
+	line-height:1;
+	color:#1898d3;
+	margin:15px 0 0;
+}
+
+/*______180319_____________*/
+#OPO_body_Fm{
+	width:786px !important;
+	margin:10px auto;
+}
+#OPO_main_Fm{
+	margin:20px 0px 20px !important;
+	width:786px;
+	
+}
+#OPO_header_Fm{
+	height:70px !important;
+}
+#OPO_main_Fm{
+	width:786px !important;
+}
+#OPO_main_title_blk{
+	width:846px;
+	height:100px;
+	margin:0 auto;
+	background:url(../../images/form_title_846.jpg) 0 0 no-repeat;
+}
+#OPO_main_title_blk_Fm{
+	width:786px !important;
+	height:100px;
+	margin:0 auto;
+	background:url(../../images/form_title.jpg) 0 0 no-repeat;
+}
+
+.subblock_Fm{
+	margin-left:0;
+}
+#OPO_footer{
+	width:786px !important;
+}

@@ -1,0 +1,758 @@
+@charset "UTF-8";
+h2 {
+  margin: 0  0 15px 0; }
+
+h3.reason {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 30px; }
+  h3.reason span {
+    font-size: 22px; }
+    h3.reason span.sSize {
+      font-size: 16px; }
+  h3.reason em.blue {
+    color: #0097d5;
+    font-style: normal; }
+
+/*141203-----------------*/
+#top2cim {
+  /*width:846px;*/
+  width: 870px;
+  margin: 5px 0 10px 0; }
+
+#center_box {
+  width: 825px;
+  /*overflow:hidden;*/
+  margin: 40px 12px 0 20px; }
+
+#center_box2 {
+  width: 825px;
+  /*overflow:hidden;*/
+  margin: 20px 12px 0 20px; }
+
+#top2cim #tenpo_box {
+  /*overflow:hidden;*/
+  width: 350px;
+  float: left; }
+
+/*センターボックス*/
+div#center_box p {
+  line-height: 1.6;
+  color: #595959; }
+
+.catch {
+  font-size: 1.8em;
+  line-height: 1;
+  color: #000000;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 0 0 10px 0;
+  padding: 0; }
+
+.txtRed {
+  color: #ff0000; }
+
+p.catch2 {
+  font-size: 1.9em;
+  line-height: 1.8 !important;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 0;
+  padding: 0; }
+p.catch3 {
+  font-size: 0.9em;
+  line-height: 1.4 !important;
+  font-weight: bold;
+  background-color: transparent;
+  margin: 0 0 10px 0;
+  padding: 0; }
+
+/* What's New------------------------------ */
+.whatsnew {
+  margin: 0;
+  table-layout: fixed;
+  width: 90%; }
+  .whatsnew td, .whatsnew th {
+    padding-top: 10px; }
+  .whatsnew td {
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    line-height: 140%; }
+    .whatsnew td.content {
+      width: 85%;
+      color: #595959;
+      padding-bottom: 5px; }
+      .whatsnew td.content p {
+        /*margin:0;
+         padding:0;*/
+        color: black;
+        line-height: 140%;
+        /* center_box p 抑止 */ }
+      .whatsnew td.content ul {
+        margin: 0;
+        padding: 0;
+        padding-left: 1.5em; }
+        .whatsnew td.content ul li {
+          margin-bottom: 10px; }
+      .whatsnew td.content em {
+        color: red;
+        font-style: normal;
+        font-weight: normal; }
+      .whatsnew td.content p.txB {
+        color: red !important;
+        font-style: normal;
+        font-weight: bold; }
+  .whatsnew.system {
+    margin: 0 0 5px 0px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    table-layout: fixed;
+    font-weight: bold; }
+
+#list .whatsnew td.mgg {
+  height: 100px; }
+
+.whatsnew-scroll-blk {
+  margin: 0 0 0px 10px;
+  /*height:500px; */
+  /*15em;*/
+  overflow: auto; }
+
+td.content p.ttl {
+  font-size: 120%;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #e60000 !important;
+  margin: 0 0 15px 0; }
+  td.content p.ttl span {
+    font-size: 90%;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #333 !important; }
+
+.opoOfice {
+  background: #EBEBEB;
+  padding: 10px;
+  margin: 20px 10px; }
+  .opoOfice p {
+    margin-bottom: 15px;
+    font-size: 110%;
+    font-weight: bold; }
+
+#list .whatsnew td.mggB {
+  height: 30px !important;
+  padding: 0 !important;
+  margin: 0 !important; }
+#list .whatsnew td .topInfoTble td, #list .whatsnew td .topInfoTble th {
+  padding-top: 5px; }
+
+/* わからない事がある方 -----------------------------------*/
+.kushitsu_title04 {
+  font-size: 11pt;
+  line-height: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  background-image: url(../images/kushitsu_title04.gif);
+  background-repeat: no-repeat;
+  padding-left: 25px; }
+
+.laybox {
+  /* TOP,空室 わからない事がある方 */
+  width: 770px;
+  text-align: center;
+  margin: 0 0 30px 35px;
+  clear: both; }
+
+/*起業家プログラム*/
+div#kigyoupro {
+  width: 463px;
+  height: 199px; }
+
+/*お客様の声*/
+p#voice {
+  background: url(../images/voice.jpg) 261px 0px no-repeat;
+  padding: 0px 212px 0 0px;
+  min-height: 176px;
+  _height: 176px; }
+
+/*クラブオープンオフィスニュース*/
+div.news {
+  clear: both;
+  padding: 10px 5px 0px 75px;
+  margin: 10px 0 0;
+  border-top: 1px dotted #7a7a7a; }
+  div.news p {
+    margin: 0; }
+    div.news p.tit {
+      line-height: 130%;
+      color: #1078a8 !important;
+      font-weight: bold;
+      margin: 5px 0; }
+    div.news p.sub {
+      line-height: 130%;
+      color: #ab0000 !important;
+      font-weight: bold;
+      margin: 0; }
+div#news03 {
+  background: 0px 10px no-repeat;
+  _background: 0px 20px no-repeat; }
+div#news02 {
+  border-top: none;
+  background: 0px 10px no-repeat;
+  _background: 0px 20px no-repeat; }
+div#news01 {
+  background: url(../images/voice_photo_tecnet.jpg) 0px 10px no-repeat;
+  _background: url(../images/voice_photo_tecnet.jpg) 0px 20px no-repeat; }
+div#news04 {
+  border-top: none;
+  background: url(../images/news04.jpg) 0px 10px no-repeat;
+  _background: url(../images/news04.jpg) 0px 20px no-repeat; }
+div#news05 {
+  border-top: none;
+  background: url(../images/news05.jpg) 0px 10px no-repeat;
+  _background: url(../images/news05.jpg) 0px 20px no-repeat; }
+div.news p.next, div.guide p.next {
+  background: url(../images/ind_yab.gif) 0 4px no-repeat;
+  padding: 0px 15px 0 15px;
+  float: right;
+  margin: 0;
+  line-height: 90%;
+  height: 30px; }
+div.news p.next a {
+  color: #0f79b0; }
+div.guide {
+  clear: both;
+  padding: 10px 5px 0px;
+  margin: 10px 0 0;
+  border-top: 1px dotted #7a7a7a; }
+  div.guide p {
+    margin: 0; }
+    div.guide p.next a {
+      color: #0f79b0; }
+    div.guide p.tit {
+      line-height: 130%;
+      color: #1078a8;
+      font-weight: bold;
+      margin: 5px 0; }
+div#tenpo_thumbs {
+  background: #eeeeee url(../images/tenpo_back.gif) 0px 0 no-repeat;
+  margin: 0 0 5px 14px;
+  padding: 60px 0 0 0;
+  width: 336px;
+  overflow: hidden; }
+  div#tenpo_thumbs .thums a {
+    display: block;
+    display: inline;
+    /* ie6 float mergin bug fix */
+    margin: 0 0 10px 13px;
+    float: left; }
+  div#tenpo_thumbs img {
+    border: none; }
+div.tenpo-bottom {
+  background: url(../images/tenpo_back_bottom.gif) 0 bottom;
+  height: 4px;
+  width: 336px;
+  overflow: hidden;
+  margin-top: 0px;
+  clear: both; }
+div#tenpo_thumbs .thums {
+  overflow: hidden; }
+
+/*ご案内*/
+/*各店舗のご案内*/
+#thumbs_outer.over a {
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5; }
+
+div#tenpo_thumbs .thums a:hover {
+  filter: alpha(opacity=100) !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important; }
+
+#btn_kushitu {
+  clear: both;
+  /*    margin:-30px 13px 0 0;*/
+  margin: 0 13px 0 0;
+  height: 30px; }
+  #btn_kushitu a {
+    float: right;
+    display: block;
+    text-indent: -1000em;
+    overflow: hidden;
+    background-image: url(/openoffice/images/tokushitsu.png);
+    background-position: 0 0;
+    width: 145px;
+    height: 20px;
+    margin: 0; }
+    #btn_kushitu a:hover {
+      background-position: 0 20px; }
+
+/*プレゼント差し上げます部分*/
+div#pre_back {
+  background: url(../images/pre_back2.gif) 0px 0 no-repeat;
+  width: 336px;
+  /*height:479px;*/
+  height: 336px;
+  position: relative;
+  margin-left: 14px; }
+  div#pre_back p#read01 {
+    position: absolute;
+    top: 90px;
+    left: 95px;
+    width: 230px; }
+    div#pre_back p#read01 span.next {
+      background: url(../images/ind_yab.gif) 0 4px no-repeat;
+      padding: 0px 15px 0 15px;
+      float: right;
+      margin: 0;
+      line-height: 90%;
+      height: 30px; }
+  div#pre_back p#read02 span.next {
+    background: url(../images/ind_yab.gif) 0 4px no-repeat;
+    padding: 0px 15px 0 15px;
+    float: right;
+    margin: 0;
+    line-height: 90%;
+    height: 30px; }
+  div#pre_back p#read01 span.next a {
+    color: #0f79b0; }
+  div#pre_back p#read02 {
+    position: absolute;
+    top: 200px;
+    left: 95px;
+    width: 230px; }
+    div#pre_back p#read02 span.next a {
+      color: #0f79b0; }
+  div#pre_back img#mail {
+    position: absolute;
+    top: 345px;
+    left: 35px;
+    width: 272px;
+    height: 122px; }
+div#facebook {
+  margin: 10px 0 10px 14px;
+  padding: 0;
+  width: 336px; }
+div#merit {
+  margin: 10px 0 10px 14px;
+  padding: 0;
+  background: url(../images/merit.gif) 0px 0 no-repeat;
+  min-height: 221px;
+  _height: 221px;
+  position: relative;
+  width: 335px; }
+  div#merit h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 25px; }
+  div#merit ul {
+    margin: 0 0 0 -15px;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    _width: 320px; }
+    div#merit ul li {
+      margin: 5px 0 0;
+      padding: 0;
+      list-style: none; }
+div#mobile_info {
+  position: relative;
+  background-image: url(/openoffice/images/mobile_info.png);
+  width: 335px;
+  height: 95px;
+  overflow: hidden;
+  margin: 10px 0 10px 14px;
+  padding: 0; }
+  div#mobile_info h2 {
+    position: absolute;
+    top: 10px;
+    left: 78px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 120%;
+    color: #333333;
+    font-weight: bold; }
+  div#mobile_info p {
+    position: absolute;
+    left: 78px;
+    top: 66px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #333333;
+    font-weight: bold; }
+
+/*レンタルオフィスメリット*/
+/* 携帯サイト オープン */
+/* 右サイド バナー */
+.right-banner {
+  width: 335px;
+  margin: 0 0 0 14px; }
+  .right-banner a {
+    display: inline-block;
+    margin-bottom: 5px;
+    line-height: auto; }
+
+/* Room search block */
+div.roomsearch {
+  width: 463px; }
+  div.roomsearch h2 {
+    margin-bottom: 0; }
+  div.roomsearch form {
+    padding: 4px 5px;
+    background-image: url(/openoffice/images/roomsearch_bg.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-bottom: 20px;
+    /*50px;*/ }
+  div.roomsearch table.search-table {
+    border-collapse: collapse; }
+    div.roomsearch table.search-table th {
+      width: 105px;
+      padding: 4px 4px 4px 0; }
+      div.roomsearch table.search-table th div {
+        background-color: #2d8fc2;
+        color: white;
+        width: 105px;
+        white-space: nowrap; }
+  div.roomsearch tr.form-area th div {
+    height: 56px;
+    line-height: 56px; }
+  div.roomsearch tr.form-price th div, div.roomsearch tr.form-size th div {
+    height: 42px;
+    line-height: 42px; }
+  div.roomsearch table.search-table td {
+    padding: 4px 0 4px 2px;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 12px; }
+  div.roomsearch .float-spacer {
+    margin: 0 -10px 0 0;
+    padding: 0; }
+  div.roomsearch table.search-table label {
+    display: block;
+    float: left;
+    border: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-indent: 3px;
+    height: 27px;
+    line-height: 27px; }
+  div.roomsearch tr.form-area label {
+    /*
+        width:82px;
+        margin:0 0 2px 3px;
+        background-image:url(/openoffice/images/roomsearch_btn1.png);
+    */
+    width: 106px;
+    margin: 0 0 0 3px;
+    background-image: url(/openoffice/images/roomsearch_btn2.png); }
+  div.roomsearch tr.form-price label, div.roomsearch tr.form-size label {
+    width: 106px;
+    margin: 0 0 0 3px;
+    background-image: url(/openoffice/images/roomsearch_btn2.png); }
+  div.roomsearch tr.form-price th, div.roomsearch tr.form-size th, div.roomsearch tr.form-price td, div.roomsearch tr.form-size td {
+    border: 0 dotted #929393;
+    border-width: 1px 0 0 0; }
+  div.roomsearch input.submit {
+    display: block;
+    width: 350px;
+    height: 26px;
+    background-image: url(/openoffice/images/roomsearch_submit.jpg);
+    background-position: top left;
+    border: none;
+    overflow: hidden;
+    text-indent: -1000em;
+    margin: 9px 50px;
+    padding: 0; }
+
+/* div.roomsearch table.search-table input {
+    display:inline;
+    vertical-align:middle;
+}
+*/
+/* TOPバナー */
+#top_banner {
+  display: block;
+  width: 846px;
+  height: 182px;
+  position: relative;
+  overflow: hidden;
+  border: none; }
+  #top_banner img {
+    display: block;
+    position: absolute;
+    border: none;
+    top: 0; }
+
+/* 右センターバナー */
+.openoffice-banners {
+  margin: 0; }
+  .openoffice-banners a {
+    display: inline-block;
+    margin: 0 0 1px 0; }
+
+.topBanner {
+  margin: 20px 0 20px 20px; }
+
+.topBanner2 {
+  margin: 0 0 20px 20px; }
+
+table.topInfoTble {
+  width: 100%;
+  border-collapse: collapse; }
+  table.topInfoTble th {
+    width: 20%;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #b9b9b9; }
+    table.topInfoTble th.long {
+      width: 35% !important; }
+  table.topInfoTble td {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9; }
+
+/**/
+.topCon {
+  width: 825px;
+  margin: 0 12px 50px 20px;
+  padding-top: 30px; }
+  .topCon h2 {
+    margin: 0 0 5px 0;
+    padding: 0; }
+
+.topConIn {
+  margin: 0;
+  padding: 20px 80px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #666666;
+  border: #eeeeee 3px solid; }
+
+p.note {
+  font-size: 12px;
+  line-height: 1.9; }
+p.conTxt {
+  font-size: 14px;
+  line-height: 1.9; }
+
+#OPO_header #OPO_header_toplink h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute !important;
+  top: 0px;
+  left: 4px;
+  z-index: 100;
+  height: 20px;
+  bakground: #CCC;
+  width: 500px; }
+
+#OPO_main .topReason h2, #OPO_main .topVoice h2 {
+  background: #0097d5;
+  /*background: -moz-linear-gradient(top, #3088c6, #257ab6);　/* Firefox用 */
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#3088c6), to(#257ab6));　/* Safari,Google Chrome用 */
+  font-size: 120%;
+  line-height: 1;
+  padding: 12px 0 12px 10px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.2em;
+  border-left: 36px #222 solid;
+  margin: 0 0 3px 0; }
+#OPO_main .officeN {
+  margin: 50px 0 0 40px;
+  clear: both; }
+  #OPO_main .officeN h2 {
+    background: #0097d5;
+    /*background: -moz-linear-gradient(top, #3088c6, #257ab6);　/* Firefox用 */
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#3088c6), to(#257ab6));　/* Safari,Google Chrome用 */
+    font-size: 120%;
+    line-height: 1;
+    padding: 12px 0 12px 10px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.2em;
+    border-left: 36px #222 solid;
+    margin: 0 0 3px 0; }
+#OPO_main .topReason {
+  margin: 0 0 0 40px;
+  overflow: hidden; }
+  #OPO_main .topReason .topCnr {
+    background: #ebebeb;
+    border-radius: 5px;
+    padding: 15px 32px;
+    overflow: hidden; }
+    #OPO_main .topReason .topCnr .flL {
+      font-size: 110%;
+      line-height: 1.5;
+      color: #333;
+      width: 460px; }
+    #OPO_main .topReason .topCnr p:nth-child(2) {
+      margin: 15px 15px 5px 15px; }
+    #OPO_main .topReason .topCnr h3 {
+      background: none;
+      font-size: 30px;
+      font-weight: bold;
+      color: #363636;
+      margin-bottom: 15px; }
+  #OPO_main .topReason .btnRegus {
+    width: 100%;
+    margin: 10px 0;
+    clear: both;
+    text-align: center; }
+    #OPO_main .topReason .btnRegus .btnMore {
+      width: 70%;
+      margin: 10px auto; }
+#OPO_main .btnMore {
+  text-align: center;
+  width: 380px;
+  margin-top: 0px; }
+  #OPO_main .btnMore a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    padding: 12px 0;
+    box-shadow: 1px 1px 2px #5687a4; }
+    #OPO_main .btnMore a:hover, #OPO_main .btnMore a .topVoice .btnList a:hover {
+      background: #2db4ed; }
+#OPO_main .topVoice {
+  margin: 60px 0 70px 40px; }
+  #OPO_main .topVoice .btnList a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    padding: 12px 0;
+    box-shadow: 1px 1px 2px #5687a4;
+    padding: 7px 0;
+    font-size: 12px;
+    box-shadow: 0px 0px 0px #5687a4; }
+  #OPO_main .topVoice h3.top {
+    text-align: center;
+    background: none;
+    margin: 15px 0 0 0;
+    font-size: 24px;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 30px; }
+    #OPO_main .topVoice h3.top:before {
+      content: "＼";
+      font-family: arial; }
+    #OPO_main .topVoice h3.top:after {
+      content: "／";
+      font-family: arial; }
+  #OPO_main .topVoice .topVoiceTxt {
+    margin: 20px 50px 10px 50px; }
+  #OPO_main .topVoice ul.voice {
+    margin: 10px 0 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
+    #OPO_main .topVoice ul.voice li {
+      margin-bottom: 10px;
+      width: 24%;
+      margin-right: 10px; }
+      #OPO_main .topVoice ul.voice li.no {
+        margin-right: 0px; }
+      #OPO_main .topVoice ul.voice li.half {
+        width: 49.1%;
+        margin-bottom: 0px;
+        margin-right: 10px; }
+        #OPO_main .topVoice ul.voice li.half:nth-child(2n) {
+          margin-right: 0; }
+      #OPO_main .topVoice ul.voice li a:hover {
+        opacity: 0.8; }
+  #OPO_main .topVoice .btnList {
+    text-align: center;
+    width: 160px;
+    margin-right: 5px;
+    margin-bottom: 10px; }
+#OPO_main .topWhy {
+  margin: 5px 0 0 40px;
+  overflow: hidden; }
+  #OPO_main .topWhy .topCnr {
+    background: #ebebeb;
+    border-radius: 5px;
+    padding: 15px 32px;
+    overflow: hidden; }
+    #OPO_main .topWhy .topCnr .flR {
+      font-size: 110%;
+      line-height: 1.5;
+      color: #333;
+      width: 440px; }
+    #OPO_main .topWhy .topCnr p:nth-child(2) {
+      margin: 15px; }
+    #OPO_main .topWhy .topCnr h3 {
+      background: none;
+      font-size: 30px;
+      font-weight: bold;
+      color: #363636;
+      margin-bottom: 15px; }
+#OPO_main .widSh {
+  width: 200px; }
+
+/*------
+/*MODAL WINDOW------------------*/
+.modalB {
+  display: block;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.modalB_bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%; }
+
+.modalB_content {
+  /*background: transparent;*/
+  left: 50%;
+  padding: 10px 10px 25px 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /*width:656px;*/
+  width: 1000px;
+  text-align: center;
+  background: #fff; }
+  .modalB_content a {
+    display: inline; }
+    .modalB_content a.left {
+      padding-left: 10px; }
+
+a.js-modalB-close {
+  color: #000 !important; }

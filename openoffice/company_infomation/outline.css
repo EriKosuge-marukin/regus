@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+h1 {
+    height:182px;
+    width:846px;
+    overflow:hidden;
+    text-indent:-1000em;
+    margin:0;
+    padding:0;
+    background-image:url(images/outline_title.jpg);
+}
+
+table.co-table {
+    border-collapse:collapse;
+    border-spacing:0;
+    border-style:hidden;
+    margin:30px;
+    border:none;
+}
+
+table.co-table th, table.co-table td {
+    border:solid #cecece;
+    border-width:1pt 0pt 0pt 0pt;
+    padding:6px;
+    vertical-align:top;
+    text-align:left;
+}
+
+table.co-table tr.first-line th, table.co-table tr.first-line td {
+    border:none !important;
+}
+
+table.co-table th {
+    background-color:#f1f1f1;
+    font-weight:normal;
+	width: 18%;
+}
+table.co-table th:last-child {
+	border-bottom: #aaa 1px solid;
+}
+table.co-table td:last-child {
+	border-bottom: #ccc 1px solid;
+}
+table.shozai-table th {
+    background-color:transparent;
+	
+}
+
+table.office-table {
+    border-collapse:collapse;
+    border-spacing:0;
+    border-style:hidden;
+    border:none;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+table.office-table th {
+    background-color:transparent;
+	width: 18%;
+	border-bottom: #ccc 1px solid;
+}
+
+img.co-map {
+    margin:0 0 20px 50px;
+}

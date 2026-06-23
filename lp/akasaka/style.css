@@ -1,0 +1,377 @@
+p,h1,h2,h3 {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:white;
+    color:#444;
+    font-size:13px;
+    line-height:1.5em;
+    font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',  Meiryo, sans-serif;
+}
+
+a {
+    color: #2773AD;
+}
+
+.clear {
+    clear:both;
+}
+
+.container {
+    width:100%;
+}
+
+#wrapper {
+    width:820px;
+    margin:0 auto;
+}
+
+#header {
+    height:90px;
+    margin-bottom:10px;
+}
+#header * {
+    vertical-align:middle;
+}
+.header-catch {
+    margin-left:20px;
+    font-size:16px;
+}
+
+.mainConts {
+    background-color:#23385d;
+    color:white;
+    margin:10px 0;
+    position:relative;
+    overflow:hidden;
+}
+
+h1 {
+    width:820px;
+    height:400px;
+    background-image:url(images/catch.png);
+    overflow:hidden;
+    text-indent:-1000em;
+}
+
+.subcatch {
+	position:absolute;
+	top:110px;
+	left:10px;
+	padding:10px;
+	width:270px;
+	background-color:#23385d;
+	color:white;
+	font-size:15px;
+	line-height:1.4em;
+	height: 258px;
+}
+
+.subcatch02 {
+    position:absolute;
+    top:310px;
+    left:285px;
+    padding:10px;
+    width:230px;
+    background-color:#23385d;
+    color:white;
+    font-size:15px;
+    line-height:1.4em;
+}
+
+.subcatch03 {
+    position:absolute;
+    top:310px;
+    left:560px;
+    padding:10px;
+    width:230px;
+    background-color:#23385d;
+    color:white;
+    font-size:15px;
+    line-height:1.4em;
+}
+
+.nav {
+    height:85px;
+    border-bottom:solid 5px #d10800;
+    background-image:url(images/menu_bg.png);
+    background-repeat:repeat-x;
+}
+
+.nav table {
+    width:100%;
+    height:85px;
+    border-collapse:separate;
+    border-spacing:0;
+}
+.nav td {
+    text-align:center;
+    vertical-align:middle;
+    border-left:1px solid #5a6b89;
+    border-right:1px solid #162132;
+    cursor:pointer;
+}
+.nav td:hover {
+    background-image:url(images/menu_bg2.png);
+    background-repeat:repeat-x;
+}
+.nav a {
+    color:white;
+    text-decoration:none;
+    text-shadow:0 -1px 1px rgba(0,0,0,0.6);
+    font-size:14px;
+    line-height:1.3em;
+}
+
+
+h2 {
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    font-weight:bold;
+	color:#21385f;
+    padding-left:10px;
+    border-left:solid 6px #d10800;
+	background-image:url(images/title_bg.gif);
+    margin:30px 0 10px 10px;
+}
+
+.section {
+    background-color:white;
+    color:#444;
+    margin:10px 0 10px 10px;
+	width:800px;
+}
+
+.price-table {
+    border-spacing:1px;
+}
+.price-table th, .price-table td {
+    text-align:center;
+    vertical-align:middle;
+    padding:5px;
+}
+.price-table td {
+    width:1%;
+}
+.price-table .size th, .price-table .size td {
+    background-color:#496ba4;
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+}
+.price-table .window th, .price-table .window td {
+    background-color:#bcc4d6;
+    color:#23385d;
+    font-weight:bold;
+    font-size:14px;
+}
+.price-table .price th, .price-table .price td {
+    background-color:#e1e3e7;
+    color:#23385d;
+    font-weight:bold;
+    font-size:14px;
+}
+
+
+
+/* ピックアップ */
+.pickup {
+	padding:10px;
+    text-align:center;
+}
+
+/* キャンペーン */
+.campaign {
+	padding:6px;
+    text-align:center;
+	color:#d10800;
+	font-weight:bold;
+    font-size:18px;
+	background-color:#fcf9db;
+}
+
+.one-blk {
+	width:810px;
+	}
+
+.left-blk {
+    width:400px;
+    float:left;
+}
+.left-blk .section {
+    width:370px;
+	padding:10px;
+}
+.right-blk {
+    float:left;
+    margin-left:10px;
+    width:400px;
+}
+.right-blk .section {
+    width:370px;
+    padding:10px;
+}
+.right-blk h3 {
+    margin:0;
+}
+.right-blk .service {
+    margin-left:15px;
+}
+.right-blk .service img {
+    float:left;
+    margin-right:7px;
+    margin-bottom:7px;
+}
+
+/* 問い合わせ */
+
+form {
+    width:480px;
+    margin:60px 160px;
+    background-color:#4a6186;
+    border-radius:10px;
+    padding:10px;
+}
+form p {
+    text-align:center;
+    margin:10px 0;
+}
+form input.text, form textarea {
+    background-color:white;
+    width:90%;
+    color:black;
+    border:none;
+    font-size:13px;
+    padding:6px;
+    border-radius:5px;
+    box-shadow:1px 2px 1px rgba(0,0,0,0.33) inset;
+}
+form input.text {
+}
+
+form select{font-size:13px;}
+
+form textarea {
+    overflow:auto;
+}
+form table {
+    border-spacing:5px;
+    margin:20px 5%;
+    width:90%;
+}
+form th {
+    text-align:left;
+    font-weight:normal;
+    white-space:nowrap;
+    width:1%;
+    padding-right:1em;
+}
+form td {
+    white-space:nowrap;
+}
+
+.regusinfo {
+    margin:40px 80px;
+}
+.regusinfo h2 {
+    border-left:none;
+    border-bottom:4px double rgba(255,255,255,0.33);
+	background-image:none;
+	color:#ffffff;
+	padding:0;
+}
+.regusinfo .section {
+    width:auto;
+    background-color:transparent;
+    color:white;
+}
+
+.copyright {
+    color:#043776;
+    font-size:10px;
+    float:right;
+    margin-left:50px;
+    margin-top:10px;
+}
+
+/* メディア */
+#media P, #answer P, #office P {
+	margin-bottom:10px}
+
+/* 沿革 */
+#history {
+    border-spacing:1px;
+	background-color:#ffffff;
+	margin-left:10px;
+	width:390px;
+}
+#history th, #history  td {
+    text-align:left;
+    padding:5px;
+}
+#history td {
+    width:1%;
+}
+#history th{
+    background-color:#bcc4d6;
+    color:#23385d;
+    font-weight:bold;
+    font-size:14px;
+	width:80px;
+	text-align:center;
+}
+#history td {
+    background-color:#e1e3e7;
+    color:#23385d;
+    font-weight:bold;
+    font-size:14px;
+	width:284px;
+}
+
+
+/* カンパニー */
+#company {
+    border-spacing:1px;
+	background-color:#ffffff;
+	margin-left:10px;
+	width:390px;
+}
+#company th, #company td {
+    text-align:left;
+    padding:5px;
+}
+#company td {
+    width:1%;
+}
+#company th{
+    background-color:#bcc4d6;
+    color:#23385d;
+    font-weight:bold;
+    font-size:14px;
+	width:80px;
+	text-align:center;
+}
+#company td {
+    background-color:#e1e3e7;
+    color:#23385d;
+    font-weight:bold;
+    font-size:14px;
+	width:284px;
+}
+
+.contact h2 {
+	height:40px;
+    line-height:40px;
+    font-size:16px;
+    font-weight:bold;
+    padding-left:10px;
+	color:#ffffff;
+    border-left:solid 10px #d10800;
+    margin:10px 0 10px -10px;
+	background-image: none;
+}
+
+ 

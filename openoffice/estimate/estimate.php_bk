@@ -1,0 +1,292 @@
+<?php
+include_once(dirname(__FILE__).'/../dashboard/library/openClass.php');
+include_once(dirname(__FILE__).'/common/constant.php');
+
+header("Content-Type:text/html; charset=SJIS");
+
+$dbClass = new openClass($config);
+$err = array();
+$select_cnt = 30; // selectタグのループ回数
+
+if(isset($_REQUEST['c_id']) && isset($_REQUEST['o_id'])) {
+	$check_res = $dbClass->SelectOne("SELECT COUNT(*) AS cnt FROM m_office WHERE center_id = :c_id AND num = :o_id", array('c_id'=>$_REQUEST['c_id'], 'o_id'=>$_REQUEST['o_id']));
+	if($check_res['cnt'] != 1) $err['data'] = 'オフィスが見つかりません。';
+
+	if(empty($err)) {
+		$data = $dbClass->SelectOne("SELECT * FROM m_office WHERE center_id = :c_id AND num = :o_id", array('c_id'=>$_REQUEST['c_id'], 'o_id'=>$_REQUEST['o_id']));
+		$option = $dbClass->SelectOne("SELECT * FROM m_center WHERE center_id = :c_id", array('c_id'=>$_REQUEST['c_id']));
+
+		mb_convert_variables('SJIS', 'UTF-8', $data);
+		mb_convert_variables('SJIS', 'UTF-8', $option);
+
+		if($data['period_flg'] != 0 || $data['period_flg'] != 2) {
+			$s_date_arr = explode('-', mb_substr($data['period_sta'], 0, 10));
+			$s_date = $s_date_arr[0].'年'.$s_date_arr[1].'月'.$s_date_arr[2].'日';
+		}
+		if($data['period_flg'] != 0 || $data['period_flg'] != 1) {
+			$e_date_arr = explode('-', mb_substr($data['period_end'], 0, 10));
+			$e_date = $e_date_arr[0].'年'.$e_date_arr[1].'月'.$e_date_arr[2].'日';
+		}
+
+		switch($data['period_flg']) {
+			case 0:
+				break;
+			case 1:
+				$date = $s_date.'～';
+				break;
+			case 2:
+				$date = '～'.$e_date;
+				break;
+			case 3:
+				$date = $s_date.'～'.$e_date;
+				break;
+			case 4:
+				$date = '～'.$e_date.'  '.$s_date.'～';
+				break;
+		}
+
+		// 見積もり画面から戻ってきたときの処理
+		if(!empty($_POST)) {
+			$set_data = $_POST;
+		}
+	}
+} else {
+	$err['data'] = '不正なページ移動です。';
+}
+?>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--#include virtual="/OPENOFFICE/ssi/headtagmanager.html" -->
+<!--#include virtual="/OPENOFFICE/ssi/header_estimate.html" -->
+<!--#include virtual="/OPENOFFICE/ssi/header.html" -->
+<hr />
+</div>
+<!--header//-->
+<script type="text/javascript" src="./js/estimate.js"></script>
+
+<div id="OPO_main">
+	<ul id="stLst">
+		<li><a href="http://regus-openoffice.jp/">オープンオフィス（Openoffice）HOME</a></li>
+		<li><a href="../openoffice/<?php echo $option['url']; ?>"><?php echo $option['name']; ?></a></li>
+		<li class="nw"><strong>オフィスのお見積り</strong></li>
+	</ul>
+
+	<div id="estDyna">
+		<h1><?php echo $option['name']; ?></h1>
+		<div id="estDynaIn">
+			<p class="txaR mgB10"><a href="../openoffice/<?php echo $option['url']; ?>" class="over"><img src="../img_estimate/btn_otherroom.gif" alt="他のオフィスを見る"></a></p>
+			<div class="esTtl">
+				<div class="roomN roomNtttl"><span class="status">&nbsp;<?php echo $use_array[$data['use_flg']]; ?>&nbsp;</span>&nbsp;部屋番号：<?php echo $data['num']; ?></div>
+				<div class="roomN">【<?php echo $type_array[$data['type_flg']]; ?>】  <?php echo $data['breadth']; ?>m&sup2;/ 約<?php echo $data['people']; ?>名様</div>
+			</div>
+
+			<div class="estFull mgT20 mgB40 clearfix">
+				<div class="flL"><img src="../img_estimate/ws/<?php echo $data['image_path']; ?>" alt="写真：内部" width="351" height="263"></div>
+				<div class="flR">
+					<p><?php echo $data['description']; ?></p>
+					<table class="estTable01">
+						<tr>
+							<th>ご利用料</th>
+							<td><?php echo number_format($data['price_12mon']); ?>円</td>
+						</tr>
+						<tr>
+							<th>共益費</th>
+							<td><?php echo number_format($data['public']); ?>円</td>
+						</tr>
+					</table>
+					<p class="txtred mgT10">※表示は税抜となります。<br/>
+					※表示の月額ご利用料は、初回契約時に適用される利用料となります。</p>
+				</div>
+			</div><!--////-->
+
+			<p class="mgB20 both">以下のオプションと契約期間をご設定いただくと、詳しい見積り結果がご覧いただけます。</p>
+
+			<div class="est01Form">
+				<form name="estimate" method="post" action="estimate02.php" onSubmit="return funcInputCheck01();">
+					<input type="hidden" name="c_id" value="<?php echo $data['center_id']; ?>" />
+					<input type="hidden" name="o_id" value="<?php echo $data['num']; ?>" />
+					<h3>対応可能なオプション</h3>
+					<dl>
+						<dt class="box1">初期費用</dt>
+						<dd class="box2">
+							<p class="estNote txtred">※鍵、セキュリティカード、ビル用セキュリティカードは1つ目は無料です。2つ目以上は有料ですので必要な場合はチェックして、必要な数を選択して下さい。</p>
+
+							<ul class="eat01form clearfix">
+							<?php if($option_array[$option['op_door_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_door" value="ドア付社名プレート" <?php echo (isset($set_data['op_door']))? 'checked':''; ?> id="checkbox01" />
+									<label for="checkbox01" class="checkbox">ドア付社名プレート</label>
+								</li>
+							<?php endif; ?>
+							<?php if($option_array[$option['op_key_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_key" value="鍵（2つ目以上）" <?php echo (isset($set_data['op_key']))? 'checked':''; ?> id="checkbox02" />
+									<label for="checkbox02" class="checkbox">鍵 (2つ目以上)</label>　
+									<select name="op_key_cnt">
+										<option value="">--</option>
+										<?php for($i = 1; $i <= $select_cnt; $i++): ?>
+										<option value="<?php echo $i; ?>"<?php echo (isset($set_data['op_key_cnt']) && $set_data['op_key_cnt'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+										<?php endfor; ?>
+									</select>
+								</li>
+								<?php endif; ?>
+								<?php if($option_array[$option['op_build_flg']]): ?>
+								<li class="lo">
+									<input type="checkbox" name="op_build" value="ビル用セキュリティカード（2つ目以上）" <?php echo (isset($set_data['op_build']))? 'checked':''; ?> id="checkbox03" />
+									<label for="checkbox03" class="checkbox">ビル用セキュリティカード (2つ目以上)</label>　
+									<select name="op_build_cnt">
+										<option value="">--</option>
+										<?php for($i = 1; $i <= $select_cnt; $i++): ?>
+										<option value="<?php echo $i; ?>"<?php echo (isset($set_data['op_build_cnt']) && $set_data['op_build_cnt'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+										<?php endfor; ?>
+									</select>
+								</li>
+								<?php endif; ?>
+								<?php if($option_array[$option['op_security_flg']]): ?>
+								<li class="lo">
+									<input type="checkbox" name="op_security" value="セキュリティカード（2つ目以上）" <?php echo (isset($set_data['op_security']))? 'checked':''; ?> id="checkbox04" />
+									<label for="checkbox04" class="checkbox">セキュリティカード (2つ目以上)</label>　
+									<select name="op_security_cnt">
+										<option value="">--</option>
+										<?php for($i = 1; $i <= $select_cnt; $i++): ?>
+										<option value="<?php echo $i; ?>"<?php echo (isset($set_data['op_security_cnt']) && $set_data['op_security_cnt'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+										<?php endfor; ?>
+									</select>
+								</li>
+								<?php endif; ?>
+							</ul>
+						</dd>
+					</dl>
+
+					<dl>
+						<dt class="box1">毎月の費用</dt>
+						<dd class="box2">
+							<p class="estNote txtred">※電話、FAX、共用部社名看板は別途初期費用がかかります。</p>
+
+							<ul class="eat01form02 clearfix">
+								<?php if($option_array[$option['op_rental_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_rental" value="レンタル家具" <?php echo (isset($set_data['op_rental']))? 'checked':''; ?> id="checkboxB01" />
+									<label for="checkboxB01" class="checkbox">レンタル家具</label>
+									<select name="op_rental_cnt">
+										<option value="">--</option>
+										<?php for($i = 1; $i <= $select_cnt; $i++): ?>
+										<option value="<?php echo $i; ?>"<?php echo (isset($set_data['op_rental_cnt']) && $set_data['op_rental_cnt'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+										<?php endfor; ?>
+									</select>
+								</li>
+								<?php endif; ?>
+								<?php if($option_array[$option['op_tel_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_tel" value="電話" <?php echo (isset($set_data['op_tel']))? 'checked':''; ?> id="checkboxB02" />
+									<label for="checkboxB02" class="checkbox">電話</label>
+									<select name="op_tel_cnt">
+										<option value="">--</option>
+										<?php for($i = 1; $i <= $select_cnt; $i++): ?>
+										<option value="<?php echo $i; ?>"<?php echo (isset($set_data['op_tel_cnt']) && $set_data['op_tel_cnt'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+										<?php endfor; ?>
+									</select>
+								</li>
+								<?php endif; ?>
+								<?php if($option_array[$option['op_fax_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_fax" value="FAX" <?php echo (isset($set_data['op_fax']))? 'checked':''; ?> id="checkboxB03" />
+									<label for="checkboxB03" class="checkbox">FAX</label>
+									<select name="op_fax_cnt">
+										<option value="">--</option>
+										<?php for($i = 1; $i <= $select_cnt; $i++): ?>
+										<option value="<?php echo $i; ?>"<?php echo (isset($set_data['op_fax_cnt']) && $set_data['op_fax_cnt'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+										<?php endfor; ?>
+									</select>
+								</li>
+								<?php endif; ?>
+								<?php if($option_array[$option['op_answer_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_answer" value="電話応対" <?php echo (isset($set_data['op_answer']))? 'checked':''; ?> id="checkboxB04" />
+									<label for="checkboxB04" class="checkbox">電話応対</label>
+								</li>
+								<?php endif; ?>
+								<?php if($option_array[$option['op_board_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_board" value="共用部社名看板" <?php echo (isset($set_data['op_board']))? 'checked':''; ?> id="checkboxB05" />
+									<label for="checkboxB05" class="checkbox">共用部社名看板</label>
+								</li>
+								<?php endif; ?>
+								<?php if($option_array[$option['op_locker_flg']]): ?>
+								<li>
+									<input type="checkbox" name="op_locker" value="貸しロッカー" <?php echo (isset($set_data['op_locker']))? 'checked':''; ?> id="checkboxB06" />
+									<label for="checkboxB06" class="checkbox">貸しロッカー</label>
+								</li>
+								<?php endif; ?>
+							</ul>
+						</dd>
+					</dl>
+
+					<h3>オフィスの契約期間をご設定下さい。</h3>
+					<div class="period clearfix">
+						<?php if($data['period_flg'] != 0): ?>
+						<p id="periodDis">ご利用可能期間：<?php echo $date; ?></p>
+						<p class="priodSelect">※上記の期間からお選びください。</p>
+						<?php endif; ?>
+						<div class="periodBox">
+						<p>
+							利用開始年月日：<select name="year">
+								<option value="">--</option>
+								<?php for($i = 2015; $i <= 2020; $i++): ?>
+								<option value="<?php echo $i; ?>"<?php echo (isset($set_data['year']) && $set_data['year'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+								<?php endfor; ?>
+							</select>
+							年
+							<select name="month">
+								<option value="">--</option>
+								<?php for($i = 1; $i <= 12; $i++): ?>
+								<option value="<?php echo $i; ?>"<?php echo (isset($set_data['month']) && $set_data['month'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+								<?php endfor; ?>
+							</select>
+							月
+							<select name="day">
+								<option value="">--</option>
+								<?php for($i = 1; $i <= 31; $i++): ?>
+								<option value="<?php echo $i; ?>"<?php echo (isset($set_data['day']) && $set_data['day'] == $i)? ' selected':''; ?>><?php echo $i; ?></option>
+								<?php endfor; ?>
+							</select>日
+						</p>
+						<p id="periodUse">利用期間：</p>
+						<ul class="eat01form03">
+							<li>
+								<input type="radio" name="use_month" value="1" <?php echo (empty($_POST) || $set_data['use_month'] == 1)? 'checked':''; ?> id="radio01" />
+								<label for="radio01" class="radio">1ヶ月</label>
+							</li>
+							<li>
+								<input type="radio" name="use_month" value="6" <?php echo ($set_data['use_month'] == 6)? 'checked':''; ?> id="radio02" />
+								<label for="radio02" class="radio">6ヶ月</label>
+							</li>
+							<li>
+								<input type="radio" name="use_month" value="12" <?php echo ($set_data['use_month'] == 12)? 'checked':''; ?> id="radio03" />
+								<label for="radio03" class="radio">12ヶ月</label></li><li>
+								<input type="radio" name="use_month" value="24" <?php echo ($set_data['use_month'] == 24)? 'checked':''; ?> id="radio04" />
+								<label for="radio04" class="radio">24ヶ月</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<?php if(empty($err)): ?>
+				<p class="mgT40"><input type="submit" name="btn_submit" value="" class="est01submit" /></p>
+				<?php endif; ?>
+
+				</form>
+			</div><!--////-->
+		</div><!--/estDynaIn//-->
+	</div><!--/estDyna//-->
+</div>
+<!--#include virtual="/OPENOFFICE/ssi/leftnavi.html" -->
+<!--#include virtual="/OPENOFFICE/ssi/footer.html" -->
+<!--#include virtual="/OPENOFFICE/ssi/accesslogger.html" -->
+</div>
+<!--#include virtual="/OPENOFFICE/ssi/footertag.html" -->
+</body>
+</html>

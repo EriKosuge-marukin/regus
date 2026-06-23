@@ -1,0 +1,11 @@
+
+
+Options +Includes
+AddHandler server-parsed .html
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !/openoffice/sp/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|iPad|Android|Windows\ Phone)
+RewriteRule ^(.*)$ openoffice/sp/$1 [R]
+RewriteBase /

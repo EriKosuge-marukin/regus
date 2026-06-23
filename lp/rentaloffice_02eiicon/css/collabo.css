@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/* CSS Document */
+/*________section01Collabo____________________________________*/
+#section01Collabo{
+	width:100%;
+	background:#f4f4f5 url(/lp/rentaloffice_02eiicon/images/collabo_bg.png) top center no-repeat;
+	text-align:center;
+	padding:0;
+	height:890px;
+	position:relative;
+}
+/*#section01Collabo .hd{
+	width:100%;
+	background-color: rgba( 255, 255, 255, 0.55 );
+	height:239px;
+}*/
+#section01Collabo .in{
+	width:980px;
+margin:0 auto;
+position:relative;
+text-align:left;
+}
+#section01Collabo .in h1{
+	text-align:center;
+	font-size:39px;
+	margin:0 auto;
+	line-height:1.0em;
+	color:#ffffff;
+	font-weight:bold;
+}
+#section01Collabo .in h1 span{
+	font-size:20px;
+	color:#ffffff;
+}
+#section01Collabo .in p:nth-child(2){
+	position:absolute;
+	top:-5px;
+	right:0px;
+	    /*border-radius: 3px;       
+    -webkit-border-radius: 3px;  
+    -moz-border-radius: 3px; 
+background:#fff;
+border:#393939 1px solid;
+color:#39393;
+font-size:80%;
+font-weight:bold;
+padding:5px 10px;
+width:300px;
+text-align:center;*/
+}
+#section01Collabo .in p:nth-child(3){
+	/*position:absolute;
+	top:-5px;
+	right:0px;
+	width:123px;
+	height:140px;*/
+	position:absolute;
+	/*margin:56px 0 17px 0;*/
+	top:168px;
+	left:146px;
+	}
+
+#section01Collabo .in h2{
+background: url(/lp/rentaloffice_02eiicon/images/collabo_top_h1.png) top center no-repeat;
+position:absolute;
+top:345px;
+left:180px;
+width:753px;
+height:70px;
+text-indent:-9999px;
+
+}
+#section01Collabo .in .topSc{
+	text-align:left;
+	display:block;
+	position:absolute;
+	top:490px;
+}
+#section01Collabo .in .topSc p{
+	margin-bottom:10px;
+	font-weight:bold;
+}
+#section01Collabo .in .topSc p span{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	border-radius: 18px;       
+    -webkit-border-radius:18px;  
+    -moz-border-radius: 18x; 
+	font-size:95%;
+	color:#fff;
+	font-weight:bold;
+	background:#e20d3c;
+	line-height:1.0;
+	padding:4px 10px;
+	margin-right:10px;
+	
+}
+#section01Collabo .in .topSc .topBl {
+	position:relative;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-o-box-sizing: border-box;
+-ms-box-sizing: border-box;
+	border-radius: 5px;       
+    -webkit-border-radius: 5px;  
+    -moz-border-radius: 5px; 
+background:#000;
+border:#000 1px solid;
+color:#fff;
+font-size:80%;
+font-weight:bold;
+width:672px;
+padding:10px 0;
+text-align:center;
+overflow:hidden;
+}
+#section01Collabo .in .topSc .topBl .flL{
+	width:49px;
+	margin-left:25px;}
+#section01Collabo .in .topSc .topBl .flR{
+	width:560px;
+	margin-right:15px;
+	}
+#section01Collabo .in .topSc .topBl .flR ul {
+	text-align:left;
+	margin:5px 0 0px 0;
+}
+#section01Collabo .in .topSc .topBl .flR ul li{
+	background:url(../images/collabo_icon_01.png) 0 0 no-repeat;
+	padding:0px 25px 15px 15px;
+	display:inline-block;
+}
+
+#section01Collabo .in .topSc .topBl .flR ul.eiicon li{
+	background:url(../images/collabo_icon_01.png) 0 0 no-repeat;
+	padding:0px 25px 15px 15px;
+	display:inline-block;
+}
+#section01Collabo .in .topSc .topBl .flR ul.eiicon li:first-child,
+#section01Collabo .in .topSc .topBl .flR ul.eiicon li:nth-child(3){
+	width:280px;
+}
+#section01Collabo .in .topSc .topBl .flR ul.eiicon li:last-child{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#section01Collabo .in .topSc .topBl .flR ul li:nth-child(2),
+#section01Collabo .in .topSc .topBl .flR ul li:nth-child(5),
+#section01Collabo .in .topSc .topBl .flR ul li:nth-child(7){
+	width:270px;
+}
+#section01Collabo .in .topSc .topBl .flR ul li span,#section01Collabo .in .topSc .topBl .flR ul .eiicon li span{
+	font-size:80%;
+}
+#section01Collabo .in .topSc .topBl .flR dl {
+border-top:1px #333 solid;
+padding-top:10px;
+margin:0;
+	/*width:70%;*/
+	}
+#section01Collabo .in .topSc .topBl .flR dt {
+	float:left;	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	line-height:1.5;font-size:95%;
+	text-align:left;
+	width:360px;
+	margin-left:0px;
+	 /*border-right:3px #fff solid;*/text-align:left; 
+	}
+#section01Collabo .in .topSc .topBl .flR dd {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	border-radius: 5px;       
+    -webkit-border-radius: 5px;  
+    -moz-border-radius: 5px; 
+	font-size:98%;
+	line-height:1.3;
+	color:#000;
+	 margin: 10px 0 0 370px;
+	 padding:8px 10px;
+	  width:180px;
+	  background:#cccccc;
+	}	
+#enterp{
+	text-align:center;
+	margin:150px auto;
+}
+#enterp h2{
+	text-align:left;
+	font-size:240%;
+line-height:1.3;
+ letter-spacing: -0.05em;
+/*font-weight:bold;*/
+margin:0 0 30px 0;
+font-weight:bold;}
+#enterp h2 span{
+	font-weight:bold;
+	color:#e40037;
+}
+#enterp p:nth-child(2){
+	font-size:130%;
+	line-height:1.9;
+}
+#enterp p:nth-child(3){
+	margin:74px auto 24px auto;
+	font-size:140%;
+	font-weight:bold;
+}
+#enterp #enterp2{
+	line-height:0;
+	margin:111px 0 0 0;
+}
+#enterp #enterp2 p{
+margin:0;
+padding:0;
+}
+#enterp #enterp2 ul{
+	margin:0
+}
+#enterp #enterp2 ul li{
+	float:left;
+	margin:0;
+}
+#enterp #enterp2 ul li:first-child{
+	margin-right:22px;
+}

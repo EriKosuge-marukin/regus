@@ -1,0 +1,525 @@
+@charset "UTF-8";
+#slideWrap {
+  padding: 10px 0 30px 0; }
+  @media screen and (max-width: 768px) {
+    #slideWrap {
+      margin: 0 auto;
+      padding: 10px 0 15px 0; } }
+  #slideWrap #sliderMAIN, #slideWrap #thumbnailMAIN_slider {
+    width: 100%;
+    margin: 0 auto 10px 0; }
+  #slideWrap #sliderMAIN .slide-item img {
+    width: 100%; }
+  #slideWrap #sliderMAIN .slide-item p {
+    margin: 3px 0 5px 0; }
+    @media screen and (max-width: 768px) {
+      #slideWrap #sliderMAIN .slide-item p {
+        margin: 3px 0 0 0; } }
+  #slideWrap #thumbnailMAIN_slider .thumbnail-item img {
+    width: 98%;
+    margin: 0 auto; }
+  #slideWrap .slick-next, #slideWrap .slick-prev {
+    position: absolute;
+    z-index: 1000 !important;
+    top: 32% !important;
+    width: 20px !important;
+    height: 20px !important; }
+    @media screen and (max-width: 768px) {
+      #slideWrap .slick-next, #slideWrap .slick-prev {
+        top: 34% !important;
+        width: 15px !important;
+        height: 15px !important; } }
+  #slideWrap .slick-next {
+    right: -20px; }
+    @media screen and (max-width: 768px) {
+      #slideWrap .slick-next {
+        right: -10px; } }
+  #slideWrap .slick-prev {
+    left: -20px; }
+    @media screen and (max-width: 768px) {
+      #slideWrap .slick-prev {
+        left: -10px; } }
+
+.offceInfo dl {
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+  @media screen and (max-width: 768px) {
+    .offceInfo dl {
+      display: block; } }
+  .offceInfo dl dt {
+    width: 60px;
+    padding: 1px 0;
+    margin: 0 10px 0 0;
+    font-size: 90%;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .offceInfo dl dt {
+        font-size: 120%;
+        width: 40%;
+        text-align: center;
+        margin: 10px auto 10px auto; } }
+    .offceInfo dl dt .itemName {
+      color: #e40037;
+      border: 1px solid #e40037;
+      border-radius: 5px; }
+      @media screen and (max-width: 768px) {
+        .offceInfo dl dt .itemName {
+          text-align: center;
+          padding: 5px 0; } }
+  .offceInfo dl dd {
+    width: calc( 100% - 70px); }
+    @media screen and (max-width: 768px) {
+      .offceInfo dl dd {
+        width: 100%; } }
+    .offceInfo dl dd p.wline {
+      border-top: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding: 5px 0;
+      margin: 0 0 10px; }
+    .offceInfo dl dd #rail {
+      display: block; }
+      .offceInfo dl dd #rail li {
+        margin-bottom: 3px;
+        background: url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+        padding-left: 15px; }
+    .offceInfo dl dd #type {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin-bottom: 20px; }
+      @media screen and (max-width: 768px) {
+        .offceInfo dl dd #type {
+          flex-wrap: wrap; } }
+      .offceInfo dl dd #type li {
+        text-align: center;
+        color: #fff;
+        width: 16%;
+        vertical-align: middle;
+        font-size: 100%;
+        line-height: 1.2;
+        /*display:inline-block;*/
+        margin: 0 5px 5px 0; }
+        @media screen and (max-width: 768px) {
+          .offceInfo dl dd #type li {
+            width: 31%;
+            font-size: 90%;
+            margin: 0 3px 5px 0; } }
+        .offceInfo dl dd #type li a {
+          position: relative;
+          border-radius: 5px;
+          width: 100%;
+          padding: 15px 0;
+          color: #fff;
+          display: block; }
+          .offceInfo dl dd #type li a:hover {
+            text-decoration: none;
+            opacity: 0.7; }
+          .offceInfo dl dd #type li a.nono {
+            opacity: 1 !important; }
+          .offceInfo dl dd #type li a::after {
+            position: absolute;
+            content: "";
+            top: 50%;
+            right: 0px;
+            width: 12px;
+            height: 12px;
+            background: url("/detail/images/shibuya_koen/plan_arrow_icon.png") top left no-repeat;
+            background-size: 10px 10px; }
+          .offceInfo dl dd #type li a#service_rental_office {
+            border: 1px solid #2c8517;
+            background: #2c8517;
+            background: linear-gradient(0deg, #2c8517 0%, #629a32 96%); }
+          .offceInfo dl dd #type li a#service_coworking {
+            border: 1px solid #ff0000;
+            background: #950000;
+            background: linear-gradient(0deg, #950000 0%, #f0452b 100%); }
+          .offceInfo dl dd #type li a#service_rental_kaigisitsu {
+            border: 1px solid #eab83f;
+            background: #957800;
+            background: linear-gradient(0deg, #957800 0%, #f0de2b 100%); }
+          .offceInfo dl dd #type li a#service_vertual {
+            border: 1px solid #2b8082;
+            background: #2b8082;
+            background: linear-gradient(0deg, #2b8082 0%, #49bbcc 100%); }
+          .offceInfo dl dd #type li a#service_business_world {
+            border: 1px solid #f3628e;
+            background: #e3006f;
+            background: linear-gradient(0deg, #e3006f 0%, #ff5c98 100%); }
+          .offceInfo dl dd #type li a#service_com_meeting_r {
+            border: 1px solid #32841c;
+            background: #16320a;
+            background: linear-gradient(0deg, #16320a 0%, #187c27 100%);
+            font-size: 10px;
+            line-height: 1.6;
+            cursor: none; }
+            @media screen and (max-width: 768px) {
+              .offceInfo dl dd #type li a#service_com_meeting_r {
+                font-size: 10px;
+                line-height: 1.4;
+                letter-spacing: -1px; } }
+            .offceInfo dl dd #type li a#service_com_meeting_r::after {
+              background: none; }
+
+.features {
+  margin: 40px auto;
+  background: #efefef;
+  padding: 35px 0px 35px 120px; }
+  @media screen and (max-width: 768px) {
+    .features {
+      padding: 20px 20px; } }
+  .features .feaTtl {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .features .feaTtl {
+        font-size: 18px; } }
+  .features .gray li {
+    /*background:url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+padding-left:15px;*/
+    margin-bottom: 10px;
+    text-indent: -2.7em;
+    padding-left: 2.7em; }
+    @media screen and (max-width: 768px) {
+      .features .gray li {
+        margin-bottom: 15px; } }
+    .features .gray li span {
+      text-indent: 0em;
+      padding-left: 0em;
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      height: 28px;
+      width: 28px;
+      line-height: 28px;
+      margin-right: 7px;
+      vertical-align: middle; }
+
+.contactArea {
+  border: #eee solid 3px;
+  padding: 20px;
+  margin: 40px 0;
+  border-radius: 5px; }
+  @media screen and (max-width: 768px) {
+    .contactArea {
+      margin: 0  auto;
+      width: 80%; } }
+  .contactArea .aboutOffice {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .contactArea .aboutOffice {
+        font-size: 18px; } }
+  .contactArea ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .contactArea ul {
+        display: block; } }
+    .contactArea ul li {
+      text-align: center;
+      width: 45%;
+      margin-right: 2%; }
+      @media screen and (max-width: 768px) {
+        .contactArea ul li {
+          width: 100%;
+          margin: 5px auto;
+          margin-right: 0; } }
+      .contactArea ul li:last-child {
+        margin-right: 0%; }
+      .contactArea ul li .btnLinks {
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center; }
+        .contactArea ul li .btnLinks a {
+          color: #fff !important;
+          vertical-align: middle;
+          font-size: 120%;
+          line-height: 1.3;
+          display: block;
+          padding: 1.5em 35px 1.5em 15px;
+          border-radius: 5px; }
+          .contactArea ul li .btnLinks a:hover {
+            color: #FFCE71;
+            text-decoration: none; }
+          .contactArea ul li .btnLinks a.btnLeft {
+            background: #e20035 url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_red.png") no-repeat;
+            background-size: 24px 24px;
+            background-position: 97% 50%; }
+          .contactArea ul li .btnLinks a.btnRight {
+            background: #44bfbc url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png") no-repeat;
+            background-size: 24px 24px;
+            background-position: 97% 50%; }
+  .contactArea .tel {
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-top: 30px; }
+    @media screen and (max-width: 768px) {
+      .contactArea .tel {
+        width: 100%;
+        margin-top: 18px; } }
+    .contactArea .tel span {
+      display: block; }
+      .contactArea .tel span.num {
+        color: #e41d3a;
+        font-size: 210%;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.01em; }
+        .contactArea .tel span.num:before {
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+          padding-left: 5px; }
+      .contactArea .tel span.note {
+        font-size: 76%; }
+
+.sideNav.fixed {
+  position: fixed;
+  top: 80px;
+  right: 2%;
+  z-index: 90;
+  width: 235px; }
+  @media screen and (max-width: 768px) {
+    .sideNav.fixed {
+      position: relative;
+      margin: 0 auto;
+      width: 90%; } }
+
+.sideNav .contactSIDE {
+  border: #eee solid 3px;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+  background: #fff; }
+  @media screen and (max-width: 768px) {
+    .sideNav .contactSIDE {
+      margin: 0  auto;
+      width: 90%;
+      margin-bottom: 10px; } }
+  .sideNav .contactSIDE .aboutOffice {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .sideNav .contactSIDE .aboutOffice {
+        font-size: 18px;
+        margin: 10px 0 10px 0; } }
+  .sideNav .contactSIDE ul {
+    display: block;
+    width: 98%;
+    margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .sideNav .contactSIDE ul {
+        width: 90%;
+        /*display: flex;justify-content: space-around;
+        flex-wrap: nowrap;*/ } }
+    .sideNav .contactSIDE ul li {
+      width: 100%;
+      margin: 5px auto;
+      margin-right: 0;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 10px; }
+      @media screen and (max-width: 768px) {
+        .sideNav .contactSIDE ul li {
+          font-size: 14px;
+          /*width:48%;
+	margin-right:2%;*/ } }
+      @media screen and (max-width: 768px) {
+        .sideNav .contactSIDE ul li:last-child {
+          margin-right: 0%; } }
+      .sideNav .contactSIDE ul li .btnLinks {
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center; }
+        .sideNav .contactSIDE ul li .btnLinks a {
+          color: #fff !important;
+          vertical-align: middle;
+          font-size: 120%;
+          line-height: 1.3;
+          display: block;
+          padding: 1.5em 35px 1.5em 15px;
+          border-radius: 5px; }
+          .sideNav .contactSIDE ul li .btnLinks a:hover {
+            color: #FFCE71;
+            text-decoration: none; }
+          .sideNav .contactSIDE ul li .btnLinks a.btnLeft {
+            background: #e20035 url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_red.png") no-repeat;
+            background-size: 24px 24px;
+            background-position: 97% 50%; }
+          .sideNav .contactSIDE ul li .btnLinks a.btnRight {
+            background: #44bfbc url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png") no-repeat;
+            background-size: 24px 24px;
+            background-position: 97% 50%; }
+
+.typeService .inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 768px) {
+    .typeService .inner {
+      display: block;
+      margin-bottom: 50px; } }
+  .typeService .inner .tab-group {
+    width: 200px; }
+    @media screen and (max-width: 768px) {
+      .typeService .inner .tab-group {
+        display: flex;
+        justify-content: center;
+        width: 100%; } }
+    .typeService .inner .tab-group .tab {
+      display: block;
+      padding: 15px 0;
+      list-style: none;
+      border: solid 1px #CCC;
+      border-radius: 5px;
+      margin: 5px 0;
+      color: #666;
+      background: #efefef;
+      text-align: center;
+      cursor: pointer;
+      /*&::after{content: " >";
+        font-size: 5px;
+        color: #ccc;
+    }*/ }
+      @media screen and (max-width: 768px) {
+        .typeService .inner .tab-group .tab {
+          font-size: 9px;
+          flex-grow: 1;
+          margin-bottom: 15px; } }
+  .typeService .inner .panel-group {
+    width: 550px; }
+    @media screen and (max-width: 768px) {
+      .typeService .inner .panel-group {
+        width: 100%; } }
+    .typeService .inner .panel-group .panel {
+      display: none;
+      margin-bottom: 0; }
+      .typeService .inner .panel-group .panel .svTtl {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 0.1em; }
+      .typeService .inner .panel-group .panel .svText {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 14px; }
+  .typeService .inner .tab.is-active {
+    position: relative;
+    background: #e00133;
+    border: solid 1px #e00133;
+    color: #FFF; }
+    @media screen and (max-width: 768px) {
+      .typeService .inner .tab.is-active {
+        border: solid 1px #e00133 !important; } }
+    .typeService .inner .tab.is-active::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -15px;
+      border: 15px solid transparent;
+      border-left: 12px solid #e00133; }
+      @media screen and (max-width: 768px) {
+        .typeService .inner .tab.is-active::before {
+          content: "";
+          position: absolute;
+          top: 120%;
+          left: 50%;
+          margin-left: -12px;
+          border: 12px solid transparent;
+          border-top: 12px solid #e00133; } }
+  .typeService .inner .panel.is-show {
+    display: block; }
+  .typeService .inner .slick-dots2 {
+    position: absolute;
+    bottom: -40px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+  .typeService .inner .slick-dots2 li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+  .typeService .inner .slick-dots2 li.slick-active
+button::before {
+    color: red; }
+  .typeService .inner .slick-dots2 li button {
+    background: transparent;
+    border: 0;
+    font-size: 0pt; }
+  .typeService .inner .slick-dots2 li button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 20px !important;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+    opacity: 0.25; }
+
+.typeService .slick-next, .typeService .slick-prev {
+  display: block;
+  height: 20px;
+  width: 16px;
+  color: #666;
+  top: 38%;
+  line-height: 0px;
+  z-index: 100;
+  background: #666;
+  border: 2px solid #666; }
+
+.typeService .slick-next {
+  right: -10px; }
+
+.typeService .slick-prev {
+  left: -10px; }
+
+.typeService .slick-dots li button:before {
+  content: "" !important;
+  height: 100% !important;
+  　width: 100% !important; }
+
+.typeService .slick-prev:before, .typeService .slick-next:before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px; }
+
+.svSlick {
+  opacity: 0;
+  transition: opacity 5s linear; }
+
+.svSlick.slick-initialized {
+  opacity: 1; }

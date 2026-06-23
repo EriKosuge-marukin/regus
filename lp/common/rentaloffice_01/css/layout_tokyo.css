@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+div#section01{
+	width:100%;
+	background:url(../images/main.jpg) top center no-repeat;text-align:center;
+}
+#sec01In{background:url(../images/a_bg_a.jpg) 0 0 no-repeat;
+position:relative;
+width:980px;
+min-height:550px;
+}
+
+	div#jumpMap{
+	position:relative;
+	padding:0;
+	text-align:center;height:70px;
+	/*background:url(../images/topwhite_bg.jpg) 0 0 no-repeat !important;*/
+	background:url(../images/bg_white.png) 0 0 no-repeat                !important;
+	width:980px;
+	margin-bottom:50px;
+}
+div#section02{
+	width:100%;
+	text-align:center;
+	background:none;
+	/*background:url(../images/second_tokyo.jpg) top center no-repeat;*/
+	/*position:relative;*//*padding-top:488px;*/
+	min-height:1550px;
+	
+	}

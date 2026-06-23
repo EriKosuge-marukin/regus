@@ -1,0 +1,1155 @@
+@charset "UTF-8";
+.map iframe {
+  max-width: 770px;
+  width: 100%; }
+
+/*----PC----*/
+@media screen and (min-width: 750px) {
+  .wrapper .office {
+    background-color: #e0e0e0;
+    margin: 30px 0; }
+
+  .wrapper .office .detail {
+    width: 420px;
+    float: left;
+    background: url(/common2/images/bg_dot.gif) repeat left top;
+    padding: 20px 0 0 15px;
+    min-height: 520px; }
+
+  .wrapper .office .detail dl {
+    margin: 0 0 10px; }
+
+  .wrapper .office .detail dl dt {
+    width: 60px;
+    float: left;
+    padding: 1px 0;
+    margin: 0 10px 0 0;
+    font-size: 90%;
+    text-align: center;
+    color: #e40037;
+    border: 1px solid #e40037;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px; }
+
+  .wrapper .office .detail dl dd {
+    width: 340px;
+    float: left; }
+
+  .wrapper .office .detail dl p.wline {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px 0;
+    margin: 0 0 10px;
+    width: 328px; }
+
+  .wrapper .office .detail .gray li {
+    background: url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+    padding-left: 15px; }
+
+  /*↓サービスアイコン　160721 amend-------------*/
+  .wrapper .office .detail .serviceR {
+    margin: 0; }
+
+  .wrapper .office .detail .serviceR li {
+    width: 100px;
+    height: 38px;
+    vertical-align: middle;
+    float: left;
+    font-size: 100%;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #bfd730;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    background: #bfd730;
+    /*display:inline-block;*/
+    margin: 0 5px 5px 0; }
+
+  /*アイコンリンク20170726*/
+  .wrapper .office .detail .serviceR li a {
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none; }
+
+  /*ここまで*/
+  .wrapper .office .detail .serviceR li#service_rental_office {
+    border: 1px solid #24b967;
+    background: #24b967; }
+
+  .wrapper .office .detail .serviceR li#service_coworking {
+    border: 1px solid #c778ce;
+    background: red; }
+
+  .wrapper .office .detail .serviceR li#service_rental_kaigisitsu {
+    border: 1px solid #eab83f;
+    background: #eab83f;
+    vertical-align: middle; }
+
+  .wrapper .office .detail .serviceR li#service_vertual {
+    border: 1px solid #098ef5;
+    background: #098ef5; }
+
+  .wrapper .office .detail .serviceR li#service_business_world {
+    border: 1px solid #f3628e;
+    background: #f3628e; }
+
+  .wrapper .office .detail .serviceR li#service_com_meeting_r {
+    border: 1px solid #32841c;
+    background: #32841c;
+    font-size: 68%;
+    line-height: 1.4; }
+
+  .wrapper .office .detail .serviceR li#service_coworking p,
+  .wrapper .office .detail .serviceR li p {
+    margin-top: 5px; }
+
+  .wrapper .office .detail .serviceR li#service_rental_kaigisitsu p {
+    margin-top: 12px; }
+
+  .wrapper .office .detail .serviceR li#service_com_meeting_r p {
+    margin-top: 8px; }
+
+  .wrapper .office .detail .serviceOPO {
+    margin: 0; }
+
+  /*↓サービスアイコン　OPEN OFFICE-------------*/
+  .wrapper .office .detail .serviceOPO li {
+    width: 100px;
+    height: 38px;
+    vertical-align: middle;
+    float: left;
+    font-size: 100%;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin: 0 5px 5px 0;
+    border: 1px solid #24b967;
+    background: #24b967; }
+
+  /*アイコンリンク20170726*/
+  .wrapper .office .detail .serviceOPO li a {
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none; }
+
+  /*ここまで*/
+  .wrapper .office .detail serviceOPO li#service_rental_office {
+    border: 1px solid #24b967;
+    background: #24b967; }
+
+  .wrapper .office .detail .serviceOPO li#service_coworking {
+    border: 1px solid #c778ce;
+    background: red;
+    vertical-align: middle; }
+
+  .wrapper .office .detail .serviceOPO li#service_rental_kaigisitsu {
+    border: 1px solid #eab83f;
+    background: #eab83f;
+    vertical-align: middle; }
+
+  .wrapper .office .detail .serviceOPO li#service_vertual {
+    border: 1px solid #098ef5;
+    background: #098ef5; }
+
+  .wrapper .office .detail .serviceOPO li#service_business_world {
+    border: 1px solid #f3628e;
+    background: #f3628e; }
+
+  .wrapper .office .detail .serviceOPO li p,
+  .wrapper .office .detail .serviceOPO li#service_coworking p {
+    margin-top: 5px; }
+
+  .wrapper .office .detail .serviceOPO li#service_rental_kaigisitsu p {
+    margin-top: 12px; }
+
+  div.busi_toku, div.b_a {
+    font-size: 0.84em; }
+
+  div.busi_toku {
+    margin: 0px 0px 17px 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 17px;
+    margin-left: 0px; }
+
+  .serviceOtl table {
+    width: 100%;
+    border-collapse: collapse; }
+
+  .serviceOtl table th {
+    width: 15%;
+    padding: 6px;
+    text-align: center;
+    vertical-align: middle;
+    /*topより変更200331*/
+    color: #ffffff;
+    background-color: #e40037;
+    border: 1px solid #cbcbcb;
+    font-size: 90%; }
+
+  .serviceOtl table td {
+    padding: 6px !important;
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    text-align: center;
+    font-size: 150%; }
+
+  .thumbnail ul {
+    width: 268px;
+    margin: 15px 0 0 0px; }
+
+  .thumbnail ul li {
+    /*float:left !important;*/
+    width: 268px;
+    margin: 0 0 15px 0; }
+
+  .thumbnail ul li:nth-child(2), .thumbnail ul li:nth-child(3) {
+    float: left;
+    width: 130px; }
+
+  .thumbnail ul li:nth-child(2) {
+    margin-right: 5px; }
+
+  /*↑160427 ADD-------------*/
+  .wrapper .office .detail .special li {
+    width: 104px;
+    float: left;
+    margin: 0 9px 5px 0; }
+
+  .wrapper .galleryA {
+    width: 335px;
+    float: left; }
+
+  .wrapper .galleryA .pic {
+    padding: 35px 0 5px;
+    text-align: center; }
+
+  .wrapper .galleryA .pic li {
+    display: none; }
+
+  .wrapper .galleryA .thumbBox {
+    width: 268px;
+    margin: 0 auto;
+    background-color: #e0e0e0; }
+
+  .wrapper .galleryA .thumb {
+    margin: 0 auto;
+    text-align: center; }
+
+  .wrapper .galleryA .thumb li {
+    width: 81px;
+    margin: 0 12px 5px 0;
+    float: left; }
+
+  .wrapper .galleryA .thumb li:nth-child(3n) {
+    margin-right: 0 !important; }
+
+  .wrapper .request {
+    text-align: center;
+    margin: 17px 0 0; }
+
+  .wrapper .contents .fee dl {
+    width: 181px;
+    float: left;
+    background-color: #dfddd7;
+    margin: 0 15px 0 0; }
+
+  .wrapper .contents .fee dl:nth-child(5) {
+    margin: 0; }
+
+  .wrapper .contents .fee dl dt {
+    text-align: center;
+    color: #000000;
+    padding: 10px 0; }
+
+  .wrapper .contents .fee dl dd {
+    color: #e40037;
+    text-align: center;
+    lien-height: 1.5; }
+
+  .wrapper .contents .fee dl dd p {
+    padding: 10px 0;
+    font-size: 110%;
+    font-weight: bold; }
+
+  .wrapper .contents .surround {
+    margin: 0 0 30px; }
+
+  .wrapper .contents .surround dl {
+    width: 246px;
+    float: left;
+    background-color: #dfddd7;
+    margin: 0 16px 11px 0; }
+
+  .wrapper .contents .surround dl:nth-child(3n) {
+    margin: 0 0 11px 0; }
+
+  .wrapper .contents .surround dl dd {
+    text-align: center;
+    lien-height: 1.5;
+    font-size: 100%;
+    color: #000000;
+    padding: 15px 0; }
+
+  .wrapper .contents .surround p {
+    margin: 15px 0 0; }
+
+  .wrapper .articles {
+    margin: 15px 0 0; }
+
+  .wrapper .articles li {
+    background: url(/common2/images/icn_red_circle.gif) no-repeat left 5px;
+    padding: 0 0 0 12px;
+    margin: 0 0 3px; }
+
+  .wrapper .facility .boxL {
+    width: 290px;
+    margin: 0 20px 0 0;
+    float: left; }
+
+  .wrapper .facility .boxR {
+    width: 460px;
+    margin: 15px 0 0;
+    float: right; }
+
+  .wrapper .map iframe {
+    height: 450px; }
+
+  .wrapper .staff .pic {
+    width: 251px;
+    margin: 0 19px 0 0;
+    float: left; }
+
+  .wrapper .staff .message {
+    width: 500px;
+    float: right; }
+
+  /*各拠点ページ上部画像20170606*/
+  .only_sp {
+    display: none; } }
+/*----SP----*/
+@media screen and (max-width: 750px) {
+  .wrapper .leadTxt {
+    margin: 4% 0 0; }
+
+  .wrapper .office {
+    background-color: #e0e0e0;
+    margin: 30px 0; }
+
+  .wrapper .office .detail {
+    background: url(/common2/images/bg_dot.gif) repeat left top;
+    padding: 3%; }
+
+  .wrapper .office .detail dl {
+    margin: 0 0 20px; }
+
+  .wrapper .office .detail dl dt {
+    width: 60px;
+    margin: 0 0 3%;
+    font-size: 90%;
+    text-align: center;
+    color: #e40037;
+    border: 1px solid #e40037;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px; }
+
+  .wrapper .office .detail dl p.wline {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px 0;
+    margin: 0 0 10px; }
+
+  .wrapper .office .detail .gray li {
+    background: url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+    padding-left: 15px; }
+
+  /*↓サービスアイコン　160721 amend-------------*/
+  .wrapper .office .detail .serviceR {
+    margin: 0; }
+
+  .wrapper .office .detail .serviceR li {
+    font-size: 80%;
+    width: 31%;
+    height: 38px;
+    vertical-align: middle;
+    float: left;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #bfd730;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    background: #bfd730;
+    /*display:inline-block;*/
+    margin: 0 3px 5px 0; }
+
+  .wrapper .office .detail .serviceR li a {
+    color: #fff;
+    text-decoration: none; }
+
+  .wrapper .office .detail .serviceR li#service_rental_office {
+    border: 1px solid #24b967;
+    background: #24b967; }
+
+  .wrapper .office .detail .serviceR li#service_coworking {
+    border: 1px solid #c778ce;
+    background: #c778ce; }
+
+  .wrapper .office .detail .serviceR li#service_rental_kaigisitsu {
+    border: 1px solid #eab83f;
+    background: #eab83f;
+    vertical-align: middle; }
+
+  .wrapper .office .detail .serviceR li#service_vertua {
+    border: 1px solid #098ef5;
+    background: #098ef5; }
+
+  .wrapper .office .detail .serviceR li#service_business_world {
+    border: 1px solid #f3628e;
+    background: #f3628e; }
+
+  .wrapper .office .detail .serviceR li#service_com_meeting_r {
+    border: 1px solid #32841c;
+    background: #32841c;
+    font-size: 50% !important; }
+
+  .wrapper .office .detail .serviceR li#service_coworking p,
+  .wrapper .office .detail .serviceR li p {
+    /*margin-top:5px;*/
+    padding: 6px 0; }
+
+  .wrapper .office .detail .serviceR li#service_rental_kaigisitsu p {
+    /*margin-top:12px;*/
+    padding: 13px 0; }
+
+  .wrapper .office .detail .serviceR li#service_com_meeting_r p {
+    margin-top: 4px; }
+
+  .wrapper .office .detail .serviceOPO {
+    margin: 0; }
+
+  /*↓サービスアイコン　OPEN OFFICE-------------*/
+  .wrapper .office .detail .serviceOPO li {
+    font-size: 80%;
+    width: 31%;
+    height: 38px;
+    vertical-align: middle;
+    float: left;
+    line-height: 1.2;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    margin: 0 3px 5px 0;
+    border: 1px solid #24b967;
+    background: #24b967; }
+
+  .wrapper .office .detail .serviceOPO li a {
+    color: #fff;
+    text-decoration: none; }
+
+  .wrapper .office .detail serviceOPO li#service_rental_office {
+    border: 1px solid #24b967;
+    background: #24b967; }
+
+  .wrapper .office .detail .serviceOPO li#service_coworking {
+    border: 1px solid red;
+    background: red;
+    vertical-align: middle; }
+
+  .wrapper .office .detail .serviceOPO li#service_rental_kaigisitsu {
+    border: 1px solid #eab83f;
+    background: #eab83f;
+    vertical-align: middle; }
+
+  .wrapper .office .detail .serviceOPO li#service_vertual {
+    border: 1px solid #098ef5;
+    background: #098ef5; }
+
+  .wrapper .office .detail .serviceOPO li#service_business_world {
+    border: 1px solid #f3628e;
+    background: #f3628e; }
+
+  .wrapper .office .detail .serviceOPO li p,
+  .wrapper .office .detail .serviceOPO li#service_coworking p {
+    margin-top: 5px; }
+
+  .wrapper .office .detail .serviceOPO li#service_rental_kaigisitsu p {
+    margin-top: 12px; }
+
+  /*__________________________________*/
+  div.busi_toku, div.b_a {
+    font-size: 0.84em; }
+
+  div.busi_toku {
+    margin: 0px 0px 17px 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 17px;
+    margin-left: 0px; }
+
+  .serviceOtl table {
+    width: 100%;
+    border-collapse: collapse; }
+
+  .serviceOtl table th {
+    display: none;
+    /*width: 15%;
+    padding: 3px 3px;
+    text-align:left;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #e40037;
+    border: 1px solid #cbcbcb;
+    font-size:90%;*/ }
+
+  .serviceOtl table td {
+    display: block;
+    padding: 0px  9px !important;
+    background-color: #fff;
+    border-width: 0 0 1px 0;
+    border-style: dashed;
+    border-color: #cbcbcb;
+    text-align: left;
+    font-size: 150%; }
+
+  /* 最初の項目に背景色を付ける */
+  .serviceOtl table td:before {
+    color: #F7171B !important;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 70% !important;
+    margin-right: 2px; }
+
+  .serviceOtl table td:nth-child(1):before {
+    content: '駅直結：'; }
+
+  .serviceOtl table td:nth-child(2):before {
+    content: 'バーチャルオフィス：'; }
+
+  .serviceOtl table td:nth-child(3):before {
+    content: '駐車場完備：'; }
+
+  .serviceOtl table td:nth-child(4):before {
+    content: 'トイレ室外：'; }
+
+  .serviceOtl table td:nth-child(5):before {
+    content: '駅3分以内：'; }
+
+  .serviceOtl table td:nth-child(6):before {
+    content: 'ビル内コンビニ有：'; }
+
+  .serviceOtl table tr:nth-child(4) td:nth-child(1):before {
+    content: 'ビル内カフェ：'; }
+
+  .serviceOtl table tr:nth-child(4) td:nth-child(2):before {
+    content: '喫煙所完備：'; }
+
+  .serviceOtl table tr:nth-child(4) td:nth-child(3):before {
+    content: '受付サービス：'; }
+
+  .serviceOtl table tr:nth-child(4) td:nth-child(4):before {
+    content: 'ビジネスラウンジ有：'; }
+
+  .serviceOtl table tr:nth-child(4) td:nth-child(5):before {
+    content: 'テレビ会議システム：'; }
+
+  .serviceOtl table tr:nth-child(4) td:nth-child(6):before {
+    content: 'ハイグレードビル：'; }
+
+  .thumbnail ul {
+    width: 70%;
+    margin: 10px auto; }
+
+  .thumbnail ul li {
+    float: none;
+    margin: 0 0 10px 0; }
+
+  /*↑160427 ADD-------------*/
+  .wrapper .office .detail .service li:last-child {
+    margin: 0 0 2% 0; }
+
+  .wrapper .office .detail .special li {
+    width: 49%;
+    float: left;
+    margin: 0 2% 2% 0; }
+
+  .wrapper .office .detail .special li:nth-child(2n) {
+    margin: 0 0 2% 0; }
+
+  .wrapper .galleryA .pic {
+    text-align: center;
+    padding: 5% 5% 0; }
+
+  .wrapper .galleryA .pic li {
+    display: none; }
+
+  .wrapper .galleryA .thumbBox {
+    padding: 5%;
+    background-color: #e0e0e0; }
+
+  .wrapper .galleryA .thumb {
+    margin: 0 auto;
+    text-align: center; }
+
+  .wrapper .galleryA .thumb li {
+    width: 31.6%;
+    margin: 0 1% 2%;
+    float: left; }
+
+  .wrapper .galleryA .thumb li:nth-child(3n) {
+    margin-right: 0 !important; }
+
+  .wrapper .request {
+    margin: 3% 10% 0; }
+
+  .wrapper .contents .feeDl {
+    width: 49%;
+    float: left;
+    background-color: #dfddd7;
+    margin: 0 2% 2% 0; }
+
+  .wrapper .contents .feeDl:nth-child(odd) {
+    margin: 0 0 2% 0; }
+
+  .wrapper .contents .fee dl dt {
+    text-align: center;
+    color: #000000;
+    padding: 10px 0; }
+
+  .wrapper .contents .fee dl dd {
+    color: #e40037;
+    text-align: center;
+    lien-height: 1.5; }
+
+  .wrapper .contents .fee dl dd p {
+    padding: 10px 0;
+    font-size: 110%;
+    font-weight: bold; }
+
+  .wrapper .contents .surround {
+    margin: 0 0 5%; }
+
+  .wrapper .contents .surround dl {
+    width: 49%;
+    float: left;
+    background-color: #dfddd7;
+    margin: 0 2% 2% 0; }
+
+  .wrapper .contents .surround dl:nth-child(2n) {
+    margin: 0 0 2% 0; }
+
+  .wrapper .contents .surround dl:nth-child(3) {
+    margin: 0 2% 2% 0 !important; }
+
+  .wrapper .contents .surround dl dd {
+    text-align: center;
+    lien-height: 1.5;
+    font-size: 100%;
+    color: #000000;
+    padding: 15px 0; }
+
+  .wrapper .contents .surround p {
+    margin: 15px 0 0; }
+
+  .wrapper .contents .message {
+    margin: 5% 0 0; }
+
+  .wrapper .map iframe {
+    height: 250px; }
+
+  /*各拠点ページ上部画像20170606*/
+  /*各拠点ページ上部画像20170606*/
+  .only_sp {
+    margin-top: 16px; }
+
+  .only_sp_area {
+    margin-top: 0; }
+
+  /*.only_sp img{
+  	float: right;
+  	margin-left: 5px;
+  	width: 50%;
+  }
+  .only_sp:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  
+  .only_pc{
+  	display: none;
+  }
+  */ }
+/*______________モーダルウィンドウ//----*/
+/*171031___1106LC______________________________________________*/
+.linkArea ul {
+  margin-left: 0%;
+  overflow: hidden; }
+
+.linkArea ul li {
+  width: 49%;
+  float: left;
+  margin-right: 2%; }
+
+.linkArea ul li:last-child {
+  width: 49%;
+  margin-right: 0%; }
+
+.linkArea ul li .areaBtn {
+  border-radius: 5px;
+  padding: 5px 0 5px 2rem;
+  margin: 20px auto 0 auto;
+  border: none;
+  text-align: left;
+  box-shadow: 4px 3px 3px -2px #ededed;
+  -moz-box-shadow: 4px 3px 3px -2px #ededed;
+  -webkit-box-shadow: 4px 3px 3px -2px #ededed;
+  border: none;
+  text-align: left; }
+
+.linkArea ul li:first-child .areaBtn {
+  border-radius: 5px;
+  padding: 15px 0 15px 1em; }
+
+.linkArea ul li:last-child .areaBtn {
+  border-radius: 5px;
+  padding: 15px 0 15px 1em; }
+
+.areaBtn a {
+  color: #fff;
+  font-size: 130%;
+  margin-right: 5px;
+  line-height: 40px;
+  display: block;
+  height: 3rem; }
+
+.linkArea ul li .red, .linkAreaOne .red {
+  background: #e20035;
+  background: -moz-linear-gradient(top, #e20035 0%, #cc001e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e20035 0%, #cc001e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e20035 0%, #cc001e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e20035', endColorstr='#cc001e',GradientType=0 );
+  /* IE6-9 */ }
+
+.linkArea ul li .blue {
+  background: #44bfbc;
+  background: -moz-linear-gradient(top, #44bfbc 0%, #36b1ae 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #44bfbc 0%, #36b1ae 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #44bfbc 0%, #36b1ae 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44bfbc', endColorstr='#36b1ae',GradientType=0 );
+  /* IE6-9 */ }
+
+.linkAreaOne .black {
+  background: #e20035; }
+
+/*0320修正依頼のため*/
+.black, .red, .blue, .green {
+  position: relative; }
+
+.red:after, .black:after {
+  content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_red.png");
+  background-size: 28px 28px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px; }
+
+.blue:after {
+  content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png");
+  background-size: 28px 28px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px; }
+
+.green:after {
+  content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon.png");
+  background-size: 28px 28px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px; }
+
+.linkAreaOne {
+  width: 60%;
+  /*overflow:auto;*/
+  margin: 20px auto 0 auto !important; }
+
+.linkAreaOne .areaBtn {
+  text-align: left;
+  border-radius: 8px;
+  /*padding: 12px 2.5em 12px 2rem;*/
+  padding: 4px 12px;
+  /*追加*/
+  border: none;
+  text-align: center;
+  box-shadow: 4px 3px 3px -2px #ededed;
+  -moz-box-shadow: 4px 3px 3px -2px #ededed;
+  -webkit-box-shadow: 4px 3px 3px -2px #ededed;
+  border: none; }
+
+@media screen and (max-width: 750px) {
+  .linkArea ul li, .linkArea ul li:last-child {
+    width: 96%;
+    float: none;
+    margin: 15px auto 0 auto !important; }
+
+  .linkAreaOne {
+    width: 96%;
+    overflow: auto;
+    margin: 20px auto 0 auto !important; }
+
+  .linkAreaOne .areaBtn {
+    text-align: left;
+    /*padding: 12px 2em 12px 0.5rem;*/
+    padding: 0 0 0 12px; } }
+/*LC追加・エリアページへのリンクテキストが２行に渡る場合用*/
+.linkArea p.areaBtn,
+.linkAreaOne .areaBtn {
+  height: 2.6rem; }
+
+.linkArea p.areaBtn span,
+.linkAreaOne p.areaBtn span {
+  display: block;
+  line-height: 1rem;
+  width: 86%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: smaller; }
+
+@media screen and (max-width: 750px) {
+  .linkArea p.areaBtn span,
+  .linkAreaOne p.areaBtn span {
+    display: block;
+    line-height: 1rem;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: small; } }
+/*LC追加・ここまで*/
+/*20171206 オープンオフィス相互リンク用 LC追加*/
+p.to_opof a:link,
+p.to_opof a:visited,
+p.to_opof a:active {
+  text-decoration: none;
+  color: #098ef5; }
+
+@media screen and (min-width: 750px) {
+  p.to_opof {
+    text-align: right; } }
+@media screen and (max-width: 750px) {
+  p.to_opof {
+    text-align: left; } }
+/*20180118 スマホセンターページ説明文修正用*/
+@media screen and (max-width: 750px) {
+  .only_sp2 {
+    display: none; }
+
+  .sp_topm {
+    margin-top: 12px; } }
+.only_pc2 {
+  display: none; }
+
+.onhidden {
+  height: 6rem;
+  overflow-y: hidden;
+  /*font-size: 1rem;*/
+  font-size: 14px; }
+
+.maintoread {
+  position: relative;
+  z-index: 0;
+  /*font-size: 1rem;*/
+  font-size: 14px; }
+
+.onhidden {
+  height: 6rem;
+  overflow-y: hidden; }
+
+/*250327--------------------*/
+.maintoread .readmore {
+  position: absolute;
+  margin-top: 2rem;
+  padding-bottom: 8px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(180deg, rgba(255, 255, 255, 0.5), white 60%) repeat scroll 0 0;
+  text-align: right;
+  cursor: pointer;
+  z-index: 999; }
+
+.maintoread .readmore span {
+  border: solid 2px #333;
+  padding: 4px 6px;
+  border-radius: 8px;
+  /*padding:2px 8px 8px 4px;*/
+  background-color: #fff;
+  font-weight: bolder; }
+
+/*250327--------------------*/
+/**/
+.onhidden_area {
+  height: 0rem;
+  overflow-y: hidden;
+  /*font-size: 1rem;*/
+  font-size: 14px; }
+
+.maintoread_area {
+  position: relative;
+  z-index: 0;
+  /*font-size: 1rem;*/
+  font-size: 14px; }
+
+.readmore_area {
+  position: absolute;
+  margin-top: 2rem;
+  padding-bottom: 8px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(180deg, rgba(255, 255, 255, 0.5), white 60%) repeat scroll 0 0;
+  text-align: center;
+  cursor: pointer;
+  z-index: 999; }
+
+.readmore_area span {
+  border: solid 1px #e0e0e0;
+  padding: 4px 6px;
+  border-radius: 8px;
+  /*padding:2px 8px 8px 4px;*/
+  background-color: #fff;
+  font-weight: bolder; }
+
+/*ここまで*/
+/*ここから20180417 SP改修*/
+.area_escription {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.area_escription a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #666;
+  line-height: 1;
+  width: 30px;
+  height: 30px; }
+
+.area_escription .accordion {
+  display: block;
+  width: 40px;
+  font-size: 36px;
+  margin: 0 auto 2px;
+  line-height: 1;
+  color: #b1b1b1;
+  background: #fff;
+  cursor: pointer; }
+
+.accordion .accordion span {
+  display: block;
+  padding: 12px; }
+
+.accordion .accordion span.bg02 {
+  padding: 12px; }
+
+.area_escription ul.feature_area {
+  margin-top: 20px;
+  padding: 10px 0;
+  background: #fff;
+  list-style: none;
+  display: none; }
+
+.area_escription li {
+  max-height: 100px; }
+
+.btnBoxB_area {
+  margin: 0;
+  padding: 0; }
+
+.btnBoxB_area {
+  background-color: #417dd9; }
+
+.btnBoxB_area p {
+  display: block;
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 1rem;
+  float: left; }
+
+.btnBoxB_area p.green_area {
+  background-color: #44bfbc; }
+
+.btnBoxB_area p.blue_area {
+  background-color: #417dd9; }
+
+.btnBoxB_area p a {
+  color: #fff; }
+
+/*ここまで*/
+/*180314--------*/
+.linkAreaB ul {
+  overflow: hidden; }
+
+.linkAreaB ul li {
+  width: 45%;
+  float: left;
+  margin-right: 2%; }
+
+.linkAreaB ul li:last-child {
+  margin-right: 0%; }
+
+.linkAreaB ul {
+  margin-left: 8%; }
+
+.linkAreaB .btnLinks {
+  padding: 0.7em 35px 0.7em 15px;
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: left; }
+
+.linkAreaB #btnLeft {
+  background: #e20035 url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_red.png") no-repeat;
+  background-size: 24px 24px;
+  background-position: 97% 50%; }
+
+/*0320修正依頼#222より変更*/
+.linkAreaB #btnRight {
+  background: #44bfbc url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png") no-repeat;
+  background-size: 24px 24px;
+  background-position: 97% 50%; }
+
+/*0320修正依頼#222より変更*/
+.linkAreaB .btnLinks a {
+  color: #fff !important;
+  vertical-align: middle;
+  font-size: 96%;
+  line-height: 1.3;
+  display: block; }
+
+.linkAreaB .btnLinks a:hover {
+  color: #FFCE71; }
+
+@media screen and (max-width: 768px) {
+  .linkAreaB ul {
+    margin: 0  auto;
+    width: 90%; }
+
+  .linkAreaB ul li, .linkAreaB ul li:last-child {
+    float: none;
+    width: 100%;
+    margin: 5px 0; }
+
+  .linkAreaB .btnLinks a {
+    font-size: 90%;
+    line-height: 1.3; } }
+/*-------250327---------*/
+.float-button__wrap {
+  width: 250px;
+  height: 65px;
+  line-height: 65px;
+  position: fixed;
+  margin: auto;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  z-index: 10; }
+  @media screen and (max-width: 768px) {
+    .float-button__wrap {
+      bottom: 85px !important;
+      height: 40px;
+      line-height: 40px; } }
+
+.float-button__wrap a {
+  font-size: 20px;
+  display: block !important;
+  border: #fff 4px solid;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 9999px;
+  vertical-align: middle; }
+  .float-button__wrap a span {
+    display: block; }
+  @media screen and (max-width: 768px) {
+    .float-button__wrap a {
+      font-size: 16px; } }
+
+.arrow_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 0 0;
+  position: relative; }
+
+.prev-arrow,
+.next-arrow {
+  display: block;
+  width: 50px !important;
+  height: 50px !important;
+  background: #333;
+  border-radius: 50%;
+  transition: all .3s ease;
+  cursor: pointer;
+  position: relative; }
+
+.prev-arrow {
+  transform: rotate(180deg);
+  margin-right: 20px; }
+
+.prev-arrow::before,
+.next-arrow::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #FFF;
+  border-top: 2px solid #FFF;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(45deg); }
+
+/*-------250327---------*/

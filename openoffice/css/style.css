@@ -1,0 +1,1946 @@
+@charset "utf-8";
+/* サイト共通スタイル定義 */
+
+body {
+    
+	/*background:#ffffff url(/openoffice/images/common/g_navi_bg.gif) 0 0 repeat-x;
+	 background-attachment:fixed;  */
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    color: #000000;
+	font-family: meiryo,Arial,Helvetica,sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+
+} /*全ページ共通スタイル　変更不可*/
+ul{list-style:none;padding:0;margin:0;}
+p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:normal;}
+
+/*以下全ページ共通スタイル*/
+/* p{font-size:10pt; line-height:12pt;} *基本テキスト*/
+/*.tabletext{font-size:85%; line-height:140%;} テーブル内テキストに使用*/
+.cap{font-size:80%; line-height:150%;} /*キャプション用*/
+a{line-height:140%; color:#2A8DBA; text-decoration:none;} /*リンクの指定*/
+a:hover{color:#FCA400; text-decoration:underline;} /*リンクオーバーの指定*/
+.mainmargin{margin:0px 30px 0px 30px;} /*コンテンツ内基本マージンの指定*/
+.indexmargin{margin:10px 10px 0px 10px;} /*コンテンツ内トップページマージンの指定*/
+
+#gotop {
+font-size:12px;
+color: #336699;
+text-align:right;
+margin:20px auto;
+}
+#gotop a {line-height:140%; color:#2A8DBA; text-decoration:none; text-align:right;} /*リンクの指定*/
+#gotop a:hover {color:#999999; text-decoration:underline; text-align:right;} /*リンクオーバーの指定*/
+
+#OPO_body {
+	position:relative;
+	/*width:996px;*/
+	width:1040px;
+	margin:0 auto;
+	/*background-image:url(/openoffice/images/common/sidemenu_back.gif);
+	background-position:top left;
+	background-repeat:repeat-y;*/
+	/*overflow:hidden;*/
+	visibility: visible;
+}
+
+/* header block */
+
+#OPO_header {
+    /*overflow:hidden;*/
+   width:1040px;
+    height: 160px;
+/*width:996px;*/
+    background-color:#ffffff;
+    font-family: "Meiryo UI", Arial, Helvetica, sans-serif;
+	position: fixed;top: 0;
+	z-index:999;
+    
+}
+#OPO_header hr {
+    display:none;
+}
+#OPO_header_title {
+   /*height:91px;*/
+   height:73px;
+    width:1040px;
+	/*width:996px;*/
+    position:relative !important;
+    margin-bottom: 30px;
+}
+#OPO_header_title p#OPO_header_openoffice {
+	/*height:83px;
+    width:498px;
+    float:left;
+    margin:28px 0 0 22px;*/
+	position: absolute !important;
+	top: 30px;
+	left: 11px;
+	z-index: 3;
+	width: 180px;
+	height: 70px;
+}
+#OPO_header_title h1#OPO_header_openoffice {
+	position: absolute !important;
+	top: 29px;
+	left: 8px;
+	z-index: 3;
+	width: 187px;
+	height: 42px;
+}
+#OPO_header #OPO_header_toplink{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	position: absolute !important;
+	top: 7px;
+	left: 4px;
+	z-index: 100;
+	height: 20px;
+	bakground: #CCC;
+}
+
+#OPO_header #OPO_header_toplink h1{
+	left: 3px;
+}
+
+
+#OPO_header .OPO_header_tel{
+    display:block;
+    padding:0;
+	width:400;
+	/*background:url(../images/top_header_tel.jpg) right bottom no-repeat;*/
+	height:72px;
+	 text-indent: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+#OPO_header .OPO_header_contract{
+    float:right;
+    padding: 40px 0 0 0;
+    width: 660px;
+	text-align:right !important;
+}
+#OPO_header .OPO_header_contract ul {
+	display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+#OPO_header .OPO_header_contract ul li:first-child{
+	width:205px;
+	background:url(/openoffice/images/common/top_header_tel.gif) bottom left no-repeat;
+	height:52px;
+    /*height:57px;*/
+   overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+	
+}
+#OPO_header .OPO_header_contract ul li.btnA {
+	width: 196px;
+    margin-right: 4px;
+}
+#OPO_header .OPO_header_contract ul li.btnB {
+	width: 125px;
+    margin-right: 5px;
+}
+#OPO_header .OPO_header_contract ul li.btnB:last-child {
+    margin-right: 0px;
+}
+
+
+#OPO_header .OPO_header_contract ul li.btnA p a.red {
+    padding: 3px 0;
+     min-height: 25px;
+    width: 100%;
+	background:#d0372b;
+    display: block;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+#OPO_header .OPO_header_contract ul li.btnA p a.blue {
+    padding: 3px 0;
+    min-height: 25px;
+	background:#0097d5;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 3px;
+    position: relative;
+}
+#OPO_header .OPO_header_contract ul li.btnB a.green {
+    padding: 16px;
+    min-height: 52px;
+	background:#35a637;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+#OPO_header .OPO_header_contract ul li.btnB a.orange {
+    padding: 16px;
+    min-height: 52px;
+	background:#eb6100;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+#OPO_header .OPO_header_contract ul li.btnA p a::after,
+#OPO_header .OPO_header_contract ul li.btnB a::after{
+content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 3px 0 3px 5px;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -3px;
+}
+#OPO_header .OPO_header_contract ul li.btnA p a:hover,
+#OPO_header .OPO_header_contract ul li.btnB a:hover{
+    opacity: 0.8;
+}
+/*170910以前-------------------------*/
+#OPO_header ul#OPO_header_index {
+    display:block;
+    /*width:996px;*/
+	width:1040px;
+    height:51px;
+    overflow:hidden;
+    margin-bottom:20px;
+    padding:0;
+}
+#OPO_header ul#OPO_header_index li {
+    display:block;
+    width:173px;
+	/*width:166px;*/
+    height:51px;
+    float:left;
+    margin:0;
+    padding:0;
+}
+#OPO_header ul#OPO_header_index a {
+    display:block;
+   width:173px;
+	/*width:166px;*/
+    height:51px;
+    margin:0;
+    padding:0;
+    background-image:url(/openoffice/images/ind_mainnav_new.jpg);
+    background-repeat:no-repeat;
+    text-indent:-1000em;
+   /* overflow:hidden;*/
+}
+
+#OPO_header li#OPO_header_index1 a {
+    background-position: 0px 0px;
+}
+#OPO_header li#OPO_header_index2 a {
+    background-position: -173px 0px;
+}
+#OPO_header li#OPO_header_index4 a {
+    background-position: -519px 0px;
+}
+#OPO_header li#OPO_header_index3 a {
+    background-position: -346px 0px;
+}
+#OPO_header li#OPO_header_index5 a {
+    background-position: -692px 0px;
+}
+#OPO_header li#OPO_header_index6 a {
+    background-position: -865px 0px;width:175px;
+}
+#OPO_header li#OPO_header_index1 a:hover {
+    background-position: 0px -51px;
+}
+#OPO_header li#OPO_header_index2 a:hover {
+    background-position: -173px -51px;
+}
+#OPO_header li#OPO_header_index4 a:hover {
+    background-position: -519px -51px;
+}
+#OPO_header li#OPO_header_index3 a:hover {
+    background-position: -346px -51px;
+}
+#OPO_header li#OPO_header_index5 a:hover {
+    background-position: -692px -51px;
+}
+#OPO_header li#OPO_header_index6 a:hover {
+    background-position: -865px -51px;
+	width:175px;
+}
+/*↑170910以前-------------------------*/
+/* 180418　menu.cssへ移動
+#OPO_header ul#gNav {
+    display:block;
+
+	width:1040px;
+    height:51px;
+   overflow:hidden;
+    margin-bottom:25px;
+    padding:0;
+	 -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;background:#0097d5;
+}
+#OPO_header ul#gNav li {
+    width:173px;
+    float:left;
+    margin:0;
+    padding:0;
+	text-align:center;display:block;
+}
+
+#OPO_header ul#gNav li a {
+	font-weight:normal;
+    display:block;
+	color:#fff;
+	font-size:16px;
+	line-height:51px;
+    margin:0;
+    padding:0;
+vertical-align:middle;
+text-decoration:none;
+}
+#OPO_header ul#gNav li a:hover {
+boerder-bottom:#C1A3A4 10px solid;	
+background-color:#4aafd8 !important;
+
+}
+#OPO_header ul#gNav li a:visited,
+#OPO_header ul#gNav li a:active {
+	font-weight:normal;
+    display:block;
+	color:#fff;
+	font-size:16px;
+	line-height:51px;
+    margin:0;
+    padding:0;
+
+
+vertical-align:middle;
+text-decoration:none;
+}
+*/
+
+/* middle block */
+
+#OPO_main {
+  float:right !important;
+    margin: 160px 0 0 0;
+  padding:0 !important;
+  width:846px;
+  /*overflow:hidden;*/
+  background-color:#fff;
+}
+
+#OPO_main_title_blk {
+    /* OPO_main タイトルブロック共通 */
+    width:846px;
+    height:100px;
+    margin:0 0 20px 0;
+    padding:0;
+    overflow:hidden;
+    /* background-color:#88f;*/
+}
+#OPO_main_title_blk h1,#OPO_main_title_blk p{
+    width:846px;
+    height:100px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    line-height:1.5em;
+    text-indent:-1000em;
+}
+#OPO_main_title_blk h1.idx1,#OPO_main_title_blk p.idx1 { /* オープンオフィスとは？ */
+    background-image:url(/openoffice/images/intro_title.jpg);
+}
+#OPO_main_title_blk h1.idx2,#OPO_main_title_blk p.idx2 { /* ご利用までのステップ */
+    background-image:url(/openoffice/images/step_title.jpg);
+}
+#OPO_main_title_blk h1.idx3,#OPO_main_title_blk p.idx3{ /* お客様の声 */
+    background-image:url(/openoffice/images/voice_title.jpg);
+}
+#OPO_main_title_blk h1.idx4,#OPO_main_title_blk p.idx4{ /* よくあるご質問 */
+    background-image:url(/openoffice/images/qanda_title.jpg);
+}
+#OPO_main_title_blk h1.idx5,#OPO_main_title_blk p.idx5{ /* 問合せ・見学予約 */
+    background-image:url(/openoffice/images/form_title.jpg);
+}
+#OPO_main_title_blk h1.idxList { /* オープンオフィス一覧 */
+    background-image:url(/openoffice/center_list/images/list_title.gif);
+}
+
+
+#OPO_sidemenu {
+ width:194px;
+ padding:0 ;
+ /*width:150px;*/
+  overflow:hidden;
+  margin:145px 0 0 0;
+  font-family: "Meiryo UI", Arial, Helvetica, sans-serif;
+  background-image:url(/openoffice/images/common/sidemenu_back.gif);
+	background-position:top left;
+	background-repeat:repeat-y;
+  font-size:13px;
+  float:left;
+}
+
+#OPO_sidemenu hr {
+    display:none;
+}
+
+/* Social button */
+.social-buttons {
+    padding:0;
+    margin:10px;
+    float:right;
+}
+.social-buttons li {
+    display:block;
+    float:left;
+    margin:0 5px;
+}
+/* top OFFICE start-----------------------------------*/
+/*__________________160204______________________________*/
+#topCenterList{
+    width:825px;
+    /*overflow:visible;*/
+    margin:0 auto;
+float:none;
+clear:both;
+text-align:center;
+padding:0 0 40px 26px; 
+line-height:1.5;
+}
+.topCntrBox{
+	background:#eeeeee;
+	float:left;
+	margin:2px 0 0 0px;
+	border-left:1px #ffffff solid;
+}
+.topCntrBox ul.cntB{
+	/*margin-left:11px;*/
+}
+.topCntrBox ul.cntB li{
+	width:95px;
+	margin: 0 10px 5px 10px;
+	float:left;	/*display:inline-block;*/
+
+	}
+.pdR1{
+	padding-right:1px;
+}
+.pdR2{
+	padding-right:2px;
+}
+.pdR3{
+	padding-right:3px;
+}
+.pdR4{
+	padding-right:4px;
+}
+.topCntrBox ul.cntB li img{
+	margin:0;
+	height:95px;}
+.topCntrBox ul.cntB li p{
+	margin-top:-2px;
+	text-align:center;
+	padding:4px 4px 0 4px;  
+	font-size:10px;
+	font-weight:normal;
+	line-height:1.0;
+	/*background:#1d76e6;
+	background:#eee;*/
+}
+#topCenterList a,
+#topCenterList a:active,
+#topCenterList a:hover,
+#topCenterList a:visited{
+	color:#1d76e6 !important;
+}
+/*#topCenterList .topCntrBox:nth-child(1) ul{
+	padding-left:63px !important;
+}
+#topCenterList .topCntrBox:nth-child(2) ul{
+	padding-left:63px !important;
+}
+#topCenterList .topCntrBox:nth-child(3) ul{
+	padding-left:63px !important;
+}
+#topCenterList .topCntrBox:nth-child(4) ul{
+	padding-left:11px !important;
+}
+#topCenterList .topCntrBox:nth-child(5) ul{
+	padding-left:58px !important;
+}*/
+#topCenterList a:hover img{
+	filter:alpha(opacity=70); /*IE*/
+	-moz-opacity:0.70; /*FF*/
+	opacity:0.70;
+}
+.topCntrBox h2{
+	color:#fff;
+	font-size:12px;
+	line-height:1.0;
+	background-color:#478ee7;
+	background-image:none;
+	border:none;
+	margin:0 0 5px 0;
+	font-weight:normal;
+	padding:5px 3px 3px 8px;
+	text-align:left;
+}
+.bgC{background:#e0ecff;
+}
+.topCntrBox h2.bbb{
+	color:#ffffff;
+	font-size:12px;
+	line-height:1.0;
+	background-color:#27539d;
+	background-image:none;
+	border:none;
+	margin:0 0 5px 0;
+	font-weight:normal;
+	padding:5px 3px 3px 8px;
+	text-align:left;
+}
+/* left side menu block ____________________________*/
+
+.sidemenu{
+  position:relative;
+ width:194px;
+ /*width:150px;*/
+  height:100%;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+  font-size:13px;
+  background-image:url(/openoffice/images/common/sidemenu_back.gif);
+  background-position:top left;
+  background-repeat:repeat-y;
+}
+
+/* 削除対象 end ______________________*/
+
+#OPO_side_kushitsu { /* 空室バナー */
+    display:block;
+    text-indent:-1000em;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    background-image:url(/openoffice/images/kushitsu_banner.jpg);
+    background-position:0px 0px;
+    background-repeat:no-repeat;
+    width:190px;
+    height:80px;
+}
+#OPO_side_kushitsu:hover {
+    background-position:0px -80px;
+}
+
+#OPO_side_index {
+    margin:0;
+    padding:0;
+    width:194px;
+/*width:150px;*/
+    border-bottom:1px solid #b5b5b5;
+}
+#OPO_side_index dt {
+    margin:0;
+    padding:0;
+    width:194px;
+/*width:150px;*/
+    height:28px;
+    text-indent:-1000em;
+    overflow:hidden;
+}
+#OPO_side_index dt.opo-officeguide {
+    background-image:url(/openoffice/images/common/sidemenu_officeguide.gif);
+}
+#OPO_side_index dt.opo-serviceguide {
+    background-image:url(/openoffice/images/common/sidemenu_serviceguide.gif);
+}
+#OPO_side_index dt.opo-andmore {
+    background-image:url(/openoffice/images/common/sidemenu_andmore.gif);
+}
+#OPO_side_index dt.opo-companyinfo {
+    background-image:url(/openoffice/images/common/sidemenu_companyinfo.gif);
+}
+#OPO_side_index dt.opo-links {
+    background-image:url(/openoffice/images/common/sidemenu_links.gif);
+}
+#OPO_side_index dd, #OPO_side_index ul, #OPO_side_index li {
+    display:block;
+    margin:0;
+    padding:0;
+}
+#OPO_side_index li {
+    background-image:url(/openoffice/images/common/sidemenu_liback.png);
+    background-position:left top;
+    background-repeat:no-repeat;
+    padding:3px 2px 1px 16px;
+    overflow:visible;
+    /*white-space:nowrap;*/
+    font-size:13px;
+}
+#OPO_side_index li:first-child {
+    margin-top:-1px;
+    padding-top:2px
+}
+
+/* openoffice centers */
+
+#OPO_side_index dl.opo-officearea {
+    margin:2px 0;
+}
+#OPO_side_index dl.opo-officearea dt {
+    text-indent:25px;
+    height:25px;
+    line-height:25px;
+    margin:1px 0 0 0;
+    padding:0;
+    color:#777;
+    font-size:90%;
+    font-weight:bold;
+    background-color:transparent;
+    background-image:url(/openoffice/images/common/sidemenu_center1.png);
+    background-repeat:no-repeat;
+    text-shadow:0px -1px 1px white,-1px -1px 1px white,1px -1px 1px white
+}
+.opopop{
+	text-indent:25px;
+    height:25px;
+    line-height:25px;
+    margin:1px 0 0 0;
+    padding:0;
+    color:#777;
+    font-size:90%;
+    font-weight:bold;
+    background-color:transparent;
+    background-image:url(/openoffice/images/common/sidemenu_center1b.png);
+    background-repeat:no-repeat;
+    text-shadow:0px -1px 1px white,-1px -1px 1px white,1px -1px 1px white
+}
+#OPO_side_index dl.opo-officearea dd {
+    color:#777;
+    margin:0 0 0 0;
+    padding:0 2px 10px 0;
+    background-color:transparent;
+    background-image:url(/openoffice/images/common/sidemenu_center3.png);
+    background-position:left bottom;
+    background-repeat:no-repeat;
+}
+#OPO_side_index dl.opo-officearea ul {
+    background-image:url(/openoffice/images/common/sidemenu_center2.png);
+    background-position:left top;
+    background-repeat:repeat-y;
+}
+#OPO_side_index dl.opo-officearea li {
+    background-image:url(/openoffice/images/common/sidemenu_centermark.png);
+}
+
+#OPO_side_index dl.opo-officearea ul.sub {
+    background-image:none;
+    margin-left:-5px;
+}
+
+
+#OPO_side_index .opo-office a {
+    display:block;
+    height:18px; /* 22 - padding-top/bottom */
+    /*overflow:hidden;*/
+    white-space:nowrap;
+}
+
+#OPO_side_banners {
+    margin:1em 0;
+}
+#OPO_side_banners .indlink { /* サイドバナー */
+    display:block;
+    margin:3px;
+}
+
+/* Footer ------------------------------------------*/
+#OPO_footer {
+    clear:both;
+	width:1040px;
+    /*overflow:hidden;*/
+    background-color:white;
+    font-family: "Meiryo UI", Arial, Helvetica, sans-serif;
+	
+	padding-top:60px !important;
+}
+
+#OPO_footer #fGnav {
+text-align:center;
+padding:25px 0 10px 0;
+border-top:#dedede solid 1px;
+}
+#OPO_footer .OPO-sub{
+    border-bottom:#dedede solid 1px ;
+	width:600px;
+    padding:0px 0 10px 0;
+    text-align:center;
+	margin:0 auto;
+	font-size:80%;
+}
+#OPO_footer .OPO_footer_btm{
+	text-align:center;
+	padding:10px 0 25px 0;
+	
+}
+#OPO_footer .footerTxt{
+	font-size:10px;
+	text-align:center;
+}
+#OPO_copyright {
+   text-align:center;
+   font-size:9px;
+}
+#OPO_footer a:after {
+      content:"　|　";
+	   color: #dedede !important;
+}
+#OPO_footer a:last-child:after {
+    content : none ;
+} 
+#OPO_footer a {
+	color:#333;
+}
+#OPO_footer a:hover{
+	text-decoration:none;
+	color:#478ee7;
+}
+
+
+
+#OPO_accesslogger {
+    position:absolute;
+    visibility:hidden;
+}
+
+/* end Fotter */
+
+/*以下オフィスページ共通スタイル*/
+.style1 {color: #FF0000; font-weight: bold;}
+.style3 {font-size: 12px; color: #003399; }
+.style4 {color: #003399}
+.style5 {color: #FF6600}
+.style6 {color: #FF9900}
+.style7 {color: #0000FF}
+.style8 {color: #FF9900}
+.style9 {color: #2A8EBA}
+.style10 {color: #666666}
+.style11 {color: #FF0000}
+.style12 {color: #FFFFFF}
+.style13 {color: #CC0000}
+.style14 {color: #FFFF00}
+.style15 {color: #000040}
+
+
+.style16 {color: #CC0000; font-weight: bold; }
+.style18 {
+	font-size: x-small;
+	color: #2B8DBA;
+}
+.style20 {font-size: x-small; color: #2A8CB9; }
+.style21 {
+	font-size: 9pt;
+	font-weight: bold;
+}
+.style22 {font-size: 9pt}
+
+
+.word {
+white-space:nowrap;
+}
+
+
+.tableBasic {
+	font-size: 12px;
+	color: #464646;
+	line-height: 20px;
+}
+
+.tableBasic_B {
+	font-weight:bold;
+	font-size: 12px;
+	color: #2A8DBA;
+	line-height: 20px;
+}
+
+.tableTirle_B {
+	font-weight:bold;
+	font-size: 12px;
+	color: #555555;
+	line-height: 20px;
+}
+
+.tableBasic_c {
+	font-size: 12px;
+	color: #3366CC;
+}
+.tableBasic_sml {
+	font-size: 10px;
+	color: #464646;
+	line-height: 16px;
+}
+
+.tableText {
+	font-size: 10px;
+	color: #464646;
+	line-height: 16px;
+}
+
+.tableText_wh {
+	font-size: 10px;
+	color: #FFFFFF;
+	line-height: 16px;
+}
+
+.font_size8 {
+	font-size: 8pt;
+}
+.font_size10 {
+	font-size: 10pt;
+}
+.font_size12 {
+	font-size: 12pt;
+}
+.font_size14 {
+	font-size: 14pt;
+}
+.font_size16 {
+	font-size: 14pt;
+}
+
+
+.linehi10 {
+	line-height: 10pt;
+}
+.linehi12 {
+	line-height: 12pt;
+}
+.linehi14 {
+	line-height: 14pt;
+}
+.linehi16 {
+	line-height: 16pt;
+}
+.linehi18 {
+	line-height: 18pt;
+}
+
+
+.margin_lr15 {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.margin_l15 {
+	margin-left: 15px;
+}
+
+.margin_l20 {
+	margin-left: 20px;
+}
+
+.margin_l100 {
+	margin-left: 100px;
+}
+
+.margin_t25 {
+	margin-top: 25px;
+}
+
+.margin_b5 {
+	margin-bottom: 5px;
+}
+.margin_b10 {
+	margin-bottom: 10px;
+}
+.margin_b20 {
+	margin-bottom: 20px;
+}
+.margin_b30 {
+	margin-bottom: 30px;
+}
+
+.padding_5 {
+	padding: 5px;
+}
+
+.padding_10 {
+	padding: 10px;
+}
+.padding_20 {
+	padding: 20px;
+}
+.padding_tb5 {
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.padding_tb10 {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.padding_tb20 {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.padding_lr5 {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.padding_lr10 {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.padding_l20 {
+	padding-left: 20px;
+}
+
+.padding_l110 {
+	padding-left: 110px;
+}
+
+
+.padding_l30_r20 {
+	padding-left: 30px;
+	padding-right: 20px;
+}
+
+
+
+.bg_color01 {
+	background-color: #EDEDED;
+}
+.bg_color02 {
+	background-color: #EDEDED;
+}
+.bg_color03 {
+	background-color: #FFFFFF;
+}
+
+
+.page_top {
+	font-size: 10pt;
+	line-height: 12pt;
+	color: #336699;
+	text-decoration: underline;
+	text-align: right;
+	margin: 20px;
+}
+.ritchi_title01 {
+	background-image: url(../images/maru3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.kaigi_border01 {
+	border: 1px solid #B4B6B1;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.kaigi_title01 {
+	font-size: 11pt;
+	line-height: 25px;
+	font-weight: bold;
+	color: #005AA6;
+	padding-left: 25px;
+	background-image: url(../kaigi/images/title02.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 15px;
+}
+.kaigi_title02 {
+	font-size: 10pt;
+	line-height: 20px;
+	color: #005AA6;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	background-image: url(../kaigi/images/title03.gif);
+	background-repeat: no-repeat;
+}
+.kaigi_title03 {
+	font-size: 10pt;
+	line-height: 20px;
+	color: #000B6C;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	background-image: url(../kaigi/images/title04.gif);
+	background-repeat: no-repeat;
+}
+.kaigi_title04 {
+	font-size: 10pt;
+	color: #227AAA;
+	padding-left: 15px;
+	font-weight: bold;
+	background-image: url(../kaigi/images/title05.gif);
+	background-repeat: no-repeat;
+	vertical-align: top;
+	padding-top: 18px;
+}
+.kaigi_title05 {
+	background-image: url(../images/maru3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 5px;
+}
+.kaigi_title06 {
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	background-color: #005BA6;
+	padding: 10px;
+	text-align: center;
+	font-size: 12pt;
+	line-height: 16pt;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.line_01 {
+	background-image: url(../images/line03.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+.line_02 {
+	background-image: url(../images/line04.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+.i_table_bg {
+	background-image: url(../images/i_table_bg03.gif);
+	background-repeat: repeat-y;
+}
+.i_table_bg02 {
+	background-image: url(../images/i_table_bg06.gif);
+	background-repeat: repeat-y;
+}
+
+.border01 {
+	border: 1px solid #999999;
+}
+.guide_title_bg {
+	font-size: 10pt;
+	line-height: 20px;
+	font-weight: bold;
+	color: #2B89B9;
+	width: 230px;
+	margin-left: 15px;
+}
+
+.guide_textbox {
+/*	font-size: 8pt;*/
+	line-height: 10pt;
+	width: 230px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.heder_01 {
+	font-weight: bold;
+	color: #333333;
+}
+
+.index_titile_s {
+	background-image: url(../images/index_title17.gif);
+	background-repeat: no-repeat;
+	font-size: 10pt;
+	line-height: 20px;
+	font-weight: bold;
+	color: #333333;
+	padding-left: 10px;
+}
+
+
+.index_titile_bg01 {
+	background-image: url(../images/index_title_bg01.gif);
+	background-repeat: no-repeat;
+	font-size: 10pt;
+	line-height: 24px;
+	color: #FFFFFF;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.index_titile_bg02 {
+	font-size: 10pt;
+	line-height: 24px;
+	color: #0E4A74;
+	padding-left: 5px;
+	font-weight: bold;
+	border-left-width: 7px;
+	border-left-style: solid;
+	border-left-color: #0E4A74;
+}
+.index_titile_bg03 {
+	background-image: url(../images/index_title_bg02.gif);
+	background-repeat: no-repeat;
+	font-size: 10pt;
+	line-height: 23px;
+	color: #333333;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.media_title_bg01{
+	background-image: url(/openoffice/news/media/images/title_bg01.gif);
+	background-repeat: no-repeat;
+	font-size: 12pt;
+	line-height: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 15px;
+	background-color: #1C6DA5;
+}
+.media_title_bg02{
+	background-image: url(/openoffice/news/media/images/title_bg02.gif);
+	background-repeat: no-repeat;
+	font-size: 10pt;
+	line-height: 25px;
+	font-weight: bold;
+	color: #595959;
+	padding-left: 15px;
+	background-color: #FFFFFF;
+}
+
+.left_banner{
+	background-image: url(../images/left_banner_table02.gif);
+	background-repeat: repeat-y;
+	background-position: center;
+}
+
+/* イントロで使用している罫線 */
+.intro_line01{
+	background-image: url(/openoffice/intro/images/line001.gif);
+	background-repeat: repeat-y;
+	line-height: 25px;
+	font-size: 10pt;
+}
+
+/* テキスト接頭文字段落用 */
+
+.mark-indent10 {
+    padding-left:1em;
+    text-indent:-1em;
+}
+.mark-indent15 {
+    padding-left:1.3em;
+    text-indent:-1.3em;
+}
+.mark-indent20 {
+    padding-left:2em;
+    text-indent:-2em;
+}
+
+
+/* no paragraph */
+span.nowrap { white-space:nowrap; }
+
+/* 文字詰め込み */
+.squeeze { letter-spacing:-1px; }
+
+/* Check Class */
+.__line1 { border:1px solid red; }
+.__line2 { border:1px solid blue; }
+.__line3 { border:1px solid green; }
+.__line4 { border:1px solid orange; }
+
+
+/*共通img*/
+
+img {
+    border:none;
+}
+
+.img_left{
+float:left;
+margin:0;
+padding:0 10px 25px 0;
+}
+
+.img_right{
+float:right;
+margin:0;
+padding:0 0 25px 10px;
+}
+
+.mt20{
+	margin-top:20px;
+	}
+
+.clear{
+    clear:both;
+}
+
+/* マーク類 */
+
+.mark02 {
+    /* 20x20 上から右へ折れ矢印 */
+    background-image:url(/openoffice/images/mark02.png);
+    background-position:top left;
+    background-repeat:no-repeat;
+    line-height:20px;
+    text-indent:23px;
+}
+
+
+/* 2013/02 5万円キャンペーンバナー */
+.campaign-banner201302 {
+    display:block;
+    position:absolute;
+    right:16px;
+    top:16px;
+    height:95px;
+    width:335px;
+}
+.campaign-banner201302 * {
+    border:none;
+    display:block;
+    padding:0;
+    margin:0;
+}
+.txaR{text-align:right;}
+.txaL{text-align:left;}
+.txaC{text-align:center;}
+.flL{float:left;}
+.flR{float:right;}
+/*トップページスライダ_____________*/
+#id_slider{
+	width:846px; 
+	height:277px;
+	background:url(/openoffice/images/openoffice_top4.jpg) 0 0 no-repeat;
+}
+.wid800{
+	width:800px;
+	margin:0 auto;
+}
+/*/oprnoffice　navigation_____________*/
+ul#opnNav01{width:846px;list-style:none;padding:0;margin:0;}
+ul#opnNav01 li{width:141px;float:left;}	
+ul#opnNav01 li.l142{width:142px;}
+ul#opnNav01 li.l140{width:140px;}
+ul#opnNav02{width:846px;list-style:none;padding:0;margin:0;}
+ul#opnNav02 li{width:282px;float:left;}
+ul#opnNav02 li.lrg{width:422px;float:left;}
+ul#opnNav02 li.lrg2{width:422px;margin-left: 1px;}
+
+/*/oprnoffice　navigation_171215____________*/
+ul#officeNav5,#ulofficeNav2 {
+ -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;width:846px;
+list-style:none;padding:0;margin:0;}
+
+
+ul#officeNav5 li a,
+ul#officeNav5 li a:active,
+ul#officeNav5 li a:visited{
+	 -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+			float:left;
+width:20%;
+display:block;
+	border-right:#fff 1px solid;
+	text-align:center;
+	font-size: 14px;
+	line-height:1;
+	color: #ffffff;
+	text-decoration:none;
+	padding: 12px 0 10px;
+	background: -moz-linear-gradient(
+		top,
+		#b2b1b2 0%,
+		#9c9c9e);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#b2b1b2),
+		to(#9c9c9e));
+	border-radius: 0px;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 5px rgba(112,111,105,0.6);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 5px rgba(112,111,105,0.6);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 5px rgba(112,111,105,0.6);
+	text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+	
+}
+
+
+ul#officeNav5 li a:hover{
+	
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+			float:left;
+width:20%;
+display:block;
+	border-right:#fff 1px solid;
+	text-align:center;
+	font-size: 14px;
+	line-height:1;
+	color: #ffffff;
+	padding: 12px 0 10px;
+	text-decoration:none !important;
+	
+	background: -moz-linear-gradient(
+		top,
+		#288bb9 0%,
+		#156dac);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#288bb9),
+		to(#156dac));
+	border-radius: 0px;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 5px rgba(112,111,105,0.6);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 5px rgba(112,111,105,0.6);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0),
+		inset 0px 0px 5px rgba(112,111,105,0.6);
+		text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+		}
+
+
+
+
+
+ul#officeNav2 li a,
+ul#officeNav2 li a:active,
+ul#officeNav2 li a:visited{
+	 -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+			float:left;
+width:50%;
+display:block;
+	border-right:#fff 1px solid;
+	text-align:center;
+	font-size: 14px;
+	line-height:1;
+	color: #ffffff;
+	text-decoration:none;
+	padding: 12px 0 10px;
+	background: -moz-linear-gradient(
+		top,
+		#b2b1b2 0%,
+		#9c9c9e);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#b2b1b2),
+		to(#9c9c9e));
+	border-radius: 0px;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+	
+}
+
+
+ul#officeNav2 li a:hover{
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+			float:left;
+width:50%;
+display:block;
+	border-right:#fff 1px solid;
+	text-align:center;
+	font-size: 14px;
+	line-height:1;
+	color: #ffffff;
+	padding: 12px 0 10px;
+	text-decoration:none !important;
+	background: -moz-linear-gradient(
+		top,
+		#288bb9 0%,
+		#156dac);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#288bb9),
+		to(#156dac));
+	border-radius: 0px;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+		}
+
+
+ul#officeNav5 li:last-child,
+ul#officeNav2 li:last-child{
+	border:0;
+}
+
+ul#officeNav5 li.on a,
+ul#officeNav2 li.on a{
+	background: -moz-linear-gradient(
+		top,
+		#288bb9 0%,
+		#156dac) !important;
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#288bb9),
+		to(#156dac)) !important;
+}
+
+ul#ulofficeNav2 li{
+	margin-bottom:10px !important;
+}
+
+
+/*/bread list_____________*/
+ul#stLst{padding:10px 0 0 0px;font-size:10px;display:block;overflow:hidden;}
+ul#stLst li:first-child{
+	border-left:3px solid #CDC4C4;
+	padding-left:5px;
+}
+ul#stLst li{float:left;background:url(/openoffice/images/common/breadlist.gif) right 50% no-repeat;padding-right:10px;margin-right:5px;margin-bottom:10px;}
+ul#stLst li.nw {background:none;}
+ul#stLst li strong{font-weight:normal;}
+/*/フランチャイズ_____________*/
+ul#franchaizeNavi{width:846px;margin-top:20px;}
+ul#franchaizeNavi li{float:left;width:282px;}
+.fraContents{width:800px;margin:0 auto;}
+.fraContents img{text-align:left;}
+.frcCatch{width:846px;clear:both;}
+.frcCatch img{float:left;}
+ul.frNavi{width:800px;list-style:none;}
+ul.frNavi li{width:200px;float:left;padding:0;margin:0;}
+.frBos780{width:780px;margin:20px auto;}
+.frBos780 .flL{width:230px;margin:0;}
+.frBos780 .flR{width:540px;margin:0;}
+
+.frBos780 .flLA{width:140px;margin:0 0 10px 0;float:left;}
+.frBos780 .flRA{width:700px;margin:0;float:left;}
+
+ul.frNaviB{width:800px;list-style:none;}
+ul.frNaviB li{width:160px;float:left;padding:0;margin:0;height:50px;}
+.wid790{width:780px;margin:0 auto;}
+ul.fracBtmNavi{width:660px;margin:20px auto;}
+ul.fracBtmNavi li{width:220px;float:left;padding-bottom:5px;}
+.frnc686{width:686px;margin:20px auto;}
+
+
+.frBos700{width:700px;margin:20px auto;}
+.frBos700 .flL{width:350px;margin:0;}
+.frBos700 .flR{width:350px;margin:0;}
+.frBos700 .flL img,.frBos700 .flR img{float:left;margin-right:5px;}
+
+.frncFormABfr{width:710px;margin:0 auto;border:1px solid #1670AE;}
+.frncFormA{margin:0 auto;background:#1670AE;padding:5px;color:#fff;}
+.frncFormB{margin:0 auto;background:#F0F8FD;padding:5px;}
+
+
+
+/*privacy_____________*/
+h1#privacy{width:846px;clear:both;}
+#privacy{width:660px;margin:0 auto;}
+#privacy h2{background:#2A8DBA;color:#ffffff;padding:5px;font-size:12px;}
+#privacy p{margin:5px 0 30px 0;}
+
+/*terms_____________*/
+#terms{width:660px;margin:0 auto;}
+#terms h2{background:#2A8DBA;color:#ffffff;padding:5px;font-size:12px;}
+.termsD {margin:5px 0 30px 0;}
+.termsD p{padding:10px 0 2px 0;}
+
+/*welcome_________*/
+#OPO_mainFr {
+    float:none;width:846px;
+    margin:0 auto;
+}
+/*welcome_________*/
+.txB{font-weight:bold;}
+/*common__________*/
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}  
+  
+.clearfix { display: inline-table; }  
+  
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */
+
+
+.mgL5{margin-left:5px;}
+.mgL10{margin-left:10px;}
+.mgL20{margin-left:20px;}
+.mgL30{margin-left:30px;}
+.mgL40{margin-left:40px;}
+.mgB5{margin-bottom:5px;}
+.mgB1{margin-bottom:2px;}
+.mgB10{margin-bottom:10px;}
+.mgB20{margin-bottom:20px;}
+.mgB30{margin-bottom:30px;}
+.mgB40{margin-bottom:40px;}
+.mgB60{margin-bottom:50px;}
+.mgB40{margin-bottom:60px;}
+.mgB70{margin-bottom:70px;}
+.mgB80{margin-bottom:80px;}
+
+.mgT5{margin-top:5px !important;}
+.mgT10{margin-top:10px !important;}
+.mgT20{margin-top:20px;}
+.mgT30{margin-top:30px;}
+.mgT40{margin-top:40px;}
+.mgT50{margin-top:50px;}
+.pdT10{padding-top:10px;}
+.pdT20{padding-top:20px;}
+.pdL10{padding-left:10px;}
+.pdL3{padding-left:3px;}
+.pdB5{padding-bottom:5px;}
+.pdB10{padding-bottom:10px;}
+.pdB20{padding-bottom:20px;}
+.pdB30{padding-bottom:30px;}
+.pdB40{padding-bottom:40px;}
+.both{clear:both;}
+
+
+
+/*intro________*/
+.stepBoxA{width:780px;clear:both;padding-top:10px;}
+.stepBoxA .flL{width:70px;}
+.stepBoxA .flR{text-align:left;width:700px;}
+.stepBox{width:780px;}
+.stepBox .flL{width:300px;}
+.stepBox .flR{text-align:right;width:300px;}
+
+#stepOrder{width:648px;background:url(/openoffice/intro/images/3step_line.gif) 0 0 repeat-x;}
+#stepOrder ul{list-style:none;width:648px;background:transparent;}
+#stepOrder ul li{float:left;width:82px;background:url(/openoffice/intro/images/3step_line.gif) 0 0 repeat-x;}
+#stepOrder ul li.last{float:right;width:82px;background:url(/openoffice/intro/images/3step_line.gif) 0 0 repeat-x;}
+.stepmgL{padding-right:200px;}
+
+
+/*kaigi_______________*/
+.kaigiFrame{width:762px;margin:20px auto;}
+.kaigiFrameIn{border:1px #ccc solid;padding:10px 0;}
+ .kaigi680{width:680px;margin:20px auto;}
+ .kaigi680 .flL{width:287px;}
+ .kaigi680 .flR{width:373px;}
+ 
+ .kaigi700{width:700px;margin:20px auto;clear:both;} 
+.kaigi700 .flL1{width:373px;float:left;}
+.kaigi700 .flR1{width:287px;float:right;}
+
+
+.txtB{font-weight:bold;}
+.txtred{color:#C5060A;
+}
+
+/*______________モーダルウィンドウ//----*/
+.con1{
+	
+}
+.modal-content {
+    position:fixed;
+    display:none;
+    z-index:2;
+    width:600px;
+	margin:0 auto;
+    margin:0;
+    border:1px solid #aaa;
+    background:#fff;
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */ 
+	
+}
+
+.modal-content .in{
+    margin:20px 60px 20px 60px;
+	font-size:14px;
+	line-height:2.2;
+}
+.ininin{
+	    background:#ececec;
+	border-radius: 5px;        /* CSS3草案 */  
+    -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 5px;   /* Firefox用 */ 
+	padding:40px;
+}
+
+.modal-overlay {
+    z-index:1;
+    display:none;
+    position:fixed;
+    top:-100px;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,0.75);
+}
+
+ .modal-open {
+  /* color:#00f;
+    text-decoration:underline;*/
+}
+
+.modal-open:hover {
+    cursor:pointer;
+   /* color:#f00;*/
+}
+
+.modal-close {
+	margin-top:40px;
+	
+    color:#ffffff;
+  /*  text-decoration:underline;*/
+  font-size:14px;
+  text-align:center;
+  background:#69ADCF;
+}
+.inclose{background:#69ADCF;
+padding:5px ;
+width:80px;
+margin:0 auto;
+}
+.modal-close:hover {
+    cursor:pointer;
+   color:#ffffff;
+}
+
+/*__________________151207_______________________________*/
+#centerList{
+    width:820px;
+    /*overflow:visible;*/
+    margin:0 auto;
+float:none;
+clear:both;
+text-align:center;
+padding:0 0 20px 0; 
+font-size:14px;
+line-height:1.5;
+}
+#centerList h1{clear:both;
+background:#d6e8f7;
+border-left:#217eb4 5px solid;
+padding:4px 10px;
+font-size:16px;
+line-height:1.3;
+color:#000000;
+font-weight:normal;
+ text-align:left;
+}
+
+#centerList .centerListIn .cam{
+    border-radius: 5px;
+    border:1px #b1cbd6 solid;
+	 margin:0px auto 20px auto;
+    text-align: center;
+    padding:40px 0 5px 0;
+     background: radial-gradient(#ffffff, #b8e0f0) fixed;
+}
+#centerList .centerListIn .cam h2{
+    letter-spacing: 0.2em;
+line-height: 1.3;    
+    font-size:30px;
+    font-weight: 600;
+    color:#0097d5;
+    background-color: transparent;
+}
+#centerList .centerListIn .cam h3{
+    background-color: transparent;
+    font-size:20px;
+    line-height: 1.2;  
+    color: #fff;background: #e40037;
+    display: block;
+    width:55%;
+    margin: 0 auto 20px auto;
+    border-radius: 28px;
+    padding: 7px 0;
+}
+#centerList .centerListIn .cam p{
+    font-size: 18px;
+}
+
+#centerList .centerListIn .cam ul{
+    margin: 25px 0 5px 0;
+}
+#centerList .centerListIn .cam ul li{
+    display: inline;
+    margin-right:2px;
+    text-align: left;
+    list-style: none;
+    font-size: 11px;
+    color: #666;
+}
+
+.centerListIn{
+	 width:730px;
+	 margin:16px 0 0 45px;
+	 text-align:left;
+}
+ul.cntr{
+	margin-left:0px;
+	clear:both;
+}
+ul.cntr li{
+	width:95px;
+	text-align:left;
+	margin: 0 0 15px 20px;
+	background:rgba(33,72,120,1.00);
+	float:left;
+}
+ul.cntr li img{
+	margin: 0;
+}
+ul.cntr li p{
+	margin:0;
+	text-align:center;
+	background:rgba(33,72,120,1.00);
+	font:#ffffff;
+	padding:4px 3px 4px 3px;  
+	font-size:12px;
+	font-weight:normal;
+	line-height:1.4;
+}
+
+/*officList________*/
+.centerListIn .shList{
+	width:410px !important;
+	float:left;
+	margin:0 20px 0 0;
+}
+
+.centerListIn .shList2{
+	width:300px;
+	float:left;
+}
+
+.cntrBox{
+	background:#E2E2E2;
+	padding:10px 10px 0 10px;
+	margin:0 0 30px 0;
+}
+
+#centerList .centerListIn h2{
+	color:#ffffff;
+	font-size:16px;
+	line-height:1.4;
+	background-color:#666666;
+	background-image:none;
+	border:none;
+	margin:0;
+	font-weight:normal;
+	padding:5px;
+}
+h1.gnlTXT{
+	clear:both;
+	margin:10px;
+	font-size:18px;
+	border-bottom:3px #eee solid;
+}
+/*Rollover
+--------------*/	
+#centerList a:hover img{
+	filter:alpha(opacity=70); /*IE*/
+	-moz-opacity:0.70; /*FF*/
+	opacity:0.70;
+	}
+#centerList a{
+	color:#ffffff;
+	font-weight:normal;
+}
+a.imgov:hover img{
+	filter:alpha(opacity=70); /*IE*/
+	-moz-opacity:0.70; /*FF*/
+	opacity:0.70;
+	}
+	
+	
+	
+	
+/*sidenavi_180320_______________*/
+
+#sideNav {
+ width:194px;
+ padding:0 ;
+  overflow:hidden;
+margin: 160px 0 0 0;
+  font-family: "Meiryo UI", Arial, Helvetica, sans-serif;
+  /*background:#f3f3f3;*/
+  font-size:13px;
+  float:left;
+}
+#sideNav dl,
+#sideNav dd,
+#sideNav dt{  margin:0;
+    padding:0;
+}
+#sideNav dl#sideLink {
+    width:194px;
+}
+
+#sideNav dl#sideLink dt.officeTop{
+    padding-left:14px;
+	vertical-align:middle;
+	font-size:16px;
+	letter-spacing:0.1em;
+    padding: 14px 0 14px 14px;
+}
+
+#sideNav #sideLink dd.officeTop dl{
+	 display:block;
+    margin:0 0 0 0px;
+	padding:0 0 0 0px;
+	/*background:#fff;/*#efefef*/background: #efefef;
+}
+/*#sideNav #sideLink dd.officeTop dt:nth-of-type(odd), #sideNav #sideLink dd.officeTop dd {
+  background: #efefef;
+}*/
+#sideNav #sideLink dd.officeTop dl dt{
+	font-size:15px;
+	 padding:13px 0 13px 15px;
+	 font-weight:500;
+	 letter-spacing:0.2em;
+	 background:#e6e6e6 /*url(../images/side_nav_bg.png) -60px -14px no-repeat*/ !important;
+	 border-bottom:1px #fff dashed;
+}
+
+#sideNav #sideLink dd.officeTop dl ul{
+	margin:0 0 0 15px;
+}
+#sideNav #sideLink dd.officeTop dl li:first-child {
+	padding-top:8px;
+}
+#sideNav #sideLink dd.officeTop dl li:last-child {
+	padding-bottom:15px;
+	margin-bottom:2px;
+}
+
+#sideNav #sideLink dd.officeTop dl li a,
+#sideNav dd.company li a{
+	color:#333333;
+	text-decoration:none;
+}
+#sideNav #sideLink dd.officeTop dl li a:hover,
+#sideNav dd.company li a:hover{
+	color:#3693d7;
+}
+#sideNav dl#sideLink dt.company_ttl{
+	display:none;
+}
+#sideNav dd.company{
+	background:#e6e6e6;
+}
+#sideNav dd.company ul{
+	margin:0 0 0 15px;
+}
+#sideNav dd.company li{
+	padding-top:8px;
+	padding-bottom:15px;
+}
+
+
+/*------------追従-----------------*/
+
+
+.contact_chase{
+  position: fixed;
+  right:10%;
+  bottom:20px;
+  background: #fff;
+  cursor: pointer;
+  transition: .3s;
+  padding: 10px 20px;
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.contact_chase img{
+    width: 100%;
+}
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact_chase ul{display: flex;width: 95%;
+    margin: 0 auto;
+justify-content: space-around;}
+.contact_chase li{width: 48%;}
+.contact_chase li.greenBTN{
+    position: relative;
+}
+.contact_chase li.greenBTN .contact_baloon{
+    position: absolute;
+    top:-10px;
+    width: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+
+
+
+.txt_service_provide{font-size: 14px;
+text-align: center;
+margin: 0 auto 10px auto;}
+.txt_service_provide:after {
+  content: "/";
+}
+
+.txt_service_provide:before {
+  content: "\005C";
+  font-family: arial; 
+}

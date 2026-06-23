@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/*サービス検索テーブル
+-------------------------------------------*/
+#srcsTbl{
+	width:100%;
+	}
+	
+#srcsTbl tr{
+	width:100%;
+	border-bottom:1px solid #c8cdd1;
+	}
+	
+#srcsTbl thead tr.trTop{
+	width:100%;
+	background:url(/common/images/second/svcs_bg.gif) repeat-x bottom;
+	}
+	
+#srcsTbl thead tr th.svcIcon{
+	width:6.6%;
+	text-align:center;
+	padding:0 5px;
+	}
+	
+#srcsTbl tbody td{
+	color:#466981;
+	border-right:1px dotted #b2b2b2;
+	text-align:center;
+	}
+	
+#srcsTbl th.areaTopName{
+	width:194px;
+	text-align:left;
+	padding:10px;
+	color:#242424;
+	font-size:110%;
+	font-weight:normal;
+	}
+	
+#srcsTbl th.areaTopName em{
+	text-align:left;
+	font-weight:bold;
+	}
+	
+#srcsTbl th.areaTopName span{
+	font-size:85%;
+	font-weight:normal;
+	}	
+
+#srcsTbl th.areaTopName span a:link,
+#srcsTbl th.areaTopName span a:visited,
+#srcsTbl th.areaTopName span a:active{
+	text-decoration:underline;
+	}
+
+#srcsTbl th.areaName{
+	width:194px;
+	padding:10px;
+	background:#f0f7fc;
+	text-align:left;
+	}
+	
+#srcsTbl th.areaName span.map{
+	padding:5px 0 0 0 !important;
+	}
+	
+.lMapLink{
+	background:url(/common/images/second/arw_map.gif) left 5px no-repeat;
+	padding:0 0 0 8px;
+	}
+
+#LinkList{
+	width:100%;
+	border-top:1px solid #c8cdd1;
+	border-bottom:1px solid #c8cdd1;
+	padding:10px 0 10px 0;
+	}
+
+#LinkList li.areaName2{
+	width:100%;
+	font-weight:bold;
+	padding:0 0 5px 5px;
+	background:none;
+	float:none;
+	}
+
+#LinkList li{	
+	float:left;
+	background:url(/common/images/second/arw_map.gif) left no-repeat;
+	padding:2px 20px 0 8px;
+	}
+
+
+/*map切替
+-------------------------------------------*/
+
+#tab_contents{
+	max-width:534px;/*500px*/
+	height:430px;
+	background:#e9f0f8;
+	border-top:1px solid #FFFFFF;
+    overflow:hidden !important;
+	clear:both;
+	}
+#tab_contents ul{
+	/*width:10000px;*/
+	max-width:534px;/*500px*/
+	max-height:430px;
+    padding:0;
+    margin:0;
+	}
+#tab_contents ul li{
+	width:100%;
+    max-width:520px;/*460px*/
+	max-height:430px;
+	float:left;
+    list-style-type:none;
+	padding:20px 6px 20px 6px;/*20px 20px 20px 20px*/
+	}
+
+#tab_contents ul li iframe{
+	max-width:534px;
+	width:100%;
+	border:1px solid #afafaf;
+	}
+
+#tab_contents h4{
+	font-size:120%;
+	padding:0 0 5px 0;
+	color:#043776;
+	font-weight:bold;
+	}
+
+
+@media only screen and (min-width: 482px) and (max-width: 768px) { 
+#srcsTbl th.areaTopName{
+	font-size:150%;
+	}
+
+#srcsTbl th.areaTopName span{
+	font-size:95%;
+	}
+	
+#srcsTbl th.areaName{
+	font-size:150%;
+	}
+	
+#srcsTbl th.areaName span.map{
+	padding:5px 0 0 0 !important;
+	}
+
+	
+/*map切替
+-------------------------------------------*/
+#tab_contents{
+	max-width:740px;
+	width:100%;
+	background:#e9f0f8;
+	border-top:1px solid #FFFFFF;
+    overflow:hidden;
+	clear:both;
+	}
+#tab_contents ul{
+	/*width:10000px;*/
+	max-width:740px;
+	width:100%;
+	max-height:430px;
+    padding:0;
+    margin:0;
+	}
+#tab_contents ul li{
+    float:left;
+    width:92%;/*460px*/
+	max-height:430px;
+    list-style-type:none;
+	padding:20px 4% 40px 4%;/*20px 20px 20px 20px*/
+	}
+
+#tab_contents ul li iframe{
+    width:65% !important;/*460px*/
+	border:1px solid #afafaf;
+	}
+
+#tab_contents h4{
+	font-size:120%;
+	padding:0 0 5px 0;
+	color:#043776;
+	font-weight:bold;
+	}
+}
+
+
+@media only screen and (max-width: 481px) {
+/*map切替
+-------------------------------------------*/
+#tab_contents{
+	width:100%;
+	height:460px;
+	background:#e9f0f8;
+	border-top:1px solid #FFFFFF;
+    overflow:hidden;
+	clear:both;
+	}
+#tab_contents ul{
+	/*width:10000px;*/
+	width:100%;
+	height:430px !important;
+    padding:0 0 30px 0;
+    margin:0;
+	}
+#tab_contents ul li{
+    float:left;
+    width:92%;/*460px*/
+    list-style-type:none;
+	padding:20px 4% 20px 4%;/*20px 20px 20px 20px*/
+	}
+
+#tab_contents ul li iframe{
+    width:100% !important;/*460px*/
+	border:1px solid #afafaf;
+	}
+
+#tab_contents h4{
+	font-size:120%;
+	padding:0 0 5px 0;
+	color:#043776;
+	font-weight:bold;
+	}
+	
+/*サービス検索テーブル
+-------------------------------------------*/
+#srcsTbl{
+	display: block;
+	position: relative;
+	}
+		
+#srcsTbl thead,
+#srcsTbl tbody,
+#srcsTbl th,
+#srcsTbl td,
+#srcsTbl tr{
+	display: block;
+	}
+
+#srcsTbl th.areaTopName,
+#srcsTbl th.areaName{
+	width:42%;
+	float:left;
+	}
+	
+#srcsTbl th.areaTopName{
+	vertical-align:top;
+	font-size:100%;
+	font-weight:normal;
+	padding:0 10px 10px 10px;
+	}
+	
+#srcsTbl thead tr th.svcIcon{
+	vertical-align:bottom;
+	}
+	
+#srcsTbl thead tr th.svcIcon{
+	width:9.8%;/*25px*/
+	height:15%;
+	display:inline;
+	float:left;
+	white-space: nowrap;
+	padding:2% 0.5%;
+	}
+	
+#srcsTbl tbody tr td{
+	width:10%;/*25px*/
+	height:22px;
+	display:inline;
+	float:left;
+	white-space: nowrap;
+	padding:1.8% 0.3% 0 0.3%;
+	font-size:80%;
+	vertical-align:middle;
+	}
+
+#srcsTbl thead tr,
+#srcsTbl tbody tr{
+	display:inline-block;
+	}
+	
+#srcsTbl tbody td:nth-child(-n+6) {
+	border-bottom:1px dotted #b2b2b2;
+	margin:0;
+	}
+	
+#srcsTbl th.areaTopName span{
+	font-size:100%;
+	font-weight:normal;
+	}
+	
+}

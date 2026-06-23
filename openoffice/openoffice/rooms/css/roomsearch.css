@@ -1,0 +1,320 @@
+@charset "utf-8";
+/* room search 結果ページ CSS */
+
+div.roomsearch {
+    margin:13px 0 13px 13px;
+}
+
+div.roomsearch h1 {
+    height:24px;
+    margin:32px 0 28px 0;
+    padding:0 20px;
+    color:black;
+    font-size:18px;
+    line-height:24px;
+    background-image:url(/openoffice/rooms/images/roomsearch_h1bg.png);
+    background-position:left top;
+    background-repeat:no-repeat;
+}
+
+div.roomsearch h2 {
+    height:25px;
+    margin:7px 0;
+    padding:0 7px;
+    background-color:#272727;
+    color:white;
+    font-size:14px;
+    line-height:25px;
+}
+
+table.search-table {
+    margin:0;
+    width:100%;
+    border-collapse:collapse;
+}
+table.search-table th,table.search-table td {
+    border:0 dashed #e0e0e0;
+    border-width:1px 0;
+}
+table.search-table th {
+    background-color:#2d8fc2;
+    color:white;
+    padding:7px 8px;
+    width:116px;
+    text-align:left;
+    vertical-align:top;
+    font-size:13px;
+    line-height:13px;
+}
+table.search-table td {
+    padding:13px 8px;
+    vertical-align:middle;
+}
+table.search-table td input {
+    display:inline;
+    vertical-align:middle;
+}
+table.search-table tr.even td {
+    background-color:#f0f0f0;
+}
+table.search-table tr.form-area label {
+    margin-right:1em;
+}
+table.search-table tr.form-price label, table.search-table tr.form-size label {
+    display:inline-block;
+    width:10em;
+}
+input.submit {
+    position:relative;
+    width:603px;
+    height:26px;
+    left:50%;
+    margin:14px 0 14px -301px;
+    background-image:url(/openoffice/rooms/images/roomsearch_submit.jpg);
+    overflow:hidden;
+    text-indent:-1000em;
+    border:none;
+    padding:0;
+}
+
+p.result-message {
+    text-align:right;
+    font-size:13px;
+    margin:8px 0;
+}
+p.result-message .result-count {
+    font-size:15px;
+    margin:8px 0;
+}
+
+ul.result-offices {
+    padding:0;
+    margin:12px 0 48px 0;
+}
+ul.result-offices li {
+    display:block;
+    border:1px solid #c7c1b4;
+    margin:0 0 28px 0;
+    padding:7px;
+    background-image:url(/openoffice/rooms/images/roomsearch_bg.png);
+    background-repeat:repeat;
+}
+
+ul.result-offices h3 {
+    height:47px;
+    margin:0;
+    padding:0;
+    border:0;
+    border-left:15px solid #9b9693;
+    background-color:#e2ddda;
+    color:#2d8fc2;
+    font-size:23px;
+    line-height:50px;
+    text-indent:18px;
+    font-weight:bold;
+}
+ul.result-offices h3 a {
+    line-height:50px;
+}
+
+ul.result-offices div.office-info-blk {
+    min-height:108px;
+    overflow:hidden;
+    margin:10px 0;
+    background-image:url(/openoffice/rooms/images/roomsearch_infobg.png);
+    background-repeat:repeat-y;
+    background-position:top left;
+}
+
+ul.result-offices img.office-photo {
+    display:block;
+    width:110px;
+    height:110px;
+    float:left;
+}
+ul.result-offices div.office-info {
+    float:left;
+    width:350px;
+    padding:6px;
+    margin-left:5px;
+    background-color:#f5f3f4;
+}
+ul.result-offices div.office-info p.catch {
+    margin:0 0 10px 0;
+    padding:0;
+    color:#0097d5;
+    font-weight:bold;
+    font-size:14px;
+}
+ul.result-offices div.office-info p.info {
+    margin:0;
+    padding:0;
+    font-size:12px;
+    line-height:18px;
+}
+
+ul.result-offices div.office-access {
+    float:right;
+    background-color:#efefef;
+    padding:10px;
+    width:310px;
+    font-size:12px;
+}
+ul.result-offices div.office-access p.address {
+    margin:0;
+    padding:0;
+}
+ul.result-offices div.office-access p.access {
+    margin:14px 0 0 0;
+    padding:0;
+}
+
+ul.result-offices div.search-rooms {
+    clear:left;
+    border:1px solid #e2e2e2;
+}
+ul.result-offices div.search-rooms table {
+    width:100%;
+    margin:0;
+    border-collapse:collapse;
+}
+
+div.search-rooms thead th {
+    background-color:#2d8fc2;
+    color:white;
+    text-align:center;
+    height:30px;
+    background-image:url(/openoffice/rooms/images/roomsearch_thbg.png);
+    background-position:top left;
+    background-repeat:no-repeat;
+}
+div.search-rooms thead th.top {
+    background-image:none;
+}
+div.search-rooms thead th.ksp {
+    width:12em;
+}
+
+div.search-rooms td {
+    text-align:center;
+    height:33px;
+    vertical-align:middle;
+    border-top:1px solid #e2e2e2;
+    background-color:white;
+}
+div.search-rooms tr.even td {
+    background-color:#efefef;
+}
+div.search-rooms tr.first td {
+    border-top:none;
+}
+div.search-rooms td.floor {
+    text-align:right;
+}
+div.search-rooms td.type {
+    text-align:center;
+}
+
+/* レンタルオフィス一覧 */
+ul.index-offices {
+    padding:0;
+    margin:7px -20px 148px 0;
+}
+ul.index-offices li {
+    position:relative;
+    display:block;
+    float:left;
+    border:1px solid #e2e2e2;
+    margin:0 19px 18px 0;
+    padding:7px;
+    width:391px;
+    height:110px;
+}
+ul.index-offices img.office-photo {
+    width:110px;
+    height:110px;
+    position:absolute;
+    top:7px;
+    left:7px;
+}
+ul.index-offices h3 {
+    margin:0 0 0 117px;
+    height:20px;
+    border-left:9px solid black;
+    padding:0 0 0 7px;
+    font-size:17px;
+    line-height:20px;
+    font-weight:bold;
+    font-style:normal;
+}
+ul.index-offices div.office-info {
+    margin:0 0 0 117px;
+}
+ul.index-offices p.catch {
+    margin:7px 0;
+    color:#0097d5;
+    font-weight:bold;
+}
+ul.index-offices p.info {
+    margin:7px 0;
+    font-size:12px;
+    line-height:20px;
+}
+ul.index-offices a.office-link {
+    display:block;
+    width:86px;
+    height:16px;
+    position:absolute;
+    right:7px;
+    bottom:7px;
+}
+
+/* rebus 検索結果 */
+
+ul.result-offices.regus div.office-info-blk {
+    margin-bottom:0px;
+}
+
+ul.result-offices.regus div.office-navi {
+    float:right;
+    margin:10px 0;
+}
+
+/* regus レンタルオフィス一覧への追加*/
+
+ul.index-offices li.regus {
+    border-color:#bbe0e3;
+}
+ul.index-offices li.regus h3 {
+    margin:0 0 0 0;
+    width:48px;
+    height:29px;
+    border:none;
+    padding:0 0 0 0;
+    overflow:hidden;
+    text-indent:-1000em;
+    float:right;
+    background-image:url(/openoffice/rooms/images/regus_logo48.png);
+}
+ul.index-offices li.regus p.catch {
+    margin:0;
+    color:black;
+    font-weight:bold;
+    font-size:12px;
+}
+ul.index-offices li.regus p.info {
+    margin:7px 0;
+    font-size:10px;
+    line-height:13px;
+}
+ul.index-offices li.regus p.info2 {
+    margin:0;
+    padding:0;
+    font-size:10px;
+    height:16px;
+    line-height:16px;
+    text-align:right;
+    position:absolute;
+    right:100px;
+    bottom:7px;
+}

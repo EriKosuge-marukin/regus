@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!--#include virtual="/openoffice/ssi/headtagmanager.html" -->
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>問い合わせ・見学予約｜レンタルオフィス（個室）ならオープンオフィス</title>
+<meta name="description" content="問い合わせ・見学予約。オープンオフィスのレンタルオフィスは【入会金なし】【24時間利用】【完全個室】会議室併設で全国50拠点以上に展開。レンタルオフィスならオープンオフィス。">
+<meta name="keywords" content="問い合わせ・見学予約,レンタルオフィス,東京,大阪,個室,オープンオフィス">
+<link rel="canonical" href="https://www.regus-office.jp/openoffice/form/form.html">
+<script type="text/javascript" charset="utf-8" src="/openoffice/script/opo-allpage.js"></script>
+<script type="text/javascript" charset="utf-8" src="/openoffice/script/tlib.1.18.core.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="./script/officeform.js"></script>
+<link href="css/officeform.css" rel="stylesheet" type="text/css">
+<link href="/openoffice/css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+</style>
+<!--#include virtual="/openoffice/ssi/js.html" -->
+<script>
+    location.href="https://www.regus-office.jp/openoffice/form/form.php";
+    </script>
+<base target="_top">
+<meta name="google-site-verification" content="aQyLxq1Kvlt4I80QsZ7plYTf7THuiZn9bjX76BBAn_0" />
+</head>
+<body>
+<!--#include virtual="/openoffice/ssi/bodygoogle.html" -->
+<div id="OPO_body">
+<a name="top"></a>
+<div id="OPO_header">
+<div id="OPO_header_title">
+<p id="OPO_header_openoffice"><a href="https://www.regus-office.jp/openoffice/"><img src="/openoffice/images/ind_head01.png" width="187" height="42" alt="Openoffice"></a></p>
+<div id="OPO_header_toplink"><p>問い合わせ・見学予約｜個室のレンタルオフィスならOpenoffice：東京・大阪をはじめ全国に50拠点以上</p></div>
+
+
+
+<!--#include virtual="/openoffice/ssi/header.html" -->
+<hr />
+</div><!--header-->
+<div id="OPO_main">
+<ul id="stLst">
+<li><a href="https://www.regus-office.jp/openoffice/">オープンオフィス（Openoffice）HOME</a></li>
+<li class="nw"><strong>問い合わせ・見学予約</strong></li>
+</ul>
+<div id="OPO_main_title_blk">
+  <div id="OPO_main_title_blk2">
+    <h1 class="idx5">問い合わせ・見学予約</h1>
+  </div>
+  <h1 class="idx5">&nbsp;</h1>
+</div>
+<div class="content_outer">
+  <div class="subblock">
+
+
+
+
+<div class="subblock">
+<form name="form1" method="post" action="http://www.openoffice.co.jp/cgi-bin/distribute/cgi-bin/apply.cgi" target="new">
+<br>
+<h3>お問い合わせの内容をご記入ください</h3>
+<table class="form1 mgT20">
+
+<tr><th align="left">お問い合わせの内容</th>
+<td>
+<script type="text/javascript">Checkbox_free1.draw();</script>
+<noscript>
+<input type="text" name="free1" value="見学希望 / 資料希望 / ご相談" size="50" class="formsize2">
+<p>※該当しないものを削除してください。</p>
+</noscript>
+</td>
+</tr>
+
+<tr><th align="left">会社名（団体名）</th>
+<td><input type="text" size="50" maxlength="50" name="co" class="formsize1">
+</td>
+</tr>
+
+<tr><th align="left">担当者名 <span class="required">（必須）</span></th>
+<td><input type="text" size="50" maxlength="50" name="name" class="formsize1">
+</td>
+</tr>
+
+<tr><th align="left">電話番号 <span class="required">（必須）</span></th>
+<td><input type="text" size="50" maxlength="50" name="tel" class="formsize2">
+</td>
+</tr>
+
+<tr><th align="left">携帯電話</th>
+<td><input type="text" size="50" maxlength="50" name="fax" class="formsize2">
+</td>
+</tr>
+
+<tr><th align="left">Eメール <span class="required">（必須）</span></th>
+<td><input name="mail" type="text" id="mail" size="50" maxlength="80" class="formsize2">
+</td>
+</tr>
+
+<tr><th align="left">興味のあるオフィス</th>
+<td><script type="text/javascript">Checkbox_free2.draw()</script>
+<noscript>
+<textarea type="text" name="free2" rows="3" cols="50" class="formsize1">本厚木 / 大崎駅西口 / 豊田 / 西新宿駅前 / 刈谷 / 神戸三宮南 / 大分 / 新潟 / 名古屋丸の内 / 新大阪北 / 立川駅南 / 熊本銀座通り / 仙台駅前 / 西新橋 / 名駅南 / 渋谷神南 / 広島大手町 / 日本橋箱崎 / 神保町 / 博多駅前通り / 小倉 /水戸 / 札幌南 / 京都烏丸 / 池袋 / 赤坂ビジネスプレイス / 青山セントラル / 南青山 / 麻布十番 / 赤坂見附 / 溜池山王 / 渋谷hills / 乃木坂 / 渋谷TOC / 仙台青葉通り / 日本橋セントラル / 新宿ウエスト / 京都川原町 / 名古屋伏見 / 京阪淀屋橋 / バーチャルオフィス</textarea>
+<p>※該当しないものを削除してください。</p>
+</noscript>
+<p id="free3_blk" style="line-height:1.5em;">希望する部屋が具体的にあればご記入下さい。<br>
+<input name="free3" type="text" size="50" value="" class="formsize2"><br>
+<span class="block">例：「青山セントラル5F F, 日本橋セントラル6FS-2」など</span></p>
+</td>
+</tr>
+
+<tr><th align="left">お問い合わせ詳細</th>
+<td><textarea name="free6" rows="5" cols="40" class="formsize1"></textarea>
+<p class="mark-indent10">※人気のため見学ご予約が混み合う場合がございます。<br>
+ご利用をお急ぎの場合は、その旨をご記載くださいませ。優先してご案内を致します。</p>
+</td>
+</tr>
+
+</table>
+
+<input name="md" type="hidden" id="md" value="guest">
+<input name="id" type="hidden" id="id" value="130933554990314">
+<p class="form-submit"><input id="submit_button" type="submit" value="送信" onclick="window.open('','new','height=600,width=500,scrollbars=yes');">
+</p>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+<!--#include virtual="/openoffice/ssi/leftnavi.html" -->
+<!--#include virtual="/openoffice/ssi/footer.html" -->
+
+<!--#include virtual="/openoffice/ssi/accesslogger.html" -->
+</div><!--#include virtual="/openoffice/ssi/footertag.html" -->
+</div></body></html>

@@ -1,0 +1,187 @@
+#OPO_header * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#OPO_header ul#gNav {
+  position: relative;
+  display: block;
+  /*width:996px;*/
+  width: 1040px;
+  height: 51px;
+  /*overflow: hidden;*/
+  margin-bottom: 25px;
+  padding: 0;
+  background: #0097d5;
+}
+#OPO_header ul#gNav > li {
+  width: 16.666%;
+  /*width: 173px;*/
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+#OPO_header ul#gNav > li > a {
+  font-weight: normal;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  line-height: 51px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-decoration: none;
+}
+#OPO_header ul#gNav > li > a:hover {
+  boerder-bottom: #C1A3A4 10px solid;
+  background-color: #e5f4fc !important;
+  /*text-decoration:underline;*/
+  color: #1898d3;
+}
+#OPO_header ul#gNav > li > a:active {
+  font-weight: normal;
+  display: block;
+  color: #1898d3;
+  font-size: 16px;
+  line-height: 51px;
+  margin: 0;
+  padding: 0;
+  /* overflow:hidden;*/
+  vertical-align: middle;
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega {
+  position: relative;
+}
+#OPO_header ul#gNav .Mega > a:before {
+  background-image: url(../images/meganav/icn_dw_w.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+#OPO_header ul#gNav .Mega.onNav > a {
+  background-color: #e5f4fc !important;
+  color: #1898d3;
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega.onNav > a:before {
+  background-image: url(../images/meganav/icn_dw.png);
+}
+#OPO_header ul#gNav .Mega .magaWrap {
+  width: 1040px;
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 30px 0 30px 30px;
+  top: 51px;
+  left: 0;
+  z-index: 9999;
+  background-color: #e5f4fc;
+  list-style: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li {
+  border-bottom: #bee8fc 1px solid;
+  display: table;
+  text-align: left;
+  width: 100%;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li.listPage {
+  padding: 15px 5px;
+  width: 320px;
+  background: url(../images/meganav/icn_next.png) 300px center no-repeat;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li.listPage a {
+  font-size: 15px;
+  color: #675e5e;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li.listPage a:hover {
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li figure {
+  width: 140px;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li figure img {
+  vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li a {
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li a:hover {
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li .place {
+  padding: 0 15px;
+  width: 180px;
+  display: table-cell;
+  margin: 0;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #675e5e;
+  background: url(../images/meganav/icn_next.png) 160px center no-repeat;
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li .place:hover {
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li > .secList {
+  background-color: #bee8fc;
+  width: 690px;
+  position: absolute;
+  display: table-cell;
+  top: 0;
+  min-height: 568px;
+  padding: 13px 20px;
+  z-index: 888;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li > .secList li {
+  display: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li:hover {
+  cursor: pointer;
+  background-color: #bee8fc;
+  text-decoration: none;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li:hover .secList {
+  z-index: 899;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li:hover .secList li {
+  display: table;
+  width: 100%;
+  border-bottom: #e6f6fe 1px solid;
+  padding: 8px 0 10px;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li:hover .secList li em {
+  display: table-cell;
+  font-size: 15px;
+  width: 170px;
+  line-height: 1.1;
+  border-right: 2px #84c8e7 solid;
+  color: #6a6a6a;
+  font-style: normal;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li:hover .secList li span {
+  display: table-cell;
+  line-height: 1.5;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li:hover .secList li span a {
+  display: inline-block;
+  padding: 0 30px 0 10px;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+#OPO_header ul#gNav .Mega .magaWrap > li:hover .secList li span a:hover {
+  color: #6a6a6a;
+  text-decoration: underline;
+}

@@ -1,0 +1,453 @@
+@charset "utf-8";
+@import 'mixin';
+
+  .wrapper {
+    .caseList {
+      clear: both;
+      background: url(/casestudies/images/caselist_bg.gif) repeat-x left top;
+      position: relative;
+        @include break { clear: both;
+     }
+
+      h2 {
+        width: 740px;
+        display: table;
+        background: url(/casestudies/images/caselist_h2.gif) repeat-x left top;
+        height: 50px;
+        margin: 0;
+        padding: 0 15px;
+        border-bottom: #d8d8d8 3px solid;
+          @include break { display: block;
+        background-image: url(/casestudies/images/caselist_h2.gif);
+        background-repeat: repeat-x;
+        background-position: left top;
+        background-size: 100% 100%;
+        height: auto;
+        line-height: 1.3;
+        min-height: 20px;
+        margin: 0;
+        padding: 10px 5px 5px 0px;
+        border-bottom: #d8d8d8 3px solid;
+     }
+
+        em {
+          display: table-cell;
+          vertical-align: middle;
+          font-size: 150%;
+          font-weight: bold;
+             @include break { display: block;
+          vertical-align: middle;
+          font-size: 17px;
+          font-weight: bold;
+          line-height: 1.5;
+     }
+        }//em
+
+        span {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: right;
+          font-size: 90%;
+             @include break {  display: block;
+          vertical-align: middle;
+          text-align: right;
+          font-size: 11px;
+          line-height: 1.2;
+          margin-top: 2px;
+     }
+        }//span
+      }//h2
+
+      .caseListIn {
+        width: 770px;
+        position: relative;
+
+        /*  display:table;*/
+        min-height: 270px;
+           @include break { width: 100%;
+        position: relative;
+        min-height: 200px;
+     }
+      }//caseListIn
+
+      .ttlBox {
+        float: left;
+        margin: 50px 0 0 30px;
+           @include break {  float: none;
+        margin: 20px 2% 0 2%;
+
+     }
+
+        &.L2 {
+          float: left;
+          margin: 50px 0 0 30px;
+            
+             @include break { float: none;
+          margin: 20px 2% 0 2%;}
+        }
+
+        &.L3 {
+          float: left;
+          margin: 40px 0 0 30px;
+              @include break { float: none;
+          margin: 20px 2% 0 2%;}
+        }
+
+        dt {
+          font-size: 160%;
+          border-bottom: #333 1px solid;
+            @include break {font-size: 20px;
+                border-bottom: #333 1px solid;}
+        }//dt
+
+        dd {
+            margin-top: 8px;@include break { margin-top: 8px;}
+
+          span{
+            display: block;
+            margin-bottom: 15px;@include break { display: block;
+            margin-bottom: 15px;}
+          }
+           a {
+            display: block;
+            margin-bottom: 15px;@include break {  display: block;
+            width: 60%;
+            margin: 0 40% 5px 0;}
+          }
+        }//dd
+      }//ttlBox
+
+      .imgBox {
+        position: absolute;
+        float: right;
+        width: 360px;
+        top: -10px;
+        right: 25px;
+        z-index: 999;
+           @include break {  position: relative;
+        float: none;
+        width: 100%;
+        top: -10px;
+        right: 0px;
+        z-index: 999;
+     }
+      }//imgBox
+    }//caseList
+
+    .caseBox {
+      .leadBox {
+        background-color: #efeeeb;
+        padding: 15px 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+           @include break {   background-color: #efeeeb;
+        padding: 15px 5%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+     }
+
+        .leadStory {
+          font-size: 125%;
+          font-weight: bold;
+          border-bottom: #d7d6d3 2px solid;
+          margin-bottom: 15px;
+          padding-bottom: 10px;
+             @include break { font-size: 16px;
+          font-weight: bold;
+          border-bottom: #d7d6d3 2px solid;
+          margin-bottom: 15px;
+          padding-bottom: 10px;
+     }
+        }//leadBox
+      }//caseBox
+
+      .leadMsg {
+        dt {
+          float: right;
+          width: 270px;
+          margin: 0 0 0 25px;
+              @include break { float: none;
+          width: 80%;
+          margin: 0 10% 10px 10%;
+     }
+        }//dt
+
+        dd {
+          padding: 0 300px 0 0;
+          margin: 0; @include break {  padding: 0;
+          margin: 0 3%;
+     }
+
+          h2 {
+            color: #8a7c51;
+            font-size: 160%;
+            padding: 0;
+            margin: 0;
+            background: none;
+            height: auto;
+            line-height: 1.3;
+                @include break {  color: #8a7c51;
+            font-size: 18px;
+            padding: 0;
+            margin: 0;
+            background: none;
+            height: auto;
+            line-height: 1.3;
+     }
+          }//h2
+
+          .prof {
+            color: #8a7c51;
+            font-weight: bold;
+            margin-bottom: 10px;
+                @include break { color: #8a7c51;
+            font-weight: bold;
+            margin-bottom: 10px;
+     }
+          }//prof
+        }//dd
+      }//leadingMsg
+
+      .caseDtl {
+        margin-bottom: 30px;
+  @include break { margin-bottom: 30px;
+     }
+        &:last-child {
+          margin-bottom: 50px; @include break {  margin-bottom: 50px;
+     }
+        }
+
+        h3 {
+          border-left: #e10034 4px solid;
+          padding-left: 10px;
+          font-size: 130%;
+          color: #8a7c51;
+          font-weight: bold;
+          line-height: 1.3;
+          margin-bottom: 10px;
+              @include break { 
+     }
+        }//h3
+          p{
+              line-height: 1.8;
+          }
+        .qa {
+          em {
+            color: #4ba4dd;line-height: 1.3;
+          }
+
+          /*padding-left: 1em;
+          text-indent: -1em;*/
+            @include break{padding-left: 0em;
+          text-indent: 0em;}
+        }//qa
+      }//caseDtl
+
+      .imgRbox {
+        float: right;
+        width: 355px;
+        margin: 0 0 15px 25px;  @include break { float: none;
+        width: 90%;
+        margin: -10px 5% 20px 5%;
+     }
+      }//imgR
+
+      .imgLbox {
+        float: left;
+        width: 270px;
+        margin: 0 20px 15px 0;  @include break { 
+     }
+      }//imgL
+    }//caseBox
+
+    .centDtl {
+      margin-bottom: 50px;  
+        @include break { margin-bottom: 50px; }
+
+    h3 {
+        font-weight: bold;
+        margin: 15px 0 10px 0;
+        border-bottom: #f2f2f2 5px solid;  @include break { font-weight: bold;
+        margin: 15px 0 10px 0;
+        border-bottom: #f2f2f2 5px solid;
+          }
+
+        a {
+          font-weight: bold;
+          margin: 15px 0 10px 0;
+          border-bottom: #f2f2f2 5px solid;
+        }
+      }//h3
+
+      dt {
+        float: left;
+        width: 270px;
+        margin-right: 25px;  @include break {  float: none;
+        width: 80%;
+        margin: 0 10% 10px 10%;
+     }
+      }//dt
+
+      dd {
+        padding: 0 0 0 300px;
+        font-size: 90%;  @include break {  width: 100%;
+            padding: 0;
+        margin: 0;
+        font-size: 90%; } 
+       
+      }//dd
+
+    　.centProf {
+        background-color: #f2f2f2;
+        margin-top: 10px;
+        padding: 5px 15px;
+     }//centProf
+    .linkOffice{
+        margin-top:10px;
+        background-image: url('/common2/images/yajirushi2.png');
+        background-repeat: no-repeat;
+        background-position: left center;padding-left:15px;
+        a{text-decoration: underline;}
+        }//linkOffice
+     .linkOList{
+         li{
+        margin-top:5px;
+        background-image: url('/common2/images/yajirushi2.png');
+        background-repeat: no-repeat;
+        background-position: left 4px;padding-left:15px;
+        a{font-size: 15px;text-decoration: underline;}
+         }
+        }//linkOList
+    }//cenDtl
+
+    .dtlProf {
+      display: table;
+          @include break { display: block;
+     }
+    }//dtlProf
+
+    .dtlProfL {
+      display: table-cell;
+      width: 490px;
+      background-color: #f2f2f2;
+      padding: 25px 30px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;  @include break { display: block;
+      width: 100%;
+      padding: 25px 5%;
+     }
+
+      dt {
+        background: #ffffff;
+        width: 100%;
+        display: table;
+        height: 35px;
+        margin-bottom: 20px;  @include break { background: #ffffff;
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 20px;
+     }
+
+        em {
+          display: table-cell;
+          background: #46c1be;
+          color: #fff;
+          width: 80px;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 90%;
+          padding: 5px 0;
+            
+          @include break {display: table-cell;
+          background: #46c1be;
+          color: #fff;
+          width: 80px;
+          text-align: center;
+          vertical-align: middle;
+              font-size: 90%;}
+        }//em
+
+        span {
+          display: table-cell;
+          font-size: 14px;
+          font-weight: bold;
+          vertical-align: middle;
+          padding: 5px 0 5px 8px;
+            
+           @include break {display: table-cell;
+          padding-left: 8px;
+          font-size: 14px;
+          font-weight: bold;
+               vertical-align: middle;}
+        }//span
+      }//dt
+
+      dd {
+        font-size: 90%;
+        line-height: 1.6;  @include break { font-size: 90%;
+        line-height: 1.6;
+     }
+
+        ul em {
+          font-weight: bold;
+          display: inline-block;
+        }
+      }//dd
+    }//dtlProfL
+
+    .dtlProfR {
+      display: table-cell;
+      width: 280px;
+      background-color: #e0e0e0;
+      padding: 25px 25px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;  @include break {  display: block;
+      width: 100%;
+      background-color: #e0e0e0;
+      padding: 25px 5%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+     }
+
+      dt {
+        margin-bottom: 20px;  @include break { margin-bottom: 20px;
+     }
+      }//dt
+
+      dd {
+        font-size: 90%;
+        line-height: 1.6;  @include break {  font-size: 90%;
+        line-height: 1.6;
+     }
+      }//dd
+    }//dtlProfR
+  }//wrapper
+
+  /*-------------------
+  casestudies/2nd
+  ------------------------------------------*/
+/*----SP----*/
+@media screen and (max-width: 750px) {
+  .wrapper .contents img {
+    &.pcImg {
+      display: none;
+    }
+
+    display: block;
+    height: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .spBr {
+    display: block;
+  }
+
+}
