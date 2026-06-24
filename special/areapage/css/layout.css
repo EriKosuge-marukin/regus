@@ -1,0 +1,1451 @@
+@charset "utf-8";
+
+.wrapper .whatis .flL h3{
+	/*border-bottom:1px dashed #000;*/
+	display:inline;
+	line-height:3;
+	padding-bottom:3px;
+	background-image: linear-gradient(to right, #000, #000 5px, transparent 5px, transparent 8px);
+background-size: 8px 1px;/*ドット1セットの幅　線の高さ*/
+background-position: bottom;
+background-repeat: repeat-x;
+}
+.wrapper .whatis .flL ul li{
+	font-size:100%;
+	text-align:left;
+	color:#000;
+	border:1px solid #e6e782;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background:#e6e782 url(../images/licom.gif) 10px 50% no-repeat;
+	display:block;
+	vertical-align:middle;
+	margin:0 0 2px 0;
+	padding:9px 5px 9px 30px;
+
+}
+
+.wrapper .contents #officetype span.red{
+	color:#e40037;
+}
+
+
+/*meeting*/
+.wrapper .meeting .flL h3{
+	/*border-bottom:1px dashed #000;*/
+	display:inline;
+	line-height:3;
+	background-image: linear-gradient(to right, #000, #000 5px, transparent 5px, transparent 8px);
+background-size: 8px 1px;/*ドット1セットの幅　線の高さ*/
+background-position: bottom;
+background-repeat: repeat-x;
+}
+
+
+
+
+
+
+/*----PC----*/
+@media screen and (min-width: 750px) {
+#topArea{height:800px;
+background:#F5B2B3;position:relative;
+}
+#topArea .slider{
+	width:770px !important;
+	height:348px;
+	z-index:2;
+
+}
+.contents{
+	position:relative;
+}
+.contents #mainTop{
+	/*background:url(../images/area_top_bg.jpg) 0 0 no-repeat;*/
+
+	top:70px;
+	left:0;
+	width:770px;
+	height:348px;
+	position:absolute;
+	/*z-index:9999;*/
+	z-index:20;
+
+}
+
+#mainTop #topLeft{
+	position:absolute;
+	/*top:293px;
+	*/
+	top:300px;left:25px;
+
+	border:0px solid #ffffff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background:#ffffff;
+	z-index:100;
+}
+#mainTop #topRIght{
+	position:absolute;
+	top:153px;left:542px;
+	border:0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	 background-color: rgba( 0, 0, 0, 0.85 );
+	padding:10px;
+	/*z-index:9999;*/
+}
+#mainTop #topRIghtThree{
+	position:absolute;
+	top:88px;left:542px;
+	border:0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	 background-color: rgba( 0, 0, 0, 0.85 );
+	padding:10px;
+}
+
+#mainTop #topRIght p,
+#mainTop #topRIghtThree p,
+#mainTop #topRIghtFour p{
+	margin:2px 0;
+	color:#fff;
+	font-weight:bold;
+}
+#mainTop #topRIght p span,
+#mainTop #topRIghtThree p span,
+#mainTop #topRIghtFour p span{
+	color:#de0034;
+	font-size:200%;
+	font-weight:bold;
+}
+#mainTop #topRIght ul li,
+#mainTop #topRIghtThree ul li{
+	margin-bottom:10px;
+}
+#mainTop #topRIght ul li:last-child,
+#mainTop #topRIghtThree ul li:last-child{
+	margin-bottom:0;
+}
+#mainTop #topRIghtFour ul li{
+	margin-bottom:5px;
+}
+#mainTop #topRIghtFour{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	border: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background-color: rgba( 0, 0, 0, 0.85 );
+	padding: 10px;
+}
+/*↓190226 add___*/
+#mainTop .kyotoP{
+	top: 20px !important;
+	right: 20px !important;
+}
+/*↑190226 add___*/
+
+/*171004 add-----------*/
+#mainTop #topRIghtBanner p{
+	position:absolute;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:120%;
+	line-height:1;
+	letter-spacing:0.2em;
+	top:35px;
+	left:53px;
+	z-index:300;
+}
+#mainTop #topRIghtBanner p a,#mainTop #topRIghtBanner p a:hover,
+#mainTop #topRIghtBanner p a:active,#mainTop #topRIghtBanner p a:visited{
+	color:#fff;
+	display:block !important;
+	text-decoration:none;
+	font-size:100%;
+	background:#000 !important;
+	opacity:1;
+}
+
+#mainTop .letterMid{
+	position:absolute;
+	top:273px !important;
+	left:265px !important;
+}
+/*/171004 add-----------*/
+
+
+#mainNav{
+	background:#b0c43c;
+	padding:5px 0 5px 5px;
+	margin-top:30px;
+}
+#mainNav ul li{
+	width:186px;
+	float:left;
+	margin-right:5px;
+}
+#mainNav ul li:last-child{
+	margin-right:0;
+}
+
+
+
+/*レンタルオフィスとは＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.wrapper .whatis .flL{
+	width:376px;
+	float:left;
+}
+
+.wrapper .whatis .flR{
+	width:376px;
+	float:right;
+}
+/*↑160427 ADD-------------*/
+
+.wrapper .whatis .flR_shr{
+	width:376px;
+	padding-top: 4em;
+	float:right;
+}
+
+/*↑190906 LC-------------*/
+
+.wrapper .gallery{
+	width:338px;
+
+}
+.wrapper .gallery #photo,.wrapper .gallery #photoA,.wrapper .gallery #photoB,.wrapper .gallery #photoC{
+	text-align:center;
+	height:200px;
+	overflow:hidden;
+}
+.wrapper .gallery #photo img,.wrapper .gallery #photoA img,.wrapper .gallery #photoB img,.wrapper .gallery #photoC img{
+		vertical-align:bottom;
+	border:0;
+}
+.wrapper .gallery #thumb,.wrapper .gallery #thumbA,.wrapper .gallery #thumbB,.wrapper .gallery #thumbC{
+	width:338px;
+	margin:4px auto;
+	background:#ffffff;
+}
+.wrapper .gallery #thumb ul,.wrapper .gallery #thumbA ul,.wrapper .gallery #thumbB ul,.wrapper .gallery #thumbC ul{
+	margin-left:3px;
+}
+.wrapper .gallery #thumb li,.wrapper .gallery #thumbA li,.wrapper .gallery #thumbB li,.wrapper .gallery #thumbC li{
+	width:109px;
+	margin:0 2px 3px 0px;
+	float:left;
+}
+.wrapper .gallery #thumb li:nth-child(3n),.wrapper .gallery #thumbA li:nth-child(3n),.wrapper .gallery #thumbB li:nth-child(3n),.wrapper .gallery #thumbC li:nth-child(3n){
+	margin-right:0 !important;
+}
+
+.wrapper .request{
+	text-align:center;
+	margin:17px 0 0;
+}
+
+
+
+/*営業所営業所営業所営業所営業所営業所営業所＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.wrapper .officeBox{
+	width:377px;
+	margin:0 16px 0 0;
+	float:left;
+}
+.wrapper .officeBox:nth-child(2n){
+	margin:0;
+}
+
+.wrapper .officeBox .officeTtl{
+
+	padding:0 0 0 10px;
+	background:#282828;
+}
+.wrapper .officeBox .officeTtl h3{
+	font-weight:bold;
+	float:left;
+	line-height:45px;
+	color:#fff;
+}
+
+.wrapper .officeBox .officeBoxIn{
+	padding:18px 19px;
+	background-color:#f2f2f2;
+}
+.wrapper .officeBox .officeBoxIn .txt{
+	background-color:#ffffff;
+}
+
+.wrapper .officeBox .officeBoxIn .txt .access{
+	padding:10px 15px;
+	border-bottom:1px solid #f1f1f1;
+}
+.wrapper .officeBox .officeBoxIn .txt .ttl{
+	background:url(/common2/images/icn_frame_red.png) no-repeat left top;
+	padding:0 0 0 6px;
+	line-height:18px;
+	height:18px;
+	color:#e30036;
+	font-size:90%;
+	margin:0 0 5px;
+}
+
+.wrapper .officeBox .officeBoxIn .txt .feature{
+	padding:10px 15px;
+	border-bottom:1px solid #f1f1f1;
+	font-size:90%;
+}
+
+.wrapper .officeBox .officeBoxIn .btnBox{
+	width:320px;
+	margin:20px auto 0;
+}
+.wrapper .officeBox .officeBoxIn .btnBox .btnL{
+	width:151px;
+	float:left;
+}
+.wrapper .officeBox .officeBoxIn .btnBox .btnR{
+	width:151px;
+	float:right;
+}
+
+
+
+/*________________________OFFICETYPE_____________________________________*/
+.wrapper .contents #officetype dl{
+	display:block;
+	float:left;
+	width:376px;
+
+	background-color:#dfddd7;
+	margin:0 18px 11px 0;
+}
+.wrapper .contents #officetype dl:nth-child(2n+1){
+	margin-right:0 !important;
+}
+.wrapper .contents #officetype dl dt{
+	text-align:left;
+	color:#ffffff;
+	padding:18px 20px;
+	background:#282828;
+	font-weight:bold;
+}
+
+.wrapper .contents #officetype dl dd div{
+padding:5px 15px 15px 18px;
+text-align:left;
+}
+.wrapper .contents #officetype dl dd{
+
+	text-align:center;
+	lien-height:1.5;
+}
+.wrapper .contents #officetype dl dd p{
+	color:#e40037;
+	padding:10px 0;
+	font-size:110%;
+	line-height:1;
+	font-weight:bold;
+	border:1px solid #e40037;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	width:40%;
+	text-align:center;
+	margin:15px auto 5px auto;
+}
+/*_______________MEEEEEEEETING_____________________________*/
+
+.wrapper .meeting .flL{
+	width:268px;
+	float:left;
+}
+
+.wrapper .meeting .flR{
+	width:480px;
+	float:right;
+}
+div.room{
+	display: table-cell;
+	background: #a4b91e;
+	width: 84px;
+	height: 84px;
+	vertical-align: middle;
+    text-align: center;
+
+}
+div.room p {
+	line-height:1.5;
+
+       display: inline-block;
+    text-align: center;
+	color:#ffffff;
+    }
+/*_______________ブログ引用_____________________________*/
+.blogquate{
+	margin:30px 0 0 0;
+}/*20170727修正50px→30px*/
+.blogquate dt{
+	font-weight:bold;
+	background:#dae3a6;
+	border-left:5px #b6cd2f solid;
+	padding:12px 10px;
+}
+.blogquate dd{
+	margin-top:10px;
+	margin-bottom:30px;
+	padding: 0 0.4rem;
+}
+}
+/*----SP-＾−−−−−−−−−−−−−−−＾---*/
+@media screen and (max-width: 750px) {
+#mainTop,#mainTop3btn{
+	background:none;
+	width:100%;
+	position:relative;
+}
+/*みどり*/
+#mainTop #topLeft,
+#mainTop #topLeft{
+	position:relative;
+	width:80%;
+	margin:30px auto 3px auto;
+}
+#mainTop #topRIght,
+#mainTop #topRIghtThree,
+#mainTop #topRIghtFour{
+	position:relative;
+	width:100%;
+	margin:0 auto 5px auto;
+	border:0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	 background-color: rgba( 0, 0, 0, 0.7 );
+}
+#mainTop #topRIght p,
+#mainTop #topRIghtThree p,
+#mainTop #topRIghtFour p{
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	width:200px;
+	margin:0 auto;
+	padding:3px 0;
+}
+#mainTop #topRIght p span,
+#mainTop #topRIghtThree p span,
+#mainTop #topRIghtFour p span{
+	color:#de0034;
+	font-size:200%;
+	font-weight:bold;
+}
+#mainTop #topRIght ul,
+#mainTop #topRIghtThree ul,
+#mainTop #topRIghtFour ul{
+	width:96%;
+	margin:0 auto 0 3%;
+}
+#mainTop #topRIght ul li,
+#mainTop #topRIghtThree ul li,
+#mainTop #topRIghtFour ul li{
+	width:48%;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+#mainTop #topRIght ul li:last-child{
+	margin-bottom:0;float:left;
+}
+
+
+#mainNav{
+	width:100%;
+	background:#b0c43c;
+	padding:5px 0;
+}
+#mainNav ul{
+	width:96%;
+	margin:0 auto 0 3%;
+}
+#mainNav ul li{
+	width:48%;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+#mainNav ul li:last-child{
+	margin-right:0;
+}
+
+
+
+
+
+
+
+
+
+#topSlide{
+	margin:1em 0 0;
+}
+#topSlide .slider
+{
+}
+.wrapper .leadTxt{
+	margin:4% 0 0;
+}
+
+
+
+
+
+
+/*↑160427 ADD-------------*/
+.wrapper .gallery #photo,
+.wrapper .gallery #photoA,
+.wrapper .gallery #photoB,
+.wrapper .gallery #photoC{
+	min-height:148px;
+	/*height:auto;*/
+}
+.wrapper .gallery #photo img,
+.wrapper .gallery #photoA img,
+.wrapper .gallery #photoB img,
+.wrapper .gallery #photoC img{
+	text-align:center;
+	width:100%;
+}
+
+
+.wrapper .gallery .thumb,
+.wrapper .gallery .thumbA,
+.wrapper .gallery .thumbB,
+.wrapper .gallery .thumbC{
+	text-align:center;
+	margin:5px 0;
+	padding:5px 0 5px 5px;
+	background:#ffffff;
+}
+.wrapper .gallery .thumb li,.wrapper .gallery .thumbA li,.wrapper .gallery .thumbB li,.wrapper .gallery .thumbC li{
+	width:31.6%;
+	margin:0 2px 3px;
+	float:left;
+}
+.wrapper .gallery .thumb li:nth-child(3n),.wrapper .gallery .thumbA li:nth-child(3n),.wrapper .gallery .thumbB li:nth-child(3n),.wrapper .gallery .thumbC li:nth-child(3n){
+	margin-right:0!important;
+}
+.wrapper .request{
+	margin:3% 10% 0;
+}
+
+
+
+
+/*レンタルオフィスとは＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.wrapper .whatis .flL{
+	width:100%;
+	float:none;
+	margin-bottom:10px;
+}
+
+.wrapper .whatis .flR{
+	width:100%;
+	float:none;
+}
+/*営業所営業所営業所営業所営業所営業所営業所営業所営業所＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.wrapper .officeBox{
+	margin:3% 0 0;
+}
+.wrapper .officeBox .officeTtl{
+	background-color:#282828;
+	padding:2% 5%;
+}
+.wrapper .officeBox .officeTtl h3{
+	font-weight:bold;
+	line-height:35px;
+	color:#fff;
+}
+
+.wrapper .officeBox .officeBoxIn{
+	padding:20px;
+	background-color:#f2f2f2;
+}
+.wrapper .officeBox .officeBoxIn .txt{
+	background-color:#ffffff;
+}
+
+.wrapper .officeBox .officeBoxIn .txt .access{
+	padding:10px 15px;
+	border-bottom:1px solid #f1f1f1;
+}
+.wrapper .officeBox .officeBoxIn .txt .ttl{
+	background:url(/common2/images/icn_frame_red.png) no-repeat left top;
+	padding:0 0 0 6px;
+	line-height:18px;
+	height:18px;
+	color:#e30036;
+	font-size:90%;
+	margin:0 0 5px;
+}
+
+.wrapper .officeBox .officeBoxIn .txt .feature{
+	padding:10px 15px;
+	border-bottom:1px solid #f1f1f1;
+	font-size:90%;
+}
+
+.wrapper .officeBox .officeBoxIn .btnBox{
+	width:93%;
+	margin:20px auto 0;
+}
+.wrapper .officeBox .officeBoxIn .btnBox .btnL{
+	width:47%;
+	float:left;
+}
+.wrapper .officeBox .officeBoxIn .btnBox .btnR{
+	width:47%;
+	float:right;
+}
+
+/*________________________OFFICETYPE_____________________________*/
+
+.wrapper .contents #officetype dl{
+	width:100%;
+	float:none;
+	background-color:#dfddd7;
+	margin:0 2% 2% 0;
+}
+.wrapper .contents #officetype dl img{
+	width:70%;
+	margin:10px auto 0 auto;
+}
+.wrapper .contents #officetype dl:nth-child(odd){
+	margin:0 0 2% 0;
+}
+.wrapper .contents #officetype dl dt{
+	text-align:center;
+	color:#ffffff;
+	background:#282828;
+	font-weight:bold;
+	padding:10px 5px;
+}
+.wrapper .contents #officetype dl dd{
+	color:#e40037;
+	text-align:center;
+	lien-height:1.5;
+}
+
+.wrapper .contents #officetype dl dd p{
+	color:#e40037;
+	padding:10px 0;
+	font-size:100%;
+	line-height:1;
+	font-weight:bold;
+	border:1px solid #e40037;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	width:70%;
+	text-align:center;
+	margin:15px auto 5px auto;
+}
+.wrapper .contents #officetype dl dd div{
+	color:#000;
+	text-align:left;
+	margin:0 10px;
+	padding-bottom:10px;
+}
+/*_________meeeting__________________________________________________*/
+.wrapper .meeting .flL{
+	width:100%;
+	float:none;
+}
+.wrapper .meeting .flL .mgT15{
+	margin-top:-1px !important;
+}
+.wrapper .meeting .flR{
+	width:100%;
+	float:none;
+	}
+div.room{
+	display: block;
+	font-size:85%;
+	width:22%;
+	float:left;
+	vertical-align: middle;
+    text-align: center;
+
+	margin-right:10px;
+
+}
+div.room p {
+
+	font-weight:bold;
+	background: #a4b91e;
+	/*line-height:1.5;*/
+     display: block;
+    text-align: center;
+	color:#ffffff;
+	padding:16px 3px;
+    }
+.meetingTxt{
+	font-size:90%;
+	width:72%;
+	float:left;
+	margin-bottom:5px;
+}
+/*_______________ブログ引用_____________________________*/
+.blogquate dt{
+	font-weight: bold;
+	border-top: 1px #b6cd2f solid;
+	border-bottom: 1px #b6cd2f solid;
+	padding: 12px 10px;
+	margin: 1rem 0;
+}
+.blogquate dd {
+	padding: 0 10px;
+}
+/*↓191212 追加___*/
+#mainTop .kyotoP{
+	padding-bottom: 10px;
+}
+/*↑191212 ___*/
+}
+/*_______________SP用ここまで_____________________________*/
+
+
+@media screen and (min-width: 750px) {
+.gmapF{
+	width:770px;
+	height:500px;
+	background:#eee;
+}
+}
+
+@media screen and (max-width: 750px) {
+.gmapF{
+	width:100%;
+	height:300px;
+}
+}
+
+/*h3リンク設定*/
+.wrapper .officeBox .officeTtl h3 a:link {color: #fff !important; text-decoration: none;}
+.wrapper .officeBox .officeTtl h3 a:visited {color: #fff !important; text-decoration: none;}
+.wrapper .officeBox .officeTtl h3 a:hover {color: #f4f4f4 !importantf; text-decoration: none;}
+.wrapper .officeBox .officeTtl h3 a:active {color: #f4f4f4 !importantf; text-decoration: none;}
+
+
+/*青森20170216_________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+@media screen and (min-width: 750px) {
+
+.wrapper .officeAreaAo{
+	background-color:#e0e0e0;
+	margin:30px 0;
+}
+.wrapper .officeAreaAo .detail{
+	width:420px;
+	float:left;
+	background:url(/common2/images/bg_dot.gif) repeat left top;
+	padding:20px 0 0 15px;
+}
+.wrapper .officeAreaAo .detail dl{
+	margin:0 0 10px;
+}
+.wrapper .officeAreaAo .detail dl dt{
+	width:60px;
+	float:left;
+	padding:1px 0;
+	margin:0 10px 0 0;
+	font-size:90%;
+	text-align:center;
+	color:#e40037;
+	border:1px solid #e40037;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+.wrapper .officeAreaAo .detail dl dd{
+	width:340px;
+	float:left;
+}
+.wrapper .officeAreaAo .detail dl p.wline{
+	border-top:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;
+	padding:5px 0 ;
+	margin:0 0 10px;
+	width:328px;
+}
+.wrapper .officeAreaAo .detail .gray li{
+	background:url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+	padding-left:15px;
+}
+
+/*↓サービスアイコン　160721 amend-------------*/
+.wrapper .officeAreaAo .detail .serviceR{
+ margin:0;
+}
+.wrapper .officeAreaAo .detail .serviceR li{
+	width:100px;
+	height:38px;
+	vertical-align:middle;
+	float:left;
+	font-size:100%;
+	line-height:1.2;
+	text-align:center;
+	color:#ffffff;
+	border:1px solid #bfd730;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background:#bfd730;
+	/*display:inline-block;*/
+	margin:0 5px 5px 0;
+}
+
+
+.wrapper .officeAreaAo .detail .serviceR li.service_rental_office{
+	border:1px solid #24b967;
+	background:#24b967;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_coworking{
+	border: 1px solid #ff0000;
+background: #ff0000;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_rental_kaigisitsu{
+	border: 1px solid #eab83f;
+background: #eab83f;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_vertual{
+	border:1px solid #098ef5;
+	background:#098ef5;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_business_world{
+	border:1px solid #f3628e;
+	background:#f3628e;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_com_meeting_r{
+	border: 1px solid #32841c;
+background: #32841c;
+font-size: 68%;
+line-height: 1.4;
+}
+.wrapper .officeAreaAo .detail .serviceR li p{
+	margin-top:5px;
+}
+.wrapper .officeAreaAo .detail .serviceR li:nth-child(2) p,
+.wrapper .officeAreaAo .detail .serviceR li:nth-child(3) p{
+	margin-top:12px;
+}
+.wrapper .officeAreaAo .detail .serviceR li:last-child p{
+	margin-top:8px;
+}
+
+.wrapper .officeAreaAo .detail .serviceOPO{
+
+  margin:0;
+}
+/*↓サービスアイコン　OPEN OFFICE-------------*/
+.wrapper .officeAreaAo .detail .serviceOPO li{
+	width:100px;
+	height:38px;
+	vertical-align:middle;
+	float:left;
+	font-size:100%;
+	line-height:1.2;
+	text-align:center;
+	color:#ffffff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	margin:0 5px 5px 0;
+	border:1px solid #24b967;
+	background:#24b967;
+}
+
+.wrapper .officeAreaAo .detail serviceOPO li:first-child{
+	border:1px solid #24b967;
+	background:#24b967;
+}
+.wrapper .officeAreaAo .detail .serviceOPO li:nth-child(2){
+	border:1px solid #eab83f;
+	background:#eab83f;
+	vertical-align:middle;
+}
+.wrapper .officeAreaAo .detail .serviceOPO li:nth-child(3){
+border:1px solid #098ef5;
+	background:#098ef5;
+}
+
+.wrapper .officeAreaAo .detail .serviceOPO li p{
+	margin-top:5px;
+}
+.wrapper .officeAreaAo .detail .serviceOPO li:nth-child(2) p{
+	margin-top:12px;
+}
+/*ギャラリー*/
+.wrapper .galleryAO{
+	width:335px;
+	float:left;
+	text-align:center;
+}
+.wrapper .galleryAO .pic,
+.wrapper .galleryAO .pic22{
+	padding:35px 0 5px;
+	text-align:center;
+}
+.wrapper .galleryAO .pic li,
+.wrapper .galleryAO .pic22 li{
+	display:none;
+}
+/*.wrapper .galleryAO .thumbBox{
+	width:268px;
+	margin:0 auto;
+	background-color:#e0e0e0;
+}*/
+.wrapper .galleryAO .thumb,
+.wrapper .galleryAO .thumb22{
+	margin:0 34px;
+	text-align:center;
+}
+.wrapper .galleryAO .thumb li,
+.wrapper .galleryAO .thumb22 li{
+	width:81px;
+	margin:0 12px 5px 0;
+	float:left;
+}
+.wrapper .galleryAO .thumb li:nth-child(3n),
+.wrapper .galleryAO .thumb22 li:nth-child(3n){
+	margin-right:0!important;
+}
+
+
+.thumbnail ul,.thumbnail ul,.thumbnail ul,.thumbnail22 ul{
+	width:268px;
+	margin:15px 0 0 32px;
+}
+.thumbnail ul li,.thumbnail22 ul li{
+	/*float:left !important;*/
+	width:268px;
+	margin:0 0 15px 0;
+}
+.thumbnail ul li:nth-child(2),.thumbnail ul li:nth-child(3),
+.thumbnail22 ul li:nth-child(2),.thumbnail22 ul li:nth-child(3){
+	float:left;
+	width:130px;
+}
+.thumbnail ul li:nth-child(2),.thumbnail22 ul li:nth-child(2){
+	margin-right:5px;
+}
+
+/*レンタルオフィスって何？　170201 ADD*/
+#rentaIsAO ul li{
+	width:770px;
+	height:auto;
+	padding-bottom:40px;
+	clear:both;
+	overflow:auto;
+}
+#rentaIsAO ul li h3{
+	font-size:120%;
+	line-height:1.5;
+	font-weight:bold;
+	margin-bottom:20px;
+	border-bottom:1px #ccc dotted;
+}
+
+#rentaIsAO ul li:nth-child(2n-1) img{
+	float:left;
+	border: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	width: 380px;
+	margin:0 15px 50px 0;
+	 /*background-color: rgba( 0, 0, 0, 0.85 );	*/
+}
+#rentaIsAO ul li:nth-child(2n-2) img{
+	float:right;
+	border: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	width: 380px;
+	margin:0 0 50px 15px;
+	 /*background-color: rgba( 0, 0, 0, 0.85 );	*/
+}
+
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+
+.wrapper .officeAreaAo{
+	background-color:#e0e0e0;
+	margin:30px 0;
+}
+.wrapper .officeAreaAo .detail{
+	background:url(/common2/images/bg_dot.gif) repeat left top;
+	padding:3%;
+}
+.wrapper .officeAreaAo .detail dl{
+	margin:0 0 20px;
+}
+.wrapper .officeAreaAo .detail dl dt{
+	width:60px;
+	margin:0 0 3%;
+	font-size:90%;
+	text-align:center;
+	color:#e40037;
+	border:1px solid #e40037;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+.wrapper .officeAreaAo .detail dl p.wline{
+	border-top:2px solid #ffffff;
+	border-bottom:2px solid #ffffff;
+	padding:5px 0 ;
+	margin:0 0 10px;
+}
+.wrapper .officeAreaAo .detail .gray li{
+	background:url(/common2/images/icn_circle_gray.png) no-repeat 0 3px;
+	padding-left:15px;
+}
+
+
+
+/*↓サービスアイコン　160721 amend-------------*/
+.wrapper .officeAreaAo .detail .serviceR{
+ margin:0;
+}
+.wrapper .officeAreaAo .detail .serviceR li{
+	font-size:80%;width:31%;
+	height:38px;
+	vertical-align:middle;
+	float:left;
+	line-height:1.2;
+	text-align:center;
+	color:#ffffff;
+	border:1px solid #bfd730;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background:#bfd730;
+	/*display:inline-block;*/
+	margin:0 3px 5px 0;
+}
+
+
+.wrapper .officeAreaAo .detail .serviceR li.service_rental_office{
+	border:1px solid #24b967;
+	background:#24b967;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_coworking{
+	border: 1px solid #ff0000;
+background: #ff0000;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_rental_kaigisitsu{
+	border: 1px solid #eab83f;
+background: #eab83f;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_vertual{
+	border:1px solid #098ef5;
+	background:#098ef5;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_business_world{
+	border:1px solid #f3628e;
+	background:#f3628e;
+}
+.wrapper .officeAreaAo .detail .serviceR li.service_com_meeting_r{
+	border: 1px solid #32841c;
+background: #32841c;
+font-size:68% !important;
+line-height:1.4;
+}
+
+
+.wrapper .officeAreaAo .detail .serviceR li p{
+	margin-top:5px;
+}
+.wrapper .officeAreaAo .detail .serviceR li:nth-child(2) p,
+.wrapper .officeAreaAo .detail .serviceR li:nth-child(3) p{
+	margin-top:12px;
+}
+.wrapper .officeAreaAo .detail .serviceR li:last-child p{
+	margin-top:8px;
+}
+
+.wrapper .officeAreaAo .detail .serviceOPO{
+
+  margin:0;
+}
+/*↓サービスアイコン　OPEN OFFICE-------------*/
+.wrapper .officeAreaAo .detail .serviceOPO li{
+	font-size:80%;width:31%;
+	height:38px;
+	vertical-align:middle;
+	float:left;
+	line-height:1.2;
+	text-align:center;
+	color:#ffffff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	margin:0 3px 5px 0;
+	border:1px solid #24b967;
+	background:#24b967;
+}
+
+.wrapper .officeAreaAo .detail serviceOPO li:first-child{
+	border:1px solid #24b967;
+	background:#24b967;
+}
+.wrapper .officeAreaAo .detail .serviceOPO li:nth-child(2){
+	border:1px solid #eab83f;
+	background:#eab83f;
+	vertical-align:middle;
+}
+.wrapper .officeAreaAo .detail .serviceOPO li:nth-child(3){
+border:1px solid #098ef5;
+	background:#098ef5;
+}
+
+.wrapper .officeAreaAo .detail .serviceOPO li p{
+	margin-top:5px;
+}
+.wrapper .officeAreaAo .detail .serviceOPO li:nth-child(2) p{
+	margin-top:12px;
+}
+/*__________________________________*/
+.wrapper .galleryAO .pic,
+.wrapper .galleryAO .pic22{
+	text-align:center;
+	padding:5% 5% 0;
+	min-height:200px;
+}
+.wrapper .galleryAO .pic li,
+.wrapper .galleryAO .pic22 li{
+	display:none;
+}
+.wrapper .galleryAO .thumbBox{
+	padding:5%;
+	background-color:#e0e0e0;
+}
+.wrapper .galleryAO .thumb,
+.wrapper .galleryAO .thumb22{
+	margin:2px 4% 0 4%;
+	text-align:center;
+}
+.wrapper .galleryAO .thumb li,
+.wrapper .galleryAO .thumb22 li{
+	width:31.6%;
+	margin:0 1% 2%;
+	float:left;
+}
+.wrapper .galleryAO .thumb li:nth-child(3n),
+.wrapper .galleryAO .thumb22 li:nth-child(3n){
+	margin-right:0!important;
+}
+.thumbnail ul{
+	width:70%;
+	margin:10px auto;
+}
+.thumbnail ul li{
+	float:none;
+	margin:0 0 10px 0;
+}
+.thumbnail ul li:first-child img{
+	height:auto;
+	}
+/*レンタルオフィスって？_______________*/
+#rentaIsAO ul li{
+	width:100%;
+	float:none;
+	position:relative;
+	margin:0 auto 40px auto;
+	display:block;
+
+}
+#rentaIsAO ul li h3{
+	font-size:120%;
+	line-height:1.5;
+	font-weight:bold;
+	margin-bottom:10px;
+	border-bottom:1px #ccc dotted;
+}
+#rentaIsAO ul li img{
+	border: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	width: 100%;
+	margin:10px auto 5px auto;
+	display:block;
+	overflow:auto;
+	 /*background-color: rgba( 0, 0, 0, 0.85 );	*/
+}
+#rentaIsAO ul li{
+	text-align: left;
+}
+}
+
+
+
+/*170216ボタン問合せ　空室----------------------------------*/
+.areaCCArea ul{
+	margin-left:4%;overflow:auto;
+}
+.areaCCArea ul li{
+	width:46%;
+	float:left;
+	margin-right:4%;
+}
+.areaCCArea ul li:last-child{
+	margin-right:0%;
+}
+
+.areaCCArea ul li .areaBtnCon {
+	/*background: -moz-linear-gradient(top,#FFF 0%,#E6E6E6);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));*/
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	padding: 5px 0;
+	margin:20px auto 0 auto;
+	border:none;
+	text-align:center;
+}
+
+.areaBtnCon a{color: #fff;
+	font-size:130%;
+margin-right:5px;
+line-height:40px;
+display:block;
+}
+
+.areaCCArea ul li .red{background:#e10034;}
+.areaCCArea ul li .blue{background:#46c1be;}
+ .red,.blue{position: relative;}
+
+ .red:after{
+	/* content: '';
+  background:url(../images/common_one/area_btn_icon_red.png) 50% 50% no-repeat transparent;*/
+  /*width: 10%;
+   height: 100%; */
+   content: url("../images/common_one/area_btn_icon_red.png") ;
+  background-size: 28px 28px;
+position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px;
+}
+.blue:after{
+   content: url("../images/common_one/area_btn_icon_blue.png") ;
+  background-size: 28px 28px;
+position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px;
+}
+
+@media screen and (max-width: 750px) {
+.areaCCArea ul {
+	overflow:hidden;
+	margin:0;
+	padding:0;}
+.areaCCArea ul li:first-child,
+.areaCCArea ul li:last-child{
+	display:block;
+	width:90%;
+	float:none;
+	margin:10px auto 0px auto;
+}
+.areaCCArea ul li .areaBtnCon {
+	/*background: -moz-linear-gradient(top,#FFF 0%,#E6E6E6);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));*/
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	padding: 5px 0;
+	/*margin:20px auto 0 auto;*/
+	border:none;
+	text-align:center;
+}
+.areaBtnCon a{
+	 line-height:35px;font-size:110%;
+letter-spacing : -1px;
+}
+ .red:after{   content: url("../images/common_one/area_btn_icon_red.png") ;
+  background-size: 12px 12px !important;
+position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -15px;
+}
+.blue:after{
+   content: url("../images/common_one/area_btn_icon_blue.png") ;
+  background-size: 12px 12px !important;
+position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -15px;
+}
+
+/*_______________ブログ引用_____________________________*/
+.blogquate dt{
+	font-weight: bold;
+	border-top: 1px #b6cd2f solid;
+	border-bottom: 1px #b6cd2f solid;
+	padding: 12px 10px;
+	margin: 1rem 0;
+}
+.blogquate dd {
+	padding: 0 10px;
+}
+
+}
+
+
+
+
+/*180803*/
+#mainTop #anchOff5{width: 190px;
+	position: absolute;
+	bottom :10px;
+	right: 10px;
+	border: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background-color: rgba( 0, 0, 0, 0.85 );
+	padding: 10px;
+}
+
+#mainTop #anchOff5 ul li{
+	color: #fff;
+	border-radius:3px;
+	padding: 3px;
+}
+#mainTop #anchOff5 ul li.r{
+	background:#e21a37;
+}
+#mainTop #anchOff5 ul li.o{
+	background:#0097d5;
+}
+
+#mainTop #anchOff5 ul li.r span{
+	display: block;
+	margin-left: 27px;
+
+}
+#mainTop #anchOff5 ul li.r a:before {
+	margin:0 10px 0 0;
+    content:" ";
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url( /special/areapage/images/btn_regus.png);    
+    background-size:contain;
+    vertical-align:middle;
+}
+#mainTop #anchOff5 ul li.o a:before {
+	margin:0 10px 0 0;
+    content:" ";
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url( /special/areapage/images/btn_opo.png);    
+    background-size:contain;
+    vertical-align:middle;
+}
+#mainTop #anchOff5 ul li a{
+	display: block;
+	font-size:75%;
+	line-height: 1.2;
+	color: #fff;
+	
+}
+
+#mainTop #anchOff5 p{
+	margin:2px 0;
+	color:#fff;
+	font-weight:bold;
+}
+#mainTop #anchOff5 p span{
+	color:#de0034;
+	font-size:200%;
+	font-weight:bold;
+}
+#mainTop #anchOff5 ul li{
+	margin-bottom:5px;
+}
+@media screen and (max-width: 750px) {
+
+#mainTop #anchOff5{
+	position:relative;
+	width:94%;
+	margin:25px auto 5px auto !important;
+	border:0px;
+	border-radius: 5px;
+	background-color: rgba( 0, 0, 0, 0.7 );
+	padding: 10px;
+	right: 0px;
+}
+	#mainTop #anchOff5 ul li.r span{
+	display: inline;
+	margin-left: 0;
+
+}
+#mainTop #anchOff5 li a{
+	font-size: 90% !important;
+	padding: 5px 0;
+	}
+}

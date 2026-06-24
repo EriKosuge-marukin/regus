@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import "../../../common/css/mixin";
+
+#wrapper{
+	.ttl{
+		padding-top: 50px;
+		margin-bottom: 20px;
+		h1{
+			background: url(/sp/openoffice/common/img/kv_bg_2.png) right center no-repeat,url(/sp/openoffice/common/img/kv_bg.gif) top center no-repeat;
+			@include bgs((contain,cover));
+			display: inline-block;
+			width: 100%;
+			text-align: left;
+			@include fz(20);
+			font-weight: bold;
+			color: #004c80;
+			padding: 25px 5%;
+			line-height: 1.4;
+			span{
+				@include fz(17);
+				font-weight: bold;
+				color: #004c80;
+			}
+		}
+	}
+	.inner{
+		padding: 0 3.5%;
+		margin-bottom: 35px;
+		h2.bl{
+			display: inline-block;
+			width: 100%;
+			background:url(/sp/common/img/ttl_bl.gif) top left repeat-y #0097d6;
+			@include bgs(450px);
+			padding: 15px 3.5% 15px 6%;
+			@include fz;
+			color: #fff;
+			font-weight: bold;
+			margin-bottom: 20px;
+			+p{
+				margin-bottom: 20px;
+			}
+		}
+		p{
+			@include fz(12);
+			&.note{
+				color: #f00;
+			}
+		}
+		.time_table{
+			.block{
+				width: 100%;
+				@include flex;
+				@include jc;
+				margin-bottom: 8px;
+				&:first-child{
+					.time{
+						border-top: 1px solid  #ccc;
+					}
+				}
+				&:last-child{
+					margin-bottom: 0;
+					.time{
+						&:after{
+							display: none;
+						}
+					}
+				}
+				.time{
+					width: 60px;
+					position: relative;
+					padding: 19px 0;
+					&:after{
+						content: "";
+						display: block;
+						background: #ccc;
+						height: 1px;
+						width: 100%;
+						bottom: -5px;
+						left: 0;
+						position: absolute;
+					}
+					p{
+						@include fz(12);
+						font-weight: bold;
+						text-align: center;
+						span{
+							@include fz(15);
+							font-weight: bold;
+							color: #0097d5;
+							display: block;
+						}
+					}
+				}
+				.action{
+					width:calc(100% - 60px - 3%);
+					background: #f4f3f3;
+					padding: 20px 5%;
+					p{
+						@include fz(12);
+						line-height: 1.6;
+						&.note{
+							color: #ff0000;
+						}
+					}
+					h3{
+						margin: 20px 0 15px;
+						display: block;
+						color: #fff;
+						font-weight: bold;
+						@include fz(12);
+						padding: 5px 8px;
+						background: #0097d5;
+					}
+					.img{
+						width: 80%;
+						margin: 0 auto 10px;
+						img{
+							width: 100%;
+						}
+					}
+					table{
+						background: #fff;
+						margin-top: 15px;
+						table-layout: fixed;
+						caption{
+							background: #999;
+							@include fz(12);
+							color: #fff;
+							text-align: left;
+							padding: 8px 3%;
+						}
+						tr{
+							th{
+								text-align: left;
+								@include fz(12);
+								border: 1px solid  #999;
+								padding: 8px 0 8px 3%;
+							}
+							td{
+								text-align: center;
+								@include fz(12);
+								border: 1px solid  #999;
+								width: 4em;
+								padding: 8px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+.page-top{
+	display: none;
+}

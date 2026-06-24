@@ -1,0 +1,179 @@
+<link rel="shortcut icon" href="/openoffice/favicon.ico">
+<link rel="stylesheet" type="text/css" href="/openoffice/css/style.css" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/openoffice/css/toppage.css" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/openoffice/css/menu.css" charset="utf-8">
+<!--!//-->
+
+<!--↓<div id="OPO_body">
+<a name="top">
+</a>
+<div id="OPO_header">
+<div id="OPO_header_title"><h1 id="OPO_header_openoffice"><a href="https://www.regus-office.jp/openoffice/"><img src="/openoffice/images/ind_head01.png" width="187" height="42" alt="Openoffice"></a></h1>
+<div id="OPO_header_toplink">
+<p>個室のレンタルオフィスならOpenoffice：東京・大阪をはじめ全国に50拠点以上</p>
+</div>//-->
+<!--↑//-->
+<div class="OPO_header_contract">
+    <ul class="clearfix">
+        <li>お電話でのお問い合わせ0120-974-685 平日 8:30-18：00</li>
+        <li class="btnA"><p><a href="/openoffice/kaigi/" target="kaigiwin" class="blue imgov">会員限定会議室予約</a></p>
+        <p><a href="https://www.myregus.com/home" target="_brank" class="red imgov">MyRegusで会議室予約
+</a></p>
+        </li>
+        <li class="btnB"><a href="/openoffice/form_resp/form.php" class="orange imgov">空室状況・金額</a></li>
+        <li class="btnB"><a href="/openoffice/form/form.php" class="green imgov">お問い合わせ</a></li>
+    </ul>
+</div>
+</div>
+<ul id="gNav">
+<li class="Mega"><a href="/openoffice/center_list/">オフィスを探す</a>
+<ol class="magaWrap">
+<li><figure><img src="/openoffice/images/meganav/img_tokyo.jpg" width="140" height="75" alt=""/></figure><span class="place">東京・首都圏</span>
+<ol class="secList">
+<li>
+<em>青山周辺オフィス</em>
+<span><a href="/openoffice/openoffice/chojamaru/">南青山 &gt;</a><a href="/openoffice/openoffice/centre/">青山セントラル &gt;</a><a href="/openoffice/openoffice/nogizaka/">乃木坂/青山一丁目 &gt;</a></span></li>
+<li>
+<em>赤坂オフィス</em>
+<span><a href="/openoffice/openoffice/akasaka/">赤坂ビジネスプレイス &gt;</a><a href="/openoffice/openoffice/mitsuke/">赤坂見附 &gt;</a><a href="/openoffice/openoffice/tameike-sanno/">溜池山王/虎ノ門 &gt;</a></span></li>
+<li>
+<em>麻布十番オフィス</em>
+<span><a href="/openoffice/openoffice/azabu/">麻布十番 &gt;</a></span></li>
+<li>
+<em>日本橋オフィス</em>
+<span><a href="/openoffice/openoffice/nihonbashi/">日本橋セントラル &gt;</a><a href="/openoffice/openoffice/hakozaki/">日本橋箱崎 &gt;</a>
+</span></li>
+<li><em>渋谷オフィス</em>
+<span><a href="/openoffice/openoffice/hills/">渋谷hills &gt;</a><a href="/openoffice/openoffice/shibuyajinnan/">渋谷神南 &gt;</a></span></li>
+<li>
+<em>大崎オフィス</em>
+<span><a href="/openoffice/openoffice/osakieki/">大崎駅西口 &gt;</a></span></li>
+<li>
+<em>五反田オフィス</em>
+<span><a href="/openoffice/openoffice/gotandaekinishi/">五反田駅西口 &gt;</a></span></li>
+<li>
+<em>新宿オフィス</em>
+<span><a href="/openoffice/openoffice/nishishinjyukuekimae/">西新宿駅前 &gt;</a>
+</span></li>
+<li>
+<em>池袋オフィス</em>
+<span><a href="/openoffice/openoffice/ikebukuro/">池袋 &gt;</a></span></li>
+<li>
+<em>神保町オフィス</em>
+<span><a href="/openoffice/openoffice/jinbocho/">神保町 &gt;</a></span></li>
+<li>
+<em>新橋オフィス</em>
+<span><a href="/openoffice/openoffice/nishishinbashi/">西新橋 &gt;</a><a href="/openoffice/openoffice/daimonekimae/">大門駅前 &gt;</a>
+</span></li>
+<li>
+<em>立川オフィス</em>
+<span><a href="/openoffice/openoffice/tachikawa/">立川駅南 &gt;</a></span></li>
+
+<li>
+<em>神奈川オフィス</em>
+<span><a href="/openoffice/openoffice/kinkoucho/">横浜金港町 &gt;</a><a href="/openoffice/openoffice/honatsugi/">本厚木駅前 &gt;</a></span></li>
+	<li>
+<em>大宮オフィス</em>
+<span><a href="/openoffice/openoffice/omiyaekinishi/">大宮駅西口 &gt;</a></span></li>
+<li>
+<em>水戸オフィス</em>
+<span><a href="/openoffice/openoffice/mito/">水戸 &gt;</a></span></li>
+</ol>
+</li>
+
+<li><figure><img src="/openoffice/images/meganav/img_hokkaido.jpg" width="140" height="75" alt=""/></figure><span class="place">北海道・東北・北信越</span>
+<ol class="secList">
+<li><em>北海道オフィス</em>
+<span>
+<a href="/openoffice/openoffice/sapporo-minami/">札幌南 &gt;</a>
+</span></li>
+<li><em>仙台オフィス</em>
+<span>
+<a href="/openoffice/openoffice/sendai/">仙台青葉通り &gt;</a>
+<a href="/openoffice/openoffice/sendaiekimae/">仙台駅前 &gt;</a>
+</span></li>
+<li><em>新潟オフィス</em>
+<span>
+<a href="/openoffice/openoffice/niigata/">新潟 &gt;</a>
+</span></li>
+</ol>
+</li>
+<li><figure><img src="/openoffice/images/meganav/img_osaka.jpg" width="140" height="75" alt=""/></figure><span class="place">大阪</span>
+<ol class="secList">
+<li><em>大阪オフィス</em>
+<span><a href="/openoffice/openoffice/midosuji/">御堂筋 &gt;</a>
+<a href="/openoffice/openoffice/shinosakakita/">新大阪北 &gt;</a>
+<a href="/openoffice/openoffice/keihan-yodoyabashi/">京阪淀屋橋 &gt;</a>
+<a href="/openoffice/openoffice/osaka-hiranomachi/">大阪平野町 &gt;</a>
+<a href="/openoffice/openoffice/osaka-higobashi/">大阪肥後橋 &gt;</a>
+</span></li>
+</ol>
+</li>
+<li><figure><img src="/openoffice/images/meganav/img_nagoya.jpg" width="140" height="75" alt=""/></figure><span class="place">名古屋</span>
+<ol class="secList">
+<li>
+<em>名古屋・愛知オフィス</em>
+<span>
+<a href="/openoffice/openoffice/nagoyamarunouchi/">名古屋丸の内 &gt;</a>
+<a href="/openoffice/openoffice/nagoya/">名古屋伏見 &gt;</a>
+<a href="/openoffice/openoffice/meiekiminami/">名駅南 &gt;</a>
+<a href="/openoffice/openoffice/kariya/">刈谷 &gt;</a>
+<a href="/openoffice/openoffice/toyota/">豊田 &gt;</a>
+</span></li>
+</ol>
+</li>
+<li><figure><img src="/openoffice/images/meganav/img_kyoto.jpg" width="140" height="75" alt=""/></figure><span class="place">京都・神戸</span>
+<ol class="secList">
+<li>
+<em>京都オフィス</em>
+<span>
+<a href="/openoffice/openoffice/kyoto-karasuma/">京都烏丸 &gt;</a>
+<a href="/openoffice/openoffice/kyoto-kawaramachi-oike/">京都河原町御池 &gt;</a>
+</span></li>
+<li>
+<em>神戸オフィス</em>
+<span>
+<a href="/openoffice/openoffice/kobesannomiya/">神戸三宮南 &gt;</a>
+</span></li>
+
+</ol></li>
+<li><figure><img src="/openoffice/images/meganav/img_fukuoka.jpg" width="140" height="75" alt=""/></figure><span class="place">九州・四国</span>
+<ol class="secList">
+<li>
+<em>広島オフィス</em>
+<span>
+<a href="/openoffice/openoffice/hiroshimaootemachi/">広島大手町 &gt;</a>
+</span></li>
+<li>
+<em>高松オフィス</em>
+<span>
+<a href="/openoffice/openoffice/takamatsu/">高松 &gt;</a>
+</span></li>
+<li>
+<em>福岡オフィス</em>
+<span>
+<a href="/openoffice/openoffice/hakata-ekimae/">博多駅前通り &gt;</a>
+<a href="/openoffice/openoffice/kokura/">小倉 &gt;</a>
+</span></li>
+<li>
+<em>大分オフィス</em>
+<span>
+<a href="/openoffice/openoffice/ooita/">大分 &gt;</a>
+</span></li>
+<li>
+<em>熊本オフィス</em>
+<span>
+<a href="/openoffice/openoffice/kumamotoginzadori/">熊本銀座通り &gt;</a>
+</span></li>
+</ol></li>
+<li class="listPage"><a href="/openoffice/center_list/"><span>一覧ページ</span></a></li>
+</ol>
+</li>
+<li><a href="/openoffice/intro/">オープンオフィスとは？</a></li>
+<li><a href="/openoffice/intro/step_hop.html">ご利用までのステップ</a></li>
+<li><a href="/openoffice/intro/010.html">オープンオフィスの1日</a></li>
+<li ><a href="/openoffice/sonota/qanda.html">よくあるご質問</a></li>
+<li><a href="/openoffice/company_infomation/outline.html">会社概要</a></li>
+</ul>
+
+<!--/</div>/-->

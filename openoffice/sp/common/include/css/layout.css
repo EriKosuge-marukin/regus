@@ -1,0 +1,211 @@
+@charset "UTF-8";
+html {
+  overflow: auto;
+  height: 100%; }
+
+/*	へっだー	*/
+header {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  background: #ffffff;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  max-width: 750px;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: solid 2px #e0e0e0; }
+  header .logo {
+    max-width: 100%;
+    line-height: 46px;
+    margin-left: 3.5%;
+    z-index: 200; }
+    header .logo a {
+      display: inline-block;
+      width: 175px;
+      height: 65px; }
+    header .logo img {
+      width: 100%;
+      vertical-align: middle; }
+  header .ham {
+    width: 50px;
+    height: 50px; }
+    header .ham img {
+      width: 48px; }
+
+/*	フッター	*/
+footer {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-bottom: 80px; }
+  footer .page-top {
+    text-align: center;
+    background: #d6d6d6;
+    width: 175px;
+    height: 44px;
+    margin: 0 auto;
+    border: solid 1px #bbbbbb;
+    border-radius: 8px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    footer .page-top a {
+      line-height: 44px;
+      color: #333333; }
+  footer p {
+    margin: 23px auto 20px;
+    border-top: solid 2px #cccccc;
+    border-bottom: solid 2px #cccccc;
+    padding: 18px 0;
+    font-size: 10px;
+    font-size: 1rem;
+    text-align: center; }
+  footer small {
+    display: block;
+    font-size: 9px;
+    font-size: 0.9rem;
+    text-align: center; }
+  footer .foot_btn {
+    width: 100%;
+    max-width: 750px;
+    background-color: #fff;
+    position: fixed;
+    height: 58px;
+    bottom: 0;
+    transform: translateY(110px);
+    z-index: 1;
+    /*padding-top: 5px;*/
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: -webkit-  center;
+    justify-content: center;
+    align-items: center; }
+    footer .foot_btn div {
+      -webkit-flex-basis: 43%;
+      flex-basis: 43%; }
+      footer .foot_btn div:first-child {
+        margin-right: 10px; }
+
+/*------------追従-----------------*/
+.contact_chase {
+  width: 100%;
+  max-width: 750px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 150px;
+  background: #fff;
+  cursor: pointer;
+  transition: .3s;
+  padding: 10px 20px;
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  margin: auto;
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content:  center;
+    justify-content: -webkit-  center;
+    justify-content: center;
+align-items: center;*/ }
+
+.contact_chase img {
+  width: 100%; }
+
+/*このクラスが付与されると表示する*/
+.activeChace {
+  opacity: 1;
+  visibility: visible; }
+
+.contact_chase ul {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-around; }
+
+.contact_chase li {
+  width: 48%; }
+
+.contact_chase li.greenBTN {
+  position: relative; }
+
+.contact_chase li.greenBTN .contact_baloon {
+  position: absolute;
+  top: -10px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%); }
+
+.txt_service_provide {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  margin: 0 auto 10px auto; }
+
+.txt_service_provide:after {
+  content: "/"; }
+
+.txt_service_provide:before {
+  content: "\005C";
+  font-family: arial; }
+
+/*フッターまでスクロールしたら消す*/
+.is-hidden {
+  visibility: hidden;
+  opacity: 0; }
+
+/*# sourceMappingURL=layout.css.map */
+.spAnchor {
+  background: #efefef;
+  widows: 100%;
+  padding: 10px 0;
+  margin-bottom: 30px; }
+  .spAnchor ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; }
+    .spAnchor ul li {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .spAnchor ul li a {
+        display: flex;
+        /* ←修正ポイント */
+        align-items: center;
+        /* ←縦中央揃え */
+        justify-content: center;
+        /* ←横中央揃え */
+        padding: 5px 0;
+        background: #0097d6;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        flex-grow: 1;
+        height: 100%;
+        font-size: 14px; }

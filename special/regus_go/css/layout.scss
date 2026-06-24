@@ -1,0 +1,453 @@
+@mixin break($break:768) {
+	@media screen and (max-width: $break + px) {
+		@content;
+	}
+}
+
+.sp {
+    display: none;
+    @include break {
+        display: inherit;
+    }
+}
+.wrapper{
+    width: 100%;
+    max-width: 1400px;
+    padding: 0;
+    position: relative;
+    color: #000;
+    .contentsWrap {
+        margin: 10px auto 0;
+        #breadcrumb {
+            margin: 0 auto 10px 10px;
+        }
+    }
+}
+.main_contents {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;    
+
+    .sec01 {
+        .info {
+            margin: 60px auto 0;
+            padding: 60px 5%;
+            background: #ececec;
+            max-width: 1200px;
+            text-align: center;
+            @include break {
+                margin: 40px auto 0;
+                padding: 40px 5%;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0 80px;
+                @include break {
+                    gap: 0;
+                }
+                li {
+                    img {
+                        @include break {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+            h1 {
+                text-align: center;
+                font-size: 48px;
+                font-weight: bold;
+                margin: 40px auto 16px;
+                @include break {
+                    margin: 30px auto 10px;
+                    padding: 0 5%;
+                    font-size: 38px;
+                }
+            }
+            .cp {
+                font-size: 24px;
+                font-weight: bold;
+                @include break {
+                    font-size: 20px;
+                }
+                span {
+                    font-weight: bold;
+                    color: #e51c40;
+                }
+            }
+            .phone {
+                margin: 30px auto 0;
+                padding: 30px 5%;
+                border-radius: 10px;
+                background: #fff;
+                max-width: 600px;
+                @include break {
+                    margin: 20px auto 0;
+                    padding: 30px 5% 24px;
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #000;
+                }
+                a {
+                    position: relative;
+                    display: inline-block;
+                    font-size: 54px;
+                    font-weight: bold;
+                    color: #e51c40;
+                    @include break {
+                        font-size: 34px;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -50px;
+                        top: 20px;
+                        width: 34px;
+                        height: 50px;
+                        background: url(/regus_go/images/tel_icon.png) no-repeat;
+                        background-size: contain;
+                        @include break { 
+                            left: -30px;
+                            top: 14px;
+                            width: 22px;
+                        }
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .cta {
+                width: 80vw;
+                max-width: 100%;
+                margin-top: 2rem;
+                margin-right: auto;
+                margin-left: auto;
+                @include break {
+                    margin-top: 2.5rem;
+                    width: 100vw;
+                    .last {
+                      margin-bottom: 0;
+                    }
+                }
+                .cta__contact {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    max-width: 100%;
+                    @include break {
+                        display: block;
+                    }
+                    .cta__btn-contents {
+                        display: flex;
+                        gap: 0 2.5rem;
+                        @include break {
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 0 1.25rem;
+                        }
+                        .l-cta__btn-wrap {
+                            .btn {
+                                margin: 0 auto 20px;
+                                max-width: 100%;
+                                padding: 0.5rem 0;
+                                font-size: 18px;
+                                color: #fff !important;
+                                text-align: center;
+                                position: relative;
+                                display: inline-block;
+                                font-weight: 500;
+                                border-radius: 100vh;
+                                line-height: 1.94;
+                                text-decoration: none;
+                                overflow: hidden;
+                                @include break {
+                                    width: 80%;
+                                    max-width: 25rem;
+                                    font-size: 16px;
+                                    padding: 0.625rem 0;
+                                }
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: inline-block;
+                                    top: -180px;
+                                    left: 0;
+                                    width: 30px;
+                                    height: 100%;
+                                    background-color: #fff;
+                                    -webkit-animation: btn 4s ease-in-out infinite;
+                                    animation: btn 4s ease-in-out infinite;
+                                }
+                                &::after {
+                                    position: absolute;
+                                    top: 50%;
+                                    -webkit-transform: translateY(-50%);
+                                    transform: translateY(-50%);
+                                    right: 0.9375rem;
+                                    content: "";
+                                    width: 1.25rem;
+                                    height: 0.9375rem;
+                                    background: url(/regus_go/images/arrow.png) center center/contain no-repeat;
+                                    -webkit-transition: all 0.3s ease;
+                                    transition: all 0.3s ease;
+                                    @include break {
+                                        width: 0.9375rem;
+                                        height: 0.6875rem;
+                                    }
+                                }
+                                span {
+                                    font-weight: bold;
+                                    position: relative;
+                                    display: inline-block;
+                                    -webkit-transition: 0.3s;
+                                    transition: 0.3s;
+                                    &:hover {
+                                        -webkit-transform: translateX(10px);
+                                        transform: translateX(10px);
+                                        -webkit-transition: 0.3s;
+                                        transition: 0.3s;
+                                    }
+                                }
+                            }
+                            .btn__cta--contact {
+                                background-color: #0d3c7d;
+                                width: 15.625rem;
+                                @include break {
+                                    width: 80%;
+                                }
+                            }
+                            .btn__cta--vacancy {
+                                background-color: #e30613;
+                                width: 21.25rem;
+                                @include break {
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+                }
+              }
+              @-webkit-keyframes btn {
+                0% {
+                  -webkit-transform: scale(0) rotate(45deg);
+                  opacity: 0;
+                }
+                80% {
+                  -webkit-transform: scale(0) rotate(45deg);
+                  opacity: 0.5;
+                }
+                81% {
+                  -webkit-transform: scale(4) rotate(45deg);
+                  opacity: 1;
+                }
+                100% {
+                  -webkit-transform: scale(50) rotate(45deg);
+                  opacity: 0;
+                }
+              }
+              @keyframes btn {
+                0% {
+                  -webkit-transform: scale(0) rotate(45deg);
+                  opacity: 0;
+                }
+                80% {
+                  -webkit-transform: scale(0) rotate(45deg);
+                  opacity: 0.5;
+                }
+                81% {
+                  -webkit-transform: scale(4) rotate(45deg);
+                  opacity: 1;
+                }
+                100% {
+                  -webkit-transform: scale(50) rotate(45deg);
+                  opacity: 0;
+                }
+              }
+        }
+        .end {
+            margin: 60px auto 100px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            @include break {
+                margin: 60px auto 60px;
+                padding: 0 5%;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .sec02 {
+        padding: 80px 5% 40px;
+        background: #000;
+        color: #fff;
+        @include break {
+            padding: 60px 5% 20px;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 30px;
+            text-align: center;
+            @include break {
+                margin-bottom: 10px;
+                font-size: 24px;
+            }
+        }
+        .mincho {
+            margin-bottom: 80px;
+            font-family: "Noto Serif JP", serif;
+            font-size: 64px;
+            letter-spacing: -2px;
+            line-height: 100px;
+            text-align: center;
+            @include break {
+                margin-bottom: 60px;
+                font-size: 30px;
+                line-height: 60px;
+            }
+            span {
+                font-size: 120px;
+                color: #e51c40;
+                @include break {
+                    font-size: 70px;
+                }
+            }
+        }
+        small {
+            display: block;
+            text-align: right;
+            font-size: 14px;
+            @include break {
+                font-size: 12px;
+            }
+        }
+    }
+    .sec03 {
+        margin: 100px auto;
+        padding: 0 10%;
+        max-width: 1000px;
+        @include break {
+            margin: 60px auto;
+        }
+        .slider {
+            position:relative;
+            z-index: 1;
+            .slider-item {
+                .cap {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    gap: 20px;
+                    @include break {
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 10px;
+                    }
+                    img {
+                        @include break {
+                            max-width: 160px;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        @include break {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .slider-item03 {
+                .cap {
+                    img {
+                        @include break {
+                            max-width: 100px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 16px;
+                        @include break {
+                            margin-bottom: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-prev, 
+        .slick-next {
+            position: absolute;
+            z-index: 3;
+            top: 42%;
+            cursor: pointer;
+            outline: none;
+            border-top: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+            height: 25px;
+            width: 25px;
+            @include break {
+                top: 26%;
+                height: 20px;
+                width: 20px;
+            }
+        }
+        .slick-prev {
+            left:-4%;
+            transform: rotate(-135deg);
+            @include break {
+                left:-6%;
+            }
+        }
+        .slick-next {
+            right:-4%;
+            transform: rotate(45deg);
+            @include break {
+                right:-6%;
+            }
+        }
+        .slick-dots {
+            position: relative;
+            z-index: 3;
+            text-align:center;
+            margin: 10px 0 0 0;
+        }
+        .slick-dots li {
+            position: relative;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+        }
+        .slick-dots button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 12px;
+            height: 12px;
+            padding: 0 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+            border-radius: 50%;
+            background:#ccc;
+        }
+        .slick-dots .slick-active button{
+            background:#333;
+        }
+    }
+
+}

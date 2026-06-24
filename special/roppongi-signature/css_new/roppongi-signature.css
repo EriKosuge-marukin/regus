@@ -1,0 +1,816 @@
+@charset "UTF-8";
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: .8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+p {
+  line-height: 1.8; }
+  @media screen and (max-width: 768px) {
+    p {
+      line-height: 1.5; } }
+
+.main_contents {
+  font-family: 'Noto Sans JP',"游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: #3b4042; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px;
+      line-height: 1.6; } }
+  .main_contents * {
+    box-sizing: border-box; }
+  .main_contents img {
+    width: 100%;
+    height: auto; }
+  .main_contents .bg-mv {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #3e4141;
+    background: linear-gradient(37deg, #3e4141 27%, #181e1f 74%); }
+    @media screen and (max-width: 768px) {
+      .main_contents .bg-mv {
+        /*background: url(/special/roppongi-signature/images/mv_sp.jpg) no-repeat center center/cover;*/ } }
+    .main_contents .bg-mv .inner {
+      position: relative;
+      width: 1200px;
+      background: url(/special/roppongi-signature/images/mv_bg.png) no-repeat bottom right/cover;
+      margin: 0 auto;
+      display: block; }
+      @media screen and (max-width: 768px) {
+        .main_contents .bg-mv .inner {
+          width: 100%;
+          background: url(/special/roppongi-signature/images/mv_bg_sp.png) no-repeat bottom right/contain; } }
+      .main_contents .bg-mv .inner .btnLng {
+        position: absolute;
+        background: #3b4042;
+        border-radius: 3px;
+        top: 20px;
+        right: 2px;
+        width: 145px;
+        height: 35px;
+        vertical-align: middle;
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          .main_contents .bg-mv .inner .btnLng {
+            width: 125px;
+            right: 8px; } }
+        .main_contents .bg-mv .inner .btnLng a {
+          width: 100%;
+          display: inline-block;
+          color: #fff;
+          font-size: 14px;
+          line-height: 35px; }
+          .main_contents .bg-mv .inner .btnLng a:hover {
+            text-decoration: none;
+            opacity: 0.5; }
+          .main_contents .bg-mv .inner .btnLng a::before {
+            content: '';
+            width: 3px;
+            height: 3px;
+            border: 0px;
+            border-top: solid 1px #fff;
+            border-right: solid 1px #fff;
+            -ms-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            margin-top: -2px; }
+            @media screen and (max-width: 768px) {
+              .main_contents .bg-mv .inner .btnLng a::before {
+                right: 10px; } }
+      .main_contents .bg-mv .inner .cop {
+        margin-right: 66.6%;
+        width: 33.4%;
+        padding-left: 5px; }
+        @media screen and (max-width: 768px) {
+          .main_contents .bg-mv .inner .cop {
+            margin-right: 28%;
+            width: 72%; } }
+        .main_contents .bg-mv .inner .cop .text01 {
+          width: 300px;
+          margin: 0 0 25px;
+          padding-top: 60px; }
+          @media screen and (max-width: 768px) {
+            .main_contents .bg-mv .inner .cop .text01 {
+              width: 100%;
+              padding-top: 50px;
+              margin: 0 0 20px; } }
+        .main_contents .bg-mv .inner .cop .text02 {
+          width: 100%;
+          color: #ffffff;
+          font-size: 12px;
+          line-height: 2.1;
+          margin: 0 0 60px 0;
+          padding-top: 25px;
+          border-top: #b49761 1px solid; }
+          @media screen and (max-width: 768px) {
+            .main_contents .bg-mv .inner .cop .text02 {
+              margin: 0 0 40px 0;
+              padding-top: 20px; } }
+        .main_contents .bg-mv .inner .cop .text03 {
+          width: 130px;
+          padding-bottom: 15px; }
+  .main_contents .top3Links {
+    width: 100%;
+    background: #333;
+    /*dcdcdc;/*border-top:1px #ccc solid;*/ }
+    .main_contents .top3Links ul {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 5px 0; }
+      @media screen and (max-width: 768px) {
+        .main_contents .top3Links ul {
+          width: 100%;
+          padding: 2px 0; } }
+      .main_contents .top3Links ul li {
+        width: 33.1%;
+        /*border-right:1px #666 solid;*/
+        /*background: $color-search;*/
+        background: #3c3c3c;
+        background: linear-gradient(0deg, #3c3c3c 0%, #555555 50%);
+        border-radius: 3px; }
+        .main_contents .top3Links ul li:nth-child(2) {
+          /*background: $color-contact;*/
+          background: #3c3c3c;
+          background: linear-gradient(0deg, #3c3c3c 0%, #555555 50%); }
+        .main_contents .top3Links ul li:last-child {
+          border-right: 0px;
+          /*background: $color-vacancy;*/
+          background: #3c3c3c;
+          background: linear-gradient(0deg, #3c3c3c 0%, #555555 50%); }
+        .main_contents .top3Links ul li a {
+          width: 100%;
+          display: block;
+          color: #fff;
+          padding: 22px 0;
+          text-align: center;
+          text-decoration: none;
+          font-size: 18px; }
+          @media screen and (max-width: 768px) {
+            .main_contents .top3Links ul li a {
+              padding: 15px 0 10px;
+              font-size: clamp(10px, 1.5vw, 17px); } }
+          .main_contents .top3Links ul li a:hover {
+            background: #666; }
+          .main_contents .top3Links ul li a p {
+            position: relative;
+            font-weight: bold; }
+            @media screen and (max-width: 768px) {
+              .main_contents .top3Links ul li a p {
+                padding-top: 16px;
+                font-weight: bold;
+                transform: scale(0.9, 1); } }
+            .main_contents .top3Links ul li a p::before {
+              content: '';
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              margin-right: 5px;
+              background-image: url(/images/top_3links_icon_2.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              vertical-align: middle; }
+              @media screen and (max-width: 768px) {
+                .main_contents .top3Links ul li a p::before {
+                  display: block;
+                  position: absolute;
+                  top: -4px;
+                  left: 43%; } }
+            .main_contents .top3Links ul li a p.contact::before {
+              background-image: url(/images/top_3links_icon_1.png); }
+            .main_contents .top3Links ul li a p.vacancy::before {
+              background-image: url(/images/top_3links_icon_3.png); }
+  .main_contents .cdSec {
+    background-size: cover auto;
+    background-repeat: no-repeat;
+    background-position: center 60px; }
+    .main_contents .cdSec.fixed {
+      min-height: 70vh;
+      background-attachment: fixed;
+      background-image: url("/special/roppongi-signature/images/para_img.jpg"); }
+    .main_contents .cdSec.exp {
+      width: 100%;
+      background-color: #504e4d; }
+      .main_contents .cdSec.exp .inner {
+        max-width: 1060px;
+        width: 98%;
+        margin: 0 auto;
+        padding: 90px 0;
+        position: relative; }
+        @media screen and (max-width: 768px) {
+          .main_contents .cdSec.exp .inner {
+            padding: 60px 0; } }
+        .main_contents .cdSec.exp .inner h1.expLogo {
+          font-size: 0;
+          text-align: 0;
+          background: transparent;
+          padding: 0;
+          max-width: 400px;
+          width: 100%;
+          margin: 0 auto; }
+          @media screen and (max-width: 768px) {
+            .main_contents .cdSec.exp .inner h1.expLogo {
+              max-width: 290px;
+              width: 50%;
+              margin: 0 auto; } }
+        .main_contents .cdSec.exp .inner dl {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          margin: 0 auto; }
+          @media screen and (max-width: 768px) {
+            .main_contents .cdSec.exp .inner dl {
+              flex-flow: column; } }
+          .main_contents .cdSec.exp .inner dl dt {
+            flex-basis: 22%;
+            border-right: 4px solid #666463;
+            color: #b59564;
+            font-size: 24px; }
+            @media screen and (max-width: 768px) {
+              .main_contents .cdSec.exp .inner dl dt {
+                text-align: center;
+                font-size: 20px;
+                border-bottom: 2px solid #666463;
+                border-right: 0;
+                padding: 0 0 20px 0; } }
+            .main_contents .cdSec.exp .inner dl dt span {
+              font-size: 18px; }
+              @media screen and (max-width: 768px) {
+                .main_contents .cdSec.exp .inner dl dt span {
+                  font-size: 16px; } }
+          .main_contents .cdSec.exp .inner dl dd {
+            color: #fff;
+            flex-basis: 76%;
+            padding: 0 0 0 30px; }
+            @media screen and (max-width: 768px) {
+              .main_contents .cdSec.exp .inner dl dd {
+                padding: 20px 0 0 0; } }
+  .main_contents .placeFrame {
+    width: 100%;
+    background-color: #3b4042;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap; }
+    @media screen and (max-width: 768px) {
+      .main_contents .placeFrame {
+        width: 100%;
+        min-width: auto;
+        display: block; } }
+    .main_contents .placeFrame .placePic {
+      width: 55%;
+      height: 0;
+      padding-top: 30%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+      @media screen and (max-width: 768px) {
+        .main_contents .placeFrame .placePic {
+          width: 100%;
+          height: 200px; } }
+      .main_contents .placeFrame .placePic.entrance {
+        background-image: url("/special/roppongi-signature/images/building_01.jpg"); }
+      .main_contents .placeFrame .placePic.off01 {
+        background-image: url("/special/roppongi-signature/images/building_02.jpg"); }
+      .main_contents .placeFrame .placePic.off02 {
+        background-image: url("/special/roppongi-signature/images/building_03.jpg"); }
+      .main_contents .placeFrame .placePic.off03 {
+        background-image: url("/special/roppongi-signature/images/building_04.jpg"); }
+      .main_contents .placeFrame .placePic.off04 {
+        background-image: url("/special/roppongi-signature/images/building_05.jpg"); }
+    .main_contents .placeFrame .placeTxt {
+      width: 45%;
+      /*padding: 90px 0 0 116px;*/
+      position: relative; }
+      @media screen and (max-width: 768px) {
+        .main_contents .placeFrame .placeTxt {
+          width: 100%;
+          background: #3b4042;
+          padding: 40px 0 0; } }
+      .main_contents .placeFrame .placeTxt .innder {
+        max-width: 400px;
+        width: 80%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        @media screen and (max-width: 768px) {
+          .main_contents .placeFrame .placeTxt .innder {
+            width: 90%;
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            margin: 0 auto; } }
+        @media screen and (max-width: 768px) {
+          .main_contents .placeFrame .placeTxt .innder.secnd {
+            padding-bottom: 50px; } }
+        .main_contents .placeFrame .placeTxt .innder .sub {
+          font-size: 14px;
+          line-height: 1;
+          margin-bottom: 25px; }
+          @media screen and (max-width: 768px) {
+            .main_contents .placeFrame .placeTxt .innder .sub {
+              font-size: 11px;
+              margin-bottom: 5px; } }
+        .main_contents .placeFrame .placeTxt .innder h2.sig {
+          background: none;
+          padding: 0;
+          color: #fff;
+          color: #b59564;
+          font-size: clamp(18px, 1vw, 21px);
+          font-weight: 100;
+          line-height: 1;
+          letter-spacing: 0.2em;
+          margin-bottom: 26px; }
+          @media screen and (max-width: 768px) {
+            .main_contents .placeFrame .placeTxt .innder h2.sig {
+              font-size: 22px !important;
+              padding: 0 !important;
+              line-height: 25px !important; } }
+        .main_contents .placeFrame .placeTxt .innder .disc {
+          /*margin: 43px 0 0 0;*/
+          *margin: 0;
+          line-height: 1.9;
+          font-size: clamp(12px, 1vw, 18px); }
+          @media screen and (max-width: 768px) {
+            .main_contents .placeFrame .placeTxt .innder .disc {
+              margin: 15px 0 0 0;
+              font-size: 14px; } }
+          @media screen and (max-width: 768px) {
+            .main_contents .placeFrame .placeTxt .innder .disc.spDis {
+              padding-bottom: 50px; } }
+  .main_contents .fullFrame {
+    width: 100%;
+    background-color: #3b4042;
+    position: relative;
+    display: block; }
+    @media screen and (max-width: 768px) {
+      .main_contents .fullFrame {
+        width: 100%;
+        min-width: auto;
+        display: block; } }
+    .main_contents .fullFrame .placePic {
+      width: 100%;
+      height: 0;
+      padding-top: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background: url("/special/roppongi-signature/images/building_full.jpg") no-repeat;
+      background-size: cover; }
+      @media screen and (max-width: 768px) {
+        .main_contents .fullFrame .placePic {
+          width: 100%;
+          height: 200px;
+          background: url("/special/roppongi-signature/images/building_full_sp.jpg");
+          background-size: cover; } }
+    .main_contents .fullFrame .placeTxt {
+      width: 70%;
+      margin: 0 auto;
+      opacity: 1; }
+      @media screen and (max-width: 768px) {
+        .main_contents .fullFrame .placeTxt {
+          width: 100%;
+          background: #3b4042;
+          padding: 40px 0 0; } }
+      .main_contents .fullFrame .placeTxt .innder {
+        background: #3b4042;
+        background: rgba(59, 64, 66, 0.95);
+        padding: 40px 80px;
+        max-width: 700px;
+        width: 100%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+        @media screen and (max-width: 768px) {
+          .main_contents .fullFrame .placeTxt .innder {
+            width: 90%;
+            max-width: 90%;
+            padding: 0;
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            margin: 0 auto; } }
+        @media screen and (max-width: 768px) {
+          .main_contents .fullFrame .placeTxt .innder.secnd {
+            padding-bottom: 50px; } }
+        .main_contents .fullFrame .placeTxt .innder h2.sig {
+          background: none;
+          padding: 0;
+          color: #fff;
+          color: #b59564;
+          font-size: clamp(18px, 1vw, 28px);
+          font-weight: 100;
+          line-height: 1;
+          letter-spacing: 0.2em;
+          margin-bottom: 30px; }
+          @media screen and (max-width: 768px) {
+            .main_contents .fullFrame .placeTxt .innder h2.sig {
+              font-size: 22px !important;
+              padding: 0 !important;
+              line-height: 25px !important; } }
+        .main_contents .fullFrame .placeTxt .innder .disc {
+          /*margin: 43px 0 0 0;*/
+          *margin: 0;
+          line-height: 1.9;
+          font-size: clamp(13px, 1vw, 18px); }
+          @media screen and (max-width: 768px) {
+            .main_contents .fullFrame .placeTxt .innder .disc {
+              margin: 15px 0 0 0;
+              font-size: 14px; } }
+          @media screen and (max-width: 768px) {
+            .main_contents .fullFrame .placeTxt .innder .disc.spDis {
+              padding-bottom: 50px; } }
+  .main_contents .ropppongi {
+    background: #504e4d url("/special/roppongi-signature/images/bg_night.jpg") 0 0 no-repeat;
+    background-size: contain; }
+    .main_contents .ropppongi.en {
+      background: #504e4d url("/special/roppongi-signature/images/bg_night_en.jpg") 0 0 no-repeat;
+      background-size: contain;
+      padding-top: 170px; }
+      @media screen and (max-width: 768px) {
+        .main_contents .ropppongi.en {
+          padding-top: 80px; } }
+    .main_contents .ropppongi .inner {
+      max-width: 1000px;
+      width: 100%;
+      padding: 90px 0 10px 0;
+      margin: 0 auto; }
+      @media screen and (max-width: 768px) {
+        .main_contents .ropppongi .inner {
+          width: 90%;
+          margin: 0 auto;
+          padding: 35px 0 0; } }
+      .main_contents .ropppongi .inner h2.roppon {
+        font-size: 0;
+        text-align: 0;
+        padding: 0;
+        max-width: 480px;
+        width: 50%;
+        margin: 0 auto 80px auto; }
+        @media screen and (max-width: 768px) {
+          .main_contents .ropppongi .inner h2.roppon {
+            width: 70%;
+            margin: 0 auto 40px auto; } }
+      .main_contents .ropppongi .inner .bnr {
+        max-width: 1000px;
+        width: 90%;
+        margin: 0px auto 80px; }
+        @media screen and (max-width: 768px) {
+          .main_contents .ropppongi .inner .bnr {
+            margin: 0px auto 0;
+            padding-bottom: 20px; } }
+        .main_contents .ropppongi .inner .bnr h3 {
+          color: #fff;
+          text-align: center;
+          background: none;
+          padding: 0;
+          font-size: 20px;
+          font-weight: 400;
+          margin-bottom: 15px;
+          letter-spacing: 0.15em;
+          line-height: 1; }
+          @media screen and (max-width: 768px) {
+            .main_contents .ropppongi .inner .bnr h3 {
+              font-size: 16px;
+              line-height: 1.4;
+              margin-bottom: 10px; } }
+        .main_contents .ropppongi .inner .bnr a {
+          display: block; }
+      .main_contents .ropppongi .inner .downLoadDocu {
+        max-width: 1000px;
+        width: 90%;
+        /*background: #fff;*/
+        border-radius: 10px;
+        margin: 50px auto 120px; }
+        @media screen and (max-width: 768px) {
+          .main_contents .ropppongi .inner .downLoadDocu {
+            margin: 80px auto 40px;
+            width: 100%; } }
+        .main_contents .ropppongi .inner .downLoadDocu p {
+          font-size: 22px;
+          color: #fff;
+          margin-bottom: 10px;
+          text-align: center; }
+          .main_contents .ropppongi .inner .downLoadDocu p span {
+            font-size: 30px; }
+            @media screen and (max-width: 768px) {
+              .main_contents .ropppongi .inner .downLoadDocu p span {
+                font-size: 24px; } }
+          @media screen and (max-width: 768px) {
+            .main_contents .ropppongi .inner .downLoadDocu p {
+              font-size: 18px; } }
+        .main_contents .ropppongi .inner .downLoadDocu a {
+          display: block;
+          width: 80%;
+          margin: 0 auto; }
+          @media screen and (max-width: 768px) {
+            .main_contents .ropppongi .inner .downLoadDocu a {
+              width: 100%; } }
+      .main_contents .ropppongi .inner .ropponFrame {
+        width: 100%;
+        /*background: linear-gradient(0deg, rgba(80,78,77,1) 84%, rgba(80,78,77,0) 100%);*/
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        color: #fff; }
+        @media screen and (max-width: 768px) {
+          .main_contents .ropppongi .inner .ropponFrame {
+            display: block; } }
+        .main_contents .ropppongi .inner .ropponFrame .ropponFrA {
+          width: 60%;
+          margin: 0 auto; }
+          @media screen and (max-width: 768px) {
+            .main_contents .ropppongi .inner .ropponFrame .ropponFrA {
+              width: 90%;
+              margin: 0 auto;
+              display: block; } }
+          .main_contents .ropppongi .inner .ropponFrame .ropponFrA.engWidth {
+            width: 56%; }
+          .main_contents .ropppongi .inner .ropponFrame .ropponFrA ul {
+            list-style: none;
+            padding-left: 1.2em; }
+            @media screen and (max-width: 768px) {
+              .main_contents .ropppongi .inner .ropponFrame .ropponFrA ul {
+                padding-bottom: 25px; } }
+            .main_contents .ropppongi .inner .ropponFrame .ropponFrA ul li {
+              text-indent: -0.7em;
+              margin-bottom: 16px;
+              line-height: 1.7; }
+              @media screen and (max-width: 768px) {
+                .main_contents .ropppongi .inner .ropponFrame .ropponFrA ul li {
+                  text-indent: -1.2em; } }
+              .main_contents .ropppongi .inner .ropponFrame .ropponFrA ul li:before {
+                content: "";
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                background-color: #b59564;
+                border-radius: 50%;
+                margin-right: 3px; }
+        .main_contents .ropppongi .inner .ropponFrame .ropponFrB {
+          width: 53%;
+          margin: 0 auto  30px; }
+          .main_contents .ropppongi .inner .ropponFrame .ropponFrB.engWidth {
+            width: 64%; }
+            @media screen and (max-width: 768px) {
+              .main_contents .ropppongi .inner .ropponFrame .ropponFrB.engWidth {
+                width: 94%; } }
+          @media screen and (max-width: 768px) {
+            .main_contents .ropppongi .inner .ropponFrame .ropponFrB {
+              width: 90%;
+              margin: 0 auto  20px; } }
+          .main_contents .ropppongi .inner .ropponFrame .ropponFrB dl dt {
+            text-align: center; }
+            .main_contents .ropppongi .inner .ropponFrame .ropponFrB dl dt h3 {
+              background: #403e3e;
+              color: #b59564;
+              font-size: 14px;
+              border-radius: 3px;
+              display: inline-block;
+              width: 100px;
+              text-align: center; }
+          .main_contents .ropppongi .inner .ropponFrame .ropponFrB dd {
+            padding: 5px  0 20px 8px; }
+            .main_contents .ropppongi .inner .ropponFrame .ropponFrB dd ul li {
+              list-style: disc;
+              list-style-position: inside;
+              font-size: 14px;
+              margin-bottom: 10px; }
+        .main_contents .ropppongi .inner .ropponFrame .noteS {
+          font-size: 13px; }
+          @media screen and (max-width: 768px) {
+            .main_contents .ropppongi .inner .ropponFrame .noteS {
+              font-display: 12px; } }
+      .main_contents .ropppongi .inner .gMap {
+        width: 100%;
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+        margin: 0 0 80px 0; }
+        @media screen and (max-width: 768px) {
+          .main_contents .ropppongi .inner .gMap {
+            padding-top: 50%;
+            margin: 0 0 40px 0; } }
+        .main_contents .ropppongi .inner .gMap iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important; }
+      .main_contents .ropppongi .inner .serviceIcon {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap; }
+        @media screen and (max-width: 768px) {
+          .main_contents .ropppongi .inner .serviceIcon {
+            flex-wrap: wrap; } }
+        .main_contents .ropppongi .inner .serviceIcon li {
+          width: 11%;
+          text-align: center;
+          width: 10%; }
+          @media screen and (max-width: 768px) {
+            .main_contents .ropppongi .inner .serviceIcon li {
+              width: 30%;
+              margin-bottom: 30px; } }
+          .main_contents .ropppongi .inner .serviceIcon li img {
+            height: 35px;
+            width: auto;
+            margin: 0 auto 15px; }
+            @media screen and (max-width: 768px) {
+              .main_contents .ropppongi .inner .serviceIcon li img {
+                margin: 0 auto 9px; } }
+          .main_contents .ropppongi .inner .serviceIcon li p {
+            font-size: 13px;
+            line-height: 1.3;
+            color: #d8d4d4 !important; }
+    .main_contents .ropppongi .loopWrap {
+      position: relative;
+      display: flex;
+      width: 100vw;
+      overflow: hidden;
+      height: calc(100vw * .17); }
+      @media screen and (max-width: 768px) {
+        .main_contents .ropppongi .loopWrap {
+          height: 150px;
+          /*width: 180vw;*/ } }
+      .main_contents .ropppongi .loopWrap img {
+        width: auto;
+        min-width: 110vw;
+        height: 100%;
+        will-change: transform; }
+        @media screen and (max-width: 768px) {
+          .main_contents .ropppongi .loopWrap img {
+            width: auto;
+            height: 100%; } }
+        .main_contents .ropppongi .loopWrap img:first-child {
+          animation: loop 50s -25s linear infinite;
+          backface-visibility: hidden;
+          will-change: transform; }
+        .main_contents .ropppongi .loopWrap img:last-child {
+          animation: loop2 50s linear infinite; }
+@keyframes loop {
+  0% {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(-100%); } }
+@keyframes loop2 {
+  0% {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-200%); } }
+    .main_contents .ropppongi .loop_js {
+      display: flex;
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+  .main_contents .contactArea {
+    background: #3b4042;
+    width: 100%; }
+    .main_contents .contactArea .contactFrame {
+      max-width: 740px;
+      width: 90%;
+      margin: 80px auto;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      color: #fff; }
+      @media screen and (max-width: 768px) {
+        .main_contents .contactArea .contactFrame {
+          display: block;
+          width: 90%;
+          margin: 30px auto; } }
+      .main_contents .contactArea .contactFrame .conA {
+        width: 400px; }
+        @media screen and (max-width: 768px) {
+          .main_contents .contactArea .contactFrame .conA {
+            width: 100%; } }
+        .main_contents .contactArea .contactFrame .conA .conactBTN {
+          width: 397px;
+          margin: 0 auto; }
+          @media screen and (max-width: 768px) {
+            .main_contents .contactArea .contactFrame .conA .conactBTN {
+              width: 90%;
+              margin: 20px auto 20px; } }
+          .main_contents .contactArea .contactFrame .conA .conactBTN a {
+            text-align: center;
+            letter-spacing: 0.12em;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            margin: 0 auto;
+            padding: 21px 0;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            background: #e40037;
+            -webkit-border-radius: 50px; }
+            @media screen and (max-width: 768px) {
+              .main_contents .contactArea .contactFrame .conA .conactBTN a {
+                width: 100%;
+                font-size: 16px;
+                line-height: 1.3;
+                padding: 18px 20px; } }
+            .main_contents .contactArea .contactFrame .conA .conactBTN a:before, .main_contents .contactArea .contactFrame .conA .conactBTN a:after {
+              content: "";
+              position: absolute;
+              top: 50%; }
+            .main_contents .contactArea .contactFrame .conA .conactBTN a:after {
+              content: "";
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              margin: -18px 0 0 5px;
+              right: 8px;
+              background: url("/franchise/images/btn_icon.png") no-repeat;
+              background-size: contain;
+              vertical-align: middle; }
+              @media screen and (max-width: 768px) {
+                .main_contents .contactArea .contactFrame .conA .conactBTN a:after {
+                  right: 8px;
+                  width: 20px;
+                  height: 20px;
+                  margin: -15px 0 0; } }
+            .main_contents .contactArea .contactFrame .conA .conactBTN a:hover {
+              opacity: 0.8; }
+            .main_contents .contactArea .contactFrame .conA .conactBTN a:after {
+              border-top: solid 5px #e40037;
+              border-right: solid 5px #e40037; }
+      .main_contents .contactArea .contactFrame .conB {
+        width: 285px;
+        text-align: center;
+        color: #fff;
+        font-size: 36px;
+        line-height: 1;
+        letter-spacing: 0.1em; }
+        @media screen and (max-width: 768px) {
+          .main_contents .contactArea .contactFrame .conB {
+            width: 100%;
+            font-size: 26px; } }
+        .main_contents .contactArea .contactFrame .conB span {
+          font-size: 16px;
+          line-height: 1.8;
+          letter-spacing: 0;
+          display: block; }
+          @media screen and (max-width: 768px) {
+            .main_contents .contactArea .contactFrame .conB span {
+              font-size: 12px; } }
+  .main_contents .pageTop {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      .main_contents .pageTop {
+        width: 100%;
+        text-align: center; } }
+    .main_contents .pageTop img {
+      width: 145px; }
+
+.signature_btm_link p.link {
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 2em; }
+  .signature_btm_link p.link span {
+    font-size: large; }
+  @media screen and (max-width: 768px) {
+    .signature_btm_link p.link {
+      padding-bottom: 2em; } }
+  .signature_btm_link p.link a {
+    text-decoration: none; }
+  .signature_btm_link p.link a:hver {
+    opacity: 0.2 !important;
+    color: #ccc; }

@@ -1,0 +1,342 @@
+@charset "utf-8";
+@import "../../../common/css/mixin";
+
+#wrapper{
+	.office_ttl{
+		padding-top: 50px;
+		h1{
+			background: url(/sp/openoffice/common/img/kv_bg_2.png) right center no-repeat,url(/sp/openoffice/common/img/kv_bg.gif) top center no-repeat;
+			@include bgs((contain,cover));
+			display: inline-block;
+			width: 100%;
+			text-align: left;
+			@include fz(20);
+			font-weight: bold;
+			color: #004c80;
+			padding: 25px 5%;
+			line-height: 1.4;
+			span{
+				@include fz(16);
+				font-weight: bold;
+				color: #004c80;
+			}
+		}
+	}
+	.tab_link{
+		ul{
+			width: 100%;
+			@include flex;
+			@include jc(space-between);
+			margin: 5px 0 20px;
+			li{
+				width: 49.5%;
+				background: #a7a6a7;
+				&.on{
+					background: #0097d5;
+				}
+				&.noL{
+					display: inline-block;
+					
+					text-align: center;
+					padding: 15px 0;
+					line-height: 1;
+					font-weight: bold;
+					@include fz(16);
+					color: #fff;
+					
+				}
+				a{
+					display: inline-block;
+					width: 100%;
+					text-align: center;
+					padding: 15px 0;
+					line-height: 1;
+					font-weight: bold;
+					@include fz(16);
+					color: #fff;
+				}
+				
+			}
+			
+		}
+	}
+	.office_inner{
+		width: 100%;
+		padding: 0 3.5%;
+		h2{
+			@include fz(16);
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		p.read{
+			text-align: left;
+			line-height: 1.6;
+			@include fz(12);
+			strong{
+				@include fz(12);
+				font-weight: bold;
+			}
+		}
+		p{
+			@include fz(12);
+		}
+		.top_img{
+			margin-top: 15px;
+			text-align: center;
+			margin-bottom: 25px;
+		}
+		h3.bl{
+			display: inline-block;
+			width: 100%;
+			background:url(/sp/common/img/ttl_bl.gif) top left repeat-y #0097d6;
+			@include bgs(450px);
+			padding: 15px 3.5% 15px 6%;
+			@include fz;
+			color: #fff;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.service_area{
+			width: 100%;
+			border: 2px solid  #ccc;
+			padding: 20px 0 25px;
+			margin-bottom: 25px;
+			.box{
+				padding: 0 4.5% 25px;
+				border-bottom: 2px solid  #ccc;
+				margin-bottom: 20px;
+				&:last-child{
+					padding-bottom: 0;
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+				dl{
+					width: 100%;
+					dt{
+						@include flex;
+						@include ai;
+						img{
+							width: 45px;
+							margin-right: 10px;
+						}
+						span{
+							@include fz;
+							font-weight: bold;
+							color: #cc3333;
+						}
+					}
+					dd{
+						padding-top: 10px;
+						margin-top: 10px;
+						border-top: 1px dotted  #d1d1d1;
+						@include fz(12);
+					}
+				}
+			}
+		}
+		.contact,.periphery{
+			img{
+				width: 100%;
+			}
+		}
+		.characteristic_area{
+			margin-bottom: 25px;
+			.img{
+				width: 90%;
+				margin: 0 auto;
+				img{
+					width: 100%;
+				}
+			}
+			p{
+				@include fz(12);
+				margin-top: 10px;
+			}
+			dl{
+				margin-top: 10px;
+				dt{
+					@include fz(12);
+					font-weight: bold;
+					margin-bottom: 5px;
+				}
+				dd{
+					@include fz(12);
+					margin-bottom: 15px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.map{
+			margin-bottom: 25px;
+			iframe{
+				width: 100%;
+				height: 300px;
+			}
+		}
+		.spot,.access{
+			margin-bottom: 25px;
+			dl{
+				dt{
+					@include fz(12);
+					font-weight: bold;
+					margin-bottom: 5px;
+				}
+				dd{
+					@include fz(12);
+					margin-bottom: 15px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+			.img{
+				width: 90%;
+				margin: 0 auto;
+				img{
+					width: 100%;
+				}
+			}
+			a.btn{
+				margin-top: 20px;
+				display: inline-block;
+				width: 100%;
+				padding: 10px 0;
+				@include fz(12);
+				text-align: center;
+				background: #fcfcfc;
+				border: 1px solid  #bbb;
+				border-radius: 5px;
+				color: #010101;
+			}
+		}
+		.reason{
+			margin-bottom: 25px;
+			dl{
+				dt{
+					@include fz(12);
+					font-weight: bold;
+					margin-bottom: 5px;
+				}
+				dd{
+					@include fz(12);
+					margin-bottom: 10px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.floor_area{
+			margin-bottom: 25px;
+			p.ttl{
+				@include fz;
+				color: #0097d5;
+				font-weight: bold;
+				margin-bottom: 15px;
+			}
+			>.img{
+				margin-bottom: 20px;
+				img{
+					width: 100%;
+				}
+			}
+			p.note{
+				@include fz(12);
+			}
+			dl{
+				margin-top: 10px;
+				dt{
+					@include fz(12);
+					font-weight: bold;
+					margin-bottom: 5px;
+				}
+				dd{
+					@include fz(12);
+					margin-bottom: 10px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+			.img_col2{
+				width: 100%;
+				@include flex;
+				@include jc;
+				@include fw;
+				margin-top: 10px;
+				>div{
+					width: 49%;
+					&:nth-child(n+3){
+						margin-top: 15px;
+					}
+					.img{
+						img{
+							width: 100%;
+						}
+					}
+					p{
+						margin-top: 5px;
+						text-align: center;
+					}
+				}
+			}
+			.btn{
+				text-align: center;
+				margin-top: 20px;
+				a{
+					width: 250px;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			.detail{
+				margin-top: 30px;
+				a{
+					text-align: center;
+					@include fz(12);
+					color: #0097d6;
+				}
+			}
+		}
+		.description{
+			margin-bottom: 25px;
+			dl{
+				dt{
+					@include fz(18);
+					font-weight: bold;
+					color: #96A6E6;
+				}
+				dd{
+					@include fz(12);
+					margin-bottom: 10px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+			.btn{
+				text-align: center;
+				margin-top: 20px;
+				a{
+					width: 250px;
+					display: block;
+					margin: 0 auto;
+				}
+			}
+			.detail{
+				margin-top: 15px;
+				a{
+					text-align: center;
+					@include fz(12);
+					color: #0097d6;
+				}
+			}
+		}
+	}
+}
+
+.page-top{
+	display: none;
+}

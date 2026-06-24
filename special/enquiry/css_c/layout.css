@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  word-break: break-all;
+}
+
+select {
+  width: 100%;
+  padding: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+
+.date {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 10px;
+}
+
+.date .arrow_box {
+  width: 100px;
+  height: 100%;
+}
+
+.input_plus_btn_box {
+  width: 100%;
+  background: #ccc9bd;
+  padding: 10px 15px;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.input_plus_btn_box * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (min-width: 750px) {
+  .input_plus_btn_box {
+    padding: 15px 25px;
+  }
+}
+.input_plus_btn_box .inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media screen and (min-width: 750px) {
+  .input_plus_btn_box .inner {
+    padding: 15px;
+  }
+}
+.input_plus_btn_box .inner:hover {
+  opacity: 0.6;
+}
+.input_plus_btn_box .inner p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+.input_plus_btn_box .inner p br {
+  display: block;
+}
+@media screen and (min-width: 750px) {
+  .input_plus_btn_box .inner p {
+    font-size: 14px;
+  }
+  .input_plus_btn_box .inner p br {
+    display: none;
+  }
+}
+.input_plus_btn_box .inner p span {
+  width: 30px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+  margin: 0 10px 0 0 !important;
+  border-radius: 3px;
+}
+@media screen and (min-width: 750px) {
+  .input_plus_btn_box .inner p span {
+    margin: 0 5px 0 0 !important;
+  }
+}
+.input_plus_btn_box .inner p span.attB {
+  background: #0a2683;
+  color: #fff;
+}
+.input_plus_btn_box .inner p span.attB_en {
+  width: 15px;
+  height: 15px;
+  background: #737373;
+  color: #fff;
+}
+.input_plus_btn_box .inner .plus_box {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+}
+@media screen and (min-width: 750px) {
+  .input_plus_btn_box .inner .plus_box {
+    width: 24px;
+    height: 24px;
+  }
+}
+.input_plus_btn_box .inner .plus_box::before, .input_plus_btn_box .inner .plus_box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 100%;
+  height: 2px;
+  background: #3b3b3b;
+}
+.input_plus_btn_box .inner .plus_box::after {
+  rotate: 90deg;
+}
+
+dl.js_plus_input {
+  display: none !important;
+  width: 100%;
+}
+dl.is_act_input {
+  display: table !important;
+  width: 100%;
+}
+
+.wrapper .formArea .attB {
+  margin: 0 5px 0 2px !important;
+}
+@media screen and (min-width: 750px) {
+  .wrapper .formArea .attB {
+    margin: 0 10px 0 5px !important;
+  }
+}/*# sourceMappingURL=layout.css.map */

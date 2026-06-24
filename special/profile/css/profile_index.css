@@ -1,0 +1,238 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px; } }
+  .main_contents * {
+    box-sizing: border-box; }
+
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: 0.8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+.btn {
+  width: 100%;
+  text-align: center; }
+
+.cntWrap {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: -webkit- flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .cntWrap .cntBox img {
+    margin-bottom: 8px; }
+  .cntWrap .cntBox p {
+    line-height: 1.4; }
+
+.mv {
+  width: 1060px;
+  margin: 0 auto;
+  background: url("/special/profile/images/profile_index_mv.jpg") no-repeat center center/cover;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .mv {
+      width: 100%;
+      margin: 5% auto 0 auto; } }
+  .mv::after {
+    content: '';
+    display: block;
+    padding-top: 34%; }
+    @media screen and (max-width: 768px) {
+      .mv::after {
+        padding-top: 50%; } }
+  .mv h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px; }
+    @media screen and (max-width: 768px) {
+      .mv h1 {
+        padding: 5px;
+        font-size: 20px;
+        line-height: 1.3;
+        left: 8px;
+        bottom: 5px; } }
+    .mv h1 span {
+      font-size: 16px;
+      line-height: 1.4;
+      display: block; }
+      @media screen and (max-width: 768px) {
+        .mv h1 span {
+          font-size: 12px; } }
+
+section {
+  width: 978px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto 30px auto;
+      width: 98%; } }
+  section.sec01 {
+    margin-bottom: 70px; }
+    section.sec01 p {
+      line-height: 1.8; }
+      @media screen and (max-width: 768px) {
+        section.sec01 p {
+          line-height: 1.5; } }
+    section.sec01 .goLink {
+      margin: 0 auto; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .goLink {
+          min-width: 0;
+          margin: 0 auto 30px auto; } }
+      section.sec01 .goLink .lead {
+        width: 100%;
+        margin: 40px auto; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .goLink .lead {
+            width: 98%;
+            margin: 30px auto 15px auto; } }
+        section.sec01 .goLink .lead a:link, section.sec01 .goLink .lead a:visited, section.sec01 .goLink .lead a:active {
+          color: #d6012f;
+          text-decoration: underline; }
+        section.sec01 .goLink .lead span {
+          font-size: 12px; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .goLink .lead span {
+              font-size: 10px; } }
+      section.sec01 .goLink h2.index {
+        text-align: center;
+        font-size: 34px;
+        line-height: 1.1;
+        color: #767676;
+        font-weight: bold;
+        margin: 50px auto 30px auto; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .goLink h2.index {
+            font-size: 22px;
+            line-height: 1.4;
+            margin: 60px auto 15px auto; } }
+        section.sec01 .goLink h2.index span {
+          display: block;
+          font-size: 24px;
+          font-weight: inherit; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .goLink h2.index span {
+              font-size: 16px; } }
+      section.sec01 .goLink .indexList {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        section.sec01 .goLink .indexList li {
+          width: 32.6%;
+          height: 240px;
+          cursor: pointer;
+          overflow: hidden;
+          position: relative;
+          margin-bottom: 10px; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .goLink .indexList li {
+              width: 48%;
+              height: 140px;
+              margin: 4px auto; } }
+          section.sec01 .goLink .indexList li .pageName {
+            position: absolute;
+            pointer-events: none;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            color: #fff;
+            height: 44px;
+            width: 130px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 44px;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+            font-weight: bold;
+            font-size: 20px; }
+            @media screen and (max-width: 768px) {
+              section.sec01 .goLink .indexList li .pageName {
+                font-size: 16px; } }
+          section.sec01 .goLink .indexList li .indxListC {
+            width: 100%;
+            height: 400px;
+            background-color: black;
+            /* fallback color */
+            background-position: center top;
+            background-size: contain;
+            transition: all .5s; }
+            @media screen and (max-width: 768px) {
+              section.sec01 .goLink .indexList li .indxListC {
+                height: 200px; } }
+            section.sec01 .goLink .indexList li .indxListC.img01 {
+              background-image: url("/special/profile/images/profile_index_link_01.jpg"); }
+            section.sec01 .goLink .indexList li .indxListC.img02 {
+              background-image: url("/special/profile/images/profile_index_link_02.jpg"); }
+            section.sec01 .goLink .indexList li .indxListC.img03 {
+              background-image: url("/special/profile/images/profile_index_link_03.jpg"); }
+            section.sec01 .goLink .indexList li .indxListC.img04 {
+              background-image: url("/special/profile/images/profile_index_link_04.jpg"); }
+            section.sec01 .goLink .indexList li .indxListC.img05 {
+              background-image: url("/special/profile/images/profile_index_link_05.jpg"); }
+            section.sec01 .goLink .indexList li .indxListC.img06 {
+              background-image: url("/special/profile/images/profile_index_link_06.jpg"); }
+          section.sec01 .goLink .indexList li:hover .indxListC, section.sec01 .goLink .indexList li:focus .indxListC {
+            transform: scale(1.2); }
+      section.sec01 .goLink .txaR {
+        font-size: 12px !important;
+        line-height: 1.3; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .goLink .txaR {
+            margin-top: 10px;
+            line-height: 1.1; } }
+  section.sec02 .ttl {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 25px auto; }
+    @media screen and (max-width: 768px) {
+      section.sec02 .ttl {
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto 15px auto; } }
+  section.sec02 .youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border: #999 solid 1px; }
+    @media screen and (max-width: 768px) {
+      section.sec02 .youtube {
+        width: 90%;
+        margin: 0 auto;
+        border: #999 solid 2px; } }
+    section.sec02 .youtube iframe {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%; }

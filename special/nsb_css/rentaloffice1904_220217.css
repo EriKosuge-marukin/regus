@@ -1,0 +1,744 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px;
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px; } }
+  .main_contents * {
+    box-sizing: border-box; }
+
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: .8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+h2.nsb {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold; }
+  @media screen and (max-width: 768px) {
+    h2.nsb {
+      margin-bottom: 8px;
+      font-size: 26px !important;
+      line-height: 1.2; } }
+  h2.nsb span {
+    display: block;
+    font-size: 24px;
+    font-weight: inherit; }
+    @media screen and (max-width: 768px) {
+      h2.nsb span {
+        font-size: 18px;
+        line-height: 1.2; } }
+
+p {
+  line-height: 1.8; }
+  @media screen and (max-width: 768px) {
+    p {
+      line-height: 1.5; } }
+
+.btn {
+  width: 100%;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .btn img {
+      width: 90% !important; } }
+
+.cntWrap {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: -webkit- flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .cntWrap .cntBox img {
+    margin-bottom: 8px; }
+  .cntWrap .cntBox p {
+    line-height: 1.4; }
+
+.mv {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto 80px;
+  background: url(/special/nsb_img/rentaloffice/mv.jpg) no-repeat center center/cover;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .mv {
+      margin: 5% auto 48px; } }
+  .mv::after {
+    content: '';
+    display: block;
+    padding-top: 34%; }
+    @media screen and (max-width: 768px) {
+      .mv::after {
+        padding-top: 50%; } }
+  .mv h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px; }
+    @media screen and (max-width: 768px) {
+      .mv h1 {
+        font-size: 22px;
+        line-height: 1.3;
+        bottom: 8px;
+        right: 8px; } }
+
+section {
+  max-width: 1060px;
+  width: 94%;
+  margin: 0 auto 100px; }
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto 58px; } }
+  section.sec01 h2 {
+    margin-bottom: 20px; }
+  section.sec01 > p {
+    max-width: 760px;
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      section.sec01 > p {
+        margin-bottom: 16px; } }
+  section.sec01 .btn {
+    margin: 30px 0 100px; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .btn {
+        margin-bottom: 54px; } }
+  section.sec01 .cntWrap > p {
+    width: 47%; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .cntWrap > p {
+        width: 100%;
+        margin-bottom: 8px; } }
+  section.sec01 .cntWrap .left {
+    width: 41%; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .cntWrap .left {
+        width: 100%;
+        margin-bottom: 14px; } }
+    section.sec01 .cntWrap .left h3 {
+      margin-bottom: 8px;
+      font-size: 24px;
+      font-weight: bold; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .cntWrap .left h3 {
+          width: 100%;
+          margin-bottom: 6px;
+          font-size: 18px; } }
+  section.sec01 .cntWrap .right {
+    width: 53%;
+    padding: 0 2%;
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .cntWrap .right {
+        width: 100%;
+        text-align: center; } }
+  section.sec02 h2 {
+    margin-bottom: 35px; }
+    @media screen and (max-width: 768px) {
+      section.sec02 h2 {
+        margin-bottom: 20px; } }
+  section.sec02 .cntWrap {
+    margin-bottom: 35px; }
+    @media screen and (max-width: 768px) {
+      section.sec02 .cntWrap {
+        margin-bottom: 0; } }
+    section.sec02 .cntWrap .cntBox {
+      width: 30%;
+      margin-bottom: 26px;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        section.sec02 .cntWrap .cntBox {
+          width: 48%; }
+          section.sec02 .cntWrap .cntBox:not(:nth-last-of-type(1)) {
+            margin-bottom: 28px; } }
+      section.sec02 .cntWrap .cntBox h3 {
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: bold; }
+        @media screen and (max-width: 768px) {
+          section.sec02 .cntWrap .cntBox h3 {
+            margin: 4px 0 8px; } }
+      section.sec02 .cntWrap .cntBox p {
+        font-weight: bold; }
+        @media screen and (max-width: 768px) {
+          section.sec02 .cntWrap .cntBox p {
+            text-align: left; } }
+  section.sec03 {
+    margin: 0 auto 100px;
+    padding: 0 5%;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec03 {
+        margin: 0 auto 56px;
+        padding: 0; } }
+    section.sec03 h2 {
+      margin-bottom: 50px; }
+      @media screen and (max-width: 768px) {
+        section.sec03 h2 {
+          margin-bottom: 20px; } }
+    section.sec03 h3 {
+      width: 100%;
+      font-size: 30px;
+      font-weight: bold;
+      position: relative; }
+      @media screen and (max-width: 768px) {
+        section.sec03 h3 {
+          font-size: 22px; } }
+      section.sec03 h3::after {
+        content: '';
+        display: block;
+        width: 64px;
+        height: 1px;
+        background: #6d583a;
+        position: absolute;
+        bottom: -5px;
+        left: calc(50% - 32px); }
+    section.sec03 .brand {
+      margin-bottom: 75px; }
+      @media screen and (max-width: 768px) {
+        section.sec03 .brand {
+          margin-bottom: 56px; } }
+      section.sec03 .brand h3 {
+        margin-bottom: 45px; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .brand h3 {
+            margin-bottom: 20px; } }
+      section.sec03 .brand a.serviceLink {
+        display: block; }
+        section.sec03 .brand a.serviceLink:hover {
+          opacity: 0.5 !important;
+          text-decoration: none !important; }
+      section.sec03 .brand .cntWrap {
+        -webkit-align-items: center;
+        align-items: -webkit- center;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: solid 1px #e0e0e0; }
+        section.sec03 .brand .cntWrap.lastLine {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none; }
+        section.sec03 .brand .cntWrap .left {
+          width: 55%; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .brand .cntWrap .left {
+              width: 100%;
+              margin-bottom: 8px; } }
+          section.sec03 .brand .cntWrap .left h4 {
+            -js-display: flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: flex-start;
+            justify-content: -webkit- flex-start;
+            justify-content: flex-start;
+            -webkit-align-items: center;
+            align-items: -webkit- center;
+            align-items: center;
+            margin-bottom: 15px; }
+            section.sec03 .brand .cntWrap .left h4 img {
+              margin-right: 20px; }
+              @media screen and (max-width: 768px) {
+                section.sec03 .brand .cntWrap .left h4 img {
+                  max-width: 200px;
+                  width: 40%; } }
+          section.sec03 .brand .cntWrap .left p {
+            text-align: left; }
+        section.sec03 .brand .cntWrap .right {
+          max-width: 370px;
+          width: 42%; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .brand .cntWrap .right {
+              max-width: 100%;
+              width: 100%; } }
+    section.sec03 .type {
+      margin-bottom: 32px; }
+      section.sec03 .type h3 {
+        margin-bottom: 65px; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .type h3 {
+            margin-bottom: 28px; } }
+      section.sec03 .type .cntBox {
+        max-width: 426px;
+        width: 48%;
+        margin-bottom: 40px;
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .type .cntBox {
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 28px; } }
+        section.sec03 .type .cntBox h4, section.sec03 .type .cntBox p {
+          text-align: left; }
+        section.sec03 .type .cntBox h4 {
+          font-weight: bold; }
+        section.sec03 .type .cntBox .btn {
+          margin: 15px 0 0; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .type .cntBox .btn {
+              margin: 10px 0 0; } }
+    section.sec03 .service > .left {
+      width: 36%;
+      text-align: left; }
+      @media screen and (max-width: 768px) {
+        section.sec03 .service > .left {
+          width: 100%; } }
+      section.sec03 .service > .left h3 {
+        margin-bottom: 18px;
+        font-size: 22px;
+        font-weight: bold; }
+        section.sec03 .service > .left h3::after {
+          content: none; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .service > .left h3 {
+            text-align: center; } }
+    section.sec03 .service > .right {
+      width: 62%; }
+      @media screen and (max-width: 768px) {
+        section.sec03 .service > .right {
+          width: 100%; } }
+      @media screen and (max-width: 768px) {
+        section.sec03 .service > .right .cntWrap {
+          width: 90%;
+          margin: 10px auto; } }
+      section.sec03 .service > .right .cntWrap .cntBox {
+        width: 25%;
+        margin-bottom: 6px; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .service > .right .cntWrap .cntBox {
+            width: 30%; } }
+        section.sec03 .service > .right .cntWrap .cntBox img {
+          margin-bottom: 2px; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .service > .right .cntWrap .cntBox img {
+              width: 70% !important;
+              height: auto; } }
+        section.sec03 .service > .right .cntWrap .cntBox p {
+          font-size: 14px;
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .service > .right .cntWrap .cntBox p {
+              font-size: 12px; } }
+      section.sec03 .service > .right .cntWrap > p {
+        width: 75%;
+        align-self: flex-end;
+        text-align: right;
+        font-size: 14px; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .service > .right .cntWrap > p {
+            width: 66%;
+            font-size: 12px; } }
+      section.sec03 .service > .right > p {
+        margin: 30px 0;
+        text-align: left; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .service > .right > p {
+            margin: 16px 0; } }
+        section.sec03 .service > .right > p span {
+          display: block;
+          font-size: 14px; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .service > .right > p span {
+              font-size: 12px; } }
+      section.sec03 .service > .right .more {
+        text-align: left; }
+        section.sec03 .service > .right .more .left {
+          width: 19%; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .service > .right .more .left {
+              max-width: 100px;
+              width: 30%;
+              text-align: center;
+              margin: 0 auto 10px; } }
+        section.sec03 .service > .right .more .right {
+          width: 79%; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .service > .right .more .right {
+              width: 100%; } }
+          section.sec03 .service > .right .more .right p a {
+            color: #e40037; }
+          section.sec03 .service > .right .more .right ul li {
+            padding-left: 13px;
+            position: relative; }
+            @media screen and (max-width: 768px) {
+              section.sec03 .service > .right .more .right ul li {
+                padding-left: 10px; } }
+            section.sec03 .service > .right .more .right ul li::after {
+              content: '';
+              display: block;
+              width: 10px;
+              height: 10px;
+              border-radius: 5px;
+              background-color: #e40037;
+              position: absolute;
+              top: 8px;
+              left: 0; }
+              @media screen and (max-width: 768px) {
+                section.sec03 .service > .right .more .right ul li::after {
+                  width: 8px;
+                  height: 8px;
+                  top: 6px; } }
+  section.sec04 {
+    padding: 0 4%; }
+    section.sec04 h2 {
+      margin-bottom: 30px; }
+    section.sec04 dl {
+      max-width: 760px;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 35px;
+      text-align: left; }
+      @media screen and (max-width: 768px) {
+        section.sec04 dl {
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 20px; } }
+      section.sec04 dl dt {
+        width: 180px; }
+        @media screen and (max-width: 768px) {
+          section.sec04 dl dt {
+            width: 100%;
+            margin-bottom: 8px; } }
+        section.sec04 dl dt h3 {
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 1.4; }
+          @media screen and (max-width: 768px) {
+            section.sec04 dl dt h3 {
+              text-align: center; } }
+          section.sec04 dl dt h3 span {
+            font-size: 18px;
+            font-weight: inherit; }
+      section.sec04 dl dd {
+        max-width: calc(100% - 200px);
+        width: 72%; }
+        @media screen and (max-width: 768px) {
+          section.sec04 dl dd {
+            max-width: 100%;
+            width: 100%; } }
+    section.sec04 .cost {
+      margin-bottom: 65px;
+      text-align: center; }
+      section.sec04 .cost .cntWrap > p {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold; }
+      section.sec04 .cost .cntWrap .cntBox {
+        width: 32%;
+        margin-bottom: 20px; }
+        @media screen and (max-width: 768px) {
+          section.sec04 .cost .cntWrap .cntBox {
+            max-width: 420px;
+            width: 90%;
+            margin: 0 auto 12px; } }
+      @media screen and (max-width: 768px) {
+        section.sec04 .cost .result img {
+          width: 50px;
+          margin: 10px auto; } }
+      section.sec04 .cost .result span {
+        display: block;
+        font-size: 24px;
+        /* border-bottom: solid 4px #a9a29a;*/ }
+        @media screen and (max-width: 768px) {
+          section.sec04 .cost .result span {
+            font-size: 18px;
+            /*border-bottom: solid 3px #a9a29a;*/ } }
+    section.sec04 .speed {
+      margin-bottom: 65px;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        section.sec04 .speed {
+          margin-bottom: 30px; } }
+    section.sec04 .flexibility {
+      margin-bottom: 54px; }
+      @media screen and (max-width: 768px) {
+        section.sec04 .flexibility {
+          margin-bottom: 32px; } }
+      section.sec04 .flexibility .cntWrap .cntBox {
+        max-width: 280px;
+        width: 31%;
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          section.sec04 .flexibility .cntWrap .cntBox {
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 12px; } }
+        section.sec04 .flexibility .cntWrap .cntBox p {
+          font-size: 14px;
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec04 .flexibility .cntWrap .cntBox p {
+              font-size: 12px; } }
+
+.wide {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto 95px;
+  background: url(/special/nsb_img/rentaloffice/wide.jpg) no-repeat center center/cover; }
+  @media screen and (max-width: 768px) {
+    .wide {
+      margin: 0 auto 46px; } }
+  .wide::after {
+    content: '';
+    display: block;
+    padding-top: 32.333%; }
+    @media screen and (max-width: 768px) {
+      .wide::after {
+        padding-top: 42%; } }
+
+/*anchor ナビ----------*/
+.officeNav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 769px;
+  width: 70%;
+  margin: 20px auto 40px;
+  background: #454545;
+  border-radius: 5px; }
+  @media screen and (max-width: 768px) {
+    .officeNav ul {
+      width: 96%;
+      min-width: auto; } }
+  .officeNav ul li {
+    width: 20%;
+    text-align: center;
+    position: relative;
+    display: inline-block; }
+    @media screen and (max-width: 768px) {
+      .officeNav ul li {
+        text-align: center; } }
+    .officeNav ul li:not(:nth-last-of-type(1)) a::after {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 26px;
+      background-color: #747474;
+      position: absolute;
+      top: 30%;
+      right: 0px; }
+      @media screen and (max-width: 768px) {
+        .officeNav ul li:not(:nth-last-of-type(1)) a::after {
+          top: 10px;
+          height: 30px; } }
+    .officeNav ul li a {
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      padding: 26px 0;
+      color: #fff; }
+      @media screen and (max-width: 768px) {
+        .officeNav ul li a.of {
+          padding: 6px 1px 2px; } }
+      @media screen and (max-width: 768px) {
+        .officeNav ul li a {
+          font-size: 12px;
+          padding: 16px 1px;
+          text-align: center;
+          vertical-align: middle; } }
+      .officeNav ul li a:hover {
+        background: #bdbdbd;
+        color: #000;
+        text-decoration: none;
+        opacity: 1 !important;
+        text-decoration: none; }
+        @media screen and (max-width: 768px) {
+          .officeNav ul li a:hover {
+            background-color: #747474;
+            color: #fff; } }
+
+.ctaA {
+  background: #ede3e2 url("/special/nsb_img/rentaloffice/cta_bg_a.jpg") bottom center;
+  padding-bottom: 33px;
+  margin: 55px 0 90px 0; }
+  @media screen and (max-width: 768px) {
+    .ctaA {
+      background-image: none;
+      background: #ede3e2 url("/special/nsb_img/rentaloffice/cta_bg_a_sp_01.jpg");
+      background-position: center bottom;
+      background-size: cover;
+      padding: 0 3% 33px;
+      margin: 30px 0 50px 0; } }
+  .ctaA .find {
+    display: block;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 400;
+    padding: 45px 0 67px 63px; }
+    @media screen and (max-width: 1040px) {
+      .ctaA .find {
+        font-size: 1.5vw;
+        padding: 50px 0 100px 20px; } }
+    @media screen and (max-width: 768px) {
+      .ctaA .find {
+        margin: 20px auto;
+        text-align: center;
+        font-size: 16px;
+        padding: 30px 0 15vw 0;
+        margin-bottom: 51vw; } }
+
+.ctaB {
+  background: #f3e9e7 url("/special/nsb_img/rentaloffice/cta_bg_b.jpg") bottom center;
+  padding-bottom: 30px;
+  margin-top: 55px; }
+  @media screen and (max-width: 768px) {
+    .ctaB {
+      background-color: #f3e9e7;
+      background-image: url("/special/nsb_img/rentaloffice/cta_bg_b.jpg"), url("/special/nsb_img/rentaloffice/cta_bg_b_sp_01.jpg"), url("/special/nsb_img/rentaloffice/cta_bg_b_sp_02.jpg");
+      background-position: top center,top center, right bottom;
+      background-size: 0px 0px, 100% auto, 100% auto;
+      background-repeat: no-repeat,no-repeat, no-repeat;
+      padding: 0 3% 33px; } }
+  .ctaB .call {
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    text-align: center;
+    padding: 33px 0 15px 0; }
+    @media screen and (max-width: 768px) {
+      .ctaB .call {
+        text-align: center;
+        font-size: 16px;
+        margin: 0 0 4vw 0;
+        padding: 37vw 0 0 0; } }
+
+.link {
+  width: 400px !important;
+  margin: 0 auto !important; }
+  @media screen and (max-width: 768px) {
+    .link {
+      margin-top: 15px;
+      width: 100% !important; } }
+  .link a {
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #46c1be;
+    border-radius: 5px !important;
+    -webkit-border-radius: 60px; }
+    @media screen and (max-width: 768px) {
+      .link a {
+        width: 100%;
+        font-size: 16px !important;
+        line-height: 1.3;
+        padding: 20px 40px; } }
+    .link a:before, .link a:after {
+      content: "";
+      position: absolute;
+      top: 50%; }
+    .link a:before {
+      right: 15px;
+      width: 32px;
+      height: 32px;
+      margin: -18px 0 0;
+      background: #fff;
+      border-radius: 50px;
+      -webkit-border-radius: 50px; }
+      @media screen and (max-width: 768px) {
+        .link a:before {
+          width: 28px;
+          height: 28px;
+          margin: -14px 0 0; } }
+    .link a:after {
+      right: 26px;
+      width: 10px;
+      height: 10px;
+      margin: -10px 0 0;
+      border-top: solid 5px #46c1be;
+      border-right: solid 5px #46c1be;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+      @media screen and (max-width: 768px) {
+        .link a:after {
+          right: 25px;
+          width: 8px;
+          height: 8px;
+          margin: -6px 0 0;
+          border-top-width: 4px;
+          border-right-width: 4px; } }
+    .link a.btnRed {
+      background: #e4002f; }
+      .link a.btnRed:after {
+        border-top: solid 5px #e4002f;
+        border-right: solid 5px #e4002f; }
+    .link a.btnBlue {
+      background: #1383ec;
+      margin: 10px 0 0; }
+      @media screen and (max-width: 768px) {
+        .link a.btnBlue {
+          margin: 10px 0 0; } }
+      .link a.btnBlue:after {
+        border-top: solid 5px #1383ec;
+        border-right: solid 5px #1383ec; }
+
+.tel {
+  width: 100%;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 34px; }
+  @media screen and (max-width: 768px) {
+    .tel {
+      margin-top: 24px;
+      width: 100%; } }
+  .tel span {
+    display: block; }
+    .tel span.num {
+      color: #e41d3a;
+      font-size: 210%;
+      line-height: 1.4;
+      font-weight: bold;
+      letter-spacing: 0.01em; }
+      .tel span.num:before {
+        content: '';
+        /*何も入れない*/
+        display: inline-block;
+        /*忘れずに！*/
+        width: 30px;
+        /*画像の幅*/
+        height: 30px;
+        /*画像の高さ*/
+        background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        padding-left: 5px; }
+    .tel span.note {
+      font-size: 76%; }

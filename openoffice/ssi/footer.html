@@ -1,0 +1,49 @@
+
+
+<div class="contact_chase">
+    <p class="txt_service_provide">個室・デスク単位・バーチャルなど豊富なサービス提供</p>
+<ul>
+<li><a href="/openoffice/form/form.php" target="_blank" class="imgov">
+<img src="/openoffice/images/common/fix_contact_btn_a.png" alt="メールでのお問い合わせは今すぐ" >
+</a></li>
+<li class="greenBTN">
+    <a href="/openoffice/form_resp/form.php" target="_blank" class="imgov"><div class=" contact_baloon"><img src="/openoffice/images/common/office_contact_btn02_baloon.png"></div>
+  <img src="/openoffice/images/common/fix_contact_btn_b.png" alt="空室・金額を確認する" >
+</a>
+</li>
+</ul>
+    
+</div>
+
+
+<script>
+$(function () {
+  var btn = $('.contact_chase');
+  var footer = $('#OPO_footer');
+
+  $(window).on('load scroll resize', function () {
+    var scrollTop = $(this).scrollTop();
+    var windowHeight = $(this).height();
+    var documentHeight = $(document).height();
+    var footerTop = footer.offset().top;
+
+    var triggerHide = footerTop - 50; // #OPO_footer の上端 -50px
+
+    if (scrollTop > 100 && scrollTop + windowHeight < triggerHide) {
+      btn.addClass('active');
+    } else {
+      btn.removeClass('active');
+    }
+  });
+});
+
+</script>
+
+<div id="OPO_footer">
+<div id="fGnav"><a href="/openoffice/center_list/">レンタルオフィスを探す</a><a href="/openoffice/intro/">オープンオフィスとは？</a><a href="/openoffice/intro/step_hop.html">ご利用までのステップ</a><a href="/openoffice/intro/010.html">オープンオフィスの1日</a><a href="/openoffice/sonota/qanda.html">よくあるご質問</a><a href="/openoffice/company_infomation/outline.html">会社概要 </a></div>
+
+<div class="OPO-sub"><a href="/">レンタルオフィスはオープンオフィスTOP</a><a href="/openoffice/sonota/privacy.html">プライバシーポリシー</a><a href="/openoffice/sonota/terms.html">利用規約</a><a href="/openoffice/sitemap.html">サイトマップ</a><a href="/openoffice/company_infomation/outline.html">会社概要</a><a href="https://www.regus-office.jp/">日本リージャス</a></div>
+<div class="OPO_footer_btm">
+<p class="footerTxt">東京・大阪をはじめ全国でサービス拠点を展開。個室のレンタルオフィスをお探しならオープンオフィスにお任せください。</p>
+<p id="OPO_copyright">Copyright  &#169;  Openoffice : Regus  Group Companies . All Rights Reserved.</p></div>
+</div>

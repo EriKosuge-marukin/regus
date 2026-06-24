@@ -1,0 +1,255 @@
+@charset "utf-8";
+@import 'mixin';
+
+
+.main_contents {
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 16px;
+	@include break {
+		font-size: 14px;
+	}
+	* {
+		box-sizing: border-box;
+	}
+}
+
+.ov {
+	@include transition;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.pc {
+	@include break {
+		display: none;
+	}
+}
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+
+
+.btn {
+	width: 100%;
+	text-align: center;
+}
+
+
+.cntWrap {
+	@include flex;
+	@include jc(space-between);
+	@include ai(flex-start);
+	@include fw(wrap);
+	.cntBox {
+		img {
+			margin-bottom: 8px;
+		}
+		p {
+			line-height: 1.4;
+		}
+	}
+}
+
+
+.mv {
+	width: 1060px;
+	
+	margin: 0 auto;
+	background: url("/special/profile/images/profile_index_mv.jpg") no-repeat center center/cover;
+	position: relative;
+	@include break {
+        width: 100%;
+		margin: 5% auto 0 auto;
+	}
+	&::after {
+		content: '';
+		display: block;
+		padding-top: 34%;
+		@include break {
+			padding-top: 50%;
+		}
+	}
+	h1 {
+		font-size: 26px;
+		font-weight: bold;
+		color: #fff;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		@include break {
+            padding: 5px;
+            font-size: 20px;
+			line-height: 1.3;
+			left: 8px;
+            bottom: 5px;
+		}
+        span{font-size: 16px;line-height: 1.4;display: block;@include break {font-size: 12px;}}
+	}
+}
+
+section {
+	width: 978px;
+	margin: 0 auto;
+	@include break {
+		margin: 0 auto 30px auto;
+        width: 98%;
+	}
+	&.sec01 {
+        p {
+	line-height: 1.8;
+	@include break {
+		line-height: 1.5;
+	}
+}
+
+		margin-bottom: 70px;
+		.goLink{
+			margin: 0 auto;
+			@include break {
+				
+				min-width:0;
+				margin: 0 auto 30px auto;
+			}
+        .lead{width: 100%;margin: 40px auto;@include break {width: 98%;margin: 30px auto 15px auto;}
+            a:link, a:visited, a:active{
+                color: #d6012f;
+                text-decoration: underline;
+            }
+            span{font-size: 12px ; @include break {font-size: 10px;}
+            }
+           
+            
+        }//lead	
+	  h2.index {
+			text-align: center;
+			font-size: 34px;
+          line-height: 1.1;
+          color: #767676;
+			font-weight: bold;
+			margin: 50px auto 30px auto;
+			@include break {
+				font-size: 22px;line-height: 1.4;
+				margin: 60px auto 15px auto;
+			}
+			span {
+		display: block;
+		font-size: 24px;
+		font-weight: inherit;
+		@include break {
+			font-size: 16px;
+		}
+	}
+			}
+
+            
+
+        .indexList{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    li{
+      width: 32.6%;
+      height: 240px;
+  cursor: pointer;
+  overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    @include  break{width:48%;
+        height: 140px;
+        margin: 4px auto;
+        }    
+        
+    .pageName {
+    position: absolute;
+	pointer-events: none;
+	 top: 0;
+  left: 0;
+       right: 0;
+      bottom: 0;
+      margin: auto;
+	color: #fff;
+    height: 44px;
+    width: 130px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 44px;
+    background-color: rgba(0,0,0,0.8);
+	z-index:1;
+    font-weight: bold;
+    font-size: 20px;
+        @include  break{font-size: 16px;}
+        
+    }
+    .indxListC {
+        
+      width: 100%;
+      height: 400px;
+      background-color: black; /* fallback color */
+     @include  break{height: 200px;}
+      background-position: center top;
+      background-size: contain;
+        transition: all .5s;
+       &.img01{background-image: url("/special/profile/images/profile_index_link_01.jpg");}
+         &.img02{background-image: url("/special/profile/images/profile_index_link_02.jpg");}
+         &.img03{background-image: url("/special/profile/images/profile_index_link_03.jpg");}
+         &.img04{background-image: url("/special/profile/images/profile_index_link_04.jpg");}
+        &.img05{background-image: url("/special/profile/images/profile_index_link_05.jpg");}
+        &.img06{background-image: url("/special/profile/images/profile_index_link_06.jpg");} 
+        
+        
+        }//indxListC
+    
+   &:hover .indxListC,
+   &:focus .indxListC {
+  transform: scale(1.2);
+   } //hover
+
+    }//indexListP
+    
+}//indexList
+
+         .txaR{font-size: 12px !important;
+             line-height: 1.3;
+                @include break {margin-top: 10px;line-height: 1.1;}} 
+       
+		}//_goLink
+        
+	}//_sec01
+	&.sec02 {
+        .ttl{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+                margin: 0 auto 25px auto;
+            @include break { font-size: 16px;
+                text-align: center;
+                margin: 0 auto 15px auto;
+            }
+        }
+	.youtube {
+          position: relative;
+          width: 100%;
+          padding-top: 56.25%;
+         border: #999 solid 1px;
+        @include break {width: 90%;
+        margin: 0 auto;
+         border: #999 solid 2px;}
+       
+        iframe {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+            
+        }
+    }
+    }//sec02
+	
+}//_section

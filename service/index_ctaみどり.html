@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+<meta charset="UTF-8">
+<title>
+リージャスのプランとサービス | レンタルオフィスのリージャス
+</title>
+
+<meta name="description" content="レンタルオフィスを東京・大阪・名古屋・札幌・青森・千葉・横浜・仙台・京都・神戸・岡山・広島・博多で提供しているリージャス。オフィスにはOA機器・ビジネスラウンジ・会議室・受付サービスを完備。">
+<meta name="keywords" content="">
+<!--スマホ以外のデバイスからのアクセスのときのビューポート-->
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="icon" href="/common2/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" media="all" href="/common2/css/common.css?ver=202011">
+<link rel="stylesheet" media="all" href="/css/layout.css?ver=202011">
+<link rel="stylesheet" media="all" href="/special/officetype/css/layout.css">
+
+<link rel="stylesheet" media="all" href="/special/officetype/css/service.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/common2/js/nav.js"></script>
+<script type="text/javascript" src="/common2/js/jquery.heightLine.js"></script>
+<script type="text/javascript" src="/common2/js/script.js?ver=20170606"></script>
+<script type="text/javascript" src="/search/js/jquery.rwdImageMaps.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/common2/js/selectivizr.js"></script>
+<script type="text/javascript" src="/common2/js/html5shiv.js"></script>
+<script type="text/javascript" src="/common2/js/respond.js"></script>
+<script type="text/javascript" src="/common2/js/ie8.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function(){
+	$(".search .boxL , .search .boxR").heightLine({minWidth:750});
+	$(".rentalBox dd").heightLine();
+	$(".search li").heightLine();
+});
+</script>
+
+<script>
+$(document).ready(function(e) {
+$('img[usemap]').rwdImageMaps();
+});
+</script>
+
+<!-- jquery & iScroll -->
+<script src="/common2/js/iscroll.js"></script>
+<script src="/common2/js/drawer.js"></script>
+<script type="text/javascript" src="/common2/js/sp_sidenavi.js"></script>
+<script>
+$(document).ready(function() {
+$('.drawer').drawer();
+});
+//スマホだけ電話がかかる
+if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+  $(function() {
+    $('.tel').each(function() {
+      var str = $(this).html();
+      if ($(this).children().is('img')) {
+        $(this).html($('<a>').attr('href', 'tel:' + $(this).children().attr('alt').replace(/-/g, '')).append(str + '</a>'));
+      } else {
+				// 20200408 下の1行をif文に変更
+				//$(this).html($('<a>').attr('href', 'tel:' + $(this).text().replace(/-/g, '')).append(str + '</a>'));
+				if ($(this).hasClass('tel2')) {
+					var tel_no = $(this).children('.num').text();
+					$(this).html($('<a>').attr('href', 'tel:' + tel_no).append(str + '</a>'));
+				}
+        else {
+					$(this).html($('<a>').attr('href', 'tel:' + $(this).text().replace(/-/g, '')).append(str + '</a>'));
+				}
+      }
+    });
+  });
+}
+//fix
+if (navigator.userAgent.match(/(iPhone|iPod|Android)/)) {
+ $(function() {
+	var topBtn = $('#topRequestPop');
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+
+});
+}
+
+</script>
+
+</head>
+<body>
+	
+<!-- 170908固定ページ用バナー出力用変数の宣言 -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NZHNPF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NZHNPF');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KHR593"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHR593');</script>
+<!-- End Google Tag Manager -->
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script> <script> window.yjDataLayer = window.yjDataLayer || []; function ytag() { yjDataLayer.push(arguments); }
+ytag({"type":"ycl_cookie","config":{"ycl_use_non_cookie_storage":true}});
+</script>
+<!--header-->
+
+<!---新header--->
+<style>
+@media screen and (max-width: 750px) {
+	.no_sp_no {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 750px) {
+	.no_pc_no {
+		display: none !important;
+	}
+}
+</style>
+<div class="corona" id="top">
+<a href="/new-world/">リージャスのコロナウイルス対策と<br class="sp">危機管理対応について</a>
+<!--p class="close"><img src="/common2/images/close.png" alt=""></p-->
+</div>
+<header>
+<div class="inner1">
+<div class="hd_logo"><a href="/"><img src="/common2/images/logo_hdr.gif" alt="Regus"></a></div>
+<p class="seo_txt">レンタルオフィス、コワーキングスペースを提供する<br>世界最大のシェアオフィス運営会社です。</p>
+<ul class="hd_links no_sp_no">
+<li><a href="https://new.myregus.com/" target="_blank">My Regusでスペースを予約</a></li>
+<li><a href="/contract/">ご契約の流れと必要書類</a></li>
+<li><a href="/owner/">ビルオーナー様</a></li>
+<li><a href="/agent/">仲介エージェント様</a></li>
+</ul>
+<div class="hd_contactSP"><a href="/enquiry/"><img src="/common2/images/header_sp_email.svg" alt="お問い合わせ"></a></div>
+<div class="hd_tel"><a href="tel:0120-965-391"><img src="/common2/images/img_top_tel3.png" alt="0120-965-391"></div>
+<div class="hd_contact"><a href="/enquiry/"><img src="/common2/images/btn_top_contact2.gif" alt="お問い合わせ"></a></div>
+<div class="icon-animation">
+<span class="top"></span>
+<span class="middle"></span>
+<span class="bottom"></span>
+</div>
+</div>
+<nav>
+<ul class="gnav">
+<li>
+<a href="/area_serch/"><span class="bd_wt">レンタルオフィスを探す</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/area_serch/">エリアから探す</a></li>
+<li><a href="/officetype/">オフィスから探す</a></li>
+<li><a href="/tokyo-area-serch/#rosen_tokyo">路線から探す</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="/officetype/"><span class="bd_wt">オフィスの種類</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/service/office/">レンタルオフィス</a></li>
+<li><a href="/service/coworking-spaces/">コワーキングスペース</a></li>
+<li><a href="/service/virtualoffice/">バーチャルオフィス</a></li>
+<li><a href="/service/businessworld/">メンバーシップ</a></li>
+<li><a href="/service/meetingroom/">貸し会議室</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="/application/"><span class="bd_wt">事業規模から探す</span></a>
+<div class="acco_wrap">
+	<div class="col_2">
+		<div class="col_L">
+		<p class="ttlsub">法人のお客様</p>
+		<ul class="acco">
+		<li><a href="/application/large-enterprise">大企業</a></li>
+		<li><a href="/application/sme">中小企業</a></li>
+		</ul>
+		</div>
+		<div class="col_R">
+		<p class="ttlsub">個人/SOHO向け</p>
+		<ul class="acco">
+		<li><a href="/application/start-ups">起業家</a></li>
+		<li><a href="/application/nomad">ノマドワーカーに</a></li>
+		<li><a href="/application/professional">士業の方</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<a href="/purpose/"><span class="bd_wt">利用目的から探す</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/purpose/labor-reform/">働き方改革</a></li>
+<li><a href="/purpose/telework/">テレワーク</a></li>
+<li><a href="/purpose/bcp/">事業継続計画(BCP)</a></li>
+<li><a href="/purpose/branchoffice/">支店・営業所</a></li>
+<li><a href="/purpose/businesstrip/">出張時</a></li>
+<li><a href="/purpose/project/">プロジェクトルームに</a></li>
+<li><a href="/purpose/webmeeting/">ウェブ会議・テレカンでのご利用</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="/case/"><span class="bd_wt">活用事例</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/case/casestudies">ケーススタディ</a></li>
+<li><a href="/case/customer">お客様の声</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="/learn/"><span class="bd_wt">レンタルオフィスを学ぶ</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/learn/workplace/">レンタルオフィスについて</a></li>
+<li><a href="/learn/entrepreneur/">スタートアップ</a></li>
+<li><a href="/learn/business/">ワークスタイル変革</a></li>
+<li><a href="/learn/manager/">トレンド調査</a></li>
+<li><a href="/learn/news/">リージャスからお知らせ</a></li>
+<li><a href="/learn/workstyle/">これからのワークスタイル</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="/profile/"><span class="bd_wt">リージャスとは</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/aboutus/">会社概要</a></li>
+<li><a href="/greeting/">代表挨拶</a></li>
+<li><a href="/history/">沿革</a></li>
+<li><a href="/base/">拠点一覧</a></li>
+<li><a href="/brands/">ブランド一覧</a></li>
+<li><a href="/recruiting_n/">採用情報</a></li>
+</ul>
+</div>
+</li>
+<li class="no_pc_no">
+<a href="/contract/"><span class="bd_wt">ご契約の流れ・その他</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/contract/">ご契約の流れと必要書類</a></li>
+<li><a href="/agent/">仲介エージェント様</a></li>
+<li><a href="/owner/">ビルオーナー様</a></li>
+<li><a href="https://new.myregus.com/" target="_blank">My Regusでスペースを予約</a></li>
+</ul>
+</div>
+</li>
+<li class="close_acco">
+<p>閉じる<img src="/common2/images/close.png" alt=""></p>
+</li>
+</ul>
+</nav>
+</header>
+<!---新headerここまで---><!--/header-->
+<!---ここまで--->
+
+<!--contentsWrap-->
+<div class="wrapper">
+	<div class="contentsWrap clearfix">
+	<ul id="breadcrumb" class="pc clearfix"><li><a href="https://www.regus-office.jp">レンタルオフィス日本リージャス</a></li>&nbsp;>&nbsp;リージャスのプランとサービス</ul>	</div>
+</div>
+<!--contents-->
+	
+<div class="main_contents" id="pageT">
+	
+<!---ここから表示--->
+
+
+<div class="service_wrap">
+<div class="kv_area">
+<ul>
+ 	<li><img src="/special/officetype/images/kv_img1.png" alt="契約最短1か月～*会議室除く"></li>
+ 	<li><img src="/special/officetype/images/kv_img2.png" alt="無料Wi-Fi・オフィス設備完備"></li>
+</ul>
+<h1>リージャスの<br class="sp">プランとサービス</h1>
+</div>
+<!--/kv_area-->
+<h2><span>リージャスの</span>プラン</h2>
+<p class="lead">スタートアップ/独立時の本社やサテライトオフィス、出張時のワークスペースや会議室利用まで、多機能的に活用できるリージャスは日本全国170拠点、世界120カ国900都市3,000拠点で展開しています。</p>
+
+<div class="plan_area">
+<div class="plan_list">
+<div class="img"><img src="/special/officetype/images/plan1.jpg" alt=""></div>
+<p class="ttl"><span>レンタルオフィス</span></p>
+
+<div class="txt_area">
+<ul>
+ 	<li>専用個室（1～100名以上）、半個室タイプ、スペースをシェアするシェアオフィスタイプまで人数・スタイルに合わせて選べるオフィスタイプ</li>
+ 	<li>1時間からご利用可能、長期利用割引あり</li>
+ 	<li>首都圏・主要都市の駅至近のハイグレードビルのオフィス</li>
+ 	<li>24時間365日ご利用可能<sup>※</sup></li>
+</ul>
+<dl>
+ 	<dt>ご利用料に
+含まれる
+サービス</dt>
+ 	<dd>
+<ul>
+ 	<li>オフィス家具、電話/ネット回線、Wi-Fi、カフェ、水道光熱費、清掃費など</li>
+ 	<li>日本全国170拠点以上含む世界のビジネスラウンジ利用可能</li>
+</ul>
+</dd>
+</dl>
+<p class="recommend">
+<span class="red">おすすめ</span>
+<span class="gray">起業時の本社/支店・営業所の開設</span></p>
+<a class="btn" href="/service/office/">詳しくはこちら</a>
+
+</div>
+<!--txt_area-->
+
+</div>
+<!--plan_list-->
+<div class="plan_list">
+<div class="img"><img src="/special/officetype/images/plan2.jpg" alt=""></div>
+<p class="ttl"><span>コワーキングスペース</span></p>
+
+<div class="txt_area">
+<ul class="min">
+ 	<li>占有デスク</li>
+ 	<li>専用ロッカー、セキュリテイシステム完備</li>
+ 	<li>1時間からご利用可能、長期利用割引あり</li>
+ 	<li>24時間365日ご利用可能<sup>※</sup></li>
+</ul>
+<dl>
+ 	<dt>ご利用料に
+含まれる
+サービス</dt>
+ 	<dd>
+<ul>
+ 	<li>オフィス家具、電話/ネット回線、Wi-Fi、カフェ、水道光熱費、清掃費など</li>
+ 	<li>日本全国170拠点以上含む世界のビジネスラウンジ利用可能</li>
+</ul>
+</dd>
+</dl>
+<p class="recommend">
+<span class="red">おすすめ</span>
+<span class="gray">起業時の本社/働き方改革の促進</span></p>
+<a class="btn" href="/service/coworking-spaces/">詳しくはこちら</a>
+
+</div>
+<!--txt_area-->
+
+</div>
+<!--plan_list-->
+<p class="caution">※24時間365日ご利用に関してはセキュリティキーにて入退出可能、受付業務など一部サービスを除きます。</p>
+
+<div class="plan_list">
+<div class="img"><img src="/special/officetype/images/plan3.jpg" alt=""></div>
+<p class="ttl"><span>バーチャルオフィス</span></p>
+
+<div class="txt_area">
+<ul>
+ 	<li>一等地の住所で法人登記が可能</li>
+ 	<li>電話応対、郵便物の取り扱いの代行</li>
+ 	<li>日本全国170拠点以上含む世界のビジネスラウンジ利用可能</li>
+</ul>
+<p class="recommend">
+<span class="red">おすすめ</span>
+<span class="gray">オフィススペースが不要な起業家</span></p>
+<a class="btn" href="/service/virtualoffice/">詳しくはこちら</a>
+
+</div>
+<!--txt_area-->
+
+</div>
+<!--plan_list-->
+<div class="plan_list">
+<div class="img"><img src="/special/officetype/images/plan4.jpg" alt=""></div>
+<p class="ttl"><span>メンバーシップ</span></p>
+
+<div class="txt_area">
+<ul>
+ 	<li>日本全国170拠点以上含む世界のビジネスラウンジ利用可能</li>
+ 	<li>個室/デスク利用のプランあり</li>
+</ul>
+<p class="recommend">
+<span class="red">おすすめ</span>
+<span class="gray">外出・出張時の拠点</span></p>
+<a class="btn" href="/service/membership/">詳しくはこちら</a>
+
+</div>
+<!--txt_area-->
+
+</div>
+<!--plan_list-->
+<div class="plan_list">
+<div class="img"><img src="/special/officetype/images/plan5.jpg" alt=""></div>
+<p class="ttl"><span>会議室</span></p>
+
+<div class="txt_area">
+<ul>
+ 	<li>1時間単位でご予約可能</li>
+</ul>
+<p class="recommend">
+<span class="red">おすすめ</span>
+<span class="gray">会議/面接/取材/イベントなど</span></p>
+<a class="btn" href="/service/meetingroom/">詳しくはこちら</a>
+
+</div>
+<!--txt_area-->
+
+</div>
+<!--plan_list-->
+
+</div>
+<!--plan_area-->
+<h2>
+<span>リージャスの</span>
+サービス</h2>
+<p class="lead">リージャスのワークスペースは、お客様が快適にお過ごしいただけるよう必要な設備がすべて整っています。</p>
+
+<div class="service_area">
+<div class="service_list large">
+<div class="img"><img src="/special/officetype/images/service1.jpg" alt=""></div>
+<div class="txt_area">
+<h3>個室タイプのレンタルオフィス</h3>
+<ul>
+ 	<li>・1～100名以上でご入居可能</li>
+ 	<li>・ご利用料金には、オフィス家具、電話／ネット回線、Wi-Fi,カフェ、水道光熱費、清掃費用等が含まれます</li>
+ 	<li>・オフィスレイアウトの調整も必要に応じてご相談ください</li>
+</ul>
+</div>
+</div>
+<!--/service_list-->
+<div class="service_list">
+<div class="img"><img src="/special/officetype/images/service2.jpg" alt=""></div>
+<div class="txt_area">
+<h3>ビジネスラウンジ</h3>
+<ul>
+ 	<li>・打合せスペースとしてもご利用可能</li>
+ 	<li>・無料Wi-Fiつき</li>
+</ul>
+</div>
+</div>
+<!--/service_list-->
+<div class="service_list">
+<div class="img"><img src="/special/officetype/images/service3.jpg" alt=""></div>
+<div class="txt_area">
+<h3>会議室<sup>※1</sup></h3>
+<ul>
+ 	<li>・1時間単位でご予約可能</li>
+ 	<li>・テレカン可能な会議室や大型会議室など用途にあわせてご利用可能</li>
+</ul>
+</div>
+</div>
+<!--/service_list-->
+<div class="service_list">
+<div class="img"><img src="/special/officetype/images/service4.jpg" alt=""></div>
+<div class="txt_area">
+<h3>給湯スペース</h3>
+<ul>
+ 	<li>・フリードリンクあり</li>
+</ul>
+</div>
+</div>
+<!--/service_list-->
+<div class="service_list">
+<div class="img"><img src="/special/officetype/images/service5.jpg" alt=""></div>
+<div class="txt_area">
+<h3>OA機器</h3>
+<ul>
+ 	<li>・コピー機<sup>※1</sup>、裁断機、大型ホチキスなど完備</li>
+ 	<li>・裁断機、大型ホチキス、シュレッダーあり</li>
+</ul>
+</div>
+</div>
+<!--/service_list-->
+<div class="service_list">
+<div class="img"><img src="/special/officetype/images/service6.jpg" alt=""></div>
+<div class="txt_area">
+<h3>ロッカー</h3>
+<ul>
+ 	<li>・セキュリティも万全</li>
+</ul>
+</div>
+</div>
+<!--/service_list-->
+<div class="service_list">
+<div class="img"><img src="/special/officetype/images/service7.jpg" alt=""></div>
+<div class="txt_area">
+<h3>受付</h3>
+<ul>
+ 	<li>・日英バイリンガルが応対</li>
+ 	<li>・郵便/宅配の受け取りと仕分け、秘書、電話取り次ぎサービス※2あり</li>
+</ul>
+</div>
+</div>
+<!--/service_list-->
+
+</div>
+<!--/service_area-->
+<div class="service_note">
+
+※1 ご利用に応じた実費が発生します。
+※2 有料サービスです。
+
+</div>
+<div class="contact_area">
+<p class="btn"><a href="/enquiry/"><img src="/special/officetype/images/btn.gif" alt="お問い合わせ"></a></p>
+<p class="tel"><img src="/special/officetype/images/tel.gif" alt="お電話でのお問い合わせ　0120-965-391　平日 8：30-18：00"></p>
+
+</div>
+<!--/contact-->
+
+</div>
+
+<!---ここまで表示--->
+</div>
+<!--/contents-->
+
+<!---サイドバーがあったところ--->
+
+</div>
+<!--/contentsWrap-->
+
+<div class="pageTop"><a href="#"><img src="/common2/images/btn_pagetop.gif" alt="ページトップへ"></a></div>
+
+</div>
+
+<!-- /170713追記 スマホ問い合わせ表示-->
+<div id="topRequestPop" class="sp">
+</ul>
+<!--div  class="spContact" style="margin-top: 5px"><a href="/office-cost/"><img src="/common2/images/bnr_sp_cp_top.jpg" alt="キャンペーン"></a></div-->
+<div  class="spContact" style="margin-top: 5px"><a href="/furniture_cpn/"><img src="/images/campaign/cp_floating750x12_sp.gif" alt="キャンペーン"></a></div>
+</div>
+
+</div>
+
+<style>
+.btn_f {
+    padding: .3em .5em;
+    text-align: center;
+    cursor: pinter;
+    height: auto;
+}
+.btn_f:hover {
+    cursor: pinter; 
+}
+.btn_f:active {
+    background: none;
+}
+.box_footer {
+	position:fixed;
+	bottom:8px;
+	width: 100%;
+	text-align: center;
+	z-index: 999;
+}
+
+/* close button */
+.action-close {
+    margin-top: 2em;
+}
+.action-close .btn_f {
+	position:fixed;
+	display: inline-block;
+	bottom:80px;
+	left: 50%;
+	margin-left: 330px;
+	text-align: center;
+	z-index: 1000;
+}
+.action-close .box_footer {
+    border: none;
+}
+
+/* checkbox non-display */
+.add-control .checkbox {
+    display: none;
+}
+
+/* close button's control */
+.add-control .action-close #close:checked ~ .btn_f {
+    display: none;
+}
+.add-control .action-close #close:checked ~ .box_footer {
+    display: none;
+}
+@media screen and (max-width: 750px){
+	.float_bnr {
+		display:none;
+	}
+}
+</style>
+<!--PC用追従バナー-->
+<div class="float_bnr">
+<div class="add-control">
+  <div class="action-close">
+    <input type="checkbox" class="checkbox" id="close" name="close" /><label for="close" class="btn_f"><img src="https://www.regus-office.jp/images/campaign/close2.png" width="24px" class="btn_cl"></label>
+    <div class="box_footer">
+	    <a class="float_bnr" href="/furniture_cpn/">
+		    <img src="/images/campaign/cp_floating728x90.gif" alt="キャンペーン">
+		    </a>
+	</div>
+  </div>
+</div>
+</div>
+<!-- //-->
+<footer>
+<div class="footer">
+<dl>
+<dt>www.regus-office.jp</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/area_serch/">レンタルオフィスを探す</a></li>
+<li><a href="/officetype/">オフィスの種類</a></li>
+<li><a href="/application/">事業規模から探す</a></li> 
+<li><a href="/purpose/">利用目的から探す</a></li>
+<li><a href="/case/">活用事例</a></li>
+<li><a href="/learn/">レンタルオフィスを学ぶ</a></li>
+<li><a href="/profile/">リージャスとは</a></li>
+    <li><a href="/recruiting_n/">採用情報</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>リージャスのサービスプラン</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/service/office/">レンタルオフィス</a></li>
+<li><a href="/service/virtualoffice/">バーチャルオフィス</a></li>
+<li><a href="/service/meetingroom/">貸し会議室</a></li>
+<li><a href="/coworking-spaces/">コワーキングスペースサービス</a></li>
+<li><a href="/service/businessworld/">メンバーシップ</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>人気のエリア</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li class="gray mg0" style="margin-right: 10px">東京の人気エリア：</li>
+<li><a href="/shibuya-area/">渋谷</a>・<a href="/ebisu-area/">恵比寿</a>エリアのレンタルオフィス</li>
+<li><a href="/marunouchi_otemachi/">丸の内・大手町エリアのレンタルオフィス</a></li>
+<li><a href="/akasakaarea/">赤坂</a>・<a href="/roppongi-area/">六本木</a>エリアのレンタルオフィス</li>
+</ul>
+<ul class="clearfix">
+<!--li class="gray2" style="width: 93px">&nbsp;</li-->
+<li><a href="/sinjukuarea/">新宿</a>・<a href="/ikebukuroarea/">池袋</a>エリアのレンタルオフィス</li>
+<li><a href="/aoyama-omotesando-area/">青山・表参道エリアのレンタルオフィス</a></li>
+<li><a href="/ginza-yurakucho-area/">銀座・有楽町エリアのレンタルオフィス</a></li>
+<li><a href="/yaesu-nihonbashi-area/">八重洲・日本橋エリアのレンタルオフィス</a></li>
+</ul>
+<ul class="clearfix">
+<li><a href="/shinagawaarea/">品川</a>・<a href="/hamamatsuchoarea/">浜松町</a>エリアのレンタルオフィス</li>
+<li><a href="/osaki-gotanda-area/">大崎・五反田エリアのレンタルオフィス</a></li>
+<li><a href="sinbasi-siodome-area">新橋・汐留エリアのレンタルオフィス</a></li>
+<li><a href="/kanda-akihabara-area/">神田・秋葉原</a>・<a href="/kinsicho-area/">錦糸町</a>エリアのレンタルオフィス</li>
+</ul>
+<ul class="clearfix">
+<li><a href="/kojimachi-yotsuya-area/">麹町・四ッ谷エリアのレンタルオフィス</a></li>
+<li><a href="/nakanoarea/">中野</a>・<a href="/tachikawa/">立川</a>エリアのレンタルオフィス</li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt></dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li class="gray mg0">全国の人気エリア：</li>
+<li><a href="/tokyo-area-serch/">東京のレンタルオフィス</a></li>
+<li><a href="/sapporo-area/">札幌のレンタルオフィス</a></li>
+<li><a href="/sendaiarea/">仙台のレンタルオフィス</a></li>
+<li><a href="/yokohama-minatomirai-area/">横浜のレンタルオフィス</a></li>
+<li><a href="/aichiarea/">愛知・名古屋のレンタルオフィス</a></li>
+<li><a href="/osaka-area/">大阪のレンタルオフィス</a></li>
+<li><a href="/fukuoka-area/">福岡のレンタルオフィス</a></li>
+<li><a href="/omiyaarea/">大宮のレンタルオフィス</a></li>
+<li><a href="/tsukuba_area/">茨城のレンタルオフィス</a></li>
+<li><a href="/area_sizuoka_city/">静岡のレンタルオフィス</a></li>
+<li><a href="/hirosima-area/">広島のレンタルオフィス</a></li>
+<li><a href="/area_kyoto/">京都のレンタルオフィス</a></li>
+<li><a href="/hyogo-kobe-area/">神戸のレンタルオフィス</a></li>
+<li><a href="/area_okayama/">岡山のレンタルオフィス</a></li>
+<li><a href="/area_kagawa/">高松のレンタルオフィス</a></li>
+<li><a href="/area_kitakyushu/">小倉のレンタルオフィス</a></li>
+<li><a href="/area_kumamoto/">熊本のレンタルオフィス</a></li>
+<li><a href="/area_okinawa/">沖縄のレンタルオフィス</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt></dt>
+<dd class="clearfix">
+<ul class="mgR20 socialB">
+<li class="gray3 mgR10">Regusとつながろう：</li>
+    <li><a href="https://twitter.com/RegusJapanKK" title="Twitter" class="twitter" target="_blank"><img src="/common2/images/footer-twitter.png" alt="Twitter" border="0" /></a></li>
+    <li><a href="https://www.facebook.com/RegusJapan" title="Facebook" class="facebook" target="_blank"><img src="/common2/images/footer-facebook.png" alt="Facebook" border="0" /></a></li>
+    <li class="pdR20"><a href="https://www.linkedin.com/company/regus-japan/" title="Linked In" class="linked-in" target="_blank"><img src="/common2/images/footer-linkedin.png" alt="Linked In" border="0" /></a></li></ul>
+<ul class="socialB">
+<li class="mgRight"><p class="resv">My Regus.comで<span>スペースを予約：</span><a href="https://new.myregus.com/" target="_blank">ブラウザ版&nbsp;<img src="/common2/images/footer_img_app.svg" alt="" class="openWin" style="width: 18px;height: 18px"></a></p></li>
+<li><a href="https://apps.apple.com/gb/app/regus/id387924487" target="_blank"><img src="/common2/images/footer_img_apple.jpg" alt="App Store"></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.regus" target="_blank"><img src="/common2/images/footer_img_google.jpg" alt="Google Play"></a>
+</li>
+<!--li class="useM"><a href="/common2/images/my_regus.pdf" target="_blank">使い方</a></li-->
+    </ul></dd>
+</dl>
+
+
+
+<div class="clearfix">
+<div class="ftrLogo"><a href="/"><img src="/common2/images/logo_ftr.gif" alt="Regus"></a></div>
+<nav class="ftrNav clearfix">
+<ul><li><a href="/profile/">リージャスとは</a></li>
+<li><a href="/policy">プライバシーポリシー</a></li>
+<li><a href="/regulation">利用規約</a></li>
+<li><a href="/system-requirements">推奨環境</a></li>
+<li><a href="/socialmediapolicy">ソーシャルメディアポリシー</a></li>
+</ul>
+</nav>
+</div>
+<p class="copy">&copy; 2021 Regus Group Companies　　<span class="pcImg">レンタルオフィス・コワーキング スペースならリージャス。東京・大阪・名古屋ほか全国170拠点のワークスペースをご紹介。</span></p>
+</div>
+</footer>
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=ePcpeef";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=ePcpeef" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+<script type="text/javascript">
+	window._pt_sp_2 = [];
+	_pt_sp_2.push('setAccount,613ecd73');
+	var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	(function() {
+		var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+		atag.src = _protocol + 'js.ptengine.jp/pta.js';
+		var stag = document.createElement('script'); stag.type = 'text/javascript'; stag.async = true;
+		stag.src = _protocol + 'js.ptengine.jp/pts.js';
+		var s = document.getElementsByTagName('script')[0]; 
+		s.parentNode.insertBefore(atag, s);s.parentNode.insertBefore(stag, s);
+	})();
+</script></body>
+</html>

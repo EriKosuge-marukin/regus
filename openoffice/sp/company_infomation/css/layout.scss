@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import "../../common/css/mixin";
+
+#wrapper{
+	.ttl{
+		width: 100%;
+		padding-top: 50px;
+		margin-bottom: 20px;
+		h1{
+			text-align: left;
+			padding: 25px 0 25px 3.5%;
+			background: url(/sp/company_infomation/img/outline_ttl.jpg) left center no-repeat;
+			@include bgs;
+			@include fz(20);
+			color: #004c80;
+			font-weight: bold;
+		}
+	}
+	.outline{
+		padding: 0 3.5%;
+		>dl{
+			width: 100%;
+			text-align: left;
+			>dt{
+				width: 100%;
+				background: #ebebeb;
+				padding: 8px 5% 6px;
+				line-height: 1;
+				@include fz(13);
+			}
+			>dd{
+				width: 100%;
+				padding: 12px 5%;
+				@include fz(12);
+				&.office{
+					padding-right: 0;
+					dl{
+						height: 300px;
+						overflow-y: scroll;
+						width: 100%;
+						padding-right: 3%;
+						dt{
+							@include fz(12);
+							margin-bottom: 5px;
+						}
+						dd{
+							@include fz(12);
+							margin-bottom: 10px;
+							&:last-child{
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				iframe{
+					width: 100%;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+.page-top{
+	display: none;
+}

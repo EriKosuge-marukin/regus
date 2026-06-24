@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+.thanksRegi .iconMail {
+  width: 198px;
+  margin: 120px auto 45px auto; }
+  @media screen and (max-width: 768px) {
+    .thanksRegi .iconMail {
+      width: 35%;
+      margin: 50px auto 5px auto; } }
+
+.thanksRegi h2.mail {
+  text-align: center;
+  background: none;
+  font-size: 24px;
+  color: #000000; }
+  @media screen and (max-width: 768px) {
+    .thanksRegi h2.mail {
+      margin-top: 10px;
+      font-size: 20px !important; } }
+
+.thanksRegi .wait {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 60px; }
+  @media screen and (max-width: 768px) {
+    .thanksRegi .wait {
+      margin-bottom: 30px; } }
+
+.otherArea .mailmagazine_thanks_none {
+  display: none; }

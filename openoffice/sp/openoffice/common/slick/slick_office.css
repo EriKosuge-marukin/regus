@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+.sliderArea {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.sliderArea.w300 {
+  max-width: 300px;
+}
+.slick-slide {
+  margin: 0 5px;
+}
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+  color: #000;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+.thumb {
+  margin: 20px 0 0;
+}
+.thumb .slick-slide {
+  cursor: pointer;
+}
+.thumb .slick-slide:hover {
+  opacity: .7;
+}
+
+
+.slick-next {
+    right: -2px;
+}
+.slick-prev {
+    left: -2px;
+}
+/*-----------*/
+.slick-arrow:before{
+    content:""!important;
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slick-next:before{
+    background: url(/openoffice/sp/openoffice/common/slick/arrow_r.png)!important;
+    background-size: contain!important;
+}
+
+.slick-prev:before{
+    background: url(/openoffice/sp/openoffice/common/slick/arrow_l.png)!important;
+    background-size: contain!important;
+}

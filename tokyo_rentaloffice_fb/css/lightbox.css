@@ -1,0 +1,90 @@
+.overlayBG{
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    display: none;
+}
+
+#lightbox{
+    margin-left: -175px;
+    width: 350px;
+    margin-top: -197px;
+    display: none;
+    position: fixed;
+    background: #ffffff;
+    z-index: 102;
+    color: #000000;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    padding: 15px;
+}
+
+#lightbox .boxWrapper{
+    width: 349px;
+    height: 367px;
+    clear: both;
+    border: none;
+    margin-bottom: -1px;
+    margin-top: 1px;
+    overflow: auto;
+}
+
+.search_top{
+    background-color: #0d3371;
+    width: 310px;
+    height: 280px;
+    margin: 20px auto 0 auto;
+}
+
+.search_top dl{
+    padding: 10px 0 0 22px;
+    zoom: 100%;
+}
+
+.search_top dt{
+    clear: both;
+    width: 110px;
+    padding: 8px 0 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    color: #FFFFFF;
+}
+
+.search_top input[type="text"] {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    width: 265px;
+    height: 24px;
+    color: #000;
+}
+
+.search_top dd{
+    width: 295px;
+    height: 35px;
+    padding: 0 0 0 0;
+    display: block;
+    font-size : 16px;
+    color: #fff;
+}
+
+.search_top .btn_top{
+    position: relative;
+}
+
+.search_top .btn_top input{
+    position: absolute;
+    top: 16px;
+    left: 21px;
+    width: 273px;
+    height: 36px;
+    border: none;
+}

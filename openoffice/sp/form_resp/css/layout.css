@@ -1,0 +1,106 @@
+#wrapper .ttl {
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 20px; }
+  #wrapper .ttl h1 {
+    background: url(/sp/form2/img/kv_bg_2.png) right center no-repeat, url(/sp/form2/img/kv_bg.gif) top center no-repeat;
+    -webkit-background-size: contain, cover;
+    -moz-background-size: contain, cover;
+    -ms-background-size: contain, cover;
+    background-size: contain, cover;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004c80;
+    padding: 25px 5%;
+    line-height: 1.4; }
+    #wrapper .ttl h1 span {
+      font-size: 17px;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #004c80; }
+#wrapper .inner {
+  padding: 0 3.5%; }
+  #wrapper .inner .form_area table {
+    width: 100%; }
+    #wrapper .inner .form_area table tr th {
+      display: block;
+      width: 100%;
+      background: #EDEDEE;
+      text-align: left;
+      font-size: 12px;
+      font-size: 1.2rem;
+      padding: 10px 3% 10px 3%; }
+      #wrapper .inner .form_area table tr th span {
+        font-size: 12px;
+        font-size: 1.2rem;
+        color: red; }
+    #wrapper .inner .form_area table tr td {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 10px 3% 10px 3%;
+      background: #fff;
+      font-size: 12px;
+      font-size: 1.2rem; }
+      #wrapper .inner .form_area table tr td * {
+        font-size: 12px;
+        font-size: 1.2rem; }
+      #wrapper .inner .form_area table tr td input[type="text"], #wrapper .inner .form_area table tr td input[type="email"], #wrapper .inner .form_area table tr td input[type="tel"] {
+        padding: 10px 5px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid  #a8a8a8; }
+      #wrapper .inner .form_area table tr td textarea {
+        width: 100%;
+        height: 130px;
+        padding: 10px 5px;
+        border: 1px solid  #a8a8a8;
+        border-radius: 5px; }
+      #wrapper .inner .form_area table tr td ul.detail li {
+        margin-bottom: 5px; }
+        #wrapper .inner .form_area table tr td ul.detail li:last-child {
+          margin-bottom: 0; }
+      #wrapper .inner .form_area table tr td ul.office {
+        width: 100%;
+        -js-display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        justify-content: -webkit- space-between;
+        justify-content: space-between; }
+        #wrapper .inner .form_area table tr td ul.office li {
+          width: 49%;
+          text-align: left; }
+          #wrapper .inner .form_area table tr td ul.office li:nth-child(n+3) {
+            margin-top: 5px; }
+  #wrapper .inner .form_area .btns {
+    margin-top: 20px; }
+    #wrapper .inner .form_area .btns ul {
+      text-align: center; }
+      #wrapper .inner .form_area .btns ul li input {
+        width: 250px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+        font-size: 1.2rem;
+        padding: 15px 0;
+        line-height: 1;
+        margin: 0 auto;
+        background: #0097d5; }
+
+.page-top, .foot_btn {
+  display: none !important; }
+
+footer {
+  padding-bottom: 20px !important; }
+
+/*# sourceMappingURL=layout.css.map */

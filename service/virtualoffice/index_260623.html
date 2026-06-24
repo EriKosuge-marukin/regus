@@ -11,6 +11,7 @@
     content="バーチャルオフィスサービスなら世界最大手ブランド【リージャス】。創業時にメリットの大きいバーチャルオフィスサービスは、業務スペース(事務所)を構えることなく、事業を始める際に必要な住所、電話番号などを借りられるサービスです。オフィス開設の初期費用を抑えながら、一等地の住所で法人登記が可能。郵便物転送や電話転送サービスなど各種事務代行サービスもご提供。オフィス・会議室・テレビ会議室などの実務スペースも割引利用できる【リージャス】のバーチャルオフィスサービスをご利用ください。" />
   <meta name="keywords" content="" />
   <!--スマホ以外のデバイスからのアクセスのときのビューポート-->
+  <!-- <meta name="viewport" content="width=1100"> -->
   <meta name="viewport"
     content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes" />
   <meta name="format-detection" content="telephone=no" />
@@ -483,9 +484,6 @@
               <li><a href="/area-search/#rosen_tokyo">路線から探す</a></li>
               <!--li><a href="https://www.regus-office.jp#tab_box">都市名から探す</a></li-->
               <li><a href="/map_search/">GoogleMapから探す</a></li>
-              <!--li class="pc"><a href="https://www.regus-office.jp#conlist">条件から探す</a></li>
-    <li><a href="/officetype/">オフィスから探す</a></li>
-    <li><a href="/brands/">ブランドから探す</a></li-->
             </ul>
           </div>
         </li>
@@ -702,22 +700,6 @@
           text-align: center;
           padding: 1rem 0;
         }
-
-        /*.wrapper .listUnit table.test th {
-		padding: 1rem 0;
-	}*/
-        /*.wrapper .listUnit table td {
-    padding: 1em 0;
-    background-color: #fff;
-    border: 1px solid #b9b9b9;
-    width: 21% !important;
-    text-align: center;
-    vertical-align: middle;
-	}
-	.wrapper .listUnit table td:nth-child(1) {
-    width: 21% !important;
-    background: #fff;
-	}*/
       }
 
       @media screen and (max-width: 750px) {
@@ -767,7 +749,7 @@
         }
       </style>
 
-      <section class="sec01" id="plan4">
+      <section class="sec01">
         <p class="info">まずはご希望に合わせてご覧ください</p>
 
         <ul class="tab">
@@ -952,7 +934,7 @@
 
         <!-- 2つ目のパネル -->
         <div class="tab__panel">
-          <div class="office">
+          <div class="office" id="office">
             <ul class="office__search office__search--region" id="search_back_map">
               <li>
                 <button data-val="hokkaido" class="search-sp__btn active">
@@ -1553,7 +1535,6 @@
       </section>
 
       <section class="cvcv">
-        <!--h2 class="vp_title">期間限定　<br class="spImg">50%OFFキャンペーン中</h2-->
         <ul class="btn2-CAM">
           <li>
             <div class="btn_RED">
@@ -1564,23 +1545,15 @@
               <a href="/vacancy?set=vo" class="btn_arrow">最適なオフィスを <br class="sp" />ご提案します</a>
             </div>
           </li>
-          <!--li>
-      <div class="btn_GREEN">
-        <a href="/service/virtualoffice/virtualoffice/" class="btn_arrow">バーチャルオフィスを探す</a>
-      </div>
-    </li-->
         </ul>
       </section>
-      <!--cvcv-->
 
-      <!--251010//-->
       <section class="sec05">
         <div id="center"></div>
         <h2 class="high__ttl">
           <span class="add260324_48200">Regusのオフィスは<br />
             拠点数No.1！《国内53都市、215拠点以上》</span>
           バーチャルオフィス利用可能センターの一例
-          <!--img src="/images_2023/highgrade.svg" alt="HIGH GRADE"-->
         </h2>
         <ul class="newOffice">
           <li>
@@ -1617,17 +1590,6 @@
             </a>
           </li>
 
-          <!--li>
-      <p class="pic">
-        <img src="https://www.regus-office.jp/wp-content/uploads/2015/07/akasakak_0111.jpg" alt="リージャス赤坂Kタワービジネスセンター">
-      </p>
-      <div class="ofName">
-        <h3>リージャス赤坂Kタワービジネスセンター</h3>
-        <p class="o_access">東京都港区元赤坂1-2-7　赤坂Ｋタワー４F</p>
-      </div>
-    </a>
-  </li-->
-
           <li>
             <a href="https://www.regus-office.jp/tokyo-area/shibuya-markcity/" target="" rel="noopener">
               <p class="pic">
@@ -1659,28 +1621,6 @@
             </a>
           </li>
 
-          <!--li>
-      <p class="pic">
-        <img src="https://www.regus-office.jp/wp-content/uploads/2019/07/yokohama_landmark_office01.jpg" alt="リージャス横浜ランドマークタワービジネスセンター">
-      </p>
-      <div class="ofName">
-        <h3>リージャス横浜ランドマークタワービジネスセンター</h3>
-        <p class="o_access">神奈川県横浜市西区みなとみらい2-2-1 横浜ランドマークタワー20F</p>
-      </div>
-    </a>
-  </li-->
-
-          <!--li>
-      <p class="pic">
-        <img src="https://www.regus-office.jp/wp-content/uploads/2019/07/dainagoya_office01-1.jpg" alt="リージャス大名古屋ビルヂングビジネスセンター">
-      </p>
-      <div class="ofName">
-        <h3>リージャス大名古屋ビルヂングビジネスセンター</h3>
-        <p class="o_access">愛知県名古屋市中村区名駅3-28-12 大名古屋ビルヂング 11F、25F</p>
-      </div>
-    </a>
-  </li-->
-
           <li>
             <a href="https://www.regus-office.jp/osaka-area/abenoharukas/" target="" rel="noopener">
               <p class="pic">
@@ -1695,17 +1635,6 @@
               </div>
             </a>
           </li>
-
-          <!--li>
-      <p class="pic">
-        <img src="https://www.regus-office.jp/wp-content/uploads/2012/01/sendai_office_01.jpg" alt="リージャス仙台マークワンビジネスセンター">
-      </p>
-      <div class="ofName">
-        <h3>リージャス仙台マークワンビジネスセンター</h3>
-        <p class="o_access">宮城県仙台市青葉区中央一丁目2-3 仙台マークワン 19F</p>
-      </div>
-    </a>
-  </li-->
 
           <li>
             <a href="https://www.regus-office.jp/fukuoka-area/jrjp-hakata/" target="" rel="noopener">
@@ -1737,17 +1666,6 @@
               </div>
             </a>
           </li>
-
-          <!--li>
-      <p class="pic">
-        <img src="https://www.regus-office.jp/wp-content/uploads/2015/11/yurakucho_itocia_office_01.jpg" alt="リージャス有楽町イトシアビジネスセンター">
-      </p>
-      <div class="ofName">
-        <h3>リージャス有楽町イトシアビジネスセンター</h3>
-        <p class="o_access">東京都千代田区有楽町2-7-1 有楽町イトシア 12F</p>
-      </div>
-    </a>
-  </li-->
 
           <li>
             <a href="https://www.regus-office.jp/tokyo-area/shiodome/" target="" rel="noopener">
@@ -1885,7 +1803,7 @@
         <ul class="btn2-CAM btn2-CAM2">
           <li>
             <div class="btn_GREEN btn_blue">
-              <a href="#tabView2" class="btn_arrow">オフィス一覧を見る</a>
+              <a class="btn_arrow js-anchor" data-tab="1" data-target="#office">オフィス一覧を見る</a>
             </div>
           </li>
           <li>
@@ -2480,12 +2398,11 @@
     <a href="#"><img src="/common2/images/btn_pagetop.gif" alt="ページトップへ" /></a>
   </div>
 
-  <!---260216-----------//-->
   <div class="float_apply260306">
     <div class="float_in">
       <div class="float_left">
         <p class="vir_-btn btn-C_b">
-          <a href="#plan4" target="_blank" rel="noopener">プランを見る</a>
+          <a class="js-anchor" data-tab="0" data-target="#plan">プランを見る</a>
         </p>
       </div>
       <div class="float_right">
@@ -2516,7 +2433,6 @@
     });
   </script>
 
-  <!-- /211124 スマホ問い合わせ表示-->
   <div id="topReqBtm" class="sp">
     <style>
       #topReqBtm {
@@ -2562,7 +2478,6 @@
     </div>
   </div>
 
-  <!--/div//-->
   <script type="text/javascript">
     var current = 1;
     var next = 2;
@@ -2610,7 +2525,6 @@
       text-align: center;
       background: #000;
       z-index: 999;
-      /*overflow: hidden;*/
     }
 
     /* close button */
@@ -2675,28 +2589,6 @@
       display: none;
     }
   </style>
-  <!--script type="text/javascript">
-var currentC=1;
-var nextC=2;
-
-var max_countC=2;
-
-$(function(){
-var timerC;
-timerC=window.setInterval(fadeinoutC,3000);
-});
-
-function fadeinoutC(){
-$("#image-changeC"+nextC).fadeIn(1000);
-$("#image-changeC"+currentC).fadeOut(500);
-
-currentC=nextC;
-nextC++;
-if(nextC > max_countC){
-nextC=1;
-}
-}
-</script-->
 
   <footer>
     <div class="footer">

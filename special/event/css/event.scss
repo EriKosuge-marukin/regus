@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import 'mixin';
+/*title--------------*/
+.contents {
+	.sub_title {
+		background: #E10034 url("/common2/images/bg_white.gif") repeat-x scroll left bottom;
+		line-height: 60px;
+		padding-left: 10px;
+		font-size: 140%;
+		font-weight: bold;
+		border-bottom: 4px solid #939696;
+		color: #FFF;
+	}
+}
+.section {
+	.main_title {
+		h1 {
+			background: #F2F2F2 url("/common2/images/bg_h2.gif") no-repeat scroll left top;
+			line-height: 45px;
+			margin: 30px 0px 10px;
+			padding-left: 25px;
+			font-size: 120%;
+			font-weight: bold;
+			border-bottom: 0px solid #939696;
+			color: black;
+		}
+	}
+}
+/*title--------------*/
+.contents {
+		.sub_title {
+			margin: 0px 0px 10px;
+            @include break {margin: 5% 0px 0px;}
+		}
+	}
+.newsKiji {
+	margin-bottom: 40px;
+    p.yymmdd {
+		margin: 0 0 20px 0;
+		text-align: right;
+    @include break {
+    margin: 0 0 20px 0;
+			text-align: right;}
+	}
+    .event{
+        .name{font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 15px ;
+         @include break {font-size: 16px;}
+        }
+         dl.thisEV {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+             @include break {flex-flow: column;}
+
+        dt {
+        flex-basis: 15%;
+        padding: 20px 0;
+            text-align: center;
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #ccc;
+            @include break { text-align: left;padding: 13px 25px;}
+        }
+        dd {
+        flex-basis: 75%;
+        padding: 20px;
+        background-color: #fff;
+            border-bottom: 1px solid #ccc;@include break {padding: 10px 25px;;}
+        }
+             }//dl
+    }//event
+    .ctctUS{text-align: center;
+        margin: 30px auto 0 auto;
+    font-weight: bold;
+        font-size: 18px; @include break {font-size: 16px;}}
+    .cam2Btns {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 25px auto;
+        @include break {display: block;
+            margin: 20px auto;
+		}
+	>div {
+		flex-basis: 47%;
+        include break {
+        flex-basis: 100%;
+			margin-bottom: 10px;}
+	}
+    
+}
+}

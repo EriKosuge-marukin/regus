@@ -1,0 +1,1893 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+<meta charset="UTF-8">
+<title>
+コストシミュレーション比較 | レンタルオフィスのリージャス 
+</title>
+
+<meta name="description" content="レンタルオフィスを東京・大阪・名古屋・札幌・青森・千葉・横浜・仙台・京都・神戸・岡山・広島・博多で提供しているリージャス。オフィスにはOA機器・ビジネスラウンジ・会議室・受付サービスを完備。">
+<meta name="keywords" content="">
+<!--スマホ以外のデバイスからのアクセスのときのビューポート-->
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="icon" href="/common2/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" media="all" href="/common2/css/common.css?ver=202404">
+<link rel="stylesheet" media="all" href="/css/layout.css?ver=202011">
+<link rel="stylesheet" media="all" href="/special/officetype/css/layout.css?ver=20221102">
+<link rel="canonical" href="https://www.regus-office.jp/service/office/simulation/" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes">
+
+<link rel="stylesheet" media="all" href="/special/nsb_css/rentaloffice1904.css?ver=20221222">
+<link rel="stylesheet" media="all" href="/special/rentaloffice/css/btncontact.css?ver=20220222">
+<link rel="stylesheet" media="all" href="/special/officetype/test/layout.css?ver=20221222">
+
+<!--link rel="stylesheet" media="all" href="/special/nsb_popup/css/popup.css">
+<script src="/special/nsb_popup/js/popup.js"></script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/common2/js/nav.js"></script>
+<script type="text/javascript" src="/common2/js/jquery.heightLine.js"></script>
+<script type="text/javascript" src="/common2/js/script.js?ver=202404"></script>
+<script type="text/javascript" src="/search/js/jquery.rwdImageMaps.js"></script>
+<script type="text/javascript" src="/special/js/radio.js"></script>
+<script type="text/javascript" src="/rentaloffice_r/js/script.js"></script>
+<script type="application/ld+json">{
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position":1,
+            "item": {
+                "@id": "https://www.regus-office.jp/",
+                "name": "レンタルオフィス日本リージャスTOP"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position":2,
+            "item": {
+                "@id": "https://www.regus-office.jp/service/",
+                "name": "リージャスのプランとサービス"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position":3,
+            "item": {
+                "@id": "https://www.regus-office.jp/service/office/",
+                "name": "レンタルオフィスサービス"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position":4,
+            "item": {
+                "@id": "https://www.regus-office.jp/service/office/simulation/",
+                "name": "https://www.regus-office.jp/service/office/simulation/"
+            }
+        }
+    ]}</script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/common2/js/selectivizr.js"></script>
+<script type="text/javascript" src="/common2/js/html5shiv.js"></script>
+<script type="text/javascript" src="/common2/js/respond.js"></script>
+<script type="text/javascript" src="/common2/js/ie8.js"></script>
+<![endif]-->
+<script type="text/javascript">
+$(function(){
+	$(".search .boxL , .search .boxR").heightLine({minWidth:750});
+	$(".rentalBox dd").heightLine();
+	$(".search li").heightLine();
+});
+</script>
+
+<script>
+$(document).ready(function(e) {
+$('img[usemap]').rwdImageMaps();
+});
+</script>
+
+<!-- jquery & iScroll -->
+<script src="/common2/js/iscroll.js"></script>
+<script src="/common2/js/drawer.js"></script>
+<script type="text/javascript" src="/common2/js/sp_sidenavi.js"></script>
+<script>
+$(document).ready(function() {
+$('.drawer').drawer();
+});
+//スマホだけ電話がかかる
+if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+  $(function() {
+    $('.tel').each(function() {
+      var str = $(this).html();
+      if ($(this).children().is('img')) {
+        $(this).html($('<a>').attr('href', 'tel:' + $(this).children().attr('alt').replace(/-/g, '')).append(str + '</a>'));
+      } else {
+				// 20200408 下の1行をif文に変更
+				//$(this).html($('<a>').attr('href', 'tel:' + $(this).text().replace(/-/g, '')).append(str + '</a>'));
+				if ($(this).hasClass('tel2')) {
+					var tel_no = $(this).children('.num').text();
+					$(this).html($('<a>').attr('href', 'tel:' + tel_no).append(str + '</a>'));
+				}
+        else {
+					$(this).html($('<a>').attr('href', 'tel:' + $(this).text().replace(/-/g, '')).append(str + '</a>'));
+				}
+      }
+    });
+  });
+}
+//fix
+if (navigator.userAgent.match(/(iPhone|iPod|Android)/)) {
+ $(function() {
+	var topBtn = $('#topRequestPop');
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+
+});
+}
+
+</script>
+
+<style>
+	.mf_finder_searchBox_items button span {display: none;}
+</style>
+<!---240918--->
+<script id="dejam_tag" src="https://storage.googleapis.com/dejam-tag/Zm3Dh4w2RzK7r9QSNFwo/js/dejam.js" async></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PX76R6H');</script>
+<!-- End Google Tag Manager -->
+
+<!---//自動翻訳用--->
+<script src="https://d.shutto-translation.com/trans.js?id=7416"></script>
+
+</head>
+<body>
+
+<!-- 170908固定ページ用バナー出力用変数の宣言 -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX76R6H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--header-->
+
+<!--header-->
+<style>
+@media screen and (max-width: 750px) {
+	.no_sp_no {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 750px) {
+	.no_pc_no {
+		display: none !important;
+	}
+}
+</style>
+
+<!--script src="https://code.jquery.com/jquery.min.js"></script-->
+<script>
+  $(function () {
+   $(".D").click(function () {
+    $(".E").slideToggle("");
+   });
+  });
+</script>
+<!---//221021--->
+<style>
+.hd_tel_modal {
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100vh;
+ background: rgba(0, 0, 0, 0.7);
+ z-index: 10001;
+}
+.hd_tel_modal_wrap {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.hd_tel_modal_inner {
+ background: #fff;
+ position: relative;
+ padding: 35px 60px 40px;
+ text-align: center;
+ border-radius: 10px;
+}
+.hd_tel_modal_inner p {
+ font-size: 18px;
+}
+.hd_tel_modal_close {
+ position: absolute;
+ top: -30px;
+ right: 0;
+ cursor: pointer;
+}
+.hd_tel_modal_num {
+ margin: 20px 0 30px;
+}
+</style>
+<div class="hd_tel_modal">
+<div class="hd_tel_modal_wrap">
+<div class="hd_tel_modal_inner">
+<div class="hd_tel_modal_close"><img src="/spaces_page/office/img/close.png" alt="閉じる"></div>
+<p>ご希望のエリアや条件がありましたら<br>お気軽にお問い合わせください</p>
+<div class="hd_tel_modal_num"><img src="/spaces_page/office/img/modal_tel.svg" alt="電話でのお問い合わせ 0120-965-391"></div>
+<div class="hd_tel_modal_btn"><a href="/enquiry/" class="ov"><img src="/spaces_page/office/img/modal_contact.svg" alt="メールでのお問い合わせはこちら"></a></div>
+</div>
+</div>
+</div>
+<!---//--->
+<header>
+<div class="inner1">
+   <div class="hd_logo"><a href="/"><img src="/common2/images/logo_hdr.gif" alt="Regus"></a></div>
+   <!--div class="hd_no1 sp"><img src="/common2/images/header_no1_badge.png" alt="世界No.1"></div-->
+   <p class="rec_bnr"><a href="/recruiting_n/"><img src="/images_2023/banner.png" alt="一緒に働く仲間大募集！"></a></p>
+
+   <div class="select_lang" data-stt-langbar>
+    <select onchange="$('div.select_lang select option:selected').click();">
+     <option>Language</option>
+     <option data-stt-changelang="ja" data-stt-ignore>Japanese</option>
+     <option data-stt-changelang="en" data-stt-ignore>English</option>
+    </select>
+   </div>
+
+   <ul class="hd_links no_sp_no">
+    <li><a href="/reservation/">時間貸し/会議室予約</a></li>
+    <li><a href="/contract/">ご契約の流れ</a></li>
+    <li><a href="/owner/">ビルオーナー様</a></li>
+    <li><a href="/agent/">仲介エージェント様</a></li>
+   </ul>
+   <!--div class="hd_contactSP"><a href="/enquiry/"><img src="/common2/images/header_sp_email.svg" alt="お問い合わせ"></a></div-->
+   <div class="hd_tel"><a href="tel:0120-965-391"><img src="/common2/images/img_top_tel3.png" alt="0120-965-391"></a></div><div class="hd_room"><a href="/vacancy/"><img src="/common2/images/btn_top_btn240415-a_fix.png" alt="空室・金額確認"></a></div>
+   <div class="hd_contact"><a href="/enquiry/"><img src="/common2/images/btn_top_contact2.gif" alt="お問い合わせ"></a></div>  
+   <div class="fr-nav">
+   <div class="icon-animation">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+   </div>
+   </div>
+</div>
+<nav>
+<ul class="gnav">
+
+<style>
+  .mf-search-box {margin: 32px auto; width: 80%;}
+  .mf-search-box .mf-search-bar .mf-search-bar_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 35px;
+  padding: 5px 5px 2px;
+  white-space: nowrap;
+  font-family: unset;
+  border-radius: 0 4px 4px 0;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  font-size: 100%;
+  cursor: pointer;
+  }
+  .mf-search-box .mf-search-bar .mf-search-bar_button span {display: none;}
+  .mf-search-box .mf-search-bar .mf-search-bar_button .mf-search-bar_button_icon {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 0 5px;
+  }
+  .mf-search-box .mf-search-bar .mf-search-bar_button:hover {
+  background-color: #666;
+}
+@media screen and (max-width: 750px) {
+  .mf_finder_searchBox_items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 1rem 0;
+}
+.mf_finder_searchBox_items {
+    padding: 2rem !important;
+  }
+  .mf_finder_searchBox_items label {display: none;}
+  .mf_finder_searchBox_doctype::after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  pointer-events: none;
+}
+.mf_finder_searchBox_query_wrap {
+  position: relative;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}.mf_finder_searchBox_query_input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-height: 34px;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  padding: .5rem;
+}.mf_finder_searchBox_submit::before {
+  content: "\f002";
+  font-family: "FontAwesome";
+}.mf_finder_searchBox_submit {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  background-color: #222;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  color: #eee;
+  padding: 0 .75rem;
+  cursor: pointer;
+}
+}
+</style>
+    <li class="search no_pc_no">  
+     <!-- ↓検索窓用カスタムエレメント -->
+       <mf-search-box submit-text="" ajax-url="https://finder.api.mf.marsflag.com/api/v1/finder_service/documents/930bf59d/search" doctype-hidden options-hidden results-page-url="https://www.regus-office.jp/result/" placeholder="検索したいワードを入力"></mf-search-box>
+      <!--//-->
+    </li>
+
+<li>
+<a href="/area-search/"><span class="bd_wt">レンタルオフィスを探す</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+  <li><a href="/area-search/">エリアから探す</a></li>
+  <li><a href="/area-search/#rosen_tokyo">路線から探す</a></li>
+  <!--li><a href="https://www.regus-office.jp#tab_box">都市名から探す</a></li-->
+  <li><a href="/map_search/">GoogleMapから探す</a></li>
+  <!--li class="pc"><a href="https://www.regus-office.jp#conlist">条件から探す</a></li>
+  <li><a href="/officetype/">オフィスから探す</a></li>
+  <li><a href="/brands/">ブランドから探す</a></li-->
+</ul>
+</div>
+</li>
+<li>
+<a href="/officetype/"><span class="bd_wt">オフィスの種類</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/service/">レンタルオフィスの<br class="pc">５つのサービス</a></li>
+<!--li><a href="/blog/learn/points-for-choosing-rentaloffice/">フレキシブルオフィス</a></li-->
+<li><a href="/service/privateoffice/">プライベートオフィス</a></li>
+<li><a href="/service/coworking-spaces/">シェアオフィス<br class="pc">（月額デスク単位契約）</a></li>
+<li><a href="/service/virtualoffice/">バーチャルオフィス</a></li>
+<li><a href="/service/membership/">コワーキングスペース<br class="pc">（メンバーシップ）</a></li>
+<li><a href="/service/meetingroom/">時間貸し会議室</a></li>
+</ul>
+</div>
+</li>
+<li>
+<a href="/application/"><span class="bd_wt">事業規模から探す</span></a>
+<div class="acco_wrap">
+	<div class="col_2">
+		<div class="col_L">
+		<p class="ttlsub">法人のお客様</p>
+		<ul class="acco">
+		<li><a href="/application/large-enterprise">大企業</a></li>
+		<li><a href="/application/sme">中小企業</a></li>
+		</ul>
+		</div>
+		<div class="col_R">
+		<p class="ttlsub">個人/SOHO向け</p>
+		<ul class="acco">
+		<li><a href="/application/start-ups">起業家</a></li>
+		<li><a href="/application/nomad">ノマドワーカーに</a></li>
+		<li><a href="/application/professional">士業の方</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<a href="/purpose/"><span class="bd_wt">利用目的から探す</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<!--li><a href="/purpose/labor-reform/">働き方改革</a></li-->
+<li><a href="/purpose/telework/">テレワーク</a></li>
+<li><a href="/purpose/bcp/">事業継続計画(BCP)</a></li>
+<li><a href="/purpose/branchoffice/">支店・営業所</a></li>
+<li><a href="/purpose/businesstrip/">出張時</a></li>
+<li><a href="/purpose/project/">プロジェクトルームに</a></li>
+<li><a href="/purpose/webmeeting/">ウェブ会議・テレカンでのご利用</a></li>
+</ul>
+</div>
+</li>
+<li class="fixno">
+<a href="/case/casestudies"><span class="bd_wt">活用事例</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/case/casestudies">活用事例</a></li>
+</ul>
+</div>
+</li>
+<li class="fixno">
+<a href="/blog/"><span class="bd_wt">レンタルオフィスを学ぶ</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/blog/workplace/">レンタルオフィスについて</a></li>
+<li><a href="/blog/category/coworkingspace/">シェアオフィス</a></li>
+<li><a href="/blog/learn/points-for-choosing-rentaloffice/">フレキシブルオフィス</a></li>
+<li><a href="/blog/entrepreneur/">スタートアップ</a></li>
+<li><a href="/blog/business/">ワークスタイル変革</a></li>
+<li><a href="/blog/manager/">トレンド調査</a></li>
+<li><a href="/blog/workstyle/">これからのワークスタイル</a></li>
+</ul>
+</div>
+</li>
+<li class="fixno">
+<a href="/profile/"><span class="bd_wt">リージャスとは</span></a>
+<div class="acco_wrap acco_right">
+<ul class="acco">
+<li><a href="/aboutus/">会社概要</a></li>
+<li><a href="/greeting/">代表挨拶</a></li>
+<li><a href="/history/">沿革</a></li>
+<li><a href="/base/">拠点一覧</a></li>
+<li><a href="/brands/">ブランド一覧</a></li>
+<li><a href="/blog/news/">リージャスからお知らせ</a></li>
+<li><a href="/recruiting_n/">採用情報</a></li>
+</ul>
+</div>
+</li>
+
+    <li class="search no_sp_no fixno">
+     <div class="D"><img class="search_btn" src="/common2/images/search_on.svg" alt=""></div>
+     <div class="E">
+     <!-- ↓検索窓用カスタムエレメント -->
+       <mf-search-box submit-text="" ajax-url="https://finder.api.mf.marsflag.com/api/v1/finder_service/documents/930bf59d/search" doctype-hidden options-hidden results-page-url="https://www.regus-office.jp/result/" placeholder="検索したいワードを入力"></mf-search-box>
+      <!--//-->
+     </div>
+    </li>
+
+<li class="no_pc_no">
+<a href="/contract/"><span class="bd_wt">ご契約の流れ・その他</span></a>
+<div class="acco_wrap">
+<ul class="acco">
+<li><a href="/contract/">ご契約の流れと必要書類</a></li>
+<li><a href="/agent/">仲介エージェント様</a></li>
+<li><a href="/owner/">ビルオーナー様</a></li>
+<li><a href="/reservation/">My Regusで時間貸しオフィス・会議室をオンライン予約</a></li>
+<li><a href="/faq/">よくある質問</a></li>
+</ul>
+</div>
+</li>
+<li class="close_acco">
+<p>閉じる<img src="/common2/images/close.png" alt=""></p>
+</li>
+</ul>
+</nav>
+</header>
+<!---新headerここまで---><!--/header--><!--/header-->
+<!---ここまで--->
+
+<!--contentsWrap-->
+<div class="wrapper">
+	<div class="contentsWrap clearfix">
+	<ul id="breadcrumb" class="pc clearfix"><li><a href="https://www.regus-office.jp">レンタルオフィス日本リージャス</a></li>&nbsp;>&nbsp;<a href="https://www.regus-office.jp/service/" title="レンタルオフィスの５つのサービス">レンタルオフィスの５つのサービス</a>&nbsp;>&nbsp;<a href="https://www.regus-office.jp/service/office/" title="レンタルオフィスサービス">レンタルオフィスサービス</a>&nbsp;>&nbsp;コストシミュレーション</ul>	</div>
+</div>
+<!--contents-->
+<div class="main_contents" id="pageT">
+	
+<!---ここから表示--->
+
+
+<section class="sec04" style="padding-top: 2em;">
+<div class="comparison">
+    <div class="ttl">
+        <p>一般のオフィス<span>VS</span>リージャスのプライベートオフィス</p>
+        <h3>コストシミュレーション</h3>
+        <!--div class="line"></div-->
+    </div>
+    <div class="vs_box">
+        <img decoding="async" src="/special/nsb_img/rentaloffice/VS.png" alt="">
+       
+    </div> <p class="txtS txaC mgT10" style="color: #fff;">オフィスの規模、場所によって異なります。</p>
+    <img decoding="async" class="arrow" src="/special/nsb_img/rentaloffice/office_arrow.svg"></img>
+    <div class="q_area" id="q_area">
+        <h3>設問に答えて、簡単シミュレーション！</h3>
+        <div class="a1_box faq_box">
+            <p class="ttl"><span class="icon">Q1</span>オフィスビルのグレードをお選びください</p>
+            <div class="radio_box">
+                <div class="bills_img">
+                    <input id="a1_btn" type="radio" name="q1" value="a1">
+                    <label for="a1_btn">一流ビル<br><span>坪単価 ￥35,000程度</span></label>
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/bill01.png">
+                </div>
+                <div class="bills_img">
+                    <input id="a2_btn" type="radio" name="q1" value="a2">
+                    <label for="a2_btn">有名ビル<br><span>坪単価 ￥25,000程度</span></label>
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/bill02.png">
+                </div>
+                <div class="bills_img">
+                    <input id="a3_btn" type="radio" name="q1" value="a3">
+                    <label for="a3_btn">一般ビル<br><span>坪単価 ￥15,000程度</span></label>
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/bill03.png">
+                </div>
+            </div>
+			<div class="txt_box">
+				一流・有名クラスのビルは実際には小さな敷地では借りることができません。<br>
+				10坪以下の敷地で一流・有名ビルに入居する場合にはフレキシブルオフィスをご利用することになります。
+			</div>
+        </div>
+        <div class="b1_box faq_box">
+            <p class="ttl"><span class="icon">Q2</span>オフィスの用途でイメージに近いものをお選びください</p>
+            <div class="radio_box">
+                <div class="radio_img">
+                    <input id="b1_btn" type="radio" name="q2" value="b1">
+                    <label for="b1_btn">サテライトオフィスや<br>士業事務所など<br>２名様程度でのご利用</label>
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/2ws.png">
+                </div>
+                <div class="radio_img">
+                    <input id="b2_btn" type="radio" name="q2" value="b2">
+                    <label for="b2_btn">スタートアップや<br>営業所開設など<br>4名様程度でのご利用</label>
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/4ws.png">
+                </div>
+            </div>
+        </div>
+        <a class="result_btnimg check" href="" ><img decoding="async" src="/special/nsb_img/rentaloffice/simulation_btn.png"></a>
+        <!-- <a class="result_btn check" href="" >シミュレーション<img decoding="async" src="/special/nsb_img/rentaloffice/btn_icon.svg"> </a> -->
+    </div>
+    
+    <div class="result_wrap">
+        <div id="a1b1" class="result_area">
+            <img decoding="async" class="arrow" src="/special/nsb_img/rentaloffice/office_arrow.svg">
+            <h3 class="ttl">コストシミュレーション比較結果<br>一流ビル+2名の場合</h3>
+            <div class="line"></div>
+            <div class="result_cnt pt_none">
+                <p class="cost">ランニングコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額賃料</th>
+                            <td><span>¥</span>756,700</td>
+                            <td class="red"><span>¥</span>240,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額共益費</th>
+                            <td><span>¥</span>108,100</td>
+                            <td class="red"><span>¥</span>14,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額水光熱費</th>
+                            <td><span>¥</span>20,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>884,800</td>
+                            <td class="red"><span>¥</span>254,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>630,800<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">イニシャルコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">家具・什器備品費</th>
+                            <td><span>¥</span>1,200,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">入居工事費</th>
+                            <td><span>¥</span>2,400,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">敷金</th>
+                            <td><span>¥</span>9,080,400</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">保証金（返金）</th>
+                            <td><span>¥</span>0</td>
+                            <td class="red"><span>¥</span>480,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">仲介手数料</th>
+                            <td><span>¥</span>756,700</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>13,437,100</td>
+                            <td class="red"><span>¥</span>480,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>12,957,100<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">サービス</p>
+                <div class="l_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">受付</th>
+                            <td><span class="red">スタッフの配置</span>が必要<br><span>配置しない場合は電話が<br class="sp">あるだけの寂しい受付に</span></td>
+                            <td class="red">バイリンガルスタッフが対応<br>郵便、宅配の受取と仕分け対応<br>電話取次サービスも利用可能</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">ドリンク</th>
+                            <td><span class="red">なし</span></td>
+                            <td class="red">フリードリンクサービス付き<br><span>SPACESではバリスタの淹れたてコーヒーや<br>ランチも愉しめる</span></td>
+                        </tr>
+						<tr>
+                            <th class="gray">共有スペース</th>
+                            <td>限定的な<span class="red">狭小スペース</span></td>
+                            <td class="red">ゆったりとした<br>共有スペースでは<br class="sp">他社との交流も図れる</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">OA機器</th>
+                            <td><span class="red">別途</span>用意が必要</td>
+                            <td class="red">コピー機、大型ホチキス、裁断機、<br>シュレッダー常設</td>
+                        </tr>
+						<tr>
+                            <th class="gray">家具</th>
+                            <td>デスク、オフィスチェアなど<br><span class="red">別途</span>揃える必要あり</td>
+                            <td class="red">すべて備え付け</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">企業間交流</th>
+                            <td>取引先以外では<span class="red"><br class="sp">接触機会が少ない</span></td>
+                            <td class="red">共有スペースでの入居企業間での交流で<br>新たなビジネスチャンスの可能性も</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down matome">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>198,400<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>8,038,550<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="cost_control">
+                <div class="txt_box">
+                    <h3>フレキシブルオフィスは<br class="">なぜコストを抑えられるのか</h3>
+                    <p>一般的にオフィスを構える場合はワークスペース以外にも「エントランス」「ミーティングルーム」「休憩スペース」などを設置する必要があります。そこには多額の内装工事費などがかかります。<br>しかしリージャスのフレキシブルオフィスは「受付」「ラウンジスペース」「ミーティングルーム」は共有スペースとしてすでに備わっています。さらに「ドリンクサービス」「コピー機」も入居者様でシェア。<br>そのため初期コスト、ランニングコストを大幅に圧縮することができるのです。</p>
+                </div>
+                <div class="facility">
+                    <div class="normal_o">
+                        <p class="ttl_s">一般オフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/normal_office.jpg">
+                    </div>
+                    <div class="flexible_o">
+                        <p class="ttl_s">フレキシブルオフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/workspace.jpg">
+                        <div class="cnt_box">
+                            <p class="share">以下すべて共有スペースとして完備<img decoding="async" src="/special/nsb_img/rentaloffice/arrow_s.svg"></p>
+                            <ul>
+                                <li>受付サービス</li>
+                                <li>ミーティングルーム</li>
+                                <li>ビジネスラウンジ</li>
+                                <li>ドリンクサービス</li>
+                                <li>コピー機</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contant_btn">
+                <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                <a class="result_btn" href="/enquiry/">いますぐお問い合わせ<img decoding="async" src="/special/nsb_img/rentaloffice/btn_icon.svg"> </a>
+            </div>
+        </div><!--a1b1-->
+    </div><!--result_wrap-->
+
+    <div class="result_wrap">
+        <div id="a2b1" class="result_area">
+            <img decoding="async" class="arrow" src="/special/nsb_img/rentaloffice/office_arrow.svg">
+            <h3 class="ttl">コストシミュレーション比較結果<br>有名ビル+2名の場合</h3>
+            <div class="line"></div>
+            <div class="result_cnt pt_none">
+                <p class="cost">ランニングコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額賃料</th>
+                            <td><span>¥</span>540,500</td>
+                            <td class="red"><span>¥</span>150,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額共益費</th>
+                            <td><span>¥</span>108,100</td>
+                            <td class="red"><span>¥</span>14,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額水光熱費</th>
+                            <td><span>¥</span>20,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>668,600</td>
+                            <td class="red"><span>¥</span>164,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>504,600<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">イニシャルコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">家具・什器備品費</th>
+                            <td><span>¥</span>1,200,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">入居工事費</th>
+                            <td><span>¥</span>2,400,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">敷金</th>
+                            <td><span>¥</span>6,486,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">保証金（返金）</th>
+                            <td><span>¥</span>0</td>
+                            <td class="red"><span>¥</span>300,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">仲介手数料</th>
+                            <td><span>¥</span>540,500</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>10,626,500</td>
+                            <td class="red"><span>¥</span>300,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>10,326,500<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">サービス</p>
+                <div class="l_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">受付</th>
+                            <td><span class="red">スタッフの配置</span>が必要<br><span>配置しない場合は電話が<br class="sp">あるだけの寂しい受付に</span></td>
+                            <td class="red">バイリンガルスタッフが対応<br>郵便、宅配の受取と仕分け対応<br>電話取次サービスも利用可能</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">ドリンク</th>
+                            <td><span class="red">なし</span></td>
+                            <td class="red">フリードリンクサービス付き<br><span>SPACESではバリスタの淹れたてコーヒーや<br>ランチも愉しめる</span></td>
+                        </tr>
+						<tr>
+                            <th class="gray">共有スペース</th>
+                            <td>限定的な<span class="red">狭小スペース</span></td>
+                            <td class="red">ゆったりとした<br>共有スペースでは<br class="sp">他社との交流も図れる</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">OA機器</th>
+                            <td><span class="red">別途</span>用意が必要</td>
+                            <td class="red">コピー機、大型ホチキス、裁断機、<br>シュレッダー常設</td>
+                        </tr>
+						<tr>
+                            <th class="gray">家具</th>
+                            <td>デスク、オフィスチェアなど<br><span class="red">別途</span>揃える必要あり</td>
+                            <td class="red">すべて備え付け</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">企業間交流</th>
+                            <td>取引先以外では<span class="red"><br class="sp">接触機会が少ない</span></td>
+                            <td class="red">共有スペースでの入居企業間での交流で<br>新たなビジネスチャンスの可能性も</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down matome">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>198,400<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>8,038,550<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="cost_control">
+                <div class="txt_box">
+                    <h3>フレキシブルオフィスはなぜ<br class="sp">コストを抑えられるのか</h3>
+                    <p>一般的にオフィスを構える場合はワークスペース以外にも「エントランス」「ミーティングルーム」「休憩スペース」などを設置する必要があります。そこには多額の内装工事費などがかかります。<br>しかしリージャスのフレキシブルオフィスは「受付」「ラウンジスペース」「ミーティングルーム」は共有スペースとしてすでに備わっています。さらに「ドリンクサービス」「コピー機」も入居者様でシェア。<br>そのため初期コスト、ランニングコストを大幅に圧縮することができるのです。</p>
+                </div>
+                <div class="facility">
+                    <div class="normal_o">
+                        <p class="ttl_s">一般オフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/normal_office.jpg">
+                    </div>
+                    <div class="flexible_o">
+                        <p class="ttl_s">フレキシブルオフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/workspace.jpg">
+                        <div class="cnt_box">
+                            <p class="share">以下すべて共有スペースとして完備<img decoding="async" src="/special/nsb_img/rentaloffice/arrow_s.svg"></p>
+                            <ul>
+                                <li>受付サービス</li>
+                                <li>ミーティングルーム</li>
+                                <li>ビジネスラウンジ</li>
+                                <li>ドリンクサービス</li>
+                                <li>コピー機</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contant_btn">
+                <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                <a class="result_btn" href="/enquiry/">いますぐお問い合わせ<img decoding="async" src="/special/nsb_img/rentaloffice/btn_icon.svg"> </a>
+            </div>
+        </div><!--a2b1-->
+    </div>
+
+    <div class="result_wrap">
+        <div id="a3b1" class="result_area">
+            <img decoding="async" class="arrow" src="/special/nsb_img/rentaloffice/office_arrow.svg">
+            <h3 class="ttl">コストシミュレーション比較結果<br>一般ビル+2名の場合</h3>
+            <div class="line"></div>
+            <div class="result_cnt pt_none">
+                <p class="cost">ランニングコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額賃料</th>
+                            <td><span>¥</span>324,300</td>
+                            <td class="red"><span>¥</span>100,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額共益費</th>
+                            <td><span>¥</span>108,100</td>
+                            <td class="red"><span>¥</span>14,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額水光熱費</th>
+                            <td><span>¥</span>20,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>452,400</td>
+                            <td class="red"><span>¥</span>114,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>338,400<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">イニシャルコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">家具・什器備品費</th>
+                            <td><span>¥</span>1,200,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">入居工事費</th>
+                            <td><span>¥</span>2,400,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">敷金</th>
+                            <td><span>¥</span>3,891,600</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">保証金（返金）</th>
+                            <td><span>¥</span>0</td>
+                            <td class="red"><span>¥</span>100,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">仲介手数料</th>
+                            <td><span>¥</span>324,300</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>7,815,900</td>
+                            <td class="red"><span>¥</span>100,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>7,715,900<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">サービス</p>
+                <div class="l_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">受付</th>
+                            <td><span class="red">スタッフの配置</span>が必要<br><span>配置しない場合は電話が<br class="sp">あるだけの寂しい受付に</span></td>
+                            <td class="red">バイリンガルスタッフが対応<br>郵便、宅配の受取と仕分け対応<br>電話取次サービスも利用可能</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">ドリンク</th>
+                            <td><span class="red">なし</span></td>
+                            <td class="red">フリードリンクサービス付き<br><span>SPACESではバリスタの淹れたてコーヒーや<br>ランチも愉しめる</span></td>
+                        </tr>
+						<tr>
+                            <th class="gray">共有スペース</th>
+                            <td>限定的な<span class="red">狭小スペース</span></td>
+                            <td class="red">ゆったりとした<br>共有スペースでは<br class="sp">他社との交流も図れる</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">OA機器</th>
+                            <td><span class="red">別途</span>用意が必要</td>
+                            <td class="red">コピー機、大型ホチキス、裁断機、<br>シュレッダー常設</td>
+                        </tr>
+						<tr>
+                            <th class="gray">家具</th>
+                            <td>デスク、オフィスチェアなど<br><span class="red">別途</span>揃える必要あり</td>
+                            <td class="red">すべて備え付け</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">企業間交流</th>
+                            <td>取引先以外では<span class="red"><br class="sp">接触機会が少ない</span></td>
+                            <td class="red">共有スペースでの入居企業間での交流で<br>新たなビジネスチャンスの可能性も</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down matome">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>198,400<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>8,038,550<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="cost_control">
+                <div class="txt_box">
+                    <h3>フレキシブルオフィスはなぜ<br class="sp">コストを抑えられるのか</h3>
+                    <p>一般的にオフィスを構える場合はワークスペース以外にも「エントランス」「ミーティングルーム」「休憩スペース」などを設置する必要があります。そこには多額の内装工事費などがかかります。<br>しかしリージャスのフレキシブルオフィスは「受付」「ラウンジスペース」「ミーティングルーム」は共有スペースとしてすでに備わっています。さらに「ドリンクサービス」「コピー機」も入居者様でシェア。<br>そのため初期コスト、ランニングコストを大幅に圧縮することができるのです。</p>
+                </div>
+                <div class="facility">
+                    <div class="normal_o">
+                        <p class="ttl_s">一般オフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/normal_office.jpg">
+                    </div>
+                    <div class="flexible_o">
+                        <p class="ttl_s">フレキシブルオフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/workspace.jpg">
+                        <div class="cnt_box">
+                            <p class="share">以下すべて共有スペースとして完備<img decoding="async" src="/special/nsb_img/rentaloffice/arrow_s.svg"></p>
+                            <ul>
+                                <li>受付サービス</li>
+                                <li>ミーティングルーム</li>
+                                <li>ビジネスラウンジ</li>
+                                <li>ドリンクサービス</li>
+                                <li>コピー機</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contant_btn">
+                <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                <a class="result_btn" href="/enquiry/">いますぐお問い合わせ<img decoding="async" src="/special/nsb_img/rentaloffice/btn_icon.svg"> </a>
+            </div>
+        </div><!--a3b1-->
+    </div>
+
+    <div class="result_wrap">
+        <div id="a1b2" class="result_area">
+            <img decoding="async" class="arrow" src="/special/nsb_img/rentaloffice/office_arrow.svg">
+            <h3 class="ttl">コストシミュレーション比較結果<br>一流ビル+4名</h3>
+            <div class="line"></div>
+            <div class="result_cnt pt_none">
+                <p class="cost">ランニングコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額賃料</th>
+                            <td><span>¥</span>1,513,400</td>
+                            <td class="red"><span>¥</span>480,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額共益費</th>
+                            <td><span>¥</span>216,200</td>
+                            <td class="red"><span>¥</span>14,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額水光熱費</th>
+                            <td><span>¥</span>20,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>1,749,600</td>
+                            <td class="red"><span>¥</span>494,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>1,255,600<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">イニシャルコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">家具・什器備品費</th>
+                            <td><span>¥</span>1,200,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">入居工事費</th>
+                            <td><span>¥</span>2,400,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">敷金</th>
+                            <td><span>¥</span>18,160,800</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">保証金（返金）</th>
+                            <td><span>¥</span>0</td>
+                            <td class="red"><span>¥</span>960,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">仲介手数料</th>
+                            <td><span>¥</span>1,513,400</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>23,274,200</td>
+                            <td class="red"><span>¥</span>960,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>22,314,200<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">サービス</p>
+                <div class="l_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">受付</th>
+                            <td><span class="red">スタッフの配置</span>が必要<br><span>配置しない場合は電話が<br class="sp">あるだけの寂しい受付に</span></td>
+                            <td class="red">バイリンガルスタッフが対応<br>郵便、宅配の受取と仕分け対応<br>電話取次サービスも利用可能</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">ドリンク</th>
+                            <td><span class="red">なし</span></td>
+                            <td class="red">フリードリンクサービス付き<br><span>SPACESではバリスタの淹れたてコーヒーや<br>ランチも愉しめる</span></td>
+                        </tr>
+						<tr>
+                            <th class="gray">共有スペース</th>
+                            <td>限定的な<span class="red">狭小スペース</span></td>
+                            <td class="red">ゆったりとした<br>共有スペースでは<br class="sp">他社との交流も図れる</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">OA機器</th>
+                            <td><span class="red">別途</span>用意が必要</td>
+                            <td class="red">コピー機、大型ホチキス、裁断機、<br>シュレッダー常設</td>
+                        </tr>
+						<tr>
+                            <th class="gray">家具</th>
+                            <td>デスク、オフィスチェアなど<br><span class="red">別途</span>揃える必要あり</td>
+                            <td class="red">すべて備え付け</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">企業間交流</th>
+                            <td>取引先以外では<span class="red"><br class="sp">接触機会が少ない</span></td>
+                            <td class="red">共有スペースでの入居企業間での交流で<br>新たなビジネスチャンスの可能性も</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down matome">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>198,400<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>8,038,550<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="cost_control">
+                <div class="txt_box">
+                    <h3>フレキシブルオフィスはなぜ<br class="sp">コストを抑えられるのか</h3>
+                    <p>一般的にオフィスを構える場合はワークスペース以外にも「エントランス」「ミーティングルーム」「休憩スペース」などを設置する必要があります。そこには多額の内装工事費などがかかります。<br>しかしリージャスのフレキシブルオフィスは「受付」「ラウンジスペース」「ミーティングルーム」は共有スペースとしてすでに備わっています。さらに「ドリンクサービス」「コピー機」も入居者様でシェア。<br>そのため初期コスト、ランニングコストを大幅に圧縮することができるのです。</p>
+                </div>
+                <div class="facility">
+                    <div class="normal_o">
+                        <p class="ttl_s">一般オフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/normal_office.jpg">
+                    </div>
+                    <div class="flexible_o">
+                        <p class="ttl_s">フレキシブルオフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/workspace.jpg">
+                        <div class="cnt_box">
+                            <p class="share">以下すべて共有スペースとして完備<img decoding="async" src="/special/nsb_img/rentaloffice/arrow_s.svg"></p>
+                            <ul>
+                                <li>受付サービス</li>
+                                <li>ミーティングルーム</li>
+                                <li>ビジネスラウンジ</li>
+                                <li>ドリンクサービス</li>
+                                <li>コピー機</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contant_btn">
+                <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                <a class="result_btn" href="/enquiry/">いますぐお問い合わせ<img decoding="async" src="/special/nsb_img/rentaloffice/btn_icon.svg"> </a>
+            </div>
+        </div><!--a1b2-->
+    </div>
+
+    <div class="result_wrap">
+        <div id="a2b2" class="result_area">
+            <img decoding="async" class="arrow" src="/special/nsb_img/rentaloffice/office_arrow.svg">
+            <h3 class="ttl">コストシミュレーション比較結果<br>有名ビル+4名</h3>
+            <div class="line"></div>
+            <div class="result_cnt pt_none">
+                <p class="cost">ランニングコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額賃料</th>
+                            <td><span>¥</span>1,081,000</td>
+                            <td class="red"><span>¥</span>300,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額共益費</th>
+                            <td><span>¥</span>216,200</td>
+                            <td class="red"><span>¥</span>14,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額水光熱費</th>
+                            <td><span>¥</span>20,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>1,317,200</td>
+                            <td class="red"><span>¥</span>314,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">ランニングコストで<br class="sp">月 <span><span class="yen">¥</span>1,003,200<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">イニシャルコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">家具・什器備品費</th>
+                            <td><span>¥</span>1,200,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">入居工事費</th>
+                            <td><span>¥</span>2,400,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">敷金</th>
+                            <td><span>¥</span>12,972,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">保証金（返金）</th>
+                            <td><span>¥</span>0</td>
+                            <td class="red"><span>¥</span>600,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">仲介手数料</th>
+                            <td><span>¥</span>1,081,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>17,653,000</td>
+                            <td class="red"><span>¥</span>600,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>17,053,000<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">サービス</p>
+                <div class="l_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">受付</th>
+                            <td><span class="red">スタッフの配置</span>が必要<br><span>配置しない場合は電話が<br class="sp">あるだけの寂しい受付に</span></td>
+                            <td class="red">バイリンガルスタッフが対応<br>郵便、宅配の受取と仕分け対応<br>電話取次サービスも利用可能</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">ドリンク</th>
+                            <td><span class="red">なし</span></td>
+                            <td class="red">フリードリンクサービス付き<br><span>SPACESではバリスタの淹れたてコーヒーや<br>ランチも愉しめる</span></td>
+                        </tr>
+						<tr>
+                            <th class="gray">共有スペース</th>
+                            <td>限定的な<span class="red">狭小スペース</span></td>
+                            <td class="red">ゆったりとした<br>共有スペースでは<br class="sp">他社との交流も図れる</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">OA機器</th>
+                            <td><span class="red">別途</span>用意が必要</td>
+                            <td class="red">コピー機、大型ホチキス、裁断機、<br>シュレッダー常設</td>
+                        </tr>
+						<tr>
+                            <th class="gray">家具</th>
+                            <td>デスク、オフィスチェアなど<br><span class="red">別途</span>揃える必要あり</td>
+                            <td class="red">すべて備え付け</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">企業間交流</th>
+                            <td>取引先以外では<span class="red"><br class="sp">接触機会が少ない</span></td>
+                            <td class="red">共有スペースでの入居企業間での交流で<br>新たなビジネスチャンスの可能性も</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down matome">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>198,400<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>8,038,550<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="cost_control">
+                <div class="txt_box">
+                    <h3>フレキシブルオフィスはなぜ<br class="sp">コストを抑えられるのか</h3>
+                    <p>一般的にオフィスを構える場合はワークスペース以外にも「エントランス」「ミーティングルーム」「休憩スペース」などを設置する必要があります。そこには多額の内装工事費などがかかります。<br>しかしリージャスのフレキシブルオフィスは「受付」「ラウンジスペース」「ミーティングルーム」は共有スペースとしてすでに備わっています。さらに「ドリンクサービス」「コピー機」も入居者様でシェア。<br>そのため初期コスト、ランニングコストを大幅に圧縮することができるのです。</p>
+                </div>
+                <div class="facility">
+                    <div class="normal_o">
+                        <p class="ttl_s">一般オフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/normal_office.jpg">
+                    </div>
+                    <div class="flexible_o">
+                        <p class="ttl_s">フレキシブルオフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/workspace.jpg">
+                        <div class="cnt_box">
+                            <p class="share">以下すべて共有スペースとして完備<img decoding="async" src="/special/nsb_img/rentaloffice/arrow_s.svg"></p>
+                            <ul>
+                                <li>受付サービス</li>
+                                <li>ミーティングルーム</li>
+                                <li>ビジネスラウンジ</li>
+                                <li>ドリンクサービス</li>
+                                <li>コピー機</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contant_btn">
+                <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                <a class="result_btn" href="/enquiry/">いますぐお問い合わせ<img decoding="async" src="/special/nsb_img/rentaloffice/btn_icon.svg"> </a>
+            </div>
+        </div><!--a2b2-->
+    </div>
+    
+    <div class="result_wrap">
+        <div id="a3b2" class="result_area">
+            <img decoding="async" class="arrow" src="/special/nsb_img/rentaloffice/office_arrow.svg">
+            <h3 class="ttl">コストシミュレーション比較結果<br>一般ビル+4名</h3>
+            <div class="line"></div>
+            <div class="result_cnt pt_none">
+                <p class="cost">ランニングコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額賃料</th>
+                            <td><span>¥</span>648,600</td>
+                            <td class="red"><span>¥</span>200,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額共益費</th>
+                            <td><span>¥</span>216,200</td>
+                            <td class="red"><span>¥</span>14,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">月額水光熱費</th>
+                            <td><span>¥</span>20,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>884,800</td>
+                            <td class="red"><span>¥</span>214,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">ランニングコストで<br class="sp">月 <span><span class="yen">¥</span>670,800<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">イニシャルコスト</p>
+                <div class="s_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">家具・什器備品費</th>
+                            <td><span>¥</span>1,200,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">入居工事費</th>
+                            <td><span>¥</span>2,400,000</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">敷金</th>
+                            <td><span>¥</span>7,783,200</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">保証金（返金）</th>
+                            <td><span>¥</span>0</td>
+                            <td class="red"><span>¥</span>200,000</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">仲介手数料</th>
+                            <td><span>¥</span>648,600</td>
+                            <td class="red"><span>¥</span>0</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">合計</th>
+                            <td><span>¥</span>12,031,800</td>
+                            <td class="red"><span>¥</span>200,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down">
+                    <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>11,831,800<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="result_cnt">
+                <p class="cost">サービス</p>
+                <div class="l_table">
+                    <table>
+                        <tr>
+                            <th></th>
+                            <td class="td_ttl">一般オフィス</td>
+                            <td class="red_ttl">リージャスの<br>フレキシブルオフィス</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">受付</th>
+                            <td><span class="red">スタッフの配置</span>が必要<br><span>配置しない場合は電話が<br class="sp">あるだけの寂しい受付に</span></td>
+                            <td class="red">バイリンガルスタッフが対応<br>郵便、宅配の受取と仕分け対応<br>電話取次サービスも利用可能</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">ドリンク</th>
+                            <td><span class="red">なし</span></td>
+                            <td class="red">フリードリンクサービス付き<br><span>SPACESではバリスタの淹れたてコーヒーや<br>ランチも愉しめる</span></td>
+                        </tr>
+						<tr>
+                            <th class="gray">共有スペース</th>
+                            <td>限定的な<span class="red">狭小スペース</span></td>
+                            <td class="red">ゆったりとした<br>共有スペースでは<br class="sp">他社との交流も図れる</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">OA機器</th>
+                            <td><span class="red">別途</span>用意が必要</td>
+                            <td class="red">コピー機、大型ホチキス、裁断機、<br>シュレッダー常設</td>
+                        </tr>
+						<tr>
+                            <th class="gray">家具</th>
+                            <td>デスク、オフィスチェアなど<br><span class="red">別途</span>揃える必要あり</td>
+                            <td class="red">すべて備え付け</td>
+                        </tr>
+                        <tr>
+                            <th class="gray">企業間交流</th>
+                            <td>取引先以外では<span class="red"><br class="sp">接触機会が少ない</span></td>
+                            <td class="red">共有スペースでの入居企業間での交流で<br>新たなビジネスチャンスの可能性も</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cost_down matome">
+                    <p class="down_box">ランニングコストで<br class="sp">毎月 <span><span class="yen">¥</span>198,400<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                    <p class="down_box">イニシャルコストで<br class="sp"><span><span class="yen">¥</span>8,038,550<span></span></span>の<span><br class="sp">コスト削減</span></p>
+                </div>
+            </div><!--result_cnt-->
+            <div class="cost_control">
+                <div class="txt_box">
+                    <h3>フレキシブルオフィスはなぜ<br class="sp">コストを抑えられるのか</h3>
+                    <p>一般的にオフィスを構える場合はワークスペース以外にも「エントランス」「ミーティングルーム」「休憩スペース」などを設置する必要があります。そこには多額の内装工事費などがかかります。<br>しかしリージャスのフレキシブルオフィスは「受付」「ラウンジスペース」「ミーティングルーム」は共有スペースとしてすでに備わっています。さらに「ドリンクサービス」「コピー機」も入居者様でシェア。<br>そのため初期コスト、ランニングコストを大幅に圧縮することができるのです。</p>
+                </div>
+                <div class="facility">
+                    <div class="normal_o">
+                        <p class="ttl_s">一般オフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/normal_office.jpg">
+                    </div>
+                    <div class="flexible_o">
+                        <p class="ttl_s">フレキシブルオフィス</p>
+                        <img decoding="async" src="/special/nsb_img/rentaloffice/workspace.jpg">
+                        <div class="cnt_box">
+                            <p class="share">以下すべて共有スペースとして完備<img decoding="async" src="/special/nsb_img/rentaloffice/arrow_s.svg"></p>
+                            <ul>
+                                <li>受付サービス</li>
+                                <li>ミーティングルーム</li>
+                                <li>ビジネスラウンジ</li>
+                                <li>ドリンクサービス</li>
+                                <li>コピー機</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contant_btn">
+                <img decoding="async" src="/special/nsb_img/rentaloffice/down_arrow.svg">
+                <a class="result_btn" href="/enquiry/">いますぐお問い合わせ<img decoding="async" src="/special/nsb_img/rentaloffice/btn_icon.svg"> </a>
+            </div>
+        </div><!--a3b2-->
+    </div>
+</div>
+</section>
+
+<!---ここまで表示--->
+</div>
+<!--/contents-->
+
+<!---サイドバーがあったところ--->
+
+</div>
+<!--/contentsWrap-->
+
+<div class="pageTop" ><a href="#"><img src="/common2/images/btn_pagetop.gif" alt="ページトップへ"></a></div>
+
+</div>
+
+<!-- /211124 スマホ問い合わせ表示-->
+<div id="topReqBtm" class="sp">
+<ul><li><a href="tel:0120-965-391" alt="Call:0120-965-391"><img src="/common2/images/tel-btn.png" alt="今すぐ お電話はこちら"></a></li>
+<li class="mmmail"><a href="/vacancy/" target=""><img src="/common2/images/vacancy-btn.png" alt="簡単60秒 お問い合わせ"></a></li>
+</ul>
+</div>
+
+<!--/div//-->
+<script type="text/javascript">
+var current = 1;
+var next = 2;
+
+var max_count = 2;
+
+$(function () {
+var timer;
+timer = window.setInterval(fadeinout, 3000);
+});
+
+function fadeinout() {
+$("#image-change" + next).fadeIn(1000);
+$("#image-change" + current).fadeOut(500);
+
+current = next;
+next++;
+if (next > max_count) {
+next = 1;
+}
+}
+</script>
+<style>
+.btn_f {
+padding: .3em .5em;
+text-align: center;
+cursor: pinter;
+height: auto;
+}
+
+.btn_f:hover {
+cursor: pinter;
+}
+
+.btn_f:active {
+background: none;
+}
+
+.box_footer {
+position: fixed;
+bottom: 8px;
+right: 14px;
+width: 300px;
+height: 120px;
+text-align: center;
+background: #000;
+z-index: 999;
+/*overflow: hidden;*/
+}
+
+
+/* close button */
+.action-close {
+margin-top: 2em;
+}
+
+.action-close .btn_f {
+position: fixed;
+display: inline-block;
+bottom: 115px;
+right: 3px;
+z-index: 1000;
+}
+
+.action-close .box_footer {
+border: none;
+}
+
+/* checkbox non-display */
+.add-control .checkbox {
+display: none;
+}
+
+/* close button's control */
+.add-control .action-close #close:checked~.btn_f {
+display: none;
+}
+
+.add-control .action-close #close:checked~.box_footer {
+display: none;
+}
+
+@media screen and (max-width: 750px) {
+.float_bnr {
+display: none;
+}
+}
+
+/*______________________*/
+.box_footer #image-wrapperC1 {
+width: 100%;
+height: 120px;
+}
+
+.box_footer #image-wrapperC1 .image-wrapper2 {
+width: 100%;
+max-width: 300px;
+margin: 0 auto;
+}
+
+.box_footer #image-wrapperC1 .image-wrapper2 .image-change {
+position: absolute;
+width: 100%;
+max-width: 300px;
+height: 100%;
+left: 0;
+max-height: 120px;
+}
+
+.box_footer #image-wrapperC1 .image-wrapper2 #image-changeC2 {
+display: none;
+}
+</style>
+<!--script type="text/javascript">
+var currentC=1;
+var nextC=2;
+
+var max_countC=2;
+
+$(function(){
+var timerC;
+timerC=window.setInterval(fadeinoutC,3000);
+});
+
+function fadeinoutC(){
+$("#image-changeC"+nextC).fadeIn(1000);
+$("#image-changeC"+currentC).fadeOut(500);
+
+currentC=nextC;
+nextC++;
+if(nextC > max_countC){
+nextC=1;
+}
+}
+</script-->
+<footer>
+<div class="footer">
+<dl>
+<dt>www.regus-office.jp</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/area-search/">レンタルオフィスを探す</a></li>
+<li><a href="/officetype/">オフィスの種類</a></li>
+<li><a href="/application/">事業規模から探す</a></li>
+<li><a href="/purpose/">利用目的から探す</a></li>
+<li><a href="/case/">活用事例</a></li>
+<li><a href="/blog/">レンタルオフィスを学ぶ</a></li>
+<li><a href="/profile/">リージャスとは</a></li>
+<li><a href="/recruiting_n/">採用情報</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>リージャスのサービスプラン</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/service/office/">レンタルオフィス</a></li>
+<li><a href="/service/virtualoffice/">バーチャルオフィス</a></li>
+<li><a href="/service/meetingroom/">時間貸し会議室</a></li>
+<li><a href="/service/coworking-spaces/">コワーキングスペースサービス</a></li>
+<li><a href="/service/membership/">メンバーシップ</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>リージャスのブランド</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/openoffice/">オープンオフィス</a></li>
+<li><a href="/coworking/">コワーキング</a></li>
+<li><a href="/brands/brand_regus/">リージャス</a></li>
+<li><a href="/spaces/">SPACES</a></li>
+<li><a href="/signature-brand/">Signature</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>人気のエリア</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li class="gray mg0" style="margin-right: 10px">東京の人気エリア：</li>
+<li><a href="/shibuya-area/">渋谷</a>・<a href="/ebisu-area/">恵比寿</a>エリアのレンタルオフィス</li>
+<li><a href="/marunouchi-otemachi-area/">丸の内・大手町エリアのレンタルオフィス</a></li>
+<li><a href="/akasaka-area/">赤坂</a>・<a href="/roppongi-area/">六本木</a>エリアのレンタルオフィス</li>
+</ul>
+<ul class="clearfix">
+<!--li class="gray2" style="width: 93px">&nbsp;</li-->
+<li><a href="/sinjuku-area/">新宿</a>・<a href="/ikebukuro-area/">池袋</a>エリアのレンタルオフィス</li>
+<li><a href="/aoyama-omotesando-area/">青山・表参道エリアのレンタルオフィス</a></li>
+<li><a href="/ginza-yurakucho-area/">銀座・有楽町エリアのレンタルオフィス</a></li>
+<li><a href="/yaesu-nihonbashi-area/">八重洲・日本橋エリアのレンタルオフィス</a></li>
+</ul>
+<ul class="clearfix">
+<li><a href="/shinagawa-area/">品川</a>・<a href="/hamamatsucho-area/">浜松町</a>エリアのレンタルオフィス</li>
+<li><a href="/osaki-gotanda-area/">大崎・五反田エリアのレンタルオフィス</a></li>
+<li><a href="/shinbashi-shiodome-area">新橋・汐留エリアのレンタルオフィス</a></li>
+<li><a href="/kanda-akihabara-area/">神田・秋葉原</a>・<a href="/kinsicho-area/">錦糸町</a>エリアのレンタルオフィス</li>
+</ul>
+<ul class="clearfix">
+<li><a href="/kojimachi-yotsuya-area/">麹町・四ッ谷エリアのレンタルオフィス</a></li>
+<li><a href="/tachikawa-area/">立川エリアのレンタルオフィス</a></li>
+<li><a href="/machida-area/">町田エリアのレンタルオフィス</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt></dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li class="gray mg0">全国の人気エリア：</li>
+<li><a href="/tokyo-area/">東京のレンタルオフィス</a></li>
+<li><a href="/sapporo-area/">札幌のレンタルオフィス</a></li>
+<li><a href="/sendai-area/">仙台のレンタルオフィス</a></li>
+<li><a href="/yokohama-minatomirai-area/">横浜のレンタルオフィス</a></li>
+<li><a href="/aichi-area/">愛知・名古屋のレンタルオフィス</a></li>
+<li><a href="/osaka-area/">大阪のレンタルオフィス</a></li>
+<li><a href="/fukuoka-area/">福岡のレンタルオフィス</a></li>
+<li><a href="/omiya-area/">大宮のレンタルオフィス</a></li>
+<li><a href="/tsukuba-area/">茨城のレンタルオフィス</a></li>
+<li><a href="/shizuoka-area/">静岡のレンタルオフィス</a></li>
+<li><a href="/hiroshima-area/">広島のレンタルオフィス</a></li>
+<li><a href="/kyoto-area/">京都のレンタルオフィス</a></li>
+<li><a href="/hyogo-kobe-area/">神戸のレンタルオフィス</a></li>
+<li><a href="/okayama-area/">岡山のレンタルオフィス</a></li>
+<li><a href="/kagawa-area/">高松のレンタルオフィス</a></li>
+<li><a href="/kitakyushu-area/">小倉のレンタルオフィス</a></li>
+<li><a href="/kumamoto-area/">熊本のレンタルオフィス</a></li>
+<li><a href="/okinawa-area/">沖縄のレンタルオフィス</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt></dt>
+<dd class="clearfix">
+<ul class="mgR20 socialB">
+<li class="gray3 mgR10">Regusとつながろう：</li>
+<li><a href="https://twitter.com/RegusJapanKK" title="Twitter" class="twitter" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-twitter.png" alt="Twitter" border="0" /></a></li>
+<li><a href="https://www.instagram.com/regusjapan/" title="Instagram" class="Instagram" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-insta.png" alt="Instagram" border="0" /></a></li>
+<li><a href="https://www.facebook.com/RegusJapan" title="Facebook" class="facebook" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-facebook.png" alt="Facebook" border="0" /></a></li>
+<li><a href="https://www.linkedin.com/company/regus-japan/" title="Linked In" class="linked-in" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-linkedin.png" alt="Linked In" border="0" /></a></li>
+<li class="pdR20"><a href="https://www.youtube.com/channel/UCy0nszAgoTCdPM6zPWTkowA" title="youtube" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-youtube.png" alt="youtube" border="0" /></a></li>
+</ul>
+<ul class="socialB">
+<li class="mgRight">
+<p class="resv">My Regus.comで<span>スペースを予約：</span><a href="https://www.myregus.com" target="_blank">ブラウザ版&nbsp;<img src="/common2/images/footer_img_app.svg" alt="" class="openWin" style="width: 18px;height: 18px"></a></p>
+</li>
+<li><a href="https://apps.apple.com/gb/app/regus/id387924487" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer_img_apple.jpg" alt="App Store"></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.regus" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer_img_google.jpg" alt="Google Play"></a>
+</li>
+<!--li class="useM"><a href="/common2/images/my_regus.pdf" target="_blank">使い方</a></li-->
+</ul>
+</dd>
+<dd class="newworld">
+<a href="/new-world/" target="">リージャスのコロナウイルス対策と危機管理対応について</a></dd>
+</dl>
+
+
+<div class="clearfix">
+<div class="ftrLogo"><a href="/"><img src="/common2/images/logo_ftr.gif" alt="Regus"></a></div>
+<nav class="ftrNav clearfix">
+<ul>
+<li><a href="/profile/">リージャスとは</a></li>
+<li><a href="/policy">プライバシーポリシー</a></li>
+<li><a href="/regulation">利用規約</a></li>
+<li><a href="/system-requirements">推奨環境</a></li>
+<li><a href="/socialmediapolicy">ソーシャルメディアポリシー</a></li>
+<li><a href="/site-map/">サイトマップ</a></li>
+</ul>
+</nav>
+</div>
+<p class="copy">&copy; 2024 Regus Group Companies　　<span class="pcImg">レンタルオフィス・コワーキング スペースならリージャス。東京・大阪・名古屋ほか全国185拠点のワークスペースをご紹介。</span></p>
+</div>
+</footer>
+
+<script type="text/javascript">
+window._pt_sp_2 = [];
+_pt_sp_2.push('setAccount,613ecd73');
+var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+(function () {
+var atag = document.createElement('script');
+atag.type = 'text/javascript';
+atag.async = true;
+atag.src = _protocol + 'js.ptengine.jp/pta.js';
+var stag = document.createElement('script');
+stag.type = 'text/javascript';
+stag.async = true;
+stag.src = _protocol + 'js.ptengine.jp/pts.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(atag, s);
+s.parentNode.insertBefore(stag, s);
+})();
+</script>
+<script>
+$(function () {
+$('div.modal_wrap').on('click', function () {
+$('body').css("overflow-y", "visible");
+$('div.modal_wrap').css("visibility", "hidden");
+});
+$('div.modal_wrap div.modal .close').on('click', function () {
+$('body').css("overflow-y", "visible");
+$('div.modal_wrap').css("visibility", "hidden");
+});
+});
+</script>
+<script src="/common2/js/slick.js?ver=202012" type="text/javascript" charset="utf-8"></script>
+
+<script src="https://ce.mf.marsflag.com/latest/js/mf-search.js"></script>
+</body>
+</html>

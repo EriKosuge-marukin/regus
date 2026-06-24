@@ -1,0 +1,110 @@
+#wrapper .office_ttl {
+  padding-top: 50px; }
+  #wrapper .office_ttl h1 {
+    background: url(/sp/openoffice/common/img/kv_bg_2.png) right center no-repeat, url(/sp/openoffice/common/img/kv_bg.gif) top center no-repeat;
+    -webkit-background-size: contain, cover;
+    -moz-background-size: contain, cover;
+    -ms-background-size: contain, cover;
+    background-size: contain, cover;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004c80;
+    padding: 25px 5%;
+    line-height: 1.4; }
+    #wrapper .office_ttl h1 span {
+      font-size: 17px;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #004c80; }
+#wrapper .tab_link ul {
+  width: 100%;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  margin: 5px 0 20px; }
+  #wrapper .tab_link ul li {
+    width: 49.5%;
+    background: #a7a6a7; }
+    #wrapper .tab_link ul li.on {
+      background: #0097d5; }
+    #wrapper .tab_link ul li a {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      line-height: 1;
+      font-weight: bold;
+      font-size: 16px;
+      font-size: 1.6rem;
+      color: #fff; }
+#wrapper .guide_inner {
+  width: 100%;
+  padding: 0 3.5%; }
+  #wrapper .guide_inner h2 {
+    font-weight: bold;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 5px 0 5px 11px;
+    border-left: 6px solid  #0097d6;
+    margin-bottom: 10px; }
+  #wrapper .guide_inner p {
+    font-size: 12px;
+    font-size: 1.2rem; }
+  #wrapper .guide_inner .nearby {
+    width: 100%; }
+    #wrapper .guide_inner .nearby .place {
+      padding: 20px 5% 0;
+      margin-top: 20px;
+      border-top: 1px dotted  #d0d0d0;
+      -js-display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+      #wrapper .guide_inner .nearby .place:last-child {
+        padding-bottom: 20px;
+        border-bottom: 1px dotted  #d0d0d0; }
+      #wrapper .guide_inner .nearby .place .detail {
+        width: calc(100% - 150px - 4%);
+        margin-right: 4%; }
+        #wrapper .guide_inner .nearby .place .detail h3 {
+          font-size: 13px;
+          font-size: 1.3rem;
+          color: #0097d5;
+          width: 100%;
+          font-weight: bold;
+          border-bottom: 2px solid  #0097d5;
+          padding-bottom: 5px;
+          margin-bottom: 10px; }
+        #wrapper .guide_inner .nearby .place .detail p {
+          font-size: 12px;
+          font-size: 1.2rem; }
+      #wrapper .guide_inner .nearby .place .img {
+        width: 150px; }
+  #wrapper .guide_inner .entry {
+    margin-top: 30px; }
+    #wrapper .guide_inner .entry p {
+      text-align: center;
+      margin-bottom: 10px; }
+    #wrapper .guide_inner .entry a {
+      display: block;
+      margin: 0 auto;
+      width: 88%; }
+  #wrapper .guide_inner .contact {
+    margin: 30px 0 15px; }
+#wrapper .contact img, #wrapper .periphery img {
+  width: 100%; }
+
+.page-top {
+  display: none; }
+
+/*# sourceMappingURL=guide.css.map */

@@ -1,0 +1,307 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px; } }
+  .main_contents * {
+    box-sizing: border-box; }
+
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: .8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+section {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto 80px auto; }
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto 58px; } }
+  section.sec01 {
+    margin: 0 auto 50px auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec01 {
+        width: 100%;
+        display: block;
+        margin: -30px auto 20px auto; } }
+    section.sec01 .mv {
+      width: 900px;
+      /*padding:0 0 50px;
+      margin-bottom: 40px;*/
+      background: #dedacc;
+      margin: 0 auto; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .mv {
+          width: 100%;
+          padding: 0  0 50px 0; }
+          section.sec01 .mv img {
+            width: 100%; } }
+      section.sec01 .mv .logo {
+        text-align: center;
+        /*border: 1px solid #261d1b;*/
+        margin: 0 auto;
+        width: 30%;
+        position: relative;
+        text-align: center; }
+        section.sec01 .mv .logo::before {
+          background-color: #000001;
+          /* 線の色 */
+          border-radius: 5px;
+          /* 線の両端を丸く */
+          bottom: -10px;
+          /* 線の位置 */
+          content: "";
+          height: 3px;
+          /* 線の高さ */
+          left: 50%;
+          /* 線の中央寄せ */
+          position: absolute;
+          transform: translateX(-50%);
+          /* 線の中央寄せ */
+          width: 50px;
+          /* 線の長さ */ }
+        section.sec01 .mv .logo img {
+          max-width: 200px;
+          padding: 42px 0 30px 0; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .mv .logo img {
+              width: 70%;
+              padding: 60px 0 20px 0; } }
+      section.sec01 .mv h1 {
+        margin: 70px auto 25px auto; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .mv h1 {
+            margin: 30px auto 30px auto;
+            width: 80%; } }
+      section.sec01 .mv .offerA {
+        width: 439px;
+        max-width: 80%;
+        margin: 0 auto 20px auto; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .mv .offerA {
+            margin: 0 auto 10px auto; } }
+      section.sec01 .mv .sub {
+        width: 516px;
+        max-width: 90%;
+        margin: 0 auto 60px auto; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .mv .sub {
+            margin: 0 auto 30px auto; } }
+      section.sec01 .mv .mvCon {
+        max-width: 1060px;
+        width: 92%;
+        color: #000;
+        margin: 0px auto 0 auto; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .mv .mvCon {
+            max-width: 100%;
+            width: 92%;
+            margin: 20px auto 0 auto; } }
+        section.sec01 .mv .mvCon .kiyaku {
+          width: 100%;
+          margin: 25px 0 0 0;
+          padding-bottom: 20px; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .mv .mvCon .kiyaku {
+              padding-bottom: 0px; } }
+          section.sec01 .mv .mvCon .kiyaku .outline {
+            display: block;
+            text-align: center;
+            margin: 25px auto 15px auto;
+            font-weight: 900;
+            font-size: 24px; }
+            @media screen and (max-width: 768px) {
+              section.sec01 .mv .mvCon .kiyaku .outline {
+                margin: 20px auto;
+                font-size: 20px;
+                line-height: 24px !important; } }
+          section.sec01 .mv .mvCon .kiyaku .offer {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0 auto 40px auto;
+            width: 100%;
+            text-align: center; }
+            @media screen and (max-width: 768px) {
+              section.sec01 .mv .mvCon .kiyaku .offer {
+                width: 80%;
+                margin: 0 auto 20px auto; } }
+          section.sec01 .mv .mvCon .kiyaku .innerB {
+            width: 97%;
+            margin: 0 auto 20px auto;
+            font-size: 14px;
+            text-align: center; }
+            @media screen and (max-width: 768px) {
+              section.sec01 .mv .mvCon .kiyaku .innerB {
+                width: 90%;
+                margin: 0 auto; } }
+            section.sec01 .mv .mvCon .kiyaku .innerB ul {
+              text-align: left;
+              display: inline-block;
+              list-style: none;
+              padding: 0; }
+              section.sec01 .mv .mvCon .kiyaku .innerB ul li {
+                list-style: none;
+                font-weight: bold;
+                text-indent: -1em;
+                padding-left: 1em; }
+          section.sec01 .mv .mvCon .kiyaku .note {
+            padding-left: 2em;
+            text-indent: -2em;
+            margin: 30px auto;
+            font-size: 14px; }
+            @media screen and (max-width: 768px) {
+              section.sec01 .mv .mvCon .kiyaku .note {
+                margin: 30px auto 0; } }
+  section.sec02 {
+    /*display: flex;
+       justify-content: center;*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec02 {
+        width: 100%;
+        display: block; } }
+    section.sec02 h2 {
+      width: 100%;
+      background: #000;
+      color: #fff;
+      font-weight: bold;
+      font-size: 40px;
+      padding: 15px 0 12px;
+      margin: 0 0 40px 0; }
+      @media screen and (max-width: 768px) {
+        section.sec02 h2 {
+          width: 90%;
+          margin: 0 auto 20px;
+          font-size: 20px !important;
+          padding: 15px 0 12px !important; } }
+    section.sec02 .offices {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      @media screen and (max-width: 768px) {
+        section.sec02 .offices {
+          width: 90%;
+          margin: 0 auto; } }
+      section.sec02 .offices li {
+        display: block;
+        width: 31%;
+        margin: 0 0 40px; }
+        @media screen and (max-width: 768px) {
+          section.sec02 .offices li {
+            width: 46%; } }
+        section.sec02 .offices li img {
+          margin-bottom: 5px; }
+        section.sec02 .offices li p {
+          text-align: left;
+          font-size: 14px;
+          line-height: 1.6; }
+          @media screen and (max-width: 768px) {
+            section.sec02 .offices li p {
+              font-size: 11px;
+              line-height: 1.6; } }
+          section.sec02 .offices li p.ofName {
+            font-size: 18px;
+            font-weight: bold; }
+            @media screen and (max-width: 768px) {
+              section.sec02 .offices li p.ofName {
+                font-size: 16px;
+                line-height: 1.5; } }
+
+.camTel {
+  text-align: center;
+  margin: 0 auto 25px; }
+  .camTel .telTtl {
+    color: #231815;
+    font-size: 18px; }
+  .camTel .teltel {
+    font-size: 40px;
+    color: #231815;
+    font-weight: bold; }
+    @media screen and (max-width: 768px) {
+      .camTel .teltel {
+        font-size: 30px; } }
+
+.linkRed {
+  width: 50%;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .linkRed {
+      margin-top: 15px;
+      width: 80%; } }
+  .linkRed a.btn_con {
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #e00133;
+    border-radius: 60px;
+    -webkit-border-radius: 60px; }
+    @media screen and (max-width: 768px) {
+      .linkRed a.btn_con {
+        width: 100%;
+        font-size: 22px;
+        line-height: 1.3;
+        padding: 15px 40px; } }
+    .linkRed a.btn_con:before, .linkRed a.btn_con:after {
+      content: "";
+      position: absolute;
+      top: 50%; }
+    .linkRed a.btn_con:before {
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      margin: -20px 0 0;
+      background: #fff;
+      border-radius: 60px;
+      -webkit-border-radius: 60px; }
+      @media screen and (max-width: 768px) {
+        .linkRed a.btn_con:before {
+          width: 36px;
+          height: 36px;
+          margin: -18px 0 0; } }
+    .linkRed a.btn_con:after {
+      right: 28px;
+      width: 13px;
+      height: 13px;
+      margin: -10px 0 0;
+      border-top: solid 5px #e00133;
+      border-right: solid 5px #e00133;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+      @media screen and (max-width: 768px) {
+        .linkRed a.btn_con:after {
+          right: 27px;
+          width: 12px;
+          height: 12px;
+          margin: -8px 0 0; } }
+
+.mgT50 {
+  margin-top: 50px; }
+  @media screen and (max-width: 768px) {
+    .mgT50 {
+      margin-top: 25px; } }

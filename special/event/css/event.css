@@ -1,0 +1,90 @@
+/*title--------------*/
+.contents .sub_title {
+  background: #E10034 url("/common2/images/bg_white.gif") repeat-x scroll left bottom;
+  line-height: 60px;
+  padding-left: 10px;
+  font-size: 140%;
+  font-weight: bold;
+  border-bottom: 4px solid #939696;
+  color: #FFF; }
+
+.section .main_title h1 {
+  background: #F2F2F2 url("/common2/images/bg_h2.gif") no-repeat scroll left top;
+  line-height: 45px;
+  margin: 30px 0px 10px;
+  padding-left: 25px;
+  font-size: 120%;
+  font-weight: bold;
+  border-bottom: 0px solid #939696;
+  color: black; }
+
+/*title--------------*/
+.contents .sub_title {
+  margin: 0px 0px 10px; }
+  @media screen and (max-width: 768px) {
+    .contents .sub_title {
+      margin: 5% 0px 0px; } }
+
+.newsKiji {
+  margin-bottom: 40px; }
+  .newsKiji p.yymmdd {
+    margin: 0 0 20px 0;
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      .newsKiji p.yymmdd {
+        margin: 0 0 20px 0;
+        text-align: right; } }
+  .newsKiji .event .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 15px; }
+    @media screen and (max-width: 768px) {
+      .newsKiji .event .name {
+        font-size: 16px; } }
+  .newsKiji .event dl.thisEV {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      .newsKiji .event dl.thisEV {
+        flex-flow: column; } }
+    .newsKiji .event dl.thisEV dt {
+      flex-basis: 15%;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f1f1f1;
+      border-bottom: 1px solid #ccc; }
+      @media screen and (max-width: 768px) {
+        .newsKiji .event dl.thisEV dt {
+          text-align: left;
+          padding: 13px 25px; } }
+    .newsKiji .event dl.thisEV dd {
+      flex-basis: 75%;
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc; }
+      @media screen and (max-width: 768px) {
+        .newsKiji .event dl.thisEV dd {
+          padding: 10px 25px; } }
+  .newsKiji .ctctUS {
+    text-align: center;
+    margin: 30px auto 0 auto;
+    font-weight: bold;
+    font-size: 18px; }
+    @media screen and (max-width: 768px) {
+      .newsKiji .ctctUS {
+        font-size: 16px; } }
+  .newsKiji .cam2Btns {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 25px auto; }
+    @media screen and (max-width: 768px) {
+      .newsKiji .cam2Btns {
+        display: block;
+        margin: 20px auto; } }
+    .newsKiji .cam2Btns > div {
+      flex-basis: 47%; }
+      .newsKiji .cam2Btns > div include break {
+        flex-basis: 100%;
+        margin-bottom: 10px; }

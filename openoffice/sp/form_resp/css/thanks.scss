@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import "../../common/css/mixin";
+
+#wrapper{
+	.ttl{
+		width: 100%;
+		padding-top: 50px;
+		margin-bottom: 20px;
+		h1{
+			background: url(/sp/form/img/kv_bg_2.png) right center no-repeat,url(/sp/form/img/kv_bg.gif) top center no-repeat;
+			@include bgs((contain,cover));
+			display: inline-block;
+			width: 100%;
+			text-align: left;
+			@include fz(20);
+			font-weight: bold;
+			color: #004c80;
+			padding: 25px 5%;
+			line-height: 1.4;
+			span{
+				@include fz(17);
+				font-weight: bold;
+				color: #004c80;
+			}
+		}
+	}
+	.inner{
+		padding: 0 3.5%;
+		p.bld{
+			font-weight: bold;
+			@include fz(20);
+		}
+		.box{
+			margin-top: 20px;
+			width: 100%;
+			border: 2px #efefef solid;;
+			padding: 20px 3.5%;
+			p.red{
+				color: #ea2423;
+				@include fz(15);
+				margin-bottom: 5px;
+			}
+			.gray{
+				background: #efefef;
+				padding: 15px 3.5%;
+				dl{
+					text-align: left;
+					dt{
+						font-weight: bold;
+						margin-bottom: 5px;
+					}
+				}
+				p.tel{
+					margin-top: 15px;
+					@include fz(28);
+					font-weight: bold;
+					color: #1898d3;
+				}
+				a{
+					margin-top: 15px;
+					color: #2A8DBA;
+				}
+			}
+		}
+	}
+}
+.page-top,.foot_btn{
+	display: none!important;
+}
+footer{
+	padding-bottom: 20px !important;
+}

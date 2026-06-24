@@ -1,0 +1,61 @@
+﻿@charset "utf-8";
+
+input[type="text"],
+select,
+textarea {
+	color:#333333;
+	font-size:12px;
+}
+input[type="text"],
+input[type="password"] {
+	vertical-align: middle;
+	_vertical-align: baseline;
+	padding:1px 2px 0px 2px;
+	padding-top:3px\9; /* IE8 and below */
+	padding-bottom:1px\9; /* IE8 and below */
+	ime-mode: active;
+}
+
+select {
+	vertical-align: middle;
+	_vertical-align: baseline;
+	height: 20px;
+	height: 21px\9; /* IE8 and below */
+}
+input[type="submit"],
+input[type="button"] {
+	color:#333333;
+	font-size:12px;
+	cursor : pointer;
+}
+input[type="reset"]{
+	cursor : pointer;
+}
+input[type="radio"] {
+	vertical-align: middle;
+	_vertical-align: baseline;
+}
+input[type="checkbox"] {
+	vertical-align: middle;
+	_vertical-align: baseline;
+}
+
+label {
+	vertical-align: middle;
+	_vertical-align: baseline;
+	padding-left: 4px;
+	*padding-left: 0;
+}
+
+
+/*数値および英数のところは、IMEモードをdisabled*/
+input.numeric_l {	/*数値および英数で左寄せ*/
+	ime-mode:disabled;
+	text-align:left;
+}
+input.numeric_r {	/*数値および英数で右せ*/
+	ime-mode:disabled;
+	text-align:right;
+}
+
+

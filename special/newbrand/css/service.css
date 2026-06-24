@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px; } }
+  .main_contents * {
+    box-sizing: border-box; }
+
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: .8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+p {
+  line-height: 1.8; }
+  @media screen and (max-width: 768px) {
+    p {
+      line-height: 1.5; } }
+
+.service_wrap {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto; }
+  .service_wrap .conactBTN {
+    width: 360px;
+    margin: 30px auto 90px; }
+    @media screen and (max-width: 768px) {
+      .service_wrap .conactBTN {
+        width: 80%;
+        margin: 20px auto 50px; } }
+    .service_wrap .conactBTN a {
+      text-align: center;
+      letter-spacing: 0.12em;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 21px 0;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      background: #e40037;
+      -webkit-border-radius: 50px; }
+      @media screen and (max-width: 768px) {
+        .service_wrap .conactBTN a {
+          width: 100%;
+          font-size: 16px;
+          line-height: 1.3;
+          padding: 18px 20px; } }
+      .service_wrap .conactBTN a:before, .service_wrap .conactBTN a:after {
+        content: "";
+        position: absolute;
+        top: 50%; }
+      .service_wrap .conactBTN a:after {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: -18px 0 0 5px;
+        right: 8px;
+        background: url("/franchise/images/btn_icon.png") no-repeat;
+        background-size: contain;
+        vertical-align: middle; }
+        @media screen and (max-width: 768px) {
+          .service_wrap .conactBTN a:after {
+            right: 8px;
+            width: 20px;
+            height: 20px;
+            margin: -15px 0 0; } }
+      .service_wrap .conactBTN a:hover {
+        opacity: 0.8; }
+      .service_wrap .conactBTN a:after {
+        border-top: solid 5px #e40037;
+        border-right: solid 5px #e40037; }

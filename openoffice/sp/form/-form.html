@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<!--#include virtual="/openoffice/ssi/headtagmanager.html" -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="follow,index">
+<meta name="google-site-verification" content="oWvuR9gprE2qJLA_WMJdA8obyCAcYBEACdGWM0gWcIs" />
+<title>問い合わせ・見学予約｜レンタルオフィス（個室）ならオープンオフィス</title>
+<meta name="description" content="問い合わせ・見学予約。オープンオフィスのレンタルオフィスは【入会金なし】【24時間利用】【完全個室】会議室併設で全国50拠点以上に展開。レンタルオフィスならオープンオフィス。">
+<meta name="keywords" content="問い合わせ・見学予約,レンタルオフィス,東京,大阪,個室,オープンオフィス">
+<meta name="format-detection" content="telephone=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="/openoffice/sp/common/css/normalize.css" rel="stylesheet" type="text/css">
+<!--メールフォームプロ用CSS-->
+<link rel="stylesheet" href="/openoffice/sp/form/mfp.statics/mailformpro.css" type="text/css">
+<!--/メールフォームプロ用CSS-->
+<link href="/openoffice/sp/common/css/common_layout.css" rel="stylesheet" type="text/css">
+<link href="/openoffice/sp/common/include/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/openoffice/sp/form/css/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="drawer drawer--top">
+	<!--#include virtual="/openoffice/sp/common/include/tag_top.html"-->
+<div id="wrapper"> 
+<!--#include virtual="/openoffice/sp/common/include/header.html"-->
+<div class="ttl">
+<h1>
+問い合わせ・見学予約
+</h1>
+</div>
+<div class="inner">
+<p>お問い合わせの内容をご記入ください</p>
+<div class="form_area">
+<div class="inner">
+<form id="mailformpro" action="/openoffice/sp/form/mailformpro/mailformpro.cgi" medivod="POST">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th>お問い合わせの内容</th>
+<td>
+<ul class="detail">
+<li><label><input type="checkbox" name="お問い合わせの内容" value="見学希望">見学希望</label></li>
+<li><label><input type="checkbox" name="お問い合わせの内容" value="資料希望">資料希望</label></li>
+<li><label><input type="checkbox" name="お問い合わせの内容" value="ご相談">ご相談</label></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>会社名（団体名）</th>
+<td class="name">
+<input type="text" name="会社名（団体名）"/>
+</td>
+</tr>
+<tr>
+<th>担当者名 <span>（必須）</span></th>
+<td class="name">
+<input type="text" name="担当者名" required="required"/>
+</td>
+</tr>
+<tr>
+<th>電話番号 <span>（必須）</span></th>
+<td class="name">
+<input type="tel" name="電話番号" required="required"/>
+</td>
+</tr>
+<tr>
+<th>携帯電話</th>
+<td class="name">
+<input type="tel" data-type="tel" name="携帯電話"/>
+</td>
+</tr>
+<tr>
+<th>メールアドレス <span>（必須）</span></th>
+<td class="mail">
+<input type="email" data-type="email" name="email" required="required"/>
+</td>
+</tr>
+
+<tr>
+<th>興味のあるオフィス</th>
+<td>
+<ul class="office">
+<li><label><input type="checkbox" name="興味のあるオフィス" value="大阪肥後橋">大阪肥後橋</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="大阪平野町">大阪平野町</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="高松">高松</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="大宮駅西口">大宮駅西口</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="盛岡大通">盛岡大通</label></li>
+	<li><label><input type="checkbox" name="興味のあるオフィス" value="横浜金港町">横浜金港町</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="大門駅前">大門駅前</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="五反田駅西口">五反田駅西口</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="本厚木駅前">本厚木駅前</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="大崎駅西口">大崎駅西口</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="豊田">豊田</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="西新宿駅前">西新宿駅前</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="刈谷">刈谷</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="神戸三宮南">神戸三宮南</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="大分">大分</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="新潟">新潟</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="名古屋丸の内">名古屋丸の内</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="新大阪北">新大阪北</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="立川駅南">立川駅南</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="熊本銀">熊本銀</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="仙台駅前">仙台駅前</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="西新橋">西新橋</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="名駅南">名駅南</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="渋谷神南">渋谷神南</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="広島大手町">広島大手町</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="日本橋箱崎">日本橋箱崎</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="神保町">神保町</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="博多駅前通り">博多駅前通り</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="小倉">小倉</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="水戸">水戸</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="札幌南">札幌南</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="京都烏丸">京都烏丸</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="池袋">池袋</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="赤坂ビジネスプレイス">赤坂ビジネスプレイス</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="青山セントラル">青山セントラル</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="南青山">南青山</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="麻布十番">麻布十番</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="赤坂見附">赤坂見附</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="溜池山王">溜池山王</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="渋谷hills">渋谷hills</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="乃木坂">乃木坂</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="渋谷TOC">渋谷TOC</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="仙台青葉通り">仙台青葉通り</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="日本橋セントラル">日本橋セントラル</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="新宿ウエスト">新宿ウエスト</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="京都河原町">京都河原町</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="名古屋伏見">名古屋伏見</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="京阪淀屋橋">京阪淀屋橋</label></li>
+<li><label><input type="checkbox" name="興味のあるオフィス" value="バーチャルオフィス">バーチャルオフィス</label></li>
+</ul>
+</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<th class="detail">お問い合わせ詳細</th>
+<td class="text">
+<textarea name="お問い合わせ詳細"></textarea>
+</td>
+</tr>
+</table>
+<!--/お問い合わせ内容-->
+<div class="btns">
+<ul>
+<li><input type="submit" value="送信"></li>
+</ul>
+</div>
+<!--/送信ボタン-->
+</form>
+<script type="text/javascript" id="mfpjs" src="/openoffice/sp/form/mailformpro/mailformpro.cgi" charset="UTF-8"></script> 
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+<!--#include virtual="/openoffice/sp/common/include/footer.html"--> 
+	<!--#include virtual="/openoffice/sp/common/include/tag_btm.html"-->
+</body>
+</html>

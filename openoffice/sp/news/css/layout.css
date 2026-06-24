@@ -1,0 +1,82 @@
+#wrapper {
+  margin: 0 auto 20px;
+  padding: 50px 3.5% 0;
+  font-size: 12px;
+  font-size: 1.2rem; }
+  #wrapper h1 {
+    background: url(/sp/common/img/ttl_h1.gif) no-repeat right top/cover;
+    width: 107%;
+    margin-bottom: 30px;
+    margin-left: -3.5%;
+    padding-left: 15px;
+    text-align: left;
+    line-height: 69px;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #004c80;
+    font-weight: bold; }
+  #wrapper .red {
+    color: #e60000; }
+  #wrapper a {
+    color: #2A8DBA; }
+  #wrapper .content {
+    margin-top: -60px;
+    margin-bottom: 25px;
+    padding-top: 60px; }
+    #wrapper .content h2 {
+      margin: 5px 0;
+      font-size: 16px;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    #wrapper .content h3 {
+      font-size: 14px;
+      font-size: 1.4rem;
+      padding-bottom: 15px; }
+    #wrapper .content .inner {
+      display: none;
+      border-top: solid 1px #e2e2e2;
+      padding: 10px; }
+      #wrapper .content .inner p {
+        padding-bottom: 10px; }
+      #wrapper .content .inner dl {
+        margin: 3px 0;
+        border: solid 2px #e2e2e2;
+        border-top: none; }
+        #wrapper .content .inner dl dt {
+          background-color: #eee;
+          border-top: solid 2px #e2e2e2;
+          padding: 7px; }
+        #wrapper .content .inner dl dd {
+          padding: 7px; }
+    #wrapper .content .btn {
+      background-color: #fcfcfc;
+      margin-top: 15px;
+      border: solid 1px #e2e2e2;
+      border-radius: 5px;
+      padding-left: 5px;
+      font-size: 14px;
+      font-size: 1.4rem;
+      text-align: center; }
+      #wrapper .content .btn span {
+        display: inline-block;
+        width: 16px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 5px; }
+      #wrapper .content .btn p.open {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 13px 0; }
+      #wrapper .content .btn p.close a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 13px 0;
+        color: #000; }
+
+.page-top {
+  display: none; }
+
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import 'mixin';
+
+$red:#e4002f;
+
+.main_contents {
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 16px;
+	@include break {
+		font-size: 14px;
+	}
+	* {
+		box-sizing: border-box;
+	}
+}
+
+.ov {
+	@include transition;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.pc {
+	@include break {
+		display: none;
+	}
+}
+
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+
+
+p {
+	line-height: 1.8;
+	@include break {
+		line-height: 1.5;
+	}
+}
+    $color-green: #46c1be;
+$color-red: #e40037;
+.service_wrap{
+	width: 100%;
+	max-width: 1060px;
+	margin: 0 auto;
+
+        .conactBTN{
+                width: 360px;
+            margin: 30px auto 90px;
+            @include break {width:80%; margin:20px auto 50px;}
+                a{
+	
+                      text-align: center;
+                          letter-spacing: 0.12em;
+                      position: relative;
+                      display: inline-block;
+                      width: 100%;
+                      margin: 0 auto;
+                      padding: 21px 0;
+                      color: #fff;
+                      font-size: 18px;
+                      font-weight: bold;
+                      text-decoration: none;
+                      border-radius: 50px;
+                    background:$color-red;
+                      -webkit-border-radius: 50px;
+                        @include break {width:100%;
+                            font-size: 16px;
+                            line-height: 1.3;
+                            padding: 18px 20px;
+                            }
+    
+                    &:before,&:after{
+                            content: "";
+                  position: absolute;
+                  top: 50%;
+                        }//__beforeAfter
+                        &:after {
+                        content: "";
+                      display: inline-block;
+                      width: 30px;
+                      height:30px;
+                      margin: -18px 0 0 5px;
+                      right: 8px;
+                      background: url("/franchise/images/btn_icon.png") no-repeat;
+                      background-size: contain;
+                      vertical-align: middle;
+                        @include break {
+                            right: 8px;
+                      width: 20px;
+                      height:20px;
+                      margin: -15px 0 0;
+                        }
+
+                    }//after
+                &:hover{
+                    opacity: 0.8;
+                }
+
+                 &:after {border-top: solid 5px $color-red;
+                  border-right: solid 5px $color-red;}
+            }//_a
+                
+            }//conactBTN
+    
+}

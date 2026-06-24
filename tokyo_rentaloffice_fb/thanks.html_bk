@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>東京・横浜でオフィスを探すなら日本リージャス</title>
+<meta name="keywords" content="リージャス,レンタルオフィス,横浜,サービスオフィス,貸事務所,賃貸" />
+<meta name="description" content="東京・横浜でオフィスを探すなら日本リージャス。ハイセンスなビジネス家具付きの一等地レンタルオフィスがすぐに使えます。" />
+<link rel="stylesheet" type="text/css" href="css/import_o.css" media="screen,print" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/rollover.js"></script>
+<script type="text/javascript" src="js/jquery-opacity-rollover.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+<script type="text/javascript" src="js/jquery.scroller.d5.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/thickbox.css" media="screen" />
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/thickbox.js"></script>
+<script type="text/javascript" src="js/rollover.js"></script>
+
+<script type="text/javascript">
+$(function() {
+	var topBtn = $('#page-top');	
+	topBtn.hide();
+	//スクロールが100に達したらボタン表示
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+	//スクロールしてトップ
+    topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+    });
+});
+</script> 
+
+<script type="text/javascript">
+$(function() {
+	var tokyoBtn = $('#tokyo');	
+	//スクロールしてトップ
+    tokyoBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: $('#tokyo_top').offset().top
+		}, 500);
+		return false;
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(function() {
+	var shibuyaBtn = $('#shibuya');	
+	//スクロールしてトップ
+    shibuyaBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: $('#shibuya_top').offset().top
+		}, 500);
+		return false;
+    });
+});
+</script> 
+
+<script type="text/javascript">
+$(function() {
+	var roppongiBtn = $('#roppongi');	
+	//スクロールしてトップ
+    roppongiBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: $('#roppongi_top').offset().top
+		}, 500);
+		return false;
+    });
+});
+</script> 
+
+<script type="text/javascript">
+$(function() {
+	var shiodomeBtn = $('#shiodome');	
+	//スクロールしてトップ
+    shiodomeBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: $('#shiodome_top').offset().top
+		}, 500);
+		return false;
+    });
+});
+</script> 
+
+<script type="text/javascript">
+$(function() {
+	var shinjukuBtn = $('#shinjuku');	
+	//スクロールしてトップ
+    shinjukuBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: $('#shinjuku_top').offset().top
+		}, 500);
+		return false;
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(function() {
+	var otemachiBtn = $('#otemachi');	
+	//スクロールしてトップ
+    otemachiBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: $('#otemachi_top').offset().top
+		}, 500);
+		return false;
+    });
+});
+</script>
+
+
+
+<script type="text/javascript">
+(function($) {
+$(function() {
+
+  $('.over').opOver();
+});
+})(jQuery);
+</script>
+<!--tracking code --> 
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-42734902-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; 
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); 
+	})(); 
+	
+</script> 
+<!-- End tracking code -->
+
+<script type="text/javascript" language="javascript">
+var yahoo_retargeting_id = '50DOU9S870';
+var yahoo_retargeting_label = '';
+</script>
+<script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+
+<!-- wrapper -->
+<div class="header">
+<img src="images/img_thanks.jpg" width="1003" height="581" class="img_main" usemap="#imgThanks" />
+    <map name="imgThanks">
+        <area shape="rect" coords="326,446,683,498" href="/" alt="リージャスWEBサイトTOPページへ"/>
+    </map>
+
+
+</div>
+<!-- end cta -->
+
+
+
+<!-- footer -->
+<div class="footer">
+<!-- inner_box -->
+<div class="inner_box">
+
+<h2><img src="images/text_footer_01.gif" width="818" height="58" alt="日本リージャス株式会社 日本リージャス株式会社は、ロンドン証券取引所に上場する、リージャス・グループの１００％現地法人です。１９９８年９月に会社設立し、現在に至るまで、日本全国に多数の事業所を運営しており、日本においても 最大のレンタルオフィス・ネットワークを有しております。" /></h2>
+<h2><img src="images/text_footer_02.gif" width="728" height="68" alt="会社名：日本リージャス株式会社 設立：1998年9月 本社所在地：東京都新宿西新宿3-7-1　新宿パークタワーＮ30階 電話番号：03-5326-3000（代表）代表者：代表取締役　西岡真吾" class="mt10" /></h2>
+</div>
+<!-- end inner_box -->
+</div>
+<!-- end footer -->
+
+
+<p id="page-top"><a href="#top"><img src="images/btn_go_top.png" width="70" height="70" alt="top" class="over" /></a></p>
+
+</div>
+<!-- end wrapper -->
+
+
+</body>
+</html>

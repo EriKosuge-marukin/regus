@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+/* tab box common
+--------------------------------------------------*/
+.floatL { float: left; }
+.floatR { float: right; }
+.color1 { color: #0097d5; }
+.mgl280 { margin-left: 280px; }
+.mgr280 { margin-right: 280px; }
+
+
+
+
+/* box model
+--------------------------------------------------*/
+#tabBox {
+	border: 1px solid #b5b5b5;
+	margin: 60px 0 0;
+	position: relative;
+	width: 812px;
+}
+
+
+
+
+/* tab ear
+--------------------------------------------------*/
+#tabBox ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -41px;
+	left: -1px;
+}
+#tabBox li {
+	background: url(../images/btn_tab.png) no-repeat 0 0;
+	cursor: pointer;
+	float: left;
+	height: 41px;
+	list-style: none;
+	margin-right: 8px;
+	width: 165px;
+	text-indent:-9999px;
+}
+#tabBox li.tab1 { background-position: 0 0; }
+#tabBox li.tab2 { background-position: -173px 0; }
+#tabBox li.tab1.act { background-position: 0 -41px; }
+#tabBox li.tab2.act { background-position: -173px -41px; }
+
+
+
+
+/* tab contents
+--------------------------------------------------*/
+.tabContent { padding: 20px 16px; }
+.dis { display: none; }
+
+
+
+
+/* col box
+--------------------------------------------------*/
+.colBox {
+	font-size: 12px;
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+
+
+
+/* content footer
+--------------------------------------------------*/
+.contentFooter {
+	border-left: 7px solid #b5b5b5;
+	margin: 40px 0 0;
+	padding-left: 1em;
+}
+.contentFooter.zent {
+	background: url(../images/img_report4.jpg) no-repeat right top;
+}
+.contentFooter.xpa {
+	background: url(../images/img_report8.jpg) no-repeat right top;
+}
+.contentFooter .place {
+	font-weight: bold;
+	margin: 0;
+	padding: .2em 0;
+}
+.contentFooter .add,
+.contentFooter .detail1,
+.contentFooter .detail2 {
+	font-size: 12px;
+	margin: 0;
+	padding: .2em 0;
+}
+.contentFooter .detail1,
+.contentFooter .detail2 {
+	display: inline-block;
+	margin-right: 2em;
+}
+
+
+
+
+/* contact
+--------------------------------------------------*/
+.contact_wrap {
+	background: url(../images/img_contactBG.jpg) no-repeat 0 0;
+	height: 279px;
+	margin: 20px 0 80px;
+	position: relative;
+	width: 814px;
+}
+.contact_wrap a {
+	position: absolute;
+	left: 15px;
+	top: 134px;
+}
+.contact_wrap a:hover {
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha(opacity=80)";
+	opacity: .8;
+}
+
+/*add141209____________________________________________*/
+img{border:none;}
+div.mainmargin {width:800px;margin:0 30px;}
+div.case {margin:5em 0;}
+div.case p {line-height:1.4em;}
+h1 {line-height: normal;}
+p.catchtxt {font-size:2em;font-weight:bold;margin:-0.5em 0 1em 1em;
+line-height:1em;
+color:gray;
+}
+
+dl.push {
+
+clear:both;
+
+overflow:hidden;
+
+padding:0 0 10px 0;
+
+background-image:url(images/push_line.gif);
+
+background-position:bottom left;
+
+background-repeat:no-repeat;
+
+}
+
+dl.push dt {
+
+height:21px;
+
+background-position:top left;
+
+background-repeat:no-repeat;
+
+padding:0;
+
+overflow:hidden;
+
+text-indent:-1000em;
+
+}
+
+dl.push dt.pointtitle {
+
+background-image:url(images/push_point.gif);
+
+}
+
+dl.push dt.advicetitle {
+
+background-image:url(images/push_advice.gif);
+
+}
+
+dl.push dd {
+
+margin:1em;
+
+}
+
+div.message {
+
+background-color:#efefef;
+
+margin:20px;
+
+padding:0px;
+
+overflow:hidden;
+
+}
+
+div.message p {
+
+margin:10px;
+
+}
+
+div.message p.title {
+
+color:#666;
+
+font-weight:bold;
+
+font-size:1.2em;
+
+}
+
+div.voice-block {
+
+margin:50px;
+
+text-align:center;
+
+}
+
+div.pr {
+
+margin:20px auto;
+
+width:700px;
+
+background-color:#dde4e8;
+
+padding:1px 15px;
+
+}
+
+/* Re:Edit */
+
+#mainBOX{
+
+	margin-left:16px;
+	padding-right:16px;
+	width: 814px;
+
+}
+
+h3{
+
+	background:url(img/h3_back.gif) no-repeat left center;
+
+	border-bottom:solid 2px #9e9e9e;
+
+	color:#0071be;
+
+	font-size:14px;
+
+	height:27px;
+
+	line-height:30px;
+
+	padding:0 0 4px 16px;
+
+}
+
+.dotBOX{
+
+	border-bottom:dotted 1px #999;
+
+	margin:20px 0;
+
+	padding-bottom:10px;
+
+	width:820px;
+
+}
+
+.userL{
+
+	float:left;
+
+	width:400px;
+
+}
+
+.userR{
+
+	float:right;
+
+	width:400px;
+
+}
+
+.userL img, .userR img{
+
+	float:left;
+
+	margin-right:10px;
+
+}
+
+p.more{
+
+	text-align:right;
+
+}
+
+p.more img{
+
+	float:none;
+
+}
+
+h4{
+
+	color:#0071be;
+
+	font-size:12px;
+
+	margin:5px 0;
+
+	padding:0;
+
+}
+
+.fCLR{
+
+	clear:both;
+
+}

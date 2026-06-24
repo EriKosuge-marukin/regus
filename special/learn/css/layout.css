@@ -1,0 +1,365 @@
+@charset "utf-8";
+
+.contents{
+	position:relative;
+}
+
+/*index_______________________________________________
+___________________________________________________________________________________*/
+.contents #learnRO{
+margin-top:20px;
+margin-bottom:40px;
+}
+#learnRO h2{
+	background:none;
+	padding:0;
+	margin:0;
+}
+#learnRO ul.index{
+	overflow:hidden;
+	margin:15px 0 20px 0;
+}
+#learnRO ul.index li {
+ border-top: 5px solid #e10034;
+ padding-top:5px;
+ display:block;
+ width:241px;
+ float:left;
+ margin-right:15px;
+}
+#learnRO ul.index li:last-child {
+	margin-right:0;
+}
+#learnRO ul.index li a{
+	padding: 0;
+	display:block;
+	/*overflow:hidden;*/
+}
+#learnRO ul.index li a:hover{
+	/*background:#F9EDED*/
+	text-decoration:none;
+}
+#learnRO ul.index li .indR{
+	width:68%;
+	margin:0 auto;
+	padding:0;
+	float:right;
+}
+#learnRO ul.index li .indL{
+	float:left;
+	width:28%;
+	margin:0 0;
+	text-align:center;
+}
+@media screen and (max-width: 750px) {
+	#learnRO ul.index li {
+ border-top: 1px solid #e10034;
+ padding-top:5px;
+ display:block;
+ width:100%;
+ float:none;
+ margin:5px 0 10px 0;
+ overflow:hidden;
+}
+	#learnRO ul.index li .indR{
+	width:78%;
+	margin-left:0px;
+	float:right;
+}
+#learnRO ul.index li .indL{
+	float:left;
+	width:20%;
+}
+}
+
+#learnRO ul.index li .moreRead{
+	clear:both;
+	    border-radius: 5px;       
+    -webkit-border-radius: 5px;  
+    -moz-border-radius: 5px; 
+background:#fff;
+border:#393939 1px solid;
+color:#39393;
+font-size:80%;
+font-weight:bold;
+padding:3px 10px;
+margin:2px 0px 10px 0;
+width:100px;
+text-align:center;
+float:right;
+
+}
+
+#learnRO ul.index li .indR h3{
+	background:none !important;
+	margin:0 0 5px 0 !important;
+	padding:0;
+	font-size:100%;
+	font-weight:bold;
+	line-height:1.3;
+	color:#000;
+}
+
+
+#learnRO .textRed{
+	color:#e60036;font-weight:bold;
+}
+#learnRO .textBigger{
+	font-size:120%;
+	line-height:1.0;
+}
+@media screen and (max-width: 750px) {
+	#learnRO ul.index li .indR h3{
+	background:none !important;
+	margin:0 0 5px 0;
+	padding:0;
+	font-size:100%;
+	font-weight:bold;
+	line-height:1.3;
+}
+	#learnRO  .textBigger{
+	font-size:120%;
+	line-height:1.0;
+}
+}
+
+
+
+/*ボタン黒----------------------------------*/
+.digitalLink{
+overflow:hidden;
+margin:0 0 60px 0;
+	}
+.digitalLink .black{
+	position:relative;
+	float:right;
+	width:210px;
+}
+.digitalLink .black a{color: #fff;
+	font-size:80%;
+margin-right:5px;
+line-height:30px;	
+display:block;
+border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	padding: 3px 0 3px 15px;
+	border:none;
+	text-align:left;
+	background:#000;
+}
+.digitalLink .black:after{
+   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon.png")  ;
+   background-repeat:no-repeat;
+  -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -15px;
+}
+@media screen and (max-width: 750px) {
+.digitalLink{
+overflow:hidden;
+margin:0 0 40px 0;
+	}
+.digitalLink .black{
+	position:relative;
+	float:none;
+	width:80%;
+	margin:0 auto;
+}
+.digitalLink .black a{text-align:left;
+	 line-height:35px;font-size:105%;
+letter-spacing : 0px;
+}
+.digitalLink  .black:after{
+   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon.png") ;
+  -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px;
+}
+}
+
+
+
+
+
+/*ボタン3つ----------------------------------*/
+.areaCCArea p{
+	padding-top: 12px;
+}
+.areaCCArea ul{
+	margin-left:0%;overflow:auto;
+}
+.areaCCArea ul li{
+	width:34%;
+	float:left;
+	margin-right:2%;
+}
+.areaCCArea ul li:last-child{
+	width:28%;
+	margin-right:0%;
+}
+
+.areaCCArea ul li:first-child .areaBtnCon {
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	padding: 5px 0 5px 1rem;
+	margin:20px auto 0 auto;
+	border:none;
+	text-align:left;
+}
+.areaCCArea ul li .areaBtnCon {
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	padding: 5px 0 5px 2rem;
+	margin:20px auto 0 auto;
+	border:none;
+	text-align:left;
+}
+.areaCCArea ul li:last-child .areaBtnCon {
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	padding: 5px 0 ;
+	margin:20px auto 0 auto;
+	border:none;
+	text-align:center;
+}
+
+.areaBtnCon a{color: #fff;
+	font-size:130%;
+margin-right:5px;
+line-height:40px;	
+display:block;
+}
+
+.areaCCArea ul li .red{background:#e10034;}
+.areaCCArea ul li .blue{background:#46c1be;}
+.areaCCArea ul li .green{background:#afc628;}
+
+.red,.blue,.green{position: relative;}
+
+ .red:after{
+   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_red.png") ;
+  background-size: 28px 28px;
+position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px;
+}
+.blue:after{
+   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png") ;
+  background-size: 28px 28px;
+position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px;
+}
+.green:after{
+   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon.png") ;
+  background-size: 28px 28px;
+position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px;
+}
+
+
+p.moreInfo{
+	font-size:140%;
+	font-weight:600;
+	line-height:1;
+	margin:60px 0 0px 0;
+	text-align:center;
+}
+ 
+
+@media screen and (max-width: 750px) {
+.areaCCArea ul {
+	overflow:hidden;
+	margin:0;
+	padding:0;}
+.areaCCArea ul li,
+.areaCCArea ul li:last-child{
+	display:block;
+	width:90%;
+	float:none;
+	margin:10px auto 0px auto;
+}
+
+.areaCCArea ul li .areaBtnCon,
+.areaCCArea ul li:first-child .areaBtnCon,
+.areaCCArea ul li:last-child .areaBtnCon {
+	border-radius: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	padding: 5px 0;
+	margin-top: 10px !important;
+	border:none;
+	text-align:center;
+}
+.areaBtnCon a{
+	 line-height:35px;font-size:110%;
+letter-spacing : -1px;
+}
+ .red:after{   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_red.png") ;
+  background-size: 12px 12px !important;
+position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -15px;
+}
+.blue:after{
+   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon_blue.png") ;
+  background-size: 12px 12px !important;
+position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -15px;
+}
+.green:after{
+   content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon.png") ;
+  background-size: 12px 12px !important;
+position: absolute;
+  top: 50%;
+  right: 5px;
+  margin-top: -15px;
+}
+
+}
+/*ここまで*/
+
+.txSml{
+	font-size:12px;
+}
+.brdrCol li{
+	border-top: 5px solid #000000 !important;
+}
+@media screen and (max-width: 750px) {
+.brdrCol li{
+	border-top:1px solid #000000 !important;
+}
+}
+
+/*10280606 修正用*/
+.areaBtnCon {
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    padding: 5px 0 5px 2rem;
+    margin: 15px a 0 auto;
+    border: none;
+    text-align: left;
+    width: auto;
+    line-height: 40px;
+    font-size: 0.85em;
+    background: #46c1be;
+    color: #fff;
+}

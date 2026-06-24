@@ -1,0 +1,551 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px; } }
+  .main_contents * {
+    box-sizing: border-box; }
+
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: .8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+.redd {
+  color: #e30613; }
+
+section {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 80px auto; }
+  @media screen and (max-width: 768px) {
+    section {
+      width: 94%;
+      margin: 0 auto 40px auto; } }
+  section.sec01 {
+    margin: 0 auto 40px auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec01 {
+        width: 100%;
+        display: block;
+        margin: 0 auto 30px auto; } }
+    section.sec01 .topMV {
+      background: #000000;
+      margin: 0;
+      padding: 28px 0;
+      color: #fff; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .topMV {
+          margin-bottom: 30px; } }
+      section.sec01 .topMV h1.mv {
+        font-size: 40px;
+        line-height: 1;
+        font-weight: 700;
+        margin-bottom: 8px; }
+        @media screen and (max-width: 768px) {
+          section.sec01 .topMV h1.mv {
+            font-size: 26px;
+            line-height: 1.3; } }
+      section.sec01 .topMV span {
+        font-weight: 500; }
+        section.sec01 .topMV span.topT01 {
+          font-size: 19px; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .topMV span.topT01 {
+              font-size: 14px; } }
+        section.sec01 .topMV span.topT02 {
+          font-size: 30px; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .topMV span.topT02 {
+              font-size: 18px; } }
+        section.sec01 .topMV span.topT03 {
+          font-size: 24px; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .topMV span.topT03 {
+              font-size: 16px; } }
+        section.sec01 .topMV span.topT04 {
+          font-size: 40px; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .topMV span.topT04 {
+              font-size: 25px; } }
+    section.sec01 .cpnDetail {
+      margin: 30px auto 45px; }
+      section.sec01 .cpnDetail span {
+        line-height: 1.5;
+        font-weight: 700;
+        letter-spacing: 0.1em; }
+        section.sec01 .cpnDetail span.cpnDetail-1 {
+          font-size: 24px;
+          display: block; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .cpnDetail span.cpnDetail-1 {
+              font-size: 14px; } }
+        section.sec01 .cpnDetail span.cpnDetail-2 {
+          font-size: 50px;
+          line-height: 1.3; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .cpnDetail span.cpnDetail-2 {
+              font-size: 30px; } }
+        section.sec01 .cpnDetail span.cpnDetail-3 {
+          font-size: 60px;
+          line-height: 1.3; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .cpnDetail span.cpnDetail-3 {
+              font-size: 32px; } }
+        section.sec01 .cpnDetail span.cpnDetail-4 {
+          font-size: 40px;
+          line-height: 1.3; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .cpnDetail span.cpnDetail-4 {
+              font-size: 24px; } }
+        section.sec01 .cpnDetail span.cpnDetail-5 {
+          font-size: 18px;
+          display: block; }
+          @media screen and (max-width: 768px) {
+            section.sec01 .cpnDetail span.cpnDetail-5 {
+              font-size: 12px; } }
+  @media screen and (max-width: 768px) {
+    section.secConv {
+      width: 90%;
+      margin: 0 auto; } }
+  section.secConv .btn {
+    text-align: center; }
+    section.secConv .btn a.btn_arrow {
+      position: relative;
+      display: block;
+      width: 450px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #fff;
+      font-size: 23px;
+      font-weight: bold;
+      text-decoration: none;
+      background: #46c1be;
+      border-radius: 65px;
+      -webkit-border-radius: 72px; }
+      @media screen and (max-width: 768px) {
+        section.secConv .btn a.btn_arrow {
+          width: 100%;
+          font-size: 16px;
+          line-height: 1.3;
+          padding: 15px; } }
+      section.secConv .btn a.btn_arrow:before, section.secConv .btn a.btn_arrow:after {
+        content: "";
+        position: absolute;
+        top: 50%; }
+      section.secConv .btn a.btn_arrow:before {
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0;
+        background: #fff;
+        border-radius: 50px;
+        -webkit-border-radius: 50px; }
+        @media screen and (max-width: 768px) {
+          section.secConv .btn a.btn_arrow:before {
+            width: 30px;
+            right: 8px;
+            height: 30px;
+            margin: -15px 0 0; } }
+      section.secConv .btn a.btn_arrow:after {
+        right: 30px;
+        width: 13px;
+        height: 13px;
+        margin: -10px 0 0;
+        border-top: solid 5px #46c1be;
+        border-right: solid 5px #46c1be;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); }
+        @media screen and (max-width: 768px) {
+          section.secConv .btn a.btn_arrow:after {
+            right: 17px;
+            width: 8px;
+            height: 8px;
+            margin: -6px 0 0; } }
+  section.secConv .tele {
+    text-align: center;
+    margin-top: 15px; }
+    section.secConv .tele .convTxt01 {
+      font-size: 14px;
+      background: #000;
+      color: #ffffff;
+      border-radius: 5px;
+      position: relative;
+      display: inline-block;
+      margin: 1.5em 0;
+      padding: 7px 10px;
+      max-width: 100%; }
+      @media screen and (max-width: 768px) {
+        section.secConv .tele .convTxt01 {
+          font-size: 12px; } }
+      section.secConv .tele .convTxt01:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -8px;
+        border: 8px solid transparent;
+        border-top: 8px solid #000; }
+      section.secConv .tele .convTxt01 p {
+        margin: 0;
+        padding: 0; }
+        section.secConv .tele .convTxt01 p span {
+          font-weight: 700; }
+    section.secConv .tele .convTxt02 {
+      font-size: 48px;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      line-height: 1;
+      margin-top: -10px; }
+      @media screen and (max-width: 768px) {
+        section.secConv .tele .convTxt02 {
+          font-size: 38px; } }
+    section.secConv .tele .convTxt03 {
+      font-size: 14px; }
+      @media screen and (max-width: 768px) {
+        section.secConv .tele .convTxt03 {
+          margin-bottom: 20px; } }
+    section.secConv .tele a[href*="tel:"] {
+      pointer-events: none;
+      color: #e30613 !important;
+      cursor: default;
+      font-weight: 700;
+      text-decoration: none; }
+      @media screen and (max-width: 768px) {
+        section.secConv .tele a[href*="tel:"] {
+          pointer-events: initial;
+          font-weight: 700; } }
+  section.sec02 {
+    /*display: flex;
+       justify-content: center;*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec02 {
+        width: 90%;
+        display: block; } }
+    section.sec02 .whatis {
+      background: #4d4d4d;
+      color: #ffffff;
+      padding: 45px 96px; }
+      @media screen and (max-width: 768px) {
+        section.sec02 .whatis {
+          padding: 20px 15px; } }
+      section.sec02 .whatis h2.whatisTtl {
+        padding-left: 0 !important;
+        font-size: 30px !important;
+        font-weight: 700;
+        margin-bottom: 40px; }
+        @media screen and (max-width: 768px) {
+          section.sec02 .whatis h2.whatisTtl {
+            font-size: 18px !important;
+            margin-bottom: 20px; } }
+      section.sec02 .whatis .explain {
+        font-size: 14px;
+        line-height: 1.8;
+        text-align: left; }
+        @media screen and (max-width: 768px) {
+          section.sec02 .whatis .explain {
+            font-size: 13px; } }
+    section.sec02 .noteText {
+      text-align: left;
+      margin-top: 5px; }
+      section.sec02 .noteText li {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-bottom: 3px;
+        padding-left: 1em;
+        text-indent: -1em; }
+        @media screen and (max-width: 768px) {
+          section.sec02 .noteText li {
+            font-size: 10px; } }
+  section.sec03 {
+    margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      section.sec03 {
+        margin-top: 20px; } }
+    section.sec03 .meritTtl {
+      font-size: 24px;
+      background: #000;
+      color: #ffffff;
+      position: relative;
+      display: inline-block;
+      margin: 0 0 28px;
+      padding: 35px 0 !important;
+      width: 100%;
+      text-align: center;
+      line-height: 1.3 !important; }
+      @media screen and (max-width: 768px) {
+        section.sec03 .meritTtl {
+          font-size: 18px;
+          width: 100%;
+          padding: 20px 0 !important; } }
+      section.sec03 .meritTtl:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -13px;
+        border: 13px solid transparent;
+        border-top: 13px solid #000; }
+      section.sec03 .meritTtl p {
+        margin: 0;
+        padding: 0; }
+        section.sec03 .meritTtl p span {
+          font-weight: 700; }
+    section.sec03 .merit3item {
+      background: #f2f2f2;
+      padding: 56px 63px; }
+      @media screen and (max-width: 768px) {
+        section.sec03 .merit3item {
+          padding: 20px 35px; } }
+      section.sec03 .merit3item ul li {
+        padding: 20px 0;
+        border-bottom: 1px solid #dcdcdc;
+        font-size: 20px;
+        padding-left: 1em;
+        text-indent: -1em; }
+        @media screen and (max-width: 768px) {
+          section.sec03 .merit3item ul li {
+            font-size: 16px; } }
+        section.sec03 .merit3item ul li span.meriText01 {
+          font-size: 28px;
+          font-weight: 700; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .merit3item ul li span.meriText01 {
+              font-size: 20px; } }
+        section.sec03 .merit3item ul li span.meriText02 {
+          font-size: 14px; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .merit3item ul li span.meriText02 {
+              font-size: 12px;
+              display: block; } }
+        section.sec03 .merit3item ul li.one::before {
+          content: "1.";
+          color: #000;
+          font-size: 30px;
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .merit3item ul li.one::before {
+              font-size: 22px; } }
+        section.sec03 .merit3item ul li.two::before {
+          content: "2.";
+          color: #000;
+          font-size: 30px;
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .merit3item ul li.two::before {
+              font-size: 22px; } }
+        section.sec03 .merit3item ul li.three::before {
+          content: "3.";
+          color: #000;
+          font-size: 30px;
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec03 .merit3item ul li.three::before {
+              font-size: 22px; } }
+  section.sec04 .planTtl {
+    font-size: 24px;
+    background: #000;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    margin: 0 0 28px;
+    padding: 35px 0 !important;
+    width: 100%;
+    text-align: center;
+    line-height: 1.3 !important; }
+    @media screen and (max-width: 768px) {
+      section.sec04 .planTtl {
+        font-size: 18px;
+        width: 100%;
+        padding: 20px 0 !important; } }
+    section.sec04 .planTtl:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -13px;
+      border: 13px solid transparent;
+      border-top: 13px solid #000; }
+    section.sec04 .planTtl p {
+      margin: 0;
+      padding: 0; }
+      section.sec04 .planTtl p span {
+        font-weight: 700; }
+  section.sec04 .type {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: 0 auto;
+    flex-wrap: wrap; }
+    section.sec04 .type .cntBox {
+      width: 45.5%;
+      margin-bottom: 40px;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        section.sec04 .type .cntBox {
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 28px; } }
+      section.sec04 .type .cntBox h3, section.sec04 .type .cntBox p {
+        text-align: left;
+        font-size: 14px;
+        line-height: 1.8; }
+        @media screen and (max-width: 768px) {
+          section.sec04 .type .cntBox h3, section.sec04 .type .cntBox p {
+            font-size: 13px; } }
+      section.sec04 .type .cntBox h3 {
+        font-weight: 700;
+        margin: 20px 0 5px 0; }
+        @media screen and (max-width: 768px) {
+          section.sec04 .type .cntBox h3 {
+            margin: 10px 0 3px 0; } }
+  section.mapArea {
+    margin: 60px auto !important;
+    width: 770px; }
+    @media screen and (max-width: 768px) {
+      section.mapArea {
+        width: 94%;
+        margin: 0 auto; } }
+
+.btnContact {
+  width: 900px;
+  margin: 0 auto 30px auto;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: -webkit- flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .btnContact {
+      display: block;
+      width: 80%; } }
+  .btnContact .tel {
+    width: 48%;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0.1em; }
+    @media screen and (max-width: 768px) {
+      .btnContact .tel {
+        width: 100%; } }
+    .btnContact .tel span {
+      display: block; }
+      .btnContact .tel span.num {
+        color: #e41d3a;
+        font-size: 210%;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.01em; }
+        .btnContact .tel span.num:before {
+          content: '';
+          /*何も入れない*/
+          display: inline-block;
+          /*忘れずに！*/
+          width: 30px;
+          /*画像の幅*/
+          height: 30px;
+          /*画像の高さ*/
+          background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+          padding-left: 5px; }
+      .btnContact .tel span.note {
+        font-size: 76%; }
+  .btnContact .link {
+    width: 50%;
+    margin: 0; }
+    @media screen and (max-width: 768px) {
+      .btnContact .link {
+        margin-top: 15px;
+        width: 100%; } }
+    .btnContact .link a.btn_con {
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 18px 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      background: #46c1be;
+      border-radius: 60px;
+      -webkit-border-radius: 60px; }
+      @media screen and (max-width: 768px) {
+        .btnContact .link a.btn_con {
+          width: 100%;
+          font-size: 22px;
+          line-height: 1.3;
+          padding: 15px 40px; } }
+      .btnContact .link a.btn_con:before, .btnContact .link a.btn_con:after {
+        content: "";
+        position: absolute;
+        top: 50%; }
+      .btnContact .link a.btn_con:before {
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0;
+        background: #fff;
+        border-radius: 60px;
+        -webkit-border-radius: 60px; }
+        @media screen and (max-width: 768px) {
+          .btnContact .link a.btn_con:before {
+            width: 36px;
+            height: 36px;
+            margin: -18px 0 0; } }
+      .btnContact .link a.btn_con:after {
+        right: 28px;
+        width: 13px;
+        height: 13px;
+        margin: -10px 0 0;
+        border-top: solid 5px #46c1be;
+        border-right: solid 5px #46c1be;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); }
+        @media screen and (max-width: 768px) {
+          .btnContact .link a.btn_con:after {
+            right: 27px;
+            width: 12px;
+            height: 12px;
+            margin: -8px 0 0; } }
+
+.mgT50 {
+  margin-top: 50px; }
+  @media screen and (max-width: 768px) {
+    .mgT50 {
+      margin-top: 25px; } }
+
+.map_area0601 {
+  margin: 60px auto !important; }
+  .map_area0601 h1 {
+    text-align: left; }
+  .map_area0601 .mgR16 {
+    margin-right: 16px !important; }

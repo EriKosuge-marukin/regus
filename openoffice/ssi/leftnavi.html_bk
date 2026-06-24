@@ -1,0 +1,238 @@
+<div id="sideNav">
+
+<dl id="sideLink">
+    <dt class="officeTop"><a href="/company_infomation/outline.html">オープンオフィス一覧</a></dt>
+<dd class="officeTop">
+<dl>
+<dt>青山周辺オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/chojamaru/">南青山</a></li>
+<li><a href="/openoffice/centre/">青山セントラル</a></li>
+<li><a href="/openoffice/nogizaka/">乃木坂/青山一丁目</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>赤坂オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/akasaka/">赤坂ビジネスプレイス</a></li>
+<li><a href="/openoffice/mitsuke/">赤坂見附</a></li>
+<li><a href="/openoffice/tameike-sanno/">溜池山王/虎ノ門</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>麻布十番オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/azabu/">麻布十番</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>日本橋オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/nihonbashi/">日本橋セントラル</a></li>
+<li><a href="/openoffice/hakozaki/">日本橋箱崎</a></li>
+</ul>
+</dd></dl>
+<dl><dt>渋谷オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/hills/">渋谷hills</a></li>
+<li><a href="/openoffice/shibuyajinnan/">渋谷神南</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>大崎オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/osakieki/">大崎駅西口</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>五反田オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/gotandaekinishi/">五反田駅西口</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>新宿オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/nishishinjyukuekimae/">西新宿駅前</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>池袋オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/ikebukuro/">池袋</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>神保町オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/jinbocho/">神保町</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>新橋オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/nishishinbashi/">西新橋</a></li>
+<li><a href="/openoffice/daimonekimae/">大門駅前</a></li>
+
+</ul>
+</dd></dl>
+<dl>
+<dt>立川オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/tachikawa/">立川駅南</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>北海道オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/sapporo-minami/">札幌南</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>仙台オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/sendai/">仙台青葉通り</a></li>
+<li><a href="/openoffice/sendaiekimae/">仙台駅前</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>大宮オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/omiyaekinishi/">大宮駅西口</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>神奈川オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/kinkoucho/">横浜金港町</a></li>
+<li><a href="/openoffice/honatsugi/">本厚木駅前</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>水戸オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/mito/">水戸</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>新潟オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/niigata/">新潟</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>名古屋・愛知オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/nagoyamarunouchi/">名古屋丸の内</a></li>
+<li><a href="/openoffice/nagoya/">名古屋伏見</a></li>
+<li><a href="/openoffice/meiekiminami/">名駅南</a></li>
+<li><a href="/openoffice/kariya/">刈谷</a></li>
+<li><a href="/openoffice/toyota/">豊田</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>京都オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/kyoto-karasuma/">京都烏丸</a></li>
+<li><a href="/openoffice/kyoto-kawaramachi-oike/">京都河原町御池</a></li>
+</ul>
+</dd></dl>
+<dl><dt>大阪オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/midosuji/">御堂筋</a></li>
+<li><a href="/openoffice/shinosakakita/">新大阪北</a></li>
+<li><a href="/openoffice/keihan-yodoyabashi/">京阪淀屋橋</a></li>
+	<li><a href="/openoffice/osaka-hiranomachi/">大阪平野町</a></li>
+<li><a href="/openoffice/osaka-higobashi/">大阪肥後橋</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>神戸オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/kobesannomiya/">神戸三宮南</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>広島オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/hiroshimaootemachi/">広島大手町</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>高松オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/takamatsu/">高松</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>福岡オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/hakata-ekimae/">博多駅前通り</a></li>
+<li><a href="/openoffice/kokura/">小倉</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>大分オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/ooita/">大分</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>熊本オフィス</dt>
+<dd>
+<ul>
+<li><a href="/openoffice/kumamotoginzadori/">熊本銀座通り</a></li>
+</ul>
+</dd></dl>
+<dl>
+<dt>その他</dt>
+<dd>
+<ul>
+<li><a data-target="con1" class="modal-open">バーチャルオフィス</a></li>
+<li><a href="/clubhouse/">クラブハウス会議室 青山</a></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="company_ttl">Company Info</dt>
+<dd class="company">
+<ul>
+<li><a href="/company_infomation/outline.html">会社概要</a></li>
+</ul>
+</dd>
+</dl>
+
+</div>
+<div id="con1" class="modal-content"><div class="in"><p class="mgB10"><img src="/images/modal_logo.gif" alt="logo"></p>
+    <div class="ininin">
+    <p class="mgB20">オープンオフィスは世界120ヶ国3000拠点に展開するリージャスグループのレンタルオフィスです。<br>
+オープンオフィスだけでリージャスのバーチャルオフィスもご利用頂けます。 </p><p>詳細はこちら&rarr; <a href="https://www.regus-office.jp/service/virtualoffice/" target="_self">バーチャルオフィスを見る</a></p>
+　</div>　　　　　　　　　　　　　　　
+<p class="txaC inclose"><a class="modal-close">×　閉じる</a></p>
+</div></div>

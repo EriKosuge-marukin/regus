@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<!--#include virtual="/openoffice/ssi/headtagmanager.html" -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="follow,index">
+<meta name="google-site-verification" content="oWvuR9gprE2qJLA_WMJdA8obyCAcYBEACdGWM0gWcIs" />
+<title>全国の個室レンタルオフィスをお探しなら【オープンオフィス】</title>
+<meta name="description" content="レンタルオフィスをお探しならオープンオフィス。初期費用からランニングコストまで簡単見積もり。そのままインターネットで契約可能。オープンオフィスのレンタルオフィスは【入会金なし】【24時間利用】【完全個室】なので安心してご利用頂けます。">
+<meta name="keywords" content="レンタルオフィス,東京,大阪,個室,オープンオフィス">
+<meta name="format-detection" content="telephone=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/openoffice/sp/index/js/flickity.pkgd.js"></script>
+<link rel="stylesheet" type="text/css" href="/openoffice/sp/index/css/flickity.css" media="screen" />
+<!-- link rel="stylesheet" type="text/css" href="/openoffice/sp/index/css/slick-theme.css" media="screen" /-->
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+<link href="/openoffice/sp/common/css/normalize.css" rel="stylesheet" type="text/css">
+<link href="/openoffice/sp/common/css/common_layout.css" rel="stylesheet" type="text/css">
+<link href="/openoffice/sp/index/css/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="drawer drawer--top">
+	<!--#include virtual="/openoffice/sp/common/include/tag_top.html"-->
+	<!--#include virtual="/openoffice/sp/common/include/header.html"-->
+	<div id="wrapper" class="pd40">
+<h1 style="font-size: 20px;margin: 30px 0 15px 0;">ページが見つかりません。</h1>
+<p class="mgT20 mgB20">申し訳ございませんが、お探しのページが見つかりませんでした。</p>
+<p class="english">404 File Not Found<br>The requested URL was not found on this server.</p>
+<p class="mgT20 mgB20">ご用件のある方は平日9時から18時の間に Tel.0120-974-685 までお電話下さい。</p>
+<div class="mgT25 mgB25"><a href="/openoffice/sp/">オープンオフィストップへ戻る</a></div>
+
+		<div class="contact">
+			<a href="/openoffice/sp/form/form.php">
+				<img src="/openoffice/sp/common/img/contact.jpg" alt="">
+			</a>
+		</div>
+		<div class="fb">
+			<a href="https://www.facebook.com/openoffice.jp"><img src="index/img/facebook.gif" alt="オープンオフィスのFacebook"></a>
+		</div>	
+	</div>
+	<!--#include virtual="/openoffice/sp/common/include/footer.html"-->
+	<!--#include virtual="/openoffice/sp/common/include/tag_btm.html"-->
+
+           
+    
+    
+    
+    
+
+    
+
+    
+<script>
+    $(function(){
+		$('.ttl_area').each(function(){
+			if($(this).next().css("display") == "flex"){
+				$(this).children('.area_txt').css("background","url(/sp/common/img/minus.gif) no-repeat top right / contain");
+			}else{
+				$(this).children('.area_txt').css("background","url(/sp/common/img/plus.gif) no-repeat top right / contain");
+			}	
+		});
+	
+		$('.ttl_area').click(function(){
+			if($(this).next().css("display") == "flex"){
+				$(this).next().slideUp();
+				$(this).children('.area_txt').css("background","url(/sp/common/img/plus.gif) no-repeat top right / contain");
+			}else{
+				$(this).next().slideDown();
+				$(this).children('.area_txt').css("background","url(/sp/common/img/minus.gif) no-repeat top right / contain");
+			}
+		});
+    });
+			
+	$(function() {
+		$('.carousel').flickity({
+			prevNextButtons: false,
+			pageDots: false,
+			wrapAround: true,
+			autoPlay: 2800,
+		}); 
+	});
+/*MODA WINDOW-----*/
+$(function(){
+	$('.js-modalB-open').on('click',function(){
+		$('.js-modalB').fadeIn();
+		return false;
+	});
+	$('.js-modalB-close').on('click',function(){
+		$('.js-modalB').fadeOut();
+		return false;
+	});	
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import 'mixin';
+
+.wrapper {
+    width: 98%;
+    max-width: 1200px;
+    @include break{ 
+        width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    }
+    .contentsWrap{
+        margin: 10px 0 0;
+        @include break{padding: 0 4%;}
+        .contents{
+            width: 100%;
+        
+            @include break{width:100%;}
+            
+            .search2{
+                width: 100%;
+               
+            }//search2
+            .otherArea{
+                .map_area{
+                    margin: 0 auto;
+                }
+            }//otherAre
+            
+        }//contents
+    }
+}
+
+
+

@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+
+a, dl,dt,dd,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+}
+ol,ul,li {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	list-style:none;
+}
+fieldset,img{ 
+	margin: 0px;
+	padding: 0px;
+	border:0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show;
+}
+caption,th{
+	text-align:left;
+}
+address {
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	font-style:normal;
+}

@@ -1,0 +1,39 @@
+<div class="contact_chase">
+    <p class="txt_service_provide">個室・デスク単位・バーチャルなど豊富なサービス提供</p>
+<ul>
+<li><a href="/openoffice/form/form.php" target="_blank" class="imgov">
+<img src="/openoffice/sp/common/img/fix_contact_btn_a.png" alt="メールでのお問い合わせは今すぐ" >
+</a></li>
+<li class="greenBTN">
+    <a href="/openoffice/form_resp/form.php" target="_blank" class="imgov"><div class=" contact_baloon"><img src="/openoffice/sp/common/img//office_contact_btn02_baloon.png"></div>
+  <img src="/openoffice/sp/common/img/fix_contact_btn_b.png" alt="空室・金額を確認する" >
+</a>
+</li>
+</ul>
+    
+</div>
+
+<script type="text/javascript" src="/openoffice/script/jquery.min.js"></script>
+<script>
+$(function () {
+  var btn = $('.contact_chase');
+  var footer = $('footer');
+
+  $(window).on('load scroll resize', function () {
+    var scrollTop = $(this).scrollTop();
+    var windowHeight = $(this).height();
+    var documentHeight = $(document).height();
+    var footerTop = footer.offset().top;
+
+    var triggerHide = footerTop - 50; // フッターの上端 -50px
+
+    if (scrollTop > 100 && scrollTop + windowHeight < triggerHide) {
+      btn.addClass('active');
+    } else {
+      btn.removeClass('active');
+    }
+  });
+});
+
+
+</script>

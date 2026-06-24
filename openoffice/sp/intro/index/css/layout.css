@@ -1,0 +1,80 @@
+#wrapper .ttl {
+  padding-top: 50px;
+  margin-bottom: 20px; }
+  #wrapper .ttl h1 {
+    background: url(/sp/openoffice/common/img/kv_bg_2.png) right center no-repeat, url(/sp/openoffice/common/img/kv_bg.gif) top center no-repeat;
+    -webkit-background-size: contain, cover;
+    -moz-background-size: contain, cover;
+    -ms-background-size: contain, cover;
+    background-size: contain, cover;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004c80;
+    padding: 25px 5%;
+    line-height: 1.4; }
+    #wrapper .ttl h1 span {
+      font-size: 17px;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #004c80; }
+#wrapper .inner {
+  padding: 0 3.5%;
+  margin-bottom: 35px; }
+  #wrapper .inner h2.bl {
+    display: inline-block;
+    width: 100%;
+    background: url(/sp/common/img/ttl_bl.gif) top left repeat-y #0097d6;
+    -webkit-background-size: 450px;
+    -moz-background-size: 450px;
+    -ms-background-size: 450px;
+    background-size: 450px;
+    padding: 15px 3.5% 15px 6%;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    #wrapper .inner h2.bl + p {
+      margin-bottom: 20px; }
+  #wrapper .inner h3 {
+    padding: 15px 3%;
+    margin-bottom: 20px;
+    background: #EDF6FB;
+    text-align: left;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: bold; }
+  #wrapper .inner p {
+    font-size: 12px;
+    font-size: 1.2rem; }
+    #wrapper .inner p span.bold {
+      font-weight: bold; }
+    #wrapper .inner p span.blue {
+      font-weight: bold;
+      color: #0084ef; }
+    #wrapper .inner p.note {
+      color: #f00; }
+  #wrapper .inner .img {
+    width: 100%;
+    margin: 15px 0 35px;
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: -webkit- space-between;
+    justify-content: space-between; }
+    #wrapper .inner .img > div {
+      width: 49%; }
+      #wrapper .inner .img > div img {
+        width: 100%; }
+
+.page-top {
+  display: none; }
+
+/*# sourceMappingURL=layout.css.map */

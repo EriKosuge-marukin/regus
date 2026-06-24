@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+.bgRred {
+  background-color: #e00133;
+  padding: 50px 0 5px 0; }
+  @media screen and (max-width: 768px) {
+    .bgRred {
+      padding: 5px 0 20px 0; } }
+
+.pc {
+  display: block; }
+  @media screen and (max-width: 768px) {
+    .pc {
+      display: none; } }
+
+.sp {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .sp {
+      display: block; } }
+
+section {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto 80px auto; }
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto 58px; } }
+  section.sec404 {
+    margin: 0 auto 100px auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec404 {
+        width: 100%;
+        display: block;
+        margin: 20px auto 30px auto; } }
+    section.sec404 .cntWrap404 {
+      text-align: center;
+      margin: 0 auto 80px auto; }
+      @media screen and (max-width: 768px) {
+        section.sec404 .cntWrap404 {
+          width: 100%;
+          margin: 0 auto 30px; } }
+      section.sec404 .cntWrap404 .h1404 {
+        color: #ffffff;
+        margin-top: 0px;
+        font-weight: bold;
+        /*color: #E81313;*/
+        font-size: 8rem;
+        letter-spacing: 0.1em;
+        line-height: 1.1;
+        font-family: "Noto Sans JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal; }
+        @media screen and (max-width: 768px) {
+          section.sec404 .cntWrap404 .h1404 {
+            font-size: 7rem;
+            letter-spacing: 0.1em; } }
+        section.sec404 .cntWrap404 .h1404 span {
+          display: block;
+          font-weight: 400;
+          font-style: normal;
+          color: #ffffff;
+          font-size: 1.3rem;
+          letter-spacing: 0.3em;
+          line-height: 1.2; }
+          @media screen and (max-width: 768px) {
+            section.sec404 .cntWrap404 .h1404 span {
+              font-size: 1rem; } }
+      section.sec404 .cntWrap404 .img4004 {
+        text-align: center;
+        margin: 30px auto 20px auto;
+        width: 10%; }
+        @media screen and (max-width: 768px) {
+          section.sec404 .cntWrap404 .img4004 {
+            width: 15%;
+            margin: 15px auto 20px auto; } }
+      section.sec404 .cntWrap404 .notFound {
+        color: #fff;
+        font-size: 1.7rem;
+        margin: 0 auto 20px auto;
+        font-weight: 400;
+        line-height: 1.4; }
+        @media screen and (max-width: 768px) {
+          section.sec404 .cntWrap404 .notFound {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0 auto 10px auto;
+            width: 90%;
+            text-align: left; } }
+      section.sec404 .cntWrap404 .notFoundmedium {
+        color: #fff;
+        font-size: 1.3rem;
+        margin: 0 auto 30px auto;
+        font-weight: 400;
+        line-height: 1.4; }
+        @media screen and (max-width: 768px) {
+          section.sec404 .cntWrap404 .notFoundmedium {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin: 0 auto 20px auto;
+            width: 90%;
+            text-align: left; } }
+      section.sec404 .cntWrap404 .notFoundsmall {
+        color: #fff;
+        font-size: 1rem;
+        margin: 50px auto 10px auto; }
+        @media screen and (max-width: 768px) {
+          section.sec404 .cntWrap404 .notFoundsmall {
+            margin: 25px auto 10px auto;
+            text-align: left;
+            width: 80%;
+            font-size: 0.8rem; } }
+      section.sec404 .cntWrap404 .button a {
+        background: #eee;
+        border-radius: 9999px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        max-width: 250px;
+        padding: 10px 25px;
+        text-decoration: none;
+        color: #e00133;
+        line-height: 1.8;
+        transition: 0.3s ease-in-out;
+        font-weight: 400; }
+        @media screen and (max-width: 768px) {
+          section.sec404 .cntWrap404 .button a {
+            margin-bottom: 60px; } }
+      section.sec404 .cntWrap404 .button a:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        right: 2rem;
+        font-size: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s;
+        width: 6px;
+        height: 6px;
+        border-top: solid 2px currentColor;
+        border-right: solid 2px currentColor;
+        transform: translateY(-50%) rotate(45deg); }
+      section.sec404 .cntWrap404 .button a:hover {
+        /*background: #333;
+        color: #FFF;*/ }
+      section.sec404 .cntWrap404 .button a:hover:after {
+        right: 2rem; }

@@ -1,0 +1,249 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px; } }
+  .main_contents * {
+    box-sizing: border-box; }
+
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: .8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+section {
+  max-width: 900px;
+  width: 98%;
+  margin: 0 auto 80px auto; }
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto 58px; } }
+  section.sec01 {
+    /*display: flex;
+       justify-content: center;*/
+    margin: 0 auto 50px auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec01 {
+        width: 100%;
+        display: block;
+        margin: 0 auto 30px auto; } }
+  section.sec02 {
+    /*display: flex;
+       justify-content: center;*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      section.sec02 {
+        width: 100%;
+        display: block; } }
+    section.sec02 .ttlBar {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      background: #000;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 768px) {
+        section.sec02 .ttlBar img {
+          width: 80%; } }
+    section.sec02 ul.office {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0 0 0;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 768px) {
+        section.sec02 ul.office {
+          margin: 10px 0 0 0; } }
+      section.sec02 ul.office li {
+        width: 33%;
+        margin-bottom: 20px; }
+        @media screen and (max-width: 768px) {
+          section.sec02 ul.office li {
+            width: 47%;
+            margin-bottom: 14px; } }
+    section.sec02 ul.officeOne {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      margin: 20px auto 0;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 768px) {
+        section.sec02 ul.officeOne {
+          width: 95%;
+          margin: 10px auto 0; } }
+      section.sec02 ul.officeOne li {
+        width: 31%;
+        margin-bottom: 25px;
+        margin-right: 3.5%; }
+        section.sec02 ul.officeOne li:nth-child(3n) {
+          margin-right: 0; }
+        @media screen and (max-width: 768px) {
+          section.sec02 ul.officeOne li {
+            width: 48%;
+            margin-bottom: 18px;
+            margin-right: 4%; }
+            section.sec02 ul.officeOne li:nth-child(3n) {
+              margin-right: 4%; }
+            section.sec02 ul.officeOne li:nth-child(2n) {
+              margin-right: 0%; } }
+        section.sec02 ul.officeOne li dl {
+          margin-top: 5px; }
+          section.sec02 ul.officeOne li dl dt {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px; }
+            @media screen and (max-width: 768px) {
+              section.sec02 ul.officeOne li dl dt {
+                font-size: 14px;
+                line-height: 1.3; } }
+          section.sec02 ul.officeOne li dl dd {
+            font-size: 12px;
+            line-height: 1.3; }
+            @media screen and (max-width: 768px) {
+              section.sec02 ul.officeOne li dl dd {
+                font-size: 11px; } }
+            section.sec02 ul.officeOne li dl dd .bb {
+              margin-top: 3px;
+              font-weight: bold;
+              line-height: 1.2;
+              font-size: 90%; }
+
+.btnContact {
+  width: 900px;
+  margin: 0 auto 30px auto;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: -webkit- flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 768px) {
+    .btnContact {
+      display: block;
+      width: 80%; } }
+  .btnContact .tel {
+    width: 48%;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0.1em; }
+    @media screen and (max-width: 768px) {
+      .btnContact .tel {
+        width: 100%; } }
+    .btnContact .tel span {
+      display: block; }
+      .btnContact .tel span.num {
+        color: #e41d3a;
+        font-size: 210%;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.01em; }
+        .btnContact .tel span.num:before {
+          content: '';
+          /*何も入れない*/
+          display: inline-block;
+          /*忘れずに！*/
+          width: 30px;
+          /*画像の幅*/
+          height: 30px;
+          /*画像の高さ*/
+          background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+          padding-left: 5px; }
+      .btnContact .tel span.note {
+        font-size: 76%; }
+  .btnContact .link {
+    width: 50%;
+    margin: 0; }
+    @media screen and (max-width: 768px) {
+      .btnContact .link {
+        margin-top: 15px;
+        width: 100%; } }
+    .btnContact .link a.btn_con {
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 18px 0;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      background: #46c1be;
+      border-radius: 60px;
+      -webkit-border-radius: 60px; }
+      @media screen and (max-width: 768px) {
+        .btnContact .link a.btn_con {
+          width: 100%;
+          font-size: 22px;
+          line-height: 1.3;
+          padding: 15px 40px; } }
+      .btnContact .link a.btn_con:before, .btnContact .link a.btn_con:after {
+        content: "";
+        position: absolute;
+        top: 50%; }
+      .btnContact .link a.btn_con:before {
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0;
+        background: #fff;
+        border-radius: 60px;
+        -webkit-border-radius: 60px; }
+        @media screen and (max-width: 768px) {
+          .btnContact .link a.btn_con:before {
+            width: 36px;
+            height: 36px;
+            margin: -18px 0 0; } }
+      .btnContact .link a.btn_con:after {
+        right: 28px;
+        width: 13px;
+        height: 13px;
+        margin: -10px 0 0;
+        border-top: solid 5px #46c1be;
+        border-right: solid 5px #46c1be;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); }
+        @media screen and (max-width: 768px) {
+          .btnContact .link a.btn_con:after {
+            right: 27px;
+            width: 12px;
+            height: 12px;
+            margin: -8px 0 0; } }
+
+.mgT50 {
+  margin-top: 50px; }
+  @media screen and (max-width: 768px) {
+    .mgT50 {
+      margin-top: 25px; } }
+
+.map_area0601 {
+  margin: 60px auto !important; }
+  .map_area0601 h1 {
+    text-align: left; }

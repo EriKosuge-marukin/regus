@@ -1,0 +1,354 @@
+@charset "utf-8";
+@import 'mixin';
+$blue_02: #46c1be;
+$blue_01: #e6f2f2;
+
+.ov {
+	@include transition;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.pc {
+	@include break {
+		display: none;
+	}
+}
+
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+.main_contents {
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 16px;
+	@include break {
+		font-size: 14px;
+	}
+	* {
+		box-sizing: border-box;
+	}
+
+	p {
+		line-height: 1.8;
+		font-feature-settings: "pkna";
+		@include break {
+			line-height: 1.5;
+		}
+	}
+
+$color-green: #46c1be;
+$color-red: #e40037;
+section {
+	max-width: 770px;
+	width: 98%;
+	margin: 0 auto 80px auto;
+	@include break {
+		margin: 0 auto 58px;
+	}
+    img{width: 100%;}
+
+   &.sec01 {
+       margin: 0 auto 50px auto;
+           text-align: center;
+            @include break{width:100%;display: block;margin: 0 auto 20px auto;}
+        .mv{width: 100%;
+            /*padding:0 0 50px;
+            margin-bottom: 40px;*/
+            background: #fff;
+             @include break{ padding: 0  0 20px;margin-bottom: 20px;
+                 img{width: 100%;}
+            }
+            .logo{background: #fff;
+                text-align: center;
+                /*border: 1px solid #261d1b;*/
+                margin-bottom: 0px;
+            width: 100%;
+                img{
+                    width:65%;
+                    padding: 10px 0; @include break{width:90%;}
+                }
+            }
+            .catch{background: #261d1b;
+                margin: 0 auto;
+                padding: 20px 0 0 0;
+                @include break{padding: 2px 0 0 0;}
+            h1{font-size: 50px;
+                line-height: 1.2;
+                
+                color: #fff;
+                font-weight: bold;
+                    @include break{font-size: 30px;margin-bottom: 0px;}
+                .ltext{font-size: 80px;font-weight: bold;@include break{font-size: 50px;}}
+                .ltext2{font-size: 70px;font-weight: bold;@include break{font-size: 30px;display:block;}}
+                .sub{font-size: 20px;
+                    display: block;
+                    font-weight: bold;
+                    margin: 8px 0 0 0;
+                     @include break{font-size: 16px; margin: 5px 0 0 0;}
+                }
+                }
+                }
+            .mvCon{
+                max-width: 1060px;
+                width: 92%;
+                color: #000;
+                margin: 50px auto 0 auto;
+                @include break{max-width: 100%;width: 92%; margin: 20px auto 0 auto;}
+                
+                h2{
+                    padding: 0;
+                    margin: 0 auto 20px 0;
+                    background: none;
+                    font-size: 38px;
+                    font-weight: 900;
+                    letter-spacing: 0.01em;
+                    @include break{font-size: 18px;margin: 0 auto 20px 0;line-height: 1.7 !important;padding-left: 0 !important;}
+                    span{color:#e00133;display: block;font-weight: 900;letter-spacing: 0.01em;}
+                }
+                p{text-align: left;
+                    margin: 0 0 30px;
+                    font-size: 16px;
+                    line-height: 1.8;
+                    @include break{font-size: 14px;line-height: 1.7;margin: 0 0 16px;}
+                }
+                .tableWrap {
+                        margin: 0 auto;
+                    
+                    
+                     @include break{ 
+                       
+                          /*display: block;
+                          overflow-x: scroll;
+                          white-space: nowrap;*/
+                        }
+               
+                td, th{
+                      border: 1px solid #000;
+                      border-collapse: collapse;
+                    background: #fff;
+                    font-size: 20px;
+                    @include break{font-size: 16px;}
+                    
+                        .txtB{font-weight: bold;text-align: center;margin: 0;padding: 0;font-size: 20px;@include break{font-size: 16px;}}
+                       
+                    }
+                   th, td {
+                        text-align: center;
+                        min-width: 130px;
+                        padding: 10px;
+                        height: 60px; vertical-align: middle;
+                        color: #333;
+                        @include break{ min-width: 32%;}
+                      }  
+                     th {
+                      background: #eee;
+                        color: #333;
+                    }
+                }//tableWrap
+                   
+                
+                
+                
+                .kiyaku{
+                    border:1px #000 solid;
+                    width: 100%;
+                    margin: 35px 0 0 0;
+                    padding-bottom: 20px;
+                    
+                    p{text-align: center;margin:25px auto;font-weight: 900;font-size: 20px;@include break{margin: 20px auto;font-size: 16px;}}
+                    
+                    .innerA{
+                              width: 85%;
+                              margin: 0 auto;
+                        ul{display: table;
+                          text-align: left;
+                          margin-left: auto;
+                          margin-right: auto;
+                          list-style: none;
+                          padding: 0;
+                        
+                        li{list-style: none;
+                           line-height: 1.6;
+                        text-align: left;
+                          text-indent: -1.3em;
+                          padding-left: 1.3em;
+                          margin: 0;
+                            margin-bottom: 8px;
+                        font-size: 13px;
+                        color: #000;
+                        @include break{width: 90%; margin: 10px auto;font-size: 11px;}
+                        }
+                    }//ul
+                    }//innserA
+                }
+            }//mvCo
+    }//mv
+       
+	}//_sec01
+}//_section
+	
+        .btn{
+            max-width:620px;
+    margin: 40px auto 0 auto;width: 100%;
+	text-align: center;
+    @include break {margin-top: 30px;width: 90%;}
+            img{width: 100%;}
+}
+        .telephone {
+  width: 100%;
+  margin: 30px auto 30px auto;text-align: center;
+    @include break { display: block;
+    margin: 20px auto 30px auto;
+    width: 90%;}
+    
+  .tel {
+    width: 48%;
+    margin: 0 auto 5px auto;
+    
+    font-size: 124%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+      @include break {width: 100%;}}
+   .num {
+        color: #e41d3a;
+        font-size: 200%;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.01em;
+          display: block;
+        @include break {font-size: 140%;}
+       // &:before {
+          //content: '';/*何も入れない*/
+          //display: inline-block;/*忘れずに！*/
+          //width: 37px;/*画像の幅*/
+          //height: 37px;/*画像の高さ*/
+          //background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+          //background-size: contain;
+          //vertical-align: middle;
+          //padding-left: 5px;
+        //}
+      }
+
+    .time{
+        font-size: 80%;text-align: center; display: block;
+      }
+    
+  
+
+    }//telephone
+}//main_contents
+
+.btnContact {
+	width:100% ;
+	margin: 0 auto 30px auto;
+	@include flex;
+	@include jc(space-between);
+	@include ai(flex-start);
+	@include fw(wrap);
+	@include break {
+		display: block;
+		width: 80%;
+	}//__break
+
+	.link{
+		width: 630px !important;
+		margin: 0 auto !important;
+		@include break {
+			margin-top: 15px;
+			width:100% !important;
+		}//__break
+		a{
+			&.btn_con {
+				text-align: center;
+				position: relative;
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 15px 0;
+				color: #fff;
+				font-size: 23px;
+				font-weight: normal !important;
+				text-decoration: none;
+				background:$blue_02;
+				border-radius: 60px;
+				-webkit-border-radius: 60px;
+				@include break {
+					width:100%;
+					font-size: 17px !important;
+					line-height: 1.3;
+					padding: 15px 40px;
+				}
+
+				&:before,&:after{
+					content: "";
+					position: absolute;
+					top: 50%;
+				}//__beforeAfter
+				&:before {
+					right: 15px;
+					width: 40px;
+					height:40px;
+					margin: -20px 0 0;
+					background:#fff;
+					border-radius: 60px;
+					-webkit-border-radius:60px;
+					@include break {
+						width: 36px;
+						height:36px;
+						margin: -18px 0 0;
+					}
+				}
+				&:after {
+					right: 28px;
+					width: 13px;
+					height: 13px;
+					margin: -10px 0 0;
+					border-top: solid 5px #46c1be;
+					border-right: solid 5px #46c1be;
+					transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
+					@include break {
+						right: 27px;
+						width: 12px;
+						height:12px;
+						margin: -8px 0 0;
+					}
+				}
+			}//_btn_con
+		}//_a
+	}//_link	
+}
+ul.officeOne {
+            width: 55%;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto 0;
+            flex-wrap: wrap;
+            @include break {   width: 85%;margin: 10px auto 0;}
+                li{
+                    width:100%;
+                    margin-bottom: 20px;
+				@include break {
+					margin-bottom: 14px;
+				}
+                    a{
+                        color: #333 !important;
+                        display: block;
+                        &:hover{opacity: 0.8;text-decoration: none;}
+                    dl{margin-top: 5px;
+                        dt{font-size: 18px;font-weight: bold;margin-bottom: 5px;
+                        @include break {font-size: 16px;line-height: 1.3;}
+                        }
+                        dd{font-size: 14px;
+                         @include break {font-size: 13px;}
+                        }
+                    }
+                        }//a
+                }//li
+			
+		
+        }//ul

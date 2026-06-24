@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+
+.contents{
+	position:relative;
+}
+.contents #areaTalk{
+margin-top:20px;
+}
+
+
+#areaTalk .twoTalk .atclContent .conTxt p.words{
+	font-size:95%;
+	line-height:1.8;
+	text-align:left;
+	margin:0 0 30px 0;
+	
+}
+#areaTalk .twoTalk .atclContent .conTxt p.personA{
+	font-size:80%;
+	display:inline-block;
+	width:35px;
+	padding:3px 3px;
+	text-align:center;
+	color:#fff;
+	background:#00c5c5;
+	float:left;
+	margin:0 20px 15px 0;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */  
+}
+#areaTalk .twoTalk .atclContent .conTxt p.personB{
+	font-size:80%;
+	display:inline-block;
+	width:35px;
+	padding:3px 3px;
+	text-align:center;
+	color:#fff;
+	background:#1d1f95;
+	float:left;
+	margin:0 20px 15px 0;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */  
+}
+
+
+#areaTalk .twoTalk .atclContent .conPic{
+	width:360px;
+	float:right;
+	margin:0 0 40px 25px;
+}
+#areaTalk .twoTalk .atclContent .conPic p{
+	margin:8px 0 0 0;
+	font-size:74%;
+	line-height:1.3;
+}
+.talkBtmPic{
+	overflow:hidden;
+	display:block;
+}
+.talkBtmPic .flL{
+	width:48%;
+	
+}
+
+.talkBtmPic .flR{
+	width:48%;
+}
+
+
+#areaTalk .twoTalk{
+	margin-bottom:40px;
+	
+}
+
+#areaTalk .twoTalk h2{
+	background:none ;
+	margin:0 0 15px 0;
+	padding:0;
+}
+@media screen and (min-width: 750px) {
+#areaTalk .twoTalk h2{
+	overflow:hidden;
+	font-size:140%;
+	line-height:1.4;
+	background:#f1f1f1;
+	border-width:1px 0 1px 0;
+	border-color:#ccc;
+	border-style:solid;
+	padding:35px 0;
+	text-align:center;
+}
+#areaTalk .twoTalk h2.talkimg{
+	overflow:hidden;
+	font-size:140%;
+	line-height:1.4;
+	background: none !important;
+	border: none !important;
+	padding:0;
+	text-align:center;
+}
+#areaTalk .twoTalk .atclContent{
+	clear:both;
+	overflow:hidden;
+	margin:32px 0 0 0;
+}
+#introTwoPerson{
+	padding:25px 10px;
+	overflow:hidden;
+	background:#fafafa;
+}
+#introTwoPerson p.personA{
+	font-size:80%;
+	display:inline-block;
+	width:35px;
+	padding:3px 3px;
+	text-align:center;
+	color:#fff;
+	background:#00c5c5;
+	float:left;
+	margin:0 20px 0 0;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */  
+}
+#introTwoPerson p.personB{
+	font-size:80%;
+	display:inline-block;
+	width:35px;
+	padding:3px 3px;
+	text-align:center;
+	color:#fff;
+	background:#1d1f95;
+	float:left;
+	margin:0 20px 0 0;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */  
+}
+#introTwoPerson p.personName{
+	float:left; width:300px;
+}
+
+}
+
+
+
+/*----SP-＾−−−−−−−−−−−−−−−＾---*/
+@media screen and (max-width: 750px) {
+
+.wrapper .contents {
+	width:100%;
+	float:none;
+	margin:0 2% 2% 0;
+}
+#areaTalk .twoTalk h2{
+	overflow:hidden;
+	font-size:120%;
+	line-height:1.4;
+	background:#f1f1f1;
+	border-width:1px 0 1px 0;
+	border-color:#ccc;
+	border-style:solid;
+	padding:15px 10px;
+	text-align:center;
+}
+
+#areaTalk .twoTalk .atclContent{
+	clear:both;
+	overflow:hidden;
+	margin:32px 0 0 0;
+}
+#introTwoPerson{
+	padding:10px 5px 0 5px;
+	overflow:hidden;
+	background:#fafafa;
+}
+#introTwoPerson p.personA{
+	font-size:80%;
+	display:inline-block;
+	width:15%;
+	padding:3px 3px;
+	text-align:center;
+	color:#fff;
+	background:#00c5c5;
+	float:left;
+	margin:0 5px 10px 0;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */  
+}
+#introTwoPerson p.personB{
+	font-size:80%;
+	display:inline-block;
+	width:15%;
+	padding:3px 3px;
+	text-align:center;
+	color:#fff;
+	background:#1d1f95;
+	float:left;
+	margin:0 5px 10px 0;
+	border-radius: 3px;        /* CSS3草案 */  
+    -webkit-border-radius: 3px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 3px;   /* Firefox用 */  
+}
+#introTwoPerson p.personName{
+	margin:0 15px 20px 0;
+}
+
+}
+/*170614追記_________________*/
+.talkBtmPlace{
+	overflow:hidden;
+	display:block;
+	margin:50px 0 0;
+}
+.talkBtmPlace .flL{
+	width:48%;
+	
+}
+
+.talkBtmPlace .flR{
+	width:48%;
+}
+.talkBtmPlace .flR2{
+	float:right;
+	width:48%;
+	margin:0 0 10px 10px;
+}
+.talkBtmPlace .placeBg{width:46%;
+	background:#efefef;
+	padding:10px;
+	margin:0 5px 10px 0;
+}
+@media screen and (max-width: 750px) {
+	.talkBtmPlace .placeBg{width:43%;
+	background:#efefef;
+	padding:10px;
+	font-size:12px;
+	}
+}
+.txtBold{
+	font-weight:bold;
+}

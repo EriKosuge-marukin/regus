@@ -1,0 +1,811 @@
+@charset "utf-8";
+@import 'mixin';
+
+
+.main_contents {
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 16px;
+    //width: 100%;
+	@include break {
+		font-size: 14px;
+	}
+	* {
+		box-sizing: border-box; 
+	}
+      
+}
+
+.ov {
+	@include transition;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.pc {
+	@include break {
+		display: none;
+	}
+}
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+
+
+p {
+	line-height: 1.8;
+	@include break {
+		line-height: 1.5;
+	}
+}
+
+
+
+
+.cntWrap {
+	@include flex;
+	@include jc(space-between);
+	@include ai(flex-start);
+	@include fw(wrap);
+	.cntBox {
+		img {
+			margin-bottom: 8px;
+		}
+		p {
+			line-height: 1.4;
+		}
+	}
+}
+
+
+.mv {
+	max-width: 1060px;
+	width: 100%;
+	margin: 0 auto 90px;
+	background: url(../images/mv.jpg) no-repeat center center / cover;
+	position: relative;
+	@include break {
+		margin: 5% auto 30px;
+        max-height: 360px;
+	}
+	&::after {
+		content: '';
+		display: block;
+		padding-top: 34%;
+		@include break {
+			padding-top: 50%;
+		}
+	}
+	h1 {
+		font-size: 26px;
+		font-weight: bold;
+		color: #000;
+		position: absolute;
+		bottom:20px;
+		left: 20px;
+        text-shadow:1px 1px 3px #fff;
+		@include break {
+			font-size: 22px;
+			line-height: 1.2;
+			bottom:5px;
+			left: 4px;text-shadow:1px 2px 1px #fff;
+		}
+        span{
+            
+        font-size: 18px;
+        font-weight: bold; @include break {font-size: 13px;line-height: 1;}
+        }//span
+	}//h1
+}
+$color-green: #46c1be;
+$color-red: #e40037;
+section {
+	max-width: 900px;
+	width: 94%;
+	margin: 0 auto 100px;
+	@include break {
+		margin: 0 auto 58px;
+	}
+
+
+    &.sec02 {
+         /*display: flex;
+            justify-content: center;*/
+            width: 680px;
+            margin: 0 auto;
+        text-align: left;
+            @include break{width:90%;display: block;}
+        
+        .first{
+            width: 100%;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0 auto 0 sauto;
+            position: relative;
+          display: inline-block;
+          margin-bottom: 1em;
+            @include break{ font-size: 20px !important;line-height: 1.4 !important;padding-left: 0 !important;}
+            &:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15px;/*線の上下位置*/
+  display: inline-block;
+  width: 60px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: black;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+}
+        }//first
+		dl.can{
+          display: flex;
+          flex-wrap: wrap;
+            font-size: 18px;
+            margin-top: 30px;
+            @include break{display: block;font-size: 16px; margin-top: 16px;}
+
+        dt {
+        font-weight: bold;
+         width:32%;margin-bottom: 50px; 
+            border: 1px solid $color-red; 
+            color: $color-red; 
+            padding: 5px;
+            border-radius: 25px;
+            text-align: center;
+            @include break{width:70%;padding-bottom: 3px;margin: 0 auto 15px auto;}
+}
+        dd {
+          width: 60%;padding-bottom: 40px;
+           padding-left: 20px;
+          @include break{width:100%;padding:0 0 35px 0;text-align: center;}
+           /* &:before{content: "   ・・・";
+                color: #858585;
+                @include break{display:none;}
+            }*/}
+	    }
+        dl.lang{
+            
+            dt{
+                width: 100%;font-size: 18px;font-weight: bold;
+                border: 1px solid $color-red; 
+            color: $color-red; 
+            padding: 7px 25px;
+            border-radius: 25px;
+               display: inline;
+               
+            @include break{font-size: 16px;display: block;width: 90%;margin: 0 auto;}
+            }
+            dd{width: 100%;font-size: 16px;
+                  margin-top: 15px;
+                 @include break{font-size: 14px;}
+                ul{margin: 20px 0 0 0;
+                    li{word-break: break-all;
+                        .imgP{padding: 5px 0 30px 15px; @include break{padding: 5px 0 30px 0px;}}
+                         .imgP2{@include break{padding: 5px 0 30px 0px;width: 50%;margin: 0 auto;}}
+                        margin-bottom: 10px;
+                        span{font-weight: bold;}
+                        a.reserve{color: #e40037 !important;
+                        text-decoration: underline!important;
+                            &:active,&:hover,&:visited{
+                                color: #e40037 !important;
+                        text-decoration: underline!important;}
+                        }}
+                }}//dd
+        }
+		.cntWrap {
+            　width: 100%;padding: 0 5%;
+            margin-bottom: 100px;
+            @include break {margin-bottom: 30px;}
+			.left {width:45%;
+				@include break {
+					margin-bottom: 14px;width: 100%;
+				}
+				h3 {
+					margin-bottom: 20px;
+					font-size: 24px;
+					font-weight: bold;
+					@include break {
+						text-align: center;
+						margin-bottom: 6px;
+						font-size: 20px;
+					}
+				}
+			}//left
+			.right {width:55%;
+				
+				text-align: right;
+				@include break {width: 100%;
+					text-align: center;
+				}
+			}//right
+            .left2 {width:42%;
+				padding: 0 30px 0 0;
+				text-align: right;
+				@include break {width: 100%;
+					text-align: center;padding: 0;
+				}
+			}//left2
+			.right2 {
+                width:58%;
+				@include break {
+					margin: 25px auto 14px auto;width: 100%;
+				}
+				h3 {
+					margin-bottom: 8px;
+					font-size: 24px;
+					font-weight: bold;
+					@include break {
+						text-align: center;
+						margin-bottom: 6px;
+						font-size: 18px;
+					}
+				}
+                .midB{
+                        @include flex;
+	                    @include jc(flex-start);
+	                    @include ai(flex-start);
+	                    @include fw(nowrap);
+                    @include break {display: block;}
+                    .leftB{width: 38%;margin-right: 34px;
+                        @include break {width: 80%;margin: 15px auto 0 auto;}}
+                    .rightB{width: 55%;
+                        @include break{width: 80%;margin: 15px auto 0 auto;}}
+                
+		}//midB
+            }//right2
+        .lst{ list-style:  none;      
+            margin:  0 0 0 12px;           
+            padding: 0;
+            li{
+            &::before{    content:  "";     
+            width:  9px;               
+            height:  9px;              
+            display:  inline-block;    
+            background-color: #e40037;  
+                border-radius:  50%;  
+                margin-right: 3px;
+                
+                
+            }}//li
+        }//lst
+        h4{ color: #e10034;
+            font-size: 18px;
+            font-weight: 400;
+    border: 1px solid #e10034;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    text-align: center;
+    line-height: 1;
+        padding: 4px 0;
+        margin-bottom: 10px;
+        
+        }//h4
+        }//cntWrap
+        .btnLink{
+    width: 330px;
+    margin-top: 30px;
+     @include break {width:100%;margin:20px auto 10px auto;}
+a{
+	
+	text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+ margin: 0 auto;
+  padding: 10px 0;
+  color: #fff;
+		font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+ 
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+	@include break {width:100%;
+		font-size: 14px;
+		line-height: 1.3;
+		padding: 15px 20px;
+		}
+	&:before,&:after{
+			content: "";
+  position: absolute;
+  top: 50%;
+		}//__beforeAfter
+&:before {
+  right: 10px;
+  width: 30px;
+  height:30px;
+  margin: -15px 0 0;
+  background:#fff;
+  border-radius: 60px;
+  -webkit-border-radius:60px;
+	@include break {
+		 width: 30px;
+  height:30px;
+  margin: -15px 0 0;
+	}
+}
+&:after {
+  right: 19px;
+  width: 10px;
+  height:10px;
+  margin: -7px 0 0;
+  border-top: solid 5px $color-green;
+  border-right: solid 5px $color-green;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	@include break {
+		right: 20px;
+  width: 12px;
+  height:12px;
+  margin: -8px 0 0;
+	}
+
+}
+
+&.btn_con {background:$color-green;}
+&.btn_my {background:$color-red;
+    &:after {border-top: solid 5px $color-red;
+  border-right: solid 5px $color-red;}
+    }//btn_my
+}//_a
+}//_btnLink
+	}//_sec01
+}//_section
+
+
+
+
+//my Regus
+ .myRegus {
+		margin: 100px auto 100px auto;
+		text-align: center;
+        @include break {margin: 40px auto 60px;}
+        .myRG{
+            width: auto;
+            text-align: center!important;
+            background: none !important;
+            font-size: 28px!important;
+         font-weight: bold;
+        border-bottom: #e40037 1px solid;
+        padding:0 0 3px 0;
+        display: inline-block;
+        margin: 0 auto 40px auto;
+            @include break{
+                width: 80%;
+                font-size: 22px !important;
+            line-height: 1!important;
+            margin: 0 auto 20px auto;
+            font-weight: bold;}
+            span{font-size: 18px; font-weight: normal;@include break{font-size: 14px;}}
+        }
+        .caseBox{
+            display: flex;
+            justify-content: center;
+            width: 680px;
+            margin: 0 auto;
+            @include break{width:85%;display: block;}
+            .caseL{
+                flex-basis: 340px;
+                margin-right: 15px;
+                text-align: left;
+                @include break{width: 100%;
+                    }
+                dl{margin-left: 70px;@include break{margin-left:0;}
+                    dt{
+                        border-radius: 20px;
+                        border:#e40037 1px solid;
+                        font-size: 16px;
+                    font-weight: bold;
+                        color:#e40037;
+                    display: inline-block;
+                    padding: 2px 17px;
+                    margin:30px 0  10px 0;
+                    @include break{
+                        display: block;
+                        width: 70%;
+                        text-align: center; margin:15px auto 10px auto;}
+                    }
+                     dd{
+                         ul{
+                        li{
+                            margin-bottom: 15px;
+                            &::before {
+                                content: '';
+                                display: inline-block;
+                                 background-image: url(/common2/images/myregus_img_02.gif);
+                                background-size: contain;
+                                 vertical-align: middle;
+                                  width: 10px;
+                              height: 10px;
+                                margin-right: 5px;
+}
+                        
+                    }//li
+                    }//ul
+                .caseBtn{
+                    width: 48%;
+                       margin-top: 15px; 
+                    @include break{width: 50%;margin:  14px auto;}
+                   
+                    
+                }
+                 
+                    }
+                }
+                
+                
+            }
+            .caseR{ flex-basis: 299px;
+                @include break{width: 50%;margin: 10px auto;}
+            }
+        }//_caseBox
+        .myRgUse{
+            width: 670px;
+            margin: 15px auto 0 auto;
+            background: #f3f4ef;
+            border-radius: 5px; 
+            padding-bottom: 5px;
+             @include break{width: 96%;margin: 10px auto;}
+            h3{background: #dbddcf;
+            padding: 13px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;}
+           .dLFrame{ 
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+               margin: 30px auto;
+               @include break{width: 100%; margin: 20px auto;}
+               .dL{
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                @include break{
+                    display: inline-block;
+                    width:85%;
+                    text-align:left; margin: 0 auto;
+                }
+                li{height:40px;
+                    line-height: 1;
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-left:1px #ccc solid;
+                    padding-left: 20px;
+                    //background: #fff;
+                    //border:1px #ccc solid;
+                    @include break{ border-left:none; padding-left: 0px;}
+                    &.bo{
+                        border-left:none;
+                        padding-left: 0px;
+                        margin-top: 0px;
+                        padding: 4px 20px 0 0;
+                        @include break{border:0;margin-right: 0px;padding: 4px 0 0 0;}
+                    }
+                    em{ display: inline-block;
+                    vertical-align: middle;
+                    margin-right:15px;
+                    }
+                    span{@include break{display: inline;}}
+                    img{display: inline-block;
+                    vertical-align: middle;
+                    height:40px;}
+                    .iconA{
+                         @include break{height:82%;width: inherit;margin-right: 0;padding-right: 0;}
+                    }
+                    .openWin{width: 15px;height:15px;}
+                }
+            }//_dL
+             }//_dLFrame
+            
+            .useM{a{background: #f3f4ef;//#46c1be;
+                border-radius: 25px;
+                border:1px #000 solid;
+                    display: block;
+                    width: 210px;
+                    color:#000;
+                    padding: 5px 25px;
+                font-weight: bold;
+                    text-decoration: none;
+                    margin:0 auto;
+                &:hover{background: #000; color:#fff;}
+                }
+            }//_useM
+            }//_myRgUse
+        
+    
+    }//_myRegus
+
+
+
+//ボタン 会議室を探す & My Regus
+.linkA{
+    width: 50%;
+	margin: 0 auto 120px auto;
+    @include flex;
+	@include jc(center);
+	@include ai(flex-start);
+	@include fw(nowrap);
+	@include break {
+        display: block;
+		margin: 0 auto 50px auto;
+		width:70%;
+	}//__break
+    p{
+        width: 48%;padding: 0 10px;
+        @include break {width:100%;margin: 0 auto 10px auto;}
+a{
+	
+	text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+ margin: 0 auto;
+  padding: 10px 0;
+  color: #fff;
+		font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+ 
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+	@include break {width:100%;
+		font-size: 14px;
+		line-height: 1.3;
+		padding: 15px 20px;
+		}
+	&:before,&:after{
+			content: "";
+  position: absolute;
+  top: 50%;
+		}//__beforeAfter
+&:before {
+  right: 10px;
+  width: 30px;
+  height:30px;
+  margin: -15px 0 0;
+  background:#fff;
+  border-radius: 60px;
+  -webkit-border-radius:60px;
+	@include break {
+		 width: 30px;
+  height:30px;
+  margin: -15px 0 0;
+	}
+}
+&:after {
+  right: 19px;
+  width: 10px;
+  height:10px;
+  margin: -7px 0 0;
+  border-top: solid 5px $color-green;
+  border-right: solid 5px $color-green;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	@include break {
+		right: 20px;
+  width: 12px;
+  height:12px;
+  margin: -8px 0 0;
+	}
+
+}
+
+&.btn_con {background:$color-green;}
+&.btn_my {background:$color-red;
+    &:after {border-top: solid 5px $color-red;
+  border-right: solid 5px $color-red;}
+    }//btn_my
+}//_a
+        }//p
+	}//_linkA
+
+//ページ下部CTA
+.btnContact {
+	width:900px;
+	margin: 0 auto 30px auto;
+	@include flex;
+	@include jc(space-between);
+	@include ai(flex-start);
+	@include fw(wrap);
+	@include break {
+		display: block;
+		width: 80%;
+	}//__break
+
+.tel{width: 48%;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	@include break {
+		width:100%;
+	}//__break
+	span{
+	display: block;
+	
+	&.num{color: #e41d3a;
+		font-size: 210%;
+		line-height: 1.4;
+	font-weight: bold;
+	letter-spacing: 0.01em;
+		&:before{
+				 content: '';/*何も入れない*/
+  display: inline-block;/*忘れずに！*/
+  width: 30px;/*画像の幅*/
+  height:30px;/*画像の高さ*/
+  background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+					padding-left:5px;
+				
+			}
+		}
+	&.note{font-size: 76%;
+			
+		}
+		}
+	
+	}//__tel
+.link{width: 50%;
+	margin: 0;
+	@include break {
+		margin-top: 15px;
+		width:100%;
+	}//__break
+a{
+	&.btn_con {
+		text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+ margin: 0 auto;
+  padding: 18px 0;
+  color: #fff;
+		font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  background:#46c1be;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+	@include break {width:100%;
+		font-size: 22px;
+		line-height: 1.3;
+		padding: 15px 40px;
+		}
+	&:before,&:after{
+			content: "";
+  position: absolute;
+  top: 50%;
+		}//__beforeAfter
+&:before {
+  right: 15px;
+  width: 40px;
+  height:40px;
+  margin: -20px 0 0;
+  background:#fff;
+  border-radius: 60px;
+  -webkit-border-radius:60px;
+	@include break {
+		 width: 36px;
+  height:36px;
+  margin: -18px 0 0;
+	}
+}
+&:after {
+  right: 28px;
+  width: 13px;
+  height: 13px;
+  margin: -10px 0 0;
+  border-top: solid 5px #46c1be;
+  border-right: solid 5px #46c1be;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+	@include break {
+		right: 27px;
+  width: 12px;
+  height:12px;
+  margin: -8px 0 0;
+	}
+}
+}//_btn_con
+}//_a
+	}//_link
+}
+
+
+
+.step{
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+     @include break {width: 80%;margin:20px auto 40px auto;display: block;}
+    li{width: 30%;
+        @include break {width: 100%;margin-bottom: 15px;}
+        .ttl{
+            span{color:$color-red;font-weight: bold;}
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            @include break{font-size: 16px;}
+            
+        }
+    }
+}
+
+//my Regus
+ .myDL {
+		margin: 100px auto 100px auto;
+     padding-top: 30px;
+		text-align: center;
+     background: #f1f1f1;
+        @include break {margin: 40px auto 60px;}
+
+        .how{
+            width:800px;
+            margin: 15px auto 0 auto;
+            display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+             @include break{width: 90%;margin: 10px auto;display: block;}
+           .dLF{ 
+               width: 40%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+               margin: 30px auto;
+               @include break{width: 100%; margin: 20px auto;}
+               .slTtl{font-size: 20px;
+               font-weight: bold;
+               margin-bottom: 10px;}
+               .slTxt{
+                   padding-bottom: 20px;
+                   a{color: $color-red;}
+               }
+               .dLLL{
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                @include break{
+                    display: inline-block;
+                    width:100%;
+                    text-align:center; margin: 0 auto;
+    
+                }
+                li{height:40px;
+                    line-height: 1;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-left: 20px;
+                    //background: #fff;
+                    //border:1px #ccc solid;
+                    @include break{width:100%; border-left:none; padding-left: 0px;margin-bottom: 10px;}
+                   
+                    
+                    img{display: inline-block;
+                    vertical-align:middle;
+                    height:40px;
+                        @include break{width: 45%;height: auto;}
+                        &.heightImg{@include break{height: 48px;width: auto;}}
+                    }//img
+                    
+                }
+            }//_dLLL
+             }//_dLFrame
+            
+            .rightIMG{
+               width:30%; @include break{width: 50%;margin: 10px auto;display: block;}
+            }//_rightIMG
+            }//_how
+        
+    
+    }//_myDL
+

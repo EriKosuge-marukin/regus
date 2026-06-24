@@ -1,0 +1,33 @@
+.wrapper {
+  width: 98%;
+  max-width: 1200px;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.wrapper .contentsWrap {
+  margin: 10px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .wrapper .contentsWrap {
+    padding: 0 4%;
+  }
+}
+.wrapper .contentsWrap .contents {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .wrapper .contentsWrap .contents {
+    width: 100%;
+  }
+}
+.wrapper .contentsWrap .contents .search2 {
+  width: 100%;
+}
+.wrapper .contentsWrap .contents .otherArea .map_area {
+  margin: 0 auto;
+}/*# sourceMappingURL=wide.css.map */

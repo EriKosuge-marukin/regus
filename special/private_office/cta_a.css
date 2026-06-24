@@ -1,0 +1,379 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+.cntWrap {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: -webkit- flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .cntWrap .cntBox img {
+    margin-bottom: 8px; }
+  .cntWrap .cntBox p {
+    line-height: 1.4; }
+
+section {
+  max-width: 1060px;
+  width: 94%;
+  margin: -50px auto 120px; }
+  @media screen and (max-width: 768px) {
+    section {
+      margin: -10px auto 58px; } }
+  section img {
+    width: auto !important; }
+  section.sec01 h2 {
+    margin-bottom: 20px; }
+  section.sec01 > p {
+    max-width: 760px;
+    width: 92%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      section.sec01 > p {
+        margin-bottom: 16px; } }
+  section.sec01 .btn {
+    margin: 30px 0 100px; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .btn {
+        margin-bottom: 54px; } }
+  section.sec01 .cntWrap > p {
+    width: 47%; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .cntWrap > p {
+        width: 100%;
+        margin-bottom: 8px; } }
+  section.sec01 .cntWrap .left {
+    width: 41%; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .cntWrap .left {
+        width: 100%;
+        margin-bottom: 14px; } }
+    section.sec01 .cntWrap .left h3 {
+      margin-bottom: 8px;
+      font-size: 24px;
+      font-weight: bold; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .cntWrap .left h3 {
+          width: 100%;
+          margin-bottom: 6px;
+          font-size: 18px; } }
+  section.sec01 .cntWrap .right {
+    width: 53%;
+    padding: 0 2%;
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      section.sec01 .cntWrap .right {
+        width: 100%;
+        text-align: center; } }
+  section.sec02 {
+    margin-bottom: 60px; }
+    @media screen and (max-width: 768px) {
+      section.sec02 {
+        margin-bottom: 30px; } }
+    section.sec02 h2 {
+      margin-bottom: 35px; }
+      @media screen and (max-width: 768px) {
+        section.sec02 h2 {
+          margin-bottom: 20px; } }
+    section.sec02 .cntWrap {
+      margin-bottom: 35px; }
+      @media screen and (max-width: 768px) {
+        section.sec02 .cntWrap {
+          margin-bottom: 0; } }
+      section.sec02 .cntWrap .cntBox {
+        width: 30%;
+        margin-bottom: 26px;
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          section.sec02 .cntWrap .cntBox {
+            width: 48%; }
+            section.sec02 .cntWrap .cntBox:not(:nth-last-of-type(1)) {
+              margin-bottom: 28px; } }
+        section.sec02 .cntWrap .cntBox h3 {
+          margin: 10px 0;
+          font-size: 16px;
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec02 .cntWrap .cntBox h3 {
+              margin: 4px 0 8px; } }
+        section.sec02 .cntWrap .cntBox p {
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec02 .cntWrap .cntBox p {
+              text-align: left; } }
+  section.sec01-240717 h2 {
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      section.sec01-240717 h2 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px; } }
+  section.sec01-240717 .lead_txt {
+    max-width: 680px;
+    width: 80%;
+    margin: 35px auto 70px auto; }
+    @media screen and (max-width: 768px) {
+      section.sec01-240717 .lead_txt {
+        width: 96%;
+        margin: 10px auto 30px auto; } }
+    section.sec01-240717 .lead_txt .break_top {
+      margin-top: 15px; }
+      @media screen and (max-width: 768px) {
+        section.sec01-240717 .lead_txt .break_top {
+          margin-top: 10px; } }
+  section.sec01-240717 .cntWrap {
+    margin-bottom: 35px; }
+    @media screen and (max-width: 768px) {
+      section.sec01-240717 .cntWrap {
+        margin-bottom: 0; } }
+    section.sec01-240717 .cntWrap .explains {
+      display: flex;
+      justify-content: flex-start; }
+      @media screen and (max-width: 768px) {
+        section.sec01-240717 .cntWrap .explains {
+          display: block; } }
+      section.sec01-240717 .cntWrap .explains .ttl_left {
+        width: 27%; }
+        @media screen and (max-width: 768px) {
+          section.sec01-240717 .cntWrap .explains .ttl_left {
+            width: 96%; } }
+        section.sec01-240717 .cntWrap .explains .ttl_left .ttl_left_h3 {
+          font-size: clamp(20px, 2.5vw, 30px);
+          line-height: 1.3;
+          font-weight: bold; }
+          @media screen and (max-width: 768px) {
+            section.sec01-240717 .cntWrap .explains .ttl_left .ttl_left_h3 {
+              text-align: center;
+              font-size: 24px;
+              margin-bottom: 15px; } }
+      section.sec01-240717 .cntWrap .explains .txt_right {
+        width: 72%;
+        margin-bottom: 70px; }
+        @media screen and (max-width: 768px) {
+          section.sec01-240717 .cntWrap .explains .txt_right {
+            margin: 0 auto 40px auto;
+            width: 96%; } }
+        section.sec01-240717 .cntWrap .explains .txt_right.cos {
+          margin-bottom: 30px; }
+          @media screen and (max-width: 768px) {
+            section.sec01-240717 .cntWrap .explains .txt_right.cos {
+              margin: 0 auto 20px auto; } }
+        section.sec01-240717 .cntWrap .explains .txt_right > p {
+          margin-bottom: 15px; }
+          @media screen and (max-width: 768px) {
+            section.sec01-240717 .cntWrap .explains .txt_right > p {
+              margin: 0 auto 10px auto; } }
+    section.sec01-240717 .cntWrap .cntBox {
+      width: 30%;
+      margin-bottom: 26px;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        section.sec01-240717 .cntWrap .cntBox {
+          width: 48%; }
+          section.sec01-240717 .cntWrap .cntBox:not(:nth-last-of-type(1)) {
+            margin-bottom: 28px; } }
+      section.sec01-240717 .cntWrap .cntBox h3 {
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: bold; }
+        @media screen and (max-width: 768px) {
+          section.sec01-240717 .cntWrap .cntBox h3 {
+            margin: 4px 0 8px; } }
+      section.sec01-240717 .cntWrap .cntBox p {
+        font-weight: bold; }
+        @media screen and (max-width: 768px) {
+          section.sec01-240717 .cntWrap .cntBox p {
+            text-align: left; } }
+
+.ctaA {
+  background: #ede3e2 url("/special/nsb_img/rentaloffice/cta_bg_a.jpg") bottom center;
+  padding-bottom: 33px;
+  margin: 55px 0 90px 0; }
+  @media screen and (max-width: 768px) {
+    .ctaA {
+      background-image: none;
+      background: #ede3e2 url("/special/nsb_img/rentaloffice/cta_bg_a_sp_01.jpg");
+      background-position: center bottom;
+      background-size: cover;
+      padding: 0 3% 33px;
+      margin: 30px 0 50px 0; } }
+  .ctaA .find {
+    display: block;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 400;
+    padding: 45px 0 67px 63px; }
+    @media screen and (max-width: 1040px) {
+      .ctaA .find {
+        font-size: 1.5vw;
+        padding: 50px 0 100px 20px; } }
+    @media screen and (max-width: 768px) {
+      .ctaA .find {
+        margin: 20px auto;
+        text-align: center;
+        font-size: 16px;
+        padding: 30px 0 15vw 0;
+        margin-bottom: 51vw; } }
+  .ctaA .link {
+    max-width: 400px !important;
+    margin: 0 auto !important; }
+    @media screen and (max-width: 768px) {
+      .ctaA .link {
+        margin-top: 15px;
+        width: 100% !important; } }
+    .ctaA .link a {
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 18px 0;
+      color: #fff;
+      font-size: clamp(16px, 1.5vw, 20px);
+      font-weight: bold;
+      text-decoration: none;
+      background: #46c1be;
+      border-radius: 5px !important;
+      -webkit-border-radius: 60px; }
+      @media screen and (max-width: 768px) {
+        .ctaA .link a {
+          width: 100%;
+          font-size: 16px !important;
+          line-height: 1.3;
+          padding: 20px 40px; } }
+      .ctaA .link a:before, .ctaA .link a:after {
+        content: "";
+        position: absolute;
+        top: 50%; }
+      .ctaA .link a:before {
+        right: 15px;
+        width: 32px;
+        height: 32px;
+        margin: -18px 0 0;
+        background: #fff;
+        border-radius: 50px;
+        -webkit-border-radius: 50px; }
+        @media screen and (max-width: 768px) {
+          .ctaA .link a:before {
+            width: 28px;
+            height: 28px;
+            margin: -14px 0 0; } }
+      .ctaA .link a:after {
+        right: 26px;
+        width: 10px;
+        height: 10px;
+        margin: -10px 0 0;
+        border-top: solid 5px #46c1be;
+        border-right: solid 5px #46c1be;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg); }
+        @media screen and (max-width: 768px) {
+          .ctaA .link a:after {
+            right: 25px;
+            width: 8px;
+            height: 8px;
+            margin: -6px 0 0;
+            border-top-width: 4px;
+            border-right-width: 4px; } }
+      .ctaA .link a.btnRed {
+        background: #e4002f; }
+        .ctaA .link a.btnRed:after {
+          border-top: solid 5px #e4002f;
+          border-right: solid 5px #e4002f; }
+      .ctaA .link a.btnBlue {
+        background: #1383ec;
+        margin: 10px 0 0; }
+        @media screen and (max-width: 768px) {
+          .ctaA .link a.btnBlue {
+            margin: 10px 0 0; } }
+        .ctaA .link a.btnBlue:after {
+          border-top: solid 5px #1383ec;
+          border-right: solid 5px #1383ec; }
+
+.cta_240718 {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin: 0px auto 75px auto;
+  /* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+  /* ボタンのスタイル */
+  /* 左矢印アイコンのスタイル */ }
+  @media screen and (max-width: 768px) {
+    .cta_240718 {
+      width: 80%;
+      margin: 0px auto 28px auto;
+      display: block; } }
+  .cta_240718 a {
+    color: inherit;
+    text-decoration: none; }
+  .cta_240718 button {
+    padding: 0;
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none; }
+  .cta_240718 .buttonIconText02 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 64px;
+    padding: 8px 64px 8px 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #0d3c7d;
+    border-radius: 32px;
+    /* (buttonの高さ / 2) の値 */
+    margin: 0 15px 0 0; }
+    @media screen and (max-width: 768px) {
+      .cta_240718 .buttonIconText02 {
+        margin: 0; } }
+    .cta_240718 .buttonIconText02.buttonRed {
+      background: #e30613; }
+      @media screen and (max-width: 768px) {
+        .cta_240718 .buttonIconText02.buttonRed {
+          margin: 0 0 20px 0; } }
+  .cta_240718 .buttonIconText02__reverse {
+    flex-direction: row-reverse;
+    padding: 8px 8px 8px 64px; }
+  .cta_240718 .buttonIconText02_icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: url(https://www.regus-office.jp/common3/images/arrow.png) center center/contain no-repeat;
+    background-size: 40% 40%; }
+  .cta_240718 .buttonIconText02_text {
+    flex-shrink: 1;
+    width: 100%;
+    font-weight: bold; }
+  @media (any-hover: hover) {
+    .cta_240718 .buttonIconText02 {
+      transition: background-color 0.2s; }
+    .cta_240718 .buttonIconText02_icon {
+      transition: transform 0.2s; }
+    .cta_240718 .buttonIconText02:hover {
+      background-color: #102848; }
+    .cta_240718 .buttonIconText02.buttonRed:hover {
+      background-color: #b70f19; }
+    .cta_240718 .buttonIconText02:hover .buttonIconText02_icon {
+      transform: translateX(4px); }
+    .cta_240718 .buttonIconText02:hover .buttonIconText02_icon__left {
+      transform: translateX(-4px); } }
+  .cta_240718 .iconArrowLeft {
+    rotate: 180deg; }

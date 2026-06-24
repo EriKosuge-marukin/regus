@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+/* =========================================================
+Reset of Default Style
+========================================================= */
+/*h1, h2, h3, h4, h5, h6, p, address, a,
+ul, ol, li, dl, dt, dd,
+table, th, td, img, form {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight:normal;
+	font-size: 100%;
+	text-align: left;
+	line-height:140%;
+	vertical-align: baseline;
+	background: transparent;
+
+}*/
+
+/* ブラウザ間でのフォントサイズリセット */
+textarea { font-size: 100%; }
+
+/* 画像下部空きのリセット */
+img { vertical-align: bottom; }
+
+/* リストのスタイルをリセット */
+ul {
+	list-style-type: none;
+}
+
+hr  { display: none; }
+
+
+/* =========================================================
+Clear Fix
+========================================================= */
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-table;
+	min-height: 1%;
+}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/* =========================================================
+body
+========================================================= */
+body {
+	margin:0;
+	padding:0;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+
+/* =========================================================
+font
+========================================================= */
+.f10{
+	font-size:10px;
+}
+.f12{
+	font-size:12px;
+}
+.f14{
+	font-size:14px;
+}
+.f18{
+	font-size:18px;
+}
+.f24{
+	font-size:24px;
+}
+.f36{
+	font-size:36px;
+}
+.fBLD{
+	font-weight:bold;
+}
+.tLFT{
+	text-align:left;
+}
+.tCNT{
+	text-align:center;
+}
+.tRIT{
+	text-align:right;
+}
+
+/* =========================================================
+float
+========================================================= */
+.fLFT{
+	float:left;
+}
+.fCLR{
+	clear:both;
+}
+.fRIT{
+	float:right;
+}

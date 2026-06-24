@@ -1,0 +1,21 @@
+<script type="text/javascript" src="/openoffice/script/jquery.min.js"></script>
+
+<script>
+$(window).on('load', function() {
+var url = $(location).attr('href');
+if(url.indexOf("#") != -1){
+var anchor = url.split("#");
+var target = $('#' + anchor[anchor.length - 1]);
+if(target.length){
+var pos = Math.floor(target.offset().top) - 50;
+$("html, body").animate({scrollTop:pos}, 500);
+}
+}
+});
+    
+    
+    
+
+    
+
+    </script>

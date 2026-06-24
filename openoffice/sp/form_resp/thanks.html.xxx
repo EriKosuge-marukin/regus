@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<!--#include virtual="/openoffice/ssi/headtagmanager.html" -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="follow,index">
+<meta name="google-site-verification" content="oWvuR9gprE2qJLA_WMJdA8obyCAcYBEACdGWM0gWcIs" />
+<title>問い合わせ・見学予約｜レンタルオフィス（個室）ならオープンオフィス</title>
+<meta name="description" content="問い合わせ・見学予約。オープンオフィスのレンタルオフィスは【入会金なし】【24時間利用】【完全個室】会議室併設で全国50拠点以上に展開。レンタルオフィスならオープンオフィス。">
+<meta name="keywords" content="問い合わせ・見学予約,レンタルオフィス,東京,大阪,個室,オープンオフィス">
+<meta name="format-detection" content="telephone=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="/openoffice/sp/common/css/normalize.css" rel="stylesheet" type="text/css">
+<!--メールフォームプロ用CSS-->
+<link rel="stylesheet" href="/openoffice/sp/form/mfp.statics/mailformpro.css" type="text/css">
+<!--/メールフォームプロ用CSS-->
+<link href="/openoffice/sp/common/css/common_layout.css" rel="stylesheet" type="text/css">
+<link href="/openoffice/sp/common/include/css/layout.css" rel="stylesheet" type="text/css">
+<link href="/openoffice/sp/form/css/thanks.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="drawer drawer--top">
+	<!--#include virtual="/openoffice/sp/common/include/tag_top.html"-->
+<div id="wrapper"> 
+<!--#include virtual="/openoffice/sp/common/include/header.html"-->
+<div class="ttl">
+<h1>
+問い合わせ・見学予約
+</h1>
+</div>
+<div class="inner">
+<p class="bld">お申込みを受け付けました。</p>
+<p class="mgB20">お問合せ・見学会参加へのお申込み有難うございます。こちらから1営業日以内にご連絡させて頂きます。</p>
+<div class="box">
+<p class="red">土日祝日は受付窓口をお休み頂いております。</p>
+<p class="mgB15">（メールでのご連絡は受付けております）</p>
+<div class="gray">
+<dl>
+<dt>お電話でのお問合せ</dt>
+<dd>平日月曜から金曜の朝9：00～18：00でお願いします。<br>
+土日・祝祭日(および年末年始)は、受付休業です。</dd>
+</dl>
+<p class="tel">0120-974-685</p>
+</div>
+<div class="gray mgT5">
+<dl>
+<dt>メールでのお問合せ</dt>
+<dd>365日24時間、随時受付けております。<br>
+１営業日以内にお返事いたします。</dd>
+</dl>
+<a href="mailto:enquiry@openoffice.co.jp">enquiry@openoffice.co.jp</a>
+</div>
+</div>
+</div>
+</div>
+<!--#include virtual="/openoffice/sp/common/include/footer.html"--> 
+	<!--#include virtual="/openoffice/sp/common/include/tag_btm.html"-->
+</body>
+</html>

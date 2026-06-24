@@ -1,0 +1,419 @@
+@charset "utf-8";
+@import 'mixin';
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+$red:#e4002f;
+$green: #46c1be;
+$blue: #1383ec;
+
+.cntWrap {
+	@include flex;
+	@include jc(space-between);
+	@include ai(flex-start);
+	@include fw(wrap);
+	.cntBox {
+		img {
+			margin-bottom: 8px;
+		}
+		p {
+			line-height: 1.4;
+		}
+	}
+}
+
+section {
+	max-width: 1060px;
+	width: 94%;
+	margin: -50px auto 120px;
+	@include break {
+		margin: -10px auto 58px;
+	}
+	img {
+		width: auto !important;
+	}
+	&.sec01 {
+		h2 {
+			margin-bottom: 20px;
+		}
+		>p {
+			max-width: 760px;
+			width: 92%;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			@include break {
+				margin-bottom: 16px;
+			}
+		}
+		.btn {
+			margin: 30px 0 100px;
+			@include break {
+				margin-bottom: 54px;
+			}
+		}
+		.cntWrap {
+			>p {
+				width: 47%;
+				@include break {
+					width: 100%;
+					margin-bottom: 8px;
+				}
+			}
+			.left {
+				width: 41%;
+				@include break {
+					width: 100%;
+					margin-bottom: 14px;
+				}
+				h3 {
+					margin-bottom: 8px;
+					font-size: 24px;
+					font-weight: bold;
+					@include break {
+						width: 100%;
+						margin-bottom: 6px;
+						font-size: 18px;
+					}
+				}
+			}
+			.right {
+				width: 53%;
+				padding: 0 2%;
+				text-align: right;
+				@include break {
+					width: 100%;
+					text-align: center;
+				}
+			}
+		}
+	}//_sec01
+    
+	&.sec02 {
+        margin-bottom: 60px;
+        @include break {
+				margin-bottom: 30px;
+			}
+		h2 {
+			margin-bottom: 35px;
+			@include break {
+				margin-bottom: 20px;
+			}
+		}
+		.cntWrap {
+			margin-bottom: 35px;
+			@include break {
+				margin-bottom: 0;
+			}
+			.cntBox {
+				width: 30%;
+				margin-bottom: 26px;
+				text-align: center;
+				@include break {
+					width: 48%;
+					&:not(:nth-last-of-type(1)) {
+						margin-bottom: 28px;
+					}
+				}
+				h3 {
+					margin: 10px 0;
+					font-size: 16px;
+					font-weight: bold;
+					@include break {
+						margin: 4px 0 8px;
+					}
+				}
+				p {
+					font-weight: bold;
+					@include break {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}//_sec02
+    &.sec01-240717 {
+		h2 {
+			margin-bottom: 30px;
+			@include break {
+                font-size: 30px !important;
+                line-height: 1.2 !important;
+				margin-bottom: 20px;
+			}
+		}
+        .lead_txt{max-width: 680px;width: 80%;
+            margin: 35px auto 70px auto;
+            @include break {
+				width: 96%;
+                margin: 10px auto 30px auto;
+			}
+            .break_top{margin-top:15px;@include break {margin-top:10px;}}
+        }
+        
+		.cntWrap {
+			margin-bottom: 35px;
+			@include break {
+				margin-bottom: 0;
+			}
+            
+            .explains{
+                display: flex;
+                justify-content: flex-start;
+                @include break { display: block;}
+                
+                .ttl_left{width: 27%;
+                    @include break {width: 96%;}
+                    .ttl_left_h3{font-size: clamp(20px, 2.5vw, 30px);
+                line-height: 1.3;
+                    font-weight: bold;
+                @include break {
+                    text-align: center;
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                        }}
+                }
+                
+                .txt_right{width: 72%;
+                    margin-bottom: 70px;
+                    @include break {margin:0 auto 40px auto;width: 96%;}
+                    &.cos{margin-bottom: 30px;
+                    @include break {margin:0 auto 20px auto;}}
+                    >p{margin-bottom: 15px;
+                        @include break {margin:0 auto 10px auto;}
+                    }}
+            }
+            
+            
+            
+			.cntBox {
+				width: 30%;
+				margin-bottom: 26px;
+				text-align: center;
+				@include break {
+					width: 48%;
+					&:not(:nth-last-of-type(1)) {
+						margin-bottom: 28px;
+					}
+				}
+				h3 {
+					margin: 10px 0;
+					font-size: 16px;
+					font-weight: bold;
+					@include break {
+						margin: 4px 0 8px;
+					}
+				}
+				p {
+					font-weight: bold;
+					@include break {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}//_sec01-240717
+}//_section
+
+//ctaA
+.ctaA{
+    background:#ede3e2 url("/special/nsb_img/rentaloffice/cta_bg_a.jpg") bottom center;
+    padding-bottom: 33px;
+    margin: 55px 0 90px 0;
+    
+    @include break {
+        background-image:none;
+        background:#ede3e2 url("/special/nsb_img/rentaloffice/cta_bg_a_sp_01.jpg") ;
+        background-position: center bottom;
+    background-size: cover;
+    padding:0 3% 33px;
+    margin: 30px 0 50px 0;
+    }
+    .find{display: block;
+        font-size: 18px;
+        line-height: 2;
+        font-weight: 400;
+        padding: 45px 0 67px 63px;
+        @include breakLarge {font-size: 1.5vw;
+       padding: 50px 0 100px 20px;}
+         @include break {
+        margin: 20px auto;
+        text-align: center; font-size: 16px;
+             padding: 30px 0 15vw 0;margin-bottom: 51vw;}
+    }
+	.link{
+		max-width: 400px !important;
+		margin: 0 auto !important;
+		@include break {
+			margin-top: 15px;
+			width:100% !important;
+		}//__break
+		a{ 
+				text-align: center;
+				position: relative;
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+				padding: 18px 0;
+				color: #fff;
+				font-size:  clamp(16px, 1.5vw, 20px);
+				font-weight: bold;
+				text-decoration: none;
+				background:$green;
+				border-radius:5px !important;
+				-webkit-border-radius: 60px;
+				@include break {
+					width:100%;
+					font-size: 16px !important;
+					line-height: 1.3;
+					padding: 20px 40px;
+				}
+
+				&:before,&:after{
+					content: "";
+					position: absolute;
+					top: 50%;
+				}//__beforeAfter
+				&:before {
+					right: 15px;
+					width: 32px;
+					height:32px;
+					margin: -18px 0 0;
+					background:#fff;
+					border-radius: 50px;
+					-webkit-border-radius:50px;
+					@include break {
+						width: 28px;
+						height:28px;
+						margin: -14px 0 0;
+					}
+				}
+				&:after {
+					right: 26px;
+					width: 10px;
+					height: 10px;
+					margin: -10px 0 0;
+					border-top: solid 5px $green;
+					border-right: solid 5px $green;
+					transform: rotate(45deg);
+					-webkit-transform: rotate(45deg);
+					@include break {
+						right: 25px;
+						width: 8px;
+						height:8px;
+						margin: -6px 0 0;
+                        border-top-width:  4px;
+					border-right-width:4px;
+					}
+				}
+			
+        &.btnRed{background:$red;
+            &:after {border-top: solid 5px $red;
+					border-right: solid 5px $red;}
+            }
+        &.btnBlue{background:$blue;
+            margin: 10px 0 0;
+            @include break {margin: 10px 0 0;}
+            &:after {border-top: solid 5px $blue;
+					border-right: solid 5px $blue;}
+            }
+		}//_a
+	}//_link
+}//ctaA
+
+
+.cta_240718{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: 0px auto 75px auto;
+     @include break {width: 80%;margin: 0px auto 28px auto;display: block;}
+ 
+  a {
+  color: inherit;
+  text-decoration: none; 
+      
+}
+
+/* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+button {
+  padding: 0;
+  font-family: inherit;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}  
+    
+    /* ボタンのスタイル */
+.buttonIconText02 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 64px;
+  padding: 8px 64px 8px 8px;
+  font-family: sans-serif;
+  font-size: 16px;
+   
+  color: #fff;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: #0d3c7d;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
+    margin: 0 15px 0 0;@include break {margin: 0;}
+    &.buttonRed{background: #e30613;@include break {margin: 0 0 20px 0;}}
+}
+
+    .buttonIconText02__reverse {
+  flex-direction: row-reverse;
+  padding: 8px 8px 8px 64px;
+}
+
+.buttonIconText02_icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  aspect-ratio: 1;
+  overflow: hidden;
+ background: url(https://www.regus-office.jp/common3/images/arrow.png) center center / contain no-repeat;
+    background-size: 40% 40%;
+}
+
+.buttonIconText02_text {
+  flex-shrink: 1;
+  width: 100%; font-weight: bold;
+}
+
+@media (any-hover: hover) {
+  .buttonIconText02 {
+    transition: background-color 0.2s;
+  }
+
+  .buttonIconText02_icon {
+    transition: transform 0.2s;
+  }
+  .buttonIconText02:hover {
+    background-color: #102848;
+  }
+
+  .buttonIconText02.buttonRed:hover {
+    background-color: #b70f19;
+  }
+
+  .buttonIconText02:hover .buttonIconText02_icon {
+    transform: translateX(4px);
+  }
+
+  .buttonIconText02:hover .buttonIconText02_icon__left {
+    transform: translateX(-4px);
+  }
+}
+
+/* 左矢印アイコンのスタイル */
+.iconArrowLeft {
+  rotate: 180deg;
+}
+    
+}//cta_240718
+
+

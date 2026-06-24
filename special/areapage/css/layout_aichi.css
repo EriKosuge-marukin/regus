@@ -1,0 +1,115 @@
+/*______191111______________________________________________________*/
+.blogquate dl dd.blgimgdd {
+	text-align: center;
+}
+.blogquate .blgimg01 {
+	max-width: 49%;
+	height: auto;
+	margin-right: 2%;
+}
+.blogquate .blgimg02 {
+	max-width: 49%;
+}
+@media screen and (max-width: 750px) {
+	.blogquate .blgimg { margin-top: 1rem;}
+	.blogquate .blgimg01,
+	.blogquate .blgimg02 { max-width: 100%; width: 100%; margin-right: 0; margin-bottom: 4px; }
+	}
+/*______180413______________________________________________________*/
+.csmVoice .csmVoiceCom{
+	padding-top:20px;
+	margin-bottom:30px;
+}
+.csmVoice .csmVoiceCom .borB{
+	overflow:hidden;
+	border-bottom:1px #333 solid;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	background:#eee;
+	padding:10px 15px;
+}
+.csmVoice .csmVoiceCom .borBL{
+	float:left;
+	width:12%;
+}
+.csmVoice .csmVoiceCom .borB h3{
+	float:left;
+	margin-left:20px;
+	margin-top:15px;
+}
+
+.csmVoice .csmVoiceCom .borB h3 a{
+	font-weight:bold;
+	font-size:130%;
+	color:#333;
+	display:block;
+	}
+.csmVoice .csmVoiceCom .borBR{
+	float:right;
+	width:35%;
+	margin-top:8px;
+}
+
+.csmVoice .csmVoiceCom .borBR p.ofName{
+	text-align:center;
+}
+.csmVoice .csmVoiceCom .borBR p.ofName a{
+	background:#e10034;
+	display:block;
+	padding:5px;
+	color:#fff;
+	border-radius:5px;
+	text-decoration:underline;
+	margin-top:8px;
+}
+	
+.csmVoice .csmVoiceCom h4{
+	clear:both;
+	font-weight:bold;
+	font-size:120%;
+	line-height:1.3;
+	
+	border-left:3px #e10034 dotted;
+	padding:10px 0 5px 10px;
+	margin-bottom:10px;
+	width:100%;
+	
+}
+.csmVoice .csmVoiceCom p span{
+	color:#e10034;
+	font-weight:bold;
+}
+@media screen and (max-width: 750px) {
+.csmVoice .csmVoiceCom{
+	padding-top:12px;
+	margin-bottom:20px;
+}
+.csmVoice .csmVoiceCom .borB{
+	padding:5px;
+}
+.csmVoice .csmVoiceCom .borBL{
+	float:left;
+	width:20%;
+	margin:5px 5px 2px 0;
+}
+.csmVoice .csmVoiceCom .borB h3{
+	margin:4px 0 0px 0;
+	float:left;
+	line-height:1.1 !important;
+	font-size:85% !important;
+	padding-bottom:0px;
+	text-align:left;
+	letter-spacing:-0.1em;
+}
+.csmVoice .csmVoiceCom .borBR{
+	width:100%;
+	float:none;	
+}
+
+.csmVoice .csmVoiceCom .borBR p.ofName{
+	text-align:left;
+	float:left;
+	margin:0;
+	font-size:75%;
+	}
+}

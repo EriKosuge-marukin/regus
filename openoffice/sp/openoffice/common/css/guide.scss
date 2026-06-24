@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import "../../../common/css/mixin";
+
+#wrapper{
+	.office_ttl{
+		padding-top: 50px;
+		h1{
+			background: url(/sp/openoffice/common/img/kv_bg_2.png) right center no-repeat,url(/sp/openoffice/common/img/kv_bg.gif) top center no-repeat;
+			@include bgs((contain,cover));
+			display: inline-block;
+			width: 100%;
+			text-align: left;
+			@include fz(20);
+			font-weight: bold;
+			color: #004c80;
+			padding: 25px 5%;
+			line-height: 1.4;
+			span{
+				@include fz(17);
+				font-weight: bold;
+				color: #004c80;
+			}
+		}
+	}
+	.tab_link{
+		ul{
+			width: 100%;
+			@include flex;
+			@include jc(space-between);
+			margin: 5px 0 20px;
+			li{
+				width: 49.5%;
+				background: #a7a6a7;
+				&.on{
+					background: #0097d5;
+				}
+				a{
+					display: inline-block;
+					width: 100%;
+					text-align: center;
+					padding: 15px 0;
+					line-height: 1;
+					font-weight: bold;
+					@include fz(16);
+					color: #fff;
+				}
+			}
+		}
+	}
+	.guide_inner{
+		width: 100%;
+		padding: 0 3.5%;
+		h2{
+			font-weight: bold;
+			@include fz(16);
+			padding: 5px 0 5px 11px;
+			border-left: 6px solid  #0097d6;
+			margin-bottom: 10px;
+		}
+		p{
+			@include fz(12);
+		}
+		.nearby{
+			width: 100%;
+			.place{
+				padding: 20px 5% 0;
+				margin-top: 20px;
+				border-top: 1px dotted  #d0d0d0;
+				@include flex;
+				&:last-child{
+					padding-bottom: 20px;
+					border-bottom: 1px dotted  #d0d0d0;
+				}
+				.detail{
+					width:calc(100% - 150px - 4%);
+					margin-right: 4%;
+					h3{
+						@include fz(13);
+						color: #0097d5;
+						width: 100%;
+						font-weight: bold;
+						border-bottom: 2px solid  #0097d5;
+						padding-bottom: 5px;
+						margin-bottom: 10px;
+					}
+					p{
+						@include fz(12);
+					}
+				}
+				.img{
+					width: 150px;
+				}
+			}
+		}
+		.entry{
+			margin-top: 30px;
+			p{
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			a{
+				display: block;
+				margin: 0 auto;
+				width: 88%;
+			}
+		}
+		.contact{
+			margin: 30px 0 15px;
+		}
+	}
+	.contact,.periphery{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.page-top{
+	display: none;
+}

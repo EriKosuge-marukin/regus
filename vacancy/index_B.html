@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ja">
+    <meta charset="UTF-8" />
+    <title>空室・金額を確認する | レンタルオフィスのリージャス</title>
+    <meta
+      name="description"
+      content="レンタルオフィスを東京・大阪・名古屋・札幌・青森・千葉・横浜・仙台・京都・神戸・岡山・広島・博多で提供しているリージャス。オフィスにはOA機器・ビジネスラウンジ・会議室・受付サービスを完備。"
+    />
+    <meta name="keywords" content="" />
+    <!--スマホ以外のデバイスからのアクセスのときのビューポート-->
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, maximum-scale=1.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="canonical" href="https://www.regus-office.jp/vacancy/" />
+    <link rel="icon" href="/common2/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" media="all" href="/common2/css/common_enq.css" />
+    <!-- link rel="stylesheet" media="all" href="/inquiry/css/layout.css"-->
+    <link rel="stylesheet" media="all" href="/css/vacancy_2.css" />
+    <link rel="stylesheet" media="all" href="/special/enquiry/css/layout_2.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!--script type="text/javascript" src="/common2/js/jquery.heightLine.js"></script-->
+    <script type="text/javascript" src="/common2/js/script.js"></script>
+    <script type="text/javascript" src="/common2/js/rollover.js"></script>
+    <script type="text/javascript" src="/inquiry/js/script.js"></script>
+    <script type="text/javascript" src="/common/js/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/common2/js/sp_sidenavi.js"></script>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="/common2/js/selectivizr.js"></script>
+      <script type="text/javascript" src="/common2/js/html5shiv.js"></script>
+      <script type="text/javascript" src="/common2/js/respond.js"></script>
+      <script type="text/javascript" src="/common2/js/ie8.js"></script>
+    <![endif]-->
+
+    <!--script type="text/javascript">
+      $(function () {
+        $(".search .boxL , .search .boxR").heightLine({ minWidth: 750 });
+        $(".rentalBox dd").heightLine();
+        $(".search li").heightLine();
+      });
+    </script-->
+
+        <script type="text/javascript">
+	    //メールアドレスを変換処理（全角→半角）
+		jQuery(function(){
+		// メールアドレスの処理
+		$('.char_change').change( function(){
+		        var zenkigou = "＠－ー＋＿．，、";
+		        var hankigou = "@--+_...";
+		        var data = $(this).val();
+		        var str = "";
+
+		        // 指定された全角記号のみを半角に変換
+		        for (i=0; i<data.length; i++)
+		        {
+		            var dataChar = data.charAt(i);
+		            var dataNum = zenkigou.indexOf(dataChar,0);
+		            if (dataNum >= 0) dataChar = hankigou.charAt(dataNum);
+		            str += dataChar;
+		        }
+		        // 定番の、アルファベットと数字の変換処理
+		        var hankaku = str.replace(/[Ａ-Ｚａ-ｚ０-９]/g,function(s){return String.fromCharCode(s.charCodeAt(0)-0xFEE0)});
+		        $(this).val(hankaku);
+		    });
+
+		});
+	</script>
+
+    <style type="text/css">
+      html {
+        scroll-behavior: smooth;
+      }
+      #btn {
+        background: #717171;
+        color: #eeeeee;
+        display: block;
+        margin: 100px auto;
+        width: 70px;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 0;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      #overlay {
+        display: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      /***多重送信防止処理用**/
+      .cv-spinner {
+		    height: 100%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+		.spinner {
+		    width: 80px;
+		    height: 80px;
+		    border: 4px #ddd solid;
+		    border-top: 4px #999 solid;
+		    border-radius: 50%;
+		    animation: sp-anime 0.8s infinite linear;
+		}
+		@keyframes sp-anime {
+		    0% { transform: rotate(0deg); }
+		    100% { transform: rotate(359deg); }
+		}
+		.is-hide{
+		    display:none;
+		}
+	/***多重送信防止処理用ここまで**/
+
+      #text {
+        font-size: 40px;
+        color: #eee;
+        padding-top: 100px;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+
+      #close {
+        color: #717171;
+        width: 70px;
+        margin: auto;
+        text-align: center;
+        font-size: 15px;
+        padding: 5px 0 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      #back {
+        width: 916px;
+        height: 535px;
+        display: block;
+        margin: 100px auto 0px;
+        background-image: url(/img/back.png);
+        background-repeat: no-repeat;
+      }
+      #offmark {
+        margin-top: 0px;
+        float: left;
+        width: 45px;
+        height: 55px;
+      }
+
+      .campaign {
+        margin-top: 0px;
+        float: right;
+        width: 190px;
+        height: 190px;
+      }
+
+      #toform {
+        clear: both;
+        position: absolute;
+        margin-top: 417px;
+        margin-left: 202px;
+        width: 452px;
+        height: 92px;
+      }
+      .sideNav,
+      nav,
+      nav div {
+        display: none;
+        width: 0;
+      }
+
+      .sticky2 {
+        display: none;
+      }
+
+      .contents {
+        margin-left: 150px;
+      }
+      .geo_t span.txt {
+        float: left;
+        display: block;
+        padding-bottom: 16px;
+        width: 80%;
+      }
+      .geo_t span.bn {
+        width: auto;
+        /*max-width: 135px;*/
+        float: right;
+        padding: 6px 8px;
+        border: solid 1px #ccc9bd;
+        border-right: solid 1px #939696;
+        border-bottom: solid 1px #939696;
+        text-align: center;
+        min-width: 140px;
+      }
+      .geo_t a:hover span.bn {
+        opacity: 0.6;
+        border-right: solid 1px #ccc9bd;
+        border-bottom: solid 1px #ccc9bd;
+      }
+      @media screen and (max-width: 750px) {
+        .contents {
+          margin: 0 auto;
+        }
+        .geo_t span.txt {
+          float: left;
+          display: block;
+          width: 64%;
+        }
+        .geo_t span.bn {
+          width: auto;
+          max-width: 135px;
+          float: right;
+        }
+      }
+      #image-btn {
+        background: url(/inquiry/images/btn_send-price.gif);
+        width: 208px;
+        height: 44px;
+        border-style: none;
+        cursor: pointer;
+      }
+      span.error {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2px;
+        color: #e10034;
+        font-weight: bold;
+        font-size: 14spx;
+      }
+      .policy_box {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        margin-top: 20px;
+      }
+      input.ness {
+        background: #fff;
+      }
+      .error_bg {
+        background: #f8e1e5;
+      }
+      .sub_txt {
+        width: 100%;
+        height: auto;
+      }
+      .sub_txt h2 {
+        color: #333;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .sub_txt p {
+        font-size: 16px;
+      }
+
+
+      .tel_box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin: 10px auto 0;
+      }
+      .tel_box a {
+        font-size: 32px;
+        color: #e10034;
+        font-weight: 600;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      .tel_box p {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .qa_box {
+        margin: 20px auto;
+        border: 1px solid #ccc9bd;
+        padding: 15px 10px;
+        position: relative;
+      }
+      .qa_box a {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+      }
+      .qa_box p {
+        font-size: 16px;
+        color: #e10034;
+        font-weight: bold;
+      }
+      .qa_box ul {
+        margin-top: 5px;
+      }
+      .qa_box ul li {
+        font-weight: normal;
+      }
+      .qa_box ul li:nth-child(n + 2) {
+        margin-top: 2px;
+      }
+      .tel_box_sp,
+      .sub_txt_sp,
+      .qa_box_sp {
+        display: none;
+      }
+      @media screen and (max-width: 750px) {
+        .sub_txt,
+        .qa_box,
+        .tel_box {
+          display: none;
+        }
+        .sub_txt_sp {
+          display: block;
+        }
+        .sub_txt_sp h2 {
+          color: #333;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        .sub_txt_sp p {
+          font-size: 12px;
+        }
+        .tel_box_sp {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          flex-wrap: wrap;
+          margin: 0 auto;
+        }
+        .tel_box_sp a {
+          font-size: 18px;
+          color: #e10034;
+          font-weight: 600;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+        .tel_box_sp p {
+          font-size: 10px;
+          margin-left: 5px;
+          margin-bottom: 5px;
+        }
+        .qa_box_sp {
+          display: block;
+          margin: 15px auto;
+          border: 1px solid #ccc9bd;
+          padding: 10px;
+          position: relative;
+        }
+        .qa_box_sp p {
+          font-size: 16px;
+          color: #e10034;
+        }
+        .qa_box_sp ul {
+          margin-top: 5px;
+        }
+        .qa_box_sp ul li {
+          font-weight: normal;
+        }
+        .qa_box_sp ul li:nth-child(n + 2) {
+          margin-top: 2px;
+        }
+        .lang_btn {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          /*margin-bottom: 20px;*/
+        }
+      }
+      /*2024.04*/
+      .p_b_20 {padding-bottom: 20px;}
+      .sub_txt p.sml {
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      .sub_txt p.lrg_cntr {
+        font-size: 20px;
+        text-align: center;
+      }
+      .sub_txt_sp p.lrg_cntr {
+        /*font-size: 16px;*/
+        font-size: 11px;
+        letter-spacing: -0.02em;
+        font-weight: bold;
+        text-align: center;
+      }
+      .sub_txt_sp p {margin: 12px 0;}
+      .sub_txt_sp p.sml {font-size: 10px; margin: 2px 0 8px;}
+      .sub_txt_sp p.md {font-size: 14px;}
+      .sub_txt_sp p.lrg {font-size: 16px;}
+      .under_line_50 {
+        position: relative;
+        padding: 0.5rem;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .under_line_50:before {
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 30px);
+        width: 60px;
+        height: 2px;
+        content: '';
+        background: #aaafaf;
+      }
+      @media screen and (max-width: 750px) {}
+
+
+      .title_pc_area {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 4px solid #aaafaf;
+        margin-bottom: 24px;
+      }
+      .title_pc_area .title_area {
+        font-size: 24px;
+      }
+      .title_pc_area p.to_another {
+        display: inline-block;
+        width: auto;
+        padding: 8px 16px;
+        border: solid 1px #ccc9bd;
+        border-right: solid 1px #939696;
+        border-bottom: solid 1px #939696;
+        text-align: center;
+        min-width: 160px;
+        margin-bottom: 4px;
+      }
+      @media screen and (max-width: 750px) {
+        .title_pc_area{display: none;}
+        p.to_another_sp {
+          font-size: 14px;
+          margin: 12px 0 18px;
+          padding: 4px;
+          text-align: center;
+          border-top: dashed 1px #aaafaf;
+          border-bottom: dashed 1px #aaafaf;
+        }
+        p.to_another_sp a {
+          color: #e10034;
+          text-decoration: underline;
+        }
+      }
+      .top_dashed {
+        background-image: linear-gradient(to right, #aaafaf, #aaafaf 6px, transparent 6px, transparent 8px);background-size: 8px 2px;
+        background-position: left top;
+        background-repeat: repeat-x;
+        display: inline-block;
+        margin-top: 10px;
+        padding-top: 20px;
+      }
+      @media screen and (max-width: 750px) {
+        .wrapper .formArea dt{ background-color: transparent;}
+        #enquiryBox .flR dl {
+          background-color: #f2f2f2;
+          padding-top: 0.6em;
+        }
+        #enquiryBox .flR dl dt {
+          padding: 12px 4% 4px;
+        }
+        #enquiryBox .flR dl dd {
+          padding: 0 4% 16px;
+        }
+        #enquiryBox .flR dl.pb00 dd{padding-bottom: 0;}
+        p.officeSelect {
+          margin: 0 0 10px;
+        }
+        .wrapper .formArea dd textarea { width: 100%; font-size: 110%;}
+}
+    </style>
+
+<!---ツールチップ表示用--->
+<style>
+li {
+    position:relative;
+}
+.tooltip{
+    width:176px;
+    padding:8px;
+    font-size:12px;
+    margin:-0.5em 0 0;
+    background-color:#666;
+    color:#fff;
+    position:absolute;
+    left:1em;
+    top: 120%;
+    z-index: 99;
+    text-align: left;
+}
+.tooltip:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    position:absolute;
+    border-color: rgba(102, 102, 102, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:10px;
+    border-right-width:10px;
+    margin-left: -10px;
+    border-bottom-color:#666666;
+    bottom:100%;
+    left:50%;
+}
+.tooltip.cw_mship {
+  left: 4em;
+  top:3.2em;
+}
+@media screen and (max-width: 750px) {
+  .wrapper .formArea dd p.tooltip {
+    width: auto;
+    max-width: 280px;
+    padding: 8px;
+    left: 4em;
+  }
+}
+/*PC用*/
+
+.wrapper .formArea dl.fl_02 dt.service_txt_allpc {
+    position:relative;
+}
+.tooltip_pc_all{
+    width:360px;
+    padding:12px 12px 10px;
+    font-size:12px;
+    margin:-0.5em 0 0;
+    background-color:#666;
+    color:#fff;
+    position:absolute;
+    left:-6.4em;
+    top: 6em;
+    z-index: 99;
+    text-align: left;
+}
+.tooltip_pc_all:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    position:absolute;
+    border-color: rgba(102, 102, 102, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:10px;
+    border-right-width:10px;
+    margin-left: -10px;
+    border-bottom-color:#666666;
+    bottom:100%;
+    left:50%;
+}
+.tooltip_pc_all span {display: block; margin: 8px 0;}
+</style>
+
+    <script>
+      $(function () {
+        $("input").change(function () {
+          $(window).on("beforeunload", function () {
+            return "お問い合せは完了していません。このまま移動しますか？";
+          });
+          $("input[type=submit]").click(function () {
+            $(window).off("beforeunload");
+          });
+        });
+      });
+    </script>
+    <!--フォーム離脱時のアラート処理ここまで-->
+    <!---NEWスマホメニューここから--->
+    <link rel="stylesheet" href="/common2/css/drawer.css" />
+    <link rel="stylesheet" href="/common2/css/style_drawer.css" />
+
+    <!-- jquery & iScroll -->
+    <script src="/common2/js/iscroll.js"></script>
+    <script src="/common2/js/drawer.js"></script>
+    <script>
+      $(document).ready(function () {
+        //ラジオボタンツールチップ表示処理追加ここから
+        $('.tooltip').hide();
+        $('.tooltip_pc_all').hide();
+
+        // tooltip PC and checkbox04
+        $('ul.radioBtn.txt_l li span.circle_pc, #checkbox04, label[for="checkbox04"]').hover(
+          function(){
+            const $tooltip = $(this).parent('li').children('.tooltip');
+            $('.tooltip').not($tooltip).hide(0, function(){
+              $tooltip.fadeIn('fast');
+            });
+          },
+          function(){
+            $('.tooltip').fadeOut('fast');
+          }
+        );
+
+        // tooltip SP
+        $('ul.radioBtn.txt_l li.to_pop').on('click', function(){
+          const css_display = $(this).prev('li').children('.tooltip').css('display');
+          $('.tooltip').fadeOut('fast');
+          if (css_display == 'none') {
+            $(this).prev('li').children('.tooltip').fadeIn('fast');
+          }
+        });
+
+        //ラジオボタンツールチップ表示処理追加ここまで
+        $(".drawer").drawer();
+      });
+
+      //スマホだけ電話がかかる
+      if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+        $(function () {
+          $(".tel").each(function () {
+            var str = $(this).html();
+            if ($(this).children().is("img")) {
+              $(this).html(
+                $("<a>")
+                  .attr("href", "tel:" + $(this).children().attr("alt").replace(/-/g, ""))
+                  .append(str + "</a>")
+              );
+            } else {
+              $(this).html(
+                $("<a>")
+                  .attr("href", "tel:" + $(this).text().replace(/-/g, ""))
+                  .append(str + "</a>")
+              );
+            }
+          });
+        });
+      }
+      //fix
+      if (navigator.userAgent.match(/(iPhone|iPod|Android)/)) {
+        $(function () {
+          var topBtn = $("#topRequestPop");
+          topBtn.hide();
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              topBtn.fadeIn();
+            } else {
+              topBtn.fadeOut();
+            }
+          });
+        });
+      }
+    </script>
+    <!---NEWスマホここまで--->
+<style>
+	.mf_finder_searchBox_items button span {display: none;}
+</style>
+<!---240918--->
+<script id="dejam_tag" src="https://storage.googleapis.com/dejam-tag/Zm3Dh4w2RzK7r9QSNFwo/js/dejam.js" async></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PX76R6H');</script>
+<!-- End Google Tag Manager -->
+
+<!---//自動翻訳用--->
+<script src="https://d.shutto-translation.com/trans.js?id=7416"></script>
+
+
+<!---Google reCapcha V3--->
+<script src="https://www.google.com/recaptcha/api.js?render=6Lc5opEbAAAAAGFLiqzOb3Z3KTac_xmW_OXWjk7Z"></script>
+
+<!---ご希望のサービス項目CSS切り替え--->
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+	let input_menu = document.querySelectorAll("input[name=menu-45]");
+	for(let element of input_menu) {
+		element.addEventListener('change',function(){
+			if( this.checked ) {
+				console.log(this.value);
+				var p1 = document.getElementById('licheckbox01');
+				var p2 = document.getElementById('licheckbox02');
+				var p3 = document.getElementById('licheckbox03');
+				if(this.value == "レンタルオフィス"){
+					p1.style.backgroundColor = '#eadaa9';
+					p2.style.backgroundColor = '#eeeadd';
+					p3.style.backgroundColor = '#eeeadd';
+				}else if(this.value == "コワーキングスペース（月額デスク単位契約）"){
+					p1.style.backgroundColor = '#eeeadd';
+					p2.style.backgroundColor = '#eadaa9';
+					p3.style.backgroundColor = '#eeeadd';
+				}else if(this.value == "バーチャルオフィス"){
+					p1.style.backgroundColor = '#eeeadd';
+					p2.style.backgroundColor = '#eeeadd';
+					p3.style.backgroundColor = '#eadaa9';
+				}
+			}
+		});
+	}
+});
+</script>
+  </head>
+
+  <!-- /170720 -->
+
+  <body class="drawer drawer--right">
+<!---多重送信防止用処理--->
+	    <div id="overlay">
+	        <div class="cv-spinner">
+	            <span class="spinner"></span>
+	        </div>
+	    </div>
+<!---多重送信防止用処理ここまで--->
+    <!-- 170720 -->
+    <!--フォーム離脱時のアラート表示ブロックここから-->
+    <noscript>
+      <div class="noScript">サイトを快適に利用するためには、JavaScriptを有効にしてください。</div>
+    </noscript>
+
+    <!-- /170720 -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PX76R6H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <div class="sticky2">
+      <div class="stickyIn clearfix">
+        <div class="logo">
+          <a href="/"><img src="/common2/images/logo_mini.gif" alt="Regus" /></a>
+        </div>
+        <ul class="clearfix pc">
+<li><a href="/area_serch/">レンタルオフィス<br>を探す</a></li>
+<li><a href="/officetype/">オフィスの<br>種類</a></li>
+<li><a href="/application/">事業規模<br>から探す</a></li>
+<li><a href="/purpose/">利用目的<br>から探す</a></li>
+<li><a href="/case/">活用事例</a></li>
+<li><a href="/learn/">レンタルオフィス<br>を学ぶ</a></li>
+<li><a href="/profile/">リージャス<br>とは</a></li></ul>        </ul>
+        <div class="tel"><img src="/common2/images/top_tel_mini.jpg" alt="お電話でのお問い合わせ 0120-965-391 受付時間：平日9:00-18:00" /></div>
+        <div class="contact">
+          <a href="#"><img src="/common2/images/top_contact_mini.gif" alt="お問い合わせ" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper" id="top">
+      <!--header-->
+      <header class="clearfix">
+        <div class="logo pc">
+          <a href="/"><img src="/common2/images/logo_hdr.gif" alt="Regus" /></a>
+        </div>
+        <h1>レンタルオフィス世界No.1ブランド&nbsp;リージャス</h1>
+        <!--SP drawer削除-------//-->
+        <div class="spEnquiry">
+          <p class="logoSP">
+            <a href="/"><img src="/special/enquiry/images/sp_logo_regus.png" alt="Regus" /></a>
+          </p>
+          <h1 class="spL">空室・金額を確認</h1>
+          <p class="tel">
+            <a href="tel:0120-965-391" class="return_page_top"><img src="/special/enquiry/images/sp_tel.png" alt="Call:0120-965-391" onclick="yahoo_report_conversion('tel:0120-965-391')" /></a>
+          </p>
+        </div>
+        <!--p class="pc geo_t">
+          <a href="/vacancy_en/"><span class="bn">English</span></a>
+        </p-->
+        <style>
+          .select_lang {text-align: right;}
+          .select_lang select.btn {
+            padding: 0.4em 1em;
+            background-color: #fff;
+            border: solid 1px #939696;
+            border-radius: 4px;
+            color: #333;
+          }
+          @media screen and (max-width: 750px) {
+            .select_lang {margin-top: 1em;}
+            .select_lang select.btn {
+              width: auto;
+              margin: 0 4% 0 0;
+              padding: 1em;
+              font-size: 14px;
+            }
+          }
+        </style>
+        <div class="header__select select_lang" data-stt-langbar="">
+<select class="btn btn__header--white safari-adjust" onchange="$('div.select_lang select option:selected').click();">
+<option>Language</option>
+<option data-stt-changelang="ja" data-stt-ignore="" data-stt-active="">Japanese</option>
+<option data-stt-changelang="en" data-stt-ignore="">English</option>
+</select>
+</div>
+      </header>
+      <!--/header-->
+      <!---ここまで--->
+
+      <!--gNav-->
+      <nav>
+        <ul class="clearfix pc">
+<li><a href="/">Home</a></li>
+<li><a href="/rentaloffice_list/">レンタルオフィスを探す</a>
+	<ul class="sec">
+		<li><a href="https://www.regus-office.jp/area_serch/">エリアから探す</a></li>
+		<li><a href="https://www.regus-office.jp/tokyo-area-serch/?mode=area_map">マップから探す</a></li>
+        <li><a href="https://www.regus-office.jp/tokyo-area-serch/#rosen_tokyo">路線から探す</a></li>
+        <li><a href="https://www.regus-office.jp/officetype/">オフィスタイプから探す</a></li>
+	</ul>
+</li>
+<li><a href="/service/office/">オフィスの種類</a>
+	<ul class="sec">
+		<li><a href="https://www.regus-office.jp/service/office/">レンタルオフィス</a></li>
+		<li><a href="https://www.regus-office.jp/service/virtualoffice/">バーチャルオフィス</a></li>
+        <li><a href="https://www.regus-office.jp/service/meetingroom/">時間貸し会議室</a></li>
+        <li><a href="https://www.regus-office.jp/service/businessworld/">ビジネスワールド</a></li>
+        <li><a href="https://www.regus-office.jp/coworking-spaces/">コワーキングスペース</a></li>
+	</ul>
+</li>
+<li><a href="/application/">活用シーンと事例</a>
+<ul class="sec">
+		<li><a href="https://www.regus-office.jp/application/start">起業の時に</a></li>
+		<li><a href="https://www.regus-office.jp/application/nomad">ノマドワーカーに</a></li>
+		<li><a href="https://www.regus-office.jp/application/professional">士業の先生に</a></li>
+		<li><a href="https://www.regus-office.jp/application/businesstrip">出張の時に</a></li>
+		<li><a href="https://www.regus-office.jp/application/project"><span>プロジェクトルームに</span></a></li>
+		<li><a href="https://www.regus-office.jp/application/branchoffice">支店・営業所に</a></li>
+		<li><a href="https://www.regus-office.jp/application/bcp">BCP-事業継続計画</a></li>
+		<li><a href="https://www.regus-office.jp/case/casestudies">活用事例</a></li>
+		<li><a href="https://www.regus-office.jp/case/customer">お客様の声</a></li>
+	</ul>
+</li>
+<!--li class="nv03"><a href="/case/">お客様の声</a>
+	<ul class="sec nv03_w">
+		<li><a href="https://www.regus-office.jp/case/casestudies">活用事例</a></li>
+		<li><a href="https://www.regus-office.jp/case/customer">お客様の声</a></li>
+	</ul>
+</li-->
+<li><a href="/learn/">レンタルオフィスを学ぶ</a>
+	<ul class="sec">
+		<li><a href="/learn/at_regus_article/">@Regus Web</a></li>
+		<li><a href="/learn/at_regus_article/digitalbook/">デジタルブック</a></li>
+		<li><a href="/blog/">リージャスBLOG</a></li>
+		<li class="360_font"><a href="https://www.regus-office.jp/360view/">VRでオフィスを体験</a></li>
+	</ul>
+</li>
+<li><a href="/aboutus">会社概要</a>
+	<ul class="sec">
+		<li><a href="https://www.regus-office.jp/aboutus/">会社概要</a></li>
+		<li><a href="https://www.regus-office.jp/greeting/">代表挨拶</a></li>
+		<li><a href="https://www.regus-office.jp/history/">沿革</a></li>
+		<li><a href="https://www.regus-office.jp/base/">拠点一覧</a></li>
+		<li><a href="https://www.regus-office.jp/recruiting_n/">採用情報</a></li>
+	</ul>
+</li>
+        </ul>
+        <ul class="hambergerNav sp">
+<li><a href="/">Home</a></li>
+<li><a href="/rentaloffice_list/">レンタルオフィスを探す</a>
+	<ul class="sec">
+		<li><a href="https://www.regus-office.jp/area_serch/">エリアから探す</a></li>
+		<li><a href="https://www.regus-office.jp/tokyo-area-serch/?mode=area_map">マップから探す</a></li>
+        <li><a href="https://www.regus-office.jp/tokyo-area-serch/#rosen_tokyo">路線から探す</a></li>
+        <li><a href="https://www.regus-office.jp/officetype/">オフィスタイプから探す</a></li>
+	</ul>
+</li>
+<li><a href="/service/office/">オフィスの種類</a>
+	<ul class="sec">
+		<li><a href="https://www.regus-office.jp/service/office/">レンタルオフィス</a></li>
+		<li><a href="https://www.regus-office.jp/service/virtualoffice/">バーチャルオフィス</a></li>
+        <li><a href="https://www.regus-office.jp/service/meetingroom/">時間貸し会議室</a></li>
+        <li><a href="https://www.regus-office.jp/service/businessworld/">ビジネスワールド</a></li>
+        <li><a href="https://www.regus-office.jp/coworking-spaces/">コワーキングスペース</a></li>
+	</ul>
+</li>
+<li><a href="/application/">活用シーンと事例</a>
+<ul class="sec">
+		<li><a href="https://www.regus-office.jp/application/start">起業の時に</a></li>
+		<li><a href="https://www.regus-office.jp/application/nomad">ノマドワーカーに</a></li>
+		<li><a href="https://www.regus-office.jp/application/professional">士業の先生に</a></li>
+		<li><a href="https://www.regus-office.jp/application/businesstrip">出張の時に</a></li>
+		<li><a href="https://www.regus-office.jp/application/project"><span>プロジェクトルームに</span></a></li>
+		<li><a href="https://www.regus-office.jp/application/branchoffice">支店・営業所に</a></li>
+		<li><a href="https://www.regus-office.jp/application/bcp">BCP-事業継続計画</a></li>
+		<li><a href="https://www.regus-office.jp/case/casestudies">活用事例</a></li>
+		<li><a href="https://www.regus-office.jp/case/customer">お客様の声</a></li>
+	</ul>
+</li>
+<!--li class="nv03"><a href="/case/">お客様の声</a>
+	<ul class="sec nv03_w">
+		<li><a href="https://www.regus-office.jp/case/casestudies">活用事例</a></li>
+		<li><a href="https://www.regus-office.jp/case/customer">お客様の声</a></li>
+	</ul>
+</li-->
+<li><a href="/learn/">レンタルオフィスを学ぶ</a>
+	<ul class="sec">
+		<li><a href="/learn/at_regus_article/">@Regus Web</a></li>
+		<li><a href="/learn/at_regus_article/digitalbook/">デジタルブック</a></li>
+		<li><a href="/blog/">リージャスBLOG</a></li>
+		<li class="360_font"><a href="https://www.regus-office.jp/360view/">VRでオフィスを体験</a></li>
+	</ul>
+</li>
+<li><a href="/aboutus">会社概要</a>
+	<ul class="sec">
+		<li><a href="https://www.regus-office.jp/aboutus/">会社概要</a></li>
+		<li><a href="https://www.regus-office.jp/greeting/">代表挨拶</a></li>
+		<li><a href="https://www.regus-office.jp/history/">沿革</a></li>
+		<li><a href="https://www.regus-office.jp/base/">拠点一覧</a></li>
+		<li><a href="https://www.regus-office.jp/recruiting_n/">採用情報</a></li>
+	</ul>
+</li>
+        </ul>
+      </nav>
+      <!--/gNav-->
+
+      <!--contentsWrap-->
+      <div class="contentsWrap clearfix">
+        <!--contents-->
+        <!--p class="sp geo_t lang_btn">
+          <a href="/vacancy_en/"><span class="bn">English</span></a>
+        </p-->
+<style>
+@media screen and (max-width: 750px) {p.can_txt {color:#e00133; font-size: 16px; font-weight: bold; letter-spacing: 0;}}
+</style>
+                    <p class="can_txt mgT20 sp">【ご新規様限定】本日のお問い合わせで対象</p>
+          
+<div class="bnr mgB10"><img src="/images/campaign/price-cp/regus_cam_930x330.jpg" alt="キャンペーン" class="spImg"></div>
+
+<div class="sub_txt_sp"><!---SP 202406修正--->
+          <div class="">
+                    <p class="lrg_cntr">ご希望（オフィス・エリアなど）のご指定で<br>1時間以内にご案内します（営業時間内）。<br>価格相談も承ります。</p>
+                    </div>
+            <!--div class="qa_box_sp">
+              <ul>
+                <li>・閲覧した物件が入居できるか</li>
+                <li>・入居費用がいくらかかるか</li>
+                <li>・コストが削減できるのか　など</li>
+              </ul>
+            </div-->
+            <!--div class="sub_txt_sp" style="padding: 0 4px;">
+              <p class="sml" style="text-align: center;">＊営業時間外や、土日祝日の場合は翌営業日となります。</p>
+                <p class="lrg mgT0">お急ぎの場合はお電話ください。</p>
+                <div class="tel_box_sp mgT0">
+                <a href="tel:0120-965-391">0120-965-391</a>
+                <p>(平日9:00～18:00)</p>
+                </div>
+            </div-->
+          <div class="sub_txt_sp" style="display: none;">
+          <p class="to_another_sp">空室・金額以外のお問い合わせは<a href="/enquiry/">こちら</a></p>
+          </div>
+        </div><!---ここまで//--->
+
+        <div class="title_pc_area pc">
+          <div class="title_area">空室・金額を確認</div>
+          <a href="/enquiry/"><p class="to_another">お問い合わせはこちら</p></a>
+        </div>
+  <div id="enquiryBox">
+		<div class="flR">
+    <div class="ttl_box pc">
+      <p>お客様のご希望条件にあったお部屋の空室・金額をご提案させていただきます。</p>
+    </div>
+<style>
+@media screen and (min-width: 750px) {
+.formArea_in {display: flex; flex-direction:column}
+}
+@media screen and (max-width: 750px) {
+.formArea_in {display: flex; flex-direction: column;}
+.formArea_in .fl_01 {order: 3;}
+.formArea_in .fl_02 {order: 1;}
+.formArea_in .fl_03 {
+	order: 2;
+	display: flex;
+	flex-direction: column;
+}
+.formArea_in .fl_03 .fl_kengaku{order: 2; display: flex; padding-bottom: 16px;}
+#enquiryBox .flR dl.fl_kengaku dt,
+#enquiryBox .flR dl.fl_kengaku dd {
+	padding: 4px 4%;
+}
+.formArea_in .fl_03 .fle_txtarea{order: 1;}
+#enquiryBox .flR dl.fle_txtarea dt.pc{display: none;}
+#enquiryBox .flR dl.fle_txtarea dd {padding-bottom: 4px;}
+}
+@media screen and (min-width: 750px) {
+  .wrapper .formArea dd textarea {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .wrapper .formArea dd .radioBtn li {
+    margin-bottom: 2px;
+  }
+}
+.kengaku {
+	padding: 0.2em 0;
+	text-align: center;
+	/*border-top: dashed 1px #aaafaf;
+	border-bottom: dashed 1px #aaafaf;
+	margin-top: 1em;*/
+}
+ul.txt_l {padding-bottom: 0.2em;}
+ul.txt_l li label {font-size: 0.9em; font-weight: bold;}
+ul.txt_l li.kengaku label {font-size: 1em; font-weight: normal;}
+ul.txt_s {padding-top: 0.4em;}
+ul.txt_s li {font-size: 0.9em;}
+/*2024.12.20*/
+ul.radioBtn.btn_y {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 0.6em;
+}
+ul.radioBtn.btn_y li {
+	flex-basis: 49%;
+	padding: 4px;
+	margin-bottom: 8px;
+	border: solid 2px #b89d4b;
+	border-radius: 4px;
+	background-color: #eeeadd;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 4.5em;
+}
+@media screen and (min-width: 750px) {
+ul.radioBtn.btn_y li.to_pop {display: none;}
+}
+ul.radioBtn.btn_y li#licheckbox01 {background-color: #eadaa9;}
+ul.radioBtn.btn_y li#licheckbox02 label {font-size: 0.888em;}
+ul.radioBtn.btn_y li input {
+	accent-color: #b89d4b;
+	inline-size: 18px;
+	block-size: 18px;
+	flex-basis: 12%;
+}
+span.circle{
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  text-align:center;
+  line-height: 1.2em;
+  margin-left: 4em;
+}
+
+@media screen and (min-width: 750px) {
+	span.circle_pc{
+	width: 1.2em;
+	height: 1.2em;
+	border-radius: 50%;
+	background: #000;
+	color: #fff;
+	text-align:center;
+	line-height: 1.2em;
+	display: inline-block;
+	margin: 0 4px 0 auto;
+	}
+	span.circle_pc:hover {cursor: pointer;}
+	ul.txt_l li label {font-size: 0.9em; font-weight: bold; display: inline-block; margin: 0 auto;}
+}
+@media screen and (max-width: 750px) {
+	.wrapper .formArea dd ul.radioBtn.btn_y li {
+	flex-basis: 90%;
+	margin-bottom: 10px;
+	height: 2.8em;
+	line-height: 1;
+	text-align: left;
+}
+.wrapper .formArea dd ul.radioBtn.btn_y li.to_pop {
+	flex-basis: 3%;
+	border: none;
+	background-color:inherit;
+}
+span.circle{margin-left: 0;}
+}
+</style>
+<form action="/vacancy/?mode=B" method="post" id="form_area" class="validationForm" novalidate>
+<div class="formArea">
+<!--p class="mgB20">下記のフォームより、お問い合わせ下さい.</p-->
+
+<div class="formArea_in"><!--250122-->
+<div class="fl_01">
+<dl>
+<dt>お名前<span class="att">必須</span></dt>
+<dd><input type="text" name="second_name" value="" size="35" placeholder="山田 太郎" class="full name error_bg" /></dd>
+</dl>
+
+
+<dl>
+<dt>メールアドレス<span class="att">必須</span></dt>
+<dd><input type="email" autocomplete="email"  name="email" inputmode="email" value="" size="35" placeholder="sample@sample.jp" class="full email error_bg char_change"/></dd>
+</dl>
+
+
+<dl>
+<dt>電話番号<span class="att">必須</span></dt>
+<dd>
+<input type="tel" name="tel-number" value="" size="25" placeholder="0312345678" class="full tel error_bg" />
+<p style="color: red; padding-top: 4px;">※電話番号の入力間違いにご注意ください</p>
+</dd>
+</dl>
+</div>
+
+<dl class="pb00 fl_02">
+<dt class="service_txt_allpc"><p class="pc">ご希望のサービス<span class="att">必須</span><!--span class="circle pc_circle">？</span--></p>
+<p class="tooltip_pc_all" style="display:none"><span>プライベートオフィス（個室オフィス）：ビジネスに必要なオフィス設備が完備された個室オフィスです。</span>
+<span>シェアオフィス（デスク単位契約/月額）：個室オフィスと同等のサービスが受けられる、デスク単位契約です。</span>
+<span>バーチャルオフィス：業務スペース(事務所)を構えずに、事業を始める際に必要な住所、電話番号などを借りられます。</span>
+<span>コワーキングスペース（メンバーシップ）：ビジネスアワーのみ、空きデスクを利用できますが、登記には利用不可です。</span>
+</p>
+<p class="officeSelect sp">ご希望のサービス<span class="att">必須</span></p></dt>
+<dd>
+<!--p class="officeSelect mgT5" style="font-size: 0.95rem;">オフィス選択</p-->
+<ul class="radioBtn txt_l btn_y">
+	<li id="licheckbox01"><input type="radio" name="menu-45" value="レンタルオフィス" checked id="checkbox01"><label for="checkbox01"> プライベートオフィス<br class="pc">（個室オフィス）</label><span class="circle_pc pc">？</span><p class="tooltip" style="display:none">ビジネスに必要なオフィス設備が完備された個室オフィスです。</p></li><li class="to_pop"><span class="circle">？</span></li>
+    <li id="licheckbox02"><input type="radio" name="menu-45" value="コワーキングスペース（月額デスク単位契約）"  id="checkbox02"><label for="checkbox02"> シェアオフィス<br class="pc">（デスク単位契約/月額）</label><span class="circle_pc pc">？</span><p class="tooltip" style="display:none">個室オフィスと同等のサービスが受けられる、デスク単位契約です。</p></li><li class="to_pop"><span class="circle">？</span></li>
+    <li id="licheckbox03"><input type="radio" name="menu-45" value="バーチャルオフィス"  id="checkbox03"><label for="checkbox03"> バーチャルオフィス</label><span class="circle_pc pc">？</span><p class="tooltip" style="display:none">業務スペース(事務所)を構えずに、事業を始める際に必要な住所、電話番号などを借りられます。</p></li><li class="to_pop"><span class="circle">？</span></li>
+
+</ul>
+<!--p class="txtS">※バーチャルオフィスを提供していないセンターもございますので、詳しくはお問い合わせ下さい。</p-->
+<!--ul>
+<li class="kengaku"><label for=""><input type="checkbox" name="book_a_visit" value="する" id=""> 見学予約を希望する</label></li>
+</ul-->
+<!--p class="officeSelect mgT15">その他サービス</p-->
+<ul class="radioBtn txt_s">
+<li id="licheckbox04"><input type="radio" name="menu-45" value="メンバーシップ"  id="checkbox04"><label for="checkbox04"> コワーキングスペース（メンバーシップ）</label><p class="tooltip cw_mship">ビジネスアワーのみ、空きデスクを利用できますが、登記には利用不可です。</p></li>
+    <!--li><label for="checkbox05"><input type="radio" name="menu-45" value="会議室（時間単位利用）"  id="checkbox05"> 会議室（時間単位利用）</label></li-->
+    <li><label for="checkbox06"><input type="radio" name="menu-45" value="その他"  id="checkbox06"> その他</label></li>
+	<li><a href="https://www.myregus.com/home?lang=ja-jp" style="text-decoration:underline" target="_blank">会議室に関する、空室・金額確認・ご予約</a></li>
+	<!--li class="mgT10"><textarea id="message" name="message"
+                  rows="4" cols="50" maxlength="200"
+                  wrap="hard" placeholder="ご希望のエリアや必要な条件などありましたら、ご記入ください。
+例：窓側希望など"></textarea></l1-->
+    </ul>
+<!--ul class="mgB15">
+		<li><a href="https://www.myregus.com/home?lang=ja-jp" style="text-decoration:underline" target="_blank">会議室に関する、空室・金額確認・ご予約</a></li>
+		<li class="kengaku"><label for=""><input type="checkbox" name="book_a_visit" value="する" id=""> 見学予約を希望する</label></li>
+	</ul-->
+</dd>
+</dl>
+
+<div class="fl_03">
+<dl class="fl_kengaku">
+<dt>見学予約<span class="attB">任意</span></dt>
+<dd><label for="">希望する <input type="checkbox" name="book_a_visit" value="する" id=""></label></dd>
+</dl>
+
+<dl class="fle_txtarea">
+<dt class="pc">ご希望など<span class="attB">任意</span></dt>
+<dd><textarea id="message" name="message"
+                  rows="4" cols="50" maxlength="200"
+                  wrap="hard" placeholder="ご希望のエリアや必要な条件などありましたら、ご記入ください。
+例：渋谷駅周辺、窓側希望など"></textarea></dd>
+</dl>
+</div>
+
+
+</div><!--250122-->
+<!--dl>
+<dt>ご希望のエリア<span class="attB">任意</span></dt>
+<dd> <textarea id="message" name="message"
+                  rows="4" cols="50" maxlength="200"
+                  wrap="hard" placeholder="ご希望のエリアや必要な条件などありましたら、ご記入ください。
+例：窓側希望など"></textarea></dd>
+</dl-->
+<div class="policy_box">
+<label for="checkbox_policy">
+	<input type="checkbox" name="checkbox_policy" value="個人情報の取り扱いに同意する" id="checkbox_policy" checked />
+	<a href="https://www.regus-office.jp/policy" target="_blank" rel="noopener noreferrer" style="color: #e10034; text-decoration: underline" class="return_page_top">個人情報の取り扱い</a>に同意する
+</label>
+</div>
+<input type="hidden" name="vacancy_price" value="1" />
+<input type="hidden" name="sub_val" value="1">
+<input type="hidden" name="pre_page_val" value="">
+<input type="hidden" name="basepoint" value="">
+<input type="hidden" name="recaptchaResponse" id="recaptchaResponse"><input type="hidden" name="ab_test" value="a">
+<div class="btnArea"><input type="submit" name="send" id="image-btn" value="　" class="btn"></div>
+</div>
+
+</form>
+
+          </div>
+          <!-- .flL -->
+
+          <div class="flL">
+<!----251211------//-->
+　　　　　　　<div class="balloon1">
+  <p class="title">空席残りわずか!</p>
+</div>
+<!----251211------//-->
+
+            <div class="sub_txt">
+<p class="lrg_cntr">ご希望（オフィス・エリアなど）のご指定で<br>1時間以内にご案内します。<br>価格相談も承ります。</p>
+            
+              <p class="sml" style="text-align: center;">＊営業時間外や、土日祝日の場合は翌営業日となります。</p>
+
+            </div>
+            <div class="qa_box">
+              <ul>
+                <li>・希望エリアや物件の空室のご案内</li>
+                <li>・入居費用のご相談</li>
+                <li>・物件のサービス、設備のご案内</li>
+              </ul>
+            </div>
+            <div class="sub_txt mgB20 ">
+              <p>ご希望に添えない場合でも、ご指定の施設以外でお客様の条件に合った施設をご案内させていただきます。</p>
+              <p class="sml">＊返信は平日24時間以内、土日祝日は翌営業日となります。</p>
+            </div>
+<style>
+@media screen and (min-width: 750px) {p.can_txt {font-size: 18px; color:#e00133; font-weight: bold;}}
+</style>
+
+<p class="can_txt pc">【ご新規様限定】本日のお問い合わせで対象</p>
+
+<div class="bnr"><img src="/images/campaign/price-cp/regus_cam_600x500.jpg" alt="キャンペーン" class="pcImg" /></div>
+
+
+            <div class="bnr">
+              <img src="/special/enquiry/images/enquiry_sp_main.jpg" alt="レンタルオフィス 世界No.1ブランドリージャス© どんなことでもお気軽にご相談下さい。" class="spImg" />
+            </div>
+            <!--div class="sub_txt top_dashed">
+            <p class="pc">お急ぎの場合はお電話にてお問い合わせください。</p>
+            <div class="tel_box">
+                <a href="tel:0120-965-391" class="return_page_top">0120-965-391</a>
+                <p>(平日9:00～18:00)</p>
+            </div>
+            <div class="tel_box_sp">
+            <a href="tel:0120-965-391" class="return_page_top">0120-965-391</a>
+            <p>(平日9:00～18:00)</p>
+          </div>
+
+            </div-->
+          </div>
+        </div>
+        <!-- #enquiryBox -->
+
+        <!--div class="popup">
+          <p class="kakunin">確認</p>
+          <p>お問い合わせは完了していません。<br>このフォームから移動しますか？</p>
+          <div class="stay"><button class="popup_close" type="button" data-action="cancel">このページにとどまる</button></div>
+          <div class="leave"><button class="popup_close" type="button" data-action="confirm">移動する</button></div>
+        </div-->
+
+    </div>
+    <!--/contentsWrap-->
+
+    <div class="pageTop">
+      <a href="#top" class="return_page_top sp"><img src="/common2/images/btn_pagetop.gif" alt="ページトップへ" /></a>
+    </div>
+
+    <!-- /211124 スマホ問い合わせ表示-->
+
+<!-- /211124 スマホ問い合わせ表示-->
+
+<!--/div//-->
+<script type="text/javascript">
+var current = 1;
+var next = 2;
+
+var max_count = 2;
+
+$(function () {
+var timer;
+timer = window.setInterval(fadeinout, 3000);
+});
+
+function fadeinout() {
+$("#image-change" + next).fadeIn(1000);
+$("#image-change" + current).fadeOut(500);
+
+current = next;
+next++;
+if (next > max_count) {
+next = 1;
+}
+}
+</script>
+<style>
+.btn_f {
+padding: .3em .5em;
+text-align: center;
+cursor: pinter;
+height: auto;
+}
+
+.btn_f:hover {
+cursor: pinter;
+}
+
+.btn_f:active {
+background: none;
+}
+
+.box_footer {
+position: fixed;
+bottom: 8px;
+right: 14px;
+width: 300px;
+height: 120px;
+text-align: center;
+background: #000;
+z-index: 999;
+/*overflow: hidden;*/
+}
+
+
+/* close button */
+.action-close {
+margin-top: 2em;
+}
+
+.action-close .btn_f {
+position: fixed;
+display: inline-block;
+bottom: 115px;
+right: 3px;
+z-index: 1000;
+}
+
+.action-close .box_footer {
+border: none;
+}
+
+/* checkbox non-display */
+.add-control .checkbox {
+display: none;
+}
+
+/* close button's control */
+.add-control .action-close #close:checked~.btn_f {
+display: none;
+}
+
+.add-control .action-close #close:checked~.box_footer {
+display: none;
+}
+
+@media screen and (max-width: 750px) {
+.float_bnr {
+display: none;
+}
+}
+
+/*______________________*/
+.box_footer #image-wrapperC1 {
+width: 100%;
+height: 120px;
+}
+
+.box_footer #image-wrapperC1 .image-wrapper2 {
+width: 100%;
+max-width: 300px;
+margin: 0 auto;
+}
+
+.box_footer #image-wrapperC1 .image-wrapper2 .image-change {
+position: absolute;
+width: 100%;
+max-width: 300px;
+height: 100%;
+left: 0;
+max-height: 120px;
+}
+
+.box_footer #image-wrapperC1 .image-wrapper2 #image-changeC2 {
+display: none;
+}
+</style>
+<!--script type="text/javascript">
+var currentC=1;
+var nextC=2;
+
+var max_countC=2;
+
+$(function(){
+var timerC;
+timerC=window.setInterval(fadeinoutC,3000);
+});
+
+function fadeinoutC(){
+$("#image-changeC"+nextC).fadeIn(1000);
+$("#image-changeC"+currentC).fadeOut(500);
+
+currentC=nextC;
+nextC++;
+if(nextC > max_countC){
+nextC=1;
+}
+}
+</script-->
+
+<footer>
+<div class="footer">
+<dl>
+<dt>www.regus-office.jp</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/area-search/">レンタルオフィスを探す</a></li>
+<li><a href="/officetype/">オフィスの種類</a></li>
+<li><a href="/application/">事業規模から探す</a></li>
+<li><a href="/purpose/">利用目的から探す</a></li>
+<li><a href="/case/">活用事例</a></li>
+<li><a href="/blog/">レンタルオフィスを学ぶ</a></li>
+<li><a href="/profile/">リージャスとは</a></li>
+<li><a href="/recruiting_n/">採用情報</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>リージャスのサービスプラン</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/service/office/">レンタルオフィス</a></li>
+<li><a href="/service/virtualoffice/">バーチャルオフィス</a></li>
+<li><a href="/service/meetingroom/">時間貸し会議室</a></li>
+<li><a href="/service/coworking-spaces/">コワーキングスペースサービス</a></li>
+<li><a href="/service/membership/">メンバーシップ</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>リージャスのブランド</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li><a href="/openoffice/">オープンオフィス</a></li>
+<li><a href="/coworking/">コワーキング</a></li>
+<li><a href="/brands/brand_regus/">リージャス</a></li>
+<li><a href="/spaces/">SPACES</a></li>
+<li><a href="/signature-brand/">Signature</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt>人気のエリア</dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li class="gray mg0" style="margin-right: 10px">東京の人気エリア：</li>
+<li><a href="/shibuya-area/">渋谷</a>・<a href="/ebisu-area/">恵比寿</a>エリアのレンタルオフィス</li>
+<li><a href="/marunouchi-otemachi-area/">丸の内・大手町エリアのレンタルオフィス</a></li>
+<li><a href="/akasaka-area/">赤坂</a>・<a href="/roppongi-area/">六本木</a>エリアのレンタルオフィス</li>
+</ul>
+<ul class="clearfix">
+<!--li class="gray2" style="width: 93px">&nbsp;</li-->
+<li><a href="/sinjuku-area/">新宿</a>・<a href="/ikebukuro-area/">池袋</a>エリアのレンタルオフィス</li>
+<li><a href="/aoyama-omotesando-area/">青山・表参道エリアのレンタルオフィス</a></li>
+<li><a href="/ginza-yurakucho-area/">銀座・有楽町エリアのレンタルオフィス</a></li>
+<li><a href="/yaesu-nihonbashi-area/">八重洲・日本橋エリアのレンタルオフィス</a></li>
+</ul>
+<ul class="clearfix">
+<li><a href="/shinagawa-area/">品川</a>・<a href="/hamamatsucho-area/">浜松町</a>エリアのレンタルオフィス</li>
+<li><a href="/osaki-gotanda-area/">大崎・五反田エリアのレンタルオフィス</a></li>
+<li><a href="/shinbashi-shiodome-area">新橋・汐留エリアのレンタルオフィス</a></li>
+<li><a href="/kanda-akihabara-area/">神田・秋葉原</a>・<a href="/kinsicho-area/">錦糸町</a>エリアのレンタルオフィス</li>
+</ul>
+<ul class="clearfix">
+<li><a href="/kojimachi-yotsuya-area/">麹町・四ッ谷エリアのレンタルオフィス</a></li>
+<li><a href="/tachikawa-area/">立川エリアのレンタルオフィス</a></li>
+<li><a href="/machida-area/">町田エリアのレンタルオフィス</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt></dt>
+<dd class="clearfix">
+<ul class="mgR5 clearfix">
+<li class="gray mg0">全国の人気エリア：</li>
+<li><a href="/tokyo-area/">東京のレンタルオフィス</a></li>
+<li><a href="/sapporo-area/">札幌のレンタルオフィス</a></li>
+<li><a href="/sendai-area/">仙台のレンタルオフィス</a></li>
+<li><a href="/yokohama-minatomirai-area/">横浜のレンタルオフィス</a></li>
+<li><a href="/aichi-area/">愛知・名古屋のレンタルオフィス</a></li>
+<li><a href="/osaka-area/">大阪のレンタルオフィス</a></li>
+<li><a href="/fukuoka-area/">福岡のレンタルオフィス</a></li>
+<li><a href="/omiya-area/">大宮のレンタルオフィス</a></li>
+<li><a href="/tsukuba-area/">茨城のレンタルオフィス</a></li>
+<li><a href="/shizuoka-area/">静岡のレンタルオフィス</a></li>
+<li><a href="/hiroshima-area/">広島のレンタルオフィス</a></li>
+<li><a href="/kyoto-area/">京都のレンタルオフィス</a></li>
+<li><a href="/hyogo-kobe-area/">神戸のレンタルオフィス</a></li>
+<li><a href="/okayama-area/">岡山のレンタルオフィス</a></li>
+<li><a href="/kagawa-area/">高松のレンタルオフィス</a></li>
+<li><a href="/kitakyushu-area/">小倉のレンタルオフィス</a></li>
+<li><a href="/kumamoto-area/">熊本のレンタルオフィス</a></li>
+<li><a href="/okinawa-area/">沖縄のレンタルオフィス</a></li>
+</ul>
+</dd>
+</dl>
+
+<dl>
+<dt></dt>
+<dd class="clearfix">
+<ul class="mgR20 socialB">
+<li class="gray3 mgR10">Regusとつながろう：</li>
+<li><a href="https://twitter.com/RegusJapanKK" title="Twitter" class="twitter" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-twitter.png" alt="Twitter" border="0" /></a></li>
+<li><a href="https://www.instagram.com/regusjapan/" title="Instagram" class="Instagram" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-insta.png" alt="Instagram" border="0" /></a></li>
+<li><a href="https://www.facebook.com/RegusJapan" title="Facebook" class="facebook" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-facebook.png" alt="Facebook" border="0" /></a></li>
+<li><a href="https://www.linkedin.com/company/regus-japan/" title="Linked In" class="linked-in" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-linkedin.png" alt="Linked In" border="0" /></a></li>
+<li class="pdR20"><a href="https://www.youtube.com/channel/UCy0nszAgoTCdPM6zPWTkowA" title="youtube" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer-youtube.png" alt="youtube" border="0" /></a></li>
+</ul>
+<ul class="socialB">
+<li class="mgRight">
+<p class="resv">My Regus.comで<span>スペースを予約：</span><a href="https://www.myregus.com" target="_blank">ブラウザ版&nbsp;<img src="/common2/images/footer_img_app.svg" alt="" class="openWin" style="width: 18px;height: 18px"></a></p>
+</li>
+<li><a href="https://apps.apple.com/gb/app/regus/id387924487" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer_img_apple.jpg" alt="App Store"></a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.regus" target="_blank" rel="nofollow noopener"><img src="/common2/images/footer_img_google.jpg" alt="Google Play"></a>
+</li>
+<!--li class="useM"><a href="/common2/images/my_regus.pdf" target="_blank">使い方</a></li-->
+</ul>
+</dd>
+<dd class="newworld">
+<a href="/new-world/" target="">リージャスのコロナウイルス対策と危機管理対応について</a></dd>
+</dl>
+
+<div class="clearfix">
+<div class="ftrLogo"><a href="/"><img src="/common2/images/logo_ftr.gif" alt="Regus"></a></div>
+<nav class="ftrNav clearfix">
+<ul>
+<li><a href="/profile/">リージャスとは</a></li>
+<li><a href="/policy">プライバシーポリシー</a></li>
+<li><a href="/regulation">利用規約</a></li>
+<li><a href="/system-requirements">推奨環境</a></li>
+<li><a href="/socialmediapolicy">ソーシャルメディアポリシー</a></li>
+<li><a href="/site-map/">サイトマップ</a></li>
+</ul>
+</nav>
+</div>
+<p class="copy">&copy; 2024 Regus Group Companies　　<span class="pcImg">レンタルオフィス・コワーキング スペースならリージャス。東京・大阪・名古屋ほか全国200拠点のワークスペースをご紹介。</span></p>
+</div>
+</footer>
+
+<script type="text/javascript">
+window._pt_sp_2 = [];
+_pt_sp_2.push('setAccount,613ecd73');
+var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+(function () {
+var atag = document.createElement('script');
+atag.type = 'text/javascript';
+atag.async = true;
+atag.src = _protocol + 'js.ptengine.jp/pta.js';
+var stag = document.createElement('script');
+stag.type = 'text/javascript';
+stag.async = true;
+stag.src = _protocol + 'js.ptengine.jp/pts.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(atag, s);
+s.parentNode.insertBefore(stag, s);
+})();
+</script>
+<script>
+$(function () {
+$('div.modal_wrap').on('click', function () {
+$('body').css("overflow-y", "visible");
+$('div.modal_wrap').css("visibility", "hidden");
+});
+$('div.modal_wrap div.modal .close').on('click', function () {
+$('body').css("overflow-y", "visible");
+$('div.modal_wrap').css("visibility", "hidden");
+});
+});
+</script>
+<script src="/common2/js/slick.js?ver=202012" type="text/javascript" charset="utf-8"></script>
+<script src="https://ce.mf.marsflag.com/latest/js/mf-search.js"></script>
+
+<script>
+  const sendBtn = document.getElementById('image-btn');
+  sendBtn.addEventListener('click', function(e){ //送信ボタンが押された時
+   e.preventDefault(); //いったん送信を止める
+   grecaptcha.ready(function () {
+      grecaptcha.execute("6Lc5opEbAAAAAGFLiqzOb3Z3KTac_xmW_OXWjk7Z", {action: "submit"}).then(function(token) {
+      //reCAPTCHAで発行されたトークンが変数tokenに格納されている
+      document.getElementById("recaptchaResponse").value = token;
+      console.log(token);
+      document.getElementById('form_area').submit(); //tokenをinputタグのvalueに入れた後に送信
+   });
+  });
+  });
+</script>
+  </body>
+</html>

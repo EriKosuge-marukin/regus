@@ -1,0 +1,65 @@
+#wrapper .ttl {
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 20px; }
+  #wrapper .ttl h1 {
+    background: url(/sp/form/img/kv_bg_2.png) right center no-repeat, url(/sp/form/img/kv_bg.gif) top center no-repeat;
+    -webkit-background-size: contain, cover;
+    -moz-background-size: contain, cover;
+    -ms-background-size: contain, cover;
+    background-size: contain, cover;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004c80;
+    padding: 25px 5%;
+    line-height: 1.4; }
+    #wrapper .ttl h1 span {
+      font-size: 17px;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #004c80; }
+#wrapper .inner {
+  padding: 0 3.5%; }
+  #wrapper .inner p.bld {
+    font-weight: bold;
+    font-size: 20px;
+    font-size: 2rem; }
+  #wrapper .inner .box {
+    margin-top: 20px;
+    width: 100%;
+    border: 2px #efefef solid;
+    padding: 20px 3.5%; }
+    #wrapper .inner .box p.red {
+      color: #ea2423;
+      font-size: 15px;
+      font-size: 1.5rem;
+      margin-bottom: 5px; }
+    #wrapper .inner .box .gray {
+      background: #efefef;
+      padding: 15px 3.5%; }
+      #wrapper .inner .box .gray dl {
+        text-align: left; }
+        #wrapper .inner .box .gray dl dt {
+          font-weight: bold;
+          margin-bottom: 5px; }
+      #wrapper .inner .box .gray p.tel {
+        margin-top: 15px;
+        font-size: 28px;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #1898d3; }
+      #wrapper .inner .box .gray a {
+        margin-top: 15px;
+        color: #2A8DBA; }
+
+.page-top, .foot_btn {
+  display: none !important; }
+
+footer {
+  padding-bottom: 20px !important; }
+
+/*# sourceMappingURL=thanks.css.map */

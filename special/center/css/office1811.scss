@@ -1,0 +1,750 @@
+@charset "utf-8";
+@import 'mixin';
+
+/*----------pageTop----------*/
+.pageTopOFC{
+	clear: both;
+	margin:40px 60px 0 0;
+	text-align:right;
+	@include break750(){
+	margin:10% 0;
+	text-align:center;
+	padding:0 30%;
+	}
+}
+.sp{
+	display: none;
+	@include break750(){display: block;}
+}
+.pc{display: block;
+	@include break750(){display: none;}}
+
+
+
+/*----------breadCrumb----------*/
+#breadcrumbOFC{
+	margin:0 0 10px;
+	li{
+		float:left;
+		font-size:10px;
+	
+	  a{	text-decoration:none;
+		color:#098ef5;
+		  
+		&:hover {
+		text-decoration:none;
+		color:#098ef5;}
+		&:visited {
+		text-decoration:none;
+		color:#098ef5;}
+		&:active {
+		text-decoration:none;
+		color:#098ef5}
+	    &:hover {
+	    text-decoration:underline;
+		}
+	}
+}
+}
+
+.stycky{@include break750(){
+	display: none;
+	}
+}
+/*----------breadCrumb----------*/
+
+@mixin noto($weight:100){
+	font-family: 'Noto Sans JP';
+	font-weight: $weight;
+}
+.noto1{
+	font-family: 'Noto Sans JP';
+	font-weight: 100;
+	}
+
+
+/*---1811add---*/
+.main_contents{
+	width: 100%;
+	min-width: 1060px;
+	margin-top: 15px;
+	@include break750{
+		min-width: 0;
+	}
+	*{
+		box-sizing:border-box!important;
+	}
+	.main_ttl{
+		width: 100%;
+		text-align: left;
+		background: #4e5056;
+		padding: 45px 0;
+		@include break750{
+			padding: 25px 0;
+		}
+		>.inner{
+			width: 1060px;
+			margin: 0 auto;
+			@include break750{
+				width: 100%;
+				padding: 0 3.5%;
+			}
+			h1{
+				@include noto;
+				font-size: 44px;
+				color: #fff;
+				line-height: 1.2;
+				@include break750{
+					font-size: 25px;
+				}
+				span{
+					@include noto;
+					font-size: 24px;
+					display: block;
+					margin-bottom: 5px;
+					line-height: 1.2;
+					@include break750{
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+	h2.ttl{
+		@include flex;
+		@include fd;
+		@include ai;
+		@include jc(center);
+		font-size: 14px;
+		@include noto(400);
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 50px;
+		@include break750{
+			font-size: 12px;
+			margin-bottom: 30px;
+		}
+		span{
+			display: inline-block;
+			font-size: 36px;
+			@include noto(500);
+			border-bottom: 1px solid  #000;
+			padding: 0 15px 10px;
+			margin-bottom: 10px;
+			@include break750{
+				font-size: 26px;
+			}
+		}
+	}
+	.lead_area{
+		width: 1060px;
+		margin: 0 auto;
+		padding: 60px 0 0;
+		margin-bottom: 95px;
+		position: relative;
+		@include break750{
+			width: 100%;
+			padding: 30px 3.5% 0;
+			margin-bottom: 40px;
+		}
+		.txt_area{
+			width: 530px;
+			text-align: left;
+			@include break750{
+				width: 100%;
+			}
+			h2{
+				font-size: 30px;
+				@include noto(200);
+				margin-bottom: 45px;
+				@include break750{
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			p.txt{
+				font-size: 14px;
+				line-height: 1.8;
+				@include break750{
+					font-size: 13px;
+				}
+			}
+			.img_sp{
+				display: none;
+				@include break750{
+					display: block;
+					margin: 20px 0;
+					img{
+						width: 100%;
+					}
+				}
+			}
+			a.btn_red{
+				width: 257px;
+				margin-top: 40px;
+				text-align: center;
+				border: 2px solid  #cc0010;
+				padding: 5px 0;
+				line-height: 1;
+				display: block;
+				text-decoration: none !important;
+				background:url(../images/n_btn_link_icon.jpg) right 15px center no-repeat;
+				@include break750{
+					margin: 25px auto 0;
+				}
+				span.inner{
+					display: block;
+					font-size: 30px;
+					color: #cc0010;
+					@include noto(500);
+					@include break750{
+						font-size: 25px;
+					}
+					span.jp{
+						display: block;
+						font-size: 12px;
+						@include noto(400);
+						@include break750{
+							font-size: 10px;
+						}
+					}
+				}
+			}
+		}
+		.img_pc{
+			position: absolute;
+			top: -90px;
+			right: 0;
+			@include break750{
+				display: none;
+			}
+		}
+	}
+	.btn_area{
+		text-align: center;
+		margin-bottom: 100px;
+		@include break750{
+			padding: 0 3.5%;
+			margin-bottom: 50px;
+		}
+		a{
+			width: 620px;
+			margin: 0 auto;
+			display: block;
+			padding: 25px 0;
+			line-height: 1.3;
+			@include break750{
+				width: 100%;
+				padding: 15px 3%;
+			}
+			&.btn1{
+				background: #000;
+				margin-bottom: 20px;
+			}
+			&.btn2{
+				background: #707070;
+			}
+			span{
+				font-size: 20px;
+				display: inline-block;
+				background:url(../images/btn_arrow_wh.png) right center no-repeat;
+				padding-right: 20px;
+				color: #fff;
+				@include break750{
+					font-size: 15px;
+					padding-right: 15px;
+				}
+			}
+		}
+	}
+	.access_area{
+		width: 1060px;
+		margin: 0px auto 110px;
+		@include break750{
+			width: 100%;
+			padding: 0 3.5%;
+			margin-bottom: 50px;
+		}
+		.col_2{
+			@include flex;
+			width: 100%;
+			margin-bottom: 40px;
+			@include break750{
+				display: block;
+				margin-bottom: 25px;
+			}
+			.address{
+				width: 50%;
+				@include flex;
+				@include break750{
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				p.icon{
+					width: 36px;
+					@include break750{
+						width: 30px;
+						img{
+							width: 100%;
+						}
+					}
+				}
+				p.txt{
+					width:calc(100% - 36px);
+					padding: 0 10px;
+					font-size: 18px;
+					color: #4e5056;
+					line-height: 1.6;
+					@include break750{
+						width:calc(100% - 30px);
+						font-size: 15px;
+					}
+				}
+			}
+			.access{
+				width: 50%;
+				@include flex;
+				@include break750{
+					width: 100%;
+				}
+				p.icon{
+					width: 36px;
+					@include break750{
+						width: 30px;
+						img{
+							width: 100%;
+						}
+					}
+				}
+				p.txt{
+					width:calc(100% - 36px);
+					padding: 0 15px;
+					font-size: 14px;
+					color: #4e5056;
+					line-height: 2;
+					@include break750{
+						width:calc(100% - 30px);
+						font-size: 13px;
+						padding: 0 10px;
+						line-height: 1.6;
+					}
+				}
+			}
+		}
+		.map{
+			width: 100%;
+			height: 400px;
+			@include break750{
+				height: 300px;
+			}
+			iframe{
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.facility_area{
+		width: 1060px;
+		margin: 0 auto 120px;
+		@include break750{
+			width: 100%;
+			padding: 0 3.5%;
+			margin-bottom: 60px;
+		}
+		.col_2{
+			width: 100%;
+			@include flex;
+			@include jc(space-between);
+			@include break750{
+				display: block;
+			}
+			.txt_area{
+				width: 325px;
+				@include break750{
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				p{
+					font-size: 14px;
+					text-align: left;
+					line-height: 2;
+				}
+			}
+			ul{
+				width: 670px;
+				@include flex;
+				@include fw;
+					@include break750{
+						width: 100%;
+					}
+				li{
+					width: 50%;
+					@include flex;
+					@include ai;
+					&:nth-child(n+3){
+						margin-top: 20px;
+					}
+					p.icon{
+						width: 48px;
+						@include break750{
+							width: 35px;
+						}
+					}
+					p.txt{
+						width:calc(100% - 48px);
+						padding: 0 15px;
+						font-size: 18px;
+						line-height: 1.2;
+						@include break750{
+							width:calc(100% - 35px);
+							font-size: 13px;
+							padding: 0 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.service_area{
+		width: 1060px;
+		margin: 0 auto 110px;
+		@include break750{
+			width: 100%;
+			padding: 0 3.5%;
+			margin-bottom: 55px;
+		}
+		ul{
+			width: 100%;
+			text-align: center;
+			@include flex;
+			@include fw;
+			@include jc(space-between);
+			li{
+				width: 340px;
+				@include break2{
+					&:nth-child(n+4){
+						margin-top: 30px;
+					}
+				}
+				@include break750{
+					width: 49%;
+					&:nth-child(n+3){
+						margin-top: 15px;
+					}
+				}
+				a{
+					text-decoration: none;
+					display: block;
+					&:hover{
+						.img{
+							.base{
+								img{
+									@include transform(scale(1.4));
+								}
+							}
+						}
+					}
+					}
+					.img{
+						overflow: hidden;
+						position: relative;
+						width: 100%;
+						.base{
+							width: 100%;
+							height: 100%;
+							img{
+								@include transition;
+								display: block;
+							}
+						}
+						p{
+							position: absolute;
+							width: 100%;
+							color: #fff;
+							@include noto(200);
+							font-size: 24px;
+							line-height: 1.2;
+							top: 50%;
+							left: 50%;
+							@include transform(translate(-50%,-50%));
+							@include break750{
+								font-size: 18px;
+							}
+						}
+					}
+					p.ttl{
+						font-size: 14px;
+						margin-top: 5px;
+						@include break750{
+							font-size: 10px;
+						}
+					}
+				
+			}
+		}
+	}
+	.membership_area{
+		width: 1060px;
+		margin: 0 auto 130px;
+		@include flex;
+		@include ai;
+		@include jc(space-between);
+		@include break750{
+			width: 100%;
+			padding: 0 3.5%;
+			margin-bottom: 60px;
+			display: block;
+		}
+		.txt_area{
+			width: 340px;
+			position: relative;
+			@include break750{
+				width: 100%;
+			}
+			h2{
+				display: inline-block;
+				background: #fff;
+				padding: 15px 15px 15px 0;
+				white-space: nowrap;
+				font-size: 38px;
+				margin-bottom: 10px;
+				@include noto(200);
+				line-height: 1;
+				letter-spacing: 1px;
+				@include break750{
+					padding: 0;
+					white-space: normal;
+					font-size: 25px;
+					line-height: 1.4;
+					margin-bottom: 10px;
+				}
+				span{
+					font-size: 38px;
+					color: #e41d3a;
+					@include break750{
+						font-size: 25px;
+					}
+				}
+			}
+			p.txt{
+				font-size: 14px;
+				line-height: 2;
+				text-align: left;
+				margin-bottom: 30px;
+				@include break750{
+					margin-bottom: 20px;
+				}
+			}
+			a.btn_red{
+				width: 257px;
+				text-align: center;
+				border: 2px solid  #cc0010;
+				padding: 5px 0;
+				line-height: 1;
+				display: block;
+				text-decoration: none !important;
+				background:url(../images/n_btn_link_icon.jpg) right 15px center no-repeat;
+				@include break750{
+					margin: 25px auto 0;
+				}
+				span.inner{
+					display: block;
+					font-size: 30px;
+					color: #cc0010;
+					@include noto(500);
+					@include break750{
+						font-size: 25px;
+					}
+					span.jp{
+						display: block;
+						font-size: 12px;
+						@include noto(400);
+						@include break750{
+							font-size: 10px;
+						}
+					}
+				}
+			}
+		}
+		.img{
+			width: 700px;
+			@include break750{
+				width: 100%;
+				margin-top: 30px;
+			}
+		}
+	}
+	.message_area{
+		width: 1060px;
+		margin: 0 auto 120px;
+		@include flex;
+		@include ai;
+		padding-left: 80px;
+		@include break750{
+			width: 100%;
+			padding: 0 3.5%;
+			margin-bottom: 60px;
+			display: block;
+		}
+		.ttl{
+			width:calc(100% - 480px);
+			text-align: right;
+			@include break750{
+				width: 100%;
+				margin-bottom: 20px;
+				text-align: left;
+			}
+			h2{
+				display: inline-block;
+				text-align: left;
+				font-size: 38px;
+				@include noto(200);
+				line-height: 1.4;
+				letter-spacing: 1px;
+				@include break750{
+					font-size: 25px;
+				}
+				span{
+					font-size: 14px;
+					@include noto(400);
+					display: block;
+					letter-spacing: 0;
+					@include break750{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.message{
+			width: 480px;
+			padding: 35px 50px 10px;
+			background:url(../images/n_message_bg01.png) left top no-repeat,
+			url(../images/n_message_bg02.png) right bottom no-repeat;
+			@include break750{
+				width: 100%;
+				padding: 25px 30px;
+				background-size: 60px,60px;
+			}
+			p{
+				font-size: 14px;
+				line-height: 2;
+				text-align: left;
+				@include noto(400);
+			}
+		}
+	}
+	.other_area{
+		width: 100%;
+		padding: 60px 0 85px;
+		margin-bottom: 120px;
+		background: #bcbab3;
+		text-align: center;
+		@include break750{
+			padding: 30px 3.5% 40px;
+			margin-bottom: 60px;
+		}
+		>.inner{
+			width: 1060px;
+			margin: 0 auto;
+			@include break750{
+				width: 100%;
+			}
+			h2{
+				color: #fff;
+				font-size: 32px;
+				line-height: 1.4;
+				@include noto(500);
+				margin-bottom: 50px;
+				@include break750{
+					font-size: 20px;
+					margin-bottom: 30px;
+				}
+				span{
+					font-size: 16px;
+					display: block;
+					@include noto(200);
+					@include break750{
+						font-size: 13px;
+					}
+				}
+			}
+			ul{
+				width: 100%;
+				@include flex;
+				@include jc(space-between);
+				@include break750{
+					display: block;
+				}
+				li{
+					width: 310px;
+					border: 4px solid  #000;
+					position: relative;
+					overflow: hidden;
+					@include break750{
+						width: 90%;
+						margin: 0 auto 25px;
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+					a{
+						display: block;
+						text-decoration: none !important;
+						&:hover{
+							.base{
+								img{
+									@include transform(scale(1.4));
+								}
+							}
+						}
+					}
+					.base{
+						img{
+							@include transition;
+							display: block;
+						}
+					}
+					.txt{
+						position: absolute;
+						text-align: left;
+						width: 100%;
+						padding-left: 50px;
+						top: 50%;
+						left: 50%;
+						@include transform(translate(-50%,-50%));
+						@include break750{
+							padding: 0 5%;
+						}
+						p.eng{
+							display: inline-block;
+							font-size: 40px;
+							@include noto;
+							line-height: 1.2;
+							color: #dfdfdd;
+							background:url(../images/icon_arrow_gy_l.png) right 24px no-repeat;
+							padding-right: 20px;
+							@include break750{
+								font-size: 30px;
+								padding-right: 15px;
+								background-position-y: 16px;
+							}
+						}
+						p.jp{
+							margin-top: 10px;
+							line-height: 1.8;
+							font-size: 16px;
+							color: #dfdfdd;
+							@include noto(400);
+							@include break750{
+								font-size: 13px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*---/1811add---*/

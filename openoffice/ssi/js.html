@@ -1,0 +1,33 @@
+<script type="text/javascript" src="/openoffice/script/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/openoffice/script/modal.js"></script>
+<script type="text/javascript" charset="utf-8" src="/openoffice/script/drop_menu.js"></script>
+<script>
+$(window).on('load', function() {
+var url = $(location).attr('href');
+if(url.indexOf("#") != -1){
+var anchor = url.split("#");
+var target = $('#' + anchor[anchor.length - 1]);
+if(target.length){
+var pos = Math.floor(target.offset().top) - 140;
+$("html, body").animate({scrollTop:pos}, 500);
+}
+}
+});
+    
+    
+    
+
+    
+jQuery(function(){
+    var windowWidth = $(window).width();
+    var headerHight = 140; 
+    jQuery('a[href^=#]').click(function() {
+    var speed = 500;
+    var href= jQuery(this).attr("href");
+    var target = jQuery(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top-headerHight;
+    jQuery('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+   });
+});
+    </script>

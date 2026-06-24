@@ -1,0 +1,713 @@
+ @charset "utf-8";
+ @import "_mixin.scss";
+
+$redC:rgba(255,7,57,1);
+//*#e10739*/
+$tqsC:rgba(77,193,189,1);
+//*#4dc1bd*/
+
+
+#cp{
+	*{
+	font-family:'游ゴシック Medium',YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+		box-sizing: border-box;
+	font-feature-settings: 'palt' 1;
+	letter-spacing: 0.05em;
+	}
+}
+
+.contentsArea{
+	max-width: 1061px;
+	width: 100%;
+	margin: 0 auto;
+}
+.mv{
+	background-image: url("../img/mv_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	text-align: center;
+	height: 425px;
+	margin-bottom: 30px;
+	@include break{
+	height: 260px;
+	}
+	.txtTtl{
+		line-height: 1.2;
+	  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.33);
+		font-weight: bold;
+		font-size: 45px;
+		color:#ffffff;
+		transform: translateX(30px);
+		@include break{
+			font-size: 28px;
+		transform: translateX(0px);
+			}
+		.txt30{
+			font-size: 30px;
+		font-weight: bold;
+			@include break{
+			font-size: 18px;
+			}
+		}
+		.txt36{
+			font-size: 36px;
+		font-weight: bold;
+			@include break{
+			font-size: 20px;
+			}
+		}
+	}
+
+	.leadCopy{
+		color:#ffffff;
+		font-size: 21px;
+		font-weight: bold;
+	  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.33);
+		@include break{
+		font-size: 16px;
+	}
+	}
+}
+.consBtn{
+	display: table;
+	margin:0 auto 80px;
+	max-width: 620px;
+		@include break{
+	display: block;
+	margin:0 3% 40px;
+	width: 94%;	
+	}
+	a{
+	text-align: center;
+@include transition;
+@include break{
+			opacity: 1;
+		}
+	}
+	&.fixBtn,
+	&.fixBtnSp{
+		&.fxBB{
+			position: fixed;
+			bottom:0;
+			left:50%;
+			transform: translateX(-50%);
+			margin:0 auto 10px;
+			z-index: 99;
+		@include break{
+			width: 94%;
+			margin:0 auto 10px;
+			height: auto;
+			bottom:10px;
+		}
+		}
+	}
+	
+}
+#base{
+	margin-bottom:90px;
+		@include break{
+		margin:0 3% 40px;
+	}
+	.txtTtl{
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 20px;
+		@include break{
+		font-size: 20px!important;
+		line-height: 1.5 !important;
+		}
+		em{
+		color:$redC;
+		font-size: 30px;
+		font-weight: bold;
+		@include break{
+		font-size: 20px!important;
+		}
+		span{
+		font-size: 50px;
+		font-weight: bold;
+		@include break{
+		font-size: 30px!important;
+		line-height: 1.2 !important;
+			}
+			}
+		}
+	}
+	.needs{
+		display: table;
+		margin: 0 auto 20px;
+		font-size: 20px;
+		line-height: 1.4;
+		padding: 2px 15px;
+		border:#000000 1px solid;
+		border-radius: 18px;
+		@include break{
+		font-size:16px;
+		border-radius: 15px;
+		}
+	}
+	.needsList{
+	display: flex;
+	@include jc(center);
+		margin: 0 auto 20px;
+		@include break{
+			display: table;
+		}
+		>li{
+			font-size: 20px;
+			margin: 0 10px;
+			display: flex;
+			@include ai;
+		@include break{
+			font-size: 16px;
+			}
+			.bullet{
+				display: inline-block;
+				margin-right: 5px;
+			color: $tqsC;	
+			font-size: 12px;
+				@include break{
+						font-size: 10px;
+				}
+			}
+		}
+	}
+	.needsImg{
+		display: flex;
+	@include jc(space-between);
+		width: 100%;
+		max-width: 852px;
+		margin: 0 auto 30px;
+		>li{
+			max-width: 260px;
+			text-align: center;
+			width: 30.5%;
+			@include break{
+			width: 32%;
+			}
+			figure{
+				display: block;
+				border-radius: 50%;
+				margin-bottom: 5px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			p{
+				text-align: center;
+				font-size: 18px;
+				@include break{
+				font-size: 12px;
+				}
+			}
+			&.img1{
+			figure{
+				background-image: url("../img/base_needs_img1.jpg");
+				}
+			}
+			&.img2{
+			figure{
+				background-image: url("../img/base_needs_img2.jpg");
+				}
+			}
+			&.img3{
+			figure{
+				background-image: url("../img/base_needs_img3.jpg");
+				}
+			}
+		}
+	}
+	.areascBtn{
+		text-align: center;
+		max-width: 332px;
+		margin: 0 auto;
+		@include break{
+			width: 60%;
+		}
+	}
+}//#base
+
+#cost{
+		@include break{
+			margin: 0 3%;
+	}
+	.txtTtl{
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 30px;
+		@include break{
+		font-size: 20px!important;
+		}
+		em{
+		color:$redC;
+		font-size: 50px;
+		font-weight: bold;
+		@include break{
+		font-size: 30px;
+			}
+		span{
+		font-size: 40px;
+		font-weight: bold;
+		@include break{
+		font-size: 26px;
+		}
+			}
+		}
+	}
+	.effList{
+		display: table;
+		margin: 0 auto 70px;
+		position: relative;
+		&:after{
+			position: absolute;
+			bottom:-50px;
+			left:50%;
+			transform: translateX(-50%);
+			content: '▼';
+			display: inline-block;
+			text-align: center;
+			margin: 0 auto;
+			font-size: 28px;
+			color: #e4e4e4;
+		}
+		>li{
+		font-size: 18px;
+		border-bottom: #000000 1px dotted;
+		text-align: left;
+		padding: 6px 8px;
+			display: flex;
+			@include ai(flex-end);
+		@include break{
+		font-size: 16px;
+			@include ai(flex-start);
+			}
+			&:before{
+				width: 24px;
+				height: 30px;
+				margin-right: 10px;
+				content:'';
+				display: inline-block;
+				background: url("../img/icn_check.png") no-repeat center center /100% auto;
+		@include break{
+				width: 18px;
+			transform: translateY(-5px);
+				}
+			}
+			
+		}
+	}
+.txtCopy{
+	text-align: center;
+	margin-bottom: 30px;
+		line-height: 1.5;
+	.bd{
+		margin: 0 auto 10px;
+		display: table;
+		border-bottom:#000000 5px solid;
+		font-size: 26px;
+		font-weight: bold;
+		@include break{
+		border-bottom:#000000 3px solid;
+		font-size: 22px;
+		}
+		.redC{
+			color: $redC;
+		font-weight: bold;
+		}
+		.txt20{
+		font-size: 20px;
+		font-weight: bold;
+		}
+	}
+	}
+	.spcImg{
+		display: flex;
+		@include jc(space-between);
+		@include fw;
+		width: 100%;
+		margin-bottom: 30px;
+		>li{
+			width: 49.4%;
+			max-width: 524px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			min-height: 260px;
+			margin-bottom: 10px;
+			border-radius: 8px;
+			padding: 10px;
+			@include break{
+			min-height: 140px;
+			}
+			
+			p{
+			display: table;
+			font-size:14px;
+				color: #ffffff;
+			background-color: rgba(0,0,0,.8);
+				border-radius: 15px;
+				margin: 0 0 0 auto;
+				padding: 5px 15px;
+			@include break{
+			font-size:12px;
+				padding: 4px 10px;
+				}
+			}
+			&.img1{
+				background-image: url("../img/cost_space_img1.jpg");
+			}
+			&.img2{
+				background-image: url("../img/cost_space_img2.jpg");
+			}
+			&.img3{
+				background-image: url("../img/cost_space_img3.jpg");
+			}
+			&.img4{
+				background-image: url("../img/cost_space_img4.jpg");
+			}
+		}
+	}
+}//#cost
+
+#hygiene{
+	margin-bottom: 100px;
+		@include break{
+			margin: 0 3% 50px;
+	}
+	.txtTtl{
+		font-size: 36px;
+		font-weight: bold;
+		text-align: center;
+		@include break{
+		font-size: 24px !important;
+		}
+	}
+	.staffMask{
+		padding-top: 140px;
+		text-align: center;
+		font-size: 22px;
+		background: url("../img/icn_hygiene.png") no-repeat center top / 128px auto;
+		margin-bottom: 20px;
+		@include break{
+		padding-top: 120px;
+		background: url("../img/icn_hygiene.png") no-repeat center top / 100px auto;
+		font-size: 18px;
+		}
+}
+	.readyTxt{
+		text-align: center;
+		font-size: 22px;
+		@include break{
+		font-size: 18px;
+		}
+	}
+	.hygList{
+		display: table;
+		margin: 0 auto 20px;
+		background-color: #daf3f2;
+		padding: 10px 20px;
+		border-radius: 25px;
+		@include break{
+		border-radius: 15px;
+		padding: 5px 20px;
+		}
+		>li{
+			display: table-cell;
+		font-size: 22px;
+			line-height: 1.2;
+			padding: 0 20px;
+			border-right: #ffffff 1px solid;
+		@include break{
+				font-size: 18px;
+			display: block;
+			border-right: none;
+			border-bottom: #ffffff 1px solid;
+				padding: 8px 10px;
+			}
+			&:last-child{
+			border-right: none;	
+		@include break{
+		border-bottom:none;
+				}
+			}
+		}
+	}
+	
+}//#hygiene
+	
+#campaign{
+		@include break{
+			margin: 0 3%;
+	}
+	.cpDtl{
+		margin-bottom: 40px;
+		.btnTab{
+			width: 100%;
+			border-bottom:#000000 6px solid;
+			display: flex;
+			@include ai;
+			>li{
+				width: 50%;
+				max-width: 474px;
+				background-color:#e1e1e1;
+				color: #000000;
+				display: table;
+				height: 78px;
+				border-radius: 5px 5px 0 0;
+				@include transition;
+				@include break{
+				max-width: 46%;
+				height: 65px;
+				}
+				&:hover{
+					opacity: 0.7;
+				}
+				&:first-child{
+					margin:0 5px 0 50px;
+					@include break{
+					margin:0 1% 0 3%;
+					}
+				}
+				&:last-child{
+					margin:0 50px 0 5px;
+				@include break{
+					margin:0 3% 0 1%;
+					}
+				}
+				em{
+				font-size:22px;
+					display: table-cell;
+					text-align: center;
+					vertical-align: middle;
+					cursor: pointer;
+					@include break{
+				font-size:16px;
+					}
+					
+				}
+				&.on{
+				background-color:#000000;
+				color: #ffffff;
+				}
+			}
+		}
+		.tabBox{
+			margin-top: 70px;
+				@include transition;
+			@include break{
+			margin-top: 30px;
+			}
+
+			.kakko{
+				max-width: 800px;
+				margin: 0 auto 50px;
+				display: flex;
+				@include jc(space-between);
+				width: 100%;
+				text-align: center;
+			@include break{
+				margin: 0 auto 30px;
+			}
+				.txtTtl{
+					font-size:36px;
+					font-weight: bold;
+					margin-bottom: 10px;
+					line-height: 1.6!important;
+					@include break{
+					font-size:25px !important;
+	
+					}
+					.redC{
+						color: $redC;
+						font-weight: bold;
+					}
+					.txt30{
+					font-size:30px;
+						font-weight: bold;
+					@include break{
+					font-size:20px !important;
+					}
+					}
+				}
+				&:before{
+					content: '';
+					width: 26px;
+					min-width: 26px;
+					height: 106px;
+					background-image: url("../img/cp_kakko_l.png");
+					background-repeat: no-repeat;
+					background-position: left top;
+					background-size: auto 106px;
+					transform: translateY(30px);
+					
+				}
+				&:after{
+					content: '';
+					width: 26px;
+					min-width: 26px;
+					height: 106px;
+					background-image: url("../img/cp_kakko_r.png");
+					background-repeat: no-repeat;
+					background-position: right top;
+					background-size: auto 106px;
+					transform: translateY(30px);
+				}
+			}
+			.attBnr{
+				text-align: center;
+			}
+			.copyTxt{
+				text-align: center;
+				font-size: 20px;
+				line-height: 1.7;
+					@include break{
+							font-size: 16px;
+				}
+				em{
+					font-weight: bold;
+					font-size: 22px;
+					@include break{
+							font-size: 18px;
+				}
+				}
+			}
+			&.cpA{
+				.att2{
+					.txtTtl{
+					font-size:35px !important;
+	 width: 106.4%;
+ transform: scale(0.94, 1);
+ margin-left: -3.2%;
+					
+					}
+				}
+			}
+			&.cpB{
+				.att1{
+					/*.txtTtl{
+					@include break{
+					font-size:22px !important;
+					}
+					}*/
+					.txt30{
+					@include break{
+					font-size:18px !important;
+					}
+					}
+				}
+			}
+		}
+		
+	}
+}//#campaign
+
+.rgsLink{
+width: 100%;
+	max-width: 640px;
+	margin: 0 auto 50px;
+		@include break{
+			margin: 0 3% 20px;
+width: 94%;
+	}
+	dl{
+	display: table;
+	/*@include jc(space-between);*/
+	width: 100%;
+		margin-bottom: 30px;
+		@include break{
+	display: block;
+	width: 96%;
+			margin: 0 auto 20px;
+		}
+		dt{
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 20px;
+			img{
+				max-width: 128px;
+			}
+		@include break{
+			display: block;
+			text-align: center;
+			padding-right: 0px;
+			}
+		}
+		dd{
+			display: table-cell;
+			max-width: 500px;
+			vertical-align: middle;
+			font-size: 19px;
+			line-height: 1.8;
+			@include break{
+			display: block;
+			font-size: 16px;
+			}
+		}
+	}
+	.officalBtn{
+		text-align: center;
+	}
+}
+
+
+/*--pc > 769px--*/
+	@include break2(769){
+.pc{
+  display:block;}
+.pcImg{
+  display:inline-block;
+}
+.sp{
+  display:none!important;
+}
+.spImg{
+  display:none!important;
+}
+.pcTbl{
+  display: table;
+}
+.spTbl{
+  display:none!important;
+}
+}
+
+/*--sp < 768px--*/
+@include break{
+img{
+width: 100%;
+height: auto;
+}
+.sp{
+  display:block;
+}
+.spImg{
+  display:inline-block;
+}
+.pc{
+  display:none!important;
+}
+.pcImg{
+  display:none!important;
+}
+.pcTbl{
+  display:none!important;
+}
+.spTbl{
+display: table;
+}
+}
+
+@include break2{
+a[href*="tel:"] {
+pointer-events: none;
+cursor: default;
+text-decoration: none;
+}
+}
+
+

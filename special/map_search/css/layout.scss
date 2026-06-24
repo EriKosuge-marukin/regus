@@ -1,0 +1,91 @@
+@charset "utf-8";
+@import 'mixin';
+
+.main_contents {
+	font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+	font-size: 16px;
+    //width: 100%;
+	@include break {
+		font-size: 14px;
+	}
+	* {
+		box-sizing: border-box; 
+	}
+      
+}
+
+.ov {
+	@include transition;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.pc {
+	@include break {
+		display: none;
+	}
+}
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+
+section {
+	max-width: 1060px;
+	width: 98%;
+	margin: 20px auto 80px auto;
+	@include break {
+		margin: 20px auto 40px;
+        width: 94%;
+	}
+.search__map {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+
+    /*background-color: rgba($color: #e4e4e4, $alpha: 0.3);*/
+  }
+
+
+      @include break {
+    
+    margin-bottom: 15px;
+      
+  }
+
+    p.search__note {
+  position: relative;
+  /*bottom: -30px;*/
+  width: 100%;
+  font-size: 0.875rem;
+  margin-top: 15px;
+         @include break {
+             font-size: 0.75rem;
+            
+        }
+}
+
+}
+
+
+span {max-width: 268px; display: inline-block;}
+
+
+
+  
+
+
+}//_section
+//ページ下部CTA

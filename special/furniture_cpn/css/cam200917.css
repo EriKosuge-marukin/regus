@@ -1,0 +1,246 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  /*font-size: 16px;*/
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .main_contents {
+      font-size: 14px; } }
+  .main_contents * {
+    /*box-sizing: border-box;*/
+    box-sizing: content-box; }
+
+.ov {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .ov:hover {
+    opacity: .8; }
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none; } }
+
+.topBox {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  line-height: 1; }
+  @media screen and (max-width: 768px) {
+    .topBox {
+      display: block;
+      text-align: center; } }
+  .topBox > h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1; }
+    @media screen and (max-width: 768px) {
+      .topBox > h1 {
+        margin-top: 10px; } }
+
+.mv {
+  width: 1060px;
+  margin: 0 auto;
+  position: relative;
+    /*height: 664px;
+    background:url("../images/mv_img.jpg") top center no-repeat;
+	@include break {
+        width: 100%;
+		margin: 5% auto 0 auto;
+	}
+	&::after {
+		content: '';
+		display: block;
+		padding-top: 34%;
+		@include break {
+			padding-top: 50%;
+		}
+	}//after*/ }
+  @media screen and (max-width: 768px) {
+    .mv {
+      width: 100%;
+      text-align: center; } }
+  .mv .camCon {
+    position: absolute;
+    right: 10px;
+    bottom: 10px; }
+    @media screen and (max-width: 768px) {
+      .mv .camCon {
+        right: 0px;
+        /*width: 80%;
+        bottom: 5px;
+left: 50%;
+transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);*/
+        text-align: center;
+        position: relative;
+        margin: -20px auto 0 auto;
+        width: 100%; } }
+
+.pic4 {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: -webkit- space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-start;
+  align-items: -webkit- flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin: 6px auto 5px auto; }
+  @media screen and (max-width: 768px) {
+    .pic4 {
+      width: 100%;
+      margin: 5px auto 5px auto; } }
+  .pic4 .pic4In {
+    width: 24.5%; }
+
+section {
+  width: 630px;
+  margin: 0 auto;
+  background: #fff; }
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto 30px auto;
+      width: 98%; } }
+  section.sec01 {
+    margin-bottom: 70px; }
+    @media screen and (max-width: 768px) {
+      section.sec01 {
+        margin-bottom: 25px; } }
+    section.sec01 .cam {
+      border-bottom: 4px #000 solid;
+      margin-bottom: 10px;
+      padding-bottom: 30px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .cam {
+          padding-bottom: 3px;
+          font-size: 20px !important; } }
+    section.sec01 .detailCam {
+      display: flex;
+      flex-wrap: wrap;
+      border: 0 solid #ccc;
+      border-top: none; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .detailCam {
+          flex-flow: column nowrap; } }
+      section.sec01 .detailCam dt {
+        width: 22%;
+        font-size: 110%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-top: 1px solid #e1e1e1;
+        font-weight: bold; }
+        section.sec01 .detailCam dt:first-child {
+          border: 0; }
+        @media screen and (max-width: 680px) {
+          section.sec01 .detailCam dt {
+            width: 100%; } }
+      section.sec01 .detailCam dd {
+        padding: 10px;
+        margin: 0;
+        border-left: 0 solid #e1e1e1;
+        border-top: 1px solid #e1e1e1;
+        width: 78%;
+        background: #fff;
+        box-sizing: border-box; }
+        section.sec01 .detailCam dd:nth-child(2) {
+          border: 0px !important; }
+        @media screen and (max-width: 680px) {
+          section.sec01 .detailCam dd {
+            width: 100%;
+            border-left: none;
+            border: 0px !important; } }
+        section.sec01 .detailCam dd .numbP {
+          font-weight: bold; }
+        section.sec01 .detailCam dd span {
+          font-size: 10px; }
+    section.sec01 .txtInd {
+      padding-left: 2.5em;
+      text-indent: -2.5em; }
+      section.sec01 .txtInd span {
+        font-size: 80%; }
+    section.sec01 .notes {
+      margin: 40px 0 0 0;
+      padding: 30px 0 0 0;
+      border-top: dotted #999 1px;
+      font-size: 80%; }
+      @media screen and (max-width: 768px) {
+        section.sec01 .notes {
+          margin: 20px 0 0 0; } }
+
+.btn {
+  margin-top: 78px;
+  width: 100%;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .btn {
+      margin-top: 30px; } }
+
+.telephone {
+  width: 100%;
+  margin: 30px auto 30px auto; }
+  @media screen and (max-width: 768px) {
+    .telephone {
+      display: block;
+      margin: 20px auto 30px auto;
+      width: 90%; } }
+  .telephone .tel {
+    width: 48%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0.1em; }
+    @media screen and (max-width: 768px) {
+      .telephone .tel {
+        width: 100%; } }
+    .telephone .tel span {
+      display: block; }
+      .telephone .tel span.num {
+        color: #e41d3a;
+        font-size: 210%;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.01em; }
+        .telephone .tel span.num:before {
+          content: '';
+          /*何も入れない*/
+          display: inline-block;
+          /*忘れずに！*/
+          width: 30px;
+          /*画像の幅*/
+          height: 30px;
+          /*画像の高さ*/
+          background: url(/special/rentaloffice/img/common/tel_icon.png) no-repeat;
+          background-size: contain;
+          vertical-align: middle;
+          padding-left: 5px; }
+      .telephone .tel span.time {
+        font-size: 76%; }
+
+.picNote {
+  text-align: right;
+  font-size: 12px;
+  margin: 6px auto 120px auto; }
+
+@media screen and (max-width: 768px) {
+  .picNote {
+    text-align: left;
+    font-size: 10px;
+    width: 95%;
+    margin: 5px auto 40px auto; } }

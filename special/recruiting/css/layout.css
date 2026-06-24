@@ -1,0 +1,391 @@
+@charset "utf-8";
+
+.wrapper .dis div h3{
+	display:inline;
+	padding:4px 10px;
+	/*background-image: linear-gradient(to right, #000, #000 5px, transparent 5px, transparent 8px);
+background-size: 8px 1px;/*ドット1セットの幅　線の高さ*/
+/*background-position: bottom;
+background-repeat: repeat-x;*/
+background:#bad7dc;
+color:#333;
+border:none;
+	border-radius: 3px;  
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius:3px;
+	margin-bottom:15px;
+}
+.wrapper .dis div ul li{
+	font-size:100%;
+	text-align:left;
+	color:#000;
+	border:1px solid #e6e782;
+	border-radius: 3px;  
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius:3px;
+	-ms-border-radius: 3px;
+	background:#e6e782 url(../images/licom.gif) 10px 50% no-repeat;
+	display:block;
+	vertical-align:middle;
+	margin:0 0 2px 0;
+	padding:9px 5px 9px 30px;
+
+}
+
+.red{
+	color:#e40037;
+}
+
+
+
+
+
+
+
+/*----PC----*/
+@media screen and (min-width: 750px) {
+
+
+ #mainTop{
+	width:770px;
+	height:500px;
+	position:relative;
+}
+#mainTop h2{
+	background:none;
+	text-indent:-9999px;
+	font-size:1;
+}
+#mainTop #center{
+	position: absolute;
+	top: 324px;
+	left: 85px;
+	width:600px;
+	border: 0px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background-color: rgba( 0, 0, 0, 0.85 );
+	color:#fff;
+}
+#center dl {
+	margin:20px 0 0 15px;
+}
+#center dt {
+	/*border-bottom:2px #444 solid;*/
+	font-size:120%;
+	font-weight:bold;
+}
+
+	
+#center dd ul li{
+	font-size:14px;
+	text-align:center;
+	width:46px;
+	margin:2px 2px 0 0;
+	float:left;
+	padding:3px 0;
+	list-style:none !important;
+	background:#4F4F4F;
+}
+#center dt:nth-child(2){
+	margin-top:50px;
+	display:block;
+}
+
+#center dd{
+margin-bottom:20px;
+}
+/*dis＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.wrapper .dis div{
+	/*width:376px;
+	float:left;*/
+	float:none;
+	width:600px;
+	margin:0 auto;
+}
+.wrapper .dis div p{
+	margin:11px 0 20px 0;
+}
+/*________________________OFFICETYPE_____________________________________*/
+.wrapper .contents #officetype dl{
+	display:block;
+	width:100%;
+	
+	background-color:#dfddd7;
+	margin:0 18px 11px 0;
+}
+
+.wrapper .contents #officetype dl dt{
+	text-align:left;
+	color:#ffffff;
+	padding:18px 25px;
+	background:#282828;
+	font-weight:bold;
+}
+
+.wrapper .contents #officetype dl dd div{
+padding:5px 25px 15px 25px;
+text-align:left;
+}
+.wrapper .contents #officetype dl dd.no div{
+	padding:0 0 10px 0;
+text-align:center;
+}
+.wrapper .contents #officetype dl dd{
+	
+	text-align:center;
+	lien-height:1.5;
+}
+.wrapper .contents #officetype dl dd h4{
+	font-size:110%;
+	line-height:1;
+	font-weight:bold;
+	text-align:left;
+	margin:20px auto 5px auto;
+}
+.wrapper .contents #officetype dl dd p{
+	font-size:100%;
+	line-height:1;
+	text-align:left;
+	margin:5px auto 5px auto;
+}
+/*--areaBox-----------------------------*/
+
+.wrapper .areaBox{
+  background-color:#f2f2f2;
+ /* padding:20px 0;*/
+}
+.wrapper .areaBox .boxL{
+  float:left;
+  margin:0 0 0 25px;
+  width:395px;
+}
+.wrapper .areaBox .boxR{
+   float: left;
+   margin:0;
+   width:350px;
+}
+.wrapper .areaBox .boxL p,
+.wrapper .areaBox .boxR p{
+  margin:0 0 5px 0;
+  font-weight:bold;
+  padding-top:15px;
+}
+
+.wrapper .areaBox .boxR li{
+  float:left;
+  display:table;
+  margin:0 5px 5px 0;
+  width:60px;
+  padding:8px 0;
+  background-color:#e0e0e0;
+}
+
+.wrapper .areaBox .boxL li{
+  float:left;
+  display:table;
+  margin:0 5px 5px 0;
+  width:118px;padding:8px 0;
+  background-color:#e0e0e0;
+}
+.wrapper .areaBox .boxL li,
+.wrapper .areaBox .boxR li{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+}
+/*----SP-＾−−−−−−−−−−−−−−−＾---*/
+@media screen and (max-width: 750px) {
+#mainTop{
+	width:100%;
+	height:auto;
+	position:relative;
+}
+#mainTop h2{
+	background:none;
+	text-indent:-9999px;
+	font-size:1;
+}
+#mainTop #center{
+	position: relative;
+	width:90%;
+	border: 0px;
+	margin: -90px auto 0 auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background-color: rgba( 0, 0, 0, 0.85 );
+	color:#fff;
+	padding:20px 0 0 0;
+}
+#center dl {
+	margin:0px 0 0 15px;
+}
+#center dt {
+	/*border-bottom:2px #444 solid;*/
+	font-size:120%;
+	font-weight:bold;
+}
+
+	
+#center dd ul li{
+	text-align:center;
+	width:50px;
+	margin:2px 2px 0 0;
+	float:left;
+	padding:5px 0;
+	list-style:none !important;
+	background:#4F4F4F;
+}
+#center dt:nth-child(2){
+	margin-top:50px;
+	display:block;
+}
+
+#center dd{
+padding-bottom:20px;
+}
+
+/*dis＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.wrapper .dis div{
+	width:100%;
+	float:none;
+	margin-bottom:10px;
+}
+.wrapper .dis div p{
+	margin:10px 0 20px 0;
+}
+/*________________________OFFICETYPE_____________________________*/
+
+.wrapper .contents #officetype dl{
+	width:100%;
+	float:none;
+	background-color:#dfddd7;
+	margin:0 2% 2% 0;
+}
+
+.wrapper .contents #officetype dl:nth-child(odd){
+	margin:0 0 2% 0;
+}
+.wrapper .contents #officetype dl dt{
+	text-align:center;
+	color:#ffffff;
+	background:#282828;
+	font-weight:bold;
+	padding:10px 5px;
+}
+.wrapper .contents #officetype dl dd{
+	color:#e40037;
+	text-align:center;
+	lien-height:1.5;
+	padding:10px 0;
+}
+.wrapper .contents #officetype dl dd h4{
+	/*color:#e40037;*/
+	padding:0px  0 10px 0;
+	font-size:100%;
+	line-height:1;
+	font-weight:bold;	
+	
+	text-align:left;
+	margin:20px auto 5px auto;
+}
+.wrapper .contents #officetype dl dd p{
+	/*color:#e40037;*/
+	padding:0px  0 10px 0;
+	font-size:100%;
+	line-height:1;
+	text-align:left;
+	margin:3px auto 5px auto;
+}
+.wrapper .contents #officetype dl dd div{
+	color:#000;
+	text-align:left;
+	margin:0 10px;
+	padding-bottom:10px;
+}
+/*--areaBox-----------------------------*/
+
+.wrapper .areaBox{
+  background-color:#f2f2f2;
+  padding:15px 0;
+}
+.wrapper .areaBox .boxL{
+  float:none;
+  margin:0 auto 10px 9%;
+}
+.wrapper .areaBox .boxR{
+  float:none;
+  margin:0 auto 0 9%;
+}
+.wrapper .areaBox .boxL p,
+.wrapper .areaBox .boxR p{
+	padding-top:15px;
+  margin:0 0 5px 0;
+  font-weight:bold;
+}
+
+.wrapper .areaBox .boxR li{
+  float:left;
+  text-align:center;
+  display:table;
+  margin:0 5px 5px 0;
+  width:60px;
+  padding:7px 0;
+  background-color:#e0e0e0;
+}
+
+.wrapper .areaBox .boxL li{
+  float:left;
+  display:table;
+  margin:0 5px 5px 0;
+  width:118px;text-align:center;
+ padding:7px 0;
+  background-color:#e0e0e0;
+}
+
+
+}
+
+.wpcf7-not-valid-tip-no-ajax {
+	display: block;
+	color: red;
+}
+
+.wpcf7-validation-errors {
+	/*display: block;*/
+	color: red;
+	text-align: center;
+	border: 1px solid red;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.wpcf7-mail-sent-ok {
+	/*display: block;*/
+	color: red;
+	text-align: center;
+	border: 1px solid red;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.wpcf7-submit{
+	width: 208px;
+	height: 44px;
+	background-image: url("https://www.regus-office.jp/inquiry/images/btn_send.gif");
+	border: none;
+	cursor: pointer;
+	text-indent:110%;
+	white-space:nowrap;
+	overflow:hidden;
+}

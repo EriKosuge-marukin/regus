@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* 1.親スタイルリセットとペース設定 ++++++++++ */
+.slider-box p, .slider-box div, .loop-box ul, .loop-box li {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+/* 2.ベースBOXの設定 +++++++++++++++++++++ */
+.slider-box {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  border: 0;
+  margin: 0 auto;
+  padding: 10px 0 0;
+  /* 上端からスライダーまでの距離 - 変更可・削除可 */ }
+
+/* 3.チェックボックスを利用した停止・再生などの設定 +++++++++++++++++ */
+.slider-check {
+  display: none; }
+
+.slider-check:checked ~ .loop-box > .loop {
+  animation-play-state: paused; }
+
+.slider-label {
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  line-height: 2;
+  text-align: center; }
+
+/*/* 停止テキスト - 変更可 */
+.slider-label::before {
+  content: "\025a0  STOP"; }
+
+/* 再生テキスト - 変更可 */
+.slider-check:checked ~ div > .slider-label::before {
+  content: "\025b6  MOVE"; }
+
+/* 4.スライダー本体とアニメーションの基本設定 ++++++++++++++ */
+.loop-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.loop-box, .loop-box ul {
+  height: 280px;
+  /* スライダーの高さ - 変更注意 */ }
+  @media screen and (max-width: 768px) {
+    .loop-box, .loop-box ul {
+      height: 130px; } }
+
+.loop-box ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  max-width: 10000%;
+  min-width: 100%;
+  width: calc(280px * 1.5 * 4);
+  /* 画像の横幅×枚数 - 変更注意・変更可・変更注意 */
+  animation: 40s linear infinite;
+  /* アニメーション設定 - 変更可 */ }
+
+.loop-box li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: calc(100% / 4);
+  /* li の幅を均等にする - 削除可・変更注意 */ }
+
+.loop-box img {
+  height: auto;
+  width: 100%; }
+
+/* 5.アニメーション個別設定 ++++++++++ */
+.loop-box ul.loop1 {
+  animation-name: loop1; }
+
+.loop-box ul.loop2 {
+  animation-name: loop2; }
+
+@keyframes loop1 {
+  0% {
+    transform: translateX(0); }
+  49.99999% {
+    transform: translateX(-100%); }
+  50% {
+    transform: translateX(100%); } }
+@keyframes loop2 {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(-100%); } }

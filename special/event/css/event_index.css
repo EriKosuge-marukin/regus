@@ -1,0 +1,215 @@
+@use "sass:math";
+main {
+  letter-spacing: 0; }
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.u-mobile {
+  display: none !important; }
+  @media screen and (max-width: 520px) {
+    .u-mobile {
+      display: block !important; } }
+
+.u-tablet {
+  display: none !important; }
+  @media screen and (max-width: 960px) {
+    .u-tablet {
+      display: block !important; } }
+
+.u-desktop {
+  display: block !important; }
+  @media screen and (max-width: 960px) {
+    .u-desktop {
+      display: none !important; } }
+
+.contents .sub_title {
+  background: #E10034 url("/common2/images/bg_white.gif") repeat-x scroll left bottom;
+  line-height: 60px;
+  padding-left: 10px;
+  font-size: 140%;
+  font-weight: bold;
+  border-bottom: 4px solid #939696;
+  color: #FFF; }
+
+.info {
+  margin-top: 1.25rem; }
+  @media screen and (max-width: 960px) {
+    .info {
+      margin-top: 2.5rem; } }
+
+.info__ttl-wrap {
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 960px) {
+    .info__ttl-wrap {
+      flex-direction: column;
+      align-items: flex-start; } }
+
+.info__ttl {
+  width: 13rem;
+  max-width: 100%;
+  margin-right: 1.875rem; }
+  @media screen and (max-width: 960px) {
+    .info__ttl {
+      margin-right: 0; } }
+
+.info__txt {
+  width: 100%;
+  max-width: 100%; }
+  @media screen and (max-width: 960px) {
+    .info__txt {
+      margin-top: 1.875rem; } }
+  .info__txt a {
+    font-size: 1rem;
+    line-height: calc(28 / 16);
+    letter-spacing: 0;
+    display: flex;
+    align-items: center; }
+    .info__txt a::after {
+      display: inline-block;
+      content: "";
+      width: 1.25rem;
+      height: 0.9375rem;
+      margin-left: 0.5rem;
+      background: url(https://regus-new.marukin-ad.jp/images/arrow-black.png) center center/contain no-repeat; }
+
+/*-------------------------*/
+.news {
+  width: 100%;
+  position: relative; }
+
+.news__items {
+  width: 100%;
+  max-width: 100%;
+  background-color: white; }
+  @media screen and (max-width: 960px) {
+    .news__items {
+      margin-top: 0.625rem;
+      padding-left: 0; } }
+
+.news__item {
+  border-bottom: 1px solid #000;
+  padding: 1.4375rem 0;
+  position: relative; }
+  @media screen and (max-width: 960px) {
+    .news__item:not(:first-child) {
+      margin-top: 0.625rem; } }
+  .news__item:first-of-type {
+    border-top: 1px solid #000;
+    margin-top: 0.9375rem; }
+  .news__item::after {
+    position: absolute;
+    content: "";
+    width: 1.25rem;
+    height: 0.9375rem;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    background: url(https://regus-new.marukin-ad.jp/images/arrow-black.png) center center/contain no-repeat; }
+    @media screen and (max-width: 960px) {
+      .news__item::after {
+        padding: 0.9375rem 0; } }
+    @media screen and (max-width: 520px) {
+      .news__item::after {
+        width: 0.9375rem;
+        height: 0.625rem;
+        right: 0.625rem; } }
+
+.news__item-wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem; }
+  @media screen and (max-width: 520px) {
+    .news__item-wrap {
+      padding: 0; } }
+
+.news__unit {
+  display: flex;
+  align-items: center;
+  margin-right: 2.125rem;
+  width: 10rem;
+  max-width: 100%; }
+  @media screen and (max-width: 520px) {
+    .news__unit {
+      display: block;
+      text-align: left;
+      width: auto;
+      flex-shrink: 0;
+      margin-right: 1.25rem; } }
+
+.news__tag {
+  margin-right: auto;
+  max-width: 100%;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #000; }
+  @media screen and (max-width: 960px) {
+    .news__tag {
+      padding: 0.125rem 0.3125rem; } }
+  @media screen and (max-width: 520px) {
+    .news__tag {
+      padding: 0;
+      text-align: left;
+      font-size: 0.875rem; } }
+
+.news__time {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000; }
+  @media screen and (max-width: 520px) {
+    .news__time {
+      font-size: 0.6875rem; } }
+
+.news__txt {
+  /*230331*/
+  max-width: 65%;
+  /*230331*/
+  position: relative;
+  padding-right: 2.5rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400; }
+  @media screen and (max-width: 960px) {
+    .news__txt {
+      margin-top: 0rem;
+      padding-right: 3.125rem;
+      line-height: 1.6; } }
+  @media screen and (max-width: 520px) {
+    .news__txt {
+      padding-right: 2.1875rem; } }
+
+.news__txt-hover {
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left !important; }
+  @media screen and (max-width: 520px) {
+    .news__txt-hover {
+      font-size: 0.75rem;
+      text-align: left !important; } }
+  .news__txt-hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0rem;
+    transition: 0.3s all;
+    visibility: hidden;
+    opacity: 0; }
+  .news__txt-hover:hover:after {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s; }
+
+.news > * {
+  min-width: 0; }
+
+.news__items > * {
+  min-width: 0; }

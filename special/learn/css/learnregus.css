@@ -1,0 +1,603 @@
+@charset "UTF-8";
+.contents {
+  position: relative; }
+
+/*　↓　ナビ--------------------------------------------------*/
+#learnNav {
+  margin: 0px 0px 30px 0; }
+  @media screen and (max-width: 768px) {
+    #learnNav {
+      margin: 28px 0px 30px 0; } }
+  #learnNav > ul {
+    overflow: hidden;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      #learnNav > ul {
+        flex-wrap: wrap;
+        margin-left: 1%; } }
+    #learnNav > ul li {
+      border-width: 1px 1px 2px 0;
+      border-style: solid;
+      border-color: #dcdcdc #eaeaea #dcdcdc #eaeaea;
+      float: left;
+      width: 14.1%;
+      text-align: center;
+      display: table; }
+      @media screen and (max-width: 768px) {
+        #learnNav > ul li {
+          width: 49%;
+          width: 48.5%;
+          float: left;
+          margin-right: 1%;
+          margin-bottom: 3px;
+          border-radius: 5px;
+          border: 1px solid #dcdcdc;
+          overflow: hidden; } }
+      #learnNav > ul li:first-child {
+        border-left: 1px solid #dcdcdc;
+        border-radius: 5px 0px 0px 5px/5px 0px 0px 5px;
+        overflow: hidden; }
+        @media screen and (max-width: 768px) {
+          #learnNav > ul li:first-child {
+            border-radius: 5px;
+            overflow: hidden; } }
+      #learnNav > ul li:last-child {
+        border-right: 1px solid #dcdcdc;
+        width: 14%;
+        border-radius: 0px 5px 5px 0px/0px 5px 5px 0px;
+        overflow: hidden; }
+        @media screen and (max-width: 768px) {
+          #learnNav > ul li:last-child {
+            margin-right: 0px;
+            border-radius: 5px;
+            width: 98.5%;
+            overflow: hidden; } }
+      @media screen and (max-width: 768px) {
+        #learnNav > ul li:nth-child(2n+0) {
+          margin-right: 0px !important; } }
+      #learnNav > ul li a {
+        display: table-cell;
+        height: 84px;
+        font-weight: bold;
+        vertical-align: middle;
+        color: #000;
+        background: #fcfcfc;
+        background: -moz-linear-gradient(top, #fcfcfc 0%, #f7f7f7 51%, #f7f7f7 100%);
+        background: -webkit-linear-gradient(top, #fcfcfc 0%, #f7f7f7 51%, #f7f7f7 100%);
+        background: linear-gradient(to bottom, #fcfcfc 0%, #f7f7f7 51%, #f7f7f7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f7f7f7',GradientType=0 ); }
+        #learnNav > ul li a:hover, #learnNav > ul li a.now {
+          opacity: 1 !important;
+          color: #fff;
+          background: #55d0cd;
+          background: -moz-linear-gradient(top, #55d0cd 19%, #46c1be 93%, #46c1be 93%);
+          background: -webkit-linear-gradient(top, #55d0cd 19%, #46c1be 93%, #46c1be 93%);
+          background: linear-gradient(to bottom, #55d0cd 19%, #46c1be 93%, #46c1be 93%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#55d0cd', endColorstr='#46c1be',GradientType=0 );
+          text-decoration: none; }
+        @media screen and (max-width: 768px) {
+          #learnNav > ul li a {
+            height: 34px;
+            font-size: 80%; } }
+
+/*　↑　ナビ--------------------------------------------------*/
+/*　↓　index--------------------------------------------------*/
+ul#index li {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+ul#index li a {
+  padding: 15px 0 15px 0;
+  display: block;
+  overflow: hidden; }
+
+ul#index li a:hover {
+  /*background:#F9EDED*/
+  text-decoration: none; }
+
+ul#index li .indR {
+  width: 650px;
+  margin-left: 20px;
+  float: left; }
+
+ul#index li .indL {
+  float: left;
+  width: 100px; }
+
+@media screen and (max-width: 750px) {
+  ul#index li .indR {
+    width: 80%;
+    margin-left: 0px;
+    float: right; }
+  ul#index li .indL {
+    float: left;
+    width: 15%; } }
+
+ul#index li .indL p {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #e60036;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+  margin: 5px 10px 5px 0;
+  width: 100px; }
+
+ul#index li .moreRead {
+  clear: both;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #fff;
+  color: #039393;
+  border: #393939 1px solid;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 3px 10px;
+  margin: 3px 10px 10px 75%;
+  width: 100px;
+  float: right;
+  text-align: center; }
+
+ul#index li .indR .date {
+  margin-bottom: 3px; }
+
+ul#index li .indR .date .new {
+  display: inline-block;
+  line-height: 1;
+  padding: 3px 8px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background: #e60036;
+  color: #fff;
+  margin-right: 10px; }
+
+ul#index li .indR h2 {
+  background: none !important;
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 140%;
+  font-weight: bold;
+  line-height: 1.6; }
+
+/*　↑　index--------------------------------------------------*/
+/*　↓　フレキシブルワーキング--------------------------------------------------*/
+/*-------------------
+casestudies/index
+------------------------------------------*/
+.wrapper .caseList {
+  clear: both;
+  /*background:url(/casestudies/images/caselist_bg.gif) repeat-x left top;*/
+  position: relative; }
+
+.wrapper .caseList h2 {
+  width: 740px;
+  display: table;
+  height: 50px;
+  background: none;
+  margin: 0;
+  padding: 0 15px;
+  border-bottom: #d8d8d8 3px solid; }
+
+.wrapper .caseList h2 em {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 150%;
+  font-weight: bold; }
+
+.wrapper .caseList h2 span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 90%; }
+
+.wrapper .caseList .caseListIn {
+  width: 770px;
+  position: relative;
+  /*  display:table;*/
+  min-height: 270px; }
+
+.wrapper .caseList .ttlBox {
+  float: left;
+  margin: 50px 0 0 30px; }
+
+.wrapper .caseList .ttlBox dt {
+  font-size: 160%;
+  border-bottom: #333 1px solid; }
+
+.wrapper .caseList .ttlBox dd {
+  margin-top: 8px; }
+
+.wrapper .caseList .ttlBox dd span,
+.wrapper .caseList .ttlBox dd a {
+  display: block;
+  margin-bottom: 15px; }
+
+.wrapper .caseList .imgBox {
+  position: absolute;
+  float: right;
+  width: 360px;
+  top: -10px;
+  right: 25px;
+  z-index: 9; }
+
+@media screen and (max-width: 750px) {
+  .wrapper .contents img.pcImg {
+    display: none; }
+  .wrapper .contents img {
+    display: block;
+    height: auto;
+    text-align: center;
+    width: 100%; } }
+
+.spBr {
+  display: block; }
+
+@media screen and (max-width: 750px) {
+  .wrapper .caseList {
+    clear: both;
+    /* background:url(/casestudies/images/caselist_bg.gif) repeat-x left top;*/
+    position: relative; }
+  .wrapper .caseList h2 {
+    display: block;
+    width: auto;
+    background-image: none;
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-size: 100% 100%;
+    height: auto;
+    line-height: 1.3;
+    min-height: 20px;
+    margin: 0;
+    padding: 5px 15px;
+    border-bottom: #d8d8d8 3px solid; }
+  .wrapper .caseList h2 em {
+    display: block;
+    vertical-align: middle;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.3; }
+  .wrapper .caseList h2 span {
+    display: block;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 11px; }
+  .wrapper .caseList .caseListIn {
+    width: 100%;
+    position: relative;
+    min-height: 200px; }
+  .wrapper .caseList .ttlBox {
+    float: none;
+    margin: 20px 2% 0 2%; }
+  .wrapper .caseList .ttlBox dt {
+    font-size: 18px;
+    border-bottom: #333 1px solid; }
+  .wrapper .caseList .ttlBox dd {
+    margin-top: 8px; }
+  .wrapper .caseList .ttlBox dd span {
+    display: block;
+    margin-bottom: 15px; }
+  .wrapper .caseList .ttlBox dd a {
+    display: block;
+    width: 60%;
+    margin: 0 40% 5px 0; }
+  .wrapper .caseList .imgBox {
+    position: relative;
+    float: none;
+    width: 100%;
+    top: -10px;
+    right: 0px;
+    z-index: 9; } }
+
+.flexibleWKG {
+  overflow: hidden;
+  margin-bottom: 40px; }
+
+.flexibleWKG .flL {
+  width: 260px; }
+
+.flexibleWKG .flR {
+  width: 500px; }
+
+.flexibleWKG .flR h3 {
+  font-size: 180%;
+  line-height: 1.5; }
+
+.flexibleWKG .flR p:nth-child(2) {
+  background: #e10034;
+  font-size: 90%;
+  padding: 4px 8px;
+  color: #fff;
+  margin-bottom: 10px; }
+
+.flexibleWKG .flR p:nth-child(4) {
+  text-align: right;
+  margin: 15px 0 0 0; }
+
+@media screen and (max-width: 750px) {
+  .flexibleWKG .flL {
+    width: 25%; }
+  .flexibleWKG .flR {
+    width: 72%; }
+  .flexibleWKG .flR h3 {
+    font-size: 130%; }
+  .flexibleWKG .flR p:nth-child(4) {
+    width: 160px; } }
+
+/*　↑　フレキシブルワーキング--------------------------------------------------*/
+/*　↓　ワークプレイス--------------------------------------------------*/
+#workPlace .wPHead {
+  overflow: hidden;
+  margin-bottom: 40px;
+  display: block; }
+
+@media screen and (max-width: 750px) {
+  #workPlace .wPHead {
+    margin-top: 10px;
+    margin-bottom: 10px; } }
+
+#workPlace .wPHead .flL {
+  width: 380px; }
+
+#workPlace .wPHead .flR {
+  width: 370px; }
+
+#workPlace .wPHead .flR dt {
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10px; }
+
+#workPlace .wPHead .flR dd {
+  font-size: 100%;
+  line-height: 1.7;
+  margin-bottom: 10px; }
+
+#workPlace .wPHead .flR dd .moreRead {
+  clear: both;
+  border-radius: 5px;
+  background: #fff;
+  border: #393939 1px solid;
+  color: #039393;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 3px 10px;
+  margin: 20px 10px 10px 75%;
+  width: 100px;
+  float: right;
+  text-align: center; }
+
+@media screen and (max-width: 750px) {
+  #workPlace .wPHead .flL {
+    float: none;
+    width: 70%;
+    margin: 0 auto 10px auto; }
+  #workPlace .wPHead .flR {
+    float: none;
+    width: 100%; } }
+
+#workPlace .wPList ul {
+  margiin-top: 50px;
+  width: 100%; }
+
+#workPlace .wPList ul li {
+  border-top: 1px #dedede solid;
+  background: url(/special/learn/images/workplace/wp_icon_link.gif) 98% 50% no-repeat;
+  height: 112px;
+  vertical-align: middle; }
+
+#workPlace .wPList ul li img {
+  width: 130px;
+  margin: 10px 20px 10px 0;
+  border: 1px #efefef solid;
+  vertical-align: middle;
+  height: 90px;
+  /*overflow:hidden;*/
+  object-fit: cover;
+  float: left; }
+
+#workPlace .wPList ul li p {
+  display: table-cell;
+  height: 112px;
+  vertical-align: middle; }
+
+#workPlace .wPList ul li:last-child {
+  border-bottom: 1px #dedede solid;
+  margin-bottom: 50px; }
+
+#workPlace .wPList ul li a {
+  font-size: 125%;
+  display: block; }
+
+#workPlace .wPList ul li p {
+  padding-right: 55px; }
+
+@media screen and (max-width: 750px) {
+  #workPlace .wPList ul li {
+    background: url(/special/learn/images/workplace/wp_icon_link.gif) 100% 50% no-repeat;
+    padding: 2% 0;
+    height: auto; }
+  #workPlace .wPList ul li p {
+    padding-right: 20px; }
+  #workPlace .wPList ul li a {
+    font-size: 115%; } }
+
+/*　↑　ワークプレイス--------------------------------------------------*/
+.textRed {
+  color: #e60036;
+  font-weight: bold; }
+
+.textBigger {
+  font-size: 140%;
+  line-height: 1.0; }
+
+@media screen and (max-width: 750px) {
+  ul#index li .indR h2 {
+    background: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 1.3 !important; }
+  .textBigger {
+    font-size: 120%;
+    line-height: 1.0; } }
+
+/*ボタン*/
+.black {
+  position: relative; }
+
+.digitalLink {
+  width: 40%;
+  margin: 20px auto; }
+
+.digitalLink2 {
+  width: 60%;
+  margin: 20px auto; }
+
+.black a {
+  color: #fff;
+  font-size: 110%;
+  margin-right: 5px;
+  line-height: 40px;
+  display: block;
+  border-radius: 40px;
+  padding: 5px 0 5px 5px;
+  border: none;
+  text-align: center;
+  background: #000; }
+
+.black:after {
+  content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon.png");
+  background-repeat: no-repeat;
+  background-size: 28px 28px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -15px; }
+
+@media screen and (max-width: 750px) {
+  .digitalLink, .digitalLink2 {
+    width: 95%; }
+  .black a {
+    line-height: 35px;
+    font-size: 105%;
+    letter-spacing: 0px; }
+  .black:after {
+    content: url("https://www.regus-office.jp/special/areapage/images/area_btn_icon.png");
+    background-size: 12px 12px !important;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -15px; } }
+
+/*ここまで*/
+/*@Regus*/
+#atRegusIndex ul#index li {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  background: #fff; }
+
+#atRegusIndex ul#index li a {
+  padding: 15px 0 15px 0;
+  display: block;
+  overflow: hidden; }
+
+#atRegusIndex ul#index li a:hover {
+  /*background:#F9EDED*/
+  text-decoration: none; }
+
+#atRegusIndex ul#index li .indR {
+  width: 650px;
+  margin-left: 20px;
+  float: left; }
+
+#atRegusIndex ul#index li .indL {
+  float: left;
+  width: 100px; }
+
+@media screen and (max-width: 750px) {
+  #atRegusIndex ul#index li .indR {
+    width: 80%;
+    margin-left: 0px;
+    float: right; }
+  #atRegusIndex ul#index li .indL {
+    float: left;
+    width: 15%; } }
+
+#atRegusIndex ul#index li .indL p {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #e60036;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+  margin: 5px 10px 5px 0;
+  width: 100px; }
+
+#atRegusIndex ul#index li .moreRead {
+  clear: both;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #fff;
+  border: #393939 1px solid;
+  color: #039393;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 3px 10px;
+  margin: 3px 10px 10px 75%;
+  width: 100px;
+  float: right;
+  text-align: center; }
+
+#atRegusIndex ul#index li .indR .date {
+  margin-bottom: 3px; }
+
+#atRegusIndex ul#index li .indR .date .new {
+  display: inline-block;
+  line-height: 1;
+  padding: 3px 8px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background: #e60036;
+  color: #fff;
+  margin-right: 10px; }
+
+#atRegusIndex ul#index li .indR h2 {
+  background: none !important;
+  margin: 0 0 5px 0;
+  padding: 0;
+  font-size: 140%;
+  font-weight: bold;
+  line-height: 1.6; }
+
+#atRegusIndex .textRed {
+  color: #e60036;
+  font-weight: bold; }
+
+#atRegusIndex .textBigger {
+  font-size: 140%;
+  line-height: 1.0; }
+
+@media screen and (max-width: 750px) {
+  #atRegusIndex ul#index li .indR h2 {
+    background: none !important;
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
+    font-size: 130% !important;
+    font-weight: bold !important;
+    line-height: 1.3 !important; }
+  #atRegusIndex .textBigger {
+    font-size: 120%;
+    line-height: 1.0; } }

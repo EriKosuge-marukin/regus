@@ -1,0 +1,286 @@
+@charset "UTF-8";
+#wrapper {
+  margin: 0 auto 20px;
+  padding: 50px 3.5% 0;
+  /*--------------//---------->*/
+  /*--tabContent*/ }
+  #wrapper h1 {
+    background: url(/sp/common/img/ttl_h1.gif) no-repeat right top/cover;
+    width: 107%;
+    margin-left: -3.5%;
+    padding-left: 15px;
+    text-align: left;
+    line-height: 69px;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #004c80;
+    font-weight: bold; }
+  #wrapper h2 {
+    margin: 20px 0;
+    font-weight: bold; }
+    #wrapper h2:before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 30px;
+      background-color: #0097d5;
+      position: relative;
+      left: -5px;
+      top: 7px; }
+  #wrapper p {
+    font-size: 12px;
+    font-size: 1.2rem; }
+  #wrapper .cusTop {
+    position: relative; }
+    #wrapper .cusTop .moveCase {
+      position: absolute;
+      width: 40%;
+      right: 15px;
+      top: 5px; }
+      #wrapper .cusTop .moveCase a {
+        text-align: center;
+        border-radius: 5px;
+        font-size: 14px;
+        display: block;
+        background: #0097d5;
+        padding: 8px 10px;
+        color: #fff; }
+        #wrapper .cusTop .moveCase a:active, #wrapper .cusTop .moveCase a:visited {
+          color: #fff;
+          font-style: normal;
+          text-decoration: none; }
+  #wrapper .cusNav {
+    margin: 35px 0 35px 0; }
+    #wrapper .cusNav ul {
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+      #wrapper .cusNav ul li {
+        width: 24.2%; }
+        #wrapper .cusNav ul li a {
+          display: block;
+          background: #0097d5;
+          text-align: center;
+          color: #fff;
+          border-radius: 3px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          margin-right: 5px; }
+          #wrapper .cusNav ul li a.act {
+            border: 1px solid #0097d5;
+            color: #0097d5;
+            background: #fff;
+            position: relative; }
+            #wrapper .cusNav ul li a.act::after {
+              content: "";
+              position: absolute;
+              top: 10px;
+              right: 3px;
+              /*border-top: 5px solid #fff;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;*/
+              width: 4px;
+              height: 4px;
+              border: 1px solid;
+              border-color: transparent transparent #0097d5 #0097d5;
+              transform: rotate(-45deg); }
+  #wrapper .bg-grey {
+    background-color: #f4f3f3;
+    margin-bottom: 30px; }
+    #wrapper .bg-grey:nth-of-type(6) {
+      margin-bottom: 20px; }
+    #wrapper .bg-grey a {
+      color: #0097d5; }
+    #wrapper .bg-grey .company {
+      border-bottom: solid 3px #0097d5;
+      padding: 10px 20px; }
+      #wrapper .bg-grey .company h3 a {
+        color: #0097d5;
+        font-weight: bold; }
+      #wrapper .bg-grey .company p {
+        padding: 5px 0 15px; }
+      #wrapper .bg-grey .company .office {
+        margin-bottom: 5px; }
+        #wrapper .bg-grey .company .office span {
+          background-color: #0097d5;
+          color: #fff;
+          font-weight: bold;
+          padding: 1px 5px; }
+      #wrapper .bg-grey .company > a {
+        text-decoration: underline; }
+    #wrapper .bg-grey .voice {
+      padding: 20px;
+      text-align: center; }
+      #wrapper .bg-grey .voice img {
+        width: 60%;
+        height: auto;
+        margin-bottom: 20px; }
+      #wrapper .bg-grey .voice p {
+        text-align: left; }
+      #wrapper .bg-grey .voice .name {
+        padding-top: 5px;
+        text-align: right; }
+  #wrapper .contact > img {
+    margin-bottom: 15px; }
+  #wrapper .tabContent {
+    width: 98%;
+    margin: 0 auto 20px auto; }
+    #wrapper .tabContent h2:before {
+      width: 0;
+      height: 0;
+      background-color: #fff;
+      position: relative;
+      left: 0;
+      top: 0; }
+    #wrapper .tabContent .saseS {
+      padding-left: 15px;
+      width: 100%;
+      margin: 20px auto 30px auto;
+      border-left: 5px #2A8DBA solid; }
+      #wrapper .tabContent .saseS h3 {
+        background: none;
+        border: 0;
+        text-align: left;
+        font-size: 16px;
+        padding: 0;
+        color: #333; }
+    #wrapper .tabContent .box2 {
+      width: 100%;
+      margin-bottom: 40px;
+      background: #eee;
+      padding: 20px; }
+      #wrapper .tabContent .box2 .boxOffice {
+        width: 20%;
+        margin: 0 10px 5px 0;
+        float: left; }
+      #wrapper .tabContent .box2 h3 {
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.8;
+        color: #333;
+        padding-top: 2px;
+        font-weight: bold;
+        text-decoration: none; }
+        #wrapper .tabContent .box2 h3 span {
+          display: block;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 1.8; }
+      #wrapper .tabContent .box2 .gray {
+        font-size: 85%;
+        margin-top: 10px;
+        background: #fff;
+        padding: 5px; }
+    #wrapper .tabContent .caseBox .caseDtl {
+      margin: 0 auto 40px auto; }
+      #wrapper .tabContent .caseBox .caseDtl:last-child {
+        margin-bottom: 50px; }
+      #wrapper .tabContent .caseBox .caseDtl h3 {
+        /* border-left:#2A8DBA 4px solid;*/
+        height: auto;
+        border-bottom: 0;
+        /*padding:7px 0 15px 0;*/
+        color: #333;
+        font-weight: 500;
+        line-height: 1.35;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        /* 追加 */
+        transform: rotate(0.03deg); }
+      #wrapper .tabContent .caseBox .caseDtl .qa {
+        padding-left: 0em;
+        text-indent: 0em;
+        margin: 20px 0 15px 0; }
+        #wrapper .tabContent .caseBox .caseDtl .qa em {
+          color: #4ba4dd;
+          font-size: 16px;
+          font-weight: bold;
+          font-style: normal;
+          line-height: 1.4; }
+    #wrapper .tabContent .caseBox .imgRbox {
+      text-align: center;
+      width: 60%;
+      margin: 0 auto 15px auto; }
+    #wrapper .tabContent .caseBox .imgLbox {
+      float: left;
+      width: 254px;
+      margin: 0 20px 15px 0; }
+    #wrapper .tabContent .centDtl {
+      margin-bottom: 50px; }
+      #wrapper .tabContent .centDtl h3 {
+        font-weight: bold;
+        margin: 15px 0 10px 0;
+        border-bottom: #f2f2f2 5px solid; }
+        #wrapper .tabContent .centDtl h3 a {
+          font-weight: bold;
+          margin: 15px 0 10px 0;
+          border-bottom: #f2f2f2 5px solid; }
+      #wrapper .tabContent .centDtl dt {
+        float: left;
+        width: 270px;
+        margin-right: 25px; }
+      #wrapper .tabContent .centDtl dd {
+        padding: 0 0 0 300px;
+        font-size: 90%; }
+      #wrapper .tabContent .centDtl .centProf {
+        background-color: #f2f2f2;
+        margin-top: 10px;
+        padding: 5px 15px; }
+    #wrapper .tabContent .dtlProf {
+      margin-bottom: 50px; }
+      #wrapper .tabContent .dtlProf .dtlProfL {
+        display: block;
+        background-color: #f2f2f2;
+        padding: 12px 15px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        #wrapper .tabContent .dtlProf .dtlProfL dt {
+          background: #ffffff;
+          width: 100%;
+          display: table;
+          height: 35px;
+          margin-bottom: 20px; }
+          #wrapper .tabContent .dtlProf .dtlProfL dt em {
+            display: table-cell;
+            background: #0097d5;
+            color: #fff;
+            font-style: normal;
+            width: 80px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 90%;
+            padding: 5px 0; }
+          #wrapper .tabContent .dtlProf .dtlProfL dt span {
+            display: table-cell;
+            font-size: 14px;
+            font-weight: bold;
+            vertical-align: middle;
+            padding: 5px 0 5px 8px; }
+        #wrapper .tabContent .dtlProf .dtlProfL dd {
+          font-size: 90%;
+          line-height: 1.6; }
+          #wrapper .tabContent .dtlProf .dtlProfL dd ul em {
+            font-weight: bold;
+            display: inline-block; }
+      #wrapper .tabContent .dtlProf .dtlProfR {
+        display: block;
+        padding: 25px 25px;
+        background-color: #e0e0e0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        #wrapper .tabContent .dtlProf .dtlProfR dt img {
+          width: 80%;
+          height: auto;
+          margin: 5px auto; }
+        #wrapper .tabContent .dtlProf .dtlProfR dd {
+          font-size: 90%;
+          line-height: 1.6; }
+
+/*--wrapper ---------------*/
+.page-top {
+  display: none; }
+
+/*# sourceMappingURL=layout.css.map */

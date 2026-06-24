@@ -1,0 +1,495 @@
+﻿@charset "utf-8";
+
+/* 
+-------------------------------------------------------------------------*/
+.floatleft {	float:left;}
+.floatright {	float:right;}
+.clearboth {	clear:both;height:0px;}
+.valignmiddle {	vertical-align:middle;}
+.valigntop {	vertical-align:top;}
+.textcenter {	text-align:center;margin-left:auto; margin-right:auto;}
+.textleft {	text-align:left;}
+.textright {	text-align:right;}
+
+img {
+	vertical-align:top;
+}
+
+/* 
+-------------------------------------------------------------------------*/
+*{
+	font-family: "メイリオ","MS PGothic","Meiryo","ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,Verdana,Arial,sans-serif,"MS PGothic",sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color:#ffffff;
+	color: #333333;
+	font-size:100%;
+	font-size: 92%;
+	border-top:solid 3px #0d3371;
+}
+#wrapper {
+}
+
+/* #header 
+--------------------------------------------------*/
+.header {
+	clear:both;
+	width:960px;
+	height:600px;
+	margin:0 auto 0 auto;
+	position:relative;
+}
+
+.img_main {
+	position:absolute;
+	top:19px;
+}
+
+.header h1.logo {
+	position:absolute;
+	top:16px;
+	left: 2px;
+	width: 687px;
+}
+
+.header h2.logo {
+	position:absolute;
+	top:126px;
+	left: 1px;
+	width: 692px;
+	height: 196px;
+}
+
+.header .header_tex01 {
+	position:absolute;
+	top:350px;
+	left: 1px;
+	width: 367px;
+	height: 230px;
+}
+
+.header .header_tex02 {
+	position:absolute;
+	top:350px;
+	left: 369px;
+	width: 367px;
+	height: 230px;
+}
+
+.header .header_tex03 {
+	position:absolute;
+	top:43px;
+	left: 723px;
+	width: 274px;
+	height: 537px;
+}
+
+.header .header_tex04 {
+	position:absolute;
+	top:341px;
+	left: 554px;
+	width: 193px;
+	height: 26px;
+}
+
+div.cta {
+	margin:auto 0;
+	background-color:#0d3371;
+}
+
+div.cta_inner {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:45px 20px 40px 20px;
+}
+
+div.cta_inner table tr td {
+	vertical-align:top;
+}
+
+div.cta_inner table tr td.right {
+	padding:0 15px 10px 30px;
+}
+
+.form_box {
+	padding-top:5px;
+}
+
+.form_box form dl {
+	padding:10px;
+}
+
+.form_box form dl:after
+.form_box form dl dd:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.form_box form dl dt{
+	color:#FFF;
+	font-weight:bold !important;
+    float:left;
+	padding-top:7px;
+}
+
+.form_box form dl dd{
+  margin-left:110px;
+  margin-bottom:10px;
+}
+
+.form_box form dl dd input{
+	height: 2em;
+	width:20em;
+
+}
+
+
+
+div.evolution {
+	background-image:url(../images/bg_evolution.gif);
+	background-repeat:repeat-x repeat-y;
+}
+
+div.evolution div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	text-align:center;
+	padding:50px 0 50px 0;
+}
+
+
+/* merit01 
+--------------------------------------------------*/
+div.merit01 {
+	background-color:#66c4d0;
+}
+
+div.merit01 div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:50px 0 30px 0;
+}
+
+.map_box {
+	padding:60px 0 10px 0;
+	position:relative;
+}
+
+div.map_box img.text01 {
+	position:absolute;
+	top:80px;
+	left:0;
+}
+
+div.map_box img.map_tokyo {
+	position:absolute;
+	top:40px;
+	left:260px;
+}
+
+div.map_box img.map_yokohama {
+	position:absolute;
+	top:600px;
+	left:0;
+}
+
+
+
+/*開閉パネル*/
+
+.hover{
+        cursor: pointer;
+        background-color: #EEE;
+}
+
+.clearfix {
+    min-height: 1px;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.practice {
+	display:block;
+	background-image:url(../images/btn_more.gif);
+	background-repeat:no-repeat;
+	background-position:3px 37px;
+	cursor: pointer;
+	height:80px; 
+}
+
+.active_sp {
+	background-image:url(../images/btn_close.gif);
+	background-repeat:no-repeat;
+	background-position:3px 37px;
+	height:80px; 
+}
+
+.close {
+	text-align:center;
+	padding:20px 20px 20px 20px;
+}
+
+.close .btn_close {
+	padding-top:20px;
+}
+
+
+.practice02 {
+	display:block;
+	background-image:url(../images/btn_more.gif);
+	background-repeat:no-repeat;
+	background-position:3px 63px;
+	cursor: pointer;
+	height:100px; 
+}
+
+.active_sp02 {
+	background-image:url(../images/btn_close.gif);
+	background-repeat:no-repeat;
+	background-position:3px 63px;
+	height:100px; 
+}
+
+.close {
+	text-align:center;
+	padding:20px;
+	cursor: pointer;
+}
+
+
+/* end 開閉パネル*/
+
+
+/* merit02 
+--------------------------------------------------*/
+div.merit02 {
+	
+}
+
+div.merit02 div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:50px 0 30px 0;
+}
+
+div.office_box ul {
+	display:inline;
+	padding-top:20px;
+}
+
+div.office_box ul li {
+	display:inline-block;
+	padding:0 0 5px 0;
+}
+
+
+/* merit03 
+--------------------------------------------------*/
+div.merit03 {
+	background-color:#bfb8ac;
+	
+}
+
+div.merit03 div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:50px 0 30px 0;
+}
+
+
+/* merit04 
+--------------------------------------------------*/
+div.merit04 {
+	
+}
+
+div.merit04 div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:50px 0 30px 0;
+}
+
+
+div.merit04 div.inner_box div.m_box div.office_box {
+	background-image:url(../images/img_merit04_01.jpg);
+	background-repeat:no-repeat;
+	background-position:530px 50px;
+	padding-top:50px;
+}
+
+/*div.merit04 div.inner_box div.m_box div.office_box ul {
+	display:table;
+	padding-top:20px;
+}
+
+div.merit04 div.inner_box div.m_box div.office_box ul li.cell01 {
+	display:table-cell;
+	width:50%;
+	padding-top:20px;
+}
+
+div.merit04 div.inner_box div.m_box div.office_box ul li.cell02 {
+	display:table-cell;
+	width:50%;
+	padding-top:20px;
+}
+*/
+.img_bizsupport {
+}
+
+.img_saigai {
+	margin-top:60px;
+}
+
+.img_uketuke {
+	margin-left:20px;
+	margin-top:20px;
+}
+
+
+/* merit05 
+--------------------------------------------------*/
+div.merit05 {
+	background-color:#9cdeff;
+	
+}
+
+div.merit05 div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:50px 0 30px 0;
+}
+
+div.merit05 div.inner_box div.m_box div.office_box {
+	padding:50px 0 30px 0;
+}
+
+
+/* voice 
+--------------------------------------------------*/
+div.voice {
+	
+}
+
+div.voice div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:40px 0 20px 0;
+}
+
+
+/* guide 
+--------------------------------------------------*/
+div.guide {
+	background-color:#a4bcc9;
+}
+
+div.guide div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:40px 0 20px 0;
+}
+
+
+/* voice 
+--------------------------------------------------*/
+div.faq {
+	
+}
+
+div.faq div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:40px 0 20px 0;
+}
+
+div.faq div.inner_box div.m_box div.office_box {
+	text-align:center;
+}
+
+
+/* lets 
+--------------------------------------------------*/
+div.lets {
+	background-color:#f0f0f0;
+	
+}
+
+div.lets div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:50px 0 60px 0;
+}
+
+div.lets div.inner_box {
+	text-align:center;
+}
+
+
+/* Q&A 
+--------------------------------------------------*/
+div.qanda{
+	text-align:left;
+	border:solid 1px #ccc;
+	padding:5px 15px 15px 15px;
+	margin:0 0 20px 3px;
+}
+div.qanda strong.q{
+	background-image:url(../images/icon_q.gif);
+	background-repeat:no-repeat;
+	background-position:0 7px;
+	display:block;
+	border-bottom:1px solid #d4e5f0;
+	color:#1974b0;
+	padding:25px 0 20px 55px;
+	letter-spacing:1px;
+	font-size:110%;
+}
+
+div.qanda div.ans{
+	background-image:url(../images/icon_a.gif);
+	background-repeat:no-repeat;
+	background-position:0 7px;
+	display:block;
+	padding:20px 0 0 60px;
+	margin:0 0 0 10px;
+	line-height:1.6;
+}
+
+div.qanda div.ans ul.mark li{
+	display:block;
+}
+/* footer 
+--------------------------------------------------*/
+div.footer {
+	background-color:#f7f7f7;
+	
+}
+
+div.footer div.inner_box {
+	margin:0 auto 0 auto;
+	width:960px;
+	padding:30px 0 30px 15px;
+}
+
+div.footer div.inner_box {
+}
+
+
+#page-top {
+	    position: fixed;
+    	bottom: 20px;
+	    right: 20px;
+}

@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import 'mixin';
+.pc {
+	@include break {
+		display: none;
+	}
+}
+.sp {
+	@include break2 {
+		display: none;
+	}
+}
+
+
+
+.thanksRegi {
+    
+    .iconMail{
+        width: 198px;
+        margin: 120px auto 45px auto;
+@include break {
+      width: 35%;
+		margin: 50px auto 5px auto;
+	}}//iconMail
+    h2.mail{
+        text-align: center;
+        background: none;
+        font-size:24px;
+        color: #000000;
+        @include break {
+            margin-top: 10px;
+           font-size:20px !important;}
+    }
+    .wait{text-align: center;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 60px; @include break {margin-bottom:30px;}
+    }
+}
+.otherArea .mailmagazine_thanks_none {
+	display: none;
+}

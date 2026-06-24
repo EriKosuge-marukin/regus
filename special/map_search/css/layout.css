@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.main_contents {
+  font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .main_contents {
+    font-size: 14px;
+  }
+}
+.main_contents * {
+  box-sizing: border-box;
+}
+
+.ov {
+  transition: all 0.3s;
+}
+.ov:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+}
+
+section {
+  max-width: 1060px;
+  width: 98%;
+  margin: 20px auto 80px auto;
+}
+@media screen and (max-width: 768px) {
+  section {
+    margin: 20px auto 40px;
+    width: 94%;
+  }
+}
+section .search__map {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+section .search__map::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  /*background-color: rgba($color: #e4e4e4, $alpha: 0.3);*/
+}
+@media screen and (max-width: 768px) {
+  section .search__map {
+    margin-bottom: 15px;
+  }
+}
+section .search__map p.search__note {
+  position: relative;
+  /*bottom: -30px;*/
+  width: 100%;
+  font-size: 0.875rem;
+  margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  section .search__map p.search__note {
+    font-size: 0.75rem;
+  }
+}
+section span {
+  max-width: 268px;
+  display: inline-block;
+}/*# sourceMappingURL=layout.css.map */

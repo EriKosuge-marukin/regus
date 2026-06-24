@@ -1,0 +1,894 @@
+<?php
+session_start();
+
+$sequence = filter_input(INPUT_POST, "sequence", FILTER_SANITIZE_SPECIAL_CHARS);
+
+if (is_null($sequence) && filter_input(INPUT_GET, "page", FILTER_SANITIZE_SPECIAL_CHARS) == "thanks" && $_SESSION["unique_key"] == filter_input(INPUT_GET, "key", FILTER_SANITIZE_SPECIAL_CHARS)) {
+    $sequence = "thanks";
+    session_destroy();
+    header("Location: ./thanks.html");
+    exit;
+} else {
+    if (is_null($_SESSION["unique_key"]) || $_SESSION["unique_key"] != filter_input(INPUT_POST, "unique_key", FILTER_SANITIZE_SPECIAL_CHARS)) {
+        $unique_key = md5(uniqid());
+        $_SESSION["unique_key"] = $unique_key;
+        $sequence = NULL;
+    } else {
+        $unique_key = $_SESSION["unique_key"];
+    }
+    require_once "./parameters.php";
+    $error = array();
+    for ($i = 0; $i < count($requireTag); $i++) {
+        $error[$requireTag[$i]] = false;
+    }
+    $error["emailCheck"] = false;
+}
+
+$isAdminSend = true;
+
+if ($sequence == "confirm") {
+    for ($i = 0; $i < count($checkTag); $i++) {
+        $_SESSION[$checkTag[$i]] = filter_input(INPUT_POST, $checkTag[$i], FILTER_SANITIZE_SPECIAL_CHARS);
+    }
+    $errorCount = 0;
+    for ($i = 0; $i < count($requireTag); $i++) {
+        if ($_SESSION[$requireTag[$i]] == "") {
+            $error[$requireTag[$i]] = true;
+            $errorCount++;
+        }
+    }
+
+    if ($_SESSION["email"] != "") {
+        if (!filter_var($_SESSION["email"], FILTER_VALIDATE_EMAIL)) {
+            $error["emailCheck"] = true;
+            $errorCount++;
+        }
+    }
+
+    if ($errorCount > 0) {
+        $sequence = NULL;
+    }
+}else if($sequence == "send"){
+    mb_language("japanese");
+    mb_internal_encoding("UTF-8");
+    require_once "./PHPMailer/class.phpmailer.php";
+
+    $weekday = array("日","月","火","水","木","金","土");
+    $currentDate = date("Y年m月d日") . "(" . $weekday[date("w")] . ")";
+
+    require_once "./mailConfig.php";
+
+    $adminMail = new PHPMailer();
+    $adminMail->isSendmail();
+    $adminMail->From = $from;
+    $adminMail->FromName = mb_encode_mimeheader(mb_convert_encoding($fromName, "JIS", "UTF-8"));
+    foreach($to as $value){
+        $adminMail->addAddress($value);
+    }
+    $adminMail->Subject = mb_encode_mimeheader(mb_convert_encoding($adminSubject, "JIS", "UTF-8"));
+    $adminMail->CharSet = "iso-2022-jp";
+    $adminMail->Encoding = "7bit";
+    $adminMail->Body = str_replace("\r\n", "\n", mb_convert_encoding($adminBody, "JIS", "UTF-8"));
+    $isAdminSend = $adminMail->send();
+
+    if($isAdminSend){
+        header("Location: ./?page=thanks&key=" . $_SESSION["unique_key"]);
+        exit;
+    }
+}
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>東京・横浜でオフィスを探すなら日本リージャス</title>
+    <meta name="keywords" content="リージャス,レンタルオフィス,横浜,サービスオフィス,貸事務所,賃貸"/>
+    <meta name="description" content="東京・横浜でオフィスを探すなら日本リージャス。ハイセンスなビジネス家具付きの一等地レンタルオフィスがすぐに使えます。"/>
+    <link rel="stylesheet" type="text/css" href="css/import_o.css" media="screen,print"/>
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen,print"/>
+    <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="js/rollover.js"></script>
+    <script type="text/javascript" src="js/jquery-opacity-rollover.js"></script>
+    <script type="text/javascript" src="js/toggle.js"></script>
+    <script type="text/javascript" src="js/jquery.scroller.d5.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/rollover.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが100に達したらボタン表示
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    topBtn.fadeIn();
+                } else {
+                    topBtn.fadeOut();
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var tokyoBtn = $('#tokyo');
+            //スクロールしてトップ
+            tokyoBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#tokyo_top').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var shibuyaBtn = $('#shibuya');
+            //スクロールしてトップ
+            shibuyaBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#shibuya_top').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var roppongiBtn = $('#roppongi');
+            //スクロールしてトップ
+            roppongiBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#roppongi_top').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var shiodomeBtn = $('#shiodome');
+            //スクロールしてトップ
+            shiodomeBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#shiodome_top').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var shinjukuBtn = $('#shinjuku');
+            //スクロールしてトップ
+            shinjukuBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#shinjuku_top').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            var otemachiBtn = $('#otemachi');
+            //スクロールしてトップ
+            otemachiBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: $('#otemachi_top').offset().top
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    <!--tracking code -->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42635726-1', 'regus-office.jp');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- End tracking code -->
+
+    <script type="text/javascript" language="javascript">
+        var yahoo_retargeting_id = '50DOU9S870';
+        var yahoo_retargeting_label = '';
+    </script>
+    <script type="text/javascript" language="javascript" src="//b92.yahoo.co.jp/js/s_retargeting.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#btnConfirm").click(function () {
+                $("#form01").submit();
+            });
+
+            $("#btnConfirm2").click(function () {
+                $("#form02").submit();
+            });
+
+            $("#showLightbox").click(function(){
+                $("#overlay").show();
+                $("#lightbox").show();
+                return false;
+            });
+
+            $("#overlay").click(function(){
+                $("#lightbox").fadeOut("slow", function(){
+                    $("#overlay").hide();
+                });
+            });
+
+            <?php
+            if(!$isAdminSend){
+            echo "alert('メールの送信に失敗いたしました。');";
+            }
+            ?>
+        });
+    </script>
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '801827203181552']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=801827203181552&amp;ev=NoScript" /></noscript>
+</head>
+<body>
+<!-- wrapper -->
+<div id="wrapper">
+
+<!-- wrapper -->
+
+<!-- end wrapper -->
+
+<!-- cta -->
+<div class="cta">
+    <div class="cta_inner">
+        <table width="0" border="0">
+            <tr>
+                <td><img src="images/cta_text.gif" width="548" height="206" alt="今なら、12ヶ月ご契約で最大2ヶ月賃料無料！"/></td>
+                <td class="right"><img src="images/ttl_contact.png" alt="専門スタッフより折り返し連絡します。" width="283" height="21"/>
+
+                    <div class="form_box">
+                        <form action="./" method="post" id="form01">
+                            <dl>
+                                <dt><strong>お名前</strong></dt>
+                                <dd><input name="name" type="text" onfocus="if (this.value == 'お名前*') { this.value = ''; this.className = '' }" onblur="if (this.value == '') { this.value = 'お名前*'; this.className = '' }" value="お名前*"/></dd>
+                                <dt><strong>メールアドレス</strong></dt>
+                                <dd><input name="email" type="text" value="メールアドレス*" onfocus="if (this.value == 'メールアドレス*') { this.value = ''; this.className = '' }"
+                                           onblur="if (this.value == '') { this.value = 'メールアドレス*'; this.className = '' }" class="numeric_l"/></dd>
+                                <dt><strong>電話番号</strong></dt>
+                                <dd><input name="tel" type="text" value="電話番号*" onfocus="if (this.value == '電話番号*') { this.value = ''; this.className = '' }"
+                                           onblur="if (this.value == '') { this.value = '電話番号*'; this.className = '' }" class="numeric_l"/></dd>
+                            </dl>
+                            <div><input name="submit" type="image" class="btn"
+                                        onmouseover="this.src='images/btn_form_on.png'"
+                                        onmouseout="this.src='images/btn_form_off.png'" src="images/btn_form_off.png"
+                                        alt="内覧希望・お問い合わせはこちら" value="" id="btnConfirm"/></div>
+
+                            <input type="hidden" name="sequence" value="confirm"/>
+                            <input type="hidden" name="unique_key" value="<?php echo $unique_key; ?>"/>
+                        </form>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- end cta -->
+
+<!-- evolution -->
+<div class="evolution">
+    <div class="inner_box">
+        <img src="images/text_evolution.gif" alt="リージャスが提供する、レンタルオフィスの進化系 レンタルオフィスのメリットは、敷金と礼金が不要で賃貸よりも安く・早くオフィスを開設できることです。
+リージャスは、このコストメリットと開設までの早さはそのままに、「多数の好立地なオフィス」、「お客さまのニーズにフレキシブルに
+対応できる豊富なオフィスソリューション」、「ハイグレードな設備」、「充実したサポートサービス」という、他社にはない特長を加えた進化したレンタルオフィスサービスを提供しています。" width="958" height="182"/>
+    </div>
+</div>
+<!-- end evolution -->
+
+
+<a id="merit01" name="merit01"></a>
+<!-- merit01 -->
+<div class="merit01">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice over clearfix"><img src="images/ttl_merit01.gif" width="869" height="57"
+                                                alt="特長1 東京・横浜の主要駅に約35ヶ所のラインナップ。あなたにピッタリの最適なオフィスがきっと見つかります。"/></h2>
+
+        <!--m_box-->
+        <div class="m_box">
+            <div class="map_box">
+                <img src="images/text_merit01_01.png" width="341" height="244" class="text01"/>
+                <img src="images/bg_merit01_01.gif" width="960" height="841"/>
+
+                <div class="close over"><a href="#merit01"><img src="images/btn_close_l.gif" width="167" height="35"
+                                                                alt="close" class="btn_close"/></a></div>
+            </div>
+        </div>
+        <!-- end m_box-->
+
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end merit01 -->
+
+
+<a id="merit02" name="merit02"></a>
+
+<!-- merit02 -->
+<div class="merit02">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice over clearfix"><img src="images/ttl_merit02.gif" width="895" height="63"
+                                                alt="特長2 はじめてのオフィス開設もご安心ください。人数やご予算など、あなたのニーズに応じた最適なソリューションをご提案します。"/>
+        </h2>
+
+        <!--m_box-->
+        <div class="m_box">
+            <div class="office_box">
+                <img src="images/text_merit02_01.gif" width="950" height="57" class="mb20 mt50"/>
+                <ul>
+                    <li><img src="images/img_merit02_01.jpg" width="464" height="210" alt="プライベートオフィスとして"/></li>
+                    <li><img src="images/img_merit02_02.jpg" width="464" height="210" alt="チーム用スペースとして"/></li>
+                    <li><img src="images/img_merit02_03.jpg" width="464" height="210" alt="コーポレートキャンパスとして"/></li>
+                    <li><img src="images/img_merit02_04.jpg" width="464" height="210" alt="キャンパスオフィスとして"/></li>
+                </ul>
+
+                <img src="images/text_merit02_02.gif" alt="レンタルオフィスサービス以外にもさまざまなオフィスソリューションを取りそろえています。" width="924"
+                     height="22" class="mt50 mb20"/>
+                <ul>
+                    <li><img src="images/img_merit02_openoffice.jpg" width="229" height="277" alt="Openoffice"/></li>
+                    <li><img src="images/img_merit02_vertialoffice.jpg" width="229" height="277" alt="バーチャルオフィス"/></li>
+                    <li><img src="images/img_merit02_rentaloffice.jpg" width="229" height="277" alt="会議室レンタル"/></li>
+                    <li><img src="images/img_merit02_businesslounge.jpg" width="229" height="277" alt="ビジネスラウンジ"/></li>
+                </ul>
+
+            </div>
+
+            <div class="close over"><a href="#merit02"><img src="images/btn_close_l.gif" width="167" height="35"
+                                                            alt="close" class="btn_close"/></a></div>
+        </div>
+        <!-- end m_box-->
+
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end merit02 -->
+
+
+<a id="merit03" name="merit03"></a>
+<!-- merit03 -->
+<div class="merit03">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice over clearfix"><img src="images/ttl_merit03_01.gif" width="869" height="57"
+                                                alt="特長3 充実のファシリティとハイグレードなオフィス家具。レイアウトも自由自在。あなたらしいのオフィスを。"/></h2>
+
+        <!--m_box-->
+        <div class="m_box">
+            <img src="images/text_merit03_01.gif" alt="リージャスのレンタルオフィスは、オフィス家具や電話、ITネットワーク、コピーやファックスなどのビジネスに必要な設備は完備。"
+                 width="869" height="66" class="mb20 mt50"/>
+
+            <div class="office_box">
+                <ul>
+                    <li><img src="images/img_merit03_01.jpg" width="948" height="222" alt="オフィスイメージ"/></li>
+
+                </ul>
+            </div>
+            <img src="images/ttl_merit03_02.gif" alt="リージャスのレンタルオフィス基本料金には以下のサービスが含まれます。" width="835" height="24"
+                 class="mt50 mb20"/>
+            <img src="images/img_merit03_03.png" width="926" height="549"/>
+            <img src="images/img_merit03_04.gif" width="926" height="262" class="mt30"/>
+
+            <div class="close over"><a href="#merit03"><img src="images/btn_close_l.gif" width="167" height="35"
+                                                            alt="close" class="btn_close"/></a></div>
+        </div>
+        <!-- end m_box-->
+
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end merit03 -->
+
+
+<a id="merit04" name="merit04"></a>
+<!-- merit04 -->
+<div class="merit04">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice over clearfix"><img src="images/ttl_merit04.gif" width="949" height="57"
+                                                alt="特長4 プロフェッショナルなスタッフが、あなたをサポートします。清掃・電話対応の雑務から災害時サポート・セキュリティも万全。"/>
+        </h2>
+
+        <!--m_box-->
+        <div class="m_box">
+            <div class="office_box">
+                <img src="images/text_merit04_01.gif" width="486" height="117" alt="ビジネスサポートサービス"
+                     class="img_bizsupport"/>
+                <img src="images/text_merit04_02.gif" width="508" height="158" alt="災害時サポート・セキュリティ管理"
+                     class="img_saigai"/>
+            </div>
+
+            <div class="close over"><a href="#merit04"><img src="images/btn_close_l.gif" width="167" height="35"
+                                                            alt="close" class="btn_close"/></a></div>
+        </div>
+        <!-- end m_box-->
+
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end merit04 -->
+
+
+<a id="merit05" name="merit05"></a>
+<!-- merit05 -->
+<div class="merit05">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice over clearfix"><img src="images/ttl_baseinfo_01.gif" width="817" height="57"
+                                                alt="拠点情報 東京・横浜エリアの豊富なラインナップはこちらから。あなたのビジネスがここからはじまります。"/></h2>
+
+        <!--m_box-->
+        <div class="m_box">
+            <div class="office_box">
+                <a name="tokyo"></a>
+                <img src="images/ttl_baseinfo_tokyo.gif" width="107" height="21" alt="東京エリア" class="mb10" id="tokyo"/>
+
+                <div
+                    style="width:960px; height:103px; background-image:url(images/lu_tokyo_base_navi.gif); background-repeat:no-repeat; position:relative;">
+                    <a href="#shibuya"><img src="images/lu_navi01.png" width="134" height="16"
+                                            style="position:absolute; left: 34px; top: 45px;" class="over"
+                                            id="shibuya"/></a>
+                    <a href="#roppongi"><img src="images/lu_navi02.png" width="189" height="16"
+                                             style="position:absolute; left: 183px; top: 45px;" class="over"
+                                             id="roppongi"/></a>
+                    <a href="#shiodome"><img src="images/lu_navi03.png" width="173" height="16"
+                                             style="position:absolute; left: 390px; top: 45px;" class="over"
+                                             id="shiodome"/></a>
+                    <a href="#shinjuku"><img src="images/lu_navi04.png" width="130" height="16"
+                                             style="position:absolute; left: 580px; top: 45px;" class="over"
+                                             id="shinjuku"/></a>
+                    <a href="#otemachi"><img src="images/lu_navi05.png" width="204" height="16"
+                                             style="position:absolute; left: 726px; top: 45px;" class="over"
+                                             id="otemachi"/></a>
+                </div>
+
+
+                <div
+                    style="width:960px; height:1434px; background-image:url(images/lu_tokyo_base01.jpg); background-repeat:no-repeat; position:relative;"
+                    id="shibuya_top">
+                    <a href="#tokyo"><img src="images/lu_tb.png" width="175" height="16"
+                                          style="position:absolute; left: 745px; top: 1370px;" class="over" id="tokyo"/></a>
+                </div>
+
+
+                <div
+                    style="width:960px; height:1013px; background-image:url(images/lu_tokyo_base02.jpg); background-repeat:no-repeat; position:relative;"
+                    id="roppongi_top">
+                    <a href="#tokyo"><img src="images/lu_tb.png" width="175" height="16"
+                                          style="position:absolute; left: 745px; top: 927px;" class="over" id="tokyo"/></a>
+                </div>
+
+                <a name="shiodome"></a>
+
+                <div
+                    style="width:960px; height:589px; background-image:url(images/lu_tokyo_base03.jpg); background-repeat:no-repeat; position:relative;"
+                    id="shiodome_top">
+                    <a href="#tokyo"><img src="images/lu_tb.png" width="175" height="16"
+                                          style="position:absolute; left: 745px; top: 501px;" class="over" id="tokyo"/></a>
+                </div>
+
+                <a name="shinjuku"></a>
+
+                <div
+                    style="width:960px; height:583px; background-image:url(images/lu_tokyo_base04.jpg); background-repeat:no-repeat; position:relative;"
+                    id="shinjuku_top">
+                    <a href="#tokyo"><img src="images/lu_tb.png" width="175" height="16"
+                                          style="position:absolute; left: 745px; top: 501px;" class="over" id="tokyo"/></a>
+                </div>
+
+                <a name="otemachi"></a>
+
+                <div
+                    style="width:960px; height:1014px; background-image:url(images/lu_tokyo_base05.jpg); background-repeat:no-repeat; position:relative;"
+                    id="otemachi_top">
+                    <a href="#tokyo"><img src="images/lu_tb.png" width="175" height="16"
+                                          style="position:absolute; left: 745px; top: 960px;" class="over" id="tokyo"/></a>
+                </div>
+
+                <img src="images/lu_tokyo_base06.jpg" width="960" height="155"/>
+                <img src="images/ttl_baseinfo_yokohama.gif" alt="横浜エリア" width="107" height="19" class="mb10 mt50"/>
+                <img src="images/img_baseinfo_02.jpg" width="960" height="492"/>
+            </div>
+
+            <div class="close over"><a href="#merit05"><img src="images/btn_close_l.gif" width="167" height="35"
+                                                            alt="close" class="btn_close"/></a></div>
+        </div>
+        <!-- end m_box-->
+
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end merit05 -->
+
+
+<a id="voice" name="voice"></a>
+<!-- voice -->
+<div class="voice">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice02 over clearfix">
+            <img src="images/ttl_voice_01.gif" width="567" height="57" alt="ご利用者の声 リージャスのレンタルオフィスを、こんな方が利用しています。"/></h2>
+
+        <!--m_box-->
+        <div class="m_box">
+            <div class="office_box">
+                <img src="images/img_voice_01.gif" alt="公認会計士（３名でのご利用）" width="962" height="346" class="mt50"/>
+                <img src="images/img_voice_02.gif" alt="ITコンサル（３名様でのご利用）" width="962" height="370" class="mt50"/>
+                <img src="images/img_voice_03.gif" alt="メーカー（５名様でのご利用）" width="961" height="363" class="mt50"/>
+            </div>
+
+            <div class="close over"><a href="#voice"><img src="images/btn_close_l.gif" width="167" height="35"
+                                                          alt="close" class="btn_close"/></a></div>
+        </div>
+        <!-- end m_box-->
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end voice -->
+
+
+<a id="guide" name="guide"></a>
+<!-- guide -->
+<div class="guide">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice02 over clearfix"><img src="images/ttl_guide_01.gif" width="729" height="57"
+                                                  alt="ご利用ガイド レンタルオフィスをご利用いただくまでの流れ"/></h2>
+        <!--m_box-->
+        <div class="m_box">
+            <div class="office_box">
+                <img src="images/text_guide_01.gif"
+                     alt="事前に書類を準備いただく必要はありません。ご用意いただくものはクレジットカードのみです。ご希望の契約期間、人数、拠点を電話・メールにてご連絡いただければすぐに専門スタッフが対応します。ご契約時保証金として2ヶ月の料金をお預かりしています。この保証金も解約時返却します。ご契約前の見学も受け付けておりますので、お気軽にご連絡ください。"
+                     width="908" height="148" class="mt50"/>
+                <img src="images/border_guide.gif" width="959" height="2" class="mt50 mb30"/>
+                <table width="0" border="0">
+                    <tr>
+                        <td><img src="images/text_guide_02_01.gif" width="548" height="165"
+                                 alt="まずは、あなたのご要望をお聞かせください。まずは、リージャスのオフィスを体験してみませんか？"/></td>
+                        <td class="right pl10"><img src="images/text_guide_02_02.gif" alt="下のフォームよりお問合わせ頂いた方には
+リージャスのビジネスラウンジ1日無料券をプレゼント。ゆっくりとオフィスの雰囲気をご確認いただけます。" width="409" height="65" style="margin-bottom:30px; display:block;"/>
+                            <a href="./" class="thickbox"><img
+                                    src="images/btn_form_off.png" alt="専門スタッフより折り返し連絡します。" width="367" height="48"
+                                    onmouseover="this.src='images/btn_form_on.png'"
+                                    onmouseout="this.src='images/btn_form_off.png'"/></a>
+                        </td>
+                    </tr>
+                </table>
+                <img src="images/border_guide.gif" width="959" height="2" class="mt30 mb15"/>
+            </div>
+
+            <div class="close over"><a href="#guide"><img src="images/btn_close_l.gif" width="167" height="35"
+                                                          alt="close" class="btn_close"/></a></div>
+        </div>
+        <!-- end m_box-->
+
+    </div>
+
+    <!-- end inner_box -->
+</div>
+<!-- end guide -->
+
+
+<a id="faq" name="faq"></a>
+
+<!-- FAQ -->
+<div class="faq">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2 class="practice over clearfix"><img src="images/ttl_faq_01.gif" width="869" height="57"
+                                                alt="FAQ お客様からお寄せいただいたよくあるご質問"/></h2>
+        <!--m_box-->
+        <div class="m_box">
+            <div class="office_box">
+
+                <div class="qanda">
+                    <strong class="q">1. リージャス・サービスオフィスとは何ですか?従来のオフィスとの違いは何ですか?</strong>
+
+                    <div class="ans">
+                        リージャス・サービスオフィスは、日々のビジネスに必要なサービス、家具、機器が用意された1ヶ月からご利用できるオフィススペースです。オフィススペースの他、受付、最新電話システム、インターネット、ITサポートサービス、給湯室、カフェも完備しているので、契約翌日から開業いただけます。
+                        リージャスのサービスオフィスを利用すれば、時間と費用をかけて環境を整える必要は一切ありません。通常の賃貸オフィスでは、実際に仕事を始める前に、次の手続きや作業が必要になります。
+                        <ul class="mark">
+                            <li>? 長期賃貸契約。敷金・礼金・保証金などの多額の初期費用の支払</li>
+                            <li>? 内装、オフィス家具の準備</li>
+                            <li>? 電話、インターネット、メンテナンスなど、サービス業者別の契約</li>
+                            <li>? オフィススタッフの採用</li>
+                            <li>? オフィス用機器の購入・リース</li>
+                            <li>? 各種接続の配線</li>
+                            <li>? 時間と費用のかかるその他の準備作業</li>
+                        </ul>
+                        これに対し、リージャス・サービスオフィスのオフィススペースは、電話1本、またはインターネットで簡単に見学のご予約でき、低額の初期費用、契約もシンプルです。コンピュータの電源を入れたら、すぐ仕事にとりかかれます。デイオフィスという一時間からご利用できるサービスもございます。
+                    </div>
+                </div>
+                <!--//qanda01-->
+
+
+                <div class="qanda">
+                    <strong class="q">2. リージャス・サービスオフィスを利用する際に、どのような契約手続きが必要ですか?</strong>
+
+                    <div class="ans">
+                        リージャスのサービスオフィスなら1枚の契約書、利用料2ヶ月分の保証金、１ヶ月分の利用料（前家賃）だけです(共益費等は別途)。従来のオフィス賃貸契約では、成約までに仲介人をたてて交渉しなければならないことがよくありますが、リージャス・サービスオフィスの場合は、このような面倒な手続きは必要ありません。従来の賃貸契約では、何枚もの契約書が必要でしたが、契約期間は1ヶ月からご自由にお選びいただけるため、事業の拡大に応じて延長することも可能です。また、センタースタッフによる事務代行サービス、センター内設置の共用オフィス機器などを必要に応じて利用できるため、正社員の雇用や設備投資が必要ありません。
+                    </div>
+                </div>
+                <!--//qanda02-->
+
+
+                <div class="qanda">
+                    <strong class="q">3. リージャス・サービスオフィスは、世界各地にどれくらいありますか?</strong>
+
+                    <div class="ans">
+                        リージャスグループは現在、世界100ヶ国2,000拠点のビジネスセンターを運営しており、毎月新たなセンターを開設しています。世界の主要都市のほとんどに開設しているので、貴社に便利なセンターが必ず見つかるはずです。手間暇をかけて賃貸オフィスを探す必要はなく、リージャス・ビジネスセンターの所在地をインターネットで探すだけでOKです。実際に利用するオフィススペースは1ヶ所だけで、その他のセンターを無人の支社で使いたい場合などは、リージャスのバーチャルオフィスがお勧めです。
+                    </div>
+                </div>
+                <!--//qanda03-->
+
+
+                <div class="qanda">
+                    <strong class="q">4. オフィススペースを拡大・縮小する必要が生じた場合はどうなりますか?</strong>
+
+                    <div class="ans">
+                        ご希望に合わせて、ご対応いたします。どのサービスオフィスにも100～400席が準備されていますので、オフィススペースを追加でご利用いただくことができます。従来の賃貸オフィスでは、長期のリース契約によって拘束されますが、リージャス・サービスオフィスではお客様のご要望に応じて短期の契約も可能なため、お客様のビジネスニーズに合わせてオフィスを拡大・縮小も容易です。お支払いいただくのは、オフィススペースの料金だけです。
+                    </div>
+                </div>
+                <!--//qanda04-->
+
+
+                <div class="qanda">
+                    <strong class="q">5. 出張先で、リージャス・サービスオフィスを利用できますか?</strong>
+
+                    <div class="ans">
+                        有料でご利用いただけます。リージャスとご契約いただくと、世界2,000拠点のビジネスセンターで会議室、テレビ会議室、カフェも優先的にご利用いただけます。リージャス・サービスオフィスにはバイリンガルのスタッフが常駐し、コピーや印刷サービスを始め、受付業務や一般事務を代行します。どのビジネスセンターもよく似たインテリアと設計を施しているので、別のセンターをご利用になるときも戸惑うことはありません。
+                    </div>
+                </div>
+                <!--//qanda05-->
+
+
+                <div class="qanda">
+                    <strong class="q">6. オフィスの種類を選択できますか?</strong>
+
+                    <div class="ans">
+                        選択可能です。リージャス・サービスオフィスは、1人用のオフィスから、広いエグゼクティブスイート、チーム用オフィス、オープンフロア式オフィスまで、お客様のご要望に応じてさまざまな種類のオフィスをご用意しております。従来の貸オフィススペースとは異なり、リージャス・サービスオフィスでは、家具、備品、インターネットを含めた通信機器をすぐにご利用になれます。
+                    </div>
+                </div>
+                <!--//qanda06-->
+
+
+                <div class="qanda">
+                    <strong class="q">7. オフィス機器は自分で用意する必要がありますか?</strong>
+
+                    <div class="ans">
+                        その必要はございません。リージャス・サービスオフィスでは、お客様が必要とされるあらゆるオフィス機器をご用意しています。リージャス・サービスオフィスには、オフィス用家具、高速インターネット接続、受付、カフェ、給湯室が完備しています。世界2,000拠点のどのサービスセンターでも、これらの行き届いた設備とサービスをご利用になれます。入居後すぐに仕事を始められます。
+                    </div>
+                </div>
+                <!--//qanda07-->
+
+
+                <div class="qanda">
+                    <strong class="q">8. リージャス・サービスオフィスに、事務を代行してくれるスタッフはいますか?</strong>
+
+                    <div class="ans">
+                        リージャス・サービスオフィスには、事務代行スタッフが常駐しています。毎日の事務処理サービス、または必要なときだけサービスをご利用になれます。従来のリース契約とは異なり、外部の業者からスタッフを手配する必要はありません。また、高速のインターネット接続や、高度なテレコムインフラストラクチャも完備されています。
+                    </div>
+                </div>
+                <!--//qanda08-->
+
+
+                <div class="qanda">
+                    <strong class="q">9. 契約後どれくらいでサービスオフィスに入居できますか?</strong>
+
+                    <div class="ans">
+                        ご成約の翌日からご利用いただけます。従来のオフィス契約では、実際に利用を開始するまで長い間待たなければなりません。これに対し、リージャス・サービスオフィスでは、お客様のご要望通りのオフィスをすぐにご用意可能です。
+                    </div>
+                </div>
+                <!--//qanda09-->
+
+
+                <div class="qanda">
+                    <strong class="q">10. リージャス・サービスオフィスに入居していることをどの程度公開できますか? </strong>
+
+                    <div class="ans">
+                        ご要望に応じて、社名のパネル等を手配いたします。詳しくは、最寄りのリージャス・サービスオフィスにお問い合わせください。
+                    </div>
+                </div>
+                <!--//qanda10-->
+
+
+            </div>
+
+            <div class="close over"><a href="#faq"><img src="images/btn_close_l.gif" width="167" height="35" alt="close"
+                                                        class="btn_close"/></a></div>
+        </div>
+        <!-- end m_box-->
+
+    </div>
+
+    <!-- end inner_box -->
+</div>
+<!-- end FAQ -->
+
+
+<!-- lets -->
+<div class="lets">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2><img src="images/ttl_lets_01.gif" width="873" height="207"
+                 alt="リージャスの未来形レンタルオフィスでビジネスをスタートしませんか？ぜひ、一度お問い合わせください。"/></h2>
+
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end lets -->
+
+
+<!-- cta -->
+<div class="cta">
+    <div class="cta_inner">
+        <table width="0" border="0">
+            <tr>
+                <td><img src="images/cta_text00.gif" width="548" height="135"
+                         alt="今なら、12ヶ月ご契約で最大4カ月賃料無料！まずは、リージャスのオフィスを体験してみませんか？"/></td>
+                <td class="right"><img src="images/cta_text02.gif"
+                                       alt="右のフォームよりお問合わせ頂いた方にはリージャスのビジネスラウンジ1日無料券をプレゼント。ゆっくりとオフィスの雰囲気をご確認いただけます。"
+                                       width="379" height="57" style="margin-bottom:30px; display:block;"/>
+                    <a href="./" class="thickbox" id="showLightbox"><img
+                            src="images/btn_form_off.png" alt="専門スタッフより折り返し連絡します。" width="367" height="48"
+                            onmouseover="this.src='images/btn_form_on.png'"
+                            onmouseout="this.src='images/btn_form_off.png'"/></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- end cta -->
+
+
+<!-- footer -->
+<div class="footer">
+    <!-- inner_box -->
+    <div class="inner_box">
+
+        <h2><img src="images/text_footer_01.gif" width="818" height="58"
+                 alt="日本リージャス株式会社 日本リージャス株式会社は、ロンドン証券取引所に上場する、リージャス・グループの１００％現地法人です。１９９８年９月に会社設立し、現在に至るまで、日本全国に多数の事業所を運営しており、日本においても 最大のレンタルオフィス・ネットワークを有しております。"/>
+        </h2>
+
+        <h2><img src="images/text_footer_02.gif" width="728" height="68"
+                 alt="会社名：日本リージャス株式会社 設立：1998年9月 本社所在地：東京都新宿西新宿3-7-1　新宿パークタワーＮ30階 電話番号：03-5326-3000（代表）代表者：代表取締役　西岡真吾"
+                 class="mt10"/></h2>
+    </div>
+    <!-- end inner_box -->
+</div>
+<!-- end footer -->
+
+
+<p id="page-top"><a href="#top"><img src="images/btn_go_top.png" width="70" height="70" alt="top" class="over"/></a></p>
+
+</div>
+<!-- end wrapper -->
+<div id="overlay" class="overlayBG" <?php if($sequence == "confirm")echo "style='display:block;'" ?>></div>
+<div id="lightbox" <?php if($sequence == "confirm")echo "style='display:block;'" ?>>
+    <div class="boxWrapper">
+        <div class="boxscroll">
+            <div style="width:310px; margin:10px auto 0 auto; color:#002a78; font-size:17px; line-height:20px;"><strong>
+                    <?php if (is_null($sequence)) : ?>
+                    お問い合わせ、見学予約はこちらから。<br/>
+                    担当者から折り返しご案内いたします。
+                    <?php else : ?>
+                    下記の内容で送信します。ご確認ください。　
+                    <?php endif; ?>　
+                </strong></div>
+            <div class="search_top">
+                <form action="./" method="post" id="form02">
+                    <dl>
+                        <dt>お名前</dt>
+                        <dd>
+                            <?php if (is_null($sequence)) : ?>
+                            <input name="name" type="text" value="お名前*" id="oCF_FreeText0"
+                                   onfocus="if (this.value == 'お名前*') { this.value = ''; this.className = '' }"
+                                   onblur="if (this.value == '') { this.value = 'お名前*'; this.className = '' }"/>
+                            <?php else :
+                            echo $_SESSION["name"];
+                            endif;
+                            ?>
+                        </dd>
+                        <dt>メールアドレス</dt>
+                        <dd>
+                            <?php if (is_null($sequence)) : ?>
+                            <input name="email" type="text" value="メールアドレス*" id="oCF_FreeText1"
+                                   onfocus="if (this.value == 'メールアドレス*') { this.value = ''; this.className = '' }"
+                                   onblur="if (this.value == '') { this.value = 'メールアドレス*'; this.className = '' }"
+                                   class="numeric_l"/>
+                            <?php else :
+                                echo $_SESSION["email"];
+                            endif;
+                            ?>
+                        </dd>
+                        <dt>電話番号</dt>
+                        <dd>
+                            <?php if (is_null($sequence)) : ?>
+                            <input name="tel" type="text" value="電話番号*" id="oCF_FreeText2"
+                                   onfocus="if (this.value == '電話番号*') { this.value = ''; this.className = '' }"
+                                   onblur="if (this.value == '') { this.value = '電話番号*'; this.className = '' }"
+                                   class="numeric_l"/>
+                            <?php else :
+                                echo $_SESSION["tel"];
+                            endif;
+                            ?>
+                        </dd>
+                    </dl>
+                    <div class="btn_top">
+                        <?php if (is_null($sequence)) : ?>
+                        <input name="submit" type="image"
+                                onmouseover="this.src='images/btn_form_on.png'"
+                                onmouseout="this.src='images/btn_form_off.png'" src="images/btn_form_off.png"
+                                alt="内覧希望・お問い合わせはこちら" value="" id="btnConfirm2"/>
+                        <?php else : ?>
+                            <input name="submit" type="image"
+                                   onmouseover="this.src='images/confirm_btn_on.png'"
+                                   onmouseout="this.src='images/confirm_btn.png'" src="images/confirm_btn.png"
+                                   alt="内覧希望・お問い合わせはこちら" value="" id="btnConfirm2"/>
+                        <?php endif; ?>
+                    </div>
+                    <?php if (is_null($sequence)) : ?>
+                        <input type="hidden" name="sequence" value="confirm"/>
+                    <?php elseif ($sequence == "confirm" || !$isAdminSend) : ?>
+                        <input type="hidden" name="sequence" value="send"/>
+                    <?php endif; ?>
+                    <input type="hidden" name="unique_key" value="<?php echo $unique_key; ?>"/>
+                </form>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
