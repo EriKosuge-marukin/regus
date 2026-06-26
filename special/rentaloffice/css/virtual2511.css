@@ -1090,32 +1090,40 @@ section.cvcv {
 }
 .sec01 .office__search {
   display: flex;
-  gap: 10px 20px;
 }
 @media screen and (max-width: 768px) {
   .sec01 .office__search {
     flex-wrap: wrap;
-    gap: 10px 5px;
   }
 }
 .sec01 .office__search li {
   cursor: pointer;
 }
-.sec01 .office__search--region .search-sp__btn {
+.sec01 .office__search--region {
+  gap: 10px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .sec01 .office__search--region {
+    gap: 5px;
+    margin-top: 15px;
+  }
+}
+.sec01 .office__search--region button {
   position: static;
-  height: 40px;
+  height: 35px;
   padding: 0 10px;
   font-size: 18px;
   border: 1px solid #bbb;
   border-radius: 5px;
   filter: none;
 }
-.sec01 .office__search--region .search-sp__btn.active, .sec01 .office__search--region .search-sp__btn:hover {
+.sec01 .office__search--region button.active, .sec01 .office__search--region button:hover {
   color: #fff;
   background-color: #1c3b79;
 }
 @media screen and (max-width: 768px) {
-  .sec01 .office__search--region .search-sp__btn {
+  .sec01 .office__search--region button {
     height: 30px;
     padding: 0 8px;
     font-size: 14px;
@@ -1124,7 +1132,9 @@ section.cvcv {
 .sec01 .office__search--area {
   display: none;
   flex-wrap: wrap;
-  margin-top: 15px;
+  gap: 5px 15px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 @media screen and (max-width: 768px) {
   .sec01 .office__search--area {
