@@ -1,15 +1,15 @@
-// =========================
+// --------------------
 // アコーディオン
-// =========================
+// --------------------
 $(".accordion-header").click(function () {
   $(this).next().slideToggle();
   $(this).toggleClass("active");
 });
 
 
-// =========================
+// --------------------
 // タブ切り替え
-// =========================
+// --------------------
 function setupTabs(tabSelector, targetSelectors, pcOnly = false) {
   // タブ要素を取得
   const tabs = document.querySelectorAll(tabSelector);
@@ -84,10 +84,10 @@ document.querySelectorAll(".js-anchor").forEach((link) => {
 });
 
 
-// =========================
+// --------------------
 // SPマップモーダル内のボタンをクリック
 // #を取得して、対象のタブを開く
-// =========================
+// --------------------
 $(".js-office-anchor").on("click", function (e) {
   e.preventDefault();
 

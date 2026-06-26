@@ -1,9 +1,7 @@
 @charset "utf-8";
 @import "mixin";
 
-// =========================
-// header
-// =========================
+/* ---------- header ---------- */
 header.virtual {
   width: 100%;
   background: #fff;
@@ -41,7 +39,6 @@ header.virtual {
     justify-content: flex-end; // 右寄せ
     align-items: center;
     gap: 14px;
-
     ul {
       display: flex;
       align-items: center;
@@ -49,7 +46,6 @@ header.virtual {
       margin: 0;
       padding: 0;
       list-style: none;
-
       li {
         display: inline-block;
         font-size: 0.8rem;
@@ -83,12 +79,10 @@ header.virtual {
         font-size: clamp(10px, 1vw, 16px);
         line-height: 1.2;
         transition: background 0.3s ease;
-
         &:hover {
           background: #f35a6f;
         }
       }
-
       &.btn-circle-right {
         position: relative;
         a::before {
@@ -127,18 +121,15 @@ header.virtual {
       flex-direction: column;
       align-items: flex-start;
     }
-
     .vir_nav {
       width: 100%;
       justify-content: flex-start;
       flex-wrap: wrap;
       gap: 10px;
-
       ul {
         flex-wrap: wrap;
         gap: 10px;
       }
-
       .gnav_vir_btn {
         margin-top: 8px;
       }
@@ -146,10 +137,7 @@ header.virtual {
   }
 }
 
-
-// =========================
-// Common
-// =========================
+/* ---------- Common ---------- */
 .main_contents {
   font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
   font-size: 16px;
@@ -185,7 +173,6 @@ h2 {
   font-size: 40px;
   text-align: center;
   font-weight: bold;
-
   @include break {
     line-height: 1.3 !important;
     margin-bottom: 8px;
@@ -194,7 +181,6 @@ h2 {
   span {
     display: block;
     font-size: 24px;
-
     font-weight: inherit;
     @include break {
       font-size: 18px;
@@ -225,7 +211,7 @@ p {
   }
 }
 
-
+/* ---------- customer_logo ---------- */
 .customer_logo {
   max-width: 1060px;
   width: 100%;
@@ -249,7 +235,6 @@ p {
       margin: 0;
       padding: 0;
     }
-
     li {
       width: calc((100% - 56px * 5) / 6); // 6列中、5箇所に56pxの余白
       margin-right: 56px;
@@ -258,19 +243,16 @@ p {
       display: flex;
       align-items: center;
       justify-content: center;
-
       img {
         width: 100%;
         height: auto;
         display: block;
         object-fit: contain;
       }
-
       // 6列目の右余白をゼロに
       &:nth-child(6n) {
         margin-right: 0;
       }
-
       // 2行目（7〜12番目）の下余白をゼロに
       &:nth-child(n + 7) {
         margin-bottom: 0;
@@ -278,15 +260,12 @@ p {
     }
   }
 
-  /* =======================
-     レスポンシブ対応
-  ======================= */
+  // レスポンシブ対応
   @media (max-width: 1000px) {
     .cust_list ul li {
       width: calc((100% - 40px * 4) / 5); // 5列
       margin-right: 40px;
       margin-bottom: 36px;
-
       &:nth-child(5n) {
         margin-right: 0;
       }
@@ -301,7 +280,6 @@ p {
       width: calc((100% - 30px * 3) / 4); // 4列
       margin-right: 30px;
       margin-bottom: 28px;
-
       &:nth-child(4n) {
         margin-right: 0;
       }
@@ -316,7 +294,6 @@ p {
       width: calc((100% - 20px) / 2); // 2列
       margin-right: 20px;
       margin-bottom: 20px;
-
       &:nth-child(2n) {
         margin-right: 0;
       }
@@ -331,7 +308,7 @@ p {
   }
 }
 
-
+/* ---------- cvcv ---------- */
 section.cvcv {
   max-width: 998px;
   width: 94%;
@@ -341,6 +318,7 @@ section.cvcv {
   }
 }
 
+/* ---------- btn2-CAM ---------- */
 .btn2-CAM {
   display: flex;
   justify-content: space-around;
@@ -358,7 +336,6 @@ section.cvcv {
       width: 100%;
       margin: 0px 0 10px 0px;
     }
-
     .btn_GREEN {
       text-align: center;
       &.mgB50 {
@@ -367,7 +344,6 @@ section.cvcv {
           margin-bottom: 30px;
         }
       }
-
       a {
         &.btn_arrow {
           position: relative;
@@ -445,7 +421,6 @@ section.cvcv {
           width: 80%;
         }
       }
-
       a {
         &.btn_arrow {
           position: relative;
@@ -471,7 +446,7 @@ section.cvcv {
             content: "";
             position: absolute;
             top: 50%;
-          } //__beforeAfter
+          }
           &:before {
             right: 7px;
             width: 40px;
@@ -532,14 +507,14 @@ section.cvcv {
 .vir_main_apply-btn {
   position: relative;
   margin: 0 auto;
-  max-width: 450px; /* 親として100%確保 */
+  max-width: 450px; // 親として100%確保
   // width: 90%;
   display: flex;
-  justify-content: center; /* 中央寄せ */
+  justify-content: center; // 中央寄せ
   a {
-    flex: 0 0 auto; /* ← flex収縮を禁止 */
-    /* ← 実際に欲しい幅 */
-    width: 590px; /* ← 画面幅が小さい時は自動で縮小 */
+    flex: 0 0 auto; // flex収縮を禁止
+    // 実際に欲しい幅
+    width: 590px; // 画面幅が小さい時は自動で縮小
     height: 100px;
     background: #d71a34;
     color: #fff;
@@ -563,8 +538,7 @@ section.cvcv {
     &:hover {
       background: #b50000;
     }
-  } //a
-
+  }
   &.btn-circle2 {
     position: relative;
     a::before {
@@ -599,13 +573,11 @@ section.cvcv {
         right: 25px;
       }
     }
-  } //btn-circle-right
+  }
 }
 
 
-// =========================
-// sec01
-// =========================
+/* ---------- sec01 ---------- */
 .sec01 {
   width: 94%;
   max-width: 1060px;
@@ -643,11 +615,9 @@ section.cvcv {
       height: 48px;
       margin-bottom: 30px;
     }
-
     a:hover {
       text-decoration: none;
     }
-
     &__item {
       width: 50%;
       padding: 0 20px;
@@ -1264,9 +1234,7 @@ section.cvcv {
   cursor: pointer;
 }
 
-// =========================
-// sec04
-// =========================
+/* ---------- sec04 ---------- */
 .sec04 {
   text-align: center;
   h3 {
@@ -1399,7 +1367,7 @@ section.cvcv {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto 95px;
-  background: url(../img/virtual/wide.jpg) no-repeat center center / cover;
+  background: url(/special/rentaloffice/img/virtual/wide.jpg) no-repeat center center / cover;
   @include break {
     margin: 0 auto 46px;
   }
@@ -1448,7 +1416,7 @@ section.cvcv {
         content: "";
         position: absolute;
         top: 50%;
-      } //__beforeAfter
+      }
       &:before {
         right: 7px;
         width: 40px;
@@ -1483,13 +1451,11 @@ section.cvcv {
   }
 }
 
-// =========================
-// sec05
-// =========================
+/* ---------- sec05 ---------- */
 .sec05 {
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto calc(100px - 102px); // 20260610 marginを変更
+  margin: 0 auto calc(100px - 102px);
   @include break {
     margin: 0 auto 58px;
   }
@@ -1506,9 +1472,8 @@ section.cvcv {
   }
   .newOffice {
     max-width: 1200px;
-    padding: 5px; // 内側にも5px（外周の余白）
+    padding: 5px;
     list-style: none;
-
     display: grid;
     grid-template-columns: repeat(5, 1fr); // 5列=各20%程度
     gap: 8px; // li同士の間隔 5px
@@ -1616,10 +1581,178 @@ section.cvcv {
   }
 }
 
+/* ---------- float_apply ---------- */
+.float_apply {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 30px 0 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(100%);
+  @include break {
+    padding: 30px 0 3px;
+  }
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 
-// =========================
-// float_apply260306
-// =========================
+  // 中央寄せコンテナ
+  .float_in {
+    display: flex;
+    justify-content: center; // 全体を中央寄せ
+    align-items: center;
+    gap: 10%; // 真ん中の余白（これが中央スペース）
+    width: 700px;
+    margin: 0 auto;
+    @include break {
+      width: 95%;
+      display: block;
+    }
+  }
+
+  // 左ブロック（画像とボタン1）
+  .float_left,.float_right {
+    position: relative;
+    width: 45%;
+    @include break {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @include break{
+      //margin-bottom: -10px !important; // スマホでは重なりを少し抑える設定
+    }
+
+    // ふきだし画像
+    .btn_baloon {
+      position: absolute;
+      top: -25px; // ここで重なり量を調整（お好みで）
+      // transform: translateX(-50%);
+      z-index: 2; // 画像は上
+      width: 350px; // 吹き出しの幅
+      margin: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @include break {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        top: -1px; 
+      }
+    }
+  }
+
+  // 右ブロック（ボタン2）
+  .float_right {
+    //flex: 0 0 auto; // 幅を維持
+    @include break {
+      width: 100%;
+    }
+  }
+  .float_left {
+    @include break {
+      margin-bottom: 20px;
+    }
+  }
+
+  // 共通ボタン設定
+  .vir_-btn {
+    width: 350px; // PCでのボタン幅
+    position: relative;
+    @include break {
+      width: 90%;
+      margin: 5px auto;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      background: #d71a34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 35px;
+      font-size: clamp(15px, 1.2vw, 18px); // PCで文字が溢れないよう少し調整
+      transition: background 0.3s ease;
+      @include break {
+        height: 40px;
+      }
+      &:hover {
+        background: #b50000;
+      }
+    }
+    &.btn-C_b a {
+      background: #46c1be;    
+      @include break {
+        margin-top: 15px;
+      }
+    }
+
+    // 共通の矢印アイコン装飾
+    &.btn-C_2 a::before,
+    &.btn-C_b a::before {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0; right: 15px;
+      width: 20px; height: 20px;
+      margin: auto;
+      border-radius: 20px;
+      background-color: #fff;
+    }
+    &.btn-C_2 a::after,
+    &.btn-C_b a::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0; right: 21px;
+      width: 7px; height: 7px;
+      margin: auto;
+      border-top: 2px solid #d71a34;
+      border-right: 2px solid #d71a34;
+      transform: rotate(45deg);
+    }
+    &.btn-C_b a::after {
+      border-color: #46c1be;
+    }
+  }
+
+  // 補足テキストを一番下に全幅で配置
+  .plan_hosoku {
+    width: 100%; // これでflex内でも改行されて下に配置されます
+    margin-top: 15px;
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    line-height: 1.4;
+    
+    @include break {
+      margin-top: 2px;
+      text-align: center;
+      line-height: 1.0;
+      font-size: 10px; // 基準を10pxにする
+      transform: scale(0.7); // 0.8倍（10px * 0.8 = 8px相当）
+      transform-origin: center;
+      display: inline-block; // scaleを適用するために必要
+    }
+  }
+}
+
+/* ---------- float_apply260306 ---------- */
 .float_apply260306 {
   position: fixed;
   bottom: 0;
@@ -1795,10 +1928,10 @@ section.cvcv {
       margin-top: 2px;
       text-align: center;
       line-height: 1;
-      font-size: 10px; /* 基準を10pxにする */
-      //transform: scale(0.7); /* 0.8倍（10px * 0.8 = 8px相当） */
+      font-size: 10px; // 基準を10pxにする
+      //transform: scale(0.7); // 0.8倍（10px * 0.8 = 8px相当）
       transform-origin: center;
-      display: inline-block; /* scaleを適用するために必要 */
+      display: inline-block; // scaleを適用するために必要
     }
   }
 }
@@ -1971,9 +2104,7 @@ section.cvcv {
 }
 
 
-// =========================
-// /virtualoffice/ ページ固有対応
-// =========================
+/* ---------- /virtualoffice/ ページ固有対応 ---------- */
 // SPナビゲーションのモーダル内でスクロールできない問題への対応
 nav {
   @include break {

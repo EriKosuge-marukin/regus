@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ---------- header ---------- */
 header.virtual {
   width: 100%;
   background: #fff;
@@ -135,6 +136,7 @@ header.virtual .vir_nav .gnav_vir_btn.btn-circle-right a::after {
   }
 }
 
+/* ---------- Common ---------- */
 .main_contents {
   font-family: "游ゴシック", YuGothic, "Yu Gothic", sans-serif;
   font-size: 16px;
@@ -228,6 +230,7 @@ p {
   line-height: 1.4;
 }
 
+/* ---------- customer_logo ---------- */
 .customer_logo {
   max-width: 1060px;
   width: 100%;
@@ -272,11 +275,6 @@ p {
 .customer_logo .cust_list li:nth-child(n+7) {
   margin-bottom: 0;
 }
-.customer_logo {
-  /* =======================
-     レスポンシブ対応
-  ======================= */
-}
 @media (max-width: 1000px) {
   .customer_logo .cust_list ul li {
     width: calc((100% - 160px) / 5);
@@ -320,6 +318,7 @@ p {
   margin: 50px auto 60px;
 }
 
+/* ---------- cvcv ---------- */
 section.cvcv {
   max-width: 998px;
   width: 94%;
@@ -331,6 +330,7 @@ section.cvcv {
   }
 }
 
+/* ---------- btn2-CAM ---------- */
 .btn2-CAM {
   display: flex;
   justify-content: space-around;
@@ -540,14 +540,13 @@ section.cvcv {
 .vir_main_apply-btn {
   position: relative;
   margin: 0 auto;
-  max-width: 450px; /* 親として100%確保 */
+  max-width: 450px;
   display: flex;
-  justify-content: center; /* 中央寄せ */
+  justify-content: center;
 }
 .vir_main_apply-btn a {
-  flex: 0 0 auto; /* ← flex収縮を禁止 */
-  /* ← 実際に欲しい幅 */
-  width: 590px; /* ← 画面幅が小さい時は自動で縮小 */
+  flex: 0 0 auto;
+  width: 590px;
   height: 100px;
   background: #d71a34;
   color: #fff;
@@ -612,6 +611,7 @@ section.cvcv {
   }
 }
 
+/* ---------- sec01 ---------- */
 .sec01 {
   width: 94%;
   max-width: 1060px;
@@ -1337,6 +1337,7 @@ section.cvcv {
   cursor: pointer;
 }
 
+/* ---------- sec04 ---------- */
 .sec04 {
   text-align: center;
 }
@@ -1464,7 +1465,7 @@ section.cvcv {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto 95px;
-  background: url(../img/virtual/wide.jpg) no-repeat center center/cover;
+  background: url(/special/rentaloffice/img/virtual/wide.jpg) no-repeat center center/cover;
 }
 @media screen and (max-width: 768px) {
   .wide {
@@ -1555,6 +1556,7 @@ section.cvcv {
   }
 }
 
+/* ---------- sec05 ---------- */
 .sec05 {
   max-width: 1200px;
   width: 100%;
@@ -1686,6 +1688,178 @@ section.cvcv {
   font-weight: 500;
 }
 
+/* ---------- float_apply ---------- */
+.float_apply {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 30px 0 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  transform: translateY(100%);
+}
+@media screen and (max-width: 768px) {
+  .float_apply {
+    padding: 30px 0 3px;
+  }
+}
+.float_apply.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.float_apply .float_in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 700px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .float_apply .float_in {
+    width: 95%;
+    display: block;
+  }
+}
+.float_apply .float_left, .float_apply .float_right {
+  position: relative;
+  width: 45%;
+}
+@media screen and (max-width: 768px) {
+  .float_apply .float_left, .float_apply .float_right {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+.float_apply .float_left img, .float_apply .float_right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.float_apply .float_left .btn_baloon, .float_apply .float_right .btn_baloon {
+  position: absolute;
+  top: -25px;
+  z-index: 2;
+  width: 350px;
+  margin: 0;
+}
+.float_apply .float_left .btn_baloon img, .float_apply .float_right .btn_baloon img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .float_apply .float_left .btn_baloon, .float_apply .float_right .btn_baloon {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -1px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .float_apply .float_right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .float_apply .float_left {
+    margin-bottom: 20px;
+  }
+}
+.float_apply .vir_-btn {
+  width: 350px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .float_apply .vir_-btn {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
+.float_apply .vir_-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: #d71a34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 35px;
+  font-size: clamp(15px, 1.2vw, 18px);
+  transition: background 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .float_apply .vir_-btn a {
+    height: 40px;
+  }
+}
+.float_apply .vir_-btn a:hover {
+  background: #b50000;
+}
+.float_apply .vir_-btn.btn-C_b a {
+  background: #46c1be;
+}
+@media screen and (max-width: 768px) {
+  .float_apply .vir_-btn.btn-C_b a {
+    margin-top: 15px;
+  }
+}
+.float_apply .vir_-btn.btn-C_2 a::before, .float_apply .vir_-btn.btn-C_b a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.float_apply .vir_-btn.btn-C_2 a::after, .float_apply .vir_-btn.btn-C_b a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 21px;
+  width: 7px;
+  height: 7px;
+  margin: auto;
+  border-top: 2px solid #d71a34;
+  border-right: 2px solid #d71a34;
+  transform: rotate(45deg);
+}
+.float_apply .vir_-btn.btn-C_b a::after {
+  border-color: #46c1be;
+}
+.float_apply .plan_hosoku {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+  line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+  .float_apply .plan_hosoku {
+    margin-top: 2px;
+    text-align: center;
+    line-height: 1;
+    font-size: 10px;
+    transform: scale(0.7);
+    transform-origin: center;
+    display: inline-block;
+  }
+}
+
+/* ---------- float_apply260306 ---------- */
 .float_apply260306 {
   position: fixed;
   bottom: 0;
@@ -1855,9 +2029,9 @@ section.cvcv {
     margin-top: 2px;
     text-align: center;
     line-height: 1;
-    font-size: 10px; /* 基準を10pxにする */
+    font-size: 10px;
     transform-origin: center;
-    display: inline-block; /* scaleを適用するために必要 */
+    display: inline-block;
   }
 }
 
@@ -2029,9 +2203,10 @@ section.cvcv {
   width: 13px;
   height: 14px;
   margin-right: 10px;
-  background: url("../img/virtual/check_icon.png") center center/cover no-repeat;
+  background: url("/special/rentaloffice/img/virtual/check_icon.png") center center/cover no-repeat;
 }
 
+/* ---------- /virtualoffice/ ページ固有対応 ---------- */
 @media screen and (max-width: 768px) {
   nav {
     overflow-y: auto !important;

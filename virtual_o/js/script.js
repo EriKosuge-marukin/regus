@@ -1,5 +1,5 @@
 $(function () {
-  //IE8 nth-child
+  // IE8 nth-child
   $(".sideNavBox .area li:eq(3)").css("margin-right", "0px");
   $(".sideNavBox .area li:eq(7)").css("margin-right", "0px");
   $(".areaList li:eq(2)").css("margin-right", "0px");
@@ -16,7 +16,7 @@ $(function () {
   $(".surround dl:eq(2)").css("margin-right", "0px");
   $(".surround dl:eq(5)").css("margin-right", "0px");
 
-  //MAPのページ内リンク用追記▼
+  // MAPのページ内リンク用追記
   $("area[href^=#]").click(function () {
     w = $(window).width();
     x = 750;
@@ -32,70 +32,12 @@ $(function () {
     $("body,html").animate({ scrollTop: position }, speed, "easeInOutCubic");
     return false;
   });
-  //MAPのページ内リンク用追記▲
-
-  //SP Nav
-  /*
-	$(".btnSpNav").click(function() {
-		if($(".hambergerNav").css("display") == "none"){
-			$(".btnSpNav img").attr("src","/common2/images/btn_close.gif");
-			$(".hambergerNav").slideDown();
-		}else{
-			$(".btnSpNav img").attr("src","/common2/images/btn_hamberger.gif");
-			$(".hambergerNav").slideUp();
-		}
-	});
-
-	var w = $(window).width();
-	var x = 750;
-
-	$(window).on("load resize", function(){
-	w = $(window).width();
-  x = 750;
-    if (w >= x) {
-			mgSticky = 65;
-			$(".btnSpNav img").attr("src","/common2/images/btn_hamberger.gif");
-			$(".hambergerNav").css("display","none");
-    }else{
-			mgSticky = 0;
-	    $(".sticky").css("display","none");
-		}
-	});
-	*/
-
-  //Sticky Nav
-  /*
-	var $window = $(window),
-	//追従するナビが現れる位置
-	$appear = $("nav"),
-	//追従するナビのクラス
-	$sticky = $(".sticky"),
-	appearNav = $appear.offset().top;
-	//切り替え幅
-	switchWidth = 750;
-	var fixedSwitch = false;
-
-	$window.on("scroll", function () {
-		if ($window.scrollTop() > appearNav && $(window).width() >= switchWidth) {
-			if ( fixedSwitch === false){
-				$sticky.show();
-				fixedSwitch = true;
-		 	}
-		}else{
-			if ( fixedSwitch === true){
-				$sticky.hide();
-				fixedSwitch = false;
-			}
-		}
-	});
-	$window.trigger("scroll");
-	*/
 });
 
 
-// =========================
+// --------------------
 // ヘッダー固定処理
-// =========================
+// --------------------
 $(function () {
   // 画面幅取得
   var w = $(window).width();
@@ -160,10 +102,9 @@ $(function () {
 		});
 	}
 
-
-	// =========================
+  // --------------------
   // スムーススクロール
-  // =========================
+  // --------------------
   $('a[href^="#"]').on("click", function (e) {
     e.preventDefault();
 
@@ -175,7 +116,7 @@ $(function () {
     var offset = 0;
 
     // PC
-    if ($(window).width() > 750) {
+    if ($(window).width() > 750 && $("header nav").length) {
       offset = 66;
     }
     // SP
