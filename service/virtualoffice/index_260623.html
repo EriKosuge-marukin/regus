@@ -901,13 +901,16 @@
               <button data-val="tokyo" class="search-sp__btn active">東京</button>
             </li>
             <li>
-              <button data-val="tokyo" class="search-sp__btn">神奈川</button>
+              <button data-val="osaka" class="search-sp__btn">大阪</button>
             </li>
             <li>
-              <button data-val="tokyo" class="search-sp__btn">愛知</button>
+              <button data-val="nagoya" class="search-sp__btn">名古屋</button>
             </li>
             <li>
-              <button data-val="tokyo" class="search-sp__btn">大阪</button>
+              <button data-val="yokohama" class="search-sp__btn">横浜</button>
+            </li>
+            <li>
+              <button data-val="fukuoka" class="search-sp__btn">福岡</button>
             </li>
           </ul>
           <ul class="office__search office__search--region">
@@ -1000,11 +1003,13 @@
               <a href="#machida">町田<span>(1)</span></a>
             </li>
           </ul>
-          <!-- 神奈川 -->
-          <ul class="office__search office__search--area"></ul>
-          <!-- 愛知 -->
-          <ul class="office__search office__search--area"></ul>
           <!-- 大阪 -->
+          <ul class="office__search office__search--area"></ul>
+          <!-- 名古屋 -->
+          <ul class="office__search office__search--area"></ul>
+          <!-- 横浜 -->
+          <ul class="office__search office__search--area"></ul>
+          <!-- 福岡 -->
           <ul class="office__search office__search--area"></ul>
           <!-- 北海道 -->
           <ul class="office__search office__search--area">
@@ -1269,27 +1274,31 @@
             </section>
           </div>
 
-          <!-- 神奈川 -->
+          <!-- 大阪 -->
           <div class="office__content">
-            <section id="yokohama" class="office__section">
-              <h3>横浜</h3>
-            </section>
-            <section id="kawasaki" class="office__section">
-              <h3>川崎</h3>
+            <section id="osaka" class="office__section">
+              <h3>大阪</h3>
             </section>
           </div>
 
-          <!-- 愛知 -->
+          <!-- 名古屋 -->
           <div class="office__content">
             <section id="nagoya" class="office__section">
               <h3>名古屋</h3>
             </section>
           </div>
 
-          <!-- 大阪 -->
+          <!-- 横浜 -->
           <div class="office__content">
-            <section id="osaka" class="office__section">
-              <h3>大阪</h3>
+            <section id="yokohama" class="office__section">
+              <h3>横浜</h3>
+            </section>
+          </div>
+
+          <!-- 福岡 -->
+          <div class="office__content">
+            <section id="fukuoka" class="office__section">
+              <h3>福岡</h3>
             </section>
           </div>
 
@@ -1404,6 +1413,9 @@
 
           <!-- 関東 -->
           <div class="office__content">
+            <section id="kawasaki" class="office__section">
+              <h3>川崎</h3>
+            </section>
             <section id="atsugi" class="office__section">
               <h3>厚木</h3>
             </section>
@@ -1483,9 +1495,6 @@
           <div class="office__content">
             <section id="kitakyusyu" class="office__section">
               <h3>北九州</h3>
-            </section>
-            <section id="fukuoka" class="office__section">
-              <h3>福岡</h3>
             </section>
             <section id="oita" class="office__section">
               <h3>大分</h3>
@@ -2116,29 +2125,6 @@
                 </li>
               </ul>
             </div>
-            <!-- 神奈川 -->
-            <div class="sp-modal__container">
-              <p class="sp-modal__title">神奈川</p>
-              <button class="sp-modal__back">←閉じる</button>
-              <ul class="sp-modal__list">
-                <li class="sp-modal__item">
-                  <a href="#yokohama" class="sp-modal__link sp-modal__back_area js-office-anchor">横浜</a>
-                </li>
-                <li class="sp-modal__item">
-                  <a href="#kawasaki" class="sp-modal__link sp-modal__back_area js-office-anchor">川崎</a>
-                </li>
-              </ul>
-            </div>
-            <!-- 愛知 -->
-            <div class="sp-modal__container">
-              <p class="sp-modal__title">愛知</p>
-              <button class="sp-modal__back">←閉じる</button>
-              <ul class="sp-modal__list">
-                <li class="sp-modal__item">
-                  <a href="#nagoya" class="sp-modal__link sp-modal__back_area js-office-anchor">名古屋</a>
-                </li>
-              </ul>
-            </div>
             <!-- 大阪 -->
             <div class="sp-modal__container">
               <p class="sp-modal__title">大阪</p>
@@ -2146,6 +2132,36 @@
               <ul class="sp-modal__list">
                 <li class="sp-modal__item">
                   <a href="#osaka" class="sp-modal__link sp-modal__back_area js-office-anchor">大阪</a>
+                </li>
+              </ul>
+            </div>
+            <!-- 名古屋 -->
+            <div class="sp-modal__container">
+              <p class="sp-modal__title">名古屋</p>
+              <button class="sp-modal__back">←閉じる</button>
+              <ul class="sp-modal__list">
+                <li class="sp-modal__item">
+                  <a href="#nagoya" class="sp-modal__link sp-modal__back_area js-office-anchor">名古屋</a>
+                </li>
+              </ul>
+            </div>
+            <!-- 横浜 -->
+            <div class="sp-modal__container">
+              <p class="sp-modal__title">横浜</p>
+              <button class="sp-modal__back">←閉じる</button>
+              <ul class="sp-modal__list">
+                <li class="sp-modal__item">
+                  <a href="#yokohama" class="sp-modal__link sp-modal__back_area js-office-anchor">横浜</a>
+                </li>
+              </ul>
+            </div>
+            <!-- 福岡 -->
+            <div class="sp-modal__container">
+              <p class="sp-modal__title">福岡</p>
+              <button class="sp-modal__back">←閉じる</button>
+              <ul class="sp-modal__list">
+                <li class="sp-modal__item">
+                  <a href="#fukuoka" class="sp-modal__link sp-modal__back_area js-office-anchor">福岡</a>
                 </li>
               </ul>
             </div>
@@ -2192,6 +2208,9 @@
               <p class="sp-modal__title">関東</p>
               <button class="sp-modal__back">←閉じる</button>
               <ul class="sp-modal__list">
+                <li class="sp-modal__item">
+                  <a href="#kawasaki" class="sp-modal__link sp-modal__back_area js-office-anchor">川崎</a>
+                </li>
                 <li class="sp-modal__item">
                   <a href="#atsugi" class="sp-modal__link sp-modal__back_area js-office-anchor">厚木</a>
                 </li>
@@ -2286,9 +2305,6 @@
               <ul class="sp-modal__list">
                 <li class="sp-modal__item">
                   <a href="#kitakyushu" class="sp-modal__link sp-modal__back_area js-office-anchor">北九州</a>
-                </li>
-                <li class="sp-modal__item">
-                  <a href="#fukuoka" class="sp-modal__link sp-modal__back_area js-office-anchor">福岡</a>
                 </li>
                 <li class="sp-modal__item">
                   <a href="#oita" class="sp-modal__link sp-modal__back_area js-office-anchor">大分</a>

@@ -2032,8 +2032,10 @@ section.cvcv {
   background: url("../img/virtual/check_icon.png") center center/cover no-repeat;
 }
 
-nav.sc {
-  overflow-y: auto !important;
+@media screen and (max-width: 768px) {
+  nav {
+    overflow-y: auto !important;
+  }
 }
 
 footer {

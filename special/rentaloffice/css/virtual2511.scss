@@ -1975,8 +1975,10 @@ section.cvcv {
 // /virtualoffice/ ページ固有対応
 // =========================
 // SPナビゲーションのモーダル内でスクロールできない問題への対応
-nav.sc {
-  overflow-y: auto !important;
+nav {
+  @include break {
+    overflow-y: auto !important;
+  }
 }
 // 追従ボタン分のFooter下余白を調整
 footer {
